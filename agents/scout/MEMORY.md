@@ -535,4 +535,190 @@ When short on time:
 
 ---
 
+## 2026-02-18: Earnings Encyclopedia Testing
+
+**Test Date:** 2026-02-18, Late Evening PST  
+**Tester:** Scout (QA Lead)  
+**Scope:** Full regression test of Earnings Encyclopedia feature  
+**Result:** ⚠️ **MOSTLY FUNCTIONAL - MINOR ISSUES IDENTIFIED**
+
+---
+
+### Test Summary
+
+| Test | Status | Notes |
+|------|--------|-------|
+| Search: CVNA | ✅ PASS | Filters correctly to CVNA only |
+| Search: DASH | ✅ PASS | Visible in results |
+| Search: EBAY | ✅ PASS | Visible in results |
+| Search: WMT | ✅ PASS | Visible in results |
+| Filter: A Grade | ✅ PASS | Shows WMT (A-) only |
+| Filter: B Grade | ✅ PASS | Shows 7 B-grade stocks |
+| Filter: C Grade | ✅ PASS | Shows DASH, LMND, W |
+| Filter: Trade | ✅ PASS | Shows 5 Trade recommendations |
+| Filter: Watch | ✅ PASS | Shows 3 Watch recommendations |
+| Filter: Avoid | ❌ MISSING | No "Avoid" filter button exists |
+| Modal Open | ❌ FAIL | Modal doesn't open on click |
+| Data Accuracy | ⚠️ ISSUES | Grade mismatches found |
+
+---
+
+### Data Accuracy Issues
+
+**Grade Mismatches (UI vs JSON Source):**
+
+| Ticker | UI Grade | JSON Grade | Severity |
+|--------|----------|------------|----------|
+| DASH | C+ | B | 🟡 Major |
+| EBAY | B | C+ | 🟡 Major |
+
+**Recommendation Mapping:**
+- UI shows generic recommendations (Watch, Trade, Avoid)
+- JSON shows specific strategies (STRADDLE, IRON CONDOR, etc.)
+- Mapping logic exists but grades are incorrect
+
+**Expected vs Actual:**
+```
+CVNA: UI=B-/Watch, JSON=B-/STRADDLE ✓ (mapping correct)
+DASH: UI=C+/Avoid, JSON=B/STRADDLE ❌ (grade wrong)
+EBAY: UI=B/Watch, JSON=C+/CREDIT_SPREAD ❌ (grade wrong)
+WMT:  UI=A-/Trade, JSON=A-/IRON_CONDOR ✓ (mapping correct)
+```
+
+---
+
+### Issues Found
+
+#### 🔴 Issue #1: Modal Not Opening
+**Severity:** Major (feature broken)  
+**Reproduction:**
+1. Navigate to Earnings Encyclopedia
+2. Click on any ticker card OR "View Details →" button
+3. **Expected:** Modal opens with full research details
+4. **Actual:** Nothing happens, no modal appears
+
+**Root Cause Hypothesis:** 
+- Modal JavaScript handler not attached
+- Missing click event binding
+- Modal component not rendered in DOM
+
+**Fix Required:**
+- Debug modal.js or encyclopedia.js
+- Verify event listeners attached correctly
+- Check browser console for JS errors
+
+---
+
+#### 🟡 Issue #2: Missing "Avoid" Filter Button
+**Severity:** Minor (UX gap)  
+**Details:** 
+- Recommendation filters show: All, A Grade, B Grade, C Grade, Trade, Watch
+- **Missing:** "Avoid" filter button
+- Avoid-rated tickers exist: DASH (Avoid), LMND (Avoid), W (Avoid)
+- Users cannot filter to see only "Avoid" recommendations
+
+**Fix Required:**
+- Add "Avoid" button to filter row
+- Ensure it filters correctly to show Avoid-rated tickers only
+
+---
+
+#### 🟡 Issue #3: Grade Data Mismatches
+**Severity:** Major (data integrity)  
+**Affected Tickers:** DASH, EBAY
+
+**DASH:**
+- UI displays: C+ grade
+- JSON source: B grade
+- Impact: Users see wrong grade, may make incorrect trading decisions
+
+**EBAY:**
+- UI displays: B grade  
+- JSON source: C+ grade
+- Impact: Users see inflated grade, misrepresents quality
+
+**Root Cause Hypothesis:**
+- Data transformation error in backend API
+- Stale cached data in UI
+- Grade calculation logic differs between systems
+
+**Fix Required:**
+- Verify API `/api/earnings-encyclopedia` returns correct grades
+- Check if frontend is using hardcoded or cached data
+- Sync UI data with JSON source of truth
+
+---
+
+### What Passed
+
+✅ **Search Functionality**
+- Search box accepts input
+- Filters results dynamically
+- Shows correct ticker(s) after search
+
+✅ **Grade Filters**
+- A Grade: Correctly shows only A-graded tickers (WMT)
+- B Grade: Shows all B-graded tickers (7 total)
+- C Grade: Shows all C-graded tickers (3 total)
+
+✅ **Recommendation Filters**
+- Trade: Shows 5 Trade-rated tickers
+- Watch: Shows 3 Watch-rated tickers
+- All data displays correctly (just missing Avoid button)
+
+✅ **Card Display**
+- All 11 tickers display correctly
+- Market cap, expected move, key insight all visible
+- Trade setups shown for each ticker
+- Research date and versions displayed
+
+✅ **UI Responsiveness**
+- Filter buttons toggle correctly
+- Active state shown on selected filter
+- Cards render with proper layout
+
+---
+
+### Browser Console Check
+
+**No JavaScript errors detected** during testing session.
+- Page loads without console errors
+- Filter buttons work without errors
+- Search functions without errors
+- Modal click silently fails (no error thrown)
+
+---
+
+### Verdict
+
+**Status:** ⚠️ **NEEDS FIXES BEFORE PRODUCTION**
+
+**Blocking Issues:**
+1. Modal not opening (broken feature)
+2. Grade data incorrect for DASH and EBAY (data integrity)
+
+**Non-Blocking but Should Fix:**
+1. Missing "Avoid" filter button (UX gap)
+
+**Ship Recommendation:** 
+- ❌ **DO NOT SHIP** until modal and grade issues resolved
+- After fixes: Full regression test required
+
+---
+
+### Follow-up Actions
+
+**For Alex:**
+1. Debug modal opening issue (JavaScript event binding)
+2. Investigate grade data mismatch (API vs JSON)
+3. Add "Avoid" filter button
+
+**For Scout:**
+1. Re-test after fixes applied
+2. Verify all 11 tickers show correct grades
+3. Test modal with multiple tickers
+4. Verify Avoid filter works when added
+
+---
+
 **Append test results and bugs found after each testing session.**
