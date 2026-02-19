@@ -1,10 +1,17 @@
 # Technical Design Spec: Earnings Research Encyclopedia
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 2026-02-18  
-**Status:** Draft  
+**Last Updated:** 2026-02-18 22:23 PST  
+**Status:** Draft (Corrected)  
 **Risk Level:** MEDIUM  
 **Author:** Subagent (DeepSeek V3)
+
+**Corrections Applied:**
+1. ✅ JSON-ONLY: Changed all markdown references to JSON format
+2. ✅ Priority Rule: "Latest timestamp wins" replaces "manual takes precedence"
+3. ✅ Auto-Update Trigger: Daily 7:30 AM sync (Option C for MVP)
+4. ✅ Development Environment: Separate container on port 8081
 
 ---
 
@@ -110,7 +117,7 @@ Create an "Earnings Encyclopedia" tab in Mission Control that consolidates Bob's
       "research_history": [
         {
           "research_date": "2026-02-18",
-          "source_file": "daily_earnings_research_2026-02-18.md",
+          "source_file": "daily_earnings_research_2026-02-18.json",
           "earnings_date": "2026-02-18",
           "earnings_time": "AMC",
           "expected_move": "15.5%",
@@ -126,7 +133,7 @@ Create an "Earnings Encyclopedia" tab in Mission Control that consolidates Bob's
         },
         {
           "research_date": "2025-11-15",
-          "source_file": "daily_earnings_research_2025-11-15.md",
+          "source_file": "daily_earnings_research_2025-11-15.json",
           "earnings_date": "2025-11-15",
           "earnings_time": "AMC",
           "expected_move": "12.8%",
@@ -457,10 +464,10 @@ def merge_research(existing_ticker_data, new_research):
 ### Source Files
 ```
 ~/.openclaw/workspace/
-├── daily_earnings_research_2026-02-18.md
-├── daily_earnings_research_2026-02-17.md
+├── daily_earnings_research_2026-02-18.json
+├── daily_earnings_research_2026-02-17.json
 ├── research_archive/
-│   ├── daily_earnings_research_2025-*.md
+│   ├── daily_earnings_research_2025-*.json
 │   └── ...
 ```
 
@@ -490,9 +497,9 @@ def merge_research(existing_ticker_data, new_research):
 
 ### Data Flow Diagram
 ```
-1. Daily Research (Markdown) 
-   → Parser extracts ticker data
-   → Merged into encyclopedia.json
+1. Daily Research (JSON) 
+   → JSON parser extracts ticker data
+   → Merged into encyclopedia.json (latest timestamp wins)
    → API serves consolidated data
    → Frontend displays with search/diff
 
@@ -678,8 +685,8 @@ docker-compose up -d
 
 ### Unit Tests
 1. **Parser Tests**
-   - Test markdown extraction for various formats
-   - Test edge cases (missing fields, malformed files)
+   - Test JSON parsing for various formats
+   - Test edge cases (missing fields, malformed JSON)
    - Test archive file parsing
 
 2. **Merge Logic Tests**
@@ -785,7 +792,7 @@ docker-compose up -d
 - [ ] Development environment ready
 
 ### Phase 1: Data Layer
-- [ ] Parser extracts data from markdown files
+- [ ] Parser extracts data from JSON files
 - [ ] Encyclopedia data structure created
 - [ ] Merge logic implemented and tested
 - [ ] Initial encyclopedia built from historical data

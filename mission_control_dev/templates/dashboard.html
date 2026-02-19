@@ -878,7 +878,10 @@
             
             <!-- EARNINGS TAB -->
             <div id="earnings-view" class="view">
-                <h2 style="margin-bottom: 1rem;">Earnings Research</h2>
+                <div style="margin-bottom: 1.5rem;">
+                    <h2 style="margin-bottom: 1rem;">Earnings Encyclopedia</h2>
+                    <input type="text" class="search-box" id="earnings-search" placeholder="Search earnings..." onkeyup="filterEarnings()">
+                </div>
                 <div id="earnings-content">
                     <div class="loading">Loading earnings data...</div>
                 </div>
@@ -1013,10 +1016,21 @@
         </div>
     </div>
     
+    <div id="earnings-modal" class="modal" onclick="closeEarningsModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2 id="earnings-modal-title">Earnings Details</h2>
+                <button class="modal-close" onclick="closeEarningsModal()">&times;</button>
+            </div>
+            <div id="earnings-modal-body"></div>
+        </div>
+    </div>
+    
     <script>
         // Global data
         let portfolioData = null;
         let analysisData = [];
+        let earningsData = [];
         
         // Tab switching
         function showView(viewName, event) {
@@ -1408,28 +1422,88 @@
         async function loadEarnings() {
             try {
                 const response = await fetch('/api/earnings-research');
-                const data = await response.json(); console.log("Corporate data:", data.team.length, "members");
-                document.getElementById('earnings-content').innerHTML = 
-                    data.length > 0 
-                        ? `<div class="analysis-grid">${data.map(e => `
-                            <div class="analysis-card">
-                                <div class="analysis-card-header">
-                                    <div class="analysis-card-ticker">${e.ticker}</div>
-                                    <div class="analysis-card-grade">${e.grade || 'B+'}</div>
-                                </div>
-                                <div style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.5rem;">
-                                    ${e.date || ''} | Expected Move: ${e.expected_move || 'N/A'}
-                                </div>
-                                <div class="analysis-card-summary">
-                                    <strong>Action:</strong> ${e.action || 'Monitor'}<br>
-                                    <strong>IV Rank:</strong> ${e.iv_rank || 'N/A'}
-                                </div>
-                            </div>
-                        `).join('')}</div>`
-                        : '<div class="card">No earnings research available</div>';
+                const data = await response.json();
+                earningsData = data;
+                renderEarnings(data);
             } catch (error) {
-                document.getElementById('earnings-content').innerHTML = 
+                document.getElementById('earnings-content').innerHTML =
                     '<div class="card">Error loading earnings data</div>';
+            }
+        }
+        
+        function renderEarnings(data) {
+            document.getElementById('earnings-content').innerHTML =
+                data.length > 0
+                    ? `<div class="analysis-grid">${data.map((e, idx) => `
+                        <div class="analysis-card" onclick="openEarningsModal(${idx})">
+                            <div class="analysis-card-header">
+                                <div class="analysis-card-ticker">${e.ticker}</div>
+                                <div class="analysis-card-grade">${e.grade || 'B+'}</div>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                                ${e.date || ''} | Expected Move: ${e.expected_move || 'N/A'}
+                            </div>
+                            <div class="analysis-card-summary">
+                                <strong>Action:</strong> ${e.action || 'Monitor'}<br>
+                                <strong>IV Rank:</strong> ${e.iv_rank || 'N/A'}
+                            </div>
+                        </div>
+                    `).join('')}</div>`
+                    : '<div class="card">No earnings research available</div>';
+        }
+        
+        function filterEarnings() {
+            const searchTerm = document.getElementById('earnings-search').value.toLowerCase();
+            const filtered = earningsData.filter(e =>
+                e.ticker.toLowerCase().includes(searchTerm) ||
+                (e.summary && e.summary.toLowerCase().includes(searchTerm)) ||
+                (e.action && e.action.toLowerCase().includes(searchTerm))
+            );
+            renderEarnings(filtered);
+        }
+        
+        function openEarningsModal(index) {
+            const earnings = earningsData[index];
+            if (!earnings) return;
+
+            document.getElementById('earnings-modal-title').textContent = earnings.ticker + ' Earnings';
+            document.getElementById('earnings-modal-body').innerHTML = formatEarningsText(earnings);
+            document.getElementById('earnings-modal').classList.add('active');
+        }
+        
+        function formatEarningsText(earnings) {
+            const fields = [
+                { label: 'Date', value: earnings.date },
+                { label: 'Expected Move', value: earnings.expected_move },
+                { label: 'Action', value: earnings.action },
+                { label: 'IV Rank', value: earnings.iv_rank },
+                { label: 'Grade', value: earnings.grade },
+                { label: 'Summary', value: earnings.summary }
+            ];
+            
+            let html = '';
+            fields.forEach(field => {
+                if (field.value) {
+                    html += `<div class="form-group">
+                        <label class="form-label">${field.label}</label>
+                        <div style="color: var(--text-primary);">${field.value}</div>
+                    </div>`;
+                }
+            });
+            
+            if (earnings.notes) {
+                html += `<div class="form-group">
+                    <label class="form-label">Notes</label>
+                    <div style="color: var(--text-secondary);">${earnings.notes}</div>
+                </div>`;
+            }
+            
+            return html || '<div class="card">No details available</div>';
+        }
+        
+        function closeEarningsModal(e) {
+            if (!e || e.target.id === 'earnings-modal') {
+                document.getElementById('earnings-modal').classList.remove('active');
             }
         }
         

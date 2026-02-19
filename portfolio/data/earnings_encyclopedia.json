@@ -1,0 +1,567 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-18T23:00:45.495428",
+  "entries": [
+    {
+      "ticker": "CVNA",
+      "company": "Carvana Co.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Today AMC",
+        "market_cap": "$74.6B",
+        "expected_move": "15.5%",
+        "grade": "B-",
+        "recommendation": "Watch",
+        "key_insight": "High implied volatility suggests big move expected, but stock already up significantly YTD (+45%)",
+        "trade_setup": "Strangle: Buy $340 put / $360 call, target 20% return on move >15%",
+        "annualized_return": "85%",
+        "risk_level": "High"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "8/10 - Options imply 15.5% move vs historical 13.3% average",
+          "momentum_score": "6/10 - Stock up 45% YTD but down 8% past month",
+          "fundamental_score": "5/10 - High valuation at 2.5x P/S, improving margins",
+          "sentiment_score": "7/10 - 65% analyst buy ratings, short interest 12%",
+          "technical_score": "6/10 - Trading near 50-day MA, RSI 52 neutral"
+        },
+        "key_insight": "Carvana's implied volatility is elevated due to binary outcome: either continued execution on path to profitability or disappointment from stretched valuation. Historical pattern shows 60% probability of >10% move post-earnings.",
+        "specific_trade_setup": "Strangle: Buy Feb 21 $340 put ($8.50) and $360 call ($9.20). Total cost: $17.70. Breakevens: $322.30 or $377.70 (9.5% move). Target: 20% return if stock moves >15% ($21.24). Annualized return: 85%.",
+        "risk_factors": [
+          "Impact: High - Miss could drop stock 20-30%",
+          "Probability: 40% - Valuation stretched, auto cycle concerns",
+          "Mitigation: Position size 1% of portfolio, defined risk"
+        ],
+        "bottom_line": "High-risk, high-reward earnings play with elevated volatility premium justifying option purchase."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B-",
+          "expected_move": "15.5%",
+          "recommendation": "Watch",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B-",
+          "expected_move": "15.5%",
+          "recommendation": "Watch",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "DASH",
+      "company": "DoorDash, Inc.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Today AMC",
+        "market_cap": "$69.1B",
+        "expected_move": "12.4%",
+        "grade": "C+",
+        "recommendation": "Avoid",
+        "key_insight": "Stock down 22% over past month, last quarter missed EPS estimates, competitive pressures increasing",
+        "trade_setup": "Bear put spread: Buy $125 put / Sell $115 put, target 35% return on decline",
+        "annualized_return": "92%",
+        "risk_level": "Medium-High"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "7/10 - 12.4% implied move, historical average 11.8%",
+          "momentum_score": "4/10 - Down 22% past month, below 200-day MA",
+          "fundamental_score": "5/10 - Revenue growth 24% but margins thin",
+          "sentiment_score": "3/10 - Only 45% analyst buy ratings, recent miss",
+          "technical_score": "4/10 - Bearish trend, support at $120"
+        },
+        "key_insight": "DoorDash faces perfect storm: food delivery growth slowing, grocery/retail expansion costly, and regulatory headwinds. Last quarter's miss (-20% vs estimates) suggests execution challenges.",
+        "specific_trade_setup": "Bear put spread: Buy Feb 21 $125 put ($4.80), sell $115 put ($2.30). Net debit: $2.50. Max profit: $7.50 (300%) if <$115. Target: 35% return. Annualized: 92%.",
+        "risk_factors": [
+          "Impact: Medium - Could rally on cost control improvements",
+          "Probability: 55% - Competitive pressures increasing",
+          "Mitigation: Defined risk spread, 0.75% position size"
+        ],
+        "bottom_line": "Bearish bias justified by deteriorating fundamentals and technical breakdown."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "C+",
+          "expected_move": "12.4%",
+          "recommendation": "Avoid",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "C+",
+          "expected_move": "12.4%",
+          "recommendation": "Avoid",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "EBAY",
+      "company": "eBay Inc.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Today AMC",
+        "market_cap": "$37.2B",
+        "expected_move": "8-10%",
+        "grade": "B",
+        "recommendation": "Watch",
+        "key_insight": "Stable but slow-growth business, advertising revenue growing at 15% YoY",
+        "trade_setup": "Iron condor: Sell $52.50 call / Buy $55 call, Sell $47.50 put / Buy $45 put",
+        "annualized_return": "42%",
+        "risk_level": "Low"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "5/10 - 8-10% expected move, below market average",
+          "momentum_score": "6/10 - Flat YTD, stable business",
+          "fundamental_score": "7/10 - 15% advertising growth, 22% FCF margin",
+          "sentiment_score": "6/10 - 58% analyst hold ratings",
+          "technical_score": "7/10 - Trading in $48-$54 range 6 months"
+        },
+        "key_insight": "eBay's transformation to focused categories and advertising monetization showing results, but growth remains modest vs e-commerce peers. Stable cash flow supports dividend.",
+        "specific_trade_setup": "Iron condor: Sell Feb 21 $52.50 call ($1.20), buy $55 call ($0.40), sell $47.50 put ($1.10), buy $45 put ($0.30). Net credit: $1.60. Max profit: $160 per contract. Annualized: 42%.",
+        "risk_factors": [
+          "Impact: Low - Business model stable",
+          "Probability: 30% - Breakout above range",
+          "Mitigation: Wide $47.50-$52.50 range, 35 delta"
+        ],
+        "bottom_line": "Range-bound earnings play collecting premium in low-volatility environment."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B",
+          "expected_move": "8-10%",
+          "recommendation": "Watch",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B",
+          "expected_move": "8-10%",
+          "recommendation": "Watch",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "RELY",
+      "company": "Remitly Global, Inc.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Today AMC",
+        "market_cap": "$4.5B",
+        "expected_move": "15-20%",
+        "grade": "B+",
+        "recommendation": "Trade",
+        "key_insight": "High-growth fintech in expanding market, revenue growth 32% YoY, reasonable valuation",
+        "trade_setup": "Bull call spread: Buy $17.50 call / Sell $20 call, target 45% return on beat",
+        "annualized_return": "110%",
+        "risk_level": "Medium"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "8/10 - 15-20% expected move for small cap",
+          "momentum_score": "7/10 - Down 6% past month, up 28% YTD",
+          "fundamental_score": "8/10 - 32% revenue growth, improving margins",
+          "sentiment_score": "7/10 - Average PT $19.63 (15% upside)",
+          "technical_score": "6/10 - Testing 50-day MA support"
+        },
+        "key_insight": "Remitly benefits from structural tailwinds: digital remittance adoption, immigrant population growth, and cross-selling opportunities. Valuation reasonable at 3.5x forward sales.",
+        "specific_trade_setup": "Bull call spread: Buy Feb 21 $17.50 call ($1.40), sell $20 call ($0.50). Net debit: $0.90. Max profit: $1.60 (178%) if >$20. Target: 45% return. Annualized: 110%.",
+        "risk_factors": [
+          "Impact: Medium - FX volatility could impact margins",
+          "Probability: 40% - Regulatory changes",
+          "Mitigation: Position size 1.5%, stop at $0.45 debit"
+        ],
+        "bottom_line": "High-growth fintech with reasonable valuation and positive earnings catalyst potential."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B+",
+          "expected_move": "15-20%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B+",
+          "expected_move": "15-20%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$1.03T",
+        "expected_move": "3-5%",
+        "grade": "A-",
+        "recommendation": "Trade",
+        "key_insight": "Defensive play capturing affluent demographic shift, e-commerce growing 18% YoY",
+        "trade_setup": "Cash-secured put: Sell $67.50 put, collect $1.20 premium, 1.8% return in 2 weeks",
+        "annualized_return": "47%",
+        "risk_level": "Low"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "4/10 - 3-5% typical for mega-cap",
+          "momentum_score": "8/10 - Up 12% YTD, near all-time highs",
+          "fundamental_score": "9/10 - 5% revenue growth, 18% e-commerce growth",
+          "sentiment_score": "8/10 - 75% analyst buy ratings",
+          "technical_score": "8/10 - Above all MAs, RSI 58"
+        },
+        "key_insight": "Walmart capturing trade-down from higher-income shoppers while maintaining low-income base. Advertising business ($3B+) growing 30%+ with high margins.",
+        "specific_trade_setup": "Cash-secured put: Sell Feb 28 $67.50 put for $1.20 premium. Return: 1.8% in 10 days. Annualized: 47%. Assignment price: 22x P/E reasonable.",
+        "risk_factors": [
+          "Impact: Low - Defensive business model",
+          "Probability: 20% - Miss on margins",
+          "Mitigation: Willing to own at $66.30 effective price"
+        ],
+        "bottom_line": "High-quality defensive name for premium collection with low risk of catastrophic loss."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "A-",
+          "expected_move": "3-5%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "A-",
+          "expected_move": "3-5%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "LMND",
+      "company": "Lemonade, Inc.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$4.8B",
+        "expected_move": "15-20%",
+        "grade": "C-",
+        "recommendation": "Avoid",
+        "key_insight": "Still unprofitable with -$0.39 EPS expected, insurance underwriting risks remain high",
+        "trade_setup": "Straddle: Buy $22.50 put and call, target 25% return on move >18%",
+        "annualized_return": "65%",
+        "risk_level": "High"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "8/10 - 15-20% typical for unprofitable growth",
+          "momentum_score": "5/10 - Volatile, down 15% past month",
+          "fundamental_score": "3/10 - Negative EPS, underwriting losses",
+          "sentiment_score": "4/10 - Mixed analyst views",
+          "technical_score": "5/10 - No clear trend, $20-$25 range"
+        },
+        "key_insight": "Lemonade's AI claims processing advantage not translating to underwriting profitability. Insurance remains tough business with long loss tail discovery.",
+        "specific_trade_setup": "Straddle: Buy Feb 21 $22.50 put ($1.30) and call ($1.20). Total cost: $2.50. Breakevens: $20 or $25 (11% move). Target: 25% return. Annualized: 65%.",
+        "risk_factors": [
+          "Impact: High - Binary outcome on path to profitability",
+          "Probability: 50% - Continued losses",
+          "Mitigation: Small position size 0.5%"
+        ],
+        "bottom_line": "Pure volatility play on unprofitable insurtech with binary earnings outcome."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "C-",
+          "expected_move": "15-20%",
+          "recommendation": "Avoid",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "C-",
+          "expected_move": "15-20%",
+          "recommendation": "Avoid",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "KLAR",
+      "company": "Klarna Group plc",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$890M",
+        "expected_move": "12-15%",
+        "grade": "B+",
+        "recommendation": "Trade",
+        "key_insight": "Strong growth trajectory with 31% GMV growth, reasonable valuation post-IPO correction",
+        "trade_setup": "Bull call spread: Buy $8.50 call / Sell $10 call, target 50% return",
+        "annualized_return": "120%",
+        "risk_level": "Medium"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "7/10 - 12-15% expected move",
+          "momentum_score": "6/10 - Recovered from IPO lows",
+          "fundamental_score": "7/10 - 31% GMV growth, path to profitability",
+          "sentiment_score": "6/10 - New coverage, limited history",
+          "technical_score": "6/10 - Base building $8-$9"
+        },
+        "key_insight": "Klarna's BNPL model gaining merchant adoption beyond retail into travel/services. European market leadership provides scale advantages over US competitors.",
+        "specific_trade_setup": "Bull call spread: Buy Feb 21 $8.50 call ($0.60), sell $10 call ($0.20). Net debit: $0.40. Max profit: $1.10 (275%) if >$10. Target: 50% return. Annualized: 120%.",
+        "risk_factors": [
+          "Impact: Medium - Regulatory scrutiny on BNPL",
+          "Probability: 35% - Credit losses higher than expected",
+          "Mitigation: Position size 1%, stop at $0.20"
+        ],
+        "bottom_line": "Growth fintech with reasonable valuation and clear path to profitability."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B+",
+          "expected_move": "12-15%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B+",
+          "expected_move": "12-15%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "VC",
+      "company": "Visteon Corporation",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$2.5B",
+        "expected_move": "8-10%",
+        "grade": "B",
+        "recommendation": "Watch",
+        "key_insight": "Auto supplier benefiting from EV transition, but cyclical exposure to auto production",
+        "trade_setup": "Iron butterfly: Sell $122.50 call/put, buy wings at $125/$120",
+        "annualized_return": "38%",
+        "risk_level": "Medium"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "6/10 - 8-10% expected move",
+          "momentum_score": "5/10 - Cyclical auto exposure",
+          "fundamental_score": "6/10 - EV content growth offsetting cyclicality",
+          "sentiment_score": "5/10 - Mixed auto supplier sentiment",
+          "technical_score": "6/10 - Trading near 200-day MA"
+        },
+        "key_insight": "Visteon's digital cockpit and display business benefiting from EV transition (higher content per vehicle), but exposed to auto production cycles.",
+        "specific_trade_setup": "Iron butterfly: Sell Feb 21 $122.50 call ($2.50) and put ($2.40), buy $125 call ($1.20) and $120 put ($1.10). Net credit: $2.60. Max profit: $260 per contract. Annualized: 38%.",
+        "risk_factors": [
+          "Impact: Medium - Auto production cyclicality",
+          "Probability: 40% - EV transition slower than expected",
+          "Mitigation: Wide $120-$125 wings"
+        ],
+        "bottom_line": "Auto supplier with EV exposure but cyclical risks warrant neutral strategy."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B",
+          "expected_move": "8-10%",
+          "recommendation": "Watch",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B",
+          "expected_move": "8-10%",
+          "recommendation": "Watch",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "W",
+      "company": "Wayfair Inc.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$10.8B",
+        "expected_move": "12-15%",
+        "grade": "C+",
+        "recommendation": "Avoid",
+        "key_insight": "Furniture retail cyclical, high shipping costs pressure margins, competition intense",
+        "trade_setup": "Bear put spread: Buy $62.50 put / Sell $57.50 put",
+        "annualized_return": "55%",
+        "risk_level": "Medium-High"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "7/10 - 12-15% expected move",
+          "momentum_score": "4/10 - Down 18% past month",
+          "fundamental_score": "5/10 - Revenue declining, negative margins",
+          "sentiment_score": "3/10 - Only 30% analyst buy ratings",
+          "technical_score": "4/10 - Below all MAs, support at $60"
+        },
+        "key_insight": "Wayfair faces perfect storm: housing slowdown reducing furniture demand, high shipping costs, and intense competition from Amazon/Target.",
+        "specific_trade_setup": "Bear put spread: Buy Feb 21 $62.50 put ($2.80), sell $57.50 put ($1.40). Net debit: $1.40. Max profit: $3.60 (257%) if <$57.50. Target: 55% return. Annualized: 55%.",
+        "risk_factors": [
+          "Impact: Medium - Could bounce on cost cutting",
+          "Probability: 60% - Cyclical downturn in furniture",
+          "Mitigation: Defined risk, 0.5% position size"
+        ],
+        "bottom_line": "Bearish play on cyclical furniture retailer facing multiple headwinds."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "C+",
+          "expected_move": "12-15%",
+          "recommendation": "Avoid",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "C+",
+          "expected_move": "12-15%",
+          "recommendation": "Avoid",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "DAVA",
+      "company": "Endava plc",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$294M",
+        "expected_move": "15-20%",
+        "grade": "B-",
+        "recommendation": "Trade",
+        "key_insight": "IT services company with 22% revenue growth, trading at reasonable valuation",
+        "trade_setup": "Bull call spread: Buy $32.50 call / Sell $35 call",
+        "annualized_return": "85%",
+        "risk_level": "Medium"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "8/10 - 15-20% small cap move expected",
+          "momentum_score": "6/10 - Recovered from lows, up 15% YTD",
+          "fundamental_score": "7/10 - 22% revenue growth, 15% EBITDA margin",
+          "sentiment_score": "6/10 - Limited coverage, average PT $36",
+          "technical_score": "6/10 - Trading in $30-$34 range"
+        },
+        "key_insight": "Endava benefits from digital transformation spending, particularly in financial services and healthcare. Reasonable valuation at 18x forward earnings.",
+        "specific_trade_setup": "Bull call spread: Buy Feb 21 $32.50 call ($1.80), sell $35 call ($0.80). Net debit: $1.00. Max profit: $1.50 (150%) if >$35. Target: 85% return. Annualized: 85%.",
+        "risk_factors": [
+          "Impact: Medium - IT spending cyclical",
+          "Probability: 35% - Client concentration risk",
+          "Mitigation: Position size 1%, stop at $0.50"
+        ],
+        "bottom_line": "Quality IT services play with growth at reasonable price."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B-",
+          "expected_move": "15-20%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B-",
+          "expected_move": "15-20%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    },
+    {
+      "ticker": "NICE",
+      "company": "NICE Ltd.",
+      "last_research_date": "2026-02-18",
+      "summary": {
+        "earnings_time": "Tomorrow BMO",
+        "market_cap": "$6.7B",
+        "expected_move": "6-8%",
+        "grade": "B+",
+        "recommendation": "Trade",
+        "key_insight": "Cloud contact center software leader, 18% recurring revenue growth, strong margins",
+        "trade_setup": "Cash-secured put: Sell $87.50 put, collect $2.10 premium",
+        "annualized_return": "52%",
+        "risk_level": "Low"
+      },
+      "detailed_analysis": {
+        "component_analysis": {
+          "volatility_score": "5/10 - 6-8% expected move",
+          "momentum_score": "7/10 - Up 20% YTD, near highs",
+          "fundamental_score": "8/10 - 18% recurring revenue growth, 25% EBITDA margin",
+          "sentiment_score": "7/10 - 68% analyst buy ratings",
+          "technical_score": "8/10 - Above all MAs, RSI 62"
+        },
+        "key_insight": "NICE's cloud contact center software benefiting from AI integration and digital customer service transformation. High retention rates (90%+) and upselling opportunities.",
+        "specific_trade_setup": "Cash-secured put: Sell Feb 28 $87.50 put for $2.10 premium. Return: 2.4% in 10 days. Annualized: 52%. Assignment price: 25x P/E reasonable for growth.",
+        "risk_factors": [
+          "Impact: Low - Recurring revenue model stable",
+          "Probability: 25% - Competition from startups",
+          "Mitigation: Willing to own at $85.40 effective price"
+        ],
+        "bottom_line": "High-quality SaaS business for premium collection with defensive characteristics."
+      },
+      "historical_entries": [
+        {
+          "research_date": "2026-02-18",
+          "grade": "B+",
+          "expected_move": "6-8%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        },
+        {
+          "research_date": "2026-02-18",
+          "grade": "B+",
+          "expected_move": "6-8%",
+          "recommendation": "Trade",
+          "actual_move": "",
+          "outcome": ""
+        }
+      ]
+    }
+  ]
+}

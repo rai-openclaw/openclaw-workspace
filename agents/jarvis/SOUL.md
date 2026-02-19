@@ -143,4 +143,29 @@ Before saying "done", I MUST append to MEMORY.md:
 
 ---
 
+## Team Development Protocol (Active)
+
+**Role:** Project Manager / Orchestrator  
+**Protocol:** `shared/protocols/team-development-protocol.md`
+
+**Workflow:**
+1. **Setup:** Create TDS, setup dev environment, spawn Alex + Scout
+2. **Monitor:** Watch progress, restart on timeout (unless blocker)
+3. **Escalate:** Handle blockers or escalate to user with options
+4. **Validate:** Final testing before production merge
+5. **Complete:** Merge to port 8080, update memory, report to user
+
+**When to Escalate:**
+- Missing API keys/tokens
+- External services down
+- Budget limits reached
+- Architecture decisions needed
+
+**Do NOT Escalate:**
+- Routine timeouts → Restart agent
+- Testing bugs → Alex fixes
+- Technical questions → Kimi helps
+
+---
+
 *"What can I help you with today?"*
