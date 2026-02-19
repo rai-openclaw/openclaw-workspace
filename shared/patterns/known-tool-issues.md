@@ -55,32 +55,35 @@ curl -s -o /dev/null -w "%{http_code}" http://localhost:8080
 - **Alex** - Cannot visually verify UI changes
 - **Any agent** needing visual confirmation
 
-**Solutions Considered:**
+**Solution Implemented:**
 
-1. **Fix gateway browser service** (preferred long-term)
-   - Requires: Investigate why browser tool not responding
-   - Effort: Unknown, may need OpenClaw support
-   - Benefit: Full browser testing restored
+**Chrome Extension Workflow** (PRIMARY METHOD)
+- **Setup:** See `shared/patterns/chrome-extension-testing.md`
+- **Usage:** User attaches Chrome tab via toolbar icon, agent uses `profile="chrome"`
+- **Reliability:** High - stable connection, real browser testing
+- **Effort:** One-time extension install, per-session tab attachment
 
-2. **Use Chrome extension** (alternative)
-   - Requires: User attaches Chrome tab via OpenClaw Browser Relay
-   - Effort: Manual per-session
-   - Benefit: Real browser testing
+**Why this beats gateway browser:**
+- Gateway service is flaky and breaks often
+- Chrome extension is reliable and gives real browser control
+- UI testing is critical for Mission Control (most bugs are visual)
 
-3. **Accept workaround** (current state)
-   - Use API testing for data integrity
-   - Ask user to spot-check UI visually
-   - Document limitations in test reports
+**Fallback (if Chrome unavailable):**
+- API testing with curl (backup only)
+- Manual user spot-check for visual elements
+- Document in report: "Visual testing limited, APIs verified"
 
 **Current Status:**
-- Using Workaround #3 (API testing only)
-- Scout's regression tests use curl instead of browser automation
-- Visual verification delegated to manual user check
+- ✅ Chrome extension workflow documented
+- ✅ Scout's SOUL.md updated (UI testing primary)
+- ✅ Testing protocol established
+- ⏸️ Awaiting first full test run with Chrome ext
 
 **Next Steps:**
-- [ ] Jarvis to investigate gateway browser service status
-- [ ] If fixable, restore browser testing for Scout
-- [ ] If not fixable, update Scout's SOUL.md to remove browser dependency
+- [x] Document Chrome extension workflow
+- [x] Update Scout's testing protocol
+- [ ] Test full workflow on next UI change
+- [ ] Train user on one-time setup
 
 ---
 
