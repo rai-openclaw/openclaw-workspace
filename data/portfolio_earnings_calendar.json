@@ -1,0 +1,17 @@
+{
+  "last_updated": "2026-02-18T14:15:00",
+  "next_update": "2026-02-23T18:00:00",
+  "unconfirmed": [],
+  "confirmed": {
+    "CAKE": {
+      "date": "2026-02-18",
+      "time": "AMC",
+      "confirmed_date": "2026-02-10",
+      "source": "finnhub"
+    }
+  },
+  "within_30_days": ["CAKE"],
+  "within_7_days": ["CAKE"],
+  "today": ["CAKE"],
+  "tomorrow": []
+}

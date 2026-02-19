@@ -1,0 +1,43 @@
+   - Expiration: Weekly (Feb 28)
+   - Expected Return: 1.5-2.5% premium for 7-10 day trade
+   - Reason: Stable software business with 7-9% EM, high probability
+
+3. CVNA - STRADDLE
+   - Strategy: Buy both calls and puts
+   - Strikes: Buy $350 call and $350 put
+   - Expiration: Weekly (Feb 28)
+   - Expected Return: Breakeven at ±15.5% move, profit beyond
+   - Reason: High IV (15.5% EM), binary outcome likely
+
+4. DASH - STRADDLE
+   - Strategy: Buy both calls and puts
+   - Strikes: Buy $165 call and $165 put
+   - Expiration: Weekly (Feb 28)
+   - Expected Return: Breakeven at ±12.1% move, profit beyond
+   - Reason: Extreme volatility expected (±19.93 points), high IVR
+
+AVOID LIST
+==========
+
+1. KLAR
+   - Reason: Extreme risk - down 56% since IPO, 37.6% decline in 30 days, business model challenges, regulatory scrutiny. IV too high even for premium selling.
+
+2. LMND
+   - Reason: High binary risk as unprofitable insurer. Catastrophe losses unpredictable. Better to wait for profitability trajectory to improve.
+
+3. EBAY
+   - Reason: Too low volatility for meaningful options strategies. Better for stock ownership or covered calls than earnings plays.
+
+SUMMARY
+=======
+
+February 18-19 earnings present mixed opportunities:
+- WMT and NICE offer high-probability iron condor plays with their stable businesses and low expected moves
+- CVNA and DASH provide high-volatility straddle opportunities given their elevated IV and binary outcomes
+- KLAR should be avoided due to extreme risk profile
+- Overall market expecting significant moves in growth names (CVNA, DASH, RELY) while established companies (WMT, NICE, EBAY) show stability
+
+Report Generated: February 18, 2026
+Analysis Period: Q4 2025 Earnings
+Next Earnings Dates: Today AMC (Feb 18): CVNA, DASH, EBAY, RELY
+                    Tomorrow BMO (Feb 19): WMT, LMND, KLAR, VC, W, DAVA, NICE

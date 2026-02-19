@@ -1,0 +1,130 @@
+{
+  "protocol_version": "3.1",
+  "simulation_date": "2026-02-17",
+  "target_earnings_date": "2026-02-18",
+  "generated_at": "2026-02-17T14:49:40.029027",
+  "execution_summary": {
+    "phase1_loaded": 9,
+    "phase2_passed": 9,
+    "phase3_passed": 3,
+    "final_watchlist_count": 3,
+    "success_rate": "3/9 (33.3%)"
+  },
+  "phase_details": {
+    "phase1": {
+      "description": "Data extraction & validation",
+      "input_file": "weekly_earnings_schedule.json",
+      "stocks_loaded": 9,
+      "time_slot": "AMC"
+    },
+    "phase2": {
+      "description": "Sector filter application",
+      "filter_applied": "Sector filter (exclude REITs, Utilities, Consumer Staples)",
+      "stocks_passed": 9,
+      "stocks_excluded": 0,
+      "always_include_bypass": "None"
+    },
+    "phase3": {
+      "description": "Fundamental screening",
+      "criteria": {
+        "min_market_cap": 1.0,
+        "max_debt_to_equity": 2.0,
+        "min_revenue_growth": 0.05,
+        "max_volatility": 0.4,
+        "min_analyst_coverage": 3
+      },
+      "stocks_screened": 9,
+      "stocks_passed": 3,
+      "stocks_failed": 6,
+      "failure_reasons": [
+        "KGC: Revenue growth -9.2% < 5.0%",
+        "CVNA: Debt/Equity 2.79 > 2.0, Revenue growth 4.8% < 5.0%, Volatility 47.2% > 40.0%",
+        "DASH: Volatility 49.4% > 40.0%",
+        "RGLD: Debt/Equity 2.27 > 2.0",
+        "EBAY: Analyst coverage 1 < 3",
+        "RELY: Debt/Equity 2.84 > 2.0, Revenue growth -9.5% < 5.0%, Analyst coverage 1 < 3"
+      ]
+    },
+    "phase4": {
+      "description": "Final selection & reporting",
+      "watchlist": [
+        {
+          "ticker": "EQX",
+          "rank": 8.5,
+          "sentiment": "positive",
+          "catalyst": "production guidance",
+          "earnings_time": "AMC",
+          "priority": "High",
+          "notes": "Passed all fundamental screens. production guidance."
+        },
+        {
+          "ticker": "CDE",
+          "rank": 8.2,
+          "sentiment": "positive",
+          "catalyst": "gold price surge",
+          "earnings_time": "AMC",
+          "priority": "High",
+          "notes": "Passed all fundamental screens. gold price surge."
+        },
+        {
+          "ticker": "PAAS",
+          "rank": 7.8,
+          "sentiment": "neutral",
+          "catalyst": "silver demand",
+          "earnings_time": "AMC",
+          "priority": "Medium",
+          "notes": "Passed all fundamental screens. silver demand."
+        }
+      ],
+      "selection_criteria": "Ranked by momentum score, sentiment, and catalyst strength"
+    }
+  },
+  "final_watchlist": [
+    {
+      "ticker": "EQX",
+      "rank": 8.5,
+      "sentiment": "positive",
+      "catalyst": "production guidance",
+      "earnings_time": "AMC",
+      "priority": "High",
+      "notes": "Passed all fundamental screens. production guidance."
+    },
+    {
+      "ticker": "CDE",
+      "rank": 8.2,
+      "sentiment": "positive",
+      "catalyst": "gold price surge",
+      "earnings_time": "AMC",
+      "priority": "High",
+      "notes": "Passed all fundamental screens. gold price surge."
+    },
+    {
+      "ticker": "PAAS",
+      "rank": 7.8,
+      "sentiment": "neutral",
+      "catalyst": "silver demand",
+      "earnings_time": "AMC",
+      "priority": "Medium",
+      "notes": "Passed all fundamental screens. silver demand."
+    }
+  ],
+  "audit_log": {
+    "files_generated": [
+      "weekly_earnings_schedule.json",
+      "always_include_list.json",
+      "phase2_filter_results.json",
+      "phase3_screening_results.json",
+      "sector_classification_sim.py",
+      "fundamental_screening_sim.py",
+      "phase4_final_selection.py"
+    ],
+    "checkpoints_completed": [
+      "Phase 1: Data validation",
+      "Phase 2: Sector filter applied",
+      "Phase 3: Fundamental screening completed",
+      "Phase 4: Final watchlist created"
+    ],
+    "protocol_compliance": "Full v3.1 protocol followed",
+    "simulation_notes": "Sector data and fundamental data simulated for demonstration"
+  }
+}

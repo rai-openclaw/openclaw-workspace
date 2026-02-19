@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Tree Dashboard Test</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-hover: #252532;
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent: #3b82f6;
+            --border: #27272a;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        
+        /* Org Chart Styles - Enhanced Tree Visualization */
+        .org-tree { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 2rem; 
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .org-level { 
+            display: flex; 
+            justify-content: center; 
+            gap: 2rem; 
+            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
+        }
+        
+        .org-level::before {
+            content: '';
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 1rem;
+            background: var(--border);
+            display: block;
+        }
+        
+        .org-level:first-child::before {
+            display: none;
+        }
+        
+        .org-connector { 
+            width: 2px; 
+            height: 1rem; 
+            background: var(--border);
+            margin: 0 auto;
+        }
+        
+        .org-card { 
+            background: var(--bg-card); 
+            border: 2px solid var(--role-color, var(--accent)); 
+            border-radius: 12px; 
+            padding: 1.25rem; 
+            width: 280px;
+            max-width: 280px;
+            position: relative;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1;
+        }
+        
+        .org-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        .org-card.ceo {
+            --role-color: #FFD700;
+            border-width: 3px;
+        }
+        
+        .org-card.c-suite {
+            --role-color: #3b82f6;
+        }
+        
+        .org-card.division {
+            --role-color: #10b981;
+        }
+        
+        .org-card.team-member {
+            --role-color: var(--text-secondary);
+        }
+        
+        .org-card-header { 
+            display: flex; 
+            align-items: center; 
+            gap: 0.75rem; 
+            margin-bottom: 0.75rem; 
+        }
+        
+        .org-card-avatar { 
+            font-size: 1.75rem; 
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-primary);
+            border-radius: 50%;
+            border: 2px solid var(--role-color, var(--accent));
+        }
+        
+        .org-card h3 { 
+            margin: 0; 
+            font-size: 1.125rem; 
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .org-card-role { 
+            font-size: 0.875rem; 
+            color: var(--role-color, var(--accent)); 
+            font-weight: 500;
+            margin-top: 0.25rem;
+        }
+        
+        .org-card-body { 
+            font-size: 0.875rem; 
+            color: var(--text-secondary); 
+            line-height: 1.5;
+        }
+        
+        .org-card-status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-top: 0.75rem;
+        }
+        
+        .org-card-status.active {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+        
+        .org-card-status.on-call {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+        
+        .org-card-status.on-demand {
+            background: rgba(168, 85, 247, 0.2);
+            color: #a855f7;
+        }
+        
+        .org-legend { 
+            display: flex; 
+            gap: 1.5rem; 
+            margin-top: 2rem; 
+            justify-content: center; 
+            font-size: 0.875rem;
+            flex-wrap: wrap;
+        }
+        
+        .org-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .org-legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .org-level {
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            
+            .org-card {
+                width: 100% !important;
+                max-width: 340px;
+            }
+            
+            .org-legend {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Corporate Structure Tree Dashboard Test</h1>
+    <p>Testing the corporate tree rendering with actual API data...</p>
+    
+    <div id="corporate-content">
+        <div class="loading">Loading corporate data...</div>
+    </div>
+    
+    <script>
+        async function loadCorporate() {
+            try {
+                const response = await fetch('http://localhost:8080/api/corporate');
+                const data = await response.json();
+                
+                // Build hierarchical tree visualization
+                let html = '<div class="org-tree">';
+                
+                // Level 1: CEO
+                if (data.ceo) {
+                    html += `
+                        <div class="org-level">
+                            <div class="org-card ceo">
+                                <div class="org-card-header">
+                                    <div class="org-card-avatar">👑</div>
+                                    <div>
+                                        <h3>${data.ceo.name}</h3>
+                                        <div class="org-card-role">${data.ceo.role}</div>
+                                        <div class="org-card-status active">Active</div>
+                                    </div>
+                                </div>
+                                <div class="org-card-body">
+                                    <p><strong>Responsibilities:</strong> ${data.ceo.responsibilities || 'Final decisions, Trading strategy, Oversight, Goal setting'}</p>
+                                    <p><strong>Type:</strong> ${data.ceo.type || 'Human'}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-connector"></div>
+                    `;
+                }
+                
+                // Level 2: C-Suite
+                if (data.c_suite && data.c_suite.length) {
+                    html += `
+                        <div class="org-level">
+                            ${data.c_suite.map(member => `
+                                <div class="org-card c-suite">
+                                    <div class="org-card-header">
+                                        <div class="org-card-avatar">⭐</div>
+                                        <div>
+                                            <h3>${member.name}</h3>
+                                            <div class="org-card-role">${member.role}</div>
+                                            <div class="org-card-status active">${member.status || 'Active'}</div>
+                                        </div>
+                                    </div>
+                                    <div class="org-card-body">
+                                        <p><strong>Responsibilities:</strong> ${member.responsibilities || 'Daily coordination, Task management, Morning & evening briefs, User interface'}</p>
+                                        <p><strong>Type:</strong> ${member.type || 'AI Agent'}</p>
+                                        ${member.model ? `<p><strong>Model:</strong> ${member.model}</p>` : ''}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="org-connector"></div>
+                    `;
+                }
+                
+                // Level 3: Divisions
+                if (data.divisions && data.divisions.length) {
+                    html += `
+                        <div class="org-level">
+                            ${data.divisions.map(division => `
+                                <div class="org-card division">
+                                    <div class="org-card-header">
+                                        <div class="org-card-avatar">🏢</div>
+                                        <div>
+                                            <h3>${division.name}</h3>
+                                            <div class="org-card-role">Division</div>
+                                        </div>
+                                    </div>
+                                    <div class="org-card-body">
+                                        <p><strong>Lead:</strong> ${division.lead}</p>
+                                        <p><strong>Team Size:</strong> ${division.members ? division.members.length : 0} member${division.members && division.members.length !== 1 ? 's' : ''}</p>
+                                        <p><strong>Members:</strong> ${division.members ? division.members.map(m => m.name).join(', ') : 'None'}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="org-connector"></div>
+                    `;
+                }
+                
+                // Level 4: Team Members (flattened from divisions)
+                const allTeamMembers = [];
+                if (data.divisions && data.divisions.length) {
+                    data.divisions.forEach(division => {
+                        if (division.members && division.members.length) {
+                            division.members.forEach(member => {
+                                allTeamMembers.push({
+                                    ...member,
+                                    division: division.name
+                                });
+                            });
+                        }
+                    });
+                }
+                
+                if (allTeamMembers.length > 0) {
+                    html += `
+                        <div class="org-level">
+                            ${allTeamMembers.map(member => {
+                                let statusClass = 'active';
+                                let statusText = member.status || 'Active';
+                                if (member.status && member.status.toLowerCase().includes('on-call')) {
+                                    statusClass = 'on-call';
+                                } else if (member.status && member.status.toLowerCase().includes('on-demand')) {
+                                    statusClass = 'on-demand';
+                                }
+                                
+                                let avatar = '👤';
+                                if (member.role && member.role.toLowerCase().includes('research')) avatar = '📈';
+                                else if (member.role && member.role.toLowerCase().includes('developer')) avatar = '💻';
+                                else if (member.role && member.role.toLowerCase().includes('assistant')) avatar = '📋';
+                                else if (member.role && member.role.toLowerCase().includes('project')) avatar = '🚀';
+                                
+                                return `
+                                    <div class="org-card team-member">
+                                        <div class="org-card-header">
+                                            <div class="org-card-avatar">${avatar}</div>
+                                            <div>
+                                                <h3>${member.name}</h3>
+                                                <div class="org-card-role">${member.role}</div>
+                                                <div class="org-card-status ${statusClass}">${statusText}</div>
+                                            </div>
+                                        </div>
+                                        <div class="org-card-body">
+                                            <p><strong>Division:</strong> ${member.division}</p>
+                                            ${member.responsibilities ? `<p><strong>Responsibilities:</strong> ${member.responsibilities}</p>` : ''}
+                                            <p><strong>Type:</strong> ${member.type || 'AI Agent'}</p>
+                                            ${member.model ? `<p><strong>Model:</strong> ${member.model}</p>` : ''}
+                                            ${member.schedule ? `<p><strong>Schedule:</strong> ${member.schedule}</p>` : ''}
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    `;
+                }
+                
+                html += '</div>'; // Close org-tree
+                
+                // Add legend
+                html += `
+                    <div class="org-legend">
+                        <div class="org-legend-item"><div class="org-legend-color" style="background: #FFD700;"></div><span style="color:var(--text-secondary)">CEO</span></div>
+                        <div class="org-legend-item"><div class="org-legend-color" style="background: #3b82f6;"></div><span style="color:var(--text-secondary)">C-Suite</span></div>
+                        <div class="org-legend-item"><div class="org-legend-color" style="background: #10b981;"></div><span style="color:var(--text-secondary)">Division</span></div>
+                        <div class="org-legend-item"><div class="org-legend-color" style="background: var(--text-secondary);"></div><span style="color:var(--text-secondary)">Team Member</span></div>
+                    </div>
+                `;
+                
+                document.getElementById('corporate-content').innerHTML = html;
+            } catch (e) { 
+                document.getElementById('corporate-content').innerHTML = '<div class="card">Error loading corporate data: ' + e.message + '</div>'; 
+            }
+        }
+        
+        // Load corporate data
+        loadCorporate();
+    </script>
+</body>
+</html>

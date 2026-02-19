@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "DDOG",
+    "strategy": "Cash-Secured Put",
+    "entry": "Strike: $85.00, Premium: $2.00",
+    "exit": "CLOSED",
+    "pnl": null,
+    "notes": "BUY 9 contracts | Exp: 2/13/26 | Source: Robinhood",
+    "date": "Fri, 13 Feb 2026 08:07:56 -0800",
+    "broker": "Robinhood"
+  },
+  {
+    "ticker": "MANUAL_REVIEW",
+    "strategy": "See Schwab.com",
+    "entry": "Login to schwab.com/reports",
+    "exit": null,
+    "pnl": null,
+    "notes": "Schwab trade confirmation available | Fwd: Schwab Trade Confirmation eNotification account ending in 861",
+    "date": "Fri, 13 Feb 2026 08:15:04 -0800",
+    "broker": "Schwab"
+  }
+]

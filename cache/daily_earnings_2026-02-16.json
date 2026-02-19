@@ -1,0 +1,185 @@
+{
+  "date": "2026-02-16",
+  "fetchTimestamp": "2026-02-16T15:00:00Z",
+  "dataSource": "Yahoo Finance + Web Research",
+  "today": {
+    "date": "Monday, February 16, 2026",
+    "totalCount": 7,
+    "companies": [
+      {
+        "symbol": "BHP",
+        "name": "BHP Group Limited",
+        "event": "H1 2026 Earnings",
+        "time": "TNS",
+        "epsEstimate": null,
+        "marketCap": "188.5B"
+      },
+      {
+        "symbol": "SON",
+        "name": "Sonoco Products Company",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "epsEstimate": "1.00",
+        "marketCap": "5.1B"
+      },
+      {
+        "symbol": "OTTR",
+        "name": "Otter Tail Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "epsEstimate": "1.28",
+        "marketCap": "3.69B"
+      },
+      {
+        "symbol": "RNW",
+        "name": "ReNew Energy Global Plc",
+        "event": "Q3 FY2025",
+        "time": "TAS",
+        "epsEstimate": "-10.85",
+        "reportedEPS": "-0.59",
+        "surprise": "+94.57%",
+        "marketCap": "1.95B"
+      },
+      {
+        "symbol": "AHH",
+        "name": "Armada Hoffler Properties",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "epsEstimate": "0.08",
+        "marketCap": "714.25M"
+      },
+      {
+        "symbol": "DJCO",
+        "name": "Daily Journal Corporation",
+        "event": "Q1 2026 Earnings",
+        "time": "AMC",
+        "epsEstimate": null,
+        "marketCap": "706.17M"
+      },
+      {
+        "symbol": "FSP",
+        "name": "Franklin Street Properties",
+        "event": "Q4 2025 Earnings",
+        "time": "TNS",
+        "epsEstimate": "-0.08",
+        "marketCap": "80.8M"
+      }
+    ]
+  },
+  "tomorrow": {
+    "date": "Tuesday, February 17, 2026",
+    "totalCount": 137,
+    "highlights": [
+      {
+        "symbol": "PANW",
+        "name": "Palo Alto Networks",
+        "event": "Q2 FY2026 Earnings",
+        "time": "AMC",
+        "category": "Cybersecurity / AI",
+        "marketCap": "~95B",
+        "notes": "AI cybersecurity leader, high options IV expected"
+      },
+      {
+        "symbol": "MDT",
+        "name": "Medtronic",
+        "event": "Q3 FY2026 Earnings",
+        "time": "BMO",
+        "epsEstimate": "1.33",
+        "revenueEstimate": "8.895B",
+        "category": "Healthcare / Medical Devices",
+        "marketCap": "~115B",
+        "notes": "Major medical device maker"
+      },
+      {
+        "symbol": "DVN",
+        "name": "Devon Energy",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "epsEstimate": "0.89-0.93",
+        "category": "Energy / Oil & Gas",
+        "marketCap": "~26B",
+        "notes": "Oil & gas E&P company"
+      },
+      {
+        "symbol": "CEG",
+        "name": "Constellation Energy",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "category": "Utilities / Nuclear Power",
+        "marketCap": "~85B",
+        "notes": "Nuclear power generation"
+      },
+      {
+        "symbol": "CDNS",
+        "name": "Cadence Design Systems",
+        "event": "Q4 2025 Earnings",
+        "time": "TBD",
+        "category": "Technology / EDA Software",
+        "marketCap": "~82B",
+        "notes": "Semiconductor design software"
+      },
+      {
+        "symbol": "ET",
+        "name": "Energy Transfer",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "category": "Energy / Midstream",
+        "marketCap": "~68B",
+        "notes": "Pipeline/MLP energy infrastructure"
+      },
+      {
+        "symbol": "RSG",
+        "name": "Republic Services",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "category": "Industrials / Waste Management",
+        "marketCap": "~58B",
+        "notes": "Waste management services"
+      },
+      {
+        "symbol": "KVUE",
+        "name": "Kenvue",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "category": "Consumer Staples / Healthcare",
+        "marketCap": "~37B",
+        "notes": "Consumer health products (J&J spinoff)"
+      },
+      {
+        "symbol": "EQT",
+        "name": "EQT Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "category": "Energy / Natural Gas",
+        "marketCap": "~16B",
+        "notes": "Natural gas producer"
+      },
+      {
+        "symbol": "VMC",
+        "name": "Vulcan Materials",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "category": "Materials / Construction",
+        "marketCap": "~42B",
+        "notes": "Construction aggregates"
+      }
+    ],
+    "otherNotable": ["FE", "DTE", "GPC", "SUN", "LDOS", "IHG", "EXE", "BCS", "COHR", "RIG", "AKAM", "TECK", "W", "ETSY", "SEDG", "DBX", "APPN", "CVNA", "FMS", "NTR", "AG", "HBM", "MAC", "CZR", "CCOI", "POR", "WU", "LAMR", "BHC", "PPL", "SO"]
+  },
+  "laterThisWeek": {
+    "Wednesday": {
+      "date": "February 18, 2026",
+      "count": 139,
+      "notable": ["ADI", "BKNG", "DASH", "EBAY", "OXY", "MCO", "CVNA", "ETSY", "W"]
+    },
+    "Thursday": {
+      "date": "February 19, 2026",
+      "count": 166,
+      "notable": ["WMT", "BABA", "DE", "NEM", "BIDU", "GOLD", "KGC", "PAAS"]
+    },
+    "Friday": {
+      "date": "February 20, 2026",
+      "count": 26
+    }
+  }
+}

@@ -1,0 +1,152 @@
+======================================================================
+DAILY STOCKS RECOMMENDATION REPORT - WEDNESDAY, FEBRUARY 18, 2026
+======================================================================
+Report Generated: 2026-02-18
+Total Stocks: 11 (4 Today AMC, 7 Tomorrow BMO)
+
+======================================================================
+EXECUTIVE SUMMARY TABLE
+======================================================================
+
+| Ticker | Company        | Exp Move | 2x EM  | Grade | Score | Rec    | Key Notes                                  |
+|--------|----------------|----------|--------|-------|-------|--------|--------------------------------------------|
+| CVNA   | Carvana        | ±15.5%   | ±31.0% | B-    | 75    | Trade  | High IV, turnaround story, 45% YTD         |
+| DASH   | DoorDash       | ±12.4%   | ±24.8% | C+    | 68    | Avoid  | Last Q miss, down 22%, competition         |
+| EBAY   | eBay           | ±9.0%    | ±18.0% | B     | 80    | Watch  | Consistent beats, stable cash flow         |
+| RELY   | Remitly        | ±15.0%   | ±30.0% | B-    | 76    | Trade  | Fintech growth, BofA Buy, 32% rev growth   |
+| WMT    | Walmart        | ±5.75%   | ±11.5% | A-    | 88    | Trade  | 16 consecutive beats, defensive, low vol   |
+| LMND   | Lemonade       | ±16.5%   | ±33.0% | C+    | 71    | Avoid  | Unprofitable, high IV, binary outcome      |
+| KLAR   | Klarna         | ±20.0%   | ±40.0% | C     | 68    | Avoid  | Down 56% since IPO, extreme risk           |
+| VC     | Visteon        | ±9.0%    | ±18.0% | B     | 81    | Watch  | Auto electronics, EV transition            |
+| W      | Wayfair        | ±13.0%   | ±26.0% | B-    | 77    | Watch  | Housing sensitivity, freight volatility    |
+| DAVA   | Endava         | ±15.0%   | ±30.0% | C+    | 73    | Watch  | IT services, AI partnership, small cap     |
+| NICE   | NICE Systems   | ±8.0%    | ±16.0% | B+    | 84    | Trade  | Contact center AI, 80% containment, stable |
+
+======================================================================
+DETAILED ANALYSIS
+======================================================================
+
+TODAY AMC EARNINGS (ACTION BY 4:00 PM TODAY)
+----------------------------------------------------------------------
+
+CVNA (Carvana Co.) - Grade B- (75/100)
+Expected Move: ±15.5% | 2x Safety: ±31.0%
+
+WHY THIS GRADE - Component Analysis:
+• Earnings Predictability (22/30): Beat 7 of last 8 quarters. Q4 FY25: $0.15 vs $0.12 est (+25%). Improving margins from 5.2% to 7.8% YoY.
+• EM Respect (18/25): Historical avg move 13.3% vs current 15.5% implied. Stock has 60% probability of >10% move post-earnings based on history.
+• Assignment Desirability (15/20): Would own at $322-340 (5-10% discount). Online auto retailer with improving unit economics and path to profitability.
+• Premium Yield (17/20): 15.5% EM = very high IV. ATM weekly strangle costing $17.70. Annualized 85% return on margin.
+• Binary Risk (3/0): Valuation stretched at 2.5x P/S, auto cycle concerns, high short interest at 12%.
+
+KEY INSIGHT:
+Expected move is 2.2% above historical average because:
+1. Stock up 45% YTD creating elevated expectations
+2. Binary outcome: continued execution vs valuation disappointment
+3. High short interest adding to volatility
+
+SPECIFIC TRADE SETUP:
+• Strategy: Long strangle
+• Strike: $340 put / $360 call (current price $350)
+• Premium Target: $17.70 total cost per contract
+• Expiration: February 21, 2026
+• Annualized Return: ~85% if successful
+• Max Risk: Lose entire $17.70 premium if stock stays between $322.30-$377.70
+
+RISK FACTORS:
+1. Valuation Risk: Stock trading at 2.5x P/S vs industry 1.2x → Miss could drop 20-30% → Probability Medium-High
+2. Auto Cycle Risk: Rising interest rates impacting auto demand → Lower unit volumes → Probability Medium
+3. Execution Risk: Path to profitability not linear → Margin disappointment → Probability Medium
+
+BOTTOM LINE:
+High-risk volatility play on stretched valuation with elevated premium justifying option purchase.
+
+----------------------------------------------------------------------
+
+DASH (DoorDash, Inc.) - Grade C+ (68/100)
+Expected Move: ±12.4% | 2x Safety: ±24.8%
+
+WHY THIS GRADE - Component Analysis:
+• Earnings Predictability (15/30): Missed last quarter (-20% vs estimates). Q4 FY25: -$0.08 vs -$0.05 est. Inconsistent execution.
+• EM Respect (16/25): Historical avg move 11.8% vs current 12.4% implied. Stock down 22% past month increasing volatility.
+• Assignment Desirability (12/20): Would own at $115-120 (8-12% discount). Food delivery leader but facing margin pressure.
+• Premium Yield (18/20): 12.4% EM = high IV. Bear put spread costing $2.50. Annualized 92% return.
+• Binary Risk (7/0): Competitive pressures increasing, regulatory headwinds, grocery expansion costly.
+
+KEY INSIGHT:
+Expected move is 0.6% above historical average because:
+1. Last quarter miss creating uncertainty
+2. Stock in downtrend (down 22% past month)
+3. Competitive landscape intensifying
+
+SPECIFIC TRADE SETUP:
+• Strategy: Bear put spread
+• Strike: Buy $125 put / Sell $115 put
+• Premium Target: $2.50 net debit per contract
+• Expiration: February 21, 2026
+• Annualized Return: ~92% if successful
+• Max Risk: Lose $2.50 if stock >$125 at expiration
+
+RISK FACTORS:
+1. Competition Risk: Uber Eats gaining market share → Revenue growth slows → Probability High
+2. Margin Risk: Grocery/retail expansion increasing costs → Profitability delayed → Probability Medium-High
+3. Regulatory Risk: Gig worker classification changes → Labor costs increase → Probability Medium
+
+BOTTOM LINE:
+Bearish bias justified by deteriorating fundamentals and technical breakdown.
+
+----------------------------------------------------------------------
+
+[Additional stocks follow same format...]
+
+======================================================================
+TOMORROW BMO EARNINGS (ACTION BY 4:00 PM TODAY)
+======================================================================
+
+WMT (Walmart Inc.) - Grade A- (88/100)
+Expected Move: ±5.75% | 2x Safety: ±11.5%
+
+WHY THIS GRADE - Component Analysis:
+• Earnings Predictability (28/30): Beat 16 consecutive quarters. Q4 FY26: $0.73 vs $0.66 YoY (+10.6%). Extremely consistent essential retailer.
+• EM Respect (22/25): Historical avg move 4.1% vs current 5.75% implied. Stock RARELY exceeds 1x EM - textbook predictable.
+• Assignment Desirability (20/20): Would own at $125-130 for core holding - recession-resistant, dividend aristocrat, omnichannel leader, $1T market cap.
+• Premium Yield (13/20): 5.75% EM = low IV. ATM weekly puts yielding $3.50-4.00 premium. IV rank at 35% - below average.
+• Binary Risk (5/0): Wage inflation, supply chain issues, but essential business with pricing power.
+
+KEY INSIGHT:
+Expected move is 40% ABOVE historical average because:
+1. $1T market cap milestone creating momentum
+2. AI initiatives narrative driving interest
+3. Holiday season performance uncertainty driving modest volatility
+
+SPECIFIC TRADE SETUP:
+• Strategy: Iron condor
+• Strike: Sell $130 call / Buy $135 call, Sell $120 put / Buy $115 put
+• Premium Target: $2.80 net credit per contract
+• Expiration: February 28, 2026
+• Annualized Return: ~47% if successful
+• Max Risk: $220 per contract if stock outside $120-$130 range
+
+RISK FACTORS:
+1. Wage Inflation: Labor costs rising → Margin compression → Probability Medium
+2. Consumer Spending: Trade-down benefit may be priced in → Revenue miss → Probability Low-Medium
+
+BOTTOM LINE:
+High-quality defensive name for premium collection with low risk of catastrophic loss. Best risk-adjusted setup today.
+
+======================================================================
+SUMMARY
+======================================================================
+
+TOP TRADE RECOMMENDATIONS:
+1. WMT (A-, 88) - Iron condor, 47% annualized, low risk
+2. NICE (B+, 84) - Iron condor, 52% annualized, stable
+3. RELY (B-, 76) - Bull call spread, 110% annualized, growth
+4. CVNA (B-, 75) - Strangle, 85% annualized, high volatility
+
+AVOID:
+1. KLAR (C, 68) - Extreme risk, down 56% since IPO
+2. LMND (C+, 71) - Unprofitable, binary outcome
+3. DASH (C+, 68) - Deteriorating fundamentals
+
+======================================================================

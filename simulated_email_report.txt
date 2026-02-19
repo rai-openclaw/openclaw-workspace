@@ -1,0 +1,91 @@
+Subject: Daily Earnings Screener - Wednesday February 18, 2026
+From: Kimi (EA) <openclaw@example.com>
+To: guanwu87@gmail.com
+
+DAILY EARNINGS SCREENER - Wednesday February 18, 2026
+Generated: 6:38 AM PST
+Report Compiled By: Kimi
+Research By: Bob (Senior Earnings Analyst)
+
+================================================================================
+CATEGORY 1: Today AMC (Wednesday Feb 18 After Close)
+Action: Trade TODAY before 4 PM
+================================================================================
+
+| Ticker | Market Cap | Exp Move | 2x Move | Grade | Score | Rec    | Notes |
+|--------|-----------|----------|---------|-------|-------|--------|-------|
+| CVNA   | $74.6B    | ±12.5%   | ±25%    | B-    | 68    | Watch  | High volatility, recent profit growth but history of misses |
+| DASH   | $69.1B    | ±9.8%    | ±19.6%  | B+    | 76    | Trade  | Consistent beats, strong market position, growth stabilizing |
+| EBAY   | $37.2B    | ±6.2%    | ±12.4%  | B     | 72    | Trade  | Mature business, predictable earnings, low volatility |
+| RELY   | $4.5B     | ±14.3%   | ±28.6%  | C+    | 65    | Avoid  | Fintech volatility, last quarter EPS miss, high binary risk |
+
+================================================================================
+CATEGORY 2: Tomorrow BMO (Thursday Feb 19 Before Open)
+Action: Trade TODAY before 4 PM
+================================================================================
+
+| Ticker | Market Cap | Exp Move | 2x Move | Grade | Score | Rec    | Notes |
+|--------|-----------|----------|---------|-------|-------|--------|-------|
+| WMT    | $1,028B   | ±5.4%    | ±10.8%  | A     | 85    | Trade  | Trillion-dollar company, consistent performer, IV ~40% ⭐ |
+| LMND   | $4.8B     | ±16.7%   | ±33.4%  | C     | 58    | Avoid  | Insurtech volatility, 45.6% revenue growth but 38% Sell ratings |
+| KLAR   | $890M     | ±13.5%   | ±27%    | B-    | 67    | Watch  | Marketing automation, raised 2026 guidance but growth slowing |
+| VC     | $2.5B     | ±8.9%    | ±17.8%  | B     | 71    | Trade  | Auto parts supplier, high IV suggests potential trade |
+| W      | $10.8B    | ±11.2%   | ±22.4%  | C+    | 63    | Avoid  | Home furnishings cyclical, history of outside moves |
+| DAVA   | $294M     | ±10.5%   | ±21%    | B-    | 69    | Watch  | IT consulting, Q2 FY2026, multiple industry exposure |
+| NICE   | $6.7B     | ±7.8%    | ±15.6%  | B+    | 77    | Trade  | Enterprise software, consistent performer, CX tech growing |
+
+================================================================================
+TOP RECOMMENDATIONS FOR PUT SELLING
+================================================================================
+
+1. WMT (A, 85/100) - Most stable, good premium, always include
+2. NICE (B+, 77/100) - Consistent, reasonable move, enterprise software
+3. DASH (B+, 76/100) - Strong business, attractive premium
+4. EBAY (B, 72/100) - Low volatility, predictable, good for premium
+5. VC (B, 71/100) - Auto sector exposure, decent premium
+
+================================================================================
+AVOID (High Risk)
+================================================================================
+
+• LMND (C, 58/100) - Too volatile, mixed analyst sentiment
+• W (C+, 63/100) - Consumer discretionary sensitivity
+• RELY (C+, 65/100) - Recent EPS miss, fintech volatility
+
+================================================================================
+AUDIT LOG
+================================================================================
+
+  Weekly schedule: 63 tickers from Earnings Whispers
+  Screener filtered: 19 tickers (Today AMC + Tomorrow BMO)
+  Sector exclusions applied: Basic Materials, Industrials
+  Bob graded: 11 tickers
+  Final report: 11 tickers
+
+  Category 1 (Today AMC): 4 tickers
+  Category 2 (Tomorrow BMO): 7 tickers
+
+  Excluded by sector:
+    - Basic Materials (6): KGC, CDE, PAAS, RGLD, EQX, AG
+    - Industrials (2): PWR, DE
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+  ✓ Earnings Whispers weekly focus list (Feb 16-20, 2026)
+  ✓ Screener: Sector exclusions (REITs, Utilities, Staples, Industrials, Basic Materials)
+  ✓ Bob research: Expected moves, historical accuracy, catalysts
+  ✓ Grading System v3.0 applied:
+    - Earnings Predictability (30 pts)
+    - Expected Move Respect (25 pts)
+    - Assignment Desirability (20 pts)
+    - Premium Yield (20 pts)
+    - Binary Risk (-5 to 0 pts)
+  ✓ Kimi compiled and quality checked
+
+================================================================================
+
+Questions? Reply to this email or message me on Telegram.
+
+- Kimi (EA)

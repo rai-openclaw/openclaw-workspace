@@ -1,0 +1,163 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mission-control.local/schemas/earnings.schema.json",
+  "title": "Earnings Research Entry",
+  "description": "Schema for daily earnings research entries with grades and trading setups",
+  "type": "object",
+  "required": ["ticker", "date", "grade", "action"],
+  "properties": {
+    "ticker": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10,
+      "pattern": "^[A-Z0-9]+$",
+      "description": "Stock ticker symbol (e.g., 'AAPL', 'TSLA')"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Research date / earnings date (YYYY-MM-DD format, e.g., '2026-02-18')"
+    },
+    "grade": {
+      "type": "string",
+      "enum": ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D", "F"],
+      "description": "Trade setup grade based on risk/reward and setup quality"
+    },
+    "action": {
+      "type": "string",
+      "enum": ["PASS", "CONSIDER", "TRADE", "WATCH", "RESEARCH"],
+      "description": "Recommended action: PASS (skip), CONSIDER (maybe), TRADE (execute)"
+    },
+    "expected_move": {
+      "type": "string",
+      "pattern": "^[0-9]+(?:\\.?[0-9]*)%?$",
+      "description": "Expected price move percentage (e.g., '8.5%' or '12')"
+    },
+    "iv_rank": {
+      "type": "string",
+      "pattern": "^[0-9]+\\/?[0-9]*$|^[0-9]+/100$",
+      "description": "Implied volatility rank (e.g., '72/100' or '72')"
+    },
+    "historical_accuracy": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Historical earnings performance (e.g., '3/4 beat, avg move 7.2%')"
+    },
+    "news_summary": {
+      "type": "array",
+      "description": "Key news items affecting the trade",
+      "items": {
+        "type": "object",
+        "required": ["headline", "sentiment"],
+        "properties": {
+          "headline": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "News headline or summary"
+          },
+          "sentiment": {
+            "type": "string",
+            "enum": ["positive", "negative", "neutral", "mixed"],
+            "description": "News sentiment"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 50,
+            "description": "News source (optional)"
+          }
+        }
+      }
+    },
+    "risk_flags": {
+      "type": "array",
+      "description": "Risk factors to consider",
+      "items": {
+        "type": "object",
+        "required": ["flag", "severity"],
+        "properties": {
+          "flag": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "Risk description (e.g., 'Double whammy potential')"
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "critical"],
+            "description": "Risk severity level"
+          }
+        }
+      }
+    },
+    "setup_notes": {
+      "type": "array",
+      "description": "Additional trade setup notes",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "trade_parameters": {
+      "type": "object",
+      "description": "Specific trade parameters if actionable",
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": ["CSP", "CC", "Straddle", "Strangle", "Spread", "Directional", "Skip"],
+          "description": "Options strategy to use"
+        },
+        "strike": {
+          "type": "string",
+          "pattern": "^\\$?[0-9]+\\.?[0-9]*$",
+          "description": "Recommended strike price"
+        },
+        "expiration": {
+          "type": "string",
+          "format": "date",
+          "description": "Option expiration date"
+        },
+        "premium_target": {
+          "type": "string",
+          "pattern": "^\\$?[0-9]+\\.?[0-9]*$",
+          "description": "Target premium to collect"
+        },
+        "max_risk": {
+          "type": "string",
+          "description": "Maximum risk amount"
+        }
+      }
+    },
+    "analyst_expectations": {
+      "type": "object",
+      "description": "Analyst consensus data",
+      "properties": {
+        "eps_estimate": {
+          "type": "number",
+          "description": "Estimated EPS"
+        },
+        "revenue_estimate": {
+          "type": "number",
+          "description": "Estimated revenue in millions"
+        },
+        "whisper_number": {
+          "type": "number",
+          "description": "Whisper number if available"
+        },
+        "beat_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Historical beat rate percentage"
+        }
+      }
+    },
+    "researched_by": {
+      "type": "string",
+      "description": "Analyst who researched this (e.g., 'Bob')"
+    },
+    "researched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when research was completed"
+    }
+  }
+}

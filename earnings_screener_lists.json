@@ -1,0 +1,15 @@
+{
+  "exclude_list": {
+    "description": "Stocks to NEVER include in screener results",
+    "reasons": "Biotech binary events, regulatory risk, personal preference",
+    "stocks": []
+  },
+  "always_include_list": {
+    "description": "Stocks to ALWAYS include if reporting (bypass Tier 1 filters)",
+    "reasons": "High priority watchlist, proven tradeable, assignment desirable",
+    "stocks": []
+  },
+  "version": "1.0",
+  "last_updated": "2026-02-17",
+  "note": "Lists are empty - populate with user-defined tickers"
+}

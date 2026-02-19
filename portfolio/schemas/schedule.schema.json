@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mission-control.local/schemas/schedule.schema.json",
+  "title": "Calendar Events",
+  "description": "Schema for calendar events and schedule tracking",
+  "type": "object",
+  "required": ["events"],
+  "properties": {
+    "events": {
+      "type": "array",
+      "description": "Array of calendar events",
+      "items": { "$ref": "#/definitions/event" }
+    },
+    "recurring_events": {
+      "type": "array",
+      "description": "Recurring schedule patterns",
+      "items": { "$ref": "#/definitions/recurringEvent" }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the schedule was last modified"
+    }
+  },
+  "definitions": {
+    "event": {
+      "type": "object",
+      "required": ["date", "event"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "Unique event identifier"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Event date (YYYY-MM-DD format, e.g., '2026-02-14')"
+        },
+        "time": {
+          "type": "string",
+          "pattern": "^[0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?(?:\\s?[AP]M)?$",
+          "description": "Event time (e.g., '1:30 PM', '13:30')"
+        },
+        "event": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Event name/description (e.g., 'Indoor soccer game')"
+        },
+        "location": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Event location with address (e.g., 'Las Vegas Sports Park, 1400 N Rampart Blvd')"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["sports", "school", "medical", "social", "work", "travel", "family", "other"],
+          "description": "Event category for filtering"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Additional notes (e.g., 'Indoor — weather not a factor')"
+        },
+        "attendees": {
+          "type": "array",
+          "description": "People attending or involved",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reminder_minutes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Minutes before event to send reminder (0 for no reminder)"
+        },
+        "is_recurring": {
+          "type": "boolean",
+          "description": "Whether this is a recurring event instance"
+        },
+        "is_today": {
+          "type": "boolean",
+          "description": "Computed field - true if event is today"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the event was created"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the event was last updated"
+        }
+      }
+    },
+    "recurringEvent": {
+      "type": "object",
+      "required": ["name", "frequency"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the recurring event"
+        },
+        "frequency": {
+          "type": "string",
+          "enum": ["daily", "weekly", "biweekly", "monthly"],
+          "description": "How often the event repeats"
+        },
+        "day_of_week": {
+          "type": "string",
+          "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "description": "Day of week for weekly events"
+        },
+        "time": {
+          "type": "string",
+          "description": "Time of the recurring event"
+        },
+        "location": {
+          "type": "string",
+          "description": "Default location"
+        },
+        "start_date": {
+          "type": "string",
+          "format": "date",
+          "description": "When the recurring series starts"
+        },
+        "end_date": {
+          "type": "string",
+          "format": "date",
+          "description": "When the recurring series ends (optional)"
+        }
+      }
+    }
+  }
+}

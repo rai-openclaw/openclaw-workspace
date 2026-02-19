@@ -1,0 +1,221 @@
+{
+  "cache_date": "2026-02-17",
+  "cache_timestamp": "2026-02-17T07:00:00-08:00",
+  "data_fresh": true,
+  "fetch_date": "Tuesday, February 17, 2026",
+  "earnings_today": {
+    "date": "2026-02-17",
+    "day": "Tuesday",
+    "total_companies": 140,
+    "major_companies": [
+      {
+        "symbol": "PANW",
+        "company": "Palo Alto Networks, Inc.",
+        "event": "Q2 2026 Earnings",
+        "time": "AMC",
+        "eps_estimate": 0.94,
+        "market_cap": "130.61B",
+        "expected_move": "9.04%",
+        "expected_move_source": "TipRanks Options Tool",
+        "catalysts": [
+          "Completed acquisition of CyberArk (Feb 11)",
+          "Upgraded NextWave Partner Program (Feb 5)",
+          "Q2 FY26 results ending Jan 31, 2026"
+        ],
+        "risk_flags": []
+      },
+      {
+        "symbol": "CEG",
+        "company": "Constellation Energy Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": 2.28,
+        "market_cap": "106.89B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": ["Date discrepancy: some sources show Feb 19"]
+      },
+      {
+        "symbol": "CDNS",
+        "company": "Cadence Design Systems, Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": 1.91,
+        "market_cap": "79.47B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "RSG",
+        "company": "Republic Services, Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": 1.63,
+        "market_cap": "70.35B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "KVUE",
+        "company": "Kenvue Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": 0.22,
+        "market_cap": "35.85B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "EQT",
+        "company": "EQT Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": 0.76,
+        "market_cap": "35.85B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "FE",
+        "company": "FirstEnergy Corp.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": 0.53,
+        "market_cap": "28.86B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DVN",
+        "company": "Devon Energy Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": 0.83,
+        "market_cap": "27.69B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "TOL",
+        "company": "Toll Brothers, Inc.",
+        "event": "Q1 2026 Earnings",
+        "time": "AMC",
+        "eps_estimate": 2.11,
+        "market_cap": "15.56B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "LDOS",
+        "company": "Leidos Holdings, Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "TAS",
+        "eps_estimate": 2.61,
+        "reported_eps": 2.76,
+        "surprise_pct": "+5.91%",
+        "market_cap": "22.57B",
+        "expected_move": "N/A - Already reported",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "LH",
+        "company": "Labcorp Holdings Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "TAS",
+        "eps_estimate": 3.94,
+        "reported_eps": 4.07,
+        "surprise_pct": "+3.25%",
+        "market_cap": "22.29B",
+        "expected_move": "N/A - Already reported",
+        "catalysts": [],
+        "risk_flags": []
+      }
+    ]
+  },
+  "earnings_tomorrow": {
+    "date": "2026-02-18",
+    "day": "Wednesday",
+    "total_companies": 139,
+    "major_companies": [
+      {
+        "symbol": "ADI",
+        "company": "Analog Devices Inc.",
+        "event": "Q1 2026 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "Large Cap",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "BKNG",
+        "company": "Booking Holdings Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "Large Cap",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "CVNA",
+        "company": "Carvana Co.",
+        "event": "Q4 2025 Earnings",
+        "time": "TBD",
+        "eps_estimate": 1.10,
+        "market_cap": "Mid Cap",
+        "expected_move": "TBD",
+        "catalysts": [
+          "Expected EPS: $1.10",
+          "Expected Revenue: $5.24B"
+        ],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DASH",
+        "company": "DoorDash Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "TBD",
+        "eps_estimate": "TBD",
+        "market_cap": "Large Cap",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": ["Some sources show Feb 19"]
+      },
+      {
+        "symbol": "OXY",
+        "company": "Occidental Petroleum Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "TBD",
+        "eps_estimate": "TBD",
+        "market_cap": "Large Cap",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      }
+    ]
+  },
+  "data_sources": [
+    "Yahoo Finance Earnings Calendar",
+    "TipRanks Options Tool",
+    "MarketBeat",
+    "Earnings Whispers"
+  ],
+  "notes": [
+    "PANW has highest expected move at 9.04%",
+    "LDOS and LH already reported this morning with positive surprises",
+    "CEG has date discrepancy - verify before trading",
+    "CRWV reports Feb 26 (not Feb 18)",
+    "NVDA reports Feb 25 (not this week)"
+  ]
+}

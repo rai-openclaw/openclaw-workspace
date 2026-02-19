@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-18",
+  "time_slot": "AMC",
+  "original_count": 9,
+  "filtered_count": 9,
+  "excluded_count": 0,
+  "filtered_stocks": [
+    "KGC",
+    "CVNA",
+    "CDE",
+    "PAAS",
+    "DASH",
+    "RGLD",
+    "EQX",
+    "EBAY",
+    "RELY"
+  ],
+  "excluded_stocks": [],
+  "filter_applied": "Sector filter (exclude REITs, Utilities, Consumer Staples)",
+  "always_include_bypass": "None"
+}

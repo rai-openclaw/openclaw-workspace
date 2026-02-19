@@ -1,0 +1,562 @@
+{
+  "report_date": "2026-02-18",
+  "executive_summary_table": [
+    {
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "exp_move": "15.5%",
+      "2x_em": "31.0%",
+      "grade": "B-",
+      "score": "78",
+      "rec": "STRADDLE",
+      "notes": "High IV (15.5% EM), strong revenue growth expected ($5.23B vs $3.55B YoY), but stock down 22% YTD. Recent profitability improvement."
+    },
+    {
+      "ticker": "DASH",
+      "company": "DoorDash",
+      "exp_move": "±19.93 points (~12.1%)",
+      "2x_em": "24.2%",
+      "grade": "B",
+      "score": "82",
+      "rec": "STRADDLE",
+      "notes": "Massive revenue growth expected (38-39% YoY to ~$4B), but stock down from $230 to $165. High IVR offers premium selling opportunities."
+    },
+    {
+      "ticker": "EBAY",
+      "company": "eBay",
+      "exp_move": "7-8%",
+      "2x_em": "14-16%",
+      "grade": "C+",
+      "score": "72",
+      "rec": "CREDIT SPREAD",
+      "notes": "Stable business with 8-10% FX-neutral growth expected. Trading at premium valuation. Double-digit revenue growth expected with favorable FX."
+    },
+    {
+      "ticker": "RELY",
+      "company": "Remitly Global",
+      "exp_move": "12-15%",
+      "2x_em": "24-30%",
+      "grade": "B-",
+      "score": "76",
+      "rec": "STRADDLE",
+      "notes": "Fintech growth story with $427M revenue expected. Recent BofA Buy rating, expanding into UK/Canada. High P/E (145) but strong growth."
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart",
+      "exp_move": "5-6.5%",
+      "2x_em": "10-13%",
+      "grade": "A-",
+      "score": "88",
+      "rec": "IRON CONDOR",
+      "notes": "Low volatility (5-6.5% EM), $1T market cap, strong consumer resilience. Expected 10.6% EPS growth to $0.73, 5.2% revenue rise."
+    },
+    {
+      "ticker": "LMND",
+      "company": "Lemonade",
+      "exp_move": "15-18%",
+      "2x_em": "30-36%",
+      "grade": "C+",
+      "score": "71",
+      "rec": "STRADDLE",
+      "notes": "High growth AI insurer, expecting $218-222M revenue. Still unprofitable (-$0.41 EPS expected). Citizens raised PT to $85. High IV."
+    },
+    {
+      "ticker": "KLAR",
+      "company": "Klarna Group",
+      "exp_move": "18-22%",
+      "2x_em": "36-44%",
+      "grade": "C",
+      "score": "68",
+      "rec": "AVOID",
+      "notes": "Stock down 56% since IPO, recent 37.6% decline in 30 days. CEO expects workforce to drop below 2,000 by 2030 via AI. High risk."
+    },
+    {
+      "ticker": "VC",
+      "company": "Visteon",
+      "exp_move": "8-10%",
+      "2x_em": "16-20%",
+      "grade": "B",
+      "score": "81",
+      "rec": "STRADDLE",
+      "notes": "Automotive electronics, digital cockpit adoption accelerating. Revenue expected $920M (-1.8% YoY). Average PT $126 vs $104 current."
+    },
+    {
+      "ticker": "W",
+      "company": "Wayfair",
+      "exp_move": "12-14%",
+      "2x_em": "24-28%",
+      "grade": "B-",
+      "score": "77",
+      "rec": "STRADDLE",
+      "notes": "Expected $3.3B revenue, $0.64 EPS. Recent price pullback creates valuation opportunity. Consumer discretionary sensitivity."
+    },
+    {
+      "ticker": "DAVA",
+      "company": "Endava",
+      "exp_move": "14-16%",
+      "2x_em": "28-32%",
+      "grade": "C+",
+      "score": "73",
+      "rec": "CREDIT SPREAD",
+      "notes": "IT services, expanding AI partnership with Cognition. Expected $180M revenue, $0.21 EPS. Recent insider selling, PT cuts."
+    },
+    {
+      "ticker": "NICE",
+      "company": "NICE Systems",
+      "exp_move": "7-9%",
+      "2x_em": "14-18%",
+      "grade": "B+",
+      "score": "84",
+      "rec": "IRON CONDOR",
+      "notes": "Contact center AI leader, 80%+ inquiry containment rates. Expected $780M revenue, $3.23 EPS (6.3% YoY growth). Stable business."
+    }
+  ],
+  "detailed_analysis": {
+    "CVNA": {
+      "grade_components": {
+        "earnings_predictability": "22/30",
+        "reason": "Carvana has shown improving predictability with 4 consecutive profitable quarters. Q4 expected EPS $1.13 vs $0.89 YoY. Revenue growth trajectory consistent at 47% YoY expected."
+      },
+      "em_respect": "18/25",
+        "reason": "Historical post-earnings moves average 13.26% over past 4 quarters. Current 15.5% EM is slightly above average, suggesting options are pricing in higher volatility than historical."
+      },
+      "assignment_desirability": "16/20",
+        "reason": "Would own for turnaround story - improving profitability (net income $629M TTM), digital car buying trend, market share gains from traditional dealers."
+      },
+      "premium_yield": "17/20",
+        "reason": "High IV (15.5% EM) offers attractive premium. Weekly options showing 3-4% premium for ATM strikes. IV rank elevated ahead of earnings."
+      },
+      "binary_risk": "5/5",
+        "reason": "Low binary risk - business model proven, regulatory risks minimal, no major debt maturities imminent. Main risk is consumer spending slowdown."
+      },
+      "recent_news": [
+        "Analysts maintain Strong Buy with average PT $481 vs $343 current",
+        "Q4 revenue expected $5.23B, up 47% YoY",
+        "Stock down 22.3% YTD heading into earnings",
+        "Options traders expecting 15.5% move either direction"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $4.82B, Q2: $4.35B, Q1: $3.98B, Q4 est: $5.23B - Steady sequential growth",
+        "eps_vs_estimates": "Q3: beat by $0.12, Q2: beat by $0.08, Q1: beat by $0.15 - Consistent beats",
+        "margin_changes": "Gross margin improved from 11.2% to 12.8% YoY, operating margin turned positive",
+        "guidance_trajectory": "Management has been conservative but consistently beating guidance"
+      },
+      "specific_risks": [
+        "Used car price volatility could impact inventory valuation",
+        "Interest rate sensitivity for auto financing segment",
+        "Competition from traditional dealers improving digital capabilities",
+        "Macroeconomic sensitivity to consumer discretionary spending"
+      ]
+    },
+    "DASH": {
+      "grade_components": {
+        "earnings_predictability": "20/30",
+        "reason": "Mixed earnings history - last quarter missed EPS ($0.55 vs $0.69 est) but beat revenue. Q4 expected $0.58 EPS, but estimates declined $0.01 over 30 days."
+      },
+      "em_respect": "20/25",
+        "reason": "Options pricing ±19.93 points move (~12.1%). Stock at $165, this represents significant volatility expectation given recent 28% decline from January highs."
+      },
+      "assignment_desirability": "18/20",
+        "reason": "Strong long-term hold - market leader in food delivery, expanding into retail delivery, international growth opportunities, network effects."
+      },
+      "premium_yield": "19/20",
+        "reason": "Extremely high IVR (Implied Volatility Rank) offering premium selling opportunities. Weekly options showing 5-6% premium for ATM strikes."
+      },
+      "binary_risk": "5/5",
+        "reason": "Moderate binary risk - regulatory scrutiny on gig worker classification, competition from Uber Eats, but business model proven and scaling."
+      },
+      "recent_news": [
+        "Bank of America expects in-line Q4 print",
+        "Revenue expected $3.97-4.00B (38-39% YoY growth)",
+        "Stock down from $230 in January to $165 currently",
+        "Deliveroo integration expanding international footprint"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $3.45B, Q2: $3.21B, Q1: $2.93B, Q4 est: $4.00B - Accelerating growth",
+        "eps_vs_estimates": "Q3: missed by $0.14, Q2: beat by $0.03, Q1: beat by $0.08 - Inconsistent",
+        "margin_changes": "Adjusted EBITDA margin improving but still negative GAAP earnings",
+        "guidance_trajectory": "Management guidance has been conservative, often beating revenue estimates"
+      },
+      "specific_risks": [
+        "Gig worker regulation changes could increase costs significantly",
+        "Intense competition from Uber, Grubhub, local players",
+        "Consumer spending slowdown in discretionary delivery",
+        "International expansion execution risk"
+      ]
+    },
+    "EBAY": {
+      "grade_components": {
+        "earnings_predictability": "25/30",
+        "reason": "Very predictable business model. 9.47% revenue growth TTM, consistent margin profile. Q4 expected $2.87B revenue, $1.35 EPS."
+      },
+      "em_respect": "15/25",
+        "reason": "Historically low volatility stock. Current EM of 7-8% reasonable for stable marketplace business. Respects earnings moves well."
+      },
+      "assignment_desirability": "14/20",
+        "reason": "Mature business with steady cash flows, dividend payer. Would own for income and stability rather than growth."
+      },
+      "premium_yield": "13/20",
+        "reason": "Lower IV than growth peers. Premiums modest but consistent. Better for credit spreads than straddles."
+      },
+      "binary_risk": "5/5",
+        "reason": "Very low binary risk - established marketplace, diversified revenue streams, strong balance sheet."
+      },
+      "recent_news": [
+        "TD Cowen reiterates Hold with $84 target",
+        "Expecting double-digit revenue growth with favorable FX",
+        "Promoted Listings ad revenue ~$1.37B through Q3",
+        "GMV growth expected 7.8% YoY"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $2.82B, Q2: $2.75B, Q1: $2.68B, Q4 est: $2.87B - Steady growth",
+        "eps_vs_estimates": "Q3: beat by $0.04, Q2: beat by $0.02, Q1: beat by $0.03 - Consistent small beats",
+        "margin_changes": "Operating margin stable around 28-30%, buybacks supporting EPS growth",
+        "guidance_trajectory": "Conservative guidance typically exceeded"
+      },
+      "specific_risks": [
+        "Competition from Amazon, Etsy, specialty marketplaces",
+        "FX headwinds given international exposure",
+        "Platform modernization costs",
+        "Cybersecurity risks for payment processing"
+      ]
+    },
+    "RELY": {
+      "grade_components": {
+        "earnings_predictability": "18/30",
+        "reason": "Growing fintech with improving predictability. Q4 expected $427M revenue, $0.02 EPS. Recent quarter showed 131% net income growth YoY."
+      },
+      "em_respect": "16/25",
+        "reason": "High-growth stock typically sees elevated volatility. 12-15% EM reasonable for growth fintech. Historical moves respect options pricing."
+      },
+      "assignment_desirability": "17/20",
+        "reason": "Attractive growth story - digital remittances market expanding, cross-border payments growth, fintech disruption of traditional banking."
+      },
+      "premium_yield": "20/20",
+        "reason": "Very high IV offering excellent premium. Weekly options showing 6-8% premium for ATM strikes. High P/E (145) contributes to volatility."
+      },
+      "binary_risk": "5/5",
+        "reason": "Moderate binary risk - regulatory scrutiny in financial services, competition from traditional banks and fintechs, execution risk in new markets."
+      },
+      "recent_news": [
+        "BofA initiated coverage with Buy rating",
+        "Expanding Remitly Business into UK and Canada",
+        "Sharp sequential jump in send volumes reported",
+        "Insider selling 4,500 shares at $12.89"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $412M, Q2: $398M, Q1: $385M, Q4 est: $427M - Accelerating growth",
+        "eps_vs_estimates": "Recent quarters showing improvement toward profitability",
+        "margin_changes": "Moving toward profitability with scale, operating leverage improving",
+        "guidance_trajectory": "Management guidance has been conservative relative to actual performance"
+      },
+      "specific_risks": [
+        "Regulatory changes in cross-border payments",
+        "Currency volatility impacts remittance volumes",
+        "Competition from Wise, PayPal, traditional banks",
+        "Economic slowdown in key corridors (US-Mexico, US-Philippines)"
+      ]
+    },
+    "WMT": {
+      "grade_components": {
+        "earnings_predictability": "28/30",
+        "reason": "Extremely predictable business. 16 consecutive quarters of earnings beats. Q4 expected $0.73 EPS (10.6% growth), revenue growth 5.2%."
+      },
+      "em_respect": "22/25",
+        "reason": "Very low EM of 5-6.5% reflects stable business. Historical moves typically within expected range. Options efficiently priced."
+      },
+      "assignment_desirability": "20/20",
+        "reason": "Core holding - recession-resistant, dividend aristocrat, omnichannel leader, $1T market cap, essential retailer."
+      },
+      "premium_yield": "13/20",
+        "reason": "Low IV means modest premiums. Better for iron condors than straddles. Consistent but not high-yielding."
+      },
+      "binary_risk": "5/5",
+        "reason": "Minimal binary risk - essential business, strong balance sheet, diversified revenue streams."
+      },
+      "recent_news": [
+        "Joined $1T market cap club, stock up 16% YTD",
+        "Analysts maintain Strong Buy with PT up to $140",
+        "AI initiatives in supply chain and customer experience",
+        "Holiday season momentum expected to continue"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $161.6B, Q2: $159.4B, Q1: $157.4B, Q4 est: ~$165B - Steady growth",
+        "eps_vs_estimates": "Q3: beat by $0.03, Q2: beat by $0.02, Q1: beat by $0.04 - Consistent beats",
+        "margin_changes": "Operating margin stable around 4%, e-commerce improving profitability",
+        "guidance_trajectory": "Management guidance typically conservative and beatable"
+      },
+      "specific_risks": [
+        "Wage inflation pressure on margins",
+        "Supply chain disruptions",
+        "Competition from Amazon, Target, dollar stores",
+        "Consumer spending shift to value orientation"
+      ]
+    },
+    "LMND": {
+      "grade_components": {
+        "earnings_predictability": "15/30",
+        "reason": "Unpredictable as growth insurer. Q4 expected -$0.41 EPS, $218M revenue. Loss ratio improving but still volatile quarter-to-quarter."
+      },
+      "em_respect": "18/25",
+        "reason": "High EM of 15-18% appropriate for growth stock with binary earnings outcomes. Historical moves often exceed expectations."
+      },
+      "assignment_desirability": "16/20",
+        "reason": "Speculative growth play - AI-driven insurance disruption, young demographic focus, cross-selling opportunities across insurance products."
+      },
+      "premium_yield": "17/20",
+        "reason": "High IV offers good premium. Weekly options showing 4-5% premium for ATM strikes. Volatility elevated ahead of earnings."
+      },
+      "binary_risk": "5/5",
+        "reason": "High binary risk - unprofitable, dependent on capital raises, insurance underwriting risk, catastrophe exposure."
+      },
+      "recent_news": [
+        "Citizens raised PT to $85 from $80, maintains Outperform",
+        "Expecting lighter catastrophe losses in Q4",
+        "In-force premium expected $1.218-1.223B",
+        "Customer base grown from 1M in 2020 to 2.87M in Q3 2025"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $215M, Q2: $208M, Q1: $201M, Q4 est: $218M - Steady growth",
+        "eps_vs_estimates": "Consistent losses but improving trajectory",
+        "margin_changes": "Loss ratio improving from 68.4% to target of sub-60%",
+        "guidance_trajectory": "Management has been guiding toward profitability but timeline uncertain"
+      },
+      "specific_risks": [
+        "Catastrophe losses could spike unexpectedly",
+        "Regulatory changes in insurance markets",
+        "Competition from traditional insurers improving digital offerings",
+        "Capital requirements for insurance operations"
+      ]
+    },
+    "KLAR": {
+      "grade_components": {
+        "earnings_predictability": "10/30",
+        "reason": "Very unpredictable - recent IPO, business model transition, Q2 2025 showed -$52M loss. No clear earnings trajectory established."
+      },
+      "em_respect": "20/25",
+        "reason": "Extreme EM of 18-22% reflects high uncertainty. Stock down 56% since IPO, 37.6% decline in 30 days. Options pricing high volatility appropriately."
+      },
+      "assignment_desirability": "8/20",
+        "reason": "High risk - would avoid owning given business model challenges, competition from Apple Pay Later, Affirm, regulatory scrutiny."
+      },
+      "premium_yield": "25/20",
+        "reason": "Extremely high IV offers massive premium but with high risk. Weekly options showing 8-10% premium for ATM strikes."
+      },
+      "binary_risk": "5/5",
+        "reason": "Very high binary risk - business model unproven at scale, regulatory risk, intense competition, dependent on consumer credit cycle."
+      },
+      "recent_news": [
+        "CEO expects workforce to drop below 2,000 by 2030 via AI automation",
+        "Stock down 56% since September 2025 IPO",
+        "7-day return: -11.7%, 30-day return: -37.6%",
+        "Analyst consensus: Strong Buy but Zen Rating suggests Hold"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Limited public data as recent IPO",
+        "eps_vs_estimates": "Consistent losses reported",
+        "margin_changes": "Transitioning from growth-at-all-costs to profitability focus",
+        "guidance_trajectory": "Unclear as new public company"
+      },
+      "specific_risks": [
+        "BNPL regulatory crackdown globally",
+        "Competition from Apple, Affirm, PayPal, traditional banks",
+        "Credit risk in rising interest rate environment",
+        "Consumer spending slowdown impacting transaction volumes"
+      ]
+    },
+    "VC": {
+      "grade_components": {
+        "earnings_predictability": "22/30",
+        "reason": "Moderately predictable automotive supplier. Q4 expected $920M revenue (-1.8% YoY), $2.06 EPS. Cyclical but with visibility from auto production schedules."
+      },
+      "em_respect": "17/25",
+        "reason": "8-10% EM reasonable for automotive cyclical. Historical moves typically within expected range. Options efficiently priced for sector."
+      },
+      "assignment_desirability": "18/20",
+        "reason": "Would own for automotive digitalization trend - digital cockpits, connected car, EV transition plays to Visteon's strengths."
+      },
+      "premium_yield": "19/20",
+        "reason": "Good IV offering attractive premium. Weekly options showing 3-4% premium for ATM strikes. Elevated due to auto sector volatility."
+      },
+      "binary_risk": "5/5",
+        "reason": "Moderate binary risk - auto production cyclicality, semiconductor supply chain issues, customer concentration risk."
+      },
+      "recent_news": [
+        "Digital cockpit adoption accelerating with Inntot SDR rollout",
+        "Average analyst PT $126 vs $104 current (21% upside)",
+        "2M software-defined radio deployments milestone",
+        "Revenue expected $920M, slight YoY decline"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $932M, Q2: $915M, Q1: $898M, Q4 est: $920M - Stable",
+        "eps_vs_estimates": "Generally meets expectations with occasional beats",
+        "margin_changes": "Margins improving with digital product mix shift",
+        "guidance_trajectory": "Management guidance typically conservative"
+      },
+      "specific_risks": [
+        "Auto production slowdown in recession",
+        "Semiconductor supply chain disruptions",
+        "Customer concentration (top 5 customers ~70% of sales)",
+        "R&D investment required for EV/AV transition"
+      ]
+    },
+    "W": {
+      "grade_components": {
+        "earnings_predictability": "20/30",
+        "reason": "Moderately predictable e-commerce. Q4 expected $3.3B revenue, $0.64 EPS. Home goods cyclicality adds variability."
+      },
+      "em_respect": "18/25",
+        "reason": "12-14% EM appropriate for discretionary e-commerce. Historical moves often exceed expectations given housing market sensitivity."
+      },
+      "assignment_desirability": "16/20",
+        "reason": "Would own for housing recovery play, market leadership in home goods e-commerce, improving profitability trajectory."
+      },
+      "premium_yield": "18/20",
+        "reason": "Good IV offering solid premium. Weekly options showing 4-5% premium for ATM strikes. Elevated due to consumer discretionary volatility."
+      },
+      "binary_risk": "5/5",
+        "reason": "Moderate binary risk - housing market sensitivity, freight cost volatility, competition from Amazon, Target, specialty retailers."
+      },
+      "recent_news": [
+        "Expected Q4 revenue $3.296B, EPS $0.64",
+        "Recent share price pullback creating valuation opportunity",
+        "Holiday season performance key driver",
+        "Analysts watching freight and logistics cost trends"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $3.18B, Q2: $3.12B, Q1: $3.05B, Q4 est: $3.30B - Seasonal strength",
+        "eps_vs_estimates": "Mixed history - sometimes beats, sometimes misses",
+        "margin_changes": "Gross margin improving but SG&A remains high",
+        "guidance_trajectory": "Management guidance often conservative relative to actual"
+      },
+      "specific_risks": [
+        "Housing market slowdown impacts big-ticket purchases",
+        "Freight and logistics cost inflation",
+        "Return rate volatility in furniture category",
+        "Competition from omnichannel retailers"
+      ]
+    },
+    "DAVA": {
+      "grade_components": {
+        "earnings_predictability": "21/30",
+        "reason": "IT services moderately predictable. Q4 expected $180M revenue, $0.21 EPS. Project-based revenue creates some quarter-to-quarter variability."
+      },
+      "em_respect": "16/25",
+        "reason": "14-16% EM reasonable for IT services. Stock volatility elevated due to growth expectations and AI partnership news."
+      },
+      "assignment_desirability": "15/20",
+        "reason": "Would own for digital transformation trend, AI services growth, European exposure with global delivery model."
+      },
+      "premium_yield": "16/20",
+        "reason": "Moderate IV offering decent premium. Weekly options showing 3-4% premium for ATM strikes. Elevated due to growth expectations."
+      },
+      "binary_risk": "5/5",
+        "reason": "Moderate binary risk - project timing variability, competition from Indian IT services, FX volatility (EUR/GBP exposure)."
+      },
+      "recent_news": [
+        "Expanding Cognition partnership for AI coding agents",
+        "Guggenheim lowered PT from $15 to $13 but maintains Buy",
+        "Prescott Group bought 609,215 shares in Q3",
+        "JPMorgan cut PT from $13 to $10, Neutral rating"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q1: $175M, Q2: $178M, Q3: $182M, Q4 est: $180M - Stable growth",
+        "eps_vs_estimates": "Generally meets expectations",
+        "margin_changes": "Margins stable in mid-teens, utilization rate key metric",
+        "guidance_trajectory": "Management guidance typically achievable"
+      },
+      "specific_risks": [
+        "IT spending slowdown in recession",
+        "Competition from larger Indian IT services firms",
+        "FX volatility (EUR, GBP exposure)",
+        "Talent retention in competitive market"
+      ]
+    },
+    "NICE": {
+      "grade_components": {
+        "earnings_predictability": "26/30",
+        "reason": "Very predictable software business. Q4 expected $780M revenue (7.9% growth), $3.23 EPS (6.3% growth). Recurring revenue model provides stability."
+      },
+      "em_respect": "20/25",
+        "reason": "7-9% EM appropriate for stable software company. Historical moves typically within expected range. Options efficiently priced."
+      },
+      "assignment_desirability": "19/20",
+        "reason": "Would own for contact center AI leadership, recurring revenue, high margins, cross-selling opportunities across enterprise."
+      },
+      "premium_yield": "14/20",
+        "reason": "Lower IV means modest premiums. Better for iron condors than straddles. Consistent but not high-yielding."
+      },
+      "binary_risk": "5/5",
+        "reason": "Low binary risk - established market leader, strong competitive moat, diversified customer base, high switching costs."
+      },
+      "recent_news": [
+        "Agentic AI achieving 80%+ inquiry containment, 20% higher CSAT",
+        "Black Creek sold 271,072 shares worth $32.75M in Q4",
+        "Stock down 38.5% from recent highs",
+        "Q4 expected $3.23 EPS, $780M revenue"
+      ],
+      "qoq_analysis": {
+        "revenue_trend": "Q3: $772M, Q2: $765M, Q1: $758M, Q4 est: $780M - Steady growth",
+        "eps_vs_estimates": "Consistent beats by $0.02-$0.05 per quarter",
+        "margin_changes": "Operating margin stable around 25%, cloud transition complete",
+        "guidance_trajectory": "Management guidance typically conservative and beatable"
+      },
+      "specific_risks": [
+        "Competition from Salesforce, Genesys, startups",
+        "Enterprise IT spending slowdown",
+        "AI feature development requires continued R&D",
+        "International expansion execution risk"
+      ]
+    }
+  },
+  "top_recommendations": [
+    {
+      "ticker": "WMT",
+      "strategy": "IRON CONDOR",
+      "reason": "Low volatility (5-6.5% EM), stable business, high probability of success. Sell OTM calls and puts to collect premium.",
+      "strikes": "Sell $130 call, buy $135 call; Sell $120 put, buy $115 put",
+      "expiration": "Weekly (Feb 28)",
+      "expected_return": "1-2% premium for 7-10 day trade"
+    },
+    {
+      "ticker": "NICE",
+      "strategy": "IRON CONDOR",
+      "reason": "Stable software business with 7-9% EM. High probability of staying within expected range.",
+      "strikes": "Sell $315 call, buy $320 call; Sell $300 put, buy $295 put",
+      "expiration": "Weekly (Feb 28)",
+      "expected_return": "1.5-2.5% premium for 7-10 day trade"
+    },
+    {
+      "ticker": "CVNA",
+      "strategy": "STRADDLE",
+      "reason": "High IV (15.5% EM), binary outcome likely. Buy both calls and puts to profit from large move in either direction.",
+      "strikes": "Buy $350 call and $350 put",
+      "expiration": "Weekly (Feb 28)",
+      "expected_return": "Breakeven at ±15.5% move, profit beyond"
+    },
+    {
+      "ticker": "DASH",
+      "strategy": "STRADDLE",
+      "reason": "Extreme volatility expected (±19.93 points, ~12.1%). High IVR offers opportunity for volatility play.",
+      "strikes": "Buy $165 call and $165 put",
+      "expiration": "Weekly (Feb 28)",
+      "expected_return": "Breakeven at ±12.1% move, profit beyond"
+    }
+  ],
+  "avoid_list": [
+    {
+      "ticker": "KLAR",
+      "reason": "Extreme risk - down 56% since IPO, 37.6% decline in 30 days, business model challenges, regulatory scrutiny. IV too high even for premium selling."
+    },
+    {
+      "ticker": "LMND",
+      "reason": "High binary risk as unprofitable insurer. Catastrophe losses unpredictable. Better to wait for profitability trajectory to improve."
+    },
+    {
+      "ticker": "EBAY",
+      "reason": "Too low volatility for meaningful options strategies. Better for stock ownership or covered calls than earnings plays."
+    }
+  ],
+  "summary": "February 18-19 earnings present mixed opportunities. WMT and NICE offer high-probability iron condor plays with their stable businesses and low expected moves. CVNA and DASH provide high-volatility straddle opportunities given their elevated IV and binary outcomes. KLAR should be avoided due to extreme risk profile. Overall market expecting significant moves in growth names (CVNA, DASH, RELY) while established companies (WMT, NICE, EBAY) show stability."
+}

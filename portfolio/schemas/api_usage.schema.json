@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API Usage",
+  "description": "Schema for API usage tracking and management",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "provider", "purpose", "tier", "status"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the API"
+      },
+      "name": {
+        "type": "string",
+        "description": "Display name of the API"
+      },
+      "provider": {
+        "type": "string",
+        "description": "Company/service provider"
+      },
+      "purpose": {
+        "type": "string",
+        "description": "What this API is used for"
+      },
+      "tier": {
+        "type": "string",
+        "enum": ["Free", "Paid"],
+        "description": "Pricing tier"
+      },
+      "status": {
+        "type": "string",
+        "enum": ["Active", "Inactive", "Error"],
+        "description": "Current status of the API"
+      },
+      "pricing": {
+        "type": "object",
+        "description": "Pricing information per 1 million tokens/requests",
+        "properties": {
+          "input_per_1m": {
+            "type": ["number", "string"],
+            "description": "Cost per 1M input tokens (or 'Free')"
+          },
+          "output_per_1m": {
+            "type": ["number", "string"],
+            "description": "Cost per 1M output tokens (or 'Free')"
+          }
+        }
+      },
+      "dashboard_url": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to manage/configure the API"
+      },
+      "limits": {
+        "type": "object",
+        "description": "Usage limits and quotas",
+        "properties": {
+          "requests_per_min": {
+            "type": ["number", "null"],
+            "description": "Maximum requests per minute"
+          },
+          "monthly_limit": {
+            "type": ["number", "string", "null"],
+            "description": "Monthly usage limit"
+          }
+        }
+      }
+    }
+  }
+}

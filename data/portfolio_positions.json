@@ -1,0 +1,279 @@
+{
+  "last_updated": "2026-02-18T14:07:56.864502",
+  "accounts": {
+    "Robinhood": {
+      "broker": "Robinhood",
+      "type": "Taxable Brokerage",
+      "positions": [
+        {
+          "ticker": "WMT",
+          "shares": 0,
+          "options": [
+            {
+              "type": "PUT",
+              "strike": 115,
+              "expiration": "2026-02-20",
+              "contracts": 5,
+              "entry_premium": 0.38
+            },
+            {
+              "type": "PUT",
+              "strike": 116,
+              "expiration": "2026-02-20",
+              "contracts": 2,
+              "entry_premium": 0.4
+            }
+          ]
+        },
+        {
+          "ticker": "EBAY",
+          "shares": 0,
+          "options": [
+            {
+              "type": "PUT",
+              "strike": 71,
+              "expiration": "2026-02-20",
+              "contracts": 10,
+              "entry_premium": 0.38
+            }
+          ]
+        },
+        {
+          "ticker": "VAW",
+          "shares": 132.58,
+          "options": []
+        },
+        {
+          "ticker": "SHOP",
+          "shares": 440.0,
+          "options": []
+        },
+        {
+          "ticker": "AMD",
+          "shares": 100.0,
+          "options": []
+        },
+        {
+          "ticker": "SGOV",
+          "shares": 201.2,
+          "options": []
+        },
+        {
+          "ticker": "ELF",
+          "shares": 300.0,
+          "options": []
+        },
+        {
+          "ticker": "NKE",
+          "shares": 203.42,
+          "options": []
+        },
+        {
+          "ticker": "CAKE",
+          "shares": 260.67,
+          "options": []
+        },
+        {
+          "ticker": "LYFT",
+          "shares": 600.0,
+          "options": []
+        },
+        {
+          "ticker": "QQQ",
+          "shares": 1.0,
+          "options": []
+        },
+        {
+          "ticker": "SGOV",
+          "shares": 201.2,
+          "options": []
+        },
+        {
+          "ticker": "ETH",
+          "shares": 11.43,
+          "options": []
+        }
+      ],
+      "cash": 11432.0
+    },
+    "SEP-IRA": {
+      "broker": "Schwab",
+      "type": "Retirement (SEP-IRA)",
+      "positions": [
+        {
+          "ticker": "WMT",
+          "shares": 0,
+          "options": [
+            {
+              "type": "PUT",
+              "strike": 116,
+              "expiration": "2026-02-20",
+              "contracts": 9,
+              "entry_premium": 0.39555555555555555
+            }
+          ]
+        },
+        {
+          "ticker": "CVNA",
+          "shares": 0,
+          "options": [
+            {
+              "type": "PUT",
+              "strike": 260,
+              "expiration": "2026-02-20",
+              "contracts": 2,
+              "entry_premium": 1.25
+            },
+            {
+              "type": "PUT",
+              "strike": 255,
+              "expiration": "2026-02-20",
+              "contracts": 3,
+              "entry_premium": 1.8
+            }
+          ]
+        },
+        {
+          "ticker": "DASH",
+          "shares": 0,
+          "options": [
+            {
+              "type": "PUT",
+              "strike": 140,
+              "expiration": "2026-02-20",
+              "contracts": 6,
+              "entry_premium": 0.59
+            }
+          ]
+        },
+        {
+          "ticker": "MCO",
+          "shares": 0,
+          "options": [
+            {
+              "type": "PUT",
+              "strike": 370,
+              "expiration": "2026-02-20",
+              "contracts": 1,
+              "entry_premium": 1.15
+            },
+            {
+              "type": "PUT",
+              "strike": 380,
+              "expiration": "2026-02-20",
+              "contracts": 1,
+              "entry_premium": 2.2
+            }
+          ]
+        },
+        {
+          "ticker": "HOOD",
+          "shares": 700.0,
+          "options": []
+        },
+        {
+          "ticker": "ADBE",
+          "shares": 220.0,
+          "options": []
+        },
+        {
+          "ticker": "NFLX",
+          "shares": 500.0,
+          "options": []
+        },
+        {
+          "ticker": "NKE",
+          "shares": 300.0,
+          "options": []
+        },
+        {
+          "ticker": "FSR",
+          "shares": 400.0,
+          "options": []
+        },
+        {
+          "ticker": "AXON",
+          "shares": 20.0,
+          "options": []
+        },
+        {
+          "ticker": "NOW",
+          "shares": 50.0,
+          "options": []
+        },
+        {
+          "ticker": "VST",
+          "shares": 50.0,
+          "options": []
+        },
+        {
+          "ticker": "UPWK",
+          "shares": 600.0,
+          "options": []
+        },
+        {
+          "ticker": "CRM",
+          "shares": 40.0,
+          "options": []
+        },
+        {
+          "ticker": "PYPL",
+          "shares": 300.0,
+          "options": []
+        },
+        {
+          "ticker": "CELH",
+          "shares": 100.0,
+          "options": []
+        },
+        {
+          "ticker": "AMD",
+          "shares": 100.0,
+          "options": []
+        },
+        {
+          "ticker": "QQQ",
+          "shares": 1.0,
+          "options": []
+        },
+        {
+          "ticker": "SGOV",
+          "shares": 350.0,
+          "options": []
+        }
+      ],
+      "cash": 2572.0
+    },
+    "Schwab CSP": {
+      "broker": "Schwab",
+      "type": "Taxable (Margin)",
+      "positions": [
+        {
+          "ticker": "ELF",
+          "shares": 200.0,
+          "options": []
+        },
+        {
+          "ticker": "TTD",
+          "shares": 600.0,
+          "options": []
+        },
+        {
+          "ticker": "VTCLX",
+          "shares": 446.53,
+          "options": []
+        },
+        {
+          "ticker": "SGOV",
+          "shares": 65.7288,
+          "options": []
+        }
+      ],
+      "cash": 0.0
+    }
+  },
+  "totals": {
+    "total_value": 14004.0,
+    "options_exposure": 2485.0
+  }
+}

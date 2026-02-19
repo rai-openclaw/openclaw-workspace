@@ -1,0 +1,403 @@
+DAILY STOCKS RECOMMENDATION REPORT - FEBRUARY 18, 2026
+=======================================================
+
+SECTION 1: EXECUTIVE SUMMARY TABLE
+===================================
+
+| Ticker | Company         | Exp Move | 2x EM | Grade | Score | Rec           | Key Notes                                                                 |
+|--------|-----------------|----------|-------|-------|-------|---------------|---------------------------------------------------------------------------|
+| CVNA   | Carvana         | 15.5%    | 31.0% | B-    | 78    | STRADDLE      | High IV, strong revenue growth, stock down 22% YTD, improving profitability |
+| DASH   | DoorDash        | ±12.1%   | 24.2% | B     | 82    | STRADDLE      | Massive revenue growth (38-39% YoY), stock down 28% from highs, high IVR  |
+| EBAY   | eBay            | 7.5%     | 15.0% | C+    | 72    | CREDIT SPREAD | Stable business, 8-10% FX-neutral growth, trading at premium valuation    |
+| RELY   | Remitly Global  | 13.5%    | 27.0% | B-    | 76    | STRADDLE      | Fintech growth, BofA Buy rating, expanding UK/Canada, high P/E (145)      |
+| WMT    | Walmart         | 5.75%    | 11.5% | A-    | 88    | IRON CONDOR   | Low volatility, $1T market cap, strong consumer resilience, 16 consecutive beats |
+| LMND   | Lemonade        | 16.5%    | 33.0% | C+    | 71    | STRADDLE      | AI insurer growth, still unprofitable, catastrophe loss uncertainty, high IV |
+| KLAR   | Klarna Group    | 20.0%    | 40.0% | C     | 68    | AVOID         | Down 56% since IPO, 37.6% decline in 30 days, BNPL regulatory risk, avoid |
+| VC     | Visteon         | 9.0%     | 18.0% | B     | 81    | STRADDLE      | Automotive electronics, digital cockpit adoption, auto production cyclicality |
+| W      | Wayfair         | 13.0%    | 26.0% | B-    | 77    | STRADDLE      | Housing market sensitivity, freight cost volatility, discretionary e-commerce |
+| DAVA   | Endava          | 15.0%    | 30.0% | C+    | 73    | CREDIT SPREAD | IT services, AI partnership uncertainty, project-based revenue variability |
+| NICE   | NICE Systems    | 8.0%     | 16.0% | B+    | 84    | IRON CONDOR   | Contact center AI leader, 80%+ inquiry containment, stable recurring revenue |
+
+SECTION 2: DETAILED ANALYSIS - GOLD STANDARD TEMPLATE
+=====================================================
+
+CVNA (Carvana) - B- Grade (78/100)
+**Expected Move:** ±15.5% | **2x Safety:** ±31.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (22/30): Beat 4 consecutive quarters with improving consistency. Q4 expected EPS $1.13 vs $0.89 YoY (+27%). Revenue growth trajectory consistent at 47% YoY expected.
+- EM Respect (18/25): Historical avg move 13.26% vs current 15.5% implied. Stock RARELY exceeds 1.5x EM despite high volatility reputation.
+- Assignment Desirability (16/20): Would own at $280-300 for turnaround story - digital car buying adoption, market share gains from dealers, improving unit economics.
+- Premium Yield (17/20): 15.5% EM = very high IV. ATM weekly puts yielding $8-10 premium. IV rank elevated at 75% ahead of earnings.
+- Binary Risk (5/0): Used car price volatility, interest rate sensitivity for financing, but business model proven with scale.
+
+**KEY INSIGHT:**
+Expected move is 17% ABOVE historical average because stock down 22% YTD creates oversold bounce potential, used car market stabilization narrative, and improving profitability trajectory driving volatility.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Long straddle
+- Strike: $350 (ATM)
+- Premium Target: $8.50-10.00 per contract (combined)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~120% if move exceeds 15.5%
+
+**RISK FACTORS:**
+1. Used Car Price Collapse: Wholesale used car prices decline → inventory write-downs → earnings miss → Assignment risk if stock gaps below $280 → Low-Medium probability
+2. Interest Rate Sensitivity: Auto financing costs rise → lower conversion rates → revenue miss → Stock could drop 20%+ if financing metrics deteriorate → Medium probability
+
+**BOTTOM LINE:** High conviction straddle play due to elevated IV + binary outcome expectation. Stock likely to move significantly given oversold condition and high growth expectations.
+
+---
+
+DASH (DoorDash) - B Grade (82/100)
+**Expected Move:** ±12.1% | **2x Safety:** ±24.2%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (20/30): Mixed history - last quarter missed EPS ($0.55 vs $0.69 est) but beat revenue. Q4 expected $0.58 EPS, estimates declined $0.01 over 30 days.
+- EM Respect (20/25): Historical avg move 8.7% vs current 12.1% implied. Stock OFTEN exceeds 1x EM given growth stock volatility.
+- Assignment Desirability (18/20): Would own at $140-150 for market leadership - food delivery dominance, retail delivery expansion, network effects with scale.
+- Premium Yield (19/20): 12.1% EM = extremely high IV. ATM weekly puts yielding $10-12 premium. IV rank at 85% - near yearly highs.
+- Binary Risk (5/0): Gig worker regulation, competition from Uber Eats, but business model proven with path to profitability.
+
+**KEY INSIGHT:**
+Expected move is 39% ABOVE historical average because stock down 28% from January highs creates oversold condition, Deliveroo integration uncertainty, and growth stock multiple compression driving volatility.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Long straddle
+- Strike: $165 (ATM)
+- Premium Target: $10.50-12.50 per contract (combined)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~140% if move exceeds 12.1%
+
+**RISK FACTORS:**
+1. Gig Worker Regulation: California AB5-style legislation spreads → labor costs spike → margin compression → Stock could drop 15-20% on regulatory fears → Medium probability
+2. Consumer Spending Slowdown: Discretionary delivery spending declines → order frequency drops → revenue miss → Growth narrative breaks, multiple compression accelerates → Medium-High probability
+
+**BOTTOM LINE:** High volatility straddle opportunity due to extreme IV + growth stock binary outcome. Stock likely to gap significantly given recent 28% decline and high growth expectations.
+
+---
+
+EBAY (eBay) - C+ Grade (72/100)
+**Expected Move:** ±7.5% | **2x Safety:** ±15.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (25/30): Beat 9 of last 10 quarters. Q4 expected EPS $1.35 vs $1.31 est (+3.1%). Very consistent marketplace business.
+- EM Respect (15/25): Historical avg move 5.2% vs current 7.5% implied. Stock RARELY exceeds 1x EM - extremely predictable.
+- Assignment Desirability (14/20): Would own at $75-80 for dividend income - mature cash cow, share buybacks, stable marketplace fees.
+- Premium Yield (13/20): 7.5% EM = moderate IV. ATM weekly puts yielding $2.50-3.00 premium. IV rank at 45% - below average.
+- Binary Risk (5/0): Competition from Amazon/Etsy, FX headwinds, but diversified revenue and strong balance sheet.
+
+**KEY INSIGHT:**
+Expected move is 44% ABOVE historical average because FX tailwinds creating revenue beat potential, Promoted Listings ad revenue acceleration, and stable business attracting defensive flows.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Iron condor
+- Strike: Sell $82.50 call/$85 call spread; Sell $77.50 put/$75 put spread
+- Premium Target: $0.80-1.00 per contract (net credit)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~60% if stock stays within $77.50-$82.50
+
+**RISK FACTORS:**
+1. FX Headwind Reversal: Dollar strengthens → international revenue translation hit → earnings miss → Stock could drop 5-7% on currency disappointment → Low-Medium probability
+2. Amazon Competition: Amazon marketplace gains share → GMV growth slows → multiple compression → Growth narrative challenged, stock could trade sideways → Medium probability
+
+**BOTTOM LINE:** Medium conviction iron condor due to predictable business + elevated IV relative to history. Strike selection at 1.5x EM provides cushion.
+
+---
+
+RELY (Remitly Global) - B- Grade (76/100)
+**Expected Move:** ±13.5% | **2x Safety:** ±27.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (18/30): Improving consistency - last quarter beat revenue by 3.2%. Q4 expected $0.02 EPS vs -$0.01 YoY - moving toward profitability.
+- EM Respect (16/25): Historical avg move 10.8% vs current 13.5% implied. Growth fintech OFTEN exceeds 1x EM given binary outcomes.
+- Assignment Desirability (17/20): Would own at $10-12 for fintech disruption - digital remittances growth, cross-border payments expansion, market share gains.
+- Premium Yield (20/20): 13.5% EM = very high IV. ATM weekly puts yielding $1.00-1.20 premium. IV rank at 80% - elevated ahead of earnings.
+- Binary Risk (5/0): Regulatory scrutiny, currency volatility, competition from Wise/PayPal, but growth trajectory strong.
+
+**KEY INSIGHT:**
+Expected move is 25% ABOVE historical average because BofA initiation creating momentum, UK/Canada expansion uncertainty, and high-growth fintech multiple volatility.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Long straddle
+- Strike: $13 (ATM)
+- Premium Target: $1.10-1.30 per contract (combined)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~100% if move exceeds 13.5%
+
+**RISK FACTORS:**
+1. Regulatory Crackdown: Cross-border payment regulations tighten → compliance costs rise → margin compression → Stock could drop 20%+ on regulatory fears → Low-Medium probability
+2. Currency Volatility: Emerging market currency crisis → remittance volumes drop → revenue miss → Growth narrative breaks, high multiple unsustainable → Medium probability
+
+**BOTTOM LINE:** High volatility straddle play due to elevated IV + growth fintech binary outcome. Stock likely to gap on expansion metrics and profitability trajectory.
+
+---
+
+WMT (Walmart) - A- Grade (88/100)
+**Expected Move:** ±5.75% | **2x Safety:** ±11.5%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (28/30): Beat 16 consecutive quarters. Q4 expected EPS $0.73 vs $0.66 YoY (+10.6%). Extremely consistent essential retailer.
+- EM Respect (22/25): Historical avg move 4.1% vs current 5.75% implied. Stock RARELY exceeds 1x EM - textbook predictable.
+- Assignment Desirability (20/20): Would own at $125-130 for core holding - recession-resistant, dividend aristocrat, omnichannel leader, $1T market cap.
+- Premium Yield (13/20): 5.75% EM = low IV. ATM weekly puts yielding $3.50-4.00 premium. IV rank at 35% - below average.
+- Binary Risk (5/0): Wage inflation, supply chain issues, but essential business with pricing power.
+
+**KEY INSIGHT:**
+Expected move is 40% ABOVE historical average because $1T market cap milestone creating momentum, AI initiatives narrative, and holiday season performance uncertainty driving modest volatility.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Iron condor
+- Strike: Sell $132.50 call/$135 call spread; Sell $125 put/$122.50 put spread
+- Premium Target: $1.20-1.50 per contract (net credit)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~70% if stock stays within $125-$132.50
+
+**RISK FACTORS:**
+1. Wage Inflation Spike: Labor costs accelerate faster than expected → margin compression → earnings miss → Stock could drop 3-5% on margin disappointment → Low-Medium probability
+2. Consumer Shift to Value: Trade-down accelerates more than expected → mix shift to lower-margin items → Revenue beats but margin misses, stock trades sideways → Medium probability
+
+**BOTTOM LINE:** High conviction iron condor due to historical EM respect + stable business. Strike selection at 1.5x EM provides high probability of success.
+
+---
+
+LMND (Lemonade) - C+ Grade (71/100)
+**Expected Move:** ±16.5% | **2x Safety:** ±33.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (15/30): Unpredictable as growth insurer - last quarter missed EPS by $0.08. Q4 expected -$0.41 EPS, loss ratio improving but volatile.
+- EM Respect (18/25): Historical avg move 12.3% vs current 16.5% implied. Growth insurer OFTEN exceeds 1x EM given catastrophe volatility.
+- Assignment Desirability (16/20): Would own at $60-65 for AI insurance disruption - young demographic focus, cross-selling potential, digital native advantage.
+- Premium Yield (17/20): 16.5% EM = very high IV. ATM weekly puts yielding $5.00-6.00 premium. IV rank at 75% - elevated ahead of earnings.
+- Binary Risk (5/0): Catastrophe losses, regulatory changes, competition from traditional insurers, capital requirements.
+
+**KEY INSIGHT:**
+Expected move is 34% ABOVE historical average because catastrophe loss uncertainty, profitability timeline questions, and growth stock multiple volatility driving elevated IV.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Long straddle
+- Strike: $70 (ATM)
+- Premium Target: $5.50-6.50 per contract (combined)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~110% if move exceeds 16.5%
+
+**RISK FACTORS:**
+1. Catastrophe Loss Spike: Major weather event occurs → loss ratio spikes → earnings miss significantly → Stock could drop 25%+ on catastrophe disappointment → Low-Medium probability
+2. Regulatory Scrutiny: Insurance regulators question AI underwriting → growth slows → multiple compression → Growth narrative challenged, stock could drop 15-20% → Low probability
+
+**BOTTOM LINE:** Medium conviction straddle due to high IV + binary outcome expectation. Unprofitable growth insurer creates significant earnings volatility.
+
+---
+
+KLAR (Klarna Group) - C Grade (68/100)
+**Expected Move:** ±20.0% | **2x Safety:** ±40.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (10/30): Very unpredictable - recent IPO, business model transition, Q2 2025 showed -$52M loss. No clear earnings trajectory established.
+- EM Respect (20/25): Historical data limited as recent IPO. Current 20% EM reflects extreme uncertainty given 56% decline since IPO.
+- Assignment Desirability (8/20): Would avoid owning - business model challenged by Apple Pay Later competition, regulatory scrutiny, consumer credit cycle sensitivity.
+- Premium Yield (25/20): 20% EM = extreme IV. ATM weekly puts yielding $2.50-3.00 premium. IV rank at 90% - near maximum.
+- Binary Risk (5/0): Very high - BNPL regulatory crackdown, competition from Apple/Affirm, credit risk in rising rates, business model unproven at scale.
+
+**KEY INSIGHT:**
+Expected move is EXTREME at 20% because stock down 56% since IPO creates binary survival narrative, AI workforce reduction uncertainty, and BNPL regulatory overhang driving maximum volatility.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: AVOID - too risky
+- Strike: N/A
+- Premium Target: N/A
+- Expiration: N/A
+- Annualized Return: N/A
+
+**RISK FACTORS:**
+1. BNPL Regulatory Ban: Regulators crack down on BNPL globally → business model viability questioned → stock could drop 50%+ → Existential risk to business model → Low-Medium probability
+2. Apple Competition: Apple Pay Later gains dominant share → Klarna becomes irrelevant → revenue collapse → Growth narrative destroyed, stock could drop 30-40% → Medium probability
+
+**BOTTOM LINE:** AVOID - Extreme risk profile with existential business model questions. IV high but justified given binary survival outcome.
+
+---
+
+VC (Visteon) - B Grade (81/100)
+**Expected Move:** ±9.0% | **2x Safety:** ±18.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (22/30): Moderately predictable - beat 3 of last 4 quarters. Q4 expected EPS $2.06 vs $2.01 YoY (+2.5%). Automotive production visibility helps.
+- EM Respect (17/25): Historical avg move 7.2% vs current 9% implied. Auto cyclical OFTEN respects 1x EM given production schedule visibility.
+- Assignment Desirability (18/20): Would own at $95-100 for automotive digitalization - digital cockpit leader, EV/AV transition play, software-defined radio growth.
+- Premium Yield (19/20): 9% EM = good IV. ATM weekly puts yielding $4.00-4.50 premium. IV rank at 65% - elevated for auto supplier.
+- Binary Risk (5/0): Auto production slowdown, semiconductor shortages, customer concentration, but digital product mix improving margins.
+
+**KEY INSIGHT:**
+Expected move is 25% ABOVE historical average because digital cockpit adoption uncertainty, auto production volatility, and EV transition narrative driving elevated IV for auto supplier.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Long straddle
+- Strike: $105 (ATM)
+- Premium Target: $4.25-4.75 per contract (combined)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~90% if move exceeds 9%
+
+**RISK FACTORS:**
+1. Auto Production Slowdown: Recession hits auto demand → production cuts → revenue miss significantly → Stock could drop 15-20% on production disappointment → Medium probability
+2. Semiconductor Shortage: Chip supply disruptions return → production delays → revenue push-out → Near-term earnings volatility, stock could drop 10-15% → Low-Medium probability
+
+**BOTTOM LINE:** Medium conviction straddle due to elevated IV + auto cyclical binary outcome. Digital cockpit adoption narrative creates earnings volatility potential.
+
+---
+
+W (Wayfair) - B- Grade (77/100)
+**Expected Move:** ±13.0% | **2x Safety:** ±26.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (20/30): Mixed history - beat 2 of last 4 quarters. Q4 expected EPS $0.64 vs $0.59 YoY (+8.5%). Home goods cyclicality adds variability.
+- EM Respect (18/25): Historical avg move 10.5% vs current 13% implied. Discretionary e-commerce OFTEN exceeds 1x EM given housing market sensitivity.
+- Assignment Desirability (16/20): Would own at $55-60 for housing recovery play - home goods e-commerce leader, improving profitability, market share gains.
+- Premium Yield (18/20): 13% EM = good IV. ATM weekly puts yielding $3.50-4.00 premium. IV rank at 70% - elevated ahead of earnings.
+- Binary Risk (5/0): Housing market slowdown, freight cost volatility, competition from Amazon/Target, but market leadership in category.
+
+**KEY INSIGHT:**
+Expected move is 24% ABOVE historical average because housing market uncertainty, freight cost volatility, and discretionary spending sensitivity driving elevated IV for e-commerce.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Long straddle
+- Strike: $60 (ATM)
+- Premium Target: $3.75-4.25 per contract (combined)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~95% if move exceeds 13%
+
+**RISK FACTORS:**
+1. Housing Market Collapse: Mortgage rates spike → home sales drop → big-ticket furniture demand evaporates → Stock could drop 20-25% on housing disappointment → Low-Medium probability
+2. Freight Cost Spike: Ocean shipping rates surge → margin compression → earnings miss → Profitability timeline pushed out, stock could drop 10-15% → Medium probability
+
+**BOTTOM LINE:** Medium conviction straddle due to elevated IV + housing-sensitive binary outcome. Recent price pullback creates oversold bounce potential.
+
+---
+
+DAVA (Endava) - C+ Grade (73/100)
+**Expected Move:** ±15.0% | **2x Safety:** ±30.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (21/30): Moderately predictable - met estimates 3 of last 4 quarters. Q4 expected EPS $0.21 vs $0.20 YoY (+5%). Project-based revenue creates variability.
+- EM Respect (16/25): Historical avg move 11.8% vs current 15% implied. IT services OFTEN respects 1x EM given project visibility.
+- Assignment Desirability (15/20): Would own at $10-11 for digital transformation play - AI services growth, European exposure, global delivery model.
+- Premium Yield (16/20): 15% EM = moderate IV. ATM weekly puts yielding $0.75-0.90 premium. IV rank at 60% - slightly elevated.
+- Binary Risk (5/0): IT spending slowdown, competition from Indian IT, FX volatility, but AI partnership growth narrative.
+
+**KEY INSIGHT:**
+Expected move is 27% ABOVE historical average because AI partnership uncertainty, IT spending volatility, and growth stock multiple compression driving elevated IV for IT services.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Iron condor
+- Strike: Sell $12 call/$12.50 call spread; Sell $10.50 put/$10 put spread
+- Premium Target: $0.30-0.40 per contract (net credit)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~50% if stock stays within $10.50-$12
+
+**RISK FACTORS:**
+1. IT Spending Freeze: Recession hits enterprise IT budgets → project delays/cancellations → revenue miss → Stock could drop 15-20% on spending disappointment → Medium probability
+2. AI Partnership Fizzles: Cognition collaboration fails to materialize → growth narrative breaks → multiple compression → Stock could drop 10-15% on partnership disappointment → Low-Medium probability
+
+**BOTTOM LINE:** Low conviction iron condor due to moderate IV + project-based revenue uncertainty. Strike selection at 1.5x EM provides reasonable cushion.
+
+---
+
+NICE (NICE Systems) - B+ Grade (84/100)
+**Expected Move:** ±8.0% | **2x Safety:** ±16.0%
+
+**WHY THIS GRADE:**
+- Earnings Predictability (26/30): Very predictable - beat 8 consecutive quarters. Q4 expected EPS $3.23 vs $3.04 YoY (+6.3%). Recurring revenue model provides stability.
+- EM Respect (20/25): Historical avg move 5.9% vs current 8% implied. Software company RARELY exceeds 1x EM given predictable business.
+- Assignment Desirability (19/20): Would own at $305-310 for contact center AI leadership - recurring revenue, high margins, competitive moat, cross-selling.
+- Premium Yield (14/20): 8% EM = moderate IV. ATM weekly puts yielding $12-13 premium. IV rank at 40% - below average.
+- Binary Risk (5/0): Competition from Salesforce/Genesys, IT spending slowdown, but market leadership and high switching costs.
+
+**KEY INSIGHT:**
+Expected move is 36% ABOVE historical average because AI narrative creating growth premium, contact center digitalization acceleration, and stable software multiple expansion driving modest volatility.
+
+**SPECIFIC TRADE SETUP:**
+- Strategy: Iron condor
+- Strike: Sell $320 call/$325 call spread; Sell $305 put/$300 put spread
+- Premium Target: $3.00-3.50 per contract (net credit)
+- Expiration: Weekly (Feb 28)
+- Annualized Return: ~65% if stock stays within $305-$320
+
+**RISK FACTORS:**
+1. Enterprise IT Freeze: Large enterprises delay contact center upgrades → deal push-outs → revenue miss → Stock could drop 5-8% on spending disappointment → Low-Medium probability
+2. AI Feature Disappointment: Agentic AI fails to deliver promised ROI → growth narrative challenged → multiple compression → Stock could drop 8-10% on technology disappointment → Low probability
+
+**BOTTOM LINE:** High conviction iron condor due to historical EM respect + stable software business. Strike selection at 1.5x EM provides high probability of success.
+
+---
+
+SECTION 3: TOP RECOMMENDATIONS
+===============================
+
+1. **WMT - IRON CONDOR (A- Grade, 88/100)**
+   - Strategy: Sell OTM call spread + put spread
+   - Strikes: Sell $132.50 call/$135 call; Sell $125 put/$122.50 put
+   - Premium Target: $1.20-1.50 net credit
+   - Expiration: Weekly (Feb 28)
+   - Annualized Return: ~70%
+   - Conviction: HIGH - Historical EM respect + stable business
+
+2. **NICE - IRON CONDOR (B+ Grade, 84/100)**
+   - Strategy: Sell OTM call spread + put spread
+   - Strikes: Sell $320 call/$325 call; Sell $305 put/$300 put
+   - Premium Target: $3.00-3.50 net credit
+   - Expiration: Weekly (Feb 28)
+   - Annualized Return: ~65%
+   - Conviction: HIGH - Predictable software + elevated IV relative to history
+
+3. **CVNA - STRADDLE (B- Grade, 78/100)**
+   - Strategy: Long straddle
+   - Strike: $350 ATM
+   - Premium Target: $8.50-10.00 combined
+   - Expiration: Weekly (Feb 28)
+   - Annualized Return: ~120% if move >15.5%
+   - Conviction: MEDIUM-HIGH - Elevated IV + binary outcome expectation
+
+4. **DASH - STRADDLE (B Grade, 82/100)**
+   - Strategy: Long straddle
+   - Strike: $165 ATM
+   - Premium Target: $10.50-12.50 combined
+   - Expiration: Weekly (Feb 28)
+   - Annualized Return: ~140% if move >12.1%
+   - Conviction: MEDIUM-HIGH - Extreme IV + growth stock volatility
+
+SECTION 4: AVOID LIST
+=====================
+
+1. **KLAR (C Grade, 68/100)**
+   - Reason: Extreme risk - down 56% since IPO, business model challenged by Apple Pay Later, BNPL regulatory crackdown risk, existential business model questions.
+
+2. **LMND (C+ Grade, 71/100)**
+   - Reason: High binary risk - unprofitable insurer, catastrophe loss uncertainty, regulatory scrutiny, better to wait for profitability trajectory.
+
+3. **EBAY (C+ Grade, 72/100)**
+   - Reason: Too low volatility for meaningful options strategies - better for stock ownership or covered calls than earnings plays.
+
+SECTION 5: SUMMARY
+==================
+
+February 18-19 earnings present differentiated opportunities:
+
+**HIGH CONVICTION PLAYS:**
+- WMT & NICE: Iron condors for stable businesses with historical EM respect
+- CVNA & DASH: Straddles for high-growth names with elevated IV and binary outcomes
+
+**KEY THEMES:**
+1. **Elevated IV vs History**: Most stocks trading 20-40% above historical average EM due to growth uncertainty and macro volatility
+2. **Growth vs Value Dichotomy**: Growth names (CVNA, DASH, RELY) show 12-20% EM vs value names (WMT, NICE, EBAY) at 5-9% EM
+3. **Binary Outcome Expectation**: Unprofitable/high-growth names priced for significant moves given profitability timeline questions
+
+**TRADE SELECTION CRITERIA:**
+- Grade A-/B+: Iron condors (WMT, NICE) - high probability, moderate return
+- Grade B/B-: Straddles (CVNA, DASH, RELY, VC, W) - high risk/reward, binary outcomes
+- Grade C/C+: Credit spreads or avoid (EBAY, DAVA, LMND, KLAR) - lower conviction
+
+Report Generated: February 18, 2026
+Analysis Period: Q4 2025 Earnings
+Next Earnings Dates: Today AMC (Feb 18): CVNA, DASH, EBAY, RELY
+                    Tomorrow BMO (Feb 19): WMT, LMND, KLAR, VC, W, DAVA, NICE
+
+--- END OF REPORT ---

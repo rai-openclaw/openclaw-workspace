@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Screened Tickers Schema",
+  "type": "object",
+  "required": ["date", "generated_at", "sources", "tickers"],
+  "properties": {
+    "date": {"type": "string", "format": "date"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "sources": {
+      "type": "object",
+      "properties": {
+        "earnings_whispers": {"type": "array", "items": {"type": "string"}},
+        "portfolio_holdings": {"type": "array", "items": {"type": "string"}},
+        "always_include": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "tickers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ticker", "source", "earnings_date", "earnings_time"],
+        "properties": {
+          "ticker": {"type": "string"},
+          "source": {"type": "string", "enum": ["earnings_whispers", "portfolio_holdings", "always_include"]},
+          "earnings_date": {"type": "string", "format": "date"},
+          "earnings_time": {"type": "string", "enum": ["BMO", "AMC"]},
+          "market_cap": {"type": "number"},
+          "sector": {"type": "string"},
+          "expected_move": {"type": "number"}
+        }
+      }
+    }
+  }
+}

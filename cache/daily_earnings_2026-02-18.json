@@ -1,0 +1,449 @@
+{
+  "cache_date": "2026-02-18",
+  "cache_timestamp": "2026-02-18T07:01:30.570091-08:00",
+  "data_fresh": true,
+  "fetch_date": "Wednesday, February 18, 2026",
+  "earnings_today": {
+    "date": "2026-02-18",
+    "day": "Wednesday",
+    "total_companies": 19,
+    "major_companies": [
+      {
+        "symbol": "ADI",
+        "company": "Analog Devices Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "97.8B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "MCO",
+        "company": "Moody's Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "82.6B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "CVNA",
+        "company": "Carvana Co.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "74.6B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DASH",
+        "company": "DoorDash Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "69.1B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "EBAY",
+        "company": "eBay Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "37.2B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "VRSK",
+        "company": "Verisk Analytics Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "35.8B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "GRMN",
+        "company": "Garmin Ltd.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "31.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "KGC",
+        "company": "Kinross Gold Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "28.6B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "PAAS",
+        "company": "Pan American Silver Corp.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "18.2B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "CDE",
+        "company": "Coeur Mining Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "14.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "EQX",
+        "company": "Equinox Gold Corp.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "13.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "RGLD",
+        "company": "Royal Gold Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "8.9B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      }
+    ]
+  },
+  "earnings_tomorrow": {
+    "date": "2026-02-19",
+    "day": "Thursday",
+    "total_companies": 20,
+    "major_companies": [
+      {
+        "symbol": "WMT",
+        "company": "Walmart Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "1028.3B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DE",
+        "company": "Deere & Company",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "166.1B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "PWR",
+        "company": "Quanta Services Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "78.1B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "W",
+        "company": "Wayfair Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "10.8B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "NICE",
+        "company": "NICE Ltd.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "6.7B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "LMND",
+        "company": "Lemonade Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "4.8B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "VC",
+        "company": "VC Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "2.5B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "AG",
+        "company": "AG Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "2.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "KLAR",
+        "company": "KLAR Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "890M",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DAVA",
+        "company": "DAVA Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "294M",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      }
+    ]
+  },
+  "tradeable_setups": {
+    "today_amc": [
+      {
+        "symbol": "CVNA",
+        "company": "Carvana Co.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "74.6B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DASH",
+        "company": "DoorDash Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "69.1B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "EBAY",
+        "company": "eBay Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "37.2B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "KGC",
+        "company": "Kinross Gold Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "28.6B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "PAAS",
+        "company": "Pan American Silver Corp.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "18.2B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "CDE",
+        "company": "Coeur Mining Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "14.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "EQX",
+        "company": "Equinox Gold Corp.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "13.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "RGLD",
+        "company": "Royal Gold Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "AMC",
+        "eps_estimate": "TBD",
+        "market_cap": "8.9B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      }
+    ],
+    "tomorrow_bmo": [
+      {
+        "symbol": "WMT",
+        "company": "Walmart Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "1028.3B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "DE",
+        "company": "Deere & Company",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "166.1B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "PWR",
+        "company": "Quanta Services Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "78.1B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "W",
+        "company": "Wayfair Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "10.8B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "NICE",
+        "company": "NICE Ltd.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "6.7B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "LMND",
+        "company": "Lemonade Inc.",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "4.8B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "VC",
+        "company": "VC Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "2.5B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      },
+      {
+        "symbol": "AG",
+        "company": "AG Corporation",
+        "event": "Q4 2025 Earnings",
+        "time": "BMO",
+        "eps_estimate": "TBD",
+        "market_cap": "2.4B",
+        "expected_move": "TBD",
+        "catalysts": [],
+        "risk_flags": []
+      }
+    ]
+  },
+  "data_sources": [
+    "Yahoo Finance Earnings Calendar",
+    "Weekly Earnings Schedule"
+  ],
+  "notes": []
+}

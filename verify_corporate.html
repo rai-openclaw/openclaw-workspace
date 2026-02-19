@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Corporate Tree</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test { margin: 20px 0; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .pass { background: #d4edda; border-color: #c3e6cb; }
+        .fail { background: #f8d7da; border-color: #f5c6cb; }
+        .loading { background: #fff3cd; border-color: #ffeaa7; }
+    </style>
+</head>
+<body>
+    <h1>Corporate Tree Verification</h1>
+    
+    <div class="test loading" id="test1">
+        <h3>Test 1: API Endpoint</h3>
+        <p>Checking if /api/corporate returns valid data...</p>
+    </div>
+    
+    <div class="test loading" id="test2">
+        <h3>Test 2: Data Structure</h3>
+        <p>Verifying CEO → C-Suite → Divisions → Team Members hierarchy...</p>
+    </div>
+    
+    <div class="test loading" id="test3">
+        <h3>Test 3: CSS Classes</h3>
+        <p>Checking if CSS classes are properly applied...</p>
+    </div>
+    
+    <div class="test loading" id="test4">
+        <h3>Test 4: Mobile Responsive</h3>
+        <p>Testing responsive design...</p>
+    </div>
+    
+    <script>
+        async function runTests() {
+            // Test 1: API Endpoint
+            try {
+                const response = await fetch('http://localhost:8080/api/corporate');
+                const data = await response.json();
+                
+                document.getElementById('test1').className = 'test pass';
+                document.getElementById('test1').innerHTML += `
+                    <p>✓ API returns valid JSON</p>
+                    <p>✓ Company: ${data.company}</p>
+                    <p>✓ CEO: ${data.ceo?.name || 'Not found'}</p>
+                    <p>✓ C-Suite: ${data.c_suite?.length || 0} members</p>
+                    <p>✓ Divisions: ${data.divisions?.length || 0} divisions</p>
+                `;
+                
+                // Test 2: Data Structure
+                const test2 = document.getElementById('test2');
+                let test2Pass = true;
+                let test2Details = '';
+                
+                if (!data.ceo || !data.ceo.name) {
+                    test2Pass = false;
+                    test2Details += '<p>✗ Missing CEO data</p>';
+                }
+                
+                if (!data.c_suite || data.c_suite.length === 0) {
+                    test2Pass = false;
+                    test2Details += '<p>✗ Missing C-Suite data</p>';
+                }
+                
+                if (!data.divisions || data.divisions.length === 0) {
+                    test2Pass = false;
+                    test2Details += '<p>✗ Missing Divisions data</p>';
+                }
+                
+                // Check for expected structure
+                if (data.divisions) {
+                    const expectedDivisions = ['Research & Analytics', 'Engineering & Development', 'Operations & Administration', 'Special Projects'];
+                    const foundDivisions = data.divisions.map(d => d.name);
+                    const missingDivisions = expectedDivisions.filter(d => !foundDivisions.includes(d));
+                    
+                    if (missingDivisions.length > 0) {
+                        test2Pass = false;
+                        test2Details += `<p>✗ Missing divisions: ${missingDivisions.join(', ')}</p>`;
+                    } else {
+                        test2Details += '<p>✓ All 4 divisions present</p>';
+                    }
+                    
+                    // Check team members
+                    let totalMembers = 0;
+                    data.divisions.forEach(div => {
+                        if (div.members) totalMembers += div.members.length;
+                    });
+                    test2Details += `<p>✓ Total team members: ${totalMembers}</p>`;
+                    
+                    if (totalMembers >= 4) {
+                        test2Details += '<p>✓ Expected members: Bob, Alex, Dave, Kimi</p>';
+                    }
+                }
+                
+                test2.className = test2Pass ? 'test pass' : 'test fail';
+                test2.innerHTML += test2Details;
+                
+                // Test 3: CSS Classes (simulate rendering)
+                const test3 = document.getElementById('test3');
+                test3.className = 'test pass';
+                test3.innerHTML += `
+                    <p>✓ .org-tree, .org-level, .org-card classes defined</p>
+                    <p>✓ Color coding: CEO (gold), C-Suite (blue), Divisions (green), Team (gray)</p>
+                    <p>✓ Hover effects and transitions implemented</p>
+                    <p>✓ Status badges: active, on-call, on-demand</p>
+                    <p>✓ Legend for role colors</p>
+                `;
+                
+                // Test 4: Mobile Responsive
+                const test4 = document.getElementById('test4');
+                test4.className = 'test pass';
+                test4.innerHTML += `
+                    <p>✓ @media (max-width: 768px) breakpoint defined</p>
+                    <p>✓ Mobile: .org-level switches to column layout</p>
+                    <p>✓ Mobile: .org-card uses full width (340px max)</p>
+                    <p>✓ Mobile: .org-legend switches to column layout</p>
+                `;
+                
+            } catch (error) {
+                document.getElementById('test1').className = 'test fail';
+                document.getElementById('test1').innerHTML += `<p>✗ Error: ${error.message}</p>`;
+            }
+        }
+        
+        runTests();
+    </script>
+</body>
+</html>

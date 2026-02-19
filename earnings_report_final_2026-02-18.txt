@@ -1,0 +1,376 @@
+DAILY STOCKS RECOMMENDATION REPORT - FEBRUARY 18, 2026
+=======================================================
+
+SECTION 1: EXECUTIVE SUMMARY TABLE
+===================================
+
+| Ticker | Company         | Exp Move | 2x EM | Grade | Score | Rec           | Notes                                                                 |
+|--------|-----------------|----------|-------|-------|-------|---------------|-----------------------------------------------------------------------|
+| CVNA   | Carvana         | 15.5%    | 31.0% | B-    | 78    | STRADDLE      | High IV, strong revenue growth expected, stock down 22% YTD           |
+| DASH   | DoorDash        | ±19.93p  | 24.2% | B     | 82    | STRADDLE      | Massive revenue growth (38-39% YoY), stock down from $230 to $165     |
+| EBAY   | eBay            | 7-8%     | 14-16%| C+    | 72    | CREDIT SPREAD | Stable business, 8-10% FX-neutral growth, trading at premium          |
+| RELY   | Remitly Global  | 12-15%   | 24-30%| B-    | 76    | STRADDLE      | Fintech growth, BofA Buy rating, expanding UK/Canada, high P/E (145)  |
+| WMT    | Walmart         | 5-6.5%   | 10-13%| A-    | 88    | IRON CONDOR   | Low volatility, $1T market cap, strong consumer resilience            |
+| LMND   | Lemonade        | 15-18%   | 30-36%| C+    | 71    | STRADDLE      | AI insurer growth, still unprofitable, Citizens PT $85, high IV       |
+| KLAR   | Klarna Group    | 18-22%   | 36-44%| C     | 68    | AVOID         | Down 56% since IPO, 37.6% decline in 30 days, high risk               |
+| VC     | Visteon         | 8-10%    | 16-20%| B     | 81    | STRADDLE      | Automotive electronics, digital cockpit adoption, PT $126 vs $104     |
+| W      | Wayfair         | 12-14%   | 24-28%| B-    | 77    | STRADDLE      | Expected $3.3B revenue, $0.64 EPS, consumer discretionary sensitivity |
+| DAVA   | Endava          | 14-16%   | 28-32%| C+    | 73    | CREDIT SPREAD | IT services, expanding AI partnership, recent insider selling         |
+| NICE   | NICE Systems    | 7-9%     | 14-18%| B+    | 84    | IRON CONDOR   | Contact center AI leader, 80%+ inquiry containment, stable business   |
+
+SECTION 2: DETAILED ANALYSIS
+============================
+
+CVNA - CARVANA
+--------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (22/30): Improving with 4 consecutive profitable quarters
+- EM Respect (18/25): 15.5% EM vs historical 13.26% average - slightly elevated
+- Assignment Desirability (16/20): Turnaround story, digital car buying trend
+- Premium Yield (17/20): High IV offers attractive premium (3-4% for ATM weekly)
+- Binary Risk (5/0): Low - proven business model, minimal regulatory risk
+
+**RECENT NEWS:**
+- Analysts maintain Strong Buy with average PT $481 vs $343 current
+- Q4 revenue expected $5.23B, up 47% YoY
+- Stock down 22.3% YTD heading into earnings
+- Options traders expecting 15.5% move either direction
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $4.82B → Q4 est $5.23B (steady growth)
+- EPS vs Estimates: Consistent beats (Q3 +$0.12, Q2 +$0.08, Q1 +$0.15)
+- Margin Changes: Gross margin improved 11.2% to 12.8% YoY
+- Guidance Trajectory: Conservative but consistently beaten
+
+**SPECIFIC RISKS:**
+- Used car price volatility impacts inventory valuation
+- Interest rate sensitivity for auto financing
+- Competition from traditional dealers improving digital capabilities
+- Macroeconomic sensitivity to consumer discretionary spending
+
+DASH - DOORDASH
+---------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (20/30): Mixed history - last quarter missed EPS but beat revenue
+- EM Respect (20/25): ±19.93 points (~12.1%) appropriate given recent 28% decline
+- Assignment Desirability (18/20): Market leader, network effects, international growth
+- Premium Yield (19/20): Extremely high IVR offering premium selling opportunities
+- Binary Risk (5/0): Moderate - regulatory scrutiny, competition, but proven model
+
+**RECENT NEWS:**
+- Bank of America expects in-line Q4 print
+- Revenue expected $3.97-4.00B (38-39% YoY growth)
+- Stock down from $230 in January to $165 currently
+- Deliveroo integration expanding international footprint
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $3.45B → Q4 est $4.00B (accelerating growth)
+- EPS vs Estimates: Inconsistent (Q3 missed by $0.14, Q2 beat by $0.03)
+- Margin Changes: Adjusted EBITDA improving but still negative GAAP
+- Guidance Trajectory: Conservative, often beating revenue estimates
+
+**SPECIFIC RISKS:**
+- Gig worker regulation changes could increase costs
+- Intense competition from Uber, Grubhub, local players
+- Consumer spending slowdown in discretionary delivery
+- International expansion execution risk
+
+EBAY - EBAY
+-----------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (25/30): Very predictable, 9.47% revenue growth TTM
+- EM Respect (15/25): 7-8% EM reasonable for stable marketplace business
+- Assignment Desirability (14/20): Mature business with steady cash flows, dividend
+- Premium Yield (13/20): Lower IV than growth peers, modest but consistent premiums
+- Binary Risk (5/0): Very low - established marketplace, diversified revenue
+
+**RECENT NEWS:**
+- TD Cowen reiterates Hold with $84 target
+- Expecting double-digit revenue growth with favorable FX
+- Promoted Listings ad revenue ~$1.37B through Q3
+- GMV growth expected 7.8% YoY
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $2.82B → Q4 est $2.87B (steady growth)
+- EPS vs Estimates: Consistent small beats ($0.02-$0.04 per quarter)
+- Margin Changes: Operating margin stable around 28-30%
+- Guidance Trajectory: Conservative guidance typically exceeded
+
+**SPECIFIC RISKS:**
+- Competition from Amazon, Etsy, specialty marketplaces
+- FX headwinds given international exposure
+- Platform modernization costs
+- Cybersecurity risks for payment processing
+
+RELY - REMITLY GLOBAL
+---------------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (18/30): Growing fintech with improving predictability
+- EM Respect (16/25): 12-15% EM reasonable for growth fintech
+- Assignment Desirability (17/20): Digital remittances market expanding, fintech disruption
+- Premium Yield (20/20): Very high IV offering excellent premium (6-8% for ATM weekly)
+- Binary Risk (5/0): Moderate - regulatory scrutiny, competition, execution risk
+
+**RECENT NEWS:**
+- BofA initiated coverage with Buy rating
+- Expanding Remitly Business into UK and Canada
+- Sharp sequential jump in send volumes reported
+- Insider selling 4,500 shares at $12.89
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $412M → Q4 est $427M (accelerating growth)
+- EPS vs Estimates: Recent quarters showing improvement toward profitability
+- Margin Changes: Moving toward profitability with scale
+- Guidance Trajectory: Conservative relative to actual performance
+
+**SPECIFIC RISKS:**
+- Regulatory changes in cross-border payments
+- Currency volatility impacts remittance volumes
+- Competition from Wise, PayPal, traditional banks
+- Economic slowdown in key corridors
+
+WMT - WALMART
+-------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (28/30): Extremely predictable, 16 consecutive beats
+- EM Respect (22/25): 5-6.5% EM reflects stable business
+- Assignment Desirability (20/20): Core holding, recession-resistant, dividend aristocrat
+- Premium Yield (13/20): Low IV means modest premiums, better for iron condors
+- Binary Risk (5/0): Minimal - essential business, strong balance sheet
+
+**RECENT NEWS:**
+- Joined $1T market cap club, stock up 16% YTD
+- Analysts maintain Strong Buy with PT up to $140
+- AI initiatives in supply chain and customer experience
+- Holiday season momentum expected to continue
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $161.6B → Q4 est ~$165B (steady growth)
+- EPS vs Estimates: Consistent beats ($0.02-$0.04 per quarter)
+- Margin Changes: Operating margin stable around 4%
+- Guidance Trajectory: Typically conservative and beatable
+
+**SPECIFIC RISKS:**
+- Wage inflation pressure on margins
+- Supply chain disruptions
+- Competition from Amazon, Target, dollar stores
+- Consumer spending shift to value orientation
+
+LMND - LEMONADE
+---------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (15/30): Unpredictable as growth insurer
+- EM Respect (18/25): 15-18% EM appropriate for growth stock with binary outcomes
+- Assignment Desirability (16/20): Speculative growth play, AI-driven insurance disruption
+- Premium Yield (17/20): High IV offers good premium (4-5% for ATM weekly)
+- Binary Risk (5/0): High - unprofitable, catastrophe exposure, underwriting risk
+
+**RECENT NEWS:**
+- Citizens raised PT to $85 from $80, maintains Outperform
+- Expecting lighter catastrophe losses in Q4
+- In-force premium expected $1.218-1.223B
+- Customer base grown from 1M in 2020 to 2.87M in Q3 2025
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $215M → Q4 est $218M (steady growth)
+- EPS vs Estimates: Consistent losses but improving trajectory
+- Margin Changes: Loss ratio improving from 68.4% to target sub-60%
+- Guidance Trajectory: Guiding toward profitability but timeline uncertain
+
+**SPECIFIC RISKS:**
+- Catastrophe losses could spike unexpectedly
+- Regulatory changes in insurance markets
+- Competition from traditional insurers improving digital
+- Capital requirements for insurance operations
+
+KLAR - KLARNA GROUP
+-------------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (10/30): Very unpredictable - recent IPO, business model transition
+- EM Respect (20/25): 18-22% EM reflects high uncertainty, down 56% since IPO
+- Assignment Desirability (8/20): High risk - avoid owning given business model challenges
+- Premium Yield (25/20): Extremely high IV offers massive premium but with high risk
+- Binary Risk (5/0): Very high - business model unproven, regulatory risk, intense competition
+
+**RECENT NEWS:**
+- CEO expects workforce to drop below 2,000 by 2030 via AI automation
+- Stock down 56% since September 2025 IPO
+- 7-day return: -11.7%, 30-day return: -37.6%
+- Analyst consensus: Strong Buy but Zen Rating suggests Hold
+
+**QoQ ANALYSIS:**
+- Revenue: Limited public data as recent IPO
+- EPS vs Estimates: Consistent losses reported
+- Margin Changes: Transitioning from growth-at-all-costs to profitability focus
+- Guidance Trajectory: Unclear as new public company
+
+**SPECIFIC RISKS:**
+- BNPL regulatory crackdown globally
+- Competition from Apple, Affirm, PayPal, traditional banks
+- Credit risk in rising interest rate environment
+- Consumer spending slowdown impacting transaction volumes
+
+VC - VISTEON
+------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (22/30): Moderately predictable automotive supplier
+- EM Respect (17/25): 8-10% EM reasonable for automotive cyclical
+- Assignment Desirability (18/20): Automotive digitalization trend - digital cockpits, EV transition
+- Premium Yield (19/20): Good IV offering attractive premium (3-4% for ATM weekly)
+- Binary Risk (5/0): Moderate - auto production cyclicality, semiconductor supply chain
+
+**RECENT NEWS:**
+- Digital cockpit adoption accelerating with Inntot SDR rollout
+- Average analyst PT $126 vs $104 current (21% upside)
+- 2M software-defined radio deployments milestone
+- Revenue expected $920M, slight YoY decline
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $932M → Q4 est $920M (stable)
+- EPS vs Estimates: Generally meets expectations with occasional beats
+- Margin Changes: Margins improving with digital product mix shift
+- Guidance Trajectory: Typically conservative
+
+**SPECIFIC RISKS:**
+- Auto production slowdown in recession
+- Semiconductor supply chain disruptions
+- Customer concentration (top 5 customers ~70% of sales)
+- R&D investment required for EV/AV transition
+
+W - WAYFAIR
+-----------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (20/30): Moderately predictable e-commerce
+- EM Respect (18/25): 12-14% EM appropriate for discretionary e-commerce
+- Assignment Desirability (16/20): Housing recovery play, market leadership in home goods
+- Premium Yield (18/20): Good IV offering solid premium (4-5% for ATM weekly)
+- Binary Risk (5/0): Moderate - housing market sensitivity, freight cost volatility
+
+**RECENT NEWS:**
+- Expected Q4 revenue $3.296B, EPS $0.64
+- Recent share price pullback creating valuation opportunity
+- Holiday season performance key driver
+- Analysts watching freight and logistics cost trends
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $3.18B → Q4 est $3.30B (seasonal strength)
+- EPS vs Estimates: Mixed history - sometimes beats, sometimes misses
+- Margin Changes: Gross margin improving but SG&A remains high
+- Guidance Trajectory: Often conservative relative to actual
+
+**SPECIFIC RISKS:**
+- Housing market slowdown impacts big-ticket purchases
+- Freight and logistics cost inflation
+- Return rate volatility in furniture category
+- Competition from omnichannel retailers
+
+DAVA - ENDAVA
+-------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (21/30): IT services moderately predictable
+- EM Respect (16/25): 14-16% EM reasonable for IT services
+- Assignment Desirability (15/20): Digital transformation trend, AI services growth
+- Premium Yield (16/20): Moderate IV offering decent premium (3-4% for ATM weekly)
+- Binary Risk (5/0): Moderate - project timing variability, competition, FX volatility
+
+**RECENT NEWS:**
+- Expanding Cognition partnership for AI coding agents
+- Guggenheim lowered PT from $15 to $13 but maintains Buy
+- Prescott Group bought 609,215 shares in Q3
+- JPMorgan cut PT from $13 to $10, Neutral rating
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $182M → Q4 est $180M (stable growth)
+- EPS vs Estimates: Generally meets expectations
+- Margin Changes: Margins stable in mid-teens, utilization rate key
+- Guidance Trajectory: Typically achievable
+
+**SPECIFIC RISKS:**
+- IT spending slowdown in recession
+- Competition from larger Indian IT services firms
+- FX volatility (EUR, GBP exposure)
+- Talent retention in competitive market
+
+NICE - NICE SYSTEMS
+-------------------
+**WHY EACH GRADE COMPONENT:**
+- Earnings Predictability (26/30): Very predictable software business
+- EM Respect (20/25): 7-9% EM appropriate for stable software company
+- Assignment Desirability (19/20): Contact center AI leadership, recurring revenue
+- Premium Yield (14/20): Lower IV means modest premiums, better for iron condors
+- Binary Risk (5/0): Low - established market leader, strong competitive moat
+
+**RECENT NEWS:**
+- Agentic AI achieving 80%+ inquiry containment, 20% higher CSAT
+- Black Creek sold 271,072 shares worth $32.75M in Q4
+- Stock down 38.5% from recent highs
+- Q4 expected $3.23 EPS, $780M revenue
+
+**QoQ ANALYSIS:**
+- Revenue: Q3 $772M → Q4 est $780M (steady growth)
+- EPS vs Estimates: Consistent beats by $0.02-$0.05 per quarter
+- Margin Changes: Operating margin stable around 25%
+- Guidance Trajectory: Typically conservative and beatable
+
+**SPECIFIC RISKS:**
+- Competition from Salesforce, Genesys, startups
+- Enterprise IT spending slowdown
+- AI feature development requires continued R&D
+- International expansion execution risk
+
+TOP RECOMMENDATIONS
+===================
+
+1. WMT - IRON CONDOR
+   - Strategy: Sell OTM calls and puts
+   - Strikes: Sell $130 call/buy $135 call; Sell $120 put/buy $115 put
+   - Expiration: Weekly (Feb 28)
+   - Expected Return: 1-2% premium for 7-10 day trade
+   - Reason: Low volatility (5-6.5% EM), stable business, high probability
+
+2. NICE - IRON CONDOR
+   - Strategy: Sell OTM calls and puts
+   - Strikes: Sell $315 call/buy $320 call; Sell $300 put/buy $295 put
+   - Expiration:   - Expiration: Weekly (Feb 28)
+   - Expected Return: 1.5-2.5% premium for 7-10 day trade
+   - Reason: Stable software business with 7-9% EM, high probability
+
+3. CVNA - STRADDLE
+   - Strategy: Buy both calls and puts
+   - Strikes: Buy $350 call and $350 put
+   - Expiration: Weekly (Feb 28)
+   - Expected Return: Breakeven at ±15.5% move, profit beyond
+   - Reason: High IV (15.5% EM), binary outcome likely
+
+4. DASH - STRADDLE
+   - Strategy: Buy both calls and puts
+   - Strikes: Buy $165 call and $165 put
+   - Expiration: Weekly (Feb 28)
+   - Expected Return: Breakeven at ±12.1% move, profit beyond
+   - Reason: Extreme volatility expected (±19.93 points), high IVR
+
+AVOID LIST
+==========
+
+1. KLAR
+   - Reason: Extreme risk - down 56% since IPO, 37.6% decline in 30 days, business model challenges, regulatory scrutiny. IV too high even for premium selling.
+
+2. LMND
+   - Reason: High binary risk as unprofitable insurer. Catastrophe losses unpredictable. Better to wait for profitability trajectory to improve.
+
+3. EBAY
+   - Reason: Too low volatility for meaningful options strategies. Better for stock ownership or covered calls than earnings plays.
+
+SUMMARY
+=======
+
+February 18-19 earnings present mixed opportunities:
+- WMT and NICE offer high-probability iron condor plays with their stable businesses and low expected moves
+- CVNA and DASH provide high-volatility straddle opportunities given their elevated IV and binary outcomes
+- KLAR should be avoided due to extreme risk profile
+- Overall market expecting significant moves in growth names (CVNA, DASH, RELY) while established companies (WMT, NICE, EBAY) show stability
+
+Report Generated: February 18, 2026
+Analysis Period: Q4 2025 Earnings
+Next Earnings Dates: Today AMC (Feb 18): CVNA, DASH, EBAY, RELY
+                    Tomorrow BMO (Feb 19): WMT, LMND, KLAR, VC, W, DAVA, NICE

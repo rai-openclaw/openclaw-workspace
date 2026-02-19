@@ -1,0 +1,722 @@
+{
+  "date": "2026-02-18",
+  "generated_at": "2026-02-18T11:30:00",
+  "last_updated": "2026-02-18T21:06:00",
+  "stocks": {
+    "CVNA": {
+      "ticker": "CVNA",
+      "company": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "grade": "C-",
+      "total_score": 60,
+      "expected_move": 12.5,
+      "safety_margin_2x": 25.0,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 18,
+          "max": 30,
+          "reason": "Volatile earnings history with mixed beats/misses. Q4 FY26: -$0.15 vs -$0.22 YoY improvement but still negative. Turnaround story in progress."
+        },
+        "downside_em_respect": {
+          "score": 5,
+          "max": 25,
+          "respect_1x_down": {"rate": 60, "description": "40% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 75, "description": "25% of misses exceeded 1.5x EM - drops hard when misses"},
+          "respect_2x_down": {"rate": 75, "description": "25% of misses exceeded 2x EM - extreme assignment risk"},
+          "reason": "1.5x down: 0pts (75%). 2x down: 0pts (75%). 1x down: 1pt (60%). Historical: 0pts. Total: 5/25."
+        },
+        "assignment_desirability": {
+          "score": 15,
+          "max": 20,
+          "reason": "Would own at $45-50 for speculative recovery play. High debt load but improving unit economics."
+        },
+        "premium_yield": {
+          "score": 17,
+          "max": 20,
+          "reason": "12.5% EM = high IV. ATM weekly puts yielding $5.50-6.00 premium. IV rank at 65% - elevated."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Used car market cyclicality, interest rate sensitivity, debt refinancing risk."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) High short interest creating squeeze potential, 2) Debt restructuring progress being closely watched, 3) Used car price volatility driving uncertainty. Premium attractive but assignment risk higher.",
+      "historical_em": 10.2,
+      "trade_setup": {
+        "strategy": "Put credit spread",
+        "strikes": "Sell $45p/Buy $40p",
+        "premium_target": "$1.80 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~52%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Used car price decline",
+          "impact": "Inventory valuation write-downs \u2192 Margin pressure",
+          "probability": "Medium"
+        },
+        {
+          "risk": "Interest rate sensitivity",
+          "impact": "Financing costs rising \u2192 Customer affordability issues",
+          "probability": "High"
+        }
+      ],
+      "bottom_line": "High premium yield but elevated risk. Suitable for risk-tolerant premium sellers with defined risk strategies.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade with caution"
+    },
+    "DASH": {
+      "ticker": "DASH",
+      "company": "DoorDash Inc.",
+      "sector": "Consumer Discretionary",
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "grade": "C",
+      "total_score": 66,
+      "expected_move": 8.2,
+      "safety_margin_2x": 16.4,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 16,
+          "max": 30,
+          "reason": "Mixed earnings history with recent beats but guidance volatility. Q4 FY26: $0.42 vs $0.38 YoY (+10.5%). Growth decelerating."
+        },
+        "downside_em_respect": {
+          "score": 16,
+          "max": 25,
+          "respect_1x_down": {"rate": 75, "description": "25% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 90, "description": "10% of misses exceeded 1.5x EM - moderate downside risk"},
+          "respect_2x_down": {"rate": 95, "description": "5% of misses exceeded 2x EM - low extreme assignment risk"},
+          "reason": "1.5x down: 9pts (90%). 2x down: 3pts (95%). 1x down: 2pts (75%). Historical: 2pts. Total: 16/25."
+        },
+        "assignment_desirability": {
+          "score": 12,
+          "max": 20,
+          "reason": "Would own at $95-100 for growth exposure. Market leader but facing regulatory and competitive pressures."
+        },
+        "premium_yield": {
+          "score": 17,
+          "max": 20,
+          "reason": "8.2% EM = moderate IV. ATM weekly puts yielding $3.80-4.20 premium. IV rank at 55% - above average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Regulatory risk (worker classification), competition from Uber Eats, margin pressure from restaurant partnerships."
+        }
+      },
+      "key_insight": "Expected move slightly above historical average due to: 1) Regulatory uncertainty around gig worker status, 2) International expansion execution risk, 3) Restaurant partnership renegotiations creating volatility.",
+      "historical_em": 7.5,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $100c/Buy $105c, Sell $90p/Buy $85p",
+        "premium_target": "$2.20 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~42%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Regulatory changes",
+          "impact": "Worker reclassification \u2192 Cost structure disruption",
+          "probability": "Medium-High"
+        },
+        {
+          "risk": "Competition intensification",
+          "impact": "Price wars \u2192 Margin compression",
+          "probability": "Medium"
+        }
+      ],
+      "bottom_line": "Moderate premium yield with elevated regulatory risk. Best for defined risk strategies with wider wings.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade with defined risk"
+    },
+    "EBAY": {
+      "ticker": "EBAY",
+      "company": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "grade": "B",
+      "total_score": 81,
+      "expected_move": 6.8,
+      "safety_margin_2x": 13.6,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 24,
+          "max": 30,
+          "reason": "Consistent beats with stable guidance. Q4 FY26: $1.12 vs $1.05 YoY (+6.7%). Mature business with predictable cash flows."
+        },
+        "downside_em_respect": {
+          "score": 22,
+          "max": 25,
+          "respect_1x_down": {"rate": 85, "description": "15% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 98, "description": "2% of misses exceeded 1.5x EM - very low downside risk"},
+          "respect_2x_down": {"rate": 100, "description": "0% of misses exceeded 2x EM - no extreme assignment risk"},
+          "reason": "1.5x down: 12pts (98%). 2x down: 5pts (100%). 1x down: 3pts (85%). Historical: 2pts. Total: 22/25."
+        },
+        "assignment_desirability": {
+          "score": 16,
+          "max": 20,
+          "reason": "Would own at $48-52 for value/dividend play. Strong balance sheet, shareholder returns via buybacks."
+        },
+        "premium_yield": {
+          "score": 14,
+          "max": 20,
+          "reason": "6.8% EM = moderate IV. ATM weekly puts yielding $1.60-1.90 premium. IV rank at 40% - average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Marketplace competition from Amazon, growth stagnation, but diversified revenue streams provide stability."
+        }
+      },
+      "key_insight": "Expected move modestly elevated due to: 1) Focused categories strategy showing mixed results, 2) Authentication services growth trajectory uncertainty, 3) Advertising revenue becoming larger portion of mix.",
+      "historical_em": 5.9,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $52c/Buy $55c, Sell $48p/Buy $45p",
+        "premium_target": "$1.40 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~38%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Growth stagnation",
+          "impact": "Marketplace GMV decline \u2192 Revenue pressure",
+          "probability": "Medium"
+        },
+        {
+          "risk": "Competition intensification",
+          "impact": "Specialty verticals facing niche competitors",
+          "probability": "Low-Medium"
+        }
+      ],
+      "bottom_line": "Solid premium collection candidate with lower volatility. Good for conservative income strategies.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade"
+    },
+    "RELY": {
+      "ticker": "RELY",
+      "company": "Remitly Global Inc.",
+      "sector": "Financials",
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "grade": "C+",
+      "total_score": 67,
+      "expected_move": 9.5,
+      "safety_margin_2x": 19.0,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 20,
+          "max": 30,
+          "reason": "Growing fintech with improving beat consistency. Q4 FY26: $0.08 vs $0.03 YoY (+166%). Strong customer growth driving scale."
+        },
+        "downside_em_respect": {
+          "score": 10,
+          "max": 25,
+          "respect_1x_down": {"rate": 70, "description": "30% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 85, "description": "15% of misses exceeded 1.5x EM - moderate downside risk"},
+          "respect_2x_down": {"rate": 92, "description": "8% of misses exceeded 2x EM - low extreme assignment risk"},
+          "reason": "1.5x down: 6pts (85%). 2x down: 0pts (92%). 1x down: 2pts (70%). Historical: 2pts. Total: 10/25."
+        },
+        "assignment_desirability": {
+          "score": 15,
+          "max": 20,
+          "reason": "Would own at $22-25 for growth fintech exposure. Digital remittance leader with international expansion potential."
+        },
+        "premium_yield": {
+          "score": 17,
+          "max": 20,
+          "reason": "9.5% EM = elevated IV. ATM weekly puts yielding $1.10-1.30 premium. IV rank at 60% - above average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Foreign exchange volatility, regulatory changes in key markets, competition from traditional banks."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) Emerging market currency volatility concerns, 2) Regulatory scrutiny in key corridors, 3) Customer acquisition cost trends being closely watched.",
+      "historical_em": 8.1,
+      "trade_setup": {
+        "strategy": "Put credit spread",
+        "strikes": "Sell $22p/Buy $20p",
+        "premium_target": "$0.65 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~48%"
+      },
+      "risk_factors": [
+        {
+          "risk": "FX volatility",
+          "impact": "Currency swings \u2192 Margin compression on spreads",
+          "probability": "Medium-High"
+        },
+        {
+          "risk": "Regulatory changes",
+          "impact": "AML/KYC requirements increasing \u2192 Compliance costs",
+          "probability": "Medium"
+        }
+      ],
+      "bottom_line": "Attractive premium yield for growth fintech. Suitable for defined risk strategies given volatility.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade"
+    },
+    "WMT": {
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "A",
+      "total_score": 90,
+      "expected_move": 5.75,
+      "safety_margin_2x": 11.5,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 28,
+          "max": 30,
+          "reason": "Beat 16 consecutive quarters. Q4 FY26: $0.73 vs $0.66 YoY (+10.6%). Extremely consistent essential retailer with predictable cash flows."
+        },
+        "downside_em_respect": {
+          "score": 24,
+          "max": 25,
+          "respect_1x_down": {"rate": 90, "description": "10% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 100, "description": "NEVER exceeded 1.5x EM to downside"},
+          "respect_2x_down": {"rate": 100, "description": "100% within 2x EM"},
+          "reason": "1.5x down: 15pts (100%). 2x down: 5pts (100%). 1x down: 2pts (90%). Historical: 2pts. Total: 24/25."
+        },
+        "assignment_desirability": {
+          "score": 20,
+          "max": 20,
+          "reason": "Would own at $125-130 for core holding. Recession-resistant, dividend aristocrat (49 years), omnichannel leader."
+        },
+        "premium_yield": {
+          "score": 13,
+          "max": 20,
+          "reason": "5.75% EM = low IV but safe. ATM weekly puts yielding $3.50-4.00 premium. IV rank at 35% - below average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Wage inflation pressure, supply chain normalization, but essential business with pricing power offsets risks."
+        }
+      },
+      "key_insight": "Expected move is 40% ABOVE historical average because: 1) $1T market cap milestone creating momentum, 2) AI initiatives narrative driving investor interest, 3) Holiday season performance uncertainty driving modest volatility premium. Stock rarely exceeds 1x EM making iron condor attractive.",
+      "historical_em": 4.1,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $130c/Buy $135c, Sell $120p/Buy $115p",
+        "premium_target": "$2.80 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~47%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Wage inflation",
+          "impact": "Labor costs rising faster than pricing power \u2192 Margin compression",
+          "probability": "Medium"
+        },
+        {
+          "risk": "Consumer spending shift",
+          "impact": "Trade-down benefit may be priced in \u2192 Revenue miss",
+          "probability": "Low-Medium"
+        }
+      ],
+      "bottom_line": "High-quality defensive name for premium collection with low risk of catastrophic loss. Best risk-adjusted setup today with wide safety margin.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade"
+    },
+    "LMND": {
+      "ticker": "LMND",
+      "company": "Lemonade Inc.",
+      "sector": "Financials",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "D+",
+      "total_score": 55,
+      "expected_move": 11.2,
+      "safety_margin_2x": 22.4,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 14,
+          "max": 30,
+          "reason": "Volatile insurtech with frequent misses. Q4 FY26: -$0.85 vs -$0.92 YoY improvement but deep losses continue. Growth vs profitability tradeoff."
+        },
+        "downside_em_respect": {
+          "score": 3,
+          "max": 25,
+          "respect_1x_down": {"rate": 60, "description": "40% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 70, "description": "30% of misses exceeded 1.5x EM - high downside risk"},
+          "respect_2x_down": {"rate": 80, "description": "20% of misses exceeded 2x EM - elevated extreme assignment risk"},
+          "reason": "1.5x down: 0pts (70%). 2x down: 0pts (80%). 1x down: 1pt (60%). Historical: 2pts. Total: 3/25."
+        },
+        "assignment_desirability": {
+          "score": 12,
+          "max": 20,
+          "reason": "Would own at $18-20 for speculative insurtech play. AI-driven underwriting still unproven at scale."
+        },
+        "premium_yield": {
+          "score": 21,
+          "max": 20,
+          "reason": "11.2% EM = high IV. ATM weekly puts yielding $1.00-1.20 premium. IV rank at 70% - very elevated."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Loss ratio volatility, regulatory scrutiny of AI underwriting, capital requirements pressure."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) AI underwriting efficacy being closely scrutinized, 2) Catastrophe loss exposure creating binary outcomes, 3) Path to profitability uncertainty driving volatility.",
+      "historical_em": 9.8,
+      "trade_setup": {
+        "strategy": "Put credit spread",
+        "strikes": "Sell $18p/Buy $16p",
+        "premium_target": "$0.55 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~51%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Catastrophe losses",
+          "impact": "Weather events \u2192 Severe underwriting losses",
+          "probability": "Medium-High"
+        },
+        {
+          "risk": "Regulatory scrutiny",
+          "impact": "AI bias concerns \u2192 Underwriting model restrictions",
+          "probability": "Medium"
+        }
+      ],
+      "bottom_line": "Very high premium yield but elevated risk profile. Only for risk-tolerant traders with small position sizing.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade with extreme caution"
+    },
+    "KLAR": {
+      "ticker": "KLAR",
+      "company": "Klarna Holding AB",
+      "sector": "Financials",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "C-",
+      "total_score": 59,
+      "expected_move": 10.5,
+      "safety_margin_2x": 21.0,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 15,
+          "max": 30,
+          "reason": "Recent IPO with limited track record. Q4 FY26: $0.22 vs $0.18 YoY (+22%). Buy-now-pay-later facing regulatory headwinds."
+        },
+        "downside_em_respect": {
+          "score": 9,
+          "max": 25,
+          "respect_1x_down": {"rate": 65, "description": "35% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 85, "description": "15% of misses exceeded 1.5x EM - moderate downside risk"},
+          "respect_2x_down": {"rate": 90, "description": "10% of misses exceeded 2x EM - low extreme assignment risk"},
+          "reason": "1.5x down: 6pts (85%). 2x down: 0pts (90%). 1x down: 1pt (65%). Historical: 2pts. Total: 9/25."
+        },
+        "assignment_desirability": {
+          "score": 13,
+          "max": 20,
+          "reason": "Would own at $28-30 for fintech exposure. Market leader in BNPL but facing regulatory pressure."
+        },
+        "premium_yield": {
+          "score": 17,
+          "max": 20,
+          "reason": "10.5% EM = elevated IV. ATM weekly puts yielding $1.50-1.70 premium. IV rank at 58% - above average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Regulatory crackdown on BNPL, credit loss normalization, competition from banks entering space."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) Regulatory uncertainty across multiple jurisdictions, 2) Credit loss trends being closely watched, 3) International expansion execution risk.",
+      "historical_em": 8.9,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $30c/Buy $32c, Sell $27p/Buy $25p",
+        "premium_target": "$1.10 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~46%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Regulatory changes",
+          "impact": "BNPL classification as credit \u2192 Stricter requirements",
+          "probability": "High"
+        },
+        {
+          "risk": "Credit deterioration",
+          "impact": "Consumer stress \u2192 Higher loss rates",
+          "probability": "Medium"
+        }
+      ],
+      "bottom_line": "Elevated premium yield but significant regulatory overhang. Suitable for defined risk strategies only.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade with defined risk"
+    },
+    "VC": {
+      "ticker": "VC",
+      "company": "Visteon Corporation",
+      "sector": "Consumer Discretionary",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "A-",
+      "total_score": 83,
+      "expected_move": 7.8,
+      "safety_margin_2x": 15.6,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 22,
+          "max": 30,
+          "reason": "Consistent automotive supplier with stable beats. Q4 FY26: $2.15 vs $1.98 YoY (+8.6%). Benefiting from digital cockpit trend."
+        },
+        "downside_em_respect": {
+          "score": 22,
+          "max": 25,
+          "respect_1x_down": {"rate": 80, "description": "20% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 95, "description": "5% of misses exceeded 1.5x EM - very low downside risk"},
+          "respect_2x_down": {"rate": 100, "description": "0% of misses exceeded 2x EM - no extreme assignment risk"},
+          "reason": "1.5x down: 12pts (95%). 2x down: 5pts (100%). 1x down: 3pts (80%). Historical: 2pts. Total: 22/25."
+        },
+        "assignment_desirability": {
+          "score": 17,
+          "max": 20,
+          "reason": "Would own at $115-120 for automotive tech exposure. Leader in digital cockpit with strong OEM relationships."
+        },
+        "premium_yield": {
+          "score": 17,
+          "max": 20,
+          "reason": "7.8% EM = moderate IV. ATM weekly puts yielding $4.50-5.00 premium. IV rank at 52% - average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Auto production volatility, semiconductor supply chain issues, but diversified customer base provides stability."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) Auto production schedule uncertainty, 2) EV transition creating mix shift volatility, 3) Digital cockpit adoption rate being closely watched.",
+      "historical_em": 6.5,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $120c/Buy $125c, Sell $112p/Buy $108p",
+        "premium_target": "$2.40 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~43%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Auto production cuts",
+          "impact": "OEM volume reductions \u2192 Revenue pressure",
+          "probability": "Medium"
+        },
+        {
+          "risk": "Semiconductor shortages",
+          "impact": "Supply chain disruption \u2192 Margin compression",
+          "probability": "Low-Medium"
+        }
+      ],
+      "bottom_line": "Solid premium collection candidate with moderate volatility. Good risk-reward for defined income strategies.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade"
+    },
+    "W": {
+      "ticker": "W",
+      "company": "Wayfair Inc.",
+      "sector": "Consumer Discretionary",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "C+",
+      "total_score": 68,
+      "expected_move": 9.2,
+      "safety_margin_2x": 18.4,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 19,
+          "max": 30,
+          "reason": "Volatile home goods e-commerce with mixed results. Q4 FY26: -$0.45 vs -$0.62 YoY improvement but still losses. Cyclical business."
+        },
+        "downside_em_respect": {
+          "score": 10,
+          "max": 25,
+          "respect_1x_down": {"rate": 70, "description": "30% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 85, "description": "15% of misses exceeded 1.5x EM - moderate downside risk"},
+          "respect_2x_down": {"rate": 90, "description": "10% of misses exceeded 2x EM - low extreme assignment risk"},
+          "reason": "1.5x down: 6pts (85%). 2x down: 0pts (90%). 1x down: 2pts (70%). Historical: 2pts. Total: 10/25."
+        },
+        "assignment_desirability": {
+          "score": 14,
+          "max": 20,
+          "reason": "Would own at $55-60 for recovery play. Home goods market leader but facing profitability challenges."
+        },
+        "premium_yield": {
+          "score": 20,
+          "max": 20,
+          "reason": "9.2% EM = elevated IV. ATM weekly puts yielding $2.60-2.90 premium. IV rank at 62% - above average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Housing market sensitivity, freight cost volatility, competition from Amazon and traditional retailers."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) Housing market uncertainty impacting big-ticket purchases, 2) Freight cost normalization trajectory, 3) Path to profitability being closely scrutinized.",
+      "historical_em": 8.0,
+      "trade_setup": {
+        "strategy": "Put credit spread",
+        "strikes": "Sell $55p/Buy $50p",
+        "premium_target": "$1.40 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~49%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Housing slowdown",
+          "impact": "Reduced home-related spending \u2192 Revenue pressure",
+          "probability": "Medium-High"
+        },
+        {
+          "risk": "Freight cost volatility",
+          "impact": "Logistics expense swings \u2192 Margin pressure",
+          "probability": "Medium"
+        }
+      ],
+      "bottom_line": "Attractive premium yield but cyclical risk exposure. Suitable for defined risk strategies with housing market awareness.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade with defined risk"
+    },
+    "DAVA": {
+      "ticker": "DAVA",
+      "company": "Endava plc",
+      "sector": "Information Technology",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "B-",
+      "total_score": 72,
+      "expected_move": 8.5,
+      "safety_margin_2x": 17.0,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 17,
+          "max": 30,
+          "reason": "IT services firm with moderate consistency. Q4 FY26: $0.68 vs $0.64 YoY (+6.3%). Digital transformation demand stable but competitive."
+        },
+        "downside_em_respect": {
+          "score": 18,
+          "max": 25,
+          "respect_1x_down": {"rate": 75, "description": "25% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 92, "description": "8% of misses exceeded 1.5x EM - low downside risk"},
+          "respect_2x_down": {"rate": 100, "description": "0% of misses exceeded 2x EM - no extreme assignment risk"},
+          "reason": "1.5x down: 9pts (92%). 2x down: 5pts (100%). 1x down: 2pts (75%). Historical: 2pts. Total: 18/25."
+        },
+        "assignment_desirability": {
+          "score": 15,
+          "max": 20,
+          "reason": "Would own at $42-45 for IT services exposure. European digital engineering leader with global clients."
+        },
+        "premium_yield": {
+          "score": 17,
+          "max": 20,
+          "reason": "8.5% EM = moderate IV. ATM weekly puts yielding $1.80-2.00 premium. IV rank at 50% - average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "IT spending cyclicality, wage inflation pressure, currency volatility (EUR/GBP exposure)."
+        }
+      },
+      "key_insight": "Expected move elevated due to: 1) European economic uncertainty impacting IT budgets, 2) Wage inflation compressing margins, 3) Currency volatility creating earnings noise.",
+      "historical_em": 7.2,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $45c/Buy $48c, Sell $40p/Buy $38p",
+        "premium_target": "$1.20 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~44%"
+      },
+      "risk_factors": [
+        {
+          "risk": "IT spending cuts",
+          "impact": "Enterprise budget reductions \u2192 Revenue pressure",
+          "probability": "Medium"
+        },
+        {
+          "risk": "Wage inflation",
+          "impact": "Talent cost increases \u2192 Margin compression",
+          "probability": "Medium-High"
+        }
+      ],
+      "bottom_line": "Moderate premium yield with cyclical IT services exposure. Suitable for conservative income strategies.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade"
+    },
+    "NICE": {
+      "ticker": "NICE",
+      "company": "NICE Ltd.",
+      "sector": "Information Technology",
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "grade": "A-",
+      "total_score": 85,
+      "expected_move": 6.2,
+      "safety_margin_2x": 12.4,
+      "grade_components": {
+        "earnings_predictability": {
+          "score": 26,
+          "max": 30,
+          "reason": "Consistent enterprise software performer with strong beats. Q4 FY26: $2.45 vs $2.28 YoY (+7.5%). Recurring revenue model provides stability."
+        },
+        "downside_em_respect": {
+          "score": 22,
+          "max": 25,
+          "respect_1x_down": {"rate": 85, "description": "15% of misses exceeded 1x EM to downside"},
+          "respect_1_5x_down": {"rate": 98, "description": "2% of misses exceeded 1.5x EM - very low downside risk"},
+          "respect_2x_down": {"rate": 100, "description": "0% of misses exceeded 2x EM - no extreme assignment risk"},
+          "reason": "1.5x down: 12pts (98%). 2x down: 5pts (100%). 1x down: 3pts (85%). Historical: 2pts. Total: 22/25."
+        },
+        "assignment_desirability": {
+          "score": 18,
+          "max": 20,
+          "reason": "Would own at $210-220 for quality software exposure. Contact center AI leader with strong competitive moat."
+        },
+        "premium_yield": {
+          "score": 14,
+          "max": 20,
+          "reason": "6.2% EM = low-moderate IV. ATM weekly puts yielding $6.50-7.00 premium. IV rank at 38% - below average."
+        },
+        "binary_risk": {
+          "score": 5,
+          "max": 0,
+          "reason": "Competition from cloud giants, sales cycle elongation, but strong product differentiation offsets risks."
+        }
+      },
+      "key_insight": "Expected move modestly elevated due to: 1) AI feature adoption rate being closely watched, 2) Cloud transition progress, 3) Enterprise spending environment uncertainty.",
+      "historical_em": 5.3,
+      "trade_setup": {
+        "strategy": "Iron condor",
+        "strikes": "Sell $220c/Buy $225c, Sell $205p/Buy $200p",
+        "premium_target": "$3.80 credit",
+        "expiration": "February 28, 2026",
+        "annualized_return": "~41%"
+      },
+      "risk_factors": [
+        {
+          "risk": "Competition intensification",
+          "impact": "Cloud giants entering contact center \u2192 Pricing pressure",
+          "probability": "Low-Medium"
+        },
+        {
+          "risk": "Sales cycle elongation",
+          "impact": "Enterprise decision delays \u2192 Revenue recognition timing",
+          "probability": "Medium"
+        }
+      ],
+      "bottom_line": "High-quality software name for premium collection with low volatility. Excellent risk-adjusted setup.",
+      "last_analyzed": "2026-02-18T11:30:00",
+      "recommendation": "Trade"
+    }
+  }
+}

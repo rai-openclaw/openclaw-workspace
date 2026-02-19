@@ -1,0 +1,15 @@
+{
+  "bypass_sector_filter": [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "TSLA",
+    "NVDA",
+    "META"
+  ],
+  "always_include_earnings": [
+    "CAKE"
+  ],
+  "notes": "bypass_sector_filter: These stocks bypass sector filter regardless of sector classification. always_include_earnings: Always research these tickers for earnings regardless of screener results."
+}

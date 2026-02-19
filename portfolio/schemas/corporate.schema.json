@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Corporate Structure Schema",
+  "description": "Schema for team organization data in Mission Control",
+  "type": "object",
+  "required": ["version", "last_updated", "departments", "team"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification timestamp"
+    },
+    "departments": {
+      "type": "array",
+      "description": "Department definitions",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "color", "hex"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "color": {"type": "string"},
+          "hex": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"}
+        }
+      }
+    },
+    "team": {
+      "type": "array",
+      "description": "Team member data",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "emoji", "role", "department", "level", "reports_to"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "emoji": {"type": "string"},
+          "role": {"type": "string"},
+          "department": {"type": "string"},
+          "level": {"type": "integer", "minimum": 1, "maximum": 5},
+          "reports_to": {"type": ["string", "null"]},
+          "description": {"type": "string"},
+          "availability": {"type": "string"},
+          "status": {"type": "string", "enum": ["active", "inactive"]},
+          "responsibilities": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "model": {
+            "type": ["object", "null"],
+            "properties": {
+              "name": {"type": "string"},
+              "provider": {"type": "string"},
+              "context_window": {"type": "string"},
+              "cost_tier": {"type": "string"}
+            }
+          },
+          "schedule": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+}

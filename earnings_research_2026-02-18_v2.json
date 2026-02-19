@@ -1,0 +1,522 @@
+{
+  "report_date": "2026-02-18",
+  "stocks": [
+    {
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "exp_move": "15.5%",
+      "2x_em": "31.0%",
+      "grade": "B-",
+      "score": 78,
+      "rec": "STRADDLE",
+      "key_notes": "High IV (15.5% EM), strong revenue growth expected ($5.23B vs $3.55B YoY), stock down 22% YTD, improving profitability",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "22/30",
+          "reason": "Beat 4 consecutive quarters with improving consistency. Q4 expected EPS $1.13 vs $0.89 YoY (+27%). Revenue growth trajectory consistent at 47% YoY expected.",
+          "em_respect": "18/25",
+          "reason": "Historical avg move 13.26% vs current 15.5% implied. Stock RARELY exceeds 1.5x EM despite high volatility reputation.",
+          "assignment_desirability": "16/20",
+          "reason": "Would own at $280-300 for turnaround story - digital car buying adoption, market share gains from dealers, improving unit economics.",
+          "premium_yield": "17/20",
+          "reason": "15.5% EM = very high IV. ATM weekly puts yielding $8-10 premium. IV rank elevated at 75% ahead of earnings.",
+          "binary_risk": "5/0",
+          "reason": "Used car price volatility, interest rate sensitivity for financing, but business model proven with scale."
+        },
+        "key_insight": "Expected move is 17% ABOVE historical average because stock down 22% YTD creates oversold bounce potential, used car market stabilization narrative, and improving profitability trajectory driving volatility.",
+        "specific_trade_setup": {
+          "strategy": "Long straddle",
+          "strike": "$350 (ATM)",
+          "premium_target": "$8.50-10.00 per contract (combined)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~120% if move exceeds 15.5%"
+        },
+        "risk_factors": [
+          {
+            "name": "Used Car Price Collapse",
+            "description": "Wholesale used car prices decline → inventory write-downs → earnings miss",
+            "impact": "Assignment risk if stock gaps below $280",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Interest Rate Sensitivity",
+            "description": "Auto financing costs rise → lower conversion rates → revenue miss",
+            "impact": "Stock could drop 20%+ if financing metrics deteriorate",
+            "probability": "Medium"
+          }
+        ],
+        "bottom_line": "High conviction straddle play due to elevated IV + binary outcome expectation. Stock likely to move significantly given oversold condition and high growth expectations."
+      }
+    },
+    {
+      "ticker": "DASH",
+      "company": "DoorDash",
+      "exp_move": "±19.93 points (~12.1%)",
+      "2x_em": "24.2%",
+      "grade": "B",
+      "score": 82,
+      "rec": "STRADDLE",
+      "key_notes": "Massive revenue growth expected (38-39% YoY to ~$4B), stock down from $230 to $165, high IVR offers premium selling opportunities",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "20/30",
+          "reason": "Mixed history - last quarter missed EPS ($0.55 vs $0.69 est) but beat revenue. Q4 expected $0.58 EPS, estimates declined $0.01 over 30 days.",
+          "em_respect": "20/25",
+          "reason": "Historical avg move 8.7% vs current 12.1% implied. Stock OFTEN exceeds 1x EM given growth stock volatility.",
+          "assignment_desirability": "18/20",
+          "reason": "Would own at $140-150 for market leadership - food delivery dominance, retail delivery expansion, network effects with scale.",
+          "premium_yield": "19/20",
+          "reason": "12.1% EM = extremely high IV. ATM weekly puts yielding $10-12 premium. IV rank at 85% - near yearly highs.",
+          "binary_risk": "5/0",
+          "reason": "Gig worker regulation, competition from Uber Eats, but business model proven with path to profitability."
+        },
+        "key_insight": "Expected move is 39% ABOVE historical average because stock down 28% from January highs creates oversold condition, Deliveroo integration uncertainty, and growth stock multiple compression driving volatility.",
+        "specific_trade_setup": {
+          "strategy": "Long straddle",
+          "strike": "$165 (ATM)",
+          "premium_target": "$10.50-12.50 per contract (combined)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~140% if move exceeds 12.1%"
+        },
+        "risk_factors": [
+          {
+            "name": "Gig Worker Regulation",
+            "description": "California AB5-style legislation spreads → labor costs spike → margin compression",
+            "impact": "Stock could drop 15-20% on regulatory fears",
+            "probability": "Medium"
+          },
+          {
+            "name": "Consumer Spending Slowdown",
+            "description": "Discretionary delivery spending declines → order frequency drops → revenue miss",
+            "impact": "Growth narrative breaks, multiple compression accelerates",
+            "probability": "Medium-High"
+          }
+        ],
+        "bottom_line": "High volatility straddle opportunity due to extreme IV + growth stock binary outcome. Stock likely to gap significantly given recent 28% decline and high growth expectations."
+      }
+    },
+    {
+      "ticker": "EBAY",
+      "company": "eBay",
+      "exp_move": "7-8%",
+      "2x_em": "14-16%",
+      "grade": "C+",
+      "score": 72,
+      "rec": "CREDIT SPREAD",
+      "key_notes": "Stable business with 8-10% FX-neutral growth expected, trading at premium valuation, double-digit revenue growth expected with favorable FX",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "25/30",
+          "reason": "Beat 9 of last 10 quarters. Q4 expected EPS $1.35 vs $1.31 est (+3.1%). Very consistent marketplace business.",
+          "em_respect": "15/25",
+          "reason": "Historical avg move 5.2% vs current 7.5% implied. Stock RARELY exceeds 1x EM - extremely predictable.",
+          "assignment_desirability": "14/20",
+          "reason": "Would own at $75-80 for dividend income - mature cash cow, share buybacks, stable marketplace fees.",
+          "premium_yield": "13/20",
+          "reason": "7.5% EM = moderate IV. ATM weekly puts yielding $2.50-3.00 premium. IV rank at 45% - below average.",
+          "binary_risk": "5/0",
+          "reason": "Competition from Amazon/Etsy, FX headwinds, but diversified revenue and strong balance sheet."
+        },
+        "key_insight": "Expected move is 44% ABOVE historical average because FX tailwinds creating revenue beat potential, Promoted Listings ad revenue acceleration, and stable business attracting defensive flows.",
+        "specific_trade_setup": {
+          "strategy": "Iron condor",
+          "strike": "Sell $82.50 call/$85 call spread; Sell $77.50 put/$75 put spread",
+          "premium_target": "$0.80-1.00 per contract (net credit)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~60% if stock stays within $77.50-$82.50"
+        },
+        "risk_factors": [
+          {
+            "name": "FX Headwind Reversal",
+            "description": "Dollar strengthens → international revenue translation hit → earnings miss",
+            "impact": "Stock could drop 5-7% on currency disappointment",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Amazon Competition",
+            "description": "Amazon marketplace gains share → GMV growth slows → multiple compression",
+            "impact": "Growth narrative challenged, stock could trade sideways",
+            "probability": "Medium"
+          }
+        ],
+        "bottom_line": "Medium conviction iron condor due to predictable business + elevated IV relative to history. Strike selection at 1.5x EM provides cushion."
+      }
+    },
+    {
+      "ticker": "RELY",
+      "company": "Remitly Global",
+      "exp_move": "12-15%",
+      "2x_em": "24-30%",
+      "grade": "B-",
+      "score": 76,
+      "rec": "STRADDLE",
+      "key_notes": "Fintech growth story with $427M revenue expected, recent BofA Buy rating, expanding into UK/Canada, high P/E (145) but strong growth",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "18/30",
+          "reason": "Improving consistency - last quarter beat revenue by 3.2%. Q4 expected $0.02 EPS vs -$0.01 YoY - moving toward profitability.",
+          "em_respect": "16/25",
+          "reason": "Historical avg move 10.8% vs current 13.5% implied. Growth fintech OFTEN exceeds 1x EM given binary outcomes.",
+          "assignment_desirability": "17/20",
+          "reason": "Would own at $10-12 for fintech disruption - digital remittances growth, cross-border payments expansion, market share gains.",
+          "premium_yield": "20/20",
+          "reason": "13.5% EM = very high IV. ATM weekly puts yielding $1.00-1.20 premium. IV rank at 80% - elevated ahead of earnings.",
+          "binary_risk": "5/0",
+          "reason": "Regulatory scrutiny, currency volatility, competition from Wise/PayPal, but growth trajectory strong."
+        },
+        "key_insight": "Expected move is 25% ABOVE historical average because BofA initiation creating momentum, UK/Canada expansion uncertainty, and high-growth fintech multiple volatility.",
+        "specific_trade_setup": {
+          "strategy": "Long straddle",
+          "strike": "$13 (ATM)",
+          "premium_target": "$1.10-1.30 per contract (combined)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~100% if move exceeds 13.5%"
+        },
+        "risk_factors": [
+          {
+            "name": "Regulatory Crackdown",
+            "description": "Cross-border payment regulations tighten → compliance costs rise → margin compression",
+            "impact": "Stock could drop 20%+ on regulatory fears",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Currency Volatility",
+            "description": "Emerging market currency crisis → remittance volumes drop → revenue miss",
+            "impact": "Growth narrative breaks, high multiple unsustainable",
+            "probability": "Medium"
+          }
+        ],
+        "bottom_line": "High volatility straddle play due to elevated IV + growth fintech binary outcome. Stock likely to gap on expansion metrics and profitability trajectory."
+      }
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart",
+      "exp_move": "5-6.5%",
+      "2x_em": "10-13%",
+      "grade": "A-",
+      "score": 88,
+      "rec": "IRON CONDOR",
+      "key_notes": "Low volatility (5-6.5% EM), $1T market cap, strong consumer resilience, expected 10.6% EPS growth to $0.73, 5.2% revenue rise",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "28/30",
+          "reason": "Beat 16 consecutive quarters. Q4 expected EPS $0.73 vs $0.66 YoY (+10.6%). Extremely consistent essential retailer.",
+          "em_respect": "22/25",
+          "reason": "Historical avg move 4.1% vs current 5.75% implied. Stock RARELY exceeds 1x EM - textbook predictable.",
+          "assignment_desirability": "20/20",
+          "reason": "Would own at $125-130 for core holding - recession-resistant, dividend aristocrat, omnichannel leader, $1T market cap.",
+          "premium_yield": "13/20",
+          "reason": "5.75% EM = low IV. ATM weekly puts yielding $3.50-4.00 premium. IV rank at 35% - below average.",
+          "binary_risk": "5/0",
+          "reason": "Wage inflation, supply chain issues, but essential business with pricing power."
+        },
+        "key_insight": "Expected move is 40% ABOVE historical average because $1T market cap milestone creating momentum, AI initiatives narrative, and holiday season performance uncertainty driving modest volatility.",
+        "specific_trade_setup": {
+          "strategy": "Iron condor",
+          "strike": "Sell $132.50 call/$135 call spread; Sell $125 put/$122.50 put spread",
+          "premium_target": "$1.20-1.50 per contract (net credit)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~70% if stock stays within $125-$132.50"
+        },
+        "risk_factors": [
+          {
+            "name": "Wage Inflation Spike",
+            "description": "Labor costs accelerate faster than expected → margin compression → earnings miss",
+            "impact": "Stock could drop 3-5% on margin disappointment",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Consumer Shift to Value",
+            "description": "Trade-down accelerates more than expected → mix shift to lower-margin items",
+            "impact": "Revenue beats but margin misses, stock trades sideways",
+            "probability": "Medium"
+          }
+        ],
+        "bottom_line": "High conviction iron condor due to historical EM respect + stable business. Strike selection at 1.5x EM provides high probability of success."
+      }
+    },
+    {
+      "ticker": "LMND",
+      "company": "Lemonade",
+      "exp_move": "15-18%",
+      "2x_em": "30-36%",
+      "grade": "C+",
+      "score": 71,
+      "rec": "STRADDLE",
+      "key_notes": "High growth AI insurer, expecting $218-222M revenue, still unprofitable (-$0.41 EPS expected), Citizens raised PT to $85, high IV",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "15/30",
+          "reason": "Unpredictable as growth insurer - last quarter missed EPS by $0.08. Q4 expected -$0.41 EPS, loss ratio improving but volatile.",
+          "em_respect": "18/25",
+          "reason": "Historical avg move 12.3% vs current 16.5% implied. Growth insurer OFTEN exceeds 1x EM given catastrophe volatility.",
+          "assignment_desirability": "16/20",
+          "reason": "Would own at $60-65 for AI insurance disruption - young demographic focus, cross-selling potential, digital native advantage.",
+          "premium_yield": "17/20",
+          "reason": "16.5% EM = very high IV. ATM weekly puts yielding $5.00-6.00 premium. IV rank at 75% - elevated ahead of earnings.",
+          "binary_risk": "5/0",
+          "reason": "Catastrophe losses, regulatory changes, competition from traditional insurers, capital requirements."
+        },
+        "key_insight": "Expected move is 34% ABOVE historical average because catastrophe loss uncertainty, profitability timeline questions, and growth stock multiple volatility driving elevated IV.",
+        "specific_trade_setup": {
+          "strategy": "Long straddle",
+          "strike": "$70 (ATM)",
+          "premium_target": "$5.50-6.50 per contract (combined)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~110% if move exceeds 16.5%"
+        },
+        "risk_factors": [
+          {
+            "name": "Catastrophe Loss Spike",
+            "description": "Major weather event occurs → loss ratio spikes → earnings miss significantly",
+            "impact": "Stock could drop 25%+ on catastrophe disappointment",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Regulatory Scrutiny",
+            "description": "Insurance regulators question AI underwriting → growth slows → multiple compression",
+            "impact": "Growth narrative challenged, stock could drop 15-20%",
+            "probability": "Low"
+          }
+        ],
+        "bottom_line": "Medium conviction straddle due to high IV + binary outcome expectation. Unprofitable growth insurer creates significant earnings volatility."
+      }
+    },
+    {
+      "ticker": "KLAR",
+      "company": "Klarna Group",
+      "exp_move": "18-22%",
+      "2x_em": "36-44%",
+      "grade": "C",
+      "score": 68,
+      "rec": "AVOID",
+      "key_notes": "Stock down 56% since IPO, recent 37.6% decline in 30 days, CEO expects workforce to drop below 2,000 by 2030 via AI, high risk",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "10/30",
+          "reason": "Very unpredictable - recent IPO, business model transition, Q2 2025 showed -$52M loss. No clear earnings trajectory established.",
+          "em_respect": "20/25",
+          "reason": "Historical data limited as recent IPO. Current 20% EM reflects extreme uncertainty given 56% decline since IPO.",
+          "assignment_desirability": "8/20",
+          "reason": "Would avoid owning - business model challenged by Apple Pay Later competition, regulatory scrutiny, consumer credit cycle sensitivity.",
+          "premium_yield": "25/20",
+          "reason": "20% EM = extreme IV. ATM weekly puts yielding $2.50-3.00 premium. IV rank at 90% - near maximum.",
+          "binary_risk": "5/0",
+          "reason": "Very high - BNPL regulatory crackdown, competition from Apple/Affirm, credit risk in rising rates, business model unproven at scale."
+        },
+        "key_insight": "Expected move is EXTREME at 20% because stock down 56% since IPO creates binary survival narrative, AI workforce reduction uncertainty, and BNPL regulatory overhang driving maximum volatility.",
+        "specific_trade_setup": {
+          "strategy": "AVOID - too risky",
+          "strike": "N/A",
+          "premium_target": "N/A",
+          "expiration": "N/A",
+          "annualized_return": "N/A"
+        },
+        "risk_factors": [
+          {
+            "name": "BNPL Regulatory Ban",
+            "description": "Regulators crack down on BNPL globally → business model viability questioned → stock could drop 50%+",
+            "impact": "Existential risk to business model",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Apple Competition",
+            "description": "Apple Pay Later gains dominant share → Klarna becomes irrelevant → revenue collapse",
+            "impact": "Growth narrative destroyed, stock could drop 30-40%",
+            "probability": "Medium"
+          }
+        ],
+        "bottom_line": "AVOID - Extreme risk profile with existential business model questions. IV high but justified given binary survival outcome."
+      }
+    },
+    {
+      "ticker": "VC",
+      "company": "Visteon",
+      "exp_move": "8-10%",
+      "2x_em": "16-20%",
+      "grade": "B",
+      "score": 81,
+      "rec": "STRADDLE",
+      "key_notes": "Automotive electronics, digital cockpit adoption accelerating, revenue expected $920M (-1.8% YoY), average PT $126 vs $104 current",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "22/30",
+          "reason": "Moderately predictable - beat 3 of last 4 quarters. Q4 expected EPS $2.06 vs $2.01 YoY (+2.5%). Automotive production visibility helps.",
+          "em_respect": "17/25",
+          "reason": "Historical avg move 7.2% vs current 9% implied. Auto cyclical OFTEN respects 1x EM given production schedule visibility.",
+          "assignment_desirability": "18/20",
+          "reason": "Would own at $95-100 for automotive digitalization - digital cockpit leader, EV/AV transition play, software-defined radio growth.",
+          "premium_yield": "19/20",
+          "reason": "9% EM = good IV. ATM weekly puts yielding $4.00-4.50 premium. IV rank at 65% - elevated for auto supplier.",
+          "binary_risk": "5/0",
+          "reason": "Auto production slowdown, semiconductor shortages, customer concentration, but digital product mix improving margins."
+        },
+        "key_insight": "Expected move is 25% ABOVE historical average because digital cockpit adoption uncertainty, auto production volatility, and EV transition narrative driving elevated IV for auto supplier.",
+        "specific_trade_setup": {
+          "strategy": "Long straddle",
+          "strike": "$105 (ATM)",
+          "premium_target": "$4.25-4.75 per contract (combined)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~90% if move exceeds 9%"
+        },
+        "risk_factors": [
+          {
+            "name": "Auto Production Slowdown",
+            "description": "Recession hits auto demand → production cuts → revenue miss significantly",
+            "impact": "Stock could drop 15-20% on production disappointment",
+            "probability": "Medium"
+          },
+          {
+            "name": "Semiconductor Shortage",
+            "description": "Chip supply disruptions return → production delays → revenue push-out",
+            "impact": "Near-term earnings volatility, stock could drop 10-15%",
+            "probability": "Low-Medium"
+          }
+        ],
+        "bottom_line": "Medium conviction straddle due to elevated IV + auto cyclical binary outcome. Digital cockpit adoption narrative creates earnings volatility potential."
+      }
+    },
+    {
+      "ticker": "W",
+      "company": "Wayfair",
+      "exp_move": "12-14%",
+      "2x_em": "24-28%",
+      "grade": "B-",
+      "score": 77,
+      "rec": "STRADDLE",
+      "key_notes": "Expected $3.3B revenue, $0.64 EPS, recent price pullback creates valuation opportunity, consumer discretionary sensitivity",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "20/30",
+          "reason": "Mixed history - beat 2 of last 4 quarters. Q4 expected EPS $0.64 vs $0.59 YoY (+8.5%). Home goods cyclicality adds variability.",
+          "em_respect": "18/25",
+          "reason": "Historical avg move 10.5% vs current 13% implied. Discretionary e-commerce OFTEN exceeds 1x EM given housing market sensitivity.",
+          "assignment_desirability": "16/20",
+          "reason": "Would own at $55-60 for housing recovery play - home goods e-commerce leader, improving profitability, market share gains.",
+          "premium_yield": "18/20",
+          "reason": "13% EM = good IV. ATM weekly puts yielding $3.50-4.00 premium. IV rank at 70% - elevated ahead of earnings.",
+          "binary_risk": "5/0",
+          "reason": "Housing market slowdown, freight cost volatility, competition from Amazon/Target, but market leadership in category."
+        },
+        "key_insight": "Expected move is 24% ABOVE historical average because housing market uncertainty, freight cost volatility, and discretionary spending sensitivity driving elevated IV for e-commerce.",
+        "specific_trade_setup": {
+          "strategy": "Long straddle",
+          "strike": "$60 (ATM)",
+          "premium_target": "$3.75-4.25 per contract (combined)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~95% if move exceeds 13%"
+        },
+        "risk_factors": [
+          {
+            "name": "Housing Market Collapse",
+            "description": "Mortgage rates spike → home sales drop → big-ticket furniture demand evaporates",
+            "impact": "Stock could drop 20-25% on housing disappointment",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "Freight Cost Spike",
+            "description": "Ocean shipping rates surge → margin compression → earnings miss",
+            "impact": "Profitability timeline pushed out, stock could drop 10-15%",
+            "probability": "Medium"
+          }
+        ],
+        "bottom_line": "Medium conviction straddle due to elevated IV + housing-sensitive binary outcome. Recent price pullback creates oversold bounce potential."
+      }
+    },
+    {
+      "ticker": "DAVA",
+      "company": "Endava",
+      "exp_move": "14-16%",
+      "2x_em": "28-32%",
+      "grade": "C+",
+      "score": 73,
+      "rec": "CREDIT SPREAD",
+      "key_notes": "IT services, expanding AI partnership with Cognition, expected $180M revenue, $0.21 EPS, recent insider selling, PT cuts",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "21/30",
+          "reason": "Moderately predictable - met estimates 3 of last 4 quarters. Q4 expected EPS $0.21 vs $0.20 YoY (+5%). Project-based revenue creates variability.",
+          "em_respect": "16/25",
+          "reason": "Historical avg move 11.8% vs current 15% implied. IT services OFTEN respects 1x EM given project visibility.",
+          "assignment_desirability": "15/20",
+          "reason": "Would own at $10-11 for digital transformation play - AI services growth, European exposure, global delivery model.",
+          "premium_yield": "16/20",
+          "reason": "15% EM = moderate IV. ATM weekly puts yielding $0.75-0.90 premium. IV rank at 60% - slightly elevated.",
+          "binary_risk": "5/0",
+          "reason": "IT spending slowdown, competition from Indian IT, FX volatility, but AI partnership growth narrative."
+        },
+        "key_insight": "Expected move is 27% ABOVE historical average because AI partnership uncertainty, IT spending volatility, and growth stock multiple compression driving elevated IV for IT services.",
+        "specific_trade_setup": {
+          "strategy": "Iron condor",
+          "strike": "Sell $12 call/$12.50 call spread; Sell $10.50 put/$10 put spread",
+          "premium_target": "$0.30-0.40 per contract (net credit)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~50% if stock stays within $10.50-$12"
+        },
+        "risk_factors": [
+          {
+            "name": "IT Spending Freeze",
+            "description": "Recession hits enterprise IT budgets → project delays/cancellations → revenue miss",
+            "impact": "Stock could drop 15-20% on spending disappointment",
+            "probability": "Medium"
+          },
+          {
+            "name": "AI Partnership Fizzles",
+            "description": "Cognition collaboration fails to materialize → growth narrative breaks → multiple compression",
+            "impact": "Stock could drop 10-15% on partnership disappointment",
+            "probability": "Low-Medium"
+          }
+        ],
+        "bottom_line": "Low conviction iron condor due to moderate IV + project-based revenue uncertainty. Strike selection at 1.5x EM provides reasonable cushion."
+      }
+    },
+    {
+      "ticker": "NICE",
+      "company": "NICE Systems",
+      "exp_move": "7-9%",
+      "2x_em": "14-18%",
+      "grade": "B+",
+      "score": 84,
+      "rec": "IRON CONDOR",
+      "key_notes": "Contact center AI leader, 80%+ inquiry containment rates, expected $780M revenue, $3.23 EPS (6.3% YoY growth), stable business",
+      "detailed_analysis": {
+        "why_grade": {
+          "earnings_predictability": "26/30",
+          "reason": "Very predictable - beat 8 consecutive quarters. Q4 expected EPS $3.23 vs $3.04 YoY (+6.3%). Recurring revenue model provides stability.",
+          "em_respect": "20/25",
+          "reason": "Historical avg move 5.9% vs current 8% implied. Software company RARELY exceeds 1x EM given predictable business.",
+          "assignment_desirability": "19/20",
+          "reason": "Would own at $305-310 for contact center AI leadership - recurring revenue, high margins, competitive moat, cross-selling.",
+          "premium_yield": "14/20",
+          "reason": "8% EM = moderate IV. ATM weekly puts yielding $12-13 premium. IV rank at 40% - below average.",
+          "binary_risk": "5/0",
+          "reason": "Competition from Salesforce/Genesys, IT spending slowdown, but market leadership and high switching costs."
+        },
+        "key_insight": "Expected move is 36% ABOVE historical average because AI narrative creating growth premium, contact center digitalization acceleration, and stable software multiple expansion driving modest volatility.",
+        "specific_trade_setup": {
+          "strategy": "Iron condor",
+          "strike": "Sell $320 call/$325 call spread; Sell $305 put/$300 put spread",
+          "premium_target": "$3.00-3.50 per contract (net credit)",
+          "expiration": "Weekly (Feb 28)",
+          "annualized_return": "~65% if stock stays within $305-$320"
+        },
+        "risk_factors": [
+          {
+            "name": "Enterprise IT Freeze",
+            "description": "Large enterprises delay contact center upgrades → deal push-outs → revenue miss",
+            "impact": "Stock could drop 5-8% on spending disappointment",
+            "probability": "Low-Medium"
+          },
+          {
+            "name": "AI Feature Disappointment",
+            "description": "Agentic AI fails to deliver promised ROI → growth narrative challenged → multiple compression",
+            "impact": "Stock could drop 8-10% on technology disappointment",
+            "probability": "Low"
+          }
+        ],
+        "bottom_line": "High conviction iron condor due to historical EM respect + stable software business. Strike selection at 1.5x EM provides high probability of success."
+      }
+    }
+  ]
+}

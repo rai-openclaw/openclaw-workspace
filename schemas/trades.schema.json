@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trades Schema v1.0",
+  "type": "object",
+  "required": ["schema_version", "last_updated", "trades", "summary"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "trades": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trade_id", "timestamp", "date", "account", "broker", "ticker", "strategy", "action", "direction", "quantity", "strike", "expiration", "option_type", "entry_premium", "status"],
+        "properties": {
+          "trade_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "account": {
+            "type": "string",
+            "enum": ["SEP-IRA", "Robinhood", "Schwab CSP"]
+          },
+          "broker": {
+            "type": "string",
+            "enum": ["Schwab", "Robinhood"]
+          },
+          "ticker": {
+            "type": "string",
+            "pattern": "^[A-Z]{1,5}$"
+          },
+          "strategy": {
+            "type": "string",
+            "enum": ["CSP", "CC", "Spread", "Iron Condor", "Iron Butterfly", "Straddle", "Strangle"]
+          },
+          "action": {
+            "type": "string",
+            "enum": ["OPEN", "CLOSE"]
+          },
+          "direction": {
+            "type": "string",
+            "enum": ["SELL", "BUY"]
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "strike": {
+            "type": "number",
+            "minimum": 0
+          },
+          "expiration": {
+            "type": "string",
+            "format": "date"
+          },
+          "option_type": {
+            "type": "string",
+            "enum": ["PUT", "CALL"]
+          },
+          "entry_premium": {
+            "type": "number",
+            "minimum": 0
+          },
+          "exit_premium": {
+            "type": ["number", "null"],
+            "minimum": 0
+          },
+          "total_credit": {
+            "type": ["number", "null"],
+            "minimum": 0
+          },
+          "total_debit": {
+            "type": ["number", "null"],
+            "minimum": 0
+          },
+          "realized_pnl": {
+            "type": ["number", "null"]
+          },
+          "fees": {
+            "type": "number",
+            "minimum": 0,
+            "default": 0.0
+          },
+          "days_held": {
+            "type": ["integer", "null"],
+            "minimum": 0
+          },
+          "status": {
+            "type": "string",
+            "enum": ["OPEN", "CLOSED", "EXPIRED", "ASSIGNED"]
+          },
+          "close_date": {
+            "type": ["string", "null"],
+            "format": "date"
+          },
+          "notes": {
+            "type": ["string", "null"]
+          },
+          "related_trade_id": {
+            "type": ["string", "null"],
+            "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$"
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total_trades", "open_positions", "ytd_realized_pnl", "ytd_premium_collected"],
+      "properties": {
+        "total_trades": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "open_positions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ytd_realized_pnl": {
+          "type": "number"
+        },
+        "ytd_premium_collected": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

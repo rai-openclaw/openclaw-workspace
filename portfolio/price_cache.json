@@ -1,0 +1,181 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-02-16T17:52:17.312111",
+  "prices": {
+    "NIO": {
+      "price": 4.95,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:18.123738"
+    },
+    "LDI": {
+      "price": 2.03,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:18.416358"
+    },
+    "NFLX": {
+      "price": 76.87,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:18.659259"
+    },
+    "VTCLX": {
+      "price": 352.09,
+      "source": "yahoo_finance",
+      "last_updated": "2026-02-16T17:52:19.589889"
+    },
+    "TTD": {
+      "price": 25.81,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:19.914879"
+    },
+    "MSFT": {
+      "price": 401.32,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:20.181427"
+    },
+    "SOFI": {
+      "price": 19.61,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:20.456078"
+    },
+    "HOOD": {
+      "price": 75.97,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:23.291786"
+    },
+    "FUBO": {
+      "price": 1.34,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:23.589710"
+    },
+    "ADBE": {
+      "price": 263.97,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:23.857471"
+    },
+    "SHOP": {
+      "price": 112.7,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:24.196822"
+    },
+    "VSEQX": {
+      "price": 39.46,
+      "source": "yahoo_finance",
+      "last_updated": "2026-02-16T17:52:25.039246"
+    },
+    "GOOG": {
+      "price": 306.02,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:25.368867"
+    },
+    "UPWK": {
+      "price": 13.225,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:25.734061"
+    },
+    "NKE": {
+      "price": 63.13,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:26.064102"
+    },
+    "AMZN": {
+      "price": 198.79,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:26.409398"
+    },
+    "AXON": {
+      "price": 429.67,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:26.743330"
+    },
+    "SG": {
+      "price": 5.14,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:27.091616"
+    },
+    "PYPL": {
+      "price": 40.29,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:27.449807"
+    },
+    "ELF": {
+      "price": 81.5,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:27.851889"
+    },
+    "LYFT": {
+      "price": 13.27,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:28.202294"
+    },
+    "NOW": {
+      "price": 107.08,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:28.636041"
+    },
+    "SGOV": {
+      "price": 100.52,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:28.975120"
+    },
+    "CAKE": {
+      "price": 58.67,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:29.309984"
+    },
+    "AMD": {
+      "price": 207.32,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:29.673714"
+    },
+    "RKT": {
+      "price": 18.68,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:29.952108"
+    },
+    "TSLZ": {
+      "price": 13.14,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:30.227737"
+    },
+    "VAW": {
+      "price": 241.45,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:30.643959"
+    },
+    "VST": {
+      "price": 171.49,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:31.034784"
+    },
+    "VTMSX": {
+      "price": 107.22,
+      "source": "yahoo_finance",
+      "last_updated": "2026-02-16T17:52:31.980950"
+    },
+    "CELH": {
+      "price": 44.68,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:32.376080"
+    },
+    "CRM": {
+      "price": 189.72,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:32.776971"
+    },
+    "FIGR": {
+      "price": 35.29,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:33.223804"
+    },
+    "QQQ": {
+      "price": 601.92,
+      "source": "finnhub",
+      "last_updated": "2026-02-16T17:52:33.531161"
+    },
+    "ETH": {
+      "price": 1999.4,
+      "source": "coingecko",
+      "last_updated": "2026-02-16T17:52:33.885039"
+    }
+  }
+}

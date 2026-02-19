@@ -1,0 +1,443 @@
+[
+  {
+    "symbol": "RNW",
+    "date": "2026-02-16",
+    "time": "BMO",
+    "market_cap": 2500,
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "SON",
+    "date": "2026-02-16",
+    "time": "AMC",
+    "market_cap": 4200,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "AHH",
+    "date": "2026-02-16",
+    "time": "AMC",
+    "market_cap": 1800,
+    "sector": "Real Estate"
+  },
+  {
+    "symbol": "OTTR",
+    "date": "2026-02-16",
+    "time": "AMC",
+    "market_cap": 3200,
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "ET",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 54000,
+    "sector": "Energy"
+  },
+  {
+    "symbol": "MDT",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 112000,
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "SXC",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 850,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "LDOS",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 14800,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "VMC",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 28400,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "KRYS",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 3200,
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "CRNT",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 450,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "ECC",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 380,
+    "sector": "Financials"
+  },
+  {
+    "symbol": "FLR",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 12800,
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "ETOR",
+    "date": "2026-02-17",
+    "time": "BMO",
+    "market_cap": 8900,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "HL",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 5200,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "PANW",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 98500,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "CDNS",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 82300,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "DVN",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 31200,
+    "sector": "Energy"
+  },
+  {
+    "symbol": "EQT",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 18500,
+    "sector": "Energy"
+  },
+  {
+    "symbol": "SSRM",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 4200,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "TOL",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 18700,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "KVUE",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 42100,
+    "sector": "Consumer Staples"
+  },
+  {
+    "symbol": "MKSI",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 12400,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "FE",
+    "date": "2026-02-17",
+    "time": "AMC",
+    "market_cap": 22100,
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "KGC",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 28600,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "CVNA",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 74589,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "CDE",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 14400,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "PAAS",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 18200,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "DASH",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 69106,
+    "sector": "Communication Services"
+  },
+  {
+    "symbol": "RGLD",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 8900,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "EQX",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 13400,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "EBAY",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 37240,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "RELY",
+    "date": "2026-02-18",
+    "time": "AMC",
+    "market_cap": 4500,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "ADI",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 97800,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "SEDG",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 4200,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "GRMN",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 31400,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "MCO",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 82600,
+    "sector": "Financials"
+  },
+  {
+    "symbol": "LBTYA",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 7800,
+    "sector": "Communication Services"
+  },
+  {
+    "symbol": "PUMP",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 1200,
+    "sector": "Energy"
+  },
+  {
+    "symbol": "CSTM",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 2100,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "VRSK",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 35800,
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "FVRR",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 980,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "ICL",
+    "date": "2026-02-18",
+    "time": "BMO",
+    "market_cap": 6700,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "WMT",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 1028311,
+    "sector": "Consumer Staples"
+  },
+  {
+    "symbol": "AG",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 2400,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "PWR",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 78100,
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "DE",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 166080,
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "LMND",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 4765,
+    "sector": "Financials"
+  },
+  {
+    "symbol": "KLAR",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 890,
+    "sector": "Financials"
+  },
+  {
+    "symbol": "VC",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 2510,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "W",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 10770,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "DAVA",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 294,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "NICE",
+    "date": "2026-02-19",
+    "time": "BMO",
+    "market_cap": 6720,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "OPEN",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 1840,
+    "sector": "Real Estate"
+  },
+  {
+    "symbol": "RIG",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 8400,
+    "sector": "Energy"
+  },
+  {
+    "symbol": "NEM",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 56400,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "AKAM",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 15200,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "FIX",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 6700,
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "LYV",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 24800,
+    "sector": "Communication Services"
+  },
+  {
+    "symbol": "SFM",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 9200,
+    "sector": "Consumer Staples"
+  },
+  {
+    "symbol": "TXRH",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 11200,
+    "sector": "Consumer Cyclical"
+  },
+  {
+    "symbol": "CGAU",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 2100,
+    "sector": "Basic Materials"
+  },
+  {
+    "symbol": "AXTI",
+    "date": "2026-02-19",
+    "time": "AMC",
+    "market_cap": 180,
+    "sector": "Technology"
+  }
+]

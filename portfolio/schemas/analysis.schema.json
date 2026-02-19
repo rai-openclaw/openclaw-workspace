@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mission-control.local/schemas/analysis.schema.json",
+  "title": "Stock Analysis - Hybrid Format",
+  "description": "Schema for individual stock analyses with structured key fields and full markdown content",
+  "type": "object",
+  "required": ["ticker", "date", "grade", "summary", "full_content"],
+  "properties": {
+    "ticker": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10,
+      "pattern": "^[A-Z0-9]+$",
+      "description": "Stock ticker symbol (e.g., 'RKT', 'LDI')"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Analysis date (YYYY-MM-DD format, e.g., '2026-02-13')"
+    },
+    "grade": {
+      "type": "string",
+      "enum": ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D", "F"],
+      "description": "Investment grade based on analysis quality and conviction"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500,
+      "description": "Brief executive summary of analysis and recommendation"
+    },
+    "entry": {
+      "type": "string",
+      "description": "Entry price with optional share count (e.g., '$10', '$48.75 (700 shares)')"
+    },
+    "current": {
+      "type": "string",
+      "description": "Current price (e.g., '$18.68')"
+    },
+    "gain_percent": {
+      "type": "number",
+      "description": "Current gain/loss percentage (e.g., 87 for +87%, -23 for -23%)"
+    },
+    "position_size": {
+      "type": "string",
+      "description": "Position size description (e.g., '~4% of portfolio', '<1% (fun money)')"
+    },
+    "action": {
+      "type": "string",
+      "description": "Recommended action (e.g., 'Trim 40-50% before earnings', 'HOLD')"
+    },
+    "full_content": {
+      "type": "string",
+      "minLength": 50,
+      "description": "Full markdown-formatted analysis content with all sections and details"
+    }
+  },
+  "additionalProperties": false
+}

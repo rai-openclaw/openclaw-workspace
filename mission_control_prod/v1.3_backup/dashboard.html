@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control - Portfolio v2.0</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --border: #2a2a2a;
+            --positive: #22c55e;
+            --negative: #ef4444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .last-refresh {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        .refresh-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            background: var(--accent-hover);
+        }
+        
+        .refresh-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .section-total {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+        
+        th {
+            text-align: left;
+            padding: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        tr:hover {
+            background: var(--bg-tertiary);
+        }
+        
+        .ticker {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .price-source {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        .positive {
+            color: var(--positive);
+        }
+        
+        .negative {
+            color: var(--negative);
+        }
+        
+        .account-breakdown {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+        
+        .expand-btn {
+            background: transparent;
+            border: none;
+            color: var(--accent);
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+        
+        .accounts-detail {
+            display: none;
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        .accounts-detail.show {
+            display: block;
+        }
+        
+        .note {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+        }
+        
+        .error {
+            color: var(--negative);
+            padding: 1rem;
+        }
+        
+        .totals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .total-card {
+            background: var(--bg-tertiary);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .total-card-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .total-card-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .legend {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mission Control - Portfolio</h1>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <span class="last-refresh" id="last-refresh">Loading...</span>
+                <button class="refresh-btn" id="refresh-btn" onclick="refreshPrices()">Refresh Prices</button>
+            </div>
+        </header>
+        
+        <div id="portfolio-content">
+            <div class="loading">Loading portfolio data...</div>
+        </div>
+    </div>
+    
+    <script>
+        let portfolioData = null;
+        
+        // Load portfolio data on page load
+        async function loadPortfolio() {
+            try {
+                const response = await fetch('/api/portfolio');
+                portfolioData = await response.json();
+                renderPortfolio(portfolioData);
+            } catch (error) {
+                document.getElementById('portfolio-content').innerHTML = 
+                    '<div class="error">Error loading portfolio data</div>';
+            }
+        }
+        
+        // Render all sections
+        function renderPortfolio(data) {
+            // Update last refresh time
+            const lastRefresh = new Date(data.last_price_refresh);
+            const timeAgo = getTimeAgo(lastRefresh);
+            document.getElementById('last-refresh').textContent = 
+                `Last refresh: ${timeAgo}`;
+            
+            const html = `
+                ${renderStocksSection(data.stocks)}
+                ${renderOptionsSection(data.options)}
+                ${renderCashSection(data.cash)}
+                ${renderMiscSection(data.misc)}
+                ${renderTotalsSection(data.totals)}
+            `;
+            
+            document.getElementById('portfolio-content').innerHTML = html;
+        }
+        
+        // Get human-readable time ago
+        function getTimeAgo(date) {
+            if (date.toString() === 'Invalid Date' || date.getTime() === 0) {
+                return 'Never';
+            }
+            const now = new Date();
+            const diff = Math.floor((now - date) / 1000 / 60); // minutes
+            
+            if (diff < 1) return 'Just now';
+            if (diff < 60) return `${diff} minutes ago`;
+            if (diff < 1440) return `${Math.floor(diff / 60)} hours ago`;
+            return `${Math.floor(diff / 1440)} days ago`;
+        }
+        
+        // Format currency
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 2
+            }).format(value);
+        }
+        
+        // Format percentage
+        function formatPercent(value) {
+            const sign = value >= 0 ? '+' : '';
+            return `${sign}${value.toFixed(1)}%`;
+        }
+        
+        // Get price indicator
+        function getPriceIndicator(source, note) {
+            if (note) return `<span title="${note}">**</span>`;
+            if (source === 'finnhub' || source === 'coingecko' || source === 'yahoo_finance') return '*';
+            return '';
+        }
+        
+        // Render Stocks & ETFs section
+        function renderStocksSection(stocks) {
+            if (!stocks || stocks.length === 0) {
+                return '<div class="section"><div class="section-header"><span class="section-title">Stocks & ETFs</span></div><p>No stock positions</p></div>';
+            }
+            
+            const totalValue = stocks.reduce((sum, s) => sum + s.total_value, 0);
+            
+            const rows = stocks.map(stock => {
+                const returnClass = stock.total_return >= 0 ? 'positive' : 'negative';
+                const priceIndicator = getPriceIndicator(stock.price_source, stock.price_note);
+                const accountsDetail = stock.accounts.map(a => 
+                    `${a.account}: ${formatCurrency(a.value)} (${a.shares.toLocaleString()} shares)`
+                ).join('<br>');
+                
+                return `
+                    <tr>
+                        <td class="ticker">${stock.ticker}</td>
+                        <td>${stock.total_shares.toLocaleString()}</td>
+                        <td>${formatCurrency(stock.price)}${priceIndicator}</td>
+                        <td>${formatCurrency(stock.total_value)}</td>
+                        <td class="${returnClass}">${formatCurrency(stock.total_return)}</td>
+                        <td class="${returnClass}">${formatPercent(stock.total_return_pct)}</td>
+                        <td>
+                            <button class="expand-btn" onclick="toggleAccounts('stock-${stock.ticker}')">▼ ${stock.accounts.length} accounts</button>
+                            <div class="accounts-detail" id="stock-${stock.ticker}">
+                                ${accountsDetail}
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+            
+            return `
+                <div class="section">
+                    <div class="section-header">
+                        <span class="section-title">Stocks & ETFs</span>
+                        <span class="section-total">${formatCurrency(totalValue)}</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticker</th>
+                                <th>Shares</th>
+                                <th>Price</th>
+                                <th>Value</th>
+                                <th>Return</th>
+                                <th>Return %</th>
+                                <th>Accounts</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            `;
+        }
+        
+        // Render Options section
+        function renderOptionsSection(options) {
+            if (!options || options.length === 0) {
+                return '<div class="section"><div class="section-header"><span class="section-title">Options Positions</span></div><p>No options positions</p></div>';
+            }
+            
+            const totalValue = options.reduce((sum, o) => sum + o.current_value, 0);
+            
+            const rows = options.map(opt => {
+                const accountsDetail = opt.accounts.map(a => 
+                    `${a.account}: ${a.contracts} contracts @ $${a.entry_premium.toFixed(2)}`
+                ).join('<br>');
+                
+                return `
+                    <tr>
+                        <td class="ticker">${opt.ticker}</td>
+                        <td>${opt.type}</td>
+                        <td>${opt.strike}</td>
+                        <td>${opt.expiration}</td>
+                        <td>${opt.total_contracts}</td>
+                        <td>${formatCurrency(opt.current_value)}</td>
+                        <td>
+                            <button class="expand-btn" onclick="toggleAccounts('opt-${opt.ticker}-${opt.strike}')">▼ ${opt.accounts.length} accounts</button>
+                            <div class="accounts-detail" id="opt-${opt.ticker}-${opt.strike}">
+                                ${accountsDetail}
+                                <div class="note">${opt.note}</div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+            
+            return `
+                <div class="section">
+                    <div class="section-header">
+                        <span class="section-title">Options Positions</span>
+                        <span class="section-total">${formatCurrency(totalValue)}</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticker</th>
+                                <th>Type</th>
+                                <th>Strike</th>
+                                <th>Expiration</th>
+                                <th>Contracts</th>
+                                <th>Value</th>
+                                <th>Accounts</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            `;
+        }
+        
+        // Render Cash & Equivalents section
+        function renderCashSection(cash) {
+            const totalValue = cash.Cash.total + cash.SGOV.total;
+            
+            return `
+                <div class="section">
+                    <div class="section-header">
+                        <span class="section-title">Cash & Cash Equivalents</span>
+                        <span class="section-total">${formatCurrency(totalValue)}</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Total</th>
+                                <th>Details</th>
+                                <th>Accounts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ticker">Cash</td>
+                                <td>${formatCurrency(cash.Cash.total)}</td>
+                                <td>-</td>
+                                <td>
+                                    <button class="expand-btn" onclick="toggleAccounts('cash-cash')">▼ ${cash.Cash.accounts.length} accounts</button>
+                                    <div class="accounts-detail" id="cash-cash">
+                                        ${cash.Cash.accounts.map(a => `${a.account}: ${formatCurrency(a.value)}`).join('<br>')}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ticker">SGOV</td>
+                                <td>${formatCurrency(cash.SGOV.total)}</td>
+                                <td>${cash.SGOV.total_shares.toFixed(2)} shares @ ${formatCurrency(cash.SGOV.price)}</td>
+                                <td>
+                                    <button class="expand-btn" onclick="toggleAccounts('cash-sgov')">▼ ${cash.SGOV.accounts.length} accounts</button>
+                                    <div class="accounts-detail" id="cash-sgov">
+                                        ${cash.SGOV.accounts.map(a => `${a.account}: ${formatCurrency(a.value)} (${a.shares.toFixed(2)} shares)`).join('<br>')}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+        
+        // Render Misc section
+        function renderMiscSection(misc) {
+            if (!misc || misc.length === 0) {
+                return '<div class="section"><div class="section-header"><span class="section-title">Misc</span></div><p>No misc positions</p></div>';
+            }
+            
+            const totalValue = misc.reduce((sum, m) => sum + m.total_value, 0);
+            
+            const rows = misc.map(item => {
+                const returnClass = item.total_return >= 0 ? 'positive' : 'negative';
+                const priceIndicator = getPriceIndicator(item.price_source, item.price_note);
+                const accountsDetail = item.accounts.map(a => 
+                    `${a.account}: ${a.amount} (${formatCurrency(a.value)})`
+                ).join('<br>');
+                
+                return `
+                    <tr>
+                        <td class="ticker">${item.asset}</td>
+                        <td>${item.type}</td>
+                        <td>${item.total_amount.toLocaleString()}</td>
+                        <td>${formatCurrency(item.price)}${priceIndicator}</td>
+                        <td>${formatCurrency(item.total_value)}</td>
+                        <td class="${returnClass}">${formatCurrency(item.total_return)}</td>
+                        <td class="${returnClass}">${formatPercent(item.total_return_pct)}</td>
+                        <td>
+                            <button class="expand-btn" onclick="toggleAccounts('misc-${item.asset}')">▼ ${item.accounts.length} accounts</button>
+                            <div class="accounts-detail" id="misc-${item.asset}">
+                                ${accountsDetail}
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+            
+            return `
+                <div class="section">
+                    <div class="section-header">
+                        <span class="section-title">Misc</span>
+                        <span class="section-total">${formatCurrency(totalValue)}</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>Value</th>
+                                <th>Return</th>
+                                <th>Return %</th>
+                                <th>Accounts</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            `;
+        }
+        
+        // Render Totals section
+        function renderTotalsSection(totals) {
+            return `
+                <div class="section">
+                    <div class="section-header">
+                        <span class="section-title">Total Portfolio</span>
+                        <span class="section-total">${formatCurrency(totals.grand_total)}</span>
+                    </div>
+                    <div class="totals-grid">
+                        <div class="total-card">
+                            <div class="total-card-label">Stocks & ETFs</div>
+                            <div class="total-card-value">${formatCurrency(totals.stocks_etfs)}</div>
+                        </div>
+                        <div class="total-card">
+                            <div class="total-card-label">Options</div>
+                            <div class="total-card-value">${formatCurrency(totals.options)}</div>
+                        </div>
+                        <div class="total-card">
+                            <div class="total-card-label">Cash & Equivalents</div>
+                            <div class="total-card-value">${formatCurrency(totals.cash_equivalents)}</div>
+                        </div>
+                        <div class="total-card">
+                            <div class="total-card-label">Misc</div>
+                            <div class="total-card-value">${formatCurrency(totals.misc)}</div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <strong>Legend:</strong> 
+                        * Real-time price from API | 
+                        ** Cached price - manual update available | 
+                        Click account counts to see breakdown by brokerage
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Toggle account breakdown visibility
+        function toggleAccounts(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.classList.toggle('show');
+            }
+        }
+        
+        // Refresh prices
+        async function refreshPrices() {
+            const btn = document.getElementById('refresh-btn');
+            btn.disabled = true;
+            btn.textContent = 'Refreshing...';
+            
+            try {
+                const response = await fetch('/api/refresh-prices', { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Reload portfolio data
+                    await loadPortfolio();
+                }
+            } catch (error) {
+                alert('Error refreshing prices. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Refresh Prices';
+            }
+        }
+        
+        // Load on page load
+        loadPortfolio();
+    </script>
+</body>
+</html>
