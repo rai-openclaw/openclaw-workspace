@@ -1,6 +1,6 @@
 # Mission Control v2.1 - Working Features
 
-## Last Updated: Feb 16, 2026
+## Last Updated: Feb 18, 2026
 ## Status: STABLE - DO NOT MODIFY WITHOUT TESTING
 
 ---
@@ -76,6 +76,13 @@ Type YES to confirm
 - Stable after systemic caching fix issues
 - All core features working
 - Tagged as baseline
+
+### v2.2 (Feb 18, 2026) - Earnings Encyclopedia
+- Added Earnings Encyclopedia feature with HTML parser
+- 4 new API endpoints: `/api/earnings`, `/api/earnings/<ticker>`, `/api/earnings/search`, `/api/earnings/metrics`
+- Enhanced Earnings tab with search, filters, and modal view
+- Data layer extended with `parse_earnings_html()` function
+- All tests passing on port 8081
 
 ---
 
