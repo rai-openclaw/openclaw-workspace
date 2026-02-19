@@ -35,7 +35,7 @@
 ---
 
 ### Alex (Lead Developer)
-**Role:** Implementation, coding, debugging
+**Role:** Implementation, coding, debugging, migration
 
 **Responsibilities:**
 - Write all code per TDS/specifications
@@ -43,6 +43,7 @@
 - Test own work before handing off
 - Fix issues Scout identifies
 - Ask Kimi when stuck
+- **Migrate changes from dev (port 8081) to production (port 8080)**
 - Document what was built
 
 **Deliverables:**
@@ -161,27 +162,38 @@
 - If Scout times out → Jarvis restarts Scout
 - If stuck >30 min → Kimi consult
 
-### Phase 5: Final Validation (Jarvis)
-1. **Jarvis tests** end-to-end
+### Phase 5: Migration (Alex)
+**Alex migrates from dev to production:**
+1. **Read CHANGELOG.md** - get list of modified files
+2. **Copy files** from `~/mission-control-dev/` to `~/mission-control/`
+3. **Restart production container** on port 8080
+4. **Test on port 8080** - verify it works
+5. **Commit production changes**
+6. **Signal:** "Migrated to port 8080, ready for final validation"
+
+### Phase 6: Final Validation (Jarvis)
+1. **Jarvis tests** end-to-end on production (port 8080)
 2. **Jarvis verifies:**
    - All requirements met
    - No regressions
    - Documentation complete
-3. **Jarvis merges** to production (port 8080)
+3. **Jarvis certifies** production ready
 4. **Jarvis updates:**
    - Team MEMORY.md files
    - shared/history/ log
-   - Production git commit
+5. **Jarvis reports to user**
 
-### Phase 6: Done
+### Phase 7: Done
 **Jarvis reports to user:**
 ```
 ✅ [Feature] Complete
 - Built by: Alex
 - Tested by: Scout  
+- Migrated by: Alex
+- Validated by: Jarvis
 - Duration: X hours
 - Files changed: [list]
-- Deployed to: port 8080
+- Now running on: port 8080 (production)
 - Status: Production ready
 ```
 
@@ -346,6 +358,19 @@ B) [option with trade-offs]
 
 ---
 
+## Definitions
+
+**Migration:** Copying changes from dev environment (port 8081) to production environment (port 8080)
+- Read CHANGELOG.md for file list
+- Copy files from `~/mission-control-dev/` to `~/mission-control/`
+- Restart production container
+- Test on port 8080
+- Commit production changes
+
+**Deploy:** Same as migration - moving working code from dev to production
+
+---
+
 ## Quick Reference
 
 | Situation | Who Handles | How |
@@ -355,7 +380,8 @@ B) [option with trade-offs]
 | Stuck on bug | Alex → Kimi | Ask for help |
 | Timeout | Jarvis | Restart agent |
 | Blocker | Jarvis → User | Escalate with options |
-| Ready to deploy | Jarvis | Final validation + merge |
+| Migration (dev → prod) | Alex | Copy files, test on 8080 |
+| Final validation | Jarvis | Verify on 8080, certify |
 | Documentation | All | Update MEMORY.md |
 
 ---
