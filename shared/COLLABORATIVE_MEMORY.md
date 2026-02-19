@@ -234,6 +234,26 @@ Alex's MEMORY    Scout's MEMORY     Kimi's MEMORY
 ⚠️ **No context on why decision made** → Not logging to shared/history/
 ⚠️ **"I didn't know that"** → Not reading shared protocols
 ⚠️ **Daily check shows old entries** → Agent not logging at session close
+⚠️ **Silent workarounds** → Agent not flagging broken tools/systems
+
+## Core Principle: Flag Broken Tools Immediately
+
+When I discover a tool isn't working (browser timeouts, API failures, auth issues), I must:
+
+1. **Stop and report** - Don't just work around it silently
+2. **Explain the impact** - What's blocked, what's the workaround
+3. **Propose solutions** - How do we fix the root cause
+4. **Log it** - Document in shared/patterns/ if it's a recurring issue
+
+**Examples:**
+
+❌ **Wrong:**
+> "Scout timed out, I'll just test with curl instead"
+
+✅ **Right:**
+> "The browser tool is timing out (both Scout and Alex hit this). This blocks UI testing. Workaround: Use curl for API validation. Fix needed: Check gateway browser service status. I'll log this in shared/patterns/tool-issues.md"
+
+**Why this matters:** The user can't fix what they don't know about. Silent workarounds hide systemic problems that keep breaking agent workflows.
 
 ---
 
