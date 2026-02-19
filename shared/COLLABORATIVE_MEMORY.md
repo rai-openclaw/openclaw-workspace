@@ -269,14 +269,22 @@ When I discover a tool isn't working (browser timeouts, API failures, auth issue
 - Document mistakes immediately
 - Reference other agents' work when relevant
 
-**Ending task (MANDATORY):**
-1. Append to my personal MEMORY.md
-2. If pattern emerged, suggest to Jarvis/Kimi for shared/patterns/
-3. If cross-agent event, Jarvis logs to shared/history/
+**Ending task (MANDATORY - NO EXCEPTIONS):**
+1. **Append to my personal MEMORY.md** - Before saying "done" or "complete"
+2. **If pattern emerged** - Suggest to Jarvis/Kimi for shared/patterns/
+3. **If cross-agent event** - Jarvis logs to shared/history/
+4. **Commit and push** - `git add -A && git commit -m "Update: MEMORY.md" && git push`
+
+**What happens if I don't update MEMORY.md:**
+- Daily check flags me
+- Jarvis follows up
+- Knowledge is lost
+- I don't learn from my work
 
 **Daily (7 AM):**
 - Memory check runs automatically
 - Reports gaps to Jarvis
+- Agents who didn't update get flagged
 - Included in morning brief
 
 ---
