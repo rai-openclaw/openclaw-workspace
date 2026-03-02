@@ -1,0 +1,1202 @@
+[
+  {
+    "ticker": "CRM",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 194.79,
+      "atm_strike": 195.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 9.780000000000001,
+      "em_percent": 5.020791621746497
+    },
+    "probabilities": {
+      "down_1x": 0.76,
+      "down_1_5x": 0.97,
+      "down_2x": 1.0,
+      "median_move": 0.0403,
+      "max_move": 0.0868
+    },
+    "grading": {
+      "grade": "A",
+      "score_total": 87,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 97%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 5.0% \u22651.2x median 4.0%"
+        },
+        "assignment": {
+          "score": 15,
+          "reason": "Price $194.79"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "HOLDING"
+      ]
+    },
+    "research": {
+      "short_note": "CRM - Salesforce, enterprise cloud CRM software with AI, data cloud, and Slack collaboration",
+      "summary": "Salesforce is the dominant enterprise CRM platform with Data Cloud, Slack, and AI capabilities. Key drivers include enterprise software spending, Data Cloud adoption, and operating margin expansion. Competition with Microsoft Dynamics and HubSpot is ongoing.",
+      "catalysts": [
+        "Data Cloud enterprise adoption accelerating",
+        "AI (Einstein) driving platform stickiness",
+        "Operating margin expansion continuing"
+      ],
+      "risks": [
+        "Enterprise spending cuts slowing revenue",
+        "Microsoft Dynamics competition intensifying",
+        "Slack integration execution risk"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "SARO",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 30.8,
+      "atm_strike": 35.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 4.58,
+      "em_percent": 14.870129870129869
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0347,
+      "max_move": 0.1368
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 80,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 100%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 14.9% \u22651.2x median 3.5%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $30.8"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "SARO - likely emerging markets small-cap fund; holdings performance drives NAV",
+      "summary": "SARO appears to be an emerging markets small-cap strategy or ETF. Performance depends on underlying portfolio holdings in developing market equities. Currency fluctuations and emerging market sentiment will drive results. Fund flows and NAV performance are key drivers.",
+      "catalysts": [
+        "Emerging market equity rallies",
+        "Currency tailwinds from dollar weakness",
+        "Strong fund inflows boosting AUM"
+      ],
+      "risks": [
+        "EM equity selloffs hurt NAV",
+        "Currency depreciation in holdings",
+        "Risk-off sentiment shifting to developed markets"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "SM",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 23.13,
+      "atm_strike": 22.5,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 2.6,
+      "em_percent": 11.240812797233032
+    },
+    "probabilities": {
+      "down_1x": 0.95,
+      "down_1_5x": 0.97,
+      "down_2x": 1.0,
+      "median_move": 0.0424,
+      "max_move": 0.2075
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 80,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 97%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 11.2% \u22651.2x median 4.2%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $23.13"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "SM - SmartRent, smart home/IoT platform for property managers and renters",
+      "summary": "SmartRent provides smart home technology for rental properties. Key drivers include property manager deployments, subscriber growth, and hardware sales. The smart home market is competitive with Amazon, Google, and other IoT players.",
+      "catalysts": [
+        "Property manager adoption accelerating",
+        "New customer wins with major REITs",
+        "Software subscription revenue growth"
+      ],
+      "risks": [
+        "Competition from big tech smart home ecosystems",
+        "Customer concentration risk",
+        "Hardware margin pressure"
+      ],
+      "tone": "risky"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "SNOW",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 168.41,
+      "atm_strike": 167.5,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 11.3,
+      "em_percent": 6.709815331631138
+    },
+    "probabilities": {
+      "down_1x": 0.76,
+      "down_1_5x": 0.91,
+      "down_2x": 0.97,
+      "median_move": 0.0441,
+      "max_move": 0.2027
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 80,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 38,
+          "reason": "Survival 91%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 6.7% \u22651.2x median 4.4%"
+        },
+        "assignment": {
+          "score": 15,
+          "reason": "Price $168.41"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "SNOW - Snowflake, cloud data platform for data warehousing, analytics, and AI workloads",
+      "summary": "Snowflake provides a cloud-based data platform for analytics and AI. Key drivers include consumption-based revenue growth, enterprise customer acquisition, and AI/ML workload adoption. Competition with Databricks, Google BigQuery, and AWS Redshift is intensifying.",
+      "catalysts": [
+        "AI/ML workload adoption driving consumption growth",
+        "Enterprise customer expansion and net revenue retention",
+        "New data product launches driving platform stickiness"
+      ],
+      "risks": [
+        "Enterprise spending cuts slowing consumption",
+        "Databricks and cloud-native competition intensifying",
+        "Geographic expansion execution risk"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "VICI",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 30.21,
+      "atm_strike": 30.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 1.33,
+      "em_percent": 4.402515723270441
+    },
+    "probabilities": {
+      "down_1x": 0.67,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0338,
+      "max_move": 0.0469
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 80,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 100%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 4.4% \u22651.2x median 3.4%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $30.21"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "VICI - VICI Properties, triple-net REIT owning gaming/hospitality properties leased to casinos",
+      "summary": "VICI Properties is the largest gaming REIT, owning 64 casino resort properties triple-net leased to operators like Caesars, MGM, and Penn. Key drivers include tenant credit quality, acquisition pipeline, and interest rate environment. Lease structure provides predictable cash flows.",
+      "catalysts": [
+        "Casino tenant gaming revenue strength",
+        "New acquisition announcements",
+        "Interest rate stabilization"
+      ],
+      "risks": [
+        "Casino tenant credit deterioration",
+        "Interest rate changes affecting valuations",
+        "Property valuation adjustments"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "PSTG",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 64.22,
+      "atm_strike": 65.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 7.449999999999999,
+      "em_percent": 11.600747430706944
+    },
+    "probabilities": {
+      "down_1x": 0.96,
+      "down_1_5x": 0.97,
+      "down_2x": 0.97,
+      "median_move": 0.0444,
+      "max_move": 0.3234
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 79,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 97%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 11.6% \u22651.2x median 4.4%"
+        },
+        "assignment": {
+          "score": 12,
+          "reason": "Price $64.22"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "PSTG - Pure Storage, all-flash enterprise storage arrays and cloud data platform",
+      "summary": "Pure Storage provides all-flash enterprise storage solutions. Key drivers include enterprise storage spending, cloud migration trends, and subscription revenue growth. Competition with Dell, NetApp and hyperscalers is intensifying.",
+      "catalysts": [
+        "Enterprise storage demand from AI infrastructure buildout",
+        "Subscription revenue acceleration",
+        "Market share gains from competitors"
+      ],
+      "risks": [
+        "Enterprise spending cuts slowing orders",
+        "Hyperscaler competitive pressure",
+        "Supply chain constraints on hardware"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "CHYM",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 22.13,
+      "atm_strike": 22.5,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 3.11,
+      "em_percent": 14.0533212833258
+    },
+    "probabilities": {
+      "down_1x": 0.99,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0506,
+      "max_move": 0.1468
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 75,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 100%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 14.1% \u22651.2x median 5.1%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $22.13"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CHYM - likely small-cap healthcare/biotech; clinical pipeline and revenue growth key",
+      "summary": "CHYM appears to be a small-cap healthcare or biotech company. Key drivers include clinical trial results, revenue growth trajectory, and any pipeline announcements. As a smaller healthcare name, institutional coverage and drug development news will move the stock significantly.",
+      "catalysts": [
+        "Positive clinical trial data or FDA approvals",
+        "Revenue growth exceeding expectations",
+        "Partnership or M&A interest from larger pharma"
+      ],
+      "risks": [
+        "Clinical trial setbacks",
+        "FDA regulatory decisions",
+        "Funding/cash runway concerns"
+      ],
+      "tone": "risky"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "PR",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 18.29,
+      "atm_strike": 16.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 2.45,
+      "em_percent": 13.395297977036632
+    },
+    "probabilities": {
+      "down_1x": 0.96,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0399,
+      "max_move": 0.1467
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 75,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 100%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 13.4% \u22651.2x median 4.0%"
+        },
+        "assignment": {
+          "score": 3,
+          "reason": "Price $18.29"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "PR - Permian Resources, oil & gas E&P in Permian Basin with production growth focus",
+      "summary": "Permian Resources is a Permian Basin oil and gas exploration company. Key drivers include production volumes, realized oil/gas prices, and operating costs. Free cash flow generation and debt reduction remain priorities.",
+      "catalysts": [
+        "Production exceeding guidance",
+        "Oil price realization above expectations",
+        "Acquisition or asset sales unlocking value"
+      ],
+      "risks": [
+        "Oil price decline compressing margins",
+        "Operating cost inflation",
+        "Production guidance miss"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "NTNX",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 38.28,
+      "atm_strike": 37.5,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 3.95,
+      "em_percent": 10.318704284221527
+    },
+    "probabilities": {
+      "down_1x": 0.96,
+      "down_1_5x": 0.98,
+      "down_2x": 1.0,
+      "median_move": 0.0487,
+      "max_move": 0.1775
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 75,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 98%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 10.3% \u22651.2x median 4.9%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $38.28"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "NTNX - Nutanix, hyperconverged infrastructure and cloud software for enterprises",
+      "summary": "Nutanix provides hyperconverged infrastructure and cloud software for enterprise data centers. Key drivers include subscription revenue growth, enterprise cloud migration spending, and AI/ML workload adoption. Competition with VMware (Broadcom) and Dell is intensifying.",
+      "catalysts": [
+        "AI/ML workload driving hyperconverged demand",
+        "Subscription revenue acceleration",
+        "Market share gains as VMware alternative"
+      ],
+      "risks": [
+        "Enterprise spending cuts impacting orders",
+        "VMware competition intensifying post-acquisition",
+        "Customer concentration in large enterprises"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "APA",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 30.37,
+      "atm_strike": 28.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 2.71,
+      "em_percent": 8.92327955218966
+    },
+    "probabilities": {
+      "down_1x": 0.93,
+      "down_1_5x": 0.96,
+      "down_2x": 0.99,
+      "median_move": 0.0423,
+      "max_move": 0.191
+    },
+    "grading": {
+      "grade": "B+",
+      "score_total": 75,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 96%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 8.9% \u22651.2x median 4.2%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $30.37"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "APA - Apache Corporation, oil & gas E&P with Permian Basin and Gulf of Mexico assets",
+      "summary": "Apache Corporation is a large-cap oil and gas explorer with assets in the Permian Basin and Gulf of Mexico. Key drivers include production volumes, realized oil/gas prices, and exploration success. The company has been focusing on free cash flow and debt reduction.",
+      "catalysts": [
+        "Production exceeding guidance",
+        "Permian Basin drilling success",
+        "Oil price realization above benchmarks"
+      ],
+      "risks": [
+        "Oil price decline compressing revenue",
+        "Exploration drilling disappointments",
+        "Gulf of Mexico hurricane disruptions"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "TTD",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 23.82,
+      "atm_strike": 24.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 1.5699999999999998,
+      "em_percent": 6.591099916036942
+    },
+    "probabilities": {
+      "down_1x": 0.84,
+      "down_1_5x": 0.9,
+      "down_2x": 0.96,
+      "median_move": 0.0435,
+      "max_move": 0.3861
+    },
+    "grading": {
+      "grade": "B",
+      "score_total": 73,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 38,
+          "reason": "Survival 90%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 6.6% \u22651.2x median 4.3%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $23.82"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "HOLDING"
+      ]
+    },
+    "research": {
+      "short_note": "TTD - The Trade Desk, programmatic ad platform for digital advertising across CTV, mobile, display",
+      "summary": "The Trade Desk is a leading independent programmatic advertising platform. Key drivers include CTV/OTT ad spending growth, platform adoption as Google phases out third-party cookies, and AI-powered tool adoption. The ad tech market is competitive with Google, Meta, and Amazon.",
+      "catalysts": [
+        "CTV/OTT advertising spending acceleration",
+        "Google cookie deprecation driving platform adoption",
+        "AI-powered tools driving customer spend"
+      ],
+      "risks": [
+        "Ad spending slowdown from economic concerns",
+        "Google/Meta ad market dominance",
+        "Connected TV competition from streamers"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "METC",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 15.14,
+      "atm_strike": 18.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 4.2,
+      "em_percent": 27.741083223249667
+    },
+    "probabilities": {
+      "down_1x": 0.99,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0538,
+      "max_move": 0.3833
+    },
+    "grading": {
+      "grade": "B",
+      "score_total": 70,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 100%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 27.7% \u22651.2x median 5.4%"
+        },
+        "assignment": {
+          "score": 3,
+          "reason": "Price $15.14"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "METC - likely small-cap; need specific business data for accurate analysis",
+      "summary": "METC trades at $15.14 with a very high implied move. Without specific company data available, the extreme EM suggests a small-cap with binary catalysts. Likely a micro-cap in energy, biotech, or tech sector where earnings can create significant price dislocations.",
+      "catalysts": [
+        "Sector-specific tailwinds driving growth",
+        "New product or contract announcements",
+        "Operational improvements exceeding expectations"
+      ],
+      "risks": [
+        "Small-cap liquidity amplifying moves",
+        "Binary outcomes from earnings",
+        "Limited analyst coverage increasing uncertainty"
+      ],
+      "tone": "risky"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "IONQ",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 38.37,
+      "atm_strike": 38.5,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 3.73,
+      "em_percent": 9.721136304404483
+    },
+    "probabilities": {
+      "down_1x": 0.86,
+      "down_1_5x": 0.94,
+      "down_2x": 0.98,
+      "median_move": 0.06,
+      "max_move": 0.3652
+    },
+    "grading": {
+      "grade": "B",
+      "score_total": 68,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 38,
+          "reason": "Survival 94%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 9.7% \u22651.2x median 6.0%"
+        },
+        "assignment": {
+          "score": 8,
+          "reason": "Price $38.37"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "IONQ - IonQ, trapped-ion quantum computing for cloud and government applications",
+      "summary": "IonQ is a leading trapped-ion quantum computing company. Key drivers include quantum system performance metrics, government/defense contracts, and commercial cloud partnerships. The quantum computing space is competitive with IBM, Google, and startups.",
+      "catalysts": [
+        "Government and defense contract announcements",
+        "Quantum system performance milestones",
+        "Cloud platform adoption (AWS, Azure, GCP)"
+      ],
+      "risks": [
+        "Long commercialization timeline",
+        "Competition from Big Tech quantum initiatives",
+        "Funding and capital needs for R&D"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "CRCL",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 83.44,
+      "atm_strike": 83.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 7.23,
+      "em_percent": 8.66490891658677
+    },
+    "probabilities": {
+      "down_1x": 0.7,
+      "down_1_5x": 0.89,
+      "down_2x": 0.93,
+      "median_move": 0.062,
+      "max_move": 0.3547
+    },
+    "grading": {
+      "grade": "C",
+      "score_total": 64,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 30,
+          "reason": "Survival 89%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 8.7% \u22651.2x median 6.2%"
+        },
+        "assignment": {
+          "score": 12,
+          "reason": "Price $83.44"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CRCL - likely mid-cap industrial or healthcare; need more data on specific business",
+      "summary": "CRCL trades at $83.44 with an 8.66% implied move. Without specific company data available, key drivers will center on revenue growth, margins, and sector-specific tailwinds. The moderate EM suggests standard earnings uncertainty for a mid-cap name.",
+      "catalysts": [
+        "Operational improvements driving margins",
+        "Sector-specific tailwinds",
+        "New contract or customer wins"
+      ],
+      "risks": [
+        "Mid-cap liquidity constraints",
+        "Execution risk on growth initiatives",
+        "Sector headwinds"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "ZM",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 73.94,
+      "atm_strike": 74.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 3.4,
+      "em_percent": 4.598322964565864
+    },
+    "probabilities": {
+      "down_1x": 0.76,
+      "down_1_5x": 0.79,
+      "down_2x": 0.86,
+      "median_move": 0.0365,
+      "max_move": 0.1271
+    },
+    "grading": {
+      "grade": "D",
+      "score_total": 39,
+      "risk_severity": "ELEVATED",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 5,
+          "reason": "Survival 79%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 4.6% \u22651.2x median 3.6%"
+        },
+        "assignment": {
+          "score": 12,
+          "reason": "Price $73.94"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 5
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "ZM - Zoom Video Communications, video conferencing, phone, and collaboration software platform",
+      "summary": "Zoom provides video conferencing, Zoom Phone, and collaboration tools for enterprises and consumers. Key drivers include enterprise collaboration spending, Zoom Phone/Rooms expansion, and AI feature adoption. Competition from Microsoft Teams and Google Meet remains intense.",
+      "catalysts": [
+        "Zoom Phone and Rooms expansion beyond video",
+        "AI features driving platform stickiness",
+        "Cost optimization improving margins"
+      ],
+      "risks": [
+        "Microsoft Teams competition intensifying",
+        "Remote work normalization reducing growth",
+        "Enterprise budget pressures"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "report": {
+      "date": "2026-02-25",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 177.19,
+      "atm_strike": 175.0,
+      "expiration": "2026-03-02"
+    },
+    "options": {
+      "straddle": 5.28,
+      "em_percent": 2.9798521361250634
+    },
+    "probabilities": {
+      "down_1x": 0.0,
+      "down_1_5x": 0.62,
+      "down_2x": 0.86,
+      "median_move": 0.0416,
+      "max_move": 0.1872
+    },
+    "grading": {
+      "grade": "D",
+      "score_total": 27,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 5,
+          "reason": "Survival 62%"
+        },
+        "em_tension": {
+          "score": 5,
+          "reason": "EM 3.0% < median 4.2%"
+        },
+        "assignment": {
+          "score": 15,
+          "reason": "Price $177.19"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "NVDA - NVIDIA, AI GPUs, data center, gaming, and automotive semiconductor leader",
+      "summary": "NVIDIA is the dominant AI semiconductor company with GPUs powering data center AI, cloud, and consumer gaming. Key drivers include data center revenue growth, AI chip demand, and Blackwell architecture ramp. Competition from AMD MI300 and custom chips is emerging but NVIDIA maintains strong lead.",
+      "catalysts": [
+        "Data center AI GPU demand exceeding expectations",
+        "Blackwell architecture product ramp",
+        "Automotive and edge AI growth"
+      ],
+      "risks": [
+        "China export restrictions limiting revenue",
+        "AMD MI300 competitive pressure",
+        "Custom chip competition from hyperscalers"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  }
+]

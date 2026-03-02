@@ -14,6 +14,7 @@
 | 2026-02-18 | EBAY | Cash-Secured Put | Sold 5 contracts $71 strike @ $38.00/contract | OPEN | +$190 | N/A | OPEN | Robinhood. Expires 2/20. |
 | 2026-02-18 | WMT | Cash-Secured Put | Sold 5 contracts $115 strike @ $38.00/contract | OPEN | +$190 | N/A | OPEN | Robinhood. Expires 2/20. |
 | 2026-02-18 | WMT | Cash-Secured Put | Sold 2 contracts $116 strike @ $40.00/contract | OPEN | +$80 | N/A | OPEN | Robinhood. Expires 2/20. |
+| 2026-02-18 | CVNA | Cash-Secured Put | Sold contracts $255 strike [premium TBD] | OPEN | TBD | N/A | OPEN | Schwab. Forwarded from guanwu87@gmail.com. |
 | 2026-02-10 | DDOG | Cash-Secured Put | Sold 9 contracts $85 strike [NEED ENTRY PREMIUM] | Bought to close @ $2.00 | -$1,800 | N/A | CLOSED | IV crush play. Expired ITM? Need to check if assigned. |
 | 2026-02-12 | RKT | [NEED DETAILS] | See Schwab account ending 861 | [OPEN/CLOSED] | - | N/A | [STATUS] | Login to schwab.com/reports for full trade details |
 | 2026-02-10 | DDOG | Cash-Secured Put | Sold 9 contracts $85 strike | Bought to close @ $2.00 | -$1,800 | N/A | CLOSED Feb 10 | IV crush play. Closed before expiration. |
@@ -40,6 +41,13 @@
 - Found 8 trade confirmation emails (Robinhood option executions)
 - Extracted 8 trades, filtered to 5 unique new entries
 - Actions: Closed 2 PANW CSPs, Opened 3 new CSPs (EBAY, WMT)
+- Logged silently (no notification sent)
+
+**2026-02-19 13:30 PT** - Gmail IMAP check
+- Checked raito09726@gmail.com inbox
+- Found 16 recent emails
+- Found 1 new trade: CVNA Cash-Secured Put $255 strike (Schwab)
+- Logged to trading journal
 - Logged silently (no notification sent)
 
 ## Weekly Performance Summary

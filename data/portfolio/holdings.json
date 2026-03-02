@@ -1,0 +1,73 @@
+{
+  "accounts": {
+    "robinhood": [
+      "VAW",
+      "SHOP",
+      "RKT",
+      "AMD",
+      "SGOV",
+      "ELF",
+      "NKE",
+      "LDI",
+      "CAKE",
+      "TSLZ",
+      "NIO",
+      "LYFT",
+      "QQQ",
+      "PYPL",
+      "CASH",
+      "ETH"
+    ],
+    "schwab_sep_ira": [
+      "HOOD",
+      "RKT",
+      "ADBE",
+      "SOFI",
+      "NFLX",
+      "NKE",
+      "FSR",
+      "AXON",
+      "NOW",
+      "VST",
+      "UPWK",
+      "CRM",
+      "PYPL",
+      "CELH",
+      "AMD",
+      "SG",
+      "QQQ",
+      "FIGR",
+      "CASH",
+      "SGOV"
+    ],
+    "schwab_csp": [
+      "ELF",
+      "TTD",
+      "VSEQX",
+      "VTCLX",
+      "VTMSX",
+      "AMD",
+      "SGOV"
+    ],
+    "roth_ira": [
+      "AMD",
+      "RKT",
+      "CRM",
+      "NKE",
+      "FUBO",
+      "PYPL",
+      "SGOV"
+    ],
+    "other": [
+      "CRM",
+      "AMZN",
+      "GOOG",
+      "MSFT",
+      "AMD",
+      "ELF",
+      "SGOV"
+    ]
+  },
+  "last_synced": "2026-02-26T12:51:02.735876",
+  "source_md": "portfolio/unified_portfolio_tracker.md"
+}

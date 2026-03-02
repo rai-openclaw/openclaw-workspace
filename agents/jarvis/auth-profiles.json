@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "profiles": {
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-YU6ZCcMwWdt3vGYab4IE7ovR-cnHzrufvwlDTOvEIH7CIv31miLMX8h8fLHL1OD823imkjqn9yeBCSmsxbEHB6QZTqU5iDUqCmMU8Nfwj3-8q_q-BZ8JECg",
+      "refresh": "QZwzvULCyWvBigQRVqjmgRb9QhbB3lo_2bNNy5qgsOo=",
+      "expires": 1803176640904
+    },
+    "moonshot:default": {
+      "type": "api_key",
+      "provider": "moonshot",
+      "key": "sk-NyFvSRAp87iWZy09C4vsDqVXBic2ATXOKg46PO9xb6UPJ7LF"
+    },
+    "deepseek:default": {
+      "type": "api_key",
+      "provider": "deepseek",
+      "key": "sk-1d11fcb88e21449ab8e81f26e35aaf73"
+    },
+    "minimax:default": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "sk-api-3sfWJZcgeI4Y6tUUaxSOmsBN8ZwVfQnQDJ-0yvc53I7JOZ1xuB_6I3hmXHTSN81QESaCtGF1bHBDIRQSBn32QJejSs7e0clvPqiNYpuFSxdrByAE__P5ugM"
+    }
+  },
+  "lastGood": {
+    "minimax-portal": "minimax-portal:default",
+    "moonshot": "moonshot:default",
+    "deepseek": "deepseek:default",
+    "minimax": "minimax:default",
+    "anthropic": "anthropic:default"
+  },
+  "usageStats": {
+    "minimax-portal:default": {
+      "lastUsed": 1772482099642,
+      "errorCount": 0,
+      "lastFailureAt": 1771620461417
+    },
+    "moonshot:default": {
+      "lastUsed": 1771514219675,
+      "errorCount": 0,
+      "lastFailureAt": 1771519546696
+    },
+    "deepseek:default": {
+      "lastUsed": 1771511651497,
+      "errorCount": 0,
+      "lastFailureAt": 1771513622941
+    },
+    "minimax:default": {
+      "errorCount": 0,
+      "lastFailureAt": 1771460756160,
+      "lastUsed": 1771460756165
+    },
+    "anthropic:default": {
+      "errorCount": 0,
+      "lastFailureAt": 1771518897491,
+      "lastUsed": 1771518897495
+    }
+  }
+}

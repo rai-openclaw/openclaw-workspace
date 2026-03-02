@@ -1,0 +1,185 @@
+[
+  {
+    "ticker": "INTU",
+    "report": {
+      "date": "2026-02-26",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 390.79,
+      "atm_strike": null,
+      "expiration": null
+    },
+    "options": {
+      "straddle": null,
+      "em_percent": null
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": "PENDING",
+      "score_total": null,
+      "risk_severity": "NORMAL",
+      "data_ready": false,
+      "components": {
+        "em_respect": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "predictability": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "premium_yield": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "assignment_desirability": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "liquidity": {
+          "score": 0,
+          "reason": "No EM data"
+        }
+      }
+    },
+    "meta": {
+      "status": "included_for_dev",
+      "tags": [
+        "WATCH"
+      ]
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "CRWV",
+    "report": {
+      "date": "2026-02-26",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 97.47,
+      "atm_strike": null,
+      "expiration": null
+    },
+    "options": {
+      "straddle": null,
+      "em_percent": null
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": "PENDING",
+      "score_total": null,
+      "risk_severity": "NORMAL",
+      "data_ready": false,
+      "components": {
+        "em_respect": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "predictability": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "premium_yield": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "assignment_desirability": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "liquidity": {
+          "score": 0,
+          "reason": "No EM data"
+        }
+      }
+    },
+    "meta": {
+      "status": "included_for_dev",
+      "tags": [
+        "WATCH"
+      ]
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "RKT",
+    "report": {
+      "date": "2026-02-26",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 17.61,
+      "atm_strike": null,
+      "expiration": null
+    },
+    "options": {
+      "straddle": null,
+      "em_percent": null
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": "PENDING",
+      "score_total": null,
+      "risk_severity": "NORMAL",
+      "data_ready": false,
+      "components": {
+        "em_respect": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "predictability": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "premium_yield": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "assignment_desirability": {
+          "score": 0,
+          "reason": "No EM data"
+        },
+        "liquidity": {
+          "score": 0,
+          "reason": "No EM data"
+        }
+      }
+    },
+    "meta": {
+      "status": "included_for_dev",
+      "tags": [
+        "HOLDING"
+      ]
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  }
+]

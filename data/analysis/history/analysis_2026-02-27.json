@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "HE",
+    "report": {
+      "date": "2026-02-27",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 15.49,
+      "atm_strike": 15.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 1.59,
+      "em_percent": 10.2647
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0374,
+      "max_move": 0.1019
+    },
+    "grading": {
+      "grade": "B",
+      "score_total": 73,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "em_respect": {
+          "score": 40,
+          "reason": "P(\u21931.5x)=100% - Excellent EM respect"
+        },
+        "predictability": {
+          "score": 10,
+          "reason": "Placeholder - awaiting historical data"
+        },
+        "premium_yield": {
+          "score": 15,
+          "reason": "EM=1026.5% - Moderate premium"
+        },
+        "assignment_desirability": {
+          "score": 6,
+          "reason": "Price=$15.49 - Lower assignment appeal"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "Lower price may limit liquidity"
+        }
+      }
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  }
+]

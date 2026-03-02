@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control | Rai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-hover: #252532;
+            --bg-sidebar: #0d0d14;
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --green: #10b981;
+            --red: #ef4444;
+            --yellow: #f59e0b;
+            --border: #27272a;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        
+        .header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .header-status {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Layout */
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        
+        .sidebar-section {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .sidebar-title {
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            padding: 0 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.625rem 1.25rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 0.9375rem;
+        }
+        
+        .nav-item:hover {
+            background: var(--bg-hover);
+        }
+        
+        .nav-item.active {
+            background: rgba(59, 130, 246, 0.1);
+            border-right: 3px solid var(--accent);
+        }
+        
+        .nav-icon {
+            font-size: 1.125rem;
+            width: 24px;
+            text-align: center;
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+        }
+        
+        .view {
+            display: none;
+        }
+        
+        .view.active {
+            display: block;
+        }
+        
+        .view-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .view-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .view-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .card-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+        
+        /* Portfolio Table with Sticky Headers */
+        .portfolio-table-container {
+            max-height: 600px;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .portfolio-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.875rem;
+        }
+        
+        .portfolio-table thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--bg-card);
+        }
+        
+        .portfolio-table th {
+            text-align: left;
+            padding: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .portfolio-table th:hover {
+            color: var(--accent);
+        }
+        
+        .portfolio-table td {
+            padding: 0.875rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .portfolio-table tbody tr:hover {
+            background: var(--bg-hover);
+        }
+        
+        /* Analysis Archive Cards */
+        .analysis-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        
+        .analysis-card:hover {
+            border-color: var(--accent);
+            background: rgba(59, 130, 246, 0.05);
+        }
+        
+        /* Earnings Research Cards */
+        .earnings-research-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        
+        .earnings-research-card:hover {
+            border-color: var(--accent);
+            background: rgba(59, 130, 246, 0.05);
+        }
+        
+        /* Grade Badges */
+        .grade-badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .grade-a { background: var(--green); color: white; }
+        .grade-b { background: var(--yellow); color: black; }
+        .grade-c { background: #f97316; color: white; }
+        .grade-f { background: var(--red); color: white; }
+        
+        /* Account Breakdown Cards */
+        .account-breakdown-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+        
+        .account-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        
+        .account-name {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .account-value {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.25rem;
+        }
+        
+        .account-detail {
+            font-size: 0.6875rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Analysis Detail Styling */
+        .analysis-section {
+            margin-bottom: 1rem;
+        }
+        
+        .analysis-section-title {
+            color: var(--accent);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .analysis-kv {
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        .kv-row {
+            display: flex;
+            margin-bottom: 0.375rem;
+            gap: 0.5rem;
+        }
+        
+        .kv-key {
+            color: var(--text-secondary);
+            font-weight: 500;
+            min-width: 120px;
+            flex-shrink: 0;
+        }
+        
+        .kv-value {
+            color: var(--text-primary);
+        }
+        
+        .bullet-point {
+            margin-left: 0.5rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-secondary);
+            font-size: 0.8125rem;
+        }
+        
+        .text-line {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8125rem;
+            margin-top: 0.5rem;
+        }
+        
+        .analysis-table th {
+            text-align: left;
+            padding: 0.5rem;
+            background: var(--bg-secondary);
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+        }
+        
+        .analysis-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .icon-green { color: var(--green); font-weight: bold; }
+        .icon-yellow { color: var(--yellow); font-weight: bold; }
+        .icon-red { color: var(--red); font-weight: bold; }
+        
+        /* Position Summary Box */
+        .position-summary {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .position-summary-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .position-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem 1.5rem;
+        }
+        
+        .summary-label {
+            color: var(--text-secondary);
+            font-size: 0.8125rem;
+        }
+        
+        .summary-value {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .ticker {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .company {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        .gain-positive { color: var(--green); }
+        .gain-negative { color: var(--red); }
+        
+        /* Corporate Tree */
+        .org-tree {
+            padding: 1rem 0;
+        }
+        
+        .org-level {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .org-node {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-width: 200px;
+        }
+        
+        .org-node:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        
+        .org-node.active {
+            border-color: var(--accent);
+            background: rgba(59, 130, 246, 0.1);
+        }
+        
+        .org-emoji {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .org-name {
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+        
+        .org-role {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        .org-line {
+            width: 2px;
+            height: 30px;
+            background: var(--border);
+            margin: 0.5rem 0;
+        }
+        
+        .org-children {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Employee Detail Panel */
+        .employee-detail {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .employee-detail-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .employee-detail-emoji {
+            font-size: 3rem;
+        }
+        
+        .employee-detail-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .employee-detail-info p {
+            color: var(--text-secondary);
+        }
+        
+        /* Schedule */
+        .schedule-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.875rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .schedule-time {
+            font-weight: 600;
+            color: var(--accent);
+            min-width: 80px;
+        }
+        
+        .schedule-event {
+            flex: 1;
+        }
+        
+        .schedule-location {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Ideas */
+        .idea-item {
+            background: var(--bg-secondary);
+            padding: 0.875rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .idea-category {
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Clickable rows */
+        .portfolio-table tr.clickable:hover {
+            background: rgba(59, 130, 246, 0.1);
+            cursor: pointer;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .modal-content {
+            background: var(--bg-card);
+            margin: 5% auto;
+            padding: 0;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            width: 80%;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow: hidden;
+        }
+        
+        .modal-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .close-btn:hover {
+            color: var(--text-primary);
+        }
+        
+        .modal-body {
+            padding: 1.5rem;
+            overflow-y: auto;
+            max-height: 60vh;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            
+            .org-children {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🚀 Mission Control</h1>
+        <div class="header-status">Last updated: <span id="last-update">Just now</span></div>
+    </header>
+    
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Portfolio</div>
+                <div class="nav-item active" data-view="portfolio" onclick="showView('portfolio')">
+                    <span class="nav-icon">📈</span>
+                    <span>Holdings</span>
+                </div>
+                <div class="nav-item" data-view="earnings" onclick="showView('earnings')">
+                    <span class="nav-icon">📅</span>
+                    <span>Earnings Calendar</span>
+                </div>
+                <div class="nav-item" data-view="analysis" onclick="showView('analysis')">
+                    <span class="nav-icon">📊</span>
+                    <span>Stock Analysis Archive</span>
+                </div>
+                <div class="nav-item" data-view="earnings-research" onclick="showView('earnings-research')">
+                    <span class="nav-icon">🎯</span>
+                    <span>Daily Earnings Research</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Personal</div>
+                <div class="nav-item" data-view="schedule" onclick="showView('schedule')">
+                    <span class="nav-icon">📍</span>
+                    <span>Schedule</span>
+                </div>
+                <div class="nav-item" data-view="ideas" onclick="showView('ideas')">
+                    <span class="nav-icon">💡</span>
+                    <span>Ideas & Notes</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Team</div>
+                <div class="nav-item" data-view="corporate" onclick="showView('corporate')">
+                    <span class="nav-icon">🏢</span>
+                    <span>Corporate Structure</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">System</div>
+                <div class="nav-item" data-view="api-usage" onclick="showView('api-usage')">
+                    <span class="nav-icon">🔌</span>
+                    <span>API Usage</span>
+                </div>
+                <div class="nav-item" data-view="system-spec" onclick="showView('system-spec')">
+                    <span class="nav-icon">📋</span>
+                    <span>Technical Spec</span>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Portfolio View -->
+            <div id="portfolio-view" class="view active">
+                <div class="view-header">
+                    <div class="view-title">Portfolio Holdings</div>
+                    <div class="view-subtitle">Click any stock for detailed analysis</div>
+                </div>
+                <div id="portfolio-content">
+                    <div class="loading">Loading portfolio data...</div>
+                </div>
+                
+                <!-- Stock Detail Modal -->
+                <div id="stock-detail-modal" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 id="modal-ticker">Stock Analysis</h2>
+                            <button onclick="closeModal()" class="close-btn">&times;</button>
+                        </div>
+                        <div id="modal-body" class="modal-body">
+                            Loading...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Earnings Calendar View -->
+            <div id="earnings-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Earnings Calendar</div>
+                    <div class="view-subtitle">Upcoming earnings for portfolio holdings</div>
+                </div>
+                <div id="earnings-content">
+                    <div class="loading">Loading earnings data...</div>
+                </div>
+            </div>
+            
+            <!-- Stock Analysis Archive View -->
+            <div id="analysis-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Stock Analysis Archive</div>
+                    <div class="view-subtitle">Latest research at the top — searchable history</div>
+                </div>
+                <div id="analysis-content">
+                    <div class="loading">Loading analysis archive...</div>
+                </div>
+                
+                <!-- Analysis Detail Modal -->
+                <div id="analysis-detail-modal" class="modal" style="display: none;">
+                    <div class="modal-content" style="max-width: 800px;">
+                        <div class="modal-header">
+                            <h2 id="analysis-modal-title">Analysis Detail</h2>
+                            <button onclick="closeAnalysisModal()" class="close-btn">&times;</button>
+                        </div>
+                        <div id="analysis-modal-body" class="modal-body" style="max-height: 70vh;">
+                            Loading...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Daily Earnings Research View (Bob's Research) -->
+            <div id="earnings-research-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Daily Earnings Research</div>
+                    <div class="view-subtitle">Bob's CSP data and grading — latest at top</div>
+                </div>
+                <div id="earnings-research-content">
+                    <div class="loading">Loading research data...</div>
+                </div>
+            </div>
+            
+            <!-- Schedule View -->
+            <div id="schedule-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Schedule</div>
+                    <div class="view-subtitle">Your events and reminders</div>
+                </div>
+                <div id="schedule-content">
+                    <div class="loading">Loading schedule...</div>
+                </div>
+            </div>
+            
+            <!-- Ideas View -->
+            <div id="ideas-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Ideas & Notes</div>
+                    <div class="view-subtitle">Searchable repository of thoughts and opportunities</div>
+                </div>
+                <div id="ideas-content">
+                    <div class="loading">Loading ideas...</div>
+                </div>
+            </div>
+            
+            <!-- Corporate Structure View -->
+            <div id="corporate-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Corporate Structure</div>
+                    <div class="view-subtitle">Mission Control team organization</div>
+                </div>
+                <div id="corporate-content">
+                    <div class="org-tree">
+                        <!-- Level 1: CEO -->
+                        <div class="org-level">
+                            <div class="org-node" onclick="showEmployeeDetail('rai')">
+                                <div class="org-emoji">👔</div>
+                                <div class="org-name">Rai</div>
+                                <div class="org-role">CEO</div>
+                            </div>
+                        </div>
+                        
+                        <div class="org-line"></div>
+                        
+                        <!-- Level 2: Executive Assistant -->
+                        <div class="org-level">
+                            <div class="org-node" onclick="showEmployeeDetail('ea')">
+                                <div class="org-emoji">🤵</div>
+                                <div class="org-name">Executive Assistant</div>
+                                <div class="org-role">Operations Lead</div>
+                            </div>
+                        </div>
+                        
+                        <div class="org-line"></div>
+                        
+                        <!-- Level 3: Operations Team -->
+                        <div class="org-level">
+                            <div class="org-children">
+                                <div class="org-node" onclick="showEmployeeDetail('dave')">
+                                    <div class="org-emoji">📋</div>
+                                    <div class="org-name">Dave</div>
+                                    <div class="org-role">Chief Briefer</div>
+                                </div>
+                                <div class="org-node" onclick="showEmployeeDetail('bob')">
+                                    <div class="org-emoji">📊</div>
+                                    <div class="org-name">Bob</div>
+                                    <div class="org-role">Senior Earnings Analyst</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Employee Detail Panel -->
+                    <div id="employee-detail" class="employee-detail" style="display: none;">
+                        <div class="employee-detail-header">
+                            <div class="employee-detail-emoji" id="detail-emoji">👤</div>
+                            <div class="employee-detail-info">
+                                <h3 id="detail-name">Select an employee</h3>
+                                <p id="detail-role">Click on a team member to see details</p>
+                            </div>
+                        </div>
+                        <div id="detail-content"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- API Usage View -->
+            <div id="api-usage-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">API Usage</div>
+                    <div class="view-subtitle">Track API calls, limits, and costs</div>
+                </div>
+                <div id="api-usage-content">
+                    <div class="loading">Loading API usage data...</div>
+                </div>
+            </div>
+            
+            <!-- System Spec View -->
+            <div id="system-spec-view" class="view">
+                <div class="view-header">
+                    <div class="view-title">Technical Specification</div>
+                    <div class="view-subtitle">Mission Control architecture and data sources</div>
+                </div>
+                <div id="system-spec-content">
+                    <div class="loading">Loading spec...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // Employee data
+        const employees = {
+            rai: {
+                emoji: '👔',
+                name: 'Rai',
+                role: 'CEO',
+                reportsTo: 'Self',
+                schedule: 'As needed',
+                responsibilities: [
+                    'Strategic decisions and final approval',
+                    'Portfolio and trading strategy',
+                    'Life goals and financial targets'
+                ]
+            },
+            ea: {
+                emoji: '🤵',
+                name: 'Executive Assistant',
+                role: 'Operations Lead',
+                reportsTo: 'Rai',
+                schedule: 'Continuous availability',
+                responsibilities: [
+                    'Coordinate all team members',
+                    'Aggregate data and reports',
+                    'Execute complex tasks requiring judgment',
+                    'Quality control on all outputs',
+                    'Manage day-to-day operations'
+                ]
+            },
+            dave: {
+                emoji: '📋',
+                name: 'Dave',
+                role: 'Chief Briefer',
+                reportsTo: 'Executive Assistant',
+                schedule: '6:00 AM, 7:00 PM daily; Sunday 6:00 PM',
+                responsibilities: [
+                    'Morning briefings (news, schedule, tasks)',
+                    'Daily summary emails (end-of-day recap)',
+                    'Weekly trading reports (P&L, grades, lessons)',
+                    'Task tracking and reminders'
+                ]
+            },
+            bob: {
+                emoji: '📊',
+                name: 'Bob',
+                role: 'Senior Earnings Analyst',
+                reportsTo: 'Executive Assistant',
+                schedule: '6:30 AM market days (Mon-Fri)',
+                responsibilities: [
+                    'Deep fundamental research on earnings plays',
+                    'Identify 2-6 high-quality candidates daily',
+                    'Research: news, analyst sentiment, risk factors',
+                    'Assess double whammy potential',
+                    'Report findings for technical analysis'
+                ]
+            }
+        };
+        
+        // View navigation
+        function showView(viewName) {
+            // Hide all views
+            document.querySelectorAll('.view').forEach(view => {
+                view.classList.remove('active');
+            });
+            
+            // Show selected view
+            document.getElementById(viewName + '-view').classList.add('active');
+            
+            // Update sidebar
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelector(`[data-view="${viewName}"]`).classList.add('active');
+            
+            // Load data for view
+            if (viewName === 'portfolio') loadPortfolio();
+            if (viewName === 'earnings') loadEarnings();
+            if (viewName === 'analysis') loadAnalysisArchive();
+            if (viewName === 'earnings-research') loadEarningsResearch();
+            if (viewName === 'schedule') loadSchedule();
+            if (viewName === 'ideas') loadIdeas();
+            if (viewName === 'api-usage') loadApiUsage();
+            if (viewName === 'system-spec') loadSystemSpec();
+        }
+        
+        // Show employee detail
+        function showEmployeeDetail(employeeId) {
+            const emp = employees[employeeId];
+            if (!emp) return;
+            
+            document.getElementById('detail-emoji').textContent = emp.emoji;
+            document.getElementById('detail-name').textContent = emp.name;
+            document.getElementById('detail-role').textContent = emp.role;
+            
+            const content = `
+                <div style="margin-bottom: 1rem;">
+                    <strong>Reports To:</strong> ${emp.reportsTo}
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <strong>Schedule:</strong> ${emp.schedule}
+                </div>
+                <div>
+                    <strong>Responsibilities:</strong>
+                    <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                        ${emp.responsibilities.map(r => `<li style="margin-bottom: 0.25rem;">${r}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            document.getElementById('detail-content').innerHTML = content;
+            document.getElementById('employee-detail').style.display = 'block';
+        }
+        
+        // Load portfolio data
+        async function loadPortfolio() {
+            try {
+                const response = await fetch('/api/portfolio');
+                const data = await response.json();
+                
+                let html = `
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Stocks & ETFs</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary);">Click headers to sort</div>
+                        </div>
+                        <div class="portfolio-table-container">
+                            <table class="portfolio-table" id="portfolio-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="sortTable('portfolio-table', 0)">Stock ↕</th>
+                                        <th onclick="sortTable('portfolio-table', 1)">Shares ↕</th>
+                                        <th onclick="sortTable('portfolio-table', 2)">Current ↕</th>
+                                        <th onclick="sortTable('portfolio-table', 3)">Cost Basis ↕</th>
+                                        <th onclick="sortTable('portfolio-table', 5)">Value ↕</th>
+                                        <th onclick="sortTable('portfolio-table', 5)">Return % ↕</th>
+                                        <th>Accounts</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="portfolio-tbody">
+                `;
+                
+                window.portfolioData = data.positions; // Store for sorting
+                window.portfolioSummary = {
+                    account_total: data.account_total,
+                    total_value: data.total_value,
+                    cash_sg: data.cash_sg
+                };
+                
+                data.positions.forEach(pos => {
+                    if (pos.ticker !== 'SGOV') {
+                        const returnClass = pos.return >= 0 ? 'gain-positive' : 'gain-negative';
+                        const clickable = pos.has_analysis ? 'clickable' : '';
+                        const clickAttr = pos.has_analysis ? `onclick="showStockDetail('${pos.ticker}')"` : '';
+                        const accountBreakdown = pos.accounts ? pos.accounts.join('<br>') : 'Robinhood';
+                        
+                        html += `
+                            <tr class="${clickable}" ${clickAttr} style="${pos.has_analysis ? 'cursor: pointer;' : ''}" data-ticker="${pos.ticker}">
+                                <td>
+                                    <div class="ticker">${pos.ticker} ${pos.has_analysis ? '🔍' : ''}</div>
+                                    <div class="company">${pos.company || ''}</div>
+                                </td>
+                                <td>${pos.shares.toLocaleString()}</td>
+                                <td>$${pos.current_price.toFixed(2)}</td>
+                                <td>$${pos.cost_basis ? pos.cost_basis.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) : '—'}</td>
+                                <td>$${pos.value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                <td class="${returnClass}">${pos.return_pct >= 0 ? '+' : ''}${pos.return_pct.toFixed(1)}%</td>
+                                <td style="font-size: 0.75rem; color: var(--text-secondary);">${accountBreakdown}</td>
+                            </tr>
+                        `;
+                    }
+                });
+                
+                html += `
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Options Positions</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary);">Click headers to sort</div>
+                        </div>
+                        <div class="portfolio-table-container">
+                            <table class="portfolio-table" id="options-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="sortTable('options-table', 0)">Option ↕</th>
+                                        <th onclick="sortTable('options-table', 1)">Type ↕</th>
+                                        <th onclick="sortTable('options-table', 2)">Strike ↕</th>
+                                        <th onclick="sortTable('options-table', 3)">Exp ↕</th>
+                                        <th onclick="sortTable('options-table', 4)">Qty ↕</th>
+                                        <th onclick="sortTable('options-table', 5)">Price ↕</th>
+                                        <th onclick="sortTable('options-table', 6)">Value ↕</th>
+                                        <th onclick="sortTable('options-table', 7)">Cost Basis ↕</th>
+                                        <th>Accounts</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="options-tbody">
+                                    ${data.options && data.options.length > 0 ? data.options.map(opt => `
+                                        <tr data-sort="${opt.ticker}-${opt.strike}-${opt.expiration}">
+                                            <td><div class="ticker">${opt.ticker}</div></td>
+                                            <td>${opt.type}</td>
+                                            <td>$${opt.strike}</td>
+                                            <td>${opt.expiration}</td>
+                                            <td>${opt.quantity}</td>
+                                            <td>$${opt.price.toFixed(2)}</td>
+                                            <td>$${opt.value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                            <td style="font-size: 0.75rem; color: var(--text-secondary);">${opt.account}: $${opt.value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                        </tr>
+                                    `).join('') : '<tr><td colspan="8" style="text-align: center; color: var(--text-secondary);">No options positions</td></tr>'}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Cash & Cash Equivalents</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary);">Click headers to sort</div>
+                        </div>
+                        <div class="portfolio-table-container">
+                            <table class="portfolio-table" id="cash-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="sortTable('cash-table', 0)">Position ↕</th>
+                                        <th onclick="sortTable('cash-table', 1)">Shares ↕</th>
+                                        <th onclick="sortTable('cash-table', 2)">Price ↕</th>
+                                        <th onclick="sortTable('cash-table', 3)">Value ↕</th>
+                                        <th>Accounts</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cash-tbody">
+                                    <tr data-sort="SGOV">
+                                        <td>
+                                            <div class="ticker">SGOV</div>
+                                            <div class="company">iShares Treasury ETF</div>
+                                        </td>
+                                        <td>${(data.cash_sg.total_sgov / 100.52).toFixed(2)}</td>
+                                        <td>$100.52</td>
+                                        <td>$${data.cash_sg.total_sgov.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                        <td style="font-size: 0.75rem; color: var(--text-secondary);">
+                                            ${data.cash_sg.accounts.map(acc => `${acc.name}: $${acc.sgov.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`).join('<br>')}
+                                        </td>
+                                    </tr>
+                                    <tr data-sort="Cash">
+                                        <td>
+                                            <div class="ticker">Cash</div>
+                                            <div class="company">Available for trading</div>
+                                        </td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>$${data.cash_sg.total_cash.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                        <td style="font-size: 0.75rem; color: var(--text-secondary);">
+                                            ${data.cash_sg.accounts.map(acc => `${acc.name}: $${acc.cash.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`).join('<br>')}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                            <span>Stocks & ETFs Value:</span>
+                            <span style="font-weight: 600;">$${data.total_value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9375rem; margin-top: 0.5rem;">
+                            <span>Cash Equivalents:</span>
+                            <span style="font-weight: 600;">$${(data.cash_sg.total_cash + data.cash_sg.total_sgov).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 1rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border);">
+                            <span>Total Portfolio Value:</span>
+                            <span style="font-weight: 600; color: var(--accent);">$${data.account_total.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9375rem; margin-top: 0.5rem;">
+                            <span>All-Time Return:</span>
+                            <span style="font-weight: 600; ${data.total_return >= 0 ? 'color: var(--green);' : 'color: var(--red);'}">${data.total_return >= 0 ? '+' : ''}$${data.total_return.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span>
+                        </div>
+                        
+                        <!-- Price Refresh Section -->
+                        <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">
+                                Prices updated: <span id="last-update">${data.last_price_update || 'Never'}</span>
+                            </span>
+                            <button onclick="refreshPrices()" id="refresh-btn" style="background: var(--accent); color: white; border: none; padding: 0.375rem 0.75rem; border-radius: 4px; font-size: 0.8125rem; cursor: pointer; display: flex; align-items: center; gap: 0.375rem;">
+                                <span>🔄</span> Refresh Prices
+                            </button>
+                        </div>
+                        
+                        <!-- Collapsible Account Breakdown -->
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border);">
+                            <div onclick="toggleAccountBreakdown()" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; color: var(--accent);">
+                                <span>📊 Account Breakdown</span>
+                                <span id="account-toggle-icon">▼</span>
+                            </div>
+                            <div id="account-breakdown" style="display: none; margin-top: 0.75rem;">
+                                <div style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Combined view of all accounts</div>
+                                <div class="account-breakdown-grid">
+                                    ${Object.entries(data.account_totals || {}).map(([name, value]) => `
+                                    <div class="account-card">
+                                        <div class="account-name">${name}</div>
+                                        <div class="account-value">$${value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                        <div class="account-detail">${name === 'Robinhood' ? 'Stocks + ETH + Options' : name.includes('IRA') ? 'Retirement + Options' : 'CSP Trading'}</div>
+                                    </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('portfolio-content').innerHTML = html;
+            } catch (error) {
+                document.getElementById('portfolio-content').innerHTML = '<div class="card">Error loading portfolio data</div>';
+            }
+        }
+        
+        // Show stock detail modal
+        async function showStockDetail(ticker) {
+            document.getElementById('stock-detail-modal').style.display = 'block';
+            document.getElementById('modal-ticker').textContent = ticker + ' Analysis';
+            document.getElementById('modal-body').innerHTML = '<div class="loading">Loading analysis...</div>';
+            
+            try {
+                const response = await fetch('/api/stock/' + ticker);
+                const data = await response.json();
+                
+                // Convert markdown-like content to HTML
+                let analysisHtml = data.analysis
+                    .replace(/\n/g, '<br>')
+                    .replace(/#{3,4}\s+(.*?)<br>/g, '<h4 style="color: var(--accent); margin: 1rem 0 0.5rem;">$1</h4>')
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/✅/g, '<span style="color: var(--green);">✅</span>')
+                    .replace(/⚠️/g, '<span style="color: var(--yellow);">⚠️</span>')
+                    .replace(/❌/g, '<span style="color: var(--red);">❌</span>');
+                
+                document.getElementById('modal-body').innerHTML = analysisHtml;
+            } catch (error) {
+                document.getElementById('modal-body').innerHTML = 'Error loading analysis.';
+            }
+        }
+        
+        // Close modal
+        function closeModal() {
+            document.getElementById('stock-detail-modal').style.display = 'none';
+        }
+        
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('stock-detail-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        // Load earnings data
+        async function loadEarnings() {
+            const earnings = [
+                { date: 'Feb 25', ticker: 'CRM', day: 'Tuesday' },
+                { date: 'Feb 26', ticker: 'RKT', day: 'Wednesday' },
+                { date: 'Apr 29', ticker: 'HOOD', day: 'Tuesday' },
+                { date: 'May 5', ticker: 'PYPL', day: 'Monday' }
+            ];
+            
+            let html = '<div class="card">';
+            earnings.forEach(e => {
+                html += `
+                    <div class="schedule-item">
+                        <div class="schedule-time">${e.date}</div>
+                        <div class="schedule-event">${e.ticker} Earnings</div>
+                        <div class="schedule-location">${e.day}</div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            
+            document.getElementById('earnings-content').innerHTML = html;
+        }
+        
+        // Load analysis archive
+        async function loadAnalysisArchive() {
+            try {
+                const response = await fetch('/api/analysis-archive');
+                const analyses = await response.json();
+                
+                let html = `
+                    <div class="card">
+                        <input type="text" placeholder="Search by ticker or company..." onkeyup="filterAnalysis(this.value)" style="width: 100%; padding: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem;">
+                        <div style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                            ${analyses.length} analyses available • Click any card to view full report
+                        </div>
+                        <div id="analysis-list">
+                `;
+                
+                window.analysisData = analyses;
+                
+                analyses.forEach(analysis => {
+                    const priceDisplay = analysis.current_price ? `$${analysis.current_price.toFixed(2)}` : 'Price unknown';
+                    html += `
+                        <div class="analysis-card" onclick="showAnalysisDetail('${analysis.ticker}')" data-ticker="${analysis.ticker.toLowerCase()}" data-company="${(analysis.company || '').toLowerCase()}">
+                            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                                <div>
+                                    <span style="font-size: 1.125rem; font-weight: 600; color: var(--text-primary);">${analysis.ticker}</span>
+                                    <span style="font-size: 0.875rem; color: var(--text-secondary); margin-left: 0.5rem;">${analysis.company || ''}</span>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">${analysis.date}</span>
+                            </div>
+                            <div style="font-size: 0.875rem; color: var(--accent); margin-bottom: 0.5rem;">${priceDisplay}</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.4;">${analysis.summary}</div>
+                        </div>
+                    `;
+                });
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('analysis-content').innerHTML = html;
+            } catch (error) {
+                document.getElementById('analysis-content').innerHTML = '<div class="card">Error loading analysis archive</div>';
+            }
+        }
+        
+                // Load Daily Earnings Research (Bob's findings)
+        async function loadEarningsResearch() {
+            try {
+                const response = await fetch('/api/earnings-research');
+                const data = await response.json();
+                
+                // Handle object format {content: "..."}
+                const content = data.content || '';
+                const hasContent = content.trim().length > 0;
+                
+                let html = '<div class="card">';
+                
+                if (!hasContent) {
+                    html += `
+                        <div style="text-align: center; padding: 2rem; color: var(--text-secondary);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📋</div>
+                            <div>No research reports yet.</div>
+                            <div style="font-size: 0.8125rem; margin-top: 0.5rem;">Bob's first report: Tuesday Feb 18, 6:30 AM</div>
+                        </div>
+                    `;
+                } else {
+                    // Count sections by ### headers
+                    const sectionCount = (content.match(/### /g) || []).length;
+                    html += `
+                        <div style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                            ${sectionCount} sections • Research content
+                        </div>
+                        <div style="white-space: pre-wrap; font-size: 0.875rem; line-height: 1.6; font-family: inherit;">${content.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+                    `;
+                }
+                
+                html += '</div>';
+                document.getElementById('earnings-research-content').innerHTML = html;
+                
+            } catch (error) {
+                document.getElementById('earnings-research-content').innerHTML = '<div class="card">Error loading research data</div>';
+            }
+        }
+        
+        function filterEarningsResearch(query) {
+            const cards = document.querySelectorAll('.earnings-research-card');
+            const lowerQuery = query.toLowerCase();
+            
+            cards.forEach(card => {
+                const ticker = card.getAttribute('data-ticker');
+                if (ticker.includes(lowerQuery)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function showEarningsDetail(ticker, date) {
+            const item = window.earningsResearchData.find(r => r.ticker === ticker && r.date === date);
+            if (!item) return;
+            
+            document.getElementById('analysis-detail-modal').style.display = 'block';
+            document.getElementById('analysis-modal-title').textContent = `${ticker} — ${item.date}`;
+            
+            let content = `
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-size: 2rem; font-weight: 600;">${item.grade || 'N/A'}</span>
+                    <span style="margin-left: 1rem; padding: 0.25rem 0.75rem; border-radius: 4px; background: ${item.action === 'PASS' ? 'var(--red)' : item.action === 'CONSIDER' ? 'var(--yellow)' : 'var(--green)'}; color: white; font-weight: 600;">${item.action || '—'}</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 8px;">
+                        <div style="font-size: 0.6875rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.25rem;">Expected Move</div>
+                        <div style="font-size: 1.25rem; font-weight: 600;">${item.expected_move || '—'}</div>
+                    </div>
+                    <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 8px;">
+                        <div style="font-size: 0.6875rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.25rem;">IV Rank</div>
+                        <div style="font-size: 1.25rem; font-weight: 600;">${item.iv_rank || '—'}</div>
+                    </div>
+                    <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 8px;">
+                        <div style="font-size: 0.6875rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.25rem;">Historical Accuracy</div>
+                        <div style="font-size: 1.25rem; font-weight: 600;">${item.historical_accuracy || '—'}</div>
+                    </div>
+                </div>
+            `;
+            
+            if (item.news_summary) {
+                content += `
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">News Summary</h4>
+                        <div style="font-size: 0.875rem; line-height: 1.6;">${item.news_summary.replace(/\n/g, '<br>')}</div>
+                    </div>
+                `;
+            }
+            
+            if (item.risk_flags && item.risk_flags.length > 0) {
+                content += `
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--red); margin-bottom: 0.5rem;">⚠️ Risk Flags</h4>
+                        <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.6;">
+                            ${item.risk_flags.map(flag => `<li>${flag}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            if (item.setup_notes) {
+                content += `
+                    <div>
+                        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Setup Notes</h4>
+                        <div style="font-size: 0.875rem; line-height: 1.6;">${item.setup_notes.replace(/\n/g, '<br>')}</div>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('analysis-modal-body').innerHTML = content;
+        }
+        
+        function filterAnalysis(query) {
+            const cards = document.querySelectorAll('.analysis-card');
+            const lowerQuery = query.toLowerCase();
+            
+            cards.forEach(card => {
+                const ticker = card.getAttribute('data-ticker');
+                const company = card.getAttribute('data-company');
+                
+                if (ticker.includes(lowerQuery) || company.includes(lowerQuery)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function showAnalysisDetail(ticker) {
+            const analysis = window.analysisData.find(a => a.ticker === ticker);
+            if (!analysis) return;
+            
+            document.getElementById('analysis-detail-modal').style.display = 'block';
+            document.getElementById('analysis-modal-title').textContent = `${ticker} ${analysis.company ? '— ' + analysis.company : ''}`;
+            
+            // Check if this stock is in portfolio
+            const portfolioPos = window.portfolioData ? window.portfolioData.find(p => p.ticker === ticker) : null;
+            
+            let html = '';
+            
+            // Show position summary if owned
+            if (portfolioPos) {
+                const accountTotal = window.portfolioSummary ? window.portfolioSummary.account_total : 0;
+                const pctOfPortfolio = accountTotal > 0 ? ((portfolioPos.value / accountTotal) * 100).toFixed(1) : 0;
+                const returnClass = portfolioPos.return >= 0 ? 'gain-positive' : 'gain-negative';
+                
+                html += `<div class="position-summary">
+                    <div class="position-summary-title">📊 Position Summary</div>
+                    <div class="position-summary-grid">
+                        <div><span class="summary-label">Shares:</span> <span class="summary-value">${portfolioPos.shares.toLocaleString()}</span></div>
+                        <div><span class="summary-label">Value:</span> <span class="summary-value">$${portfolioPos.value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span></div>
+                        <div><span class="summary-label">Return:</span> <span class="summary-value ${returnClass}">${portfolioPos.return >= 0 ? '+' : ''}$${portfolioPos.return.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span></div>
+                        <div><span class="summary-label">% of Portfolio:</span> <span class="summary-value">${pctOfPortfolio}%</span></div>
+                    </div>
+                </div>`;
+            }
+            
+            // Parse the markdown content properly
+            let content = analysis.full_text;
+            
+            // Split by sections (### headers)
+            const sections = content.split(/###\s+/);
+            
+            sections.forEach((section, idx) => {
+                if (!section.trim()) return;
+                
+                const lines = section.split('\n').filter(l => l.trim());
+                if (lines.length === 0) return;
+                
+                const sectionTitle = lines[0].trim();
+                const sectionContent = lines.slice(1).join('\n');
+                
+                // Skip sections that are stock lists (Next Catalyst, Portfolio Holdings, etc.)
+                const skipTitles = ['next catalyst', 'portfolio holdings', 'holdings', 'earnings calendar', 'other positions'];
+                if (skipTitles.some(skip => sectionTitle.toLowerCase().includes(skip))) {
+                    return;
+                }
+                
+                // Skip if this is just the main title (first line without ###)
+                if (idx === 0 && !sectionTitle.includes('Status') && !sectionTitle.includes('Price') && !sectionTitle.includes('Strategy')) {
+                    html += parseKeyValueSection(section);
+                    return;
+                }
+                
+                html += `<div class="analysis-section">`;
+                html += `<h4 class="analysis-section-title">${sectionTitle}</h4>`;
+                
+                // Check if section contains a table with price targets (not stock lists)
+                if (sectionContent.includes('|') && sectionTitle.toLowerCase().includes('target')) {
+                    html += parseMarkdownTable(sectionContent);
+                } else {
+                    html += parseKeyValueSection(sectionContent);
+                }
+                
+                html += `</div>`;
+            });
+            
+            if (!portfolioPos) {
+                html += `<div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8125rem; color: var(--text-secondary);">
+                    💡 Not currently in portfolio. Check Holdings tab to see all positions.
+                </div>`;
+            }
+            
+            document.getElementById('analysis-modal-body').innerHTML = html;
+        }
+        
+        function parseKeyValueSection(content) {
+            let html = '<div class="analysis-kv">';
+            const lines = content.split('\n');
+            
+            lines.forEach(line => {
+                line = line.trim();
+                if (!line) return;
+                
+                // Parse **Key:** Value format
+                const match = line.match(/^\*\*(.+?):\*\*\s*(.+)$/);
+                if (match) {
+                    const key = match[1];
+                    let value = match[2];
+                    
+                    // Skip unknown/empty values
+                    if (value.toLowerCase() === 'unknown' || value === '') return;
+                    
+                    // Format emojis
+                    value = value
+                        .replace(/✅/g, '<span class="icon-green">✓</span>')
+                        .replace(/⚠️/g, '<span class="icon-yellow">!</span>')
+                        .replace(/❌/g, '<span class="icon-red">✗</span>');
+                    
+                    html += `<div class="kv-row"><span class="kv-key">${key}:</span><span class="kv-value">${value}</span></div>`;
+                } else if (line.startsWith('-') || line.startsWith('•')) {
+                    // Bullet points
+                    const text = line.replace(/^[-•]\s*/, '');
+                    if (text.toLowerCase() !== 'unknown') {
+                        html += `<div class="bullet-point">• ${text}</div>`;
+                    }
+                } else if (line) {
+                    // Regular text
+                    html += `<div class="text-line">${line}</div>`;
+                }
+            });
+            
+            html += '</div>';
+            return html;
+        }
+        
+        function parseMarkdownTable(content) {
+            const lines = content.split('\n').filter(l => l.includes('|'));
+            if (lines.length < 2) return '';
+            
+            let html = '<table class="analysis-table">';
+            
+            lines.forEach((line, idx) => {
+                // Skip separator lines (---)
+                if (line.replace(/[|\s-]/g, '') === '') return;
+                
+                const cells = line.split('|').map(c => c.trim()).filter(c => c);
+                if (cells.length === 0) return;
+                
+                if (idx === 0) {
+                    html += '<thead><tr>' + cells.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>';
+                } else {
+                    html += '<tr>' + cells.map(c => `<td>${c}</td>`).join('') + '</tr>';
+                }
+            });
+            
+            html += '</tbody></table>';
+            return html;
+        }
+        
+        function closeAnalysisModal() {
+            document.getElementById('analysis-detail-modal').style.display = 'none';
+        }
+        
+        // Load schedule data
+        async function loadSchedule() {
+            // This would come from API
+            document.getElementById('schedule-content').innerHTML = `
+                <div class="card">
+                    <div class="schedule-item">
+                        <div class="schedule-time">6:00 AM</div>
+                        <div class="schedule-event">Morning Brief</div>
+                        <div class="schedule-location">Daily</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">6:30 AM</div>
+                        <div class="schedule-event">Bob's Earnings Research</div>
+                        <div class="schedule-location">Market days</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-event">Daily Summary Email</div>
+                        <div class="schedule-location">Daily</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Load ideas data
+        async function loadIdeas() {
+            try {
+                const response = await fetch('/api/ideas');
+                const ideas = await response.json();
+                
+                let html = `
+                    <div class="card">
+                        <input type="text" placeholder="Search ideas..." onkeyup="filterIdeas(this.value)" style="width: 100%; padding: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem;">
+                        <div id="ideas-list">
+                `;
+                
+                ideas.forEach(idea => {
+                    html += `
+                        <div class="idea-item" data-category="${idea.category.toLowerCase()}" data-content="${idea.content.toLowerCase()}">
+                            <div class="idea-category">${idea.category}</div>
+                            <div>${idea.content}</div>
+                        </div>
+                    `;
+                });
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('ideas-content').innerHTML = html;
+            } catch (error) {
+                document.getElementById('ideas-content').innerHTML = '<div class="card">Error loading ideas</div>';
+            }
+        }
+        
+        // Filter ideas
+        function filterIdeas(query) {
+            const items = document.querySelectorAll('.idea-item');
+            const lowerQuery = query.toLowerCase();
+            
+            items.forEach(item => {
+                const category = item.getAttribute('data-category');
+                const content = item.getAttribute('data-content');
+                
+                if (category.includes(lowerQuery) || content.includes(lowerQuery)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        // Load API Usage data
+        async function loadApiUsage() {
+            try {
+                const response = await fetch('/api/usage');
+                const data = await response.json();
+                
+                let html = `
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div>
+                                <div style="font-size: 1.125rem; font-weight: 600;">API Usage Dashboard</div>
+                                <div style="font-size: 0.8125rem; color: var(--text-secondary);">Track calls, limits, and costs</div>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 0.8125rem; color: var(--text-secondary);">Est. Monthly Cost</div>
+                                <div style="font-size: 1.25rem; font-weight: 600; color: var(--accent);">$${data.total_estimated_cost.toFixed(2)}</div>
+                            </div>
+                        </div>
+                        
+                        <table class="portfolio-table">
+                            <thead>
+                                <tr>
+                                    <th>API</th>
+                                    <th>Purpose</th>
+                                    <th>Status</th>
+                                    <th>Tier</th>
+                                    <th>Calls</th>
+                                    <th>Cost</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                Object.entries(data.apis).forEach(([key, api]) => {
+                    const statusColor = api.status.includes('Rate') ? 'var(--yellow)' : 'var(--green)';
+                    html += `
+                        <tr>
+                            <td>
+                                <div style="font-weight: 600;">${api.name}</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary);">${api.key}</div>
+                            </td>
+                            <td>${api.purpose}</td>
+                            <td style="color: ${statusColor};">${api.status}</td>
+                            <td>${api.tier}</td>
+                            <td>${api.calls_this_month}</td>
+                            <td>$${api.cost.toFixed(2)}</td>
+                            <td>
+                                <a href="${api.billing_url}" target="_blank" style="color: var(--accent); text-decoration: none; font-size: 0.8125rem;">Manage →</a>
+                            </td>
+                        </tr>
+                    `;
+                });
+                
+                html += `
+                            </tbody>
+                        </table>
+                        
+                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary);">
+                                <strong>Note:</strong> Costs are estimates. Click "Manage" to view actual billing and recharge accounts.
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('api-usage-content').innerHTML = html;
+            } catch (error) {
+                document.getElementById('api-usage-content').innerHTML = '<div class="card">Error loading API usage data</div>';
+            }
+        }
+        
+        
+        // Load system spec
+        async function loadSystemSpec() {
+            try {
+                const response = await fetch('/api/system/spec');
+                const spec = await response.json();
+                
+                let html = `
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div>
+                                <div style="font-size: 1.25rem; font-weight: 600; color: var(--accent);">Mission Control ${spec.version || 'V1.0'}</div>
+                                <div style="font-size: 0.8125rem; color: var(--text-secondary);">Last Updated: ${spec.last_updated || 'Unknown'}</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.5rem;">Architecture</div>
+                            <div style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-primary);">${spec.architecture ? spec.architecture.replace(/\n/g, '<br>') : 'Flask backend with file-driven data architecture'}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 1rem;">Data Sources</div>
+                        <div class="portfolio-table-container">
+                            <table class="portfolio-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data Element</th>
+                                        <th>Source File</th>
+                                        <th>Parser Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                `;
+                
+                if (spec.data_sources && spec.data_sources.length > 0) {
+                    spec.data_sources.forEach(ds => {
+                        html += `
+                            <tr>
+                                <td><strong>${ds.element}</strong></td>
+                                <td style="font-family: monospace; font-size: 0.8125rem; color: var(--text-secondary);">${ds.source}</td>
+                                <td style="font-family: monospace; font-size: 0.8125rem; color: var(--accent);">${ds.parser}</td>
+                            </tr>
+                        `;
+                    });
+                }
+                
+                html += `
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 1rem;">API Endpoints</div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0.75rem;">
+                `;
+                
+                if (spec.apis && spec.apis.length > 0) {
+                    spec.apis.forEach(api => {
+                        html += `
+                            <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border);">
+                                <div style="font-family: monospace; font-size: 0.8125rem; color: var(--accent);">${api.method} ${api.endpoint}</div>
+                            </div>
+                        `;
+                    });
+                }
+                
+                html += `
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.5rem;">Documentation</div>
+                        <div style="font-size: 0.9375rem; color: var(--text-primary);">
+                            Full spec file: <code>mission_control/docs/specs/mission_control_spec.md</code>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('system-spec-content').innerHTML = html;
+            } catch (error) {
+                document.getElementById('system-spec-content').innerHTML = '<div class="card">Error loading system specification</div>';
+            }
+        }
+        // Universal table sort
+        // Refresh all prices
+        async function refreshPrices() {
+            const btn = document.getElementById('refresh-btn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>⏳</span> Updating...';
+            btn.disabled = true;
+            
+            try {
+                const response = await fetch('/api/refresh-prices');
+                const data = await response.json();
+                
+                // Update last update time
+                document.getElementById('last-update').textContent = data.last_price_update;
+                
+                // Reload the portfolio view
+                await loadPortfolio();
+                
+                btn.innerHTML = '<span>✅</span> Updated!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 2000);
+            } catch (error) {
+                btn.innerHTML = '<span>❌</span> Error';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 2000);
+            }
+        }
+        
+        // Toggle account breakdown visibility
+        function toggleAccountBreakdown() {
+            const breakdown = document.getElementById("account-breakdown");
+            const icon = document.getElementById("account-toggle-icon");
+            if (breakdown.style.display === "none") {
+                breakdown.style.display = "block";
+                icon.textContent = "▲";
+            } else {
+                breakdown.style.display = "none";
+                icon.textContent = "▼";
+            }
+        }
+        function sortTable(tableId, columnIndex) {
+            const table = document.getElementById(tableId);
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            // Toggle sort direction
+            const currentDir = tbody.getAttribute('data-sort-dir') === 'asc' ? 'desc' : 'asc';
+            tbody.setAttribute('data-sort-dir', currentDir);
+            
+            rows.sort((a, b) => {
+                const cellA = a.cells[columnIndex].textContent.trim().replace(/[$,%]/g, '');
+                const cellB = b.cells[columnIndex].textContent.trim().replace(/[$,%]/g, '');
+                
+                // Try numeric sort first
+                const numA = parseFloat(cellA);
+                const numB = parseFloat(cellB);
+                
+                if (!isNaN(numA) && !isNaN(numB) && cellA !== '' && cellB !== '') {
+                    return currentDir === 'asc' ? numA - numB : numB - numA;
+                }
+                
+                // Fall back to string sort
+                return currentDir === 'asc' ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+            });
+            
+            rows.forEach(row => tbody.appendChild(row));
+        }
+        
+        // Sort portfolio
+        function sortPortfolio(field) {
+            const tbody = document.getElementById('portfolio-tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            // Toggle sort direction
+            const currentDir = tbody.getAttribute('data-sort-dir') === 'asc' ? 'desc' : 'asc';
+            tbody.setAttribute('data-sort-dir', currentDir);
+            
+            rows.sort((a, b) => {
+                const tickerA = a.getAttribute('data-ticker');
+                const tickerB = b.getAttribute('data-ticker');
+                
+                const posA = window.portfolioData.find(p => p.ticker === tickerA);
+                const posB = window.portfolioData.find(p => p.ticker === tickerB);
+                
+                let valA, valB;
+                
+                if (field === 'ticker') {
+                    valA = posA.ticker;
+                    valB = posB.ticker;
+                    return currentDir === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+                } else if (field === 'value') {
+                    valA = posA.value;
+                    valB = posB.value;
+                } else if (field === 'return_pct') {
+                    valA = posA.return_pct;
+                    valB = posB.return_pct;
+                }
+                
+                return currentDir === 'asc' ? valA - valB : valB - valA;
+            });
+            
+            // Re-append rows in sorted order
+            rows.forEach(row => tbody.appendChild(row));
+        }
+        
+        // Initial load
+        loadPortfolio();
+    </script>
+</body>
+</html>

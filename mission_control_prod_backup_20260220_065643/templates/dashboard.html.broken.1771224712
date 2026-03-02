@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control v2.0</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-hover: #252532;
+            --bg-sidebar: #0d0d14;
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --positive: #10b981;
+            --negative: #ef4444;
+            --border: #27272a;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            padding: 1.5rem 1rem;
+            overflow-y: auto;
+        }
+        
+        .sidebar-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            padding-left: 0.75rem;
+        }
+        
+        .nav-item {
+            padding: 0.625rem 0.75rem;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 0.25rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+        
+        .nav-item:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+        
+        .nav-item.active {
+            background: var(--accent);
+            color: white;
+        }
+        
+        /* Main Content */
+        .main {
+            flex: 1;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+        
+        .view { display: none; }
+        .view.active { display: block; }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        
+        .card-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        /* Tables - Mobile responsive */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .portfolio-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+            min-width: 600px;
+        }
+        
+        .portfolio-table th {
+            text-align: left;
+            padding: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+            white-space: nowrap;
+        }
+        
+        .portfolio-table th:hover {
+            color: var(--text-primary);
+            background: var(--bg-hover);
+        }
+        
+        .portfolio-table th.sortable::after {
+            content: ' ⇅';
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+        
+        .portfolio-table th.sort-asc::after {
+            content: ' ▲';
+            opacity: 1;
+            color: var(--accent);
+        }
+        
+        .portfolio-table th.sort-desc::after {
+            content: ' ▼';
+            opacity: 1;
+            color: var(--accent);
+        }
+        
+        .portfolio-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .portfolio-table tr:hover {
+            background: var(--bg-hover);
+        }
+        
+        .ticker {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .positive { color: var(--positive); }
+        .negative { color: var(--negative); }
+        
+        /* Parentheses style for negative values */
+        .negative-parens {
+            color: var(--negative);
+        }
+        
+        .expand-btn {
+            background: transparent;
+            border: none;
+            color: var(--accent);
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+        
+        .accounts-detail {
+            display: none;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        .accounts-detail .account-line {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .refresh-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .refresh-btn:hover { background: var(--accent-hover); }
+        .refresh-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Loading spinner */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Total Grid */
+        .totals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .total-card {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .total-card-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .total-card-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        /* Analysis Cards */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .analysis-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .analysis-card:hover {
+            border-color: var(--accent);
+        }
+        
+        .analysis-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .analysis-card-ticker {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .analysis-card-grade {
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .analysis-card-summary {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal.active { display: flex; }
+        
+        .modal-content {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            width: 90%;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Markdown content styling */
+        .markdown-content {
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+        
+        .markdown-content h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+        
+        .markdown-content h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.75rem;
+            color: var(--accent);
+        }
+        
+        .markdown-content h4 {
+            font-size: 1rem;
+            margin: 1rem 0 0.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .markdown-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .markdown-content ul {
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .markdown-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .markdown-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .markdown-content em {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .markdown-content code {
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+        
+        .legend {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .asterisk-legend {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 100;
+                padding: 0.5rem;
+                display: flex;
+                overflow-x: auto;
+                border-top: 1px solid var(--border);
+                border-right: none;
+            }
+            
+            .sidebar-title {
+                display: none;
+            }
+            
+            .nav-item {
+                margin: 0 0.25rem;
+                white-space: nowrap;
+                padding: 0.5rem 0.75rem;
+            }
+            
+            .main {
+                padding: 1rem;
+                padding-bottom: 5rem;
+            }
+            
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-title">Menu</div>
+            <div class="nav-item active" onclick="showView('holdings')">Holdings</div>
+            <div class="nav-item" onclick="showView('analysis')">Stock Analysis Archive</div>
+            <div class="nav-item" onclick="showView('earnings')">Earnings Research</div>
+            <div class="nav-item" onclick="showView('ideas')">Ideas & Notes</div>
+            <div class="nav-item" onclick="showView('schedule')">Schedule</div>
+            <div class="nav-item" onclick="showView('corporate')">Corporate</div>
+            <div class="nav-item" onclick="showView('usage')">API Usage</div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main">
+            <!-- HOLDINGS TAB -->
+            <div id="holdings-view" class="view active">
+                <div id="holdings-content">
+                    <div class="loading">Loading portfolio...</div>
+                </div>
+            </div>
+            
+            <!-- ANALYSIS ARCHIVE TAB -->
+            <div id="analysis-view" class="view">
+                <div style="margin-bottom: 1.5rem;">
+                    <h2 style="margin-bottom: 1rem;">Stock Analysis Archive</h2>
+                    <input type="text" class="search-box" id="analysis-search" placeholder="Search by ticker or keyword..." onkeyup="filterAnalysis()">
+                </div>
+                <div id="analysis-content">
+                    <div class="loading">Loading analysis archive...</div>
+                </div>
+            </div>
+            
+            <!-- Other tabs -->
+            <div id="earnings-view" class="view"><div class="card"><h3>Earnings Research</h3><p>Coming soon</p></div></div>
+            <div id="ideas-view" class="view"><div class="card"><h3>Ideas & Notes</h3><p>Coming soon</p></div></div>
+            <div id="schedule-view" class="view"><div class="card"><h3>Schedule</h3><p>Coming soon</p></div></div>
+            <div id="corporate-view" class="view"><div class="card"><h3>Corporate Structure</h3><p>Coming soon</p></div></div>
+            <div id="usage-view" class="view"><div class="card"><h3>API Usage</h3><p>Coming soon</p></div></div>
+        </main>
+    </div>
+    
+    <!-- Analysis Modal -->
+    <div id="analysis-modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2 id="modal-title">Analysis</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modal-body" class="markdown-content"></div>
+        </div>
+    </div>
+    
+    <script>
+        // Global data storage
+        let portfolioData = null;
+        let analysisData = [];
+        let currentSort = { column: null, direction: 'asc' };
+        
+        // Tab switching
+        function showView(viewName) {
+            document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            
+            document.getElementById(viewName + '-view').classList.add('active');
+            event.target.classList.add('active');
+            
+            // Load data if needed
+            if (viewName === 'holdings' && !portfolioData) {
+                loadHoldings();
+            } else if (viewName === 'analysis' && analysisData.length === 0) {
+                loadAnalysis();
+            }
+        }
+        
+        // Format helpers
+        function formatCurrency(value) {
+            // Handle negative numbers with parentheses in red
+            if (value < 0) {
+                return `($${Math.abs(value).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })})`;
+            }
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 2
+            }).format(value);
+        }
+        
+        function formatTimeAgo(date) {
+            if (!date || isNaN(date.getTime())) return 'Never';
+            const mins = Math.floor((new Date() - date) / 60000);
+            if (mins < 1) return 'Just now';
+            if (mins < 60) return mins + ' min ago';
+            if (mins < 1440) return Math.floor(mins/60) + ' hours ago';
+            return Math.floor(mins/1440) + ' days ago';
+        }
+        
+        // Toggle account breakdown
+        function toggleAccounts(btn) {
+            const detail = btn.nextElementSibling;
+            if (detail.style.display === 'none' || detail.style.display === '') {
+                detail.style.display = 'block';
+                btn.textContent = btn.textContent.replace('▼', '▲');
+            } else {
+                detail.style.display = 'none';
+                btn.textContent = btn.textContent.replace('▲', '▼');
+            }
+        }
+        
+        // ==================== HOLDINGS TAB ====================
+        
+        async function loadHoldings() {
+            try {
+                const response = await fetch('/api/portfolio');
+                portfolioData = await response.json();
+                renderHoldings(portfolioData);
+            } catch (error) {
+                document.getElementById('holdings-content').innerHTML = 
+                    '<div class="card">Error loading portfolio</div>';
+            }
+        }
+        
+        function sortStocks(stocks, column, direction) {
+            const sorted = [...stocks];
+            const multiplier = direction === 'asc' ? 1 : -1;
+            
+            sorted.sort((a, b) => {
+                let valA, valB;
+                switch(column) {
+                    case 'ticker':
+                        valA = a.ticker.toLowerCase();
+                        valB = b.ticker.toLowerCase();
+                        return multiplier * valA.localeCompare(valB);
+                    case 'value':
+                        valA = a.total_value;
+                        valB = b.total_value;
+                        return multiplier * (valA - valB);
+                    case 'pl':
+                        valA = a.total_return_pct;
+                        valB = b.total_return_pct;
+                        return multiplier * (valA - valB);
+                    case 'shares':
+                        valA = a.total_shares;
+                        valB = b.total_shares;
+                        return multiplier * (valA - valB);
+                    default:
+                        return 0;
+                }
+            });
+            
+            return sorted;
+        }
+        
+        function handleSort(column) {
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'asc';
+            }
+            renderHoldings(portfolioData);
+        }
+        
+        function renderHoldings(data) {
+            const lastRefresh = new Date(data.last_price_refresh);
+            const hoursAgo = (new Date() - lastRefresh) / (1000 * 60 * 60);
+            const needsAsterisk = hoursAgo > 24;
+            
+            // Sort stocks if needed
+            let stocksToRender = data.stocks;
+            if (currentSort.column) {
+                stocksToRender = sortStocks(data.stocks, currentSort.column, currentSort.direction);
+            }
+
+            let html = `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <h2>Portfolio Holdings</h2>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="color: var(--text-secondary); font-size: 0.875rem;">
+                            Last refresh: ${formatTimeAgo(lastRefresh)}
+                        </span>
+                        <button class="refresh-btn" onclick="refreshPrices()">
+                            <span id="refresh-spinner" style="display: none;"><span class="spinner"></span></span>
+                            <span id="refresh-text">Refresh Prices</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="asterisk-legend">
+                    <strong>Legend:</strong>
+                    <span style="margin-left: 0.5rem;">* Price cached >24h ago (click Refresh Prices to update)</span>
+                    <span style="margin-left: 1rem; color: var(--positive);">■ Positive P/L</span>
+                    <span style="margin-left: 0.5rem; color: var(--negative);">■ Negative P/L</span>
+                </div>
+            `;
+            
+            // Stocks Section
+            html += `
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Stocks & ETFs</div>
+                        <div class="card-value ${data.totals.stocks_etfs < 0 ? 'negative-parens' : ''}">${formatCurrency(data.totals.stocks_etfs)}</div>
+                    </div>
+                    <div class="table-container">
+                        <table class="portfolio-table">
+                            <thead>
+                                <tr>
+                                    <th class="sortable ${currentSort.column === 'ticker' ? 'sort-' + currentSort.direction : ''}" onclick="handleSort('ticker')">Ticker</th>
+                                    <th class="sortable ${currentSort.column === 'shares' ? 'sort-' + currentSort.direction : ''}" onclick="handleSort('shares')">Shares</th>
+                                    <th>Price${needsAsterisk ? '*' : ''}</th>
+                                    <th>Cost/Share</th>
+                                    <th class="sortable ${currentSort.column === 'value' ? 'sort-' + currentSort.direction : ''}" onclick="handleSort('value')">Value</th>
+                                    <th class="sortable ${currentSort.column === 'pl' ? 'sort-' + currentSort.direction : ''}" onclick="handleSort('pl')">P/L %</th>
+                                    <th>Accounts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${stocksToRender.map(stock => {
+                                    const costPerShare = stock.total_cost_basis / stock.total_shares;
+                                    const plPct = stock.total_return_pct;
+                                    const plClass = plPct >= 0 ? 'positive' : 'negative';
+                                    const valueClass = stock.total_value < 0 ? 'negative-parens' : '';
+                                    const indicator = needsAsterisk ? '*' : '';
+                                    
+                                    const accountsHtml = stock.accounts.map(a => {
+                                        const acctValue = a.shares * stock.price;
+                                        return `<span class="account-line">${a.account}: ${formatCurrency(acctValue)}</span>`;
+                                    }).join('');
+                                    
+                                    return `
+                                        <tr>
+                                            <td><div class="ticker">${stock.ticker}</div></td>
+                                            <td>${stock.total_shares.toLocaleString()}</td>
+                                            <td>$${stock.price.toFixed(2)}${indicator}</td>
+                                            <td>$${costPerShare.toFixed(2)}</td>
+                                            <td class="${valueClass}">${formatCurrency(stock.total_value)}</td>
+                                            <td class="${plClass}">${plPct >= 0 ? '+' : ''}${plPct.toFixed(1)}%</td>
+                                            <td>
+                                                <button class="expand-btn" onclick="toggleAccounts(this)">▼ ${stock.accounts.length}</button>
+                                                <div class="accounts-detail">${accountsHtml}</div>
+                                            </td>
+                                        </tr>
+                                    `;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+            
+            // Options Section
+            html += `
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Options Positions</div>
+                        <div class="card-value ${data.totals.options < 0 ? 'negative-parens' : ''}">${formatCurrency(data.totals.options)}</div>
+                    </div>
+                    <div class="table-container">
+                        <table class="portfolio-table">
+                            <thead>
+                                <tr><th>Ticker</th><th>Type</th><th>Strike</th><th>Exp</th><th>Contracts</th><th>Premium${needsAsterisk ? '*' : ''}</th><th>Value</th><th>Accounts</th></tr>
+                            </thead>
+                            <tbody>
+                                ${data.options.map(opt => {
+                                    const premium = opt.total_entry_value / opt.total_contracts / 100;
+                                    const optValueClass = opt.current_value < 0 ? 'negative-parens' : '';
+                                    const accountsHtml = opt.accounts.map(a => {
+                                        const val = a.contracts * a.entry_premium * 100;
+                                        return `<span class="account-line">${a.account}: ${formatCurrency(val)}</span>`;
+                                    }).join('');
+                                    return `
+                                        <tr>
+                                            <td><div class="ticker">${opt.ticker}</div></td>
+                                            <td>${opt.type}</td>
+                                            <td>$${opt.strike}</td>
+                                            <td>${opt.expiration}</td>
+                                            <td>${opt.total_contracts}</td>
+                                            <td>$${premium.toFixed(3)}${needsAsterisk ? '*' : ''}</td>
+                                            <td class="${optValueClass}">${formatCurrency(opt.current_value)}</td>
+                                            <td>
+                                                <button class="expand-btn" onclick="toggleAccounts(this)">▼ ${opt.accounts.length}</button>
+                                                <div class="accounts-detail">${accountsHtml}<span class="account-line" style="font-style: italic; margin-top: 0.5rem;">${opt.note}</span></div>
+                                            </td>
+                                        </tr>
+                                    `;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+            
+            // Cash Section
+            html += `
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Cash & Cash Equivalents</div>
+                        <div class="card-value">${formatCurrency(data.totals.cash_equivalents)}</div>
+                    </div>
+                    <div class="table-container">
+                        <table class="portfolio-table">
+                            <thead><tr><th>Asset</th><th>Total</th><th>Details</th><th>Accounts</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="ticker">Cash</div></td>
+                                    <td>${formatCurrency(data.cash.Cash.total)}</td>
+                                    <td>-</td>
+                                    <td>
+                                        <button class="expand-btn" onclick="toggleAccounts(this)">▼ ${data.cash.Cash.accounts.length}</button>
+                                        <div class="accounts-detail">${data.cash.Cash.accounts.map(a => `<span class="account-line">${a.account}: ${formatCurrency(a.value)}</span>`).join('')}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="ticker">SGOV</div></td>
+                                    <td>${formatCurrency(data.cash.SGOV.total)}</td>
+                                    <td>${data.cash.SGOV.total_shares.toFixed(2)} sh @ $${data.cash.SGOV.price.toFixed(2)}${needsAsterisk ? '*' : ''}</td>
+                                    <td>
+                                        <button class="expand-btn" onclick="toggleAccounts(this)">▼ ${data.cash.SGOV.accounts.length}</button>
+                                        <div class="accounts-detail">${data.cash.SGOV.accounts.map(a => `<span class="account-line">${a.account}: ${formatCurrency(a.value)}</span>`).join('')}</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+            
+            // Misc Section
+            html += `
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Misc</div>
+                        <div class="card-value ${data.totals.misc < 0 ? 'negative-parens' : ''}">${formatCurrency(data.totals.misc)}</div>
+                    </div>
+                    <div class="table-container">
+                        <table class="portfolio-table">
+                            <thead><tr><th>Asset</th><th>Type</th><th>Amount</th><th>Price${needsAsterisk ? '*' : ''}</th><th>Cost/Unit</th><th>Value</th><th>P/L %</th><th>Accounts</th></tr></thead>
+                            <tbody>
+                                ${data.misc.map(item => {
+                                    const costPerUnit = item.total_cost_basis / item.total_amount;
+                                    const plPct = item.total_return_pct;
+                                    const plClass = plPct >= 0 ? 'positive' : 'negative';
+                                    const itemValueClass = item.total_value < 0 ? 'negative-parens' : '';
+                                    const accountsHtml = item.accounts.map(a => {
+                                        const val = a.amount * item.price;
+                                        return `<span class="account-line">${a.account}: ${formatCurrency(val)}</span>`;
+                                    }).join('');
+                                    return `
+                                        <tr>
+                                            <td><div class="ticker">${item.asset}</div></td>
+                                            <td>${item.type}</td>
+                                            <td>${item.total_amount}</td>
+                                            <td>$${item.price.toFixed(2)}${needsAsterisk ? '*' : ''}</td>
+                                            <td>$${costPerUnit.toFixed(2)}</td>
+                                            <td class="${itemValueClass}">${formatCurrency(item.total_value)}</td>
+                                            <td class="${plClass}">${plPct >= 0 ? '+' : ''}${plPct.toFixed(1)}%</td>
+                                            <td>
+                                                <button class="expand-btn" onclick="toggleAccounts(this)">▼ ${item.accounts.length}</button>
+                                                <div class="accounts-detail">${accountsHtml}</div>
+                                            </td>
+                                        </tr>
+                                    `;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+            
+            // Total Section
+            html += `
+                <div class="card" style="background: var(--bg-secondary);">
+                    <div class="card-header">
+                        <div class="card-title">Total Portfolio</div>
+                        <div class="card-value" style="font-size: 1.5rem; ${data.totals.grand_total < 0 ? 'color: var(--negative);' : ''}">${formatCurrency(data.totals.grand_total)}</div>
+                    </div>
+                    <div class="totals-grid">
+                        <div class="total-card">
+                            <div class="total-card-label">Stocks & ETFs</div>

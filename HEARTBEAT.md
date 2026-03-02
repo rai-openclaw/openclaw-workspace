@@ -1,5 +1,7 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+Governance has been externalized.
 
-# Add tasks below when you want the agent to check something periodically.
+See: `governance/HEARTBEAT.md`
+
+This file is a placeholder.

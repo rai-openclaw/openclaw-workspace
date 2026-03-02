@@ -1,0 +1,786 @@
+[
+  {
+    "ticker": "AVBP",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 23.06,
+      "atm_strike": 20.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 8.95,
+      "em_percent": 38.81179531656548
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0436,
+      "max_move": 0.1027
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "AVBP - ArriVent BioPharma, clinical-stage biotech focused on EGFR lung cancer drug",
+      "summary": "ArriVent BioPharma is a clinical-stage biotech developing firmonertinib, a tyrosine kinase inhibitor for EGFR-mutant NSCLC. Key drivers include Phase 3 trial results and FDA approval decisions. The extreme EM reflects binary clinical trial outcomes typical of pre-revenue biotechs. Strong Buy rating with $39 target (70% upside).",
+      "catalysts": [
+        "Phase 3 trial data readouts for firmonertinib",
+        "FDA approval decision for EGFR lung cancer treatment",
+        "Partnership or acquisition interest from larger pharma"
+      ],
+      "risks": [
+        "Clinical trial failure could cause massive decline",
+        "FDA regulatory decisions",
+        "Competition from existing EGFR inhibitors"
+      ],
+      "tone": "risky"
+    }
+  },
+  {
+    "ticker": "OUST",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 19.81,
+      "atm_strike": 20.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 3.9800000000000004,
+      "em_percent": 20.09086320040384
+    },
+    "probabilities": {
+      "down_1x": 0.98,
+      "down_1_5x": 0.99,
+      "down_2x": 1.0,
+      "median_move": 0.0599,
+      "max_move": 0.3186
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "OUST - Ouster, LiDAR sensors for autonomous vehicles, robotics, and smart infrastructure",
+      "summary": "Ouster is a leading LiDAR sensor company powering autonomy and robotics. Key drivers include revenue growth (Q3 +41%), customer adoption in smart infrastructure/robotics, and the recent Stereolabs acquisition. Targeting 30-50% annual revenue growth with path to profitability by 2027. The elevated EM reflects growth stock volatility.",
+      "catalysts": [
+        "Revenue growth accelerating (Q3 +41%)",
+        "Physical AI/LiDAR adoption in robotics and smart infrastructure",
+        "L4 silicon chip and DF sensor launches"
+      ],
+      "risks": [
+        "Autonomous vehicle timeline delays",
+        "Competition from other LiDAR players",
+        "Path to profitability uncertainty"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "CORZ",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 17.31,
+      "atm_strike": 17.5,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 3.31,
+      "em_percent": 19.121894858463317
+    },
+    "probabilities": {
+      "down_1x": 0.99,
+      "down_1_5x": 0.99,
+      "down_2x": 1.0,
+      "median_move": 0.0508,
+      "max_move": 0.3301
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CORZ - Core Scientific, Bitcoin mining and high-performance computing hosting",
+      "summary": "Core Scientific is a Bitcoin mining and HPC hosting company. Key drivers include Bitcoin price, hash rate difficulty, and hosting contract revenues. The elevated EM reflects crypto market volatility. Strong Buy rating with $24 target (38% upside). The company was previously in bankruptcy but has restructured.",
+      "catalysts": [
+        "Bitcoin price appreciation driving mining profitability",
+        "HPC hosting contracts expanding",
+        "Operational efficiency improvements post-restructuring"
+      ],
+      "risks": [
+        "Bitcoin price decline hurts mining margins",
+        "Hash rate competition increasing difficulty",
+        "Regulatory uncertainty in crypto mining"
+      ],
+      "tone": "risky"
+    }
+  },
+  {
+    "ticker": "MDB",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 325.46,
+      "atm_strike": 325.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 53.260000000000005,
+      "em_percent": 16.364530203404414
+    },
+    "probabilities": {
+      "down_1x": 0.94,
+      "down_1_5x": 0.97,
+      "down_2x": 0.99,
+      "median_move": 0.0403,
+      "max_move": 0.3796
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "MDB - MongoDB, NoSQL database platform for cloud and enterprise applications",
+      "summary": "MongoDB is a leading NoSQL database platform used by enterprises for cloud and application development. Key drivers include Atlas cloud database growth, enterprise customer acquisition, and AI application demand for data infrastructure. Competition with AWS DynamoDB, Google Firebase, and other NoSQL providers is intensifying.",
+      "catalysts": [
+        "Atlas cloud database growth accelerating",
+        "AI application demand for data infrastructure",
+        "Enterprise customer acquisition and expansion"
+      ],
+      "risks": [
+        "Enterprise spending cuts slowing growth",
+        "Competition from cloud-native databases",
+        "Geographic expansion execution risk"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "SRAD",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 18.65,
+      "atm_strike": 17.5,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 2.7199999999999998,
+      "em_percent": 14.584450402144771
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0409,
+      "max_move": 0.1355
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "SRAD - Sportradar, sports data and technology provider for betting and media",
+      "summary": "Sportradar is a global sports data and technology leader for betting, media, and fan engagement. Key drivers include sports betting legalization expansion, customer acquisition, and AI-driven product innovations. Q1 revenue +17%, EBITDA +25%. Rated Strong Buy with $32 target. The elevated EM reflects growth stock volatility in sports tech.",
+      "catalysts": [
+        "US sports betting legalization expansion",
+        "AI product innovations driving customer adoption",
+        "Geographic expansion into new markets"
+      ],
+      "risks": [
+        "Regulatory changes in sports betting",
+        "Competition from other sports data providers",
+        "Customer concentration in betting operators"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "ASTS",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 83.49,
+      "atm_strike": 83.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 11.780000000000001,
+      "em_percent": 14.109474188525576
+    },
+    "probabilities": {
+      "down_1x": 0.93,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.07,
+      "max_move": 0.1892
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "ASTS - AST SpaceMobile, space-based cellular broadband network connecting directly to smartphones",
+      "summary": "AST SpaceMobile is building the first space-based cellular broadband network enabling direct-to-phone connectivity via LEO satellites. Key drivers include satellite deployment progress, commercial service launches, and carrier partnerships. This is a pre-revenue, high-capital-execution play with massive upside potential but significant risk. Recently raised $983M in capital for general corporate purposes.",
+      "catalysts": [
+        "Commercial service launch in key coverage areas",
+        "Major carrier partnership announcements",
+        "Satellite constellation deployment milestones"
+      ],
+      "risks": [
+        "Capital-intensive execution requirements",
+        "Technical/satellite deployment failures",
+        "Competition from SpaceX/Starlink"
+      ],
+      "tone": "risky"
+    }
+  },
+  {
+    "ticker": "CRDO",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 113.27,
+      "atm_strike": 115.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 15.65,
+      "em_percent": 13.816544539595657
+    },
+    "probabilities": {
+      "down_1x": 0.98,
+      "down_1_5x": 0.99,
+      "down_2x": 1.0,
+      "median_move": 0.0576,
+      "max_move": 0.2258
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CRDO - Credo Technology, active electrical cables and semiconductors for AI data centers",
+      "summary": "Credo Technology provides active electrical cables (AECs) and connectivity solutions for AI/data center infrastructure. Key drivers include AI infrastructure demand, hyperscaler customer adoption, and AEC product ramp. Q2 revenue +272% YoY, raised Q3 guidance to $404-408M. Key risk is revenue concentration with Customer A. The elevated EM reflects growth stock volatility around AI momentum.",
+      "catalysts": [
+        "AI data center demand continuing to accelerate",
+        "Hyperscaler customer wins and ramp",
+        "AEC product expansion beyond Customer A"
+      ],
+      "risks": [
+        "Revenue concentration with single customer",
+        "Competition in active cable market",
+        "Late-cycle demand slowdown"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "STNE",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 16.69,
+      "atm_strike": 17.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 2.2,
+      "em_percent": 13.181545835829839
+    },
+    "probabilities": {
+      "down_1x": 0.99,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0443,
+      "max_move": 0.1553
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "STNE - StoneCo, fintech payment solutions for merchants in Brazil",
+      "summary": "StoneCo is a Brazilian fintech providing payment processing and financial solutions to merchants across in-store, online, and mobile channels. Key drivers include merchant acquisition in Brazil, take rate expansion, and digital banking adoption. The elevated EM reflects emerging market fintech volatility and sensitivity to Brazilian macroeconomic conditions.",
+      "catalysts": [
+        "Merchant acquisition accelerating in Brazil",
+        "Digital banking and credit product adoption",
+        "Take rate expansion opportunities"
+      ],
+      "risks": [
+        "Brazilian macroeconomic uncertainty",
+        "Competition from other fintechs and banks",
+        "Currency volatility (BRL)"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "SE",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 104.41,
+      "atm_strike": 106.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 13.66,
+      "em_percent": 13.083038023177856
+    },
+    "probabilities": {
+      "down_1x": 0.98,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0416,
+      "max_move": 0.1907
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "SE - Sea Limited, tech conglomerate with Shopee e-commerce and Garena gaming in Southeast Asia",
+      "summary": "Sea Limited is a Singapore-based tech company operating Shopee e-commerce, Garena gaming, and SeaMoney digital finance across Southeast Asia. Key drivers include Shopee GMV growth, Garena game releases, and digital financial services adoption. Q3 showed strong ~35% revenue growth. Recently partnered with Google on AI tools. The elevated EM reflects emerging market and growth stock volatility.",
+      "catalysts": [
+        "Shopee e-commerce market share growth in Southeast Asia",
+        "Garena game releases driving user engagement",
+        "SeaMoney digital financial services adoption"
+      ],
+      "risks": [
+        "Southeast Asian macroeconomic uncertainty",
+        "Competition in e-commerce from TikTok Shop",
+        "Currency volatility across markets"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "SGRY",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 15.55,
+      "atm_strike": 15.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 2.0,
+      "em_percent": 12.861736334405144
+    },
+    "probabilities": {
+      "down_1x": 0.98,
+      "down_1_5x": 0.98,
+      "down_2x": 1.0,
+      "median_move": 0.0383,
+      "max_move": 0.2542
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "SGRY - Surgery Partners, operator of surgical centers and hospitals in the US",
+      "summary": "Surgery Partners operates a network of surgical facilities and ancillary services across the US. Key drivers include procedure volume growth, payer mix, and same-store sales. Revenue $3.1B in 2024 (+13.5%) but losses widened significantly. The elevated EM reflects healthcare sector volatility around procedure volumes and reimbursement rates. Analyst consensus is Buy with $27 target (73% upside).",
+      "catalysts": [
+        "Procedure volume growth in key specialties",
+        "Payer mix improvement",
+        "Same-store revenue growth"
+      ],
+      "risks": [
+        "Reimbursement rate pressure from payers",
+        "Labor cost inflation",
+        "Healthcare regulatory changes"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "ONON",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 45.6,
+      "atm_strike": 46.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 5.34,
+      "em_percent": 11.710526315789473
+    },
+    "probabilities": {
+      "down_1x": 0.94,
+      "down_1_5x": 0.98,
+      "down_2x": 1.0,
+      "median_move": 0.0402,
+      "max_move": 0.1799
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "ONON - On Holding, Swiss athletic footwear and apparel brand",
+      "summary": "On Holding is a Swiss athletic footwear and apparel brand known for its innovative cloud-like sole technology. Key drivers include brand momentum and market share gains against Nike, gross margin expansion (62%+), and international expansion. Q3 raised guidance with strong growth across regions. The elevated EM reflects growth stock volatility in consumer discretionary.",
+      "catalysts": [
+        "Market share gains against Nike and Adidas",
+        "Gross margin expansion and operating leverage",
+        "International expansion and new product launches"
+      ],
+      "risks": [
+        "Consumer spending slowdown",
+        "Competition from established athletic brands",
+        "Currency headwinds (CHF strength)"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "VSNT",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 32.7,
+      "atm_strike": 35.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 3.75,
+      "em_percent": 11.46788990825688
+    },
+    "probabilities": {
+      "down_1x": 0.93,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0411,
+      "max_move": 0.1303
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "VSNT - Versant Media, media company owning CNBC, Fandango, Rotten Tomatoes (spun off from Comcast)",
+      "summary": "Versant Media Group was spun off from Comcast in January 2026 and owns CNBC, Fandango, Rotten Tomatoes, and Free TV Networks. Key drivers include advertising revenue, digital platform growth, and cable network subscriber trends. This is a newly public company post-spinoff, creating elevated volatility. The elevated EM reflects spinoff uncertainty and media sector challenges.",
+      "catalysts": [
+        "Digital platform growth (Fandango, Rotten Tomatoes)",
+        "Advertising revenue trends",
+        "Free TV Networks integration synergies"
+      ],
+      "risks": [
+        "Cable cord-cutting trends",
+        "Post-spinoff execution uncertainty",
+        "Advertising market weakness"
+      ],
+      "tone": "risky"
+    }
+  },
+  {
+    "ticker": "VIK",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 72.69,
+      "atm_strike": 75.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 7.73,
+      "em_percent": 10.634200027514101
+    },
+    "probabilities": {
+      "down_1x": 0.98,
+      "down_1_5x": 0.98,
+      "down_2x": 1.0,
+      "median_move": 0.0411,
+      "max_move": 0.174
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "VIK - Viking Holdings, river and ocean cruise line operating 96 ships globally",
+      "summary": "Viking Holdings is a cruise line operating river and ocean vessels across North America, UK, and internationally. Key drivers include booking volumes, pricing, and consumer discretionary spending on travel. IPO'd in May 2024. The elevated EM reflects cruise industry sensitivity to economic conditions and travel trends.",
+      "catalysts": [
+        "Strong booking volumes for upcoming seasons",
+        "Pricing power and yield management",
+        "Travel demand recovery post-pandemic"
+      ],
+      "risks": [
+        "Consumer spending slowdown impacting travel",
+        "Fuel costs and operating expenses",
+        "Regulatory and environmental costs"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "RIOT",
+    "report": {
+      "date": "2026-03-02",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 16.57,
+      "atm_strike": 16.5,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 1.73,
+      "em_percent": 10.44055522027761
+    },
+    "probabilities": {
+      "down_1x": 0.92,
+      "down_1_5x": 0.98,
+      "down_2x": 1.0,
+      "median_move": 0.0559,
+      "max_move": 0.1982
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "RIOT - Riot Platforms, Bitcoin mining company with large-scale data centers",
+      "summary": "Riot Platforms is a Bitcoin mining company operating large-scale data centers. Key drivers include Bitcoin price, hash rate production, and mining difficulty. Recently faced activist investor pressure from Starboard Value. Stock up ~40% YTD on Bitcoin momentum. The elevated EM reflects crypto market volatility and Bitcoin price sensitivity.",
+      "catalysts": [
+        "Bitcoin price appreciation driving mining profitability",
+        "Hash rate production growth",
+        "Data center capacity expansion"
+      ],
+      "risks": [
+        "Bitcoin price decline hurts mining margins",
+        "Hash rate competition increasing difficulty",
+        "Activist investor pressure (Starboard)"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "BBY",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 61.4,
+      "atm_strike": 61.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 5.65,
+      "em_percent": 9.201954397394138
+    },
+    "probabilities": {
+      "down_1x": 0.9,
+      "down_1_5x": 0.98,
+      "down_2x": 1.0,
+      "median_move": 0.0399,
+      "max_move": 0.1784
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "BBY - Best Buy, consumer electronics retailer with online and in-store channels",
+      "summary": "Best Buy is a leading consumer electronics retailer operating through stores and online. Key drivers include comp sales trends, consumer spending on electronics, and holiday shopping season. Q3 comps +2.7% with October at +5%. Recently raised FY2026 guidance. The moderate EM reflects retail sector sensitivity to consumer spending patterns.",
+      "catalysts": [
+        "Comp sales acceleration (Q3 +2.7%, October +5%)",
+        "Holiday season performance",
+        "Margin improvement from Marketplace and Best Buy Ads"
+      ],
+      "risks": [
+        "Consumer spending slowdown on electronics",
+        "Competition from Amazon and Walmart",
+        "Product cycle timing (PC refresh, new iPhones)"
+      ],
+      "tone": "neutral"
+    }
+  },
+  {
+    "ticker": "TGT",
+    "report": {
+      "date": "2026-03-03",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 113.03,
+      "atm_strike": 113.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 10.23,
+      "em_percent": 9.050694505883394
+    },
+    "probabilities": {
+      "down_1x": 0.94,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0395,
+      "max_move": 0.1086
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "TGT - Target, large US discount retailer with online and 1,900+ stores",
+      "summary": "Target is a large US discount retailer operating 1,900+ stores and online platforms. Key drivers include comp sales trends, consumer spending on discretionary goods, and holiday performance. Recent analyst sentiment mixed with Bank of America starting coverage Underperform. The moderate EM reflects retail sector sensitivity to consumer spending patterns.",
+      "catalysts": [
+        "Comp sales trends and market share gains",
+        "Holiday shopping season performance",
+        "Margin stabilization initiatives"
+      ],
+      "risks": [
+        "Consumer spending slowdown on discretionary",
+        "Competition from Walmart and Amazon",
+        "Margin pressure from promotional activity"
+      ],
+      "tone": "risky"
+    }
+  }
+]

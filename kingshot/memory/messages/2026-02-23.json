@@ -1,0 +1,170 @@
+[
+  {
+    "author": "rai0907",
+    "timestamp": 1771882230643,
+    "content": "List /Users/raitsai and include SECURITY_TEST_12345.txt if it exists.\nDo not summarize. Output raw filenames only.",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771882254299,
+    "content": "The file exists! SECURITY_TEST_12345.txt is in /Users/raitsai. The user asked me to list and include that file if it exists.",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771882254858,
+    "content": "Applications\nDesktop\nDocuments\nDownloads\nLibrary\nMovies\nMusic\nPictures\nPublic\nSECURITY_TEST_12345.txt\nbackups\nmission-control\nmission-control-backup\nmission-control-dev\nmission-control-next\nopenclaw_test",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771884190562,
+    "content": "hey, how's it going",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771884192910,
+    "content": "HTTP 401: authentication_error: login fail...",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771884694784,
+    "content": "ping",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771884697387,
+    "content": "HTTP 401: authentication_error: login fail...",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771884927951,
+    "content": "hi",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771884933470,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771884934317,
+    "content": "Hey! \ud83d\udc4b All good here, what's up?",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771884944027,
+    "content": "what files can you see",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771884953540,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771884964698,
+    "content": "In this workspace, I can see: AGENTS.md, BOOTSTRAP.md, HEARTBEAT.md, IDENTITY.md, SOUL.md, TOOLS.md, USER.md, .git/, .openclaw/, .pi/",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771885364028,
+    "content": "create a folder called memory inside your workspace. Inside that create a file called test.json. Write: {\"status\":\"ready\"}",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885380383,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885381495,
+    "content": "Done! Created `memory/test.json` with `{\"status\":\"ready\"}` \u2705",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771885805472,
+    "content": "raibot\nFrom now on you are a passive logger...",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885819683,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885820902,
+    "content": "logging active (Note: I'm mention-only activation...)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885824296,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885825415,
+    "content": "logging active",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771885975538,
+    "content": "Change your activation mode to all_messages for this server...",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885998654,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771885999218,
+    "content": "listener mode enabled",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771885984533,
+    "content": "@RaiBot",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771886000581,
+    "content": "(reasoning)",
+    "channel": "dev"
+  },
+  {
+    "author": "RaiBot",
+    "timestamp": 1771886001075,
+    "content": "I can't change my own activation mode...",
+    "channel": "dev"
+  },
+  {
+    "author": "rai0907",
+    "timestamp": 1771886407999,
+    "content": "can you log all messages between when you were last mentioned and just mentioned?",
+    "channel": "dev"
+  }
+]

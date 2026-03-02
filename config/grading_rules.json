@@ -1,0 +1,22 @@
+{
+  "weights": {
+    "em_respect": 40,
+    "predictability": 20,
+    "premium": 15,
+    "assignment": 15,
+    "liquidity": 5,
+    "binary_penalty": -10
+  },
+  "thresholds": {
+    "em_respect": {
+      "full": 0.85,
+      "partial": 0.70
+    },
+    "grade_cutoffs": {
+      "A": 90,
+      "B+": 80,
+      "B": 70,
+      "C": 60
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "exclude_industry_keywords": [
+    "Biotechnology",
+    "Drug Manufacturers",
+    "Pharmaceutical",
+    "Therapeutic",
+    "Clinical",
+    "Genomics",
+    "Life Sciences"
+  ],
+  "exclude_sector_keywords": [
+    "Basic Materials",
+    "Utilities"
+  ],
+  "max_em_percent": 0.12
+}

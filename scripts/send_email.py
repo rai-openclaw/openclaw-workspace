@@ -1,0 +1,268 @@
+#!/usr/bin/env python3
+"""
+send_email.py - Institutional Earnings Risk Report
+Renders analysis_final.json exactly as produced by pipeline.
+Uses .env for Gmail credentials.
+No business logic. No date filtering.
+"""
+
+import json
+import smtplib
+import os
+from datetime import datetime
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+WORKSPACE = Path.home() / ".openclaw" / "workspace"
+DATA_DIR = WORKSPACE / "data"
+INPUT_FILE = DATA_DIR / "analysis" / "analysis_final.json"
+LOG_FILE = DATA_DIR / "logs" / "pipeline.log"
+
+
+def log(msg):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(LOG_FILE, "a") as f:
+        f.write(f"[{timestamp}] EMAIL: {msg}\n")
+    print(f"[{timestamp}] EMAIL: {msg}")
+
+
+def load_analysis():
+    if not INPUT_FILE.exists():
+        log(f"Missing file: {INPUT_FILE}")
+        return []
+    with open(INPUT_FILE) as f:
+        return json.load(f)
+
+
+def format_percent(value):
+    if value is None:
+        return "-"
+    return f"{value * 100:.0f}%"
+
+
+def build_html(data):
+
+    if not data:
+        return None
+
+    GRADE_RANK = {
+        "A": 5,
+        "B+": 4,
+        "B": 3,
+        "C": 2,
+        "D": 1
+    }
+
+    # Defensive normalization before sorting
+    for t in data:
+        if t.get("grading") is None:
+            t["grading"] = {}
+        if t.get("probabilities") is None:
+            t["probabilities"] = {}
+
+    data.sort(
+        key=lambda x: (
+            GRADE_RANK.get((x.get("grading") or {}).get("grade"), 0),
+            (x.get("grading") or {}).get("score_total", 0)
+        ),
+        reverse=True
+    )
+
+    total = len(data)
+    high_grade = len([x for x in data if (x.get("grading") or {}).get("grade") in ["A", "B+"]])
+    elevated = len([x for x in data if (x.get("grading") or {}).get("risk_severity") == "ELEVATED"])
+
+    table_rows = ""
+
+    for t in data:
+
+        grading = t.get("grading") or {}
+        probs = t.get("probabilities") or {}
+        research = t.get("research") or {}
+
+        ticker = t.get("ticker", "")
+        grade = grading.get("grade", "")
+        score = grading.get("score_total", "")
+        risk = grading.get("risk_severity", "")
+        em = (t.get("options") or {}).get("em_percent")
+
+        em_display = f"{em:.1f}%" if em is not None else "-"
+
+        p1 = format_percent(probs.get("down_1x"))
+        p15 = format_percent(probs.get("down_1_5x"))
+        p2 = format_percent(probs.get("down_2x"))
+
+        # Color coding
+        grade_color = {
+            "A": "#1e7e34",
+            "B+": "#2f9e44",
+            "B": "#f59f00",
+            "C": "#e67700",
+            "D": "#c92a2a"
+        }.get(grade, "#000000")
+
+        risk_color = "#c92a2a" if risk == "ELEVATED" else "#2b8a3e"
+
+        table_rows += f"""
+        <tr>
+            <td><strong>{ticker}</strong></td>
+            <td style="color:{grade_color}; font-weight:bold;">{grade}</td>
+            <td>{score}</td>
+            <td style="color:{risk_color}; font-weight:bold;">{risk}</td>
+            <td>{em_display}</td>
+            <td>{p1}</td>
+            <td><strong>{p15}</strong></td>
+            <td>{p2}</td>
+            <td>{research.get("short_note","")}</td>
+        </tr>
+        """
+
+    detail_sections = ""
+
+    for t in data:
+
+        grading = t.get("grading") or {}
+        probs = t.get("probabilities") or {}
+        research = t.get("research") or {}
+        flags = t.get("risk_flags") or {}
+
+        ticker = t.get("ticker", "")
+        grade = grading.get("grade", "")
+        score = grading.get("score_total", "")
+        risk = grading.get("risk_severity", "")
+        em = (t.get("options") or {}).get("em_percent")
+
+        em_display = f"{em:.1f}%" if em is not None else "-"
+
+        header = (
+            f"{ticker} — {grade} ({score}) | "
+            f"EM {em_display} | "
+            f"↓1x {format_percent(probs.get('down_1x'))} | "
+            f"↓1.5x {format_percent(probs.get('down_1_5x'))} | "
+            f"↓2x {format_percent(probs.get('down_2x'))} | "
+            f"{risk}"
+        )
+
+        catalysts = "".join([f"<li>{c}</li>" for c in research.get("catalysts", [])])
+        risks = "".join([f"<li>{r}</li>" for r in research.get("risks", [])])
+
+        components = grading.get("components", {})
+        comp_rows = ""
+        for k, v in components.items():
+            comp_rows += f"<li>{k.replace('_',' ').title()}: {v.get('score')} — {v.get('reason')}</li>"
+
+        flag_list = [k for k, v in flags.items() if v]
+        flag_html = ""
+        if flag_list:
+            flag_html = "<p><strong>Risk Flags:</strong> " + ", ".join(flag_list) + "</p>"
+
+        detail_sections += f"""
+        <hr>
+        <h3>{header}</h3>
+
+        <p><strong>Business Context:</strong><br>
+        {research.get("summary","")}</p>
+
+        <p><strong>Catalysts:</strong></p>
+        <ul>{catalysts}</ul>
+
+        <p><strong>Risks:</strong></p>
+        <ul>{risks}</ul>
+
+        <p><strong>Grading Breakdown:</strong></p>
+        <ul>{comp_rows}</ul>
+
+        {flag_html}
+        """
+
+    html = f"""
+    <html>
+    <body style="font-family: Arial; font-size:13px;">
+
+    <h2>Earnings Risk Report</h2>
+
+    <p>
+    Total: {total} |
+    A/B+: {high_grade} |
+    Elevated Risk: {elevated}
+    </p>
+
+    <h3>Executive Summary</h3>
+
+    <table style="border-collapse: collapse; width:100%;" border="1" cellpadding="6">
+    <tr style="background-color:#f1f3f5;">
+        <th>Ticker</th>
+        <th>Grade</th>
+        <th>Score</th>
+        <th>Risk</th>
+        <th>EM</th>
+        <th>↓1x</th>
+        <th>↓1.5x</th>
+        <th>↓2x</th>
+        <th>Note</th>
+    </tr>
+    {table_rows}
+    </table>
+
+    {detail_sections}
+
+    <br><br>
+    <small>Generated by Mission Control Pipeline</small>
+
+    </body>
+    </html>
+    """
+
+    return html
+
+
+def send_email(html):
+
+    sender = os.environ.get("GMAIL_USER")
+    password = os.environ.get("GMAIL_APP_PASSWORD")
+    recipient = "guanwu87@gmail.com"
+
+    if not sender or not password:
+        log("Missing Gmail credentials in .env file")
+        return
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = "Earnings Risk Report"
+    msg["From"] = sender
+    msg["To"] = recipient
+
+    msg.attach(MIMEText(html, "html"))
+
+    with smtplib.SMTP("smtp.gmail.com", 587) as server:
+        server.starttls()
+        server.login(sender, password)
+        server.send_message(msg)
+
+    log("Email sent successfully")
+
+
+def main():
+
+    log("=== Starting send_email.py ===")
+
+    data = load_analysis()
+
+    if not data:
+        log("No data to send")
+        return
+
+    html = build_html(data)
+
+    if not html:
+        log("HTML build failed")
+        return
+
+    send_email(html)
+
+
+if __name__ == "__main__":
+    main()

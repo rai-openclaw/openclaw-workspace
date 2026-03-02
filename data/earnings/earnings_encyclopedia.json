@@ -1,0 +1,2274 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-26T06:40:10.713642",
+  "entries": [
+    {
+      "ticker": "CVNA",
+      "company": "Carvana Co.",
+      "grade": "C-",
+      "total_score": 60,
+      "expected_move": 12.5,
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "sector": "Consumer Discretionary",
+      "key_insight": "Expected move elevated due to: 1) High short interest creating squeeze potential, 2) Debt restructuring progress being closely watched, 3) Used car price volatility driving uncertainty. Premium attractive but assignment risk higher.",
+      "bottom_line": "High premium yield but elevated risk. Suitable for risk-tolerant premium sellers with defined risk strategies.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 60
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 60
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 60
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 60
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "ticker": "DASH",
+      "company": "DoorDash Inc.",
+      "grade": "C",
+      "total_score": 66,
+      "expected_move": 8.2,
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "sector": "Consumer Discretionary",
+      "key_insight": "Expected move slightly above historical average due to: 1) Regulatory uncertainty around gig worker status, 2) International expansion execution risk, 3) Restaurant partnership renegotiations creating volatility.",
+      "bottom_line": "Moderate premium yield with elevated regulatory risk. Best for defined risk strategies with wider wings.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "C",
+          "score": 66
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C",
+          "score": 66
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C",
+          "score": 66
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C",
+          "score": 66
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C",
+          "score": 66
+        }
+      ]
+    },
+    {
+      "ticker": "EBAY",
+      "company": "eBay Inc.",
+      "grade": "B",
+      "total_score": 81,
+      "expected_move": 6.8,
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "sector": "Consumer Discretionary",
+      "key_insight": "Expected move modestly elevated due to: 1) Focused categories strategy showing mixed results, 2) Authentication services growth trajectory uncertainty, 3) Advertising revenue becoming larger portion of mix.",
+      "bottom_line": "Solid premium collection candidate with lower volatility. Good for conservative income strategies.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "B",
+          "score": 81
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B",
+          "score": 81
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B",
+          "score": 81
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B",
+          "score": 81
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "ticker": "RELY",
+      "company": "Remitly Global Inc.",
+      "grade": "C+",
+      "total_score": 67,
+      "expected_move": 9.5,
+      "earnings_date": "2026-02-18",
+      "earnings_time": "AMC",
+      "sector": "Financials",
+      "key_insight": "Expected move elevated due to: 1) Emerging market currency volatility concerns, 2) Regulatory scrutiny in key corridors, 3) Customer acquisition cost trends being closely watched.",
+      "bottom_line": "Attractive premium yield for growth fintech. Suitable for defined risk strategies given volatility.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 67
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 67
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 67
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 67
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 67
+        }
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "grade": "A",
+      "total_score": 90,
+      "expected_move": 5.75,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Consumer Staples",
+      "key_insight": "Expected move is 40% ABOVE historical average because: 1) $1T market cap milestone creating momentum, 2) AI initiatives narrative driving investor interest, 3) Holiday season performance uncertainty driving modest volatility premium. Stock rarely exceeds 1x EM making iron condor attractive.",
+      "bottom_line": "High-quality defensive name for premium collection with low risk of catastrophic loss. Best risk-adjusted setup today with wide safety margin.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "A",
+          "score": 90
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A",
+          "score": 90
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A",
+          "score": 90
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A",
+          "score": 90
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A",
+          "score": 90
+        }
+      ]
+    },
+    {
+      "ticker": "LMND",
+      "company": "Lemonade Inc.",
+      "grade": "D+",
+      "total_score": 55,
+      "expected_move": 11.2,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Financials",
+      "key_insight": "Expected move elevated due to: 1) AI underwriting efficacy being closely scrutinized, 2) Catastrophe loss exposure creating binary outcomes, 3) Path to profitability uncertainty driving volatility.",
+      "bottom_line": "Very high premium yield but elevated risk profile. Only for risk-tolerant traders with small position sizing.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "D+",
+          "score": 55
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "D+",
+          "score": 55
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "D+",
+          "score": 55
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "D+",
+          "score": 55
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "D+",
+          "score": 55
+        }
+      ]
+    },
+    {
+      "ticker": "KLAR",
+      "company": "Klarna Holding AB",
+      "grade": "C-",
+      "total_score": 59,
+      "expected_move": 10.5,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Financials",
+      "key_insight": "Expected move elevated due to: 1) Regulatory uncertainty across multiple jurisdictions, 2) Credit loss trends being closely watched, 3) International expansion execution risk.",
+      "bottom_line": "Elevated premium yield but significant regulatory overhang. Suitable for defined risk strategies only.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 59
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 59
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 59
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 59
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C-",
+          "score": 59
+        }
+      ]
+    },
+    {
+      "ticker": "VC",
+      "company": "Visteon Corporation",
+      "grade": "A-",
+      "total_score": 83,
+      "expected_move": 7.8,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Consumer Discretionary",
+      "key_insight": "Expected move elevated due to: 1) Auto production schedule uncertainty, 2) EV transition creating mix shift volatility, 3) Digital cockpit adoption rate being closely watched.",
+      "bottom_line": "Solid premium collection candidate with moderate volatility. Good risk-reward for defined income strategies.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 83
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 83
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 83
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 83
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 83
+        }
+      ]
+    },
+    {
+      "ticker": "W",
+      "company": "Wayfair Inc.",
+      "grade": "C+",
+      "total_score": 68,
+      "expected_move": 9.2,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Consumer Discretionary",
+      "key_insight": "Expected move elevated due to: 1) Housing market uncertainty impacting big-ticket purchases, 2) Freight cost normalization trajectory, 3) Path to profitability being closely scrutinized.",
+      "bottom_line": "Attractive premium yield but cyclical risk exposure. Suitable for defined risk strategies with housing market awareness.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 68
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 68
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 68
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 68
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "C+",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "ticker": "DAVA",
+      "company": "Endava plc",
+      "grade": "B-",
+      "total_score": 72,
+      "expected_move": 8.5,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Information Technology",
+      "key_insight": "Expected move elevated due to: 1) European economic uncertainty impacting IT budgets, 2) Wage inflation compressing margins, 3) Currency volatility creating earnings noise.",
+      "bottom_line": "Moderate premium yield with cyclical IT services exposure. Suitable for conservative income strategies.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "B-",
+          "score": 72
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B-",
+          "score": 72
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B-",
+          "score": 72
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B-",
+          "score": 72
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "B-",
+          "score": 72
+        }
+      ]
+    },
+    {
+      "ticker": "NICE",
+      "company": "NICE Ltd.",
+      "grade": "A-",
+      "total_score": 85,
+      "expected_move": 6.2,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "BMO",
+      "sector": "Information Technology",
+      "key_insight": "Expected move modestly elevated due to: 1) AI feature adoption rate being closely watched, 2) Cloud transition progress, 3) Enterprise spending environment uncertainty.",
+      "bottom_line": "High-quality software name for premium collection with low volatility. Excellent risk-adjusted setup.",
+      "last_researched": "2026-02-18",
+      "research_history": [
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 85
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 85
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 85
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 85
+        },
+        {
+          "date": "2026-02-18",
+          "grade": "A-",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "ticker": "AKAM",
+      "company": "Akamai Technologies Inc.",
+      "grade": "C+",
+      "total_score": 69,
+      "expected_move": 7.8,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Expected move elevated due to: 1) IV rank at 85% creating high premiums, 2) Cloud security growth narrative creating volatility, 3) Traditional CDN business uncertainty. Stock generally respects EM but elevated this week.",
+      "bottom_line": "Elevated IV creates attractive premium but stock shows moderate downside EM respect. Suitable for defined risk iron condor strategies.",
+      "last_researched": "2026-02-19",
+      "research_history": [
+        {
+          "date": "2026-02-19",
+          "grade": "C+",
+          "score": 69
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C+",
+          "score": 69
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C+",
+          "score": 69
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C+",
+          "score": 69
+        }
+      ]
+    },
+    {
+      "ticker": "LYV",
+      "company": "Live Nation Entertainment Inc.",
+      "grade": "B-",
+      "total_score": 74,
+      "expected_move": 8.5,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "AMC",
+      "sector": "Communication Services",
+      "key_insight": "Expected move modestly elevated due to: 1) Regulatory concerns around Ticketmaster, 2) Economic sensitivity for live events, 3) High valuation (P/E 115) creating binary outcomes.",
+      "bottom_line": "Solid premium with good EM respect. Suitable for defined risk strategies with wide wings given regulatory uncertainty.",
+      "last_researched": "2026-02-19",
+      "research_history": [
+        {
+          "date": "2026-02-19",
+          "grade": "B-",
+          "score": 74
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "B-",
+          "score": 74
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "B-",
+          "score": 74
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "B-",
+          "score": 74
+        }
+      ]
+    },
+    {
+      "ticker": "TXRH",
+      "company": "Texas Roadhouse Inc.",
+      "grade": "A-",
+      "total_score": 84,
+      "expected_move": 5.2,
+      "earnings_date": "2026-02-19",
+      "earnings_time": "AMC",
+      "sector": "Consumer Cyclical",
+      "key_insight": "Expected move modestly elevated due to: 1) Near all-time highs creating momentum volatility, 2) Restaurant sector seasonality concerns, 3) Commodity cost uncertainty. Stock rarely exceeds 1x EM making iron condor attractive.",
+      "bottom_line": "High-quality defensive restaurant name with excellent EM respect. Good risk-adjusted setup for conservative income.",
+      "last_researched": "2026-02-19",
+      "research_history": [
+        {
+          "date": "2026-02-19",
+          "grade": "A-",
+          "score": 84
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "A-",
+          "score": 84
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "A-",
+          "score": 84
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "A-",
+          "score": 84
+        }
+      ]
+    },
+    {
+      "ticker": "AU",
+      "company": "AngloGold Ashanti plc",
+      "grade": "C",
+      "total_score": 63,
+      "expected_move": 9.5,
+      "earnings_date": "2026-02-20",
+      "earnings_time": "BMO",
+      "sector": "Metals & Mining",
+      "key_insight": "Expected move elevated due to: 1) Gold price near all-time highs creating binary outcomes, 2) Geopolitical tensions supporting safe-haven demand, 3) Currency volatility from operations in South Africa/Tanzania.",
+      "bottom_line": "High premium yield but significant commodity/geopolitical risk. Only for risk-tolerant traders with small position sizing.",
+      "last_researched": "2026-02-19",
+      "research_history": [
+        {
+          "date": "2026-02-19",
+          "grade": "C",
+          "score": 63
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C",
+          "score": 63
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C",
+          "score": 63
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C",
+          "score": 63
+        }
+      ]
+    },
+    {
+      "ticker": "HBM",
+      "company": "Hudbay Minerals Inc.",
+      "grade": "C-",
+      "total_score": 58,
+      "expected_move": 11.2,
+      "earnings_date": "2026-02-20",
+      "earnings_time": "BMO",
+      "sector": "Metals & Mining",
+      "key_insight": "Expected move very elevated due to: 1) Constellation mine ramp creating binary outcomes, 2) Copper price sensitivity to China demand, 3) Small cap volatility with limited liquidity.",
+      "bottom_line": "Very high premium yield but significant project and commodity risk. Only for risk-tolerant traders with defined risk limits.",
+      "last_researched": "2026-02-19",
+      "research_history": [
+        {
+          "date": "2026-02-19",
+          "grade": "C-",
+          "score": 58
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C-",
+          "score": 58
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C-",
+          "score": 58
+        },
+        {
+          "date": "2026-02-19",
+          "grade": "C-",
+          "score": 58
+        }
+      ]
+    },
+    {
+      "ticker": "FANG",
+      "company": "Diamondback Energy Inc.",
+      "grade": "B+",
+      "total_score": 82,
+      "expected_move": 8.55,
+      "earnings_date": "2026-02-23",
+      "earnings_time": "AMC",
+      "sector": "Energy",
+      "key_insight": "Expected move is 67% ABOVE historical average (8.55% vs ~5.1% historical). EVR of 1.4 indicates LOW volatility. Energy sector elevated due to oil price uncertainty, but FANG has strong track record of respecting EM.",
+      "bottom_line": "High-quality energy name with excellent EM respect history. Low volatility setup suitable for conservative premium collection.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 82
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 82
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 82
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 82
+        }
+      ]
+    },
+    {
+      "ticker": "HIMS",
+      "company": "Hims & Hers Health Inc.",
+      "grade": "C-",
+      "total_score": 54,
+      "expected_move": 24.25,
+      "earnings_date": "2026-02-23",
+      "earnings_time": "AMC",
+      "sector": "Healthcare",
+      "key_insight": "HIGH VOLATILITY: EVR of 6.0 (HIGH). Expected move 24.25% reflects massive uncertainty. Recent moves: Nov 2025 +17.18%, Aug 2025 +3.53%. Extreme variance makes EM respect questionable.",
+      "bottom_line": "Massive premium but elevated risk. Stock has history of breaking outside EM on misses. High short interest creates squeeze risk. Trade with defined risk only.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "C-",
+          "score": 54
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "C-",
+          "score": 54
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "C-",
+          "score": 54
+        },
+        {
+          "date": "2026-02-26",
+          "grade": {
+            "earnings_predictability": 15,
+            "downside_em_respect": 12,
+            "fundamentals_at_lows": 8,
+            "assignment_desirability": 10,
+            "premium_yield": 20,
+            "binary_risk": -3,
+            "total_grade": 62
+          },
+          "score": 0
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "C-",
+          "score": 54
+        }
+      ]
+    },
+    {
+      "ticker": "KEYS",
+      "company": "Keysight Technologies Inc.",
+      "grade": "B",
+      "total_score": 78,
+      "expected_move": 10.18,
+      "earnings_date": "2026-02-23",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Expected move is 46% ABOVE historical average (10.18% vs ~6.97% historical). Semi recovery narrative driving elevated IV. Recent beat (+12.84%) shows momentum.",
+      "bottom_line": "Quality tech name with elevated but manageable volatility. Good premium for defined risk strategies.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "B",
+          "score": 78
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B",
+          "score": 78
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B",
+          "score": 78
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B",
+          "score": 78
+        }
+      ]
+    },
+    {
+      "ticker": "OKE",
+      "company": "ONEOK Inc.",
+      "grade": "A-",
+      "total_score": 86,
+      "expected_move": 7.53,
+      "earnings_date": "2026-02-23",
+      "earnings_time": "AMC",
+      "sector": "Energy",
+      "key_insight": "Expected move IN LINE with historical average (7.53% vs ~7.5%). EVR of 1.5 indicates LOW volatility. One of the most predictable midstream names. Excellent EM respect - 98% stay within 1.5x.",
+      "bottom_line": "Premium defensive name with excellent EM respect history. Lowest-risk energy play today. High-probability setup.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "A-",
+          "score": 86
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "A-",
+          "score": 86
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "A-",
+          "score": 86
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "A-",
+          "score": 86
+        }
+      ]
+    },
+    {
+      "ticker": "OVV",
+      "company": "Ovintiv Inc.",
+      "grade": "B-",
+      "total_score": 74,
+      "expected_move": 9.59,
+      "earnings_date": "2026-02-23",
+      "earnings_time": "AMC",
+      "sector": "Energy",
+      "key_insight": "Expected move is 111% ABOVE historical average (9.59% vs ~4.5% historical). EVR of 1.7 indicates LOW volatility. Recent miss (-1.74%) was within EM.",
+      "bottom_line": "Decent setup with manageable volatility. Lower EM respect than majors but acceptable for defined risk.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "B-",
+          "score": 74
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B-",
+          "score": 74
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B-",
+          "score": 74
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B-",
+          "score": 74
+        }
+      ]
+    },
+    {
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings Inc.",
+      "grade": "D+",
+      "total_score": 52,
+      "expected_move": 19.41,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "BMO",
+      "sector": "Technology",
+      "key_insight": "HIGH VOLATILITY: EVR of 6.3 (HIGH). Expected move 19.41%. Recent moves: Nov 2025 +22.82% (massive beat), Aug 2025 +7.79%. Extreme variance - breaks outside EM frequently.",
+      "bottom_line": "Very high premium but terrible EM respect. 45% of misses exceed 1x EM. Extreme volatility makes this risky. Avoid or tiny position only.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "D+",
+          "score": 52
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "D+",
+          "score": 52
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "D+",
+          "score": 52
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "D+",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "ticker": "FIS",
+      "company": "Fidelity National Information Services",
+      "grade": "B+",
+      "total_score": 81,
+      "expected_move": 10.48,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "BMO",
+      "sector": "Technology",
+      "key_insight": "Expected move is 46% ABOVE historical average (10.48% vs ~7.2% historical). EVR of 2.6 indicates moderate-low volatility. 118 earnings events provide strong statistical confidence.",
+      "bottom_line": "Quality large-cap fintech with solid EM respect. Elevated IV but manageable risk. Good for defined risk strategies.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 81
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 81
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 81
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "B+",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "ticker": "HD",
+      "company": "Home Depot Inc.",
+      "grade": "A",
+      "total_score": 91,
+      "expected_move": 6.93,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "BMO",
+      "sector": "Consumer Cyclical",
+      "key_insight": "Expected move IN LINE with historical average (6.93% vs ~6.8%). EVR of 1.4 indicates LOWEST volatility among today\u2019s names. 98% of misses stay within 1.5x EM - exceptional EM respect.",
+      "bottom_line": "BEST SETUP TODAY. Exceptional EM respect (98% within 1.5x), lowest EVR (1.4), blue-chip quality. Highest-probability premium collection.",
+      "last_researched": "2026-02-23",
+      "research_history": [
+        {
+          "date": "2026-02-23",
+          "grade": "A",
+          "score": 91
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "A",
+          "score": 91
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "A",
+          "score": 91
+        },
+        {
+          "date": "2026-02-23",
+          "grade": "A",
+          "score": 91
+        }
+      ]
+    },
+    {
+      "ticker": "WDAY",
+      "company": "WDAY",
+      "grade": "B+",
+      "total_score": 80,
+      "expected_move": 12,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "IV extremely elevated (140 vs 52wk 24-66). EM of 12% reflects high expectations. Solid earnings history.",
+      "bottom_line": "TOP PICK. Great premium with good earnings track record.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 80
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 80
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 80
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "ticker": "AXON",
+      "company": "AXON",
+      "grade": "B+",
+      "total_score": 78,
+      "expected_move": 5,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Industrials",
+      "key_insight": "Quality growth defense name. Strong TAM with law enforcement contracts. EM respect solid.",
+      "bottom_line": "Good candidate for CSP or PCS. Premium justifies risk.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 78
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 78
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 78
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B+",
+          "score": 78
+        }
+      ]
+    },
+    {
+      "ticker": "TJX",
+      "company": "TJX",
+      "grade": "B",
+      "total_score": 75,
+      "expected_move": 5,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Consumer Cyclical",
+      "key_insight": "Excellent earnings consistency (88% beat rate). EM 5% is tight.",
+      "bottom_line": "Solid pick for consistent premium collection.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 75
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 75
+        },
+        {
+          "date": "2026-02-25",
+          "grade": "A-",
+          "score": 82
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 75
+        },
+        {
+          "date": "2026-02-25",
+          "grade": "A-",
+          "score": 82
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "ticker": "BMO",
+      "company": "BMO",
+      "grade": "B",
+      "total_score": 72,
+      "expected_move": 4,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Financials",
+      "key_insight": "Low EM (4%). Conservative banking play with solid dividend.",
+      "bottom_line": "Safe play. Lower premium but high probability.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 72
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 72
+        },
+        {
+          "date": "2026-02-25",
+          "grade": "B",
+          "score": 68
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 72
+        },
+        {
+          "date": "2026-02-25",
+          "grade": "B",
+          "score": 68
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B",
+          "score": 72
+        }
+      ]
+    },
+    {
+      "ticker": "MELI",
+      "company": "MELI",
+      "grade": "B-",
+      "total_score": 65,
+      "expected_move": 9,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Consumer Cyclical",
+      "key_insight": "IV elevated (103 vs 52wk 29-67). LatAm e-commerce leader with fintech growth.",
+      "bottom_line": "Premium justifies CSP but watch macro headwinds.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "B-",
+          "score": 65
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B-",
+          "score": 65
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B-",
+          "score": 65
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "B-",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "ticker": "HPQ",
+      "company": "HPQ",
+      "grade": "C+",
+      "total_score": 58,
+      "expected_move": 11,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Elevated IV (124 vs 52wk 25-72). Known for missing EPS - sell OTM puts.",
+      "bottom_line": "Premium attractive but earnings consistency poor. CSP at wide strikes.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C+",
+          "score": 58
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C+",
+          "score": 58
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C+",
+          "score": 58
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C+",
+          "score": 58
+        }
+      ]
+    },
+    {
+      "ticker": "ZETA",
+      "company": "ZETA",
+      "grade": "C",
+      "total_score": 55,
+      "expected_move": 8,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Marketing tech with recent beat. EM of 8% reasonable.",
+      "bottom_line": "Decent candidate. Watch for guidance.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 55
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 55
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 55
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 55
+        }
+      ]
+    },
+    {
+      "ticker": "CAVA",
+      "company": "CAVA",
+      "grade": "C",
+      "total_score": 52,
+      "expected_move": 15,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Consumer Cyclical",
+      "key_insight": "Extremely elevated IV (170 vs 52wk 42-92). EM of 15% reflects high expectations.",
+      "bottom_line": "High premium but elevated assignment risk. Watch for guidance.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 52
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 52
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 52
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "ticker": "IONS",
+      "company": "IONS",
+      "grade": "C",
+      "total_score": 50,
+      "expected_move": 5,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "EM: 5%. Score: 50",
+      "bottom_line": "Consider based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 50
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 50
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 50
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 50
+        }
+      ]
+    },
+    {
+      "ticker": "VLN",
+      "company": "VLN",
+      "grade": "C",
+      "total_score": 48,
+      "expected_move": 8,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Basic Materials",
+      "key_insight": "EM: 8%. Score: 48",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 48
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 48
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 48
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "ticker": "BXSL",
+      "company": "BXSL",
+      "grade": "C-",
+      "total_score": 45,
+      "expected_move": 6,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Real Estate",
+      "key_insight": "EM: 6%. Score: 45",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "ticker": "TRIN",
+      "company": "TRIN",
+      "grade": "C-",
+      "total_score": 45,
+      "expected_move": 6,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Financials",
+      "key_insight": "EM: 6%. Score: 45",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "ticker": "PLAB",
+      "company": "PLAB",
+      "grade": "C-",
+      "total_score": 42,
+      "expected_move": 12,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "EM: 12%. Score: 42",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 42
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 42
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 42
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "C-",
+          "score": 42
+        }
+      ]
+    },
+    {
+      "ticker": "CRCL",
+      "company": "CRCL",
+      "grade": "D+",
+      "total_score": 40,
+      "expected_move": 18,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Healthcare",
+      "key_insight": "EM: 18%. Score: 40",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 40
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 40
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 40
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "ticker": "NVTS",
+      "company": "NVTS",
+      "grade": "D+",
+      "total_score": 38,
+      "expected_move": 18,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "High-growth but unprofitable. Wide EM reflects uncertainty.",
+      "bottom_line": "Skip. Binary tech with high failure risk.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 38
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 38
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 38
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D+",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "ticker": "AMC",
+      "company": "AMC",
+      "grade": "D",
+      "total_score": 35,
+      "expected_move": 22,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Communication Services",
+      "key_insight": "Meme stock with extreme volatility. High IV creates premium but massive assignment risk.",
+      "bottom_line": "Skip. Binary event with unpredictable direction.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        }
+      ]
+    },
+    {
+      "ticker": "HUT",
+      "company": "HUT",
+      "grade": "D",
+      "total_score": 35,
+      "expected_move": 20,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "EM: 20%. Score: 35",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 35
+        }
+      ]
+    },
+    {
+      "ticker": "TEM",
+      "company": "TEM",
+      "grade": "D",
+      "total_score": 32,
+      "expected_move": 25,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Healthcare",
+      "key_insight": "AI healthcare data play. Limited history, high uncertainty.",
+      "bottom_line": "Skip. Too binary for theta strategies.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 32
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 32
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 32
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "ticker": "RXRX",
+      "company": "RXRX",
+      "grade": "D",
+      "total_score": 30,
+      "expected_move": 20,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Healthcare",
+      "key_insight": "EM: 20%. Score: 30",
+      "bottom_line": "Skip based on score.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 30
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 30
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 30
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "ticker": "UIS",
+      "company": "UIS",
+      "grade": "D",
+      "total_score": 28,
+      "expected_move": 15,
+      "earnings_date": "2026-02-24",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Struggling IT services firm. Limited upside, binary risk.",
+      "bottom_line": "Skip. Transformation play with high failure risk.",
+      "last_researched": "2026-02-24",
+      "research_history": [
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 28
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 28
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 28
+        },
+        {
+          "date": "2026-02-24",
+          "grade": "D",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "ticker": "ARRY",
+      "company": "Array Technologies",
+      "grade": "C+",
+      "total_score": 58,
+      "expected_move": 2.5,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "At 3Y lows with very elevated IV. Binary event with sector headwinds.",
+      "bottom_line": "High risk/reward. IV extremely elevated but sector weak.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "C+",
+          "score": 58
+        }
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "company": "Salesforce",
+      "grade": "B+",
+      "total_score": 78,
+      "expected_move": 17,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Down 30% YTD, attractive valuation. Expected move ~9%. Solid earnings track record.",
+      "bottom_line": "GOOD PICK. Premium opportunity with good earnings history at attractive valuation.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "B+",
+          "score": 78
+        }
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "company": "IonQ",
+      "grade": "C",
+      "total_score": 45,
+      "expected_move": 6,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Speculative quantum computing stock. Very high IV but binary risk.",
+      "bottom_line": "High risk. Only for speculation with small position size.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "C",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "ticker": "NTNX",
+      "company": "Nutanix",
+      "grade": "C+",
+      "total_score": 52,
+      "expected_move": 7,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Hybrid cloud leader. Good premium but mixed fundamentals.",
+      "bottom_line": "Moderate opportunity. Premium attractive but earnings unpredictable.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "C+",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "grade": "A-",
+      "total_score": 85,
+      "expected_move": 22,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Near 3Y highs. Exceptional fundamentals. Expected move ~11%. AI dominance continues.",
+      "bottom_line": "TOP PICK. Premium with best-in-class earnings track record.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "A-",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "ticker": "PSTG",
+      "company": "Pure Storage",
+      "grade": "B",
+      "total_score": 72,
+      "expected_move": 10,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Strong storage vendor. Expected move ~15%. Solid earnings track record.",
+      "bottom_line": "GOOD PICK. Premium opportunity with consistent earnings.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "B",
+          "score": 72
+        }
+      ]
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake",
+      "grade": "B-",
+      "total_score": 68,
+      "expected_move": 21,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Expected move ~13% (elevated). Data cloud leader with stabilizing growth.",
+      "bottom_line": "GOOD PICK. Premium attractive with market leadership.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "B-",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "ticker": "SNPS",
+      "company": "Synopsys",
+      "grade": "B+",
+      "total_score": 76,
+      "expected_move": 18,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "EDA software leader. Expected move ~12%. Very predictable earnings.",
+      "bottom_line": "QUALITY PICK. Premium with excellent earnings track record.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "B+",
+          "score": 76
+        }
+      ]
+    },
+    {
+      "ticker": "TTD",
+      "company": "The Trade Desk",
+      "grade": "B",
+      "total_score": 70,
+      "expected_move": 10,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Technology",
+      "key_insight": "Ad tech leader. Expected move ~12%. Solid earnings track record.",
+      "bottom_line": "GOOD PICK. Premium with market leadership.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "B",
+          "score": 70
+        }
+      ]
+    },
+    {
+      "ticker": "VICI",
+      "company": "VICI Properties",
+      "grade": "B",
+      "total_score": 70,
+      "expected_move": 1.5,
+      "earnings_date": "2026-02-25",
+      "earnings_time": "AMC",
+      "sector": "Real Estate",
+      "key_insight": "REIT near 3Y lows. Expected move ~5%. Very predictable.",
+      "bottom_line": "LOW VOLATILITY. Modest premium but excellent safety.",
+      "last_researched": "2026-02-25",
+      "research_history": [
+        {
+          "date": "2026-02-25",
+          "grade": "B",
+          "score": 70
+        }
+      ]
+    },
+    {
+      "ticker": "CODI",
+      "company": "CODI",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 18,
+        "binary_risk": -3,
+        "total_grade": 60
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "CRWV",
+      "company": "CRWV",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "DELL",
+      "company": "DELL",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "DUOL",
+      "company": "DUOL",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "INOD",
+      "company": "INOD",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "MARA",
+      "company": "MARA",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "RKLB",
+      "company": "RKLB",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "SOUN",
+      "company": "SOUN",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "ZS",
+      "company": "ZS",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-26",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "ABR",
+      "company": "ABR",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 14,
+        "binary_risk": -3,
+        "total_grade": 56
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "AMRX",
+      "company": "AMRX",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "DIBS",
+      "company": "DIBS",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "EXK",
+      "company": "EXK",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "GSAT",
+      "company": "GSAT",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "NWN",
+      "company": "NWN",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 12,
+        "binary_risk": -3,
+        "total_grade": 54
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "SHO",
+      "company": "SHO",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 16,
+        "binary_risk": -3,
+        "total_grade": 58
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "TCPC",
+      "company": "TCPC",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "UUUU",
+      "company": "UUUU",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "VIA",
+      "company": "VIA",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 20,
+        "binary_risk": -3,
+        "total_grade": 62
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "CAKE",
+      "company": "CAKE",
+      "grade": {
+        "earnings_predictability": 15,
+        "downside_em_respect": 12,
+        "fundamentals_at_lows": 8,
+        "assignment_desirability": 10,
+        "premium_yield": 16,
+        "binary_risk": -3,
+        "total_grade": 58
+      },
+      "total_score": 0,
+      "expected_move": 0,
+      "earnings_date": "2026-02-27",
+      "earnings_time": "",
+      "sector": "",
+      "key_insight": "",
+      "bottom_line": "",
+      "last_researched": "2026-02-26",
+      "research_history": []
+    }
+  ]
+}

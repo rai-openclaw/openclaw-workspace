@@ -1,0 +1,58 @@
+Subject: Daily Stocks Recommendation Report - 2026-02-26
+From: Kimi (EA) <openclaw@example.com>
+To: guanwu87@gmail.com
+
+DAILY EARNINGS SCREENER - 2026-02-26
+Generated: 08:04 AM 
+Report Compiled By: Kimi
+Research By: Bob (Senior Earnings Analyst)
+================================================================================
+
+CATEGORY 1: Today AMC
+Action: Trade TODAY before 4 PM
+--------------------------------------------------------------------------------
+| Ticker | Price  | Exp Move | IV   | Grade | Score |
+|--------|--------|----------|------|-------|-------|
+| CRWV   | $ 99.26 |    0.0%  | 0.50 | B      |    62 |
+| DELL   | $122.75 |    0.0%  | 0.73 | B      |    62 |
+| DUOL   | $112.24 |    0.0%  | 0.70 | B      |    62 |
+| INOD   | $ 46.43 |    0.0%  | 0.50 | B      |    62 |
+| MARA   | $  8.61 |    0.0%  | 1.20 | B      |    62 |
+| RKLB   | $ 70.71 |    0.0%  | 0.85 | B      |    62 |
+| SOUN   | $  8.64 |    0.0%  | 1.10 | B      |    62 |
+| ZS     | $159.04 |    0.0%  | 0.65 | B      |    62 |
+| CODI   | $  8.29 |    0.0%  | 0.45 | B      |    60 |
+
+CATEGORY 2: Tomorrow BMO
+Action: Trade TODAY before 4 PM
+--------------------------------------------------------------------------------
+| Ticker | Price  | Exp Move | IV   | Grade | Score |
+|--------|--------|----------|------|-------|-------|
+| AMRX   | $ 14.57 |    2.6%  | 0.50 | B      |    62 |
+| DIBS   | $  5.53 |    2.6%  | 0.50 | B      |    62 |
+| EXK    | $ 13.10 |    2.6%  | 0.50 | B      |    62 |
+| GSAT   | $ 64.01 |    2.6%  | 0.50 | B      |    62 |
+| TCPC   | $  4.56 |    2.6%  | 0.50 | B      |    62 |
+| UUUU   | $ 22.20 |    2.6%  | 0.50 | B      |    62 |
+| VIA    | $ 18.01 |    2.6%  | 0.50 | B      |    62 |
+| SHO    | $  9.52 |    2.1%  | 0.40 | C      |    58 |
+| ABR    | $  7.23 |    1.8%  | 0.35 | C      |    56 |
+| NWN    | $ 50.27 |    1.6%  | 0.30 | C      |    54 |
+
+CATEGORY 3: Always Include (Earnings)
+--------------------------------------------------------------------------------
+| Ticker | Price  | Exp Move | IV   | Grade | Score |
+|--------|--------|----------|------|-------|-------|
+| HIMS   | $ 16.00 |    4.7%  | 0.90 | B      |    62 |
+| CAKE   | $ 66.35 |    2.1%  | 0.40 | C      |    58 |
+
+TOP RECOMMENDATIONS FOR PUT SELLING
+================================================================================
+1. CRWV (Score: 62) - Price: $99.26, IV: 0.50
+2. DELL (Score: 62) - Price: $122.75, IV: 0.73
+3. DUOL (Score: 62) - Price: $112.24, IV: 0.70
+4. INOD (Score: 62) - Price: $46.43, IV: 0.50
+5. MARA (Score: 62) - Price: $8.61, IV: 1.20
+
+Note: Due to Yahoo Finance API rate limiting, some data may be estimated.
+Total stocks analyzed: 21
