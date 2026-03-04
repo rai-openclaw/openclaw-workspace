@@ -3,6 +3,7 @@
     "minimax": {
       "baseUrl": "https://api.minimax.io/anthropic",
       "api": "anthropic-messages",
+      "authHeader": true,
       "models": [
         {
           "id": "MiniMax-M2.1",
@@ -91,6 +92,7 @@
     "minimax-portal": {
       "baseUrl": "https://api.minimax.io/anthropic",
       "api": "anthropic-messages",
+      "authHeader": true,
       "models": [
         {
           "id": "MiniMax-M2.5",
@@ -137,7 +139,8 @@
           "name": "Kimi K2.5",
           "reasoning": false,
           "input": [
-            "text"
+            "text",
+            "image"
           ],
           "cost": {
             "input": 0,

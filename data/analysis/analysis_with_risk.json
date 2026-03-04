@@ -1,25 +1,25 @@
 [
   {
-    "ticker": "AVBP",
+    "ticker": "MLYS",
     "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 23.06,
-      "atm_strike": 20.0,
+      "price": 27.84,
+      "atm_strike": 30.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 8.95,
-      "em_percent": 38.81179531656548
+      "straddle": 8.45,
+      "em_percent": 30.352011494252874
     },
     "probabilities": {
-      "down_1x": 1.0,
-      "down_1_5x": 1.0,
-      "down_2x": 1.0,
-      "median_move": 0.0436,
-      "max_move": 0.1027
+      "down_1x": 0.98,
+      "down_1_5x": 0.99,
+      "down_2x": 0.99,
+      "median_move": 0.0508,
+      "max_move": 0.8643
     },
     "grading": {
       "grade": null,
@@ -33,19 +33,11 @@
       ]
     },
     "research": {
-      "short_note": "AVBP - ArriVent BioPharma, clinical-stage biotech focused on EGFR lung cancer drug",
-      "summary": "ArriVent BioPharma is a clinical-stage biotech developing firmonertinib, a tyrosine kinase inhibitor for EGFR-mutant NSCLC. Key drivers include Phase 3 trial results and FDA approval decisions. The extreme EM reflects binary clinical trial outcomes typical of pre-revenue biotechs. Strong Buy rating with $39 target (70% upside).",
-      "catalysts": [
-        "Phase 3 trial data readouts for firmonertinib",
-        "FDA approval decision for EGFR lung cancer treatment",
-        "Partnership or acquisition interest from larger pharma"
-      ],
-      "risks": [
-        "Clinical trial failure could cause massive decline",
-        "FDA regulatory decisions",
-        "Competition from existing EGFR inhibitors"
-      ],
-      "tone": "risky"
+      "short_note": "Research unavailable",
+      "summary": "Could not generate research.",
+      "catalysts": [],
+      "risks": [],
+      "tone": "neutral"
     },
     "risk_flags": {
       "recent_drift": false,
@@ -55,26 +47,26 @@
     }
   },
   {
-    "ticker": "OUST",
+    "ticker": "WLY",
     "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
+      "date": "2026-03-05",
+      "time": "BMO"
     },
     "market": {
-      "price": 19.81,
-      "atm_strike": 20.0,
-      "expiration": "2026-03-06"
+      "price": 30.53,
+      "atm_strike": 25.0,
+      "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 3.9800000000000004,
-      "em_percent": 20.09086320040384
+      "straddle": 5.93,
+      "em_percent": 19.42351785129381
     },
     "probabilities": {
-      "down_1x": 0.98,
-      "down_1_5x": 0.99,
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
       "down_2x": 1.0,
-      "median_move": 0.0599,
-      "max_move": 0.3186
+      "median_move": 0.0399,
+      "max_move": 0.1527
     },
     "grading": {
       "grade": null,
@@ -88,17 +80,18 @@
       ]
     },
     "research": {
-      "short_note": "OUST - Ouster, LiDAR sensors for autonomous vehicles, robotics, and smart infrastructure",
-      "summary": "Ouster is a leading LiDAR sensor company powering autonomy and robotics. Key drivers include revenue growth (Q3 +41%), customer adoption in smart infrastructure/robotics, and the recent Stereolabs acquisition. Targeting 30-50% annual revenue growth with path to profitability by 2027. The elevated EM reflects growth stock volatility.",
+      "short_note": "WLY Q4 tomorrow: Modest revenue decline but profit up 11% - legacy publishing under pressure.",
+      "summary": "John Wiley & Sons provides research and learning materials including academic journals, books, and education services. Q4 showed mixed results with revenue declining 1.1% to $422M but net income rising 11% to $45M and EBITDA up 10% to $115M. The stock is down 17% over the past year as the traditional publishing business faces structural headwinds. Tomorrow's Q4 report will focus on the transition to digital subscriptions, education services performance, and how the company is navigating the shift to online learning.",
       "catalysts": [
-        "Revenue growth accelerating (Q3 +41%)",
-        "Physical AI/LiDAR adoption in robotics and smart infrastructure",
-        "L4 silicon chip and DF sensor launches"
+        "Net income up 11% showing margin improvement",
+        "Debt reduction - long-term debt down 10% YoY",
+        "Operating FCF turned positive at $8.5M"
       ],
       "risks": [
-        "Autonomous vehicle timeline delays",
-        "Competition from other LiDAR players",
-        "Path to profitability uncertainty"
+        "Revenue down 1.1% showing ongoing structural challenges",
+        "Employees down 19% indicating restructuring",
+        "Highly levered with $965M debt",
+        "Traditional publishing facing digital disruption"
       ],
       "tone": "neutral"
     },
@@ -110,26 +103,26 @@
     }
   },
   {
-    "ticker": "CORZ",
+    "ticker": "VSCO",
     "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
+      "date": "2026-03-05",
+      "time": "BMO"
     },
     "market": {
-      "price": 17.31,
-      "atm_strike": 17.5,
-      "expiration": "2026-03-06"
+      "price": 61.6,
+      "atm_strike": 60.0,
+      "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 3.31,
-      "em_percent": 19.121894858463317
+      "straddle": 10.45,
+      "em_percent": 16.96428571428571
     },
     "probabilities": {
-      "down_1x": 0.99,
-      "down_1_5x": 0.99,
+      "down_1x": 0.97,
+      "down_1_5x": 1.0,
       "down_2x": 1.0,
-      "median_move": 0.0508,
-      "max_move": 0.3301
+      "median_move": 0.0464,
+      "max_move": 0.2263
     },
     "grading": {
       "grade": null,
@@ -143,17 +136,74 @@
       ]
     },
     "research": {
-      "short_note": "CORZ - Core Scientific, Bitcoin mining and high-performance computing hosting",
-      "summary": "Core Scientific is a Bitcoin mining and HPC hosting company. Key drivers include Bitcoin price, hash rate difficulty, and hosting contract revenues. The elevated EM reflects crypto market volatility. Strong Buy rating with $24 target (38% upside). The company was previously in bankruptcy but has restructured.",
+      "short_note": "VSCO Q4 tomorrow: Turnaround story with EBITDA positive but FCF still negative - high volatility expected.",
+      "summary": "Victoria's Secret & Co. operates as a lingerie, clothing and beauty retailer offering bras, panties, pajamas and beauty products. Q4 showed meaningful progress with revenue up 9.3% to $1.47B and EBITDA turning positive at $62M (up 210%), though the stock has pulled back from recent highs and remains volatile. Tomorrow's Q4 report will focus on whether the brand transformation is gaining traction and when the company will achieve sustainable FCF positivity amid a challenging consumer environment.",
       "catalysts": [
-        "Bitcoin price appreciation driving mining profitability",
-        "HPC hosting contracts expanding",
-        "Operational efficiency improvements post-restructuring"
+        "Q4 revenue up 9.3% showing brand momentum",
+        "EBITDA turned positive at $62M (up 210% YoY)",
+        "Gross margin expanded 180bps to 36.07%"
       ],
       "risks": [
-        "Bitcoin price decline hurts mining margins",
-        "Hash rate competition increasing difficulty",
-        "Regulatory uncertainty in crypto mining"
+        "Still negative FCF at -$232M and net income of -$31M",
+        "High debt load of $3.19B constrains flexibility",
+        "Consumer discretionary pressures in current environment",
+        "Stock volatile - down from recent highs"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "LQDA",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 32.46,
+      "atm_strike": 34.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 5.48,
+      "em_percent": 16.882316697473815
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0439,
+      "max_move": 0.1687
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "LQDA Q4 tomorrow: Explosive revenue growth but path to profitability unclear amid high debt.",
+      "summary": "Liquidia Corp is a biotech developing biopharmaceutical products using its PRINT particle engineering platform. Q3 showed explosive revenue growth of 1121% to $54M with exceptional 93.65% gross margins, though the company remains unprofitable at -$3.5M net income. Tomorrow's Q4 report will focus on revenue trajectory, FDA pipeline developments, and when the company can achieve sustainable profitability given rising debt levels of $199M (up 7300% YoY).",
+      "catalysts": [
+        "Q3 revenue up 1121% YoY showing massive commercial momentum",
+        "Exceptional gross margin at 93.65%",
+        "Patent victory vs United Therapeutics strengthened competitive position"
+      ],
+      "risks": [
+        "Still unprofitable - net income negative despite revenue surge",
+        "High debt load of $199M (up 7300% YoY)",
+        "High short interest (~17%) may amplify volatility",
+        "Stock up 114% over past year - pulled forward gains"
       ],
       "tone": "risky"
     },
@@ -165,25 +215,192 @@
     }
   },
   {
-    "ticker": "MDB",
+    "ticker": "TTC",
     "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
+      "date": "2026-03-05",
+      "time": "BMO"
     },
     "market": {
-      "price": 325.46,
-      "atm_strike": 325.0,
+      "price": 98.37,
+      "atm_strike": 85.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 15.75,
+      "em_percent": 16.010978956999082
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0423,
+      "max_move": 0.1071
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "TTC Q4 tomorrow: Strong FCF but revenue flat and profit down 19% - mixed signals.",
+      "summary": "The Toro Company designs, manufactures and sells professional turf maintenance equipment and residential lawn products including mowers and irrigation systems. Q4 showed mixed results with revenue slightly down 1% to $1.07B and net income declining 19% to $73M, though FCF surged 42% to $286M with a strong 5.8% yield. Tomorrow's Q4 report will focus on demand trends in professional landscaping and residential segments, and how the company is navigating the outdoor power equipment market.",
+      "catalysts": [
+        "Strong FCF of $286M up 42% with 5.8% yield",
+        "Net cash up 71% to $341M providing financial flexibility",
+        "Professional segment provides diversification beyond residential"
+      ],
+      "risks": [
+        "Revenue slightly down 1% showing demand weakness",
+        "Net income down 19% showing margin pressure",
+        "Employees down 17% indicating potential restructuring",
+        "Cyclical demand tied to housing/construction markets"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "CIEN",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 343.9,
+      "atm_strike": 330.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 53.260000000000005,
-      "em_percent": 16.364530203404414
+      "straddle": 49.400000000000006,
+      "em_percent": 14.364640883977902
+    },
+    "probabilities": {
+      "down_1x": 0.97,
+      "down_1_5x": 0.99,
+      "down_2x": 1.0,
+      "median_move": 0.0519,
+      "max_move": 0.2331
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CIEN Q1 tomorrow: Strong FCF but flat revenue - 346% stock rally leaves valuation stretched.",
+      "summary": "Ciena provides network and communication infrastructure, including optical networking and software solutions for telecom carriers. Q4 showed flat revenue at $1.35B with modest net income of $19M, though the stock has surged 346% over the past year on AI/networking demand. Tomorrow's Q1 report will focus on cloud and AI-driven networking demand, order book strength, and whether the company can accelerate revenue growth beyond flat performance.",
+      "catalysts": [
+        "Strong FCF of $326M with 2.4% FCF yield",
+        "Leadership in optical networking for AI data center builds",
+        "Blue Planet automation software expanding"
+      ],
+      "risks": [
+        "Revenue growth flat - no YoY improvement",
+        "Stretched valuation at 224x P/E",
+        "Competition from Huawei, Cisco in optical networking"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "CBRL",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 31.15,
+      "atm_strike": 30.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 4.43,
+      "em_percent": 14.221508828250402
+    },
+    "probabilities": {
+      "down_1x": 1.0,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.0485,
+      "max_move": 0.127
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CBRL Q4 today: Severe pressure with revenue down 6%, margins collapsed - turnaround uncertain.",
+      "summary": "Cracker Barrel Old Country Store operates restaurant and retail outlets offering home-style country food in a rustic old country-store design. Q4 showed severe distress with revenue declining 5.7% to $797M, gross margin collapsing from 8% to 2.34%, and net income plunging 608% to a loss of $24.6M. Today's report will focus on turnaround efforts, traffic trends, and how management plans to restore profitability amid challenging consumer spending environment.",
+      "catalysts": [
+        "Debt reduction - long-term debt down 13.5% YoY",
+        "570+ restaurant locations provide scale if operations improve",
+        "Recent management changes signaling turnaround focus"
+      ],
+      "risks": [
+        "Revenue declined 5.7% showing significant traffic weakness",
+        "Gross margin collapsed 560bps to 2.34%",
+        "Highly levered with $1.18B debt against struggling business",
+        "FCF deeply negative at -$89M"
+      ],
+      "tone": "risky"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "AEO",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 22.41,
+      "atm_strike": 22.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 2.96,
+      "em_percent": 13.208389112003568
     },
     "probabilities": {
       "down_1x": 0.94,
-      "down_1_5x": 0.97,
+      "down_1_5x": 0.98,
       "down_2x": 0.99,
-      "median_move": 0.0403,
+      "median_move": 0.0488,
       "max_move": 0.3796
     },
     "grading": {
@@ -198,72 +415,17 @@
       ]
     },
     "research": {
-      "short_note": "MDB - MongoDB, NoSQL database platform for cloud and enterprise applications",
-      "summary": "MongoDB is a leading NoSQL database platform used by enterprises for cloud and application development. Key drivers include Atlas cloud database growth, enterprise customer acquisition, and AI application demand for data infrastructure. Competition with AWS DynamoDB, Google Firebase, and other NoSQL providers is intensifying.",
+      "short_note": "AEO Q4 today: Solid 5.7% revenue growth but rising inventory and debt load concerning.",
+      "summary": "American Eagle Outfitters is a multi-brand specialty retailer offering apparel under American Eagle, Aerie, Tailgate and Todd Snyder brands. Q4 showed modest improvement with revenue up 5.7% to $1.36B and net income rising 14.2%, though the stock has rallied 88% over the past year. Today's report will focus on Aerie brand momentum, inventory management, and how the company handles the elevated debt load of $1.97B (up 42% YoY).",
       "catalysts": [
-        "Atlas cloud database growth accelerating",
-        "AI application demand for data infrastructure",
-        "Enterprise customer acquisition and expansion"
+        "Aerie brand continues strong performance in intimates segment",
+        "Net income up 14.2% showing margin improvement",
+        "Operating cash flow positive at $67M"
       ],
       "risks": [
-        "Enterprise spending cuts slowing growth",
-        "Competition from cloud-native databases",
-        "Geographic expansion execution risk"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "SRAD",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 18.65,
-      "atm_strike": 17.5,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 2.7199999999999998,
-      "em_percent": 14.584450402144771
-    },
-    "probabilities": {
-      "down_1x": 1.0,
-      "down_1_5x": 1.0,
-      "down_2x": 1.0,
-      "median_move": 0.0409,
-      "max_move": 0.1355
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "SRAD - Sportradar, sports data and technology provider for betting and media",
-      "summary": "Sportradar is a global sports data and technology leader for betting, media, and fan engagement. Key drivers include sports betting legalization expansion, customer acquisition, and AI-driven product innovations. Q1 revenue +17%, EBITDA +25%. Rated Strong Buy with $32 target. The elevated EM reflects growth stock volatility in sports tech.",
-      "catalysts": [
-        "US sports betting legalization expansion",
-        "AI product innovations driving customer adoption",
-        "Geographic expansion into new markets"
-      ],
-      "risks": [
-        "Regulatory changes in sports betting",
-        "Competition from other sports data providers",
-        "Customer concentration in betting operators"
+        "Inventory up 10.8% could indicate slower sales ahead",
+        "Debt load surged 42% to $1.97B creating financial risk",
+        "Gross margin slight decline (-20bps) shows pricing pressure"
       ],
       "tone": "neutral"
     },
@@ -275,26 +437,26 @@
     }
   },
   {
-    "ticker": "ASTS",
+    "ticker": "VEEV",
     "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 83.49,
-      "atm_strike": 83.0,
-      "expiration": "2026-03-06"
+      "price": 185.96,
+      "atm_strike": 185.0,
+      "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 11.780000000000001,
-      "em_percent": 14.109474188525576
+      "straddle": 22.0,
+      "em_percent": 11.830501183050119
     },
     "probabilities": {
-      "down_1x": 0.93,
-      "down_1_5x": 1.0,
+      "down_1x": 0.96,
+      "down_1_5x": 0.96,
       "down_2x": 1.0,
-      "median_move": 0.07,
-      "max_move": 0.1892
+      "median_move": 0.0369,
+      "max_move": 0.19
     },
     "grading": {
       "grade": null,
@@ -308,76 +470,79 @@
       ]
     },
     "research": {
-      "short_note": "ASTS - AST SpaceMobile, space-based cellular broadband network connecting directly to smartphones",
-      "summary": "AST SpaceMobile is building the first space-based cellular broadband network enabling direct-to-phone connectivity via LEO satellites. Key drivers include satellite deployment progress, commercial service launches, and carrier partnerships. This is a pre-revenue, high-capital-execution play with massive upside potential but significant risk. Recently raised $983M in capital for general corporate purposes.",
+      "short_note": "VEEV Q4 today: Strong 16% revenue and 27% profit growth - down 15% provides entry opportunity.",
+      "summary": "Veeva Systems provides industry-specific cloud-based software solutions for the life sciences sector. Q4 showed strong momentum with revenue up 16% to $811M, net income surging 27% to $236M, and EBITDA growing 33% to $254M. The stock has pulled back 15% over the past year despite the solid fundamentals. Today's report will focus on customer additions, Vault platform growth, and the company's ability to maintain growth rates in the competitive life sciences software space.",
       "catalysts": [
-        "Commercial service launch in key coverage areas",
-        "Major carrier partnership announcements",
-        "Satellite constellation deployment milestones"
+        "Q4 revenue up 16% showing continued strong demand for life sciences software",
+        "Net income up 27% with EBITDA up 33% demonstrating operational leverage",
+        "Strong FCF of $183M with 2.7% yield",
+        "Stock pullback creates entry opportunity"
       ],
       "risks": [
-        "Capital-intensive execution requirements",
-        "Technical/satellite deployment failures",
-        "Competition from SpaceX/Starlink"
+        "Rich valuation at 57x P/E",
+        "Competition from Oracle, Medidata in life sciences software",
+        "Stock down 15% reflects market caution"
+      ],
+      "tone": "bullish"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "ICLR",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 110.14,
+      "atm_strike": 105.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 13.0,
+      "em_percent": 11.80315961503541
+    },
+    "probabilities": {
+      "down_1x": 0.94,
+      "down_1_5x": 0.98,
+      "down_2x": 0.98,
+      "median_move": 0.0471,
+      "max_move": 0.3985
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "ICLR Q4 today: CRO sector pressure with flat revenue and 99% profit collapse - FCF strong though.",
+      "summary": "ICON plc is a clinical research organization (CRO) providing outsourced development services to pharmaceutical, biotechnology, and medical device companies. Q3 showed significant pressure with revenue barely growing 0.6% to $2.04B and net income collapsing 99% to just $2.36M as the CRO sector faces headwinds. Despite the profit collapse, FCF remains strong at $352M (7.1% yield). Today's Q4 report will focus on order book trends, pipeline visibility, and whether the challenging biotech funding environment is improving.",
+      "catalysts": [
+        "Strong FCF of $352M with 7.1% yield provides cash generation",
+        "Debt reduction - long-term debt down 15% YoY",
+        "Leading CRO with scale in clinical trials provides diversification"
+      ],
+      "risks": [
+        "Revenue growth nearly flat at 0.6% showing sector weakness",
+        "Net income collapsed 99% YoY - massive profitability decline",
+        "CRO sector pressured by biotech funding slowdown",
+        "High debt load of $3.53B",
+        "Stock down 41% over past year"
       ],
       "tone": "risky"
     },
     "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "CRDO",
-    "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 113.27,
-      "atm_strike": 115.0,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 15.65,
-      "em_percent": 13.816544539595657
-    },
-    "probabilities": {
-      "down_1x": 0.98,
-      "down_1_5x": 0.99,
-      "down_2x": 1.0,
-      "median_move": 0.0576,
-      "max_move": 0.2258
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "CRDO - Credo Technology, active electrical cables and semiconductors for AI data centers",
-      "summary": "Credo Technology provides active electrical cables (AECs) and connectivity solutions for AI/data center infrastructure. Key drivers include AI infrastructure demand, hyperscaler customer adoption, and AEC product ramp. Q2 revenue +272% YoY, raised Q3 guidance to $404-408M. Key risk is revenue concentration with Customer A. The elevated EM reflects growth stock volatility around AI momentum.",
-      "catalysts": [
-        "AI data center demand continuing to accelerate",
-        "Hyperscaler customer wins and ramp",
-        "AEC product expansion beyond Customer A"
-      ],
-      "risks": [
-        "Revenue concentration with single customer",
-        "Competition in active cable market",
-        "Late-cycle demand slowdown"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
       "recent_drift": true,
       "sector_stress": false,
       "market_regime": false,
@@ -385,136 +550,26 @@
     }
   },
   {
-    "ticker": "STNE",
+    "ticker": "RGTI",
     "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 16.69,
+      "price": 17.15,
       "atm_strike": 17.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 2.2,
-      "em_percent": 13.181545835829839
-    },
-    "probabilities": {
-      "down_1x": 0.99,
-      "down_1_5x": 1.0,
-      "down_2x": 1.0,
-      "median_move": 0.0443,
-      "max_move": 0.1553
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "STNE - StoneCo, fintech payment solutions for merchants in Brazil",
-      "summary": "StoneCo is a Brazilian fintech providing payment processing and financial solutions to merchants across in-store, online, and mobile channels. Key drivers include merchant acquisition in Brazil, take rate expansion, and digital banking adoption. The elevated EM reflects emerging market fintech volatility and sensitivity to Brazilian macroeconomic conditions.",
-      "catalysts": [
-        "Merchant acquisition accelerating in Brazil",
-        "Digital banking and credit product adoption",
-        "Take rate expansion opportunities"
-      ],
-      "risks": [
-        "Brazilian macroeconomic uncertainty",
-        "Competition from other fintechs and banks",
-        "Currency volatility (BRL)"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "SE",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 104.41,
-      "atm_strike": 106.0,
       "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 13.66,
-      "em_percent": 13.083038023177856
-    },
-    "probabilities": {
-      "down_1x": 0.98,
-      "down_1_5x": 1.0,
-      "down_2x": 1.0,
-      "median_move": 0.0416,
-      "max_move": 0.1907
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "SE - Sea Limited, tech conglomerate with Shopee e-commerce and Garena gaming in Southeast Asia",
-      "summary": "Sea Limited is a Singapore-based tech company operating Shopee e-commerce, Garena gaming, and SeaMoney digital finance across Southeast Asia. Key drivers include Shopee GMV growth, Garena game releases, and digital financial services adoption. Q3 showed strong ~35% revenue growth. Recently partnered with Google on AI tools. The elevated EM reflects emerging market and growth stock volatility.",
-      "catalysts": [
-        "Shopee e-commerce market share growth in Southeast Asia",
-        "Garena game releases driving user engagement",
-        "SeaMoney digital financial services adoption"
-      ],
-      "risks": [
-        "Southeast Asian macroeconomic uncertainty",
-        "Competition in e-commerce from TikTok Shop",
-        "Currency volatility across markets"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "SGRY",
-    "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 15.55,
-      "atm_strike": 15.0,
-      "expiration": "2026-03-20"
     },
     "options": {
       "straddle": 2.0,
-      "em_percent": 12.861736334405144
+      "em_percent": 11.661807580174928
     },
     "probabilities": {
-      "down_1x": 0.98,
-      "down_1_5x": 0.98,
-      "down_2x": 1.0,
-      "median_move": 0.0383,
-      "max_move": 0.2542
+      "down_1x": 0.86,
+      "down_1_5x": 0.95,
+      "down_2x": 0.97,
+      "median_move": 0.0658,
+      "max_move": 0.3019
     },
     "grading": {
       "grade": null,
@@ -528,186 +583,22 @@
       ]
     },
     "research": {
-      "short_note": "SGRY - Surgery Partners, operator of surgical centers and hospitals in the US",
-      "summary": "Surgery Partners operates a network of surgical facilities and ancillary services across the US. Key drivers include procedure volume growth, payer mix, and same-store sales. Revenue $3.1B in 2024 (+13.5%) but losses widened significantly. The elevated EM reflects healthcare sector volatility around procedure volumes and reimbursement rates. Analyst consensus is Buy with $27 target (73% upside).",
+      "short_note": "RGTI Q4 today: Quantum computing speculative play with massive losses - high risk/reward.",
+      "summary": "Rigetti Computing provides full-stack quantum computing services through its Rigetti Quantum Cloud Services platform for enterprise and research clients. Q3 showed concerning trends with revenue declining 18% to just $1.95M and gross margin turning deeply negative at -86%, while net losses ballooned to $201M. The stock has surged 120% over the past year on quantum computing hype despite the company's pre-revenue stage. Today's Q4 report will focus on quantum processor development, customer adoption, and the path to commercial viability.",
       "catalysts": [
-        "Procedure volume growth in key specialties",
-        "Payer mix improvement",
-        "Same-store revenue growth"
+        "120% stock rally shows market excitement around quantum computing potential",
+        "No debt - clean balance sheet with $26M net cash",
+        "9.66B market cap provides capital for R&D investment"
       ],
       "risks": [
-        "Reimbursement rate pressure from payers",
-        "Labor cost inflation",
-        "Healthcare regulatory changes"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "ONON",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 45.6,
-      "atm_strike": 46.0,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 5.34,
-      "em_percent": 11.710526315789473
-    },
-    "probabilities": {
-      "down_1x": 0.94,
-      "down_1_5x": 0.98,
-      "down_2x": 1.0,
-      "median_move": 0.0402,
-      "max_move": 0.1799
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "ONON - On Holding, Swiss athletic footwear and apparel brand",
-      "summary": "On Holding is a Swiss athletic footwear and apparel brand known for its innovative cloud-like sole technology. Key drivers include brand momentum and market share gains against Nike, gross margin expansion (62%+), and international expansion. Q3 raised guidance with strong growth across regions. The elevated EM reflects growth stock volatility in consumer discretionary.",
-      "catalysts": [
-        "Market share gains against Nike and Adidas",
-        "Gross margin expansion and operating leverage",
-        "International expansion and new product launches"
-      ],
-      "risks": [
-        "Consumer spending slowdown",
-        "Competition from established athletic brands",
-        "Currency headwinds (CHF strength)"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "VSNT",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 32.7,
-      "atm_strike": 35.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 3.75,
-      "em_percent": 11.46788990825688
-    },
-    "probabilities": {
-      "down_1x": 0.93,
-      "down_1_5x": 1.0,
-      "down_2x": 1.0,
-      "median_move": 0.0411,
-      "max_move": 0.1303
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "VSNT - Versant Media, media company owning CNBC, Fandango, Rotten Tomatoes (spun off from Comcast)",
-      "summary": "Versant Media Group was spun off from Comcast in January 2026 and owns CNBC, Fandango, Rotten Tomatoes, and Free TV Networks. Key drivers include advertising revenue, digital platform growth, and cable network subscriber trends. This is a newly public company post-spinoff, creating elevated volatility. The elevated EM reflects spinoff uncertainty and media sector challenges.",
-      "catalysts": [
-        "Digital platform growth (Fandango, Rotten Tomatoes)",
-        "Advertising revenue trends",
-        "Free TV Networks integration synergies"
-      ],
-      "risks": [
-        "Cable cord-cutting trends",
-        "Post-spinoff execution uncertainty",
-        "Advertising market weakness"
+        "Revenue declining 18% showing weak commercial traction",
+        "Gross margin deeply negative at -86%",
+        "Net loss of $201M - massive cash burn",
+        "Highly speculative with no path to profitability visible"
       ],
       "tone": "risky"
     },
     "risk_flags": {
-      "recent_drift": true,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "VIK",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 72.69,
-      "atm_strike": 75.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 7.73,
-      "em_percent": 10.634200027514101
-    },
-    "probabilities": {
-      "down_1x": 0.98,
-      "down_1_5x": 0.98,
-      "down_2x": 1.0,
-      "median_move": 0.0411,
-      "max_move": 0.174
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "VIK - Viking Holdings, river and ocean cruise line operating 96 ships globally",
-      "summary": "Viking Holdings is a cruise line operating river and ocean vessels across North America, UK, and internationally. Key drivers include booking volumes, pricing, and consumer discretionary spending on travel. IPO'd in May 2024. The elevated EM reflects cruise industry sensitivity to economic conditions and travel trends.",
-      "catalysts": [
-        "Strong booking volumes for upcoming seasons",
-        "Pricing power and yield management",
-        "Travel demand recovery post-pandemic"
-      ],
-      "risks": [
-        "Consumer spending slowdown impacting travel",
-        "Fuel costs and operating expenses",
-        "Regulatory and environmental costs"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
       "recent_drift": false,
       "sector_stress": false,
       "market_regime": false,
@@ -715,26 +606,26 @@
     }
   },
   {
-    "ticker": "RIOT",
+    "ticker": "OKTA",
     "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 16.57,
-      "atm_strike": 16.5,
+      "price": 72.82,
+      "atm_strike": 73.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 1.73,
-      "em_percent": 10.44055522027761
+      "straddle": 7.63,
+      "em_percent": 10.477890689371053
     },
     "probabilities": {
-      "down_1x": 0.92,
+      "down_1x": 0.96,
       "down_1_5x": 0.98,
       "down_2x": 1.0,
-      "median_move": 0.0559,
-      "max_move": 0.1982
+      "median_move": 0.0424,
+      "max_move": 0.1616
     },
     "grading": {
       "grade": null,
@@ -748,19 +639,19 @@
       ]
     },
     "research": {
-      "short_note": "RIOT - Riot Platforms, Bitcoin mining company with large-scale data centers",
-      "summary": "Riot Platforms is a Bitcoin mining company operating large-scale data centers. Key drivers include Bitcoin price, hash rate production, and mining difficulty. Recently faced activist investor pressure from Starboard Value. Stock up ~40% YTD on Bitcoin momentum. The elevated EM reflects crypto market volatility and Bitcoin price sensitivity.",
+      "short_note": "OKTA Q4 today: Profitable turnaround with strong FCF and debt reduction - good momentum.",
+      "summary": "Okta provides cloud-based identity and access management software for enterprise security. Q4 showed strong turnaround with revenue up 11.6% to $742M, net income swinging positive to $43M (up 169%), and EBITDA surging 683% to $47M. The stock has lagged the market (down 17% over past year) but the company has de-levered significantly with debt down 56%. Today's report will focus on customer additions, enterprise demand for zero-trust security, and whether the profitability momentum continues.",
       "catalysts": [
-        "Bitcoin price appreciation driving mining profitability",
-        "Hash rate production growth",
-        "Data center capacity expansion"
+        "Turned profitable - net income up 169% to $43M",
+        "Strong FCF of $214M with 5.5% yield",
+        "Debt reduced 56% to $423M providing financial flexibility"
       ],
       "risks": [
-        "Bitcoin price decline hurts mining margins",
-        "Hash rate competition increasing difficulty",
-        "Activist investor pressure (Starboard)"
+        "Revenue growth of 11.6% decelerating from prior periods",
+        "Stock down 17% over past year shows market skepticism",
+        "Competition from Microsoft, Ping Identity in identity management"
       ],
-      "tone": "neutral"
+      "tone": "bullish"
     },
     "risk_flags": {
       "recent_drift": true,
@@ -770,26 +661,26 @@
     }
   },
   {
-    "ticker": "BBY",
+    "ticker": "BJ",
     "report": {
-      "date": "2026-03-03",
+      "date": "2026-03-05",
       "time": "BMO"
     },
     "market": {
-      "price": 61.4,
-      "atm_strike": 61.0,
-      "expiration": "2026-03-06"
+      "price": 99.45,
+      "atm_strike": 100.0,
+      "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 5.65,
-      "em_percent": 9.201954397394138
+      "straddle": 8.55,
+      "em_percent": 8.597285067873303
     },
     "probabilities": {
-      "down_1x": 0.9,
-      "down_1_5x": 0.98,
+      "down_1x": 0.95,
+      "down_1_5x": 1.0,
       "down_2x": 1.0,
-      "median_move": 0.0399,
-      "max_move": 0.1784
+      "median_move": 0.0385,
+      "max_move": 0.1223
     },
     "grading": {
       "grade": null,
@@ -803,17 +694,18 @@
       ]
     },
     "research": {
-      "short_note": "BBY - Best Buy, consumer electronics retailer with online and in-store channels",
-      "summary": "Best Buy is a leading consumer electronics retailer operating through stores and online. Key drivers include comp sales trends, consumer spending on electronics, and holiday shopping season. Q3 comps +2.7% with October at +5%. Recently raised FY2026 guidance. The moderate EM reflects retail sector sensitivity to consumer spending patterns.",
+      "short_note": "BJ Q4 tomorrow: Steady 5% revenue growth but FCF negative and margins under pressure.",
+      "summary": "BJ's Wholesale Club operates membership warehouse clubs offering groceries, household goods, electronics and other products across the Eastern US. Q4 showed steady performance with revenue up 4.9% to $5.35B, though net income declined 2.4% to $152M and FCF turned deeply negative at -$14M. Tomorrow's report will focus on membership trends, same-store sales, and how the company is navigating the competitive warehouse club space against Costco and Walmart-owned Sam's Club.",
       "catalysts": [
-        "Comp sales acceleration (Q3 +2.7%, October +5%)",
-        "Holiday season performance",
-        "Margin improvement from Marketplace and Best Buy Ads"
+        "Revenue up 4.9% showing steady demand for wholesale club model",
+        "33 million members provide recurring revenue base",
+        "Debt reduced 4.8% showing ongoing balance sheet management"
       ],
       "risks": [
-        "Consumer spending slowdown on electronics",
-        "Competition from Amazon and Walmart",
-        "Product cycle timing (PC refresh, new iPhones)"
+        "Net income down 2.4% showing margin pressure",
+        "FCF deeply negative at -$14M - significant cash burn",
+        "Gross margin slightly down (-20bps)",
+        "Stock flat over past year - no momentum"
       ],
       "tone": "neutral"
     },
@@ -825,26 +717,26 @@
     }
   },
   {
-    "ticker": "TGT",
+    "ticker": "BILI",
     "report": {
-      "date": "2026-03-03",
+      "date": "2026-03-05",
       "time": "BMO"
     },
     "market": {
-      "price": 113.03,
-      "atm_strike": 113.0,
+      "price": 27.41,
+      "atm_strike": 28.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 10.23,
-      "em_percent": 9.050694505883394
+      "straddle": 2.29,
+      "em_percent": 8.35461510397665
     },
     "probabilities": {
-      "down_1x": 0.94,
-      "down_1_5x": 1.0,
+      "down_1x": 0.95,
+      "down_1_5x": 0.99,
       "down_2x": 1.0,
-      "median_move": 0.0395,
-      "max_move": 0.1086
+      "median_move": 0.0466,
+      "max_move": 0.1349
     },
     "grading": {
       "grade": null,
@@ -858,17 +750,186 @@
       ]
     },
     "research": {
-      "short_note": "TGT - Target, large US discount retailer with online and 1,900+ stores",
-      "summary": "Target is a large US discount retailer operating 1,900+ stores and online platforms. Key drivers include comp sales trends, consumer spending on discretionary goods, and holiday performance. Recent analyst sentiment mixed with Bank of America starting coverage Underperform. The moderate EM reflects retail sector sensitivity to consumer spending patterns.",
+      "short_note": "BILI Q4 tomorrow: Profitable turnaround with 689% net income growth - Chinese tech resilience.",
+      "summary": "Bilibili is a Chinese online entertainment platform focused on user-generated videos, live broadcasting, and gaming content. Q3 showed a major turnaround with revenue up 5.3% to $1.07B and net income swinging to $65.6M (up 689%), reversing years of losses with EBITDA surging 1671%. Tomorrow's Q4 report will focus on whether the profitability momentum continues and how the company is navigating China's regulatory environment for tech platforms.",
       "catalysts": [
-        "Comp sales trends and market share gains",
-        "Holiday shopping season performance",
-        "Margin stabilization initiatives"
+        "Net income turned positive at $65.6M - up 689% YoY showing profitability",
+        "Gross margin improved 180bps to 36.67%",
+        "Strong cash position of $1.71B provides flexibility"
       ],
       "risks": [
-        "Consumer spending slowdown on discretionary",
-        "Competition from Walmart and Amazon",
-        "Margin pressure from promotional activity"
+        "Revenue growth slow at 5.3% - decelerating from prior rates",
+        "Chinese regulatory and macro uncertainty",
+        "High debt load of $1.36B creates financial risk",
+        "Stock up 34% - pulled forward gains"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": true,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "AVGO",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 318.72,
+      "atm_strike": 317.5,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 25.86,
+      "em_percent": 8.113704819277109
+    },
+    "probabilities": {
+      "down_1x": 0.86,
+      "down_1_5x": 0.98,
+      "down_2x": 0.98,
+      "median_move": 0.0415,
+      "max_move": 0.1866
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "AVGO Q1 today: AI chip demand and VMware synergy key for semiconductor giant.",
+      "summary": "Broadcom Inc. designs, develops and supplies semiconductors and infrastructure software solutions for enterprises. As a key supplier of networking chips for AI data centers and with the VMware acquisition completed, the company benefits from AI infrastructure demand. Today's Q1 report will focus on AI chip demand strength, VMware integration progress, and whether the networking/semiconductor business maintains momentum amid the AI boom.",
+      "catalysts": [
+        "Leading supplier of networking chips for AI data centers",
+        "VMware acquisition expanding software infrastructure business",
+        "Strong position in custom ASIC chips for hyperscalers"
+      ],
+      "risks": [
+        "China export restrictions creating uncertainty",
+        "High valuation after significant stock appreciation",
+        "Cyclical semiconductor demand - could slow",
+        "Broadcom depends heavily on few large customers"
+      ],
+      "tone": "bullish"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "KR",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 67.79,
+      "atm_strike": 68.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 3.99,
+      "em_percent": 5.885823867827113
+    },
+    "probabilities": {
+      "down_1x": 0.93,
+      "down_1_5x": 0.93,
+      "down_2x": 1.0,
+      "median_move": 0.041,
+      "max_move": 0.0984
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "KR Q4 tomorrow: Massive $1.3B Q4 loss despite flat revenue - turnaround uncertain.",
+      "summary": "Kroger operates supermarkets and multi-department stores across the US under brands including Simple Truth. Q4 showed severe distress with revenue barely growing 0.7% to $33.9B and net income plunging to a loss of $1.3B (down 315%) due to margin pressure and operational challenges. Despite the loss, EBITDA remained positive at $1.97B and operating FCF was $949M. Tomorrow's Q4 report will focus on the turnaround plan, food inflation impacts, and how the company is competing with Walmart and Aldi in the intensifying grocery wars.",
+      "catalysts": [
+        "Debt reduction - long-term debt down 22% YoY",
+        "Strong operating FCF of $949M with 3.3% yield",
+        "409K employees provides massive scale in grocery retail"
+      ],
+      "risks": [
+        "Q4 net income collapsed to -$1.3B - massive loss",
+        "Revenue growth nearly flat at 0.7%",
+        "Highly competitive grocery landscape with Walmart, Aldi, TJ Max",
+        "High debt load of $25.2B despite reduction"
+      ],
+      "tone": "risky"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
+    "ticker": "JD",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 25.22,
+      "atm_strike": 25.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 1.34,
+      "em_percent": 5.313243457573355
+    },
+    "probabilities": {
+      "down_1x": 0.81,
+      "down_1_5x": 1.0,
+      "down_2x": 1.0,
+      "median_move": 0.039,
+      "max_move": 0.0774
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "JD Q4 tomorrow: Revenue up 15% but profit collapsed 50% - cheap but challenged Chinese e-commerce.",
+      "summary": "JD.com is China's second-largest online retailer offering direct sales and marketplace services to consumers. Q3 showed mixed results with revenue growing 15% to $41.8B but net income collapsing 50% to $891M as the company invests in growth and faces intense competition. The stock is down 34% over the past year trading at just 12x P/E. Tomorrow's Q4 report will focus on profit trajectory, competitive positioning against PDD and Alibaba, and how the company is navigating China's challenging consumer environment.",
+      "catalysts": [
+        "Revenue growth strong at 15% showing demand resilience",
+        "Attractive valuation at 12x P/E with $17.6B net cash",
+        "Strong logistics infrastructure provides competitive edge"
+      ],
+      "risks": [
+        "Net income down 50% showing severe margin pressure",
+        "China macro headwinds and consumer spending weakness",
+        "Intense competition from PDD and Alibaba",
+        "High debt load of $15.75B (up 26% YoY)"
       ],
       "tone": "risky"
     },

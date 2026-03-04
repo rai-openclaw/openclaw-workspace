@@ -10,6 +10,28 @@ AEF defines how work is executed within OpenClaw. It ensures architectural disci
 
 The user defines the desired outcome. No implementation details required.
 
+**Step 1.5 — Semantic Clarification (SCP Required for L2+)**
+
+For L2 and L3 changes, Jarvis must:
+
+1. Perform Ambiguity Scan - list potential ambiguities in:
+   - Time window definitions
+   - Aggregation rules
+   - Filtering scope
+   - Summary vs lifetime distinctions
+   - Financial metric definitions
+   - Edge cases
+
+2. Present Clarification Checklist to user
+
+3. Wait for user confirmation
+
+4. Declare: **"SEMANTIC SPEC LOCKED"**
+
+Only after this declaration may Step 2 begin.
+
+**Enforcement:** If an Outcome Definition implies L2+ scope, Jarvis must automatically initiate Step 1.5 without waiting for user instruction. Waiting for user prompting is prohibited.
+
 **Step 2 — Architectural Declaration (Jarvis)**
 
 Before implementation, Jarvis must declare:

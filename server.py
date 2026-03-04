@@ -11,6 +11,27 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from flask import Flask, jsonify, render_template, request
 
+# Import performance cache module
+try:
+    from lib.performanceCache import get_performance_cache, set_performance_cache, clear_performance_cache, get_quote_timestamp, generate_cache_key
+    USE_PERF_CACHE = True
+except ImportError:
+    USE_PERF_CACHE = False
+    # Fallback functions if cache module not available
+    def get_performance_cache(key): return None
+    def set_performance_cache(key, data): pass
+    def clear_performance_cache(): pass
+    def get_quote_timestamp(): return datetime.now().isoformat()
+    def generate_cache_key(context, start_date=None, end_date=None, month_offset=0, week_offset=0): 
+        if context == 'weekly' and week_offset != 0:
+            # Calculate start date for this week offset
+            from datetime import date, timedelta
+            today = date.today()
+            current_week_start = today - timedelta(days=today.weekday())
+            target_week_start = current_week_start - timedelta(days=week_offset * 7)
+            return f"weekly-{target_week_start.isoformat()}"
+        return context
+
 # Add mission_control to path for imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -554,6 +575,197 @@ def api_trades_positions():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+
+@app.route('/api/trades/add', methods=['POST'])
+def api_trades_add():
+    """
+    Add a new trade event.
+    Clears performance cache on successful add.
+    
+    Request body:
+        {
+            "ticker": "AAPL",
+            "date": "2026-03-04",
+            "action": "BUY/SELL",
+            "premium": 100.00,
+            "realized_pnl": 50.00,
+            ...
+        }
+    """
+    try:
+        import json
+        from datetime import datetime
+        
+        trades_file = os.path.join(WORKSPACE, 'data', 'trades.json')
+        
+        # Load existing trades
+        if os.path.exists(trades_file):
+            with open(trades_file, 'r') as f:
+                trades_data = json.load(f)
+        else:
+            trades_data = {'trades': []}
+        
+        # Get trade data from request
+        trade_data = request.get_json()
+        if not trade_data:
+            return jsonify({'error': 'No trade data provided'}), 400
+        
+        # Add timestamp if not provided
+        if 'timestamp' not in trade_data:
+            trade_data['timestamp'] = datetime.now().isoformat()
+        
+        # Add trade to list
+        trades_data['trades'].append(trade_data)
+        
+        # Save trades
+        with open(trades_file, 'w') as f:
+            json.dump(trades_data, f, indent=2)
+        
+        # Clear performance cache
+        clear_performance_cache()
+        
+        return jsonify({
+            'success': True, 
+            'message': 'Trade added successfully',
+            'trade': trade_data
+        })
+        
+    except Exception as e:
+        import traceback
+        return jsonify({'error': str(e), 'trace': traceback.format_exc()}), 500
+
+
+@app.route('/api/trades/delete', methods=['DELETE'])
+def api_trades_delete():
+    """
+    Delete a trade event by index or trade ID.
+    Clears performance cache on successful delete.
+    
+    Query params:
+        index: Trade array index to delete
+        id: Trade ID to delete
+    """
+    try:
+        import json
+        
+        trades_file = os.path.join(WORKSPACE, 'data', 'trades.json')
+        
+        if not os.path.exists(trades_file):
+            return jsonify({'error': 'Trades file not found'}), 404
+        
+        with open(trades_file, 'r') as f:
+            trades_data = json.load(f)
+        
+        trades = trades_data.get('trades', [])
+        
+        # Get delete criteria
+        trade_index = request.args.get('index', type=int)
+        trade_id = request.args.get('id')
+        
+        if trade_index is not None:
+            if 0 <= trade_index < len(trades):
+                deleted_trade = trades.pop(trade_index)
+            else:
+                return jsonify({'error': 'Invalid trade index'}), 400
+        elif trade_id:
+            # Find and remove trade by ID
+            found = False
+            for i, trade in enumerate(trades):
+                if trade.get('id') == trade_id:
+                    deleted_trade = trades.pop(i)
+                    found = True
+                    break
+            if not found:
+                return jsonify({'error': 'Trade not found'}), 404
+        else:
+            return jsonify({'error': 'Must provide index or id'}), 400
+        
+        # Save updated trades
+        trades_data['trades'] = trades
+        with open(trades_file, 'w') as f:
+            json.dump(trades_data, f, indent=2)
+        
+        # Clear performance cache
+        clear_performance_cache()
+        
+        return jsonify({
+            'success': True,
+            'message': 'Trade deleted successfully',
+            'deleted': deleted_trade
+        })
+        
+    except Exception as e:
+        import traceback
+        return jsonify({'error': str(e), 'trace': traceback.format_exc()}), 500
+
+
+@app.route('/api/trades/bulk-delete', methods=['POST'])
+def api_trades_bulk_delete():
+    """
+    Bulk delete trade events.
+    Clears performance cache on successful delete.
+    
+    Request body:
+        {
+            "indices": [0, 2, 5],  // Array of indices to delete
+            "ids": ["trade-id-1", "trade-id-2"]  // Or array of trade IDs
+        }
+    """
+    try:
+        import json
+        
+        trades_file = os.path.join(WORKSPACE, 'data', 'trades.json')
+        
+        if not os.path.exists(trades_file):
+            return jsonify({'error': 'Trades file not found'}), 404
+        
+        with open(trades_file, 'r') as f:
+            trades_data = json.load(f)
+        
+        trades = trades_data.get('trades', [])
+        
+        # Get delete criteria
+        delete_data = request.get_json() or {}
+        indices = delete_data.get('indices', [])
+        ids = delete_data.get('ids', [])
+        
+        if not indices and not ids:
+            return jsonify({'error': 'Must provide indices or ids'}), 400
+        
+        # Track deleted trades
+        deleted_trades = []
+        
+        # Delete by indices (process in reverse order to maintain correct indices)
+        if indices:
+            indices_to_delete = set(indices)
+            trades = [t for i, t in enumerate(trades) if i not in indices_to_delete]
+            deleted_trades.extend(indices)
+        
+        # Delete by IDs
+        if ids:
+            ids_to_delete = set(ids)
+            trades = [t for t in trades if t.get('id') not in ids_to_delete]
+            deleted_trades.extend(ids)
+        
+        # Save updated trades
+        trades_data['trades'] = trades
+        with open(trades_file, 'w') as f:
+            json.dump(trades_data, f, indent=2)
+        
+        # Clear performance cache
+        clear_performance_cache()
+        
+        return jsonify({
+            'success': True,
+            'message': f'Deleted {len(deleted_trades)} trades',
+            'deleted': deleted_trades
+        })
+        
+    except Exception as e:
+        import traceback
+        return jsonify({'error': str(e), 'trace': traceback.format_exc()}), 500
+
+
 @app.route('/api/portfolio/positions')
 def api_portfolio_positions():
     """Return current portfolio positions"""
@@ -572,13 +784,18 @@ def api_portfolio_positions():
 def api_trades_performance_v2():
     """
     Performance v2 - Canonical context model for trading performance.
+    Uses server-side caching for improved performance.
     
     Query params:
-        context: lifetime | daily | monthly | yearly
+        context: lifetime | daily | weekly | monthly | yearly | custom
+        start: Start date for custom range (YYYY-MM-DD)
+        end: End date for custom range (YYYY-MM-DD)
+        month: Month offset for monthly context (0 = current month, 1 = last month, etc.)
         
     Returns:
         - summary: totalRealizedPl, winRate, totalTrades
         - tickerBreakdown: per-ticker realized P/L, wins, losses, winRate
+        - quoteTimestamp: timestamp from quote cache
     """
     try:
         from datetime import datetime, date
@@ -586,14 +803,63 @@ def api_trades_performance_v2():
         
         # Parse context parameter
         context = request.args.get('context', 'lifetime').lower()
-        valid_contexts = ['lifetime', 'daily', 'monthly', 'yearly']
+        valid_contexts = ['lifetime', 'daily', 'weekly', 'monthly', 'yearly', 'custom']
         if context not in valid_contexts:
             return jsonify({'error': f'Invalid context. Use: {", ".join(valid_contexts)}'}), 400
         
-        # Load trades
+        # Parse date range parameters
+        start_date = None
+        end_date = None
+        month_offset = 0
+        week_offset = 0
+        
+        if context == 'custom':
+            start_str = request.args.get('start')
+            end_str = request.args.get('end')
+            if start_str and end_str:
+                try:
+                    start_date = datetime.strptime(start_str, '%Y-%m-%d').date()
+                    end_date = datetime.strptime(end_str, '%Y-%m-%d').date()
+                except ValueError:
+                    return jsonify({'error': 'Invalid date format. Use YYYY-MM-DD'}), 400
+        elif context == 'monthly':
+            try:
+                month_offset = int(request.args.get('month', '0'))
+            except ValueError:
+                month_offset = 0
+        elif context == 'weekly':
+            try:
+                week_offset = int(request.args.get('weekOffset', '0'))
+            except ValueError:
+                week_offset = 0
+            # Ensure week_offset is not negative (no future weeks)
+            week_offset = max(0, week_offset)
+        
+        # Generate cache key
+        cache_key = generate_cache_key(
+            context, 
+            start_date.isoformat() if start_date else None,
+            end_date.isoformat() if end_date else None,
+            month_offset,
+            week_offset
+        )
+        
+        # Check cache first
+        cached_data = get_performance_cache(cache_key)
+        if cached_data:
+            # Add quote timestamp to cached response
+            cached_data['quoteTimestamp'] = get_quote_timestamp()
+            return jsonify(cached_data)
+        
+        # Load trades (compute if not cached)
         trades_file = os.path.join(WORKSPACE, 'data', 'trades.json')
         if not os.path.exists(trades_file):
-            return jsonify({'context': context, 'summary': {}, 'tickerBreakdown': []})
+            return jsonify({
+                'context': context, 
+                'summary': {}, 
+                'tickerBreakdown': [],
+                'quoteTimestamp': get_quote_timestamp()
+            })
         
         with open(trades_file, 'r') as f:
             trades_data = json.load(f)
@@ -602,19 +868,31 @@ def api_trades_performance_v2():
         
         # Determine date range based on context
         today = date.today()
-        start_date = None
-        end_date = None
         
         if context == 'daily':
             start_date = today
             end_date = today
+        elif context == 'weekly':
+            # Get start of week (Monday) with weekOffset support
+            # week_offset=0 is current week, week_offset=1 is last week, etc.
+            today = date.today()
+            current_week_start = today - timedelta(days=today.weekday())
+            target_week_start = current_week_start - timedelta(days=week_offset * 7)
+            start_date = target_week_start
+            end_date = start_date + timedelta(days=6)
         elif context == 'monthly':
-            start_date = today.replace(day=1)
+            # Calculate target month based on offset
+            target_month = today.month - month_offset
+            target_year = today.year
+            while target_month <= 0:
+                target_month += 12
+                target_year -= 1
+            start_date = date(target_year, target_month, 1)
             # Last day of month
-            if today.month == 12:
-                end_date = today.replace(month=12, day=31)
+            if target_month == 12:
+                end_date = date(target_year, 12, 31)
             else:
-                end_date = today.replace(month=today.month + 1, day=1) - timedelta(days=1)
+                end_date = date(target_year, target_month + 1, 1) - timedelta(days=1)
         elif context == 'yearly':
             start_date = today.replace(month=1, day=1)
             end_date = today.replace(month=12, day=31)
@@ -690,7 +968,8 @@ def api_trades_performance_v2():
         # Sort by realizedPl descending
         ticker_breakdown.sort(key=lambda x: x['realizedPl'], reverse=True)
         
-        return jsonify({
+        # Build response
+        response_data = {
             'context': context,
             'dateRange': {
                 'start': start_date.isoformat() if start_date else None,
@@ -701,8 +980,18 @@ def api_trades_performance_v2():
                 'winRate': win_rate,
                 'totalTrades': total_trades
             },
-            'tickerBreakdown': ticker_breakdown
-        })
+            'tickerBreakdown': ticker_breakdown,
+            'openPositions': [],  # Placeholder for future open positions data
+            'equityCurve': []  # Placeholder for future equity curve data
+        }
+        
+        # Store in cache
+        set_performance_cache(cache_key, response_data)
+        
+        # Add quote timestamp
+        response_data['quoteTimestamp'] = get_quote_timestamp()
+        
+        return jsonify(response_data)
         
     except Exception as e:
         import traceback

@@ -1,18 +1,93 @@
 [
   {
+    "ticker": "CIEN",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 339.95,
+      "atm_strike": 330.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 48.6,
+      "em_percent": 14.2962200323577
+    },
+    "probabilities": {
+      "down_1x": 0.97,
+      "down_1_5x": 0.99,
+      "down_2x": 1.0,
+      "median_move": 0.0519,
+      "max_move": 0.2331
+    },
+    "grading": {
+      "grade": "A",
+      "score_total": 87,
+      "risk_severity": "NORMAL",
+      "data_ready": true,
+      "components": {
+        "survivability": {
+          "score": 45,
+          "reason": "Survival 99%"
+        },
+        "em_tension": {
+          "score": 25,
+          "reason": "EM 14.3% \u22651.2x median 5.2%"
+        },
+        "assignment": {
+          "score": 15,
+          "reason": "Price $339.95"
+        },
+        "liquidity": {
+          "score": 2,
+          "reason": "No volume data"
+        }
+      },
+      "risk_penalty": 0
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    },
+    "research": {
+      "short_note": "CIEN Q1 tomorrow: Strong FCF but flat revenue - 346% stock rally leaves valuation stretched.",
+      "summary": "Ciena provides network and communication infrastructure, including optical networking and software solutions for telecom carriers. Q4 showed flat revenue at $1.35B with modest net income of $19M, though the stock has surged 346% over the past year on AI/networking demand. Tomorrow's Q1 report will focus on cloud and AI-driven networking demand, order book strength, and whether the company can accelerate revenue growth beyond flat performance.",
+      "catalysts": [
+        "Strong FCF of $326M with 2.4% FCF yield",
+        "Leadership in optical networking for AI data center builds",
+        "Blue Planet automation software expanding"
+      ],
+      "risks": [
+        "Revenue growth flat - no YoY improvement",
+        "Stretched valuation at 224x P/E",
+        "Competition from Huawei, Cisco in optical networking"
+      ],
+      "tone": "neutral"
+    },
+    "risk_flags": {
+      "recent_drift": false,
+      "sector_stress": false,
+      "market_regime": false,
+      "macro_event_nearby": false
+    }
+  },
+  {
     "ticker": "VEEV",
     "report": {
       "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 185.96,
+      "price": 184.61,
       "atm_strike": 185.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 22.0,
-      "em_percent": 11.830501183050119
+      "straddle": 22.45,
+      "em_percent": 12.16077135583121
     },
     "probabilities": {
       "down_1x": 0.96,
@@ -33,11 +108,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 11.8% \u22651.2x median 3.7%"
+          "reason": "EM 12.2% \u22651.2x median 3.7%"
         },
         "assignment": {
           "score": 15,
-          "reason": "Price $185.96"
+          "reason": "Price $184.61"
         },
         "liquidity": {
           "score": 2,
@@ -53,20 +128,11 @@
       ]
     },
     "research": {
-      "short_note": "VEEV Q4 today: Strong 16% revenue and 27% profit growth - down 15% provides entry opportunity.",
-      "summary": "Veeva Systems provides industry-specific cloud-based software solutions for the life sciences sector. Q4 showed strong momentum with revenue up 16% to $811M, net income surging 27% to $236M, and EBITDA growing 33% to $254M. The stock has pulled back 15% over the past year despite the solid fundamentals. Today's report will focus on customer additions, Vault platform growth, and the company's ability to maintain growth rates in the competitive life sciences software space.",
-      "catalysts": [
-        "Q4 revenue up 16% showing continued strong demand for life sciences software",
-        "Net income up 27% with EBITDA up 33% demonstrating operational leverage",
-        "Strong FCF of $183M with 2.7% yield",
-        "Stock pullback creates entry opportunity"
-      ],
-      "risks": [
-        "Rich valuation at 57x P/E",
-        "Competition from Oracle, Medidata in life sciences software",
-        "Stock down 15% reflects market caution"
-      ],
-      "tone": "bullish"
+      "short_note": "Research unavailable",
+      "summary": "Could not generate research.",
+      "catalysts": [],
+      "risks": [],
+      "tone": "neutral"
     },
     "risk_flags": {
       "recent_drift": false,
@@ -82,13 +148,13 @@
       "time": "AMC"
     },
     "market": {
-      "price": 318.72,
-      "atm_strike": 317.5,
+      "price": 315.07,
+      "atm_strike": 315.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 25.86,
-      "em_percent": 8.113704819277109
+      "straddle": 26.11,
+      "em_percent": 8.287047322817152
     },
     "probabilities": {
       "down_1x": 0.86,
@@ -109,11 +175,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 8.1% \u22651.2x median 4.2%"
+          "reason": "EM 8.3% \u22651.2x median 4.2%"
         },
         "assignment": {
           "score": 15,
-          "reason": "Price $318.72"
+          "reason": "Price $315.07"
         },
         "liquidity": {
           "score": 2,
@@ -158,13 +224,13 @@
       "time": "BMO"
     },
     "market": {
-      "price": 61.6,
+      "price": 61.88,
       "atm_strike": 60.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 10.45,
-      "em_percent": 16.96428571428571
+      "straddle": 10.7,
+      "em_percent": 17.291531997414346
     },
     "probabilities": {
       "down_1x": 0.97,
@@ -185,11 +251,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 17.0% \u22651.2x median 4.6%"
+          "reason": "EM 17.3% \u22651.2x median 4.6%"
         },
         "assignment": {
           "score": 12,
-          "reason": "Price $61.6"
+          "reason": "Price $61.88"
         },
         "liquidity": {
           "score": 2,
@@ -234,13 +300,13 @@
       "time": "BMO"
     },
     "market": {
-      "price": 98.37,
+      "price": 98.59,
       "atm_strike": 85.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 15.75,
-      "em_percent": 16.010978956999082
+      "straddle": 16.0,
+      "em_percent": 16.228826452987118
     },
     "probabilities": {
       "down_1x": 1.0,
@@ -261,11 +327,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 16.0% \u22651.2x median 4.2%"
+          "reason": "EM 16.2% \u22651.2x median 4.2%"
         },
         "assignment": {
           "score": 12,
-          "reason": "Price $98.37"
+          "reason": "Price $98.59"
         },
         "liquidity": {
           "score": 2,
@@ -282,7 +348,7 @@
     },
     "research": {
       "short_note": "TTC Q4 tomorrow: Strong FCF but revenue flat and profit down 19% - mixed signals.",
-      "summary": "The Toro Company designs, manufactures and sells professional turf maintenance equipment and residential lawn products including mowers and irrigation systems. Q4 showed mixed results with revenue slightly down 1% to $1.07B and net income declining 19% to $73M, though FCF surged 42% to $286M with a strong 5.8% yield. Tomorrow's Q4 report will focus on demand trends in professional landscaping and residential segments, and how the company is navigating the outdoor power equipment market.",
+      "summary": "The Toro Company designs, manufactures and sells professional turf maintenance equipment and residential lawn products including mowers and irrigation systems. Q4 showed mixed results with revenue slightly down 1% to $1.07B and net income declining 19% to $73M, though FCF surged 42% to $286M. Tomorrow's Q4 report will focus on demand trends in professional landscaping and residential segments, and how the company is navigating the outdoor power equipment market.",
       "catalysts": [
         "Strong FCF of $286M up 42% with 5.8% yield",
         "Net cash up 71% to $341M providing financial flexibility",
@@ -310,13 +376,13 @@
       "time": "BMO"
     },
     "market": {
-      "price": 99.45,
+      "price": 99.46,
       "atm_strike": 100.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 8.55,
-      "em_percent": 8.597285067873303
+      "straddle": 8.65,
+      "em_percent": 8.696963603458679
     },
     "probabilities": {
       "down_1x": 0.95,
@@ -337,11 +403,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 8.6% \u22651.2x median 3.9%"
+          "reason": "EM 8.7% \u22651.2x median 3.9%"
         },
         "assignment": {
           "score": 12,
-          "reason": "Price $99.45"
+          "reason": "Price $99.46"
         },
         "liquidity": {
           "score": 2,
@@ -380,94 +446,19 @@
     }
   },
   {
-    "ticker": "CIEN",
-    "report": {
-      "date": "2026-03-05",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 343.9,
-      "atm_strike": 330.0,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 49.400000000000006,
-      "em_percent": 14.364640883977902
-    },
-    "probabilities": {
-      "down_1x": 0.97,
-      "down_1_5x": 0.99,
-      "down_2x": 1.0,
-      "median_move": 0.0519,
-      "max_move": 0.2331
-    },
-    "grading": {
-      "grade": "B+",
-      "score_total": 82,
-      "risk_severity": "ELEVATED",
-      "data_ready": true,
-      "components": {
-        "survivability": {
-          "score": 45,
-          "reason": "Survival 99%"
-        },
-        "em_tension": {
-          "score": 25,
-          "reason": "EM 14.4% \u22651.2x median 5.2%"
-        },
-        "assignment": {
-          "score": 15,
-          "reason": "Price $343.9"
-        },
-        "liquidity": {
-          "score": 2,
-          "reason": "No volume data"
-        }
-      },
-      "risk_penalty": 5
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "CIEN Q1 tomorrow: Strong FCF but flat revenue - 346% stock rally leaves valuation stretched.",
-      "summary": "Ciena provides network and communication infrastructure, including optical networking and software solutions for telecom carriers. Q4 showed flat revenue at $1.35B with modest net income of $19M, though the stock has surged 346% over the past year on AI/networking demand. Tomorrow's Q1 report will focus on cloud and AI-driven networking demand, order book strength, and whether the company can accelerate revenue growth beyond flat performance.",
-      "catalysts": [
-        "Strong FCF of $326M with 2.4% FCF yield",
-        "Leadership in optical networking for AI data center builds",
-        "Blue Planet automation software expanding"
-      ],
-      "risks": [
-        "Revenue growth flat - no YoY improvement",
-        "Stretched valuation at 224x P/E",
-        "Competition from Huawei, Cisco in optical networking"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": true,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
     "ticker": "ICLR",
     "report": {
       "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 110.14,
+      "price": 108.64,
       "atm_strike": 105.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 13.0,
-      "em_percent": 11.80315961503541
+      "straddle": 12.25,
+      "em_percent": 11.275773195876289
     },
     "probabilities": {
       "down_1x": 0.94,
@@ -488,11 +479,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 11.8% \u22651.2x median 4.7%"
+          "reason": "EM 11.3% \u22651.2x median 4.7%"
         },
         "assignment": {
           "score": 15,
-          "reason": "Price $110.14"
+          "reason": "Price $108.64"
         },
         "liquidity": {
           "score": 2,
@@ -532,162 +523,19 @@
     }
   },
   {
-    "ticker": "MLYS",
-    "report": {
-      "date": "2026-03-04",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 27.84,
-      "atm_strike": 30.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 8.45,
-      "em_percent": 30.352011494252874
-    },
-    "probabilities": {
-      "down_1x": 0.98,
-      "down_1_5x": 0.99,
-      "down_2x": 0.99,
-      "median_move": 0.0508,
-      "max_move": 0.8643
-    },
-    "grading": {
-      "grade": "B+",
-      "score_total": 80,
-      "risk_severity": "NORMAL",
-      "data_ready": true,
-      "components": {
-        "survivability": {
-          "score": 45,
-          "reason": "Survival 99%"
-        },
-        "em_tension": {
-          "score": 25,
-          "reason": "EM 30.4% \u22651.2x median 5.1%"
-        },
-        "assignment": {
-          "score": 8,
-          "reason": "Price $27.84"
-        },
-        "liquidity": {
-          "score": 2,
-          "reason": "No volume data"
-        }
-      },
-      "risk_penalty": 0
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "Research unavailable",
-      "summary": "Could not generate research.",
-      "catalysts": [],
-      "risks": [],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
-    "ticker": "WLY",
-    "report": {
-      "date": "2026-03-05",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 30.53,
-      "atm_strike": 25.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 5.93,
-      "em_percent": 19.42351785129381
-    },
-    "probabilities": {
-      "down_1x": 1.0,
-      "down_1_5x": 1.0,
-      "down_2x": 1.0,
-      "median_move": 0.0399,
-      "max_move": 0.1527
-    },
-    "grading": {
-      "grade": "B+",
-      "score_total": 80,
-      "risk_severity": "NORMAL",
-      "data_ready": true,
-      "components": {
-        "survivability": {
-          "score": 45,
-          "reason": "Survival 100%"
-        },
-        "em_tension": {
-          "score": 25,
-          "reason": "EM 19.4% \u22651.2x median 4.0%"
-        },
-        "assignment": {
-          "score": 8,
-          "reason": "Price $30.53"
-        },
-        "liquidity": {
-          "score": 2,
-          "reason": "No volume data"
-        }
-      },
-      "risk_penalty": 0
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    },
-    "research": {
-      "short_note": "WLY Q4 tomorrow: Modest revenue decline but profit up 11% - legacy publishing under pressure.",
-      "summary": "John Wiley & Sons provides research and learning materials including academic journals, books, and education services. Q4 showed mixed results with revenue declining 1.1% to $422M but net income rising 11% to $45M and EBITDA up 10% to $115M. The stock is down 17% over the past year as the traditional publishing business faces structural headwinds. Tomorrow's Q4 report will focus on the transition to digital subscriptions, education services performance, and how the company is navigating the shift to online learning.",
-      "catalysts": [
-        "Net income up 11% showing margin improvement",
-        "Debt reduction - long-term debt down 10% YoY",
-        "Operating FCF turned positive at $8.5M"
-      ],
-      "risks": [
-        "Revenue down 1.1% showing ongoing structural challenges",
-        "Employees down 19% indicating restructuring",
-        "Highly levered with $965M debt",
-        "Traditional publishing facing digital disruption"
-      ],
-      "tone": "neutral"
-    },
-    "risk_flags": {
-      "recent_drift": false,
-      "sector_stress": false,
-      "market_regime": false,
-      "macro_event_nearby": false
-    }
-  },
-  {
     "ticker": "LQDA",
     "report": {
       "date": "2026-03-05",
       "time": "BMO"
     },
     "market": {
-      "price": 32.46,
-      "atm_strike": 34.0,
+      "price": 32.2,
+      "atm_strike": 30.5,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 5.48,
-      "em_percent": 16.882316697473815
+      "straddle": 5.65,
+      "em_percent": 17.546583850931675
     },
     "probabilities": {
       "down_1x": 1.0,
@@ -708,11 +556,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 16.9% \u22651.2x median 4.4%"
+          "reason": "EM 17.5% \u22651.2x median 4.4%"
         },
         "assignment": {
           "score": 8,
-          "reason": "Price $32.46"
+          "reason": "Price $32.2"
         },
         "liquidity": {
           "score": 2,
@@ -757,13 +605,13 @@
       "time": "AMC"
     },
     "market": {
-      "price": 31.15,
+      "price": 31.02,
       "atm_strike": 30.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 4.43,
-      "em_percent": 14.221508828250402
+      "straddle": 4.65,
+      "em_percent": 14.990328820116055
     },
     "probabilities": {
       "down_1x": 1.0,
@@ -784,11 +632,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 14.2% \u22651.2x median 4.9%"
+          "reason": "EM 15.0% \u22651.2x median 4.9%"
         },
         "assignment": {
           "score": 8,
-          "reason": "Price $31.15"
+          "reason": "Price $31.02"
         },
         "liquidity": {
           "score": 2,
@@ -815,7 +663,8 @@
         "Revenue declined 5.7% showing significant traffic weakness",
         "Gross margin collapsed 560bps to 2.34%",
         "Highly levered with $1.18B debt against struggling business",
-        "FCF deeply negative at -$89M"
+        "FCF deeply negative at -$89M",
+        "Stock down 24% over past year"
       ],
       "tone": "risky"
     },
@@ -833,16 +682,16 @@
       "time": "BMO"
     },
     "market": {
-      "price": 25.22,
-      "atm_strike": 25.0,
+      "price": 25.26,
+      "atm_strike": 25.5,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 1.34,
-      "em_percent": 5.313243457573355
+      "straddle": 1.44,
+      "em_percent": 5.700712589073634
     },
     "probabilities": {
-      "down_1x": 0.81,
+      "down_1x": 0.86,
       "down_1_5x": 1.0,
       "down_2x": 1.0,
       "median_move": 0.039,
@@ -860,11 +709,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 5.3% \u22651.2x median 3.9%"
+          "reason": "EM 5.7% \u22651.2x median 3.9%"
         },
         "assignment": {
           "score": 8,
-          "reason": "Price $25.22"
+          "reason": "Price $25.26"
         },
         "liquidity": {
           "score": 2,
@@ -909,13 +758,13 @@
       "time": "AMC"
     },
     "market": {
-      "price": 72.82,
-      "atm_strike": 73.0,
+      "price": 72.25,
+      "atm_strike": 72.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 7.63,
-      "em_percent": 10.477890689371053
+      "straddle": 7.779999999999999,
+      "em_percent": 10.768166089965398
     },
     "probabilities": {
       "down_1x": 0.96,
@@ -936,11 +785,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 10.5% \u22651.2x median 4.2%"
+          "reason": "EM 10.8% \u22651.2x median 4.2%"
         },
         "assignment": {
           "score": 12,
-          "reason": "Price $72.82"
+          "reason": "Price $72.25"
         },
         "liquidity": {
           "score": 2,
@@ -956,7 +805,7 @@
       ]
     },
     "research": {
-      "short_note": "OKTA Q4 today: Profitable turnaround with strong FCF and debt reduction - good momentum.",
+      "short_note": "OKTA Q4 today: Profitable turnaround story with strong FCF and debt reduction - good momentum.",
       "summary": "Okta provides cloud-based identity and access management software for enterprise security. Q4 showed strong turnaround with revenue up 11.6% to $742M, net income swinging positive to $43M (up 169%), and EBITDA surging 683% to $47M. The stock has lagged the market (down 17% over past year) but the company has de-levered significantly with debt down 56%. Today's report will focus on customer additions, enterprise demand for zero-trust security, and whether the profitability momentum continues.",
       "catalysts": [
         "Turned profitable - net income up 169% to $43M",
@@ -984,13 +833,13 @@
       "time": "BMO"
     },
     "market": {
-      "price": 67.79,
-      "atm_strike": 68.0,
+      "price": 67.24,
+      "atm_strike": 67.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 3.99,
-      "em_percent": 5.885823867827113
+      "straddle": 4.1899999999999995,
+      "em_percent": 6.231409875074361
     },
     "probabilities": {
       "down_1x": 0.93,
@@ -1011,11 +860,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 5.9% \u22651.2x median 4.1%"
+          "reason": "EM 6.2% \u22651.2x median 4.1%"
         },
         "assignment": {
           "score": 12,
-          "reason": "Price $67.79"
+          "reason": "Price $67.24"
         },
         "liquidity": {
           "score": 2,
@@ -1060,13 +909,13 @@
       "time": "AMC"
     },
     "market": {
-      "price": 22.41,
-      "atm_strike": 22.0,
+      "price": 22.54,
+      "atm_strike": 23.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 2.96,
-      "em_percent": 13.208389112003568
+      "straddle": 2.86,
+      "em_percent": 12.688553682342501
     },
     "probabilities": {
       "down_1x": 0.94,
@@ -1087,11 +936,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 13.2% \u22651.2x median 4.9%"
+          "reason": "EM 12.7% \u22651.2x median 4.9%"
         },
         "assignment": {
           "score": 8,
-          "reason": "Price $22.41"
+          "reason": "Price $22.54"
         },
         "liquidity": {
           "score": 2,
@@ -1135,13 +984,13 @@
       "time": "AMC"
     },
     "market": {
-      "price": 17.15,
+      "price": 17.03,
       "atm_strike": 17.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 2.0,
-      "em_percent": 11.661807580174928
+      "straddle": 2.05,
+      "em_percent": 12.037580739870814
     },
     "probabilities": {
       "down_1x": 0.86,
@@ -1162,11 +1011,11 @@
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 11.7% \u22651.2x median 6.6%"
+          "reason": "EM 12.0% \u22651.2x median 6.6%"
         },
         "assignment": {
           "score": 3,
-          "reason": "Price $17.15"
+          "reason": "Price $17.03"
         },
         "liquidity": {
           "score": 2,
@@ -1211,17 +1060,17 @@
       "time": "BMO"
     },
     "market": {
-      "price": 27.41,
+      "price": 27.1,
       "atm_strike": 28.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 2.29,
-      "em_percent": 8.35461510397665
+      "straddle": 2.49,
+      "em_percent": 9.18819188191882
     },
     "probabilities": {
-      "down_1x": 0.95,
-      "down_1_5x": 0.99,
+      "down_1x": 0.96,
+      "down_1_5x": 1.0,
       "down_2x": 1.0,
       "median_move": 0.0466,
       "max_move": 0.1349
@@ -1234,15 +1083,15 @@
       "components": {
         "survivability": {
           "score": 45,
-          "reason": "Survival 99%"
+          "reason": "Survival 100%"
         },
         "em_tension": {
           "score": 25,
-          "reason": "EM 8.4% \u22651.2x median 4.7%"
+          "reason": "EM 9.2% \u22651.2x median 4.7%"
         },
         "assignment": {
           "score": 8,
-          "reason": "Price $27.41"
+          "reason": "Price $27.1"
         },
         "liquidity": {
           "score": 2,

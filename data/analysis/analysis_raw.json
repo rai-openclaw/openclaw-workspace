@@ -1,18 +1,18 @@
 [
   {
-    "ticker": "AVBP",
+    "ticker": "MLYS",
     "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 23.06,
-      "atm_strike": 20.0,
+      "price": 27.84,
+      "atm_strike": 30.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 8.95,
-      "em_percent": 38.81179531656548
+      "straddle": 8.45,
+      "em_percent": 30.352011494252874
     },
     "probabilities": {
       "down_1x": null,
@@ -32,115 +32,19 @@
     }
   },
   {
-    "ticker": "OUST",
+    "ticker": "WLY",
     "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 19.81,
-      "atm_strike": 20.0,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 3.9800000000000004,
-      "em_percent": 20.09086320040384
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "CORZ",
-    "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 17.31,
-      "atm_strike": 17.5,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 3.31,
-      "em_percent": 19.121894858463317
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "MDB",
-    "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 325.46,
-      "atm_strike": 325.0,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 53.260000000000005,
-      "em_percent": 16.364530203404414
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "SRAD",
-    "report": {
-      "date": "2026-03-03",
+      "date": "2026-03-05",
       "time": "BMO"
     },
     "market": {
-      "price": 18.65,
-      "atm_strike": 17.5,
+      "price": 30.53,
+      "atm_strike": 25.0,
       "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 2.7199999999999998,
-      "em_percent": 14.584450402144771
+      "straddle": 5.93,
+      "em_percent": 19.42351785129381
     },
     "probabilities": {
       "down_1x": null,
@@ -160,19 +64,51 @@
     }
   },
   {
-    "ticker": "ASTS",
+    "ticker": "VSCO",
     "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
+      "date": "2026-03-05",
+      "time": "BMO"
     },
     "market": {
-      "price": 83.49,
-      "atm_strike": 83.0,
+      "price": 61.6,
+      "atm_strike": 60.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 10.45,
+      "em_percent": 16.96428571428571
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "LQDA",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 32.46,
+      "atm_strike": 34.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 11.780000000000001,
-      "em_percent": 14.109474188525576
+      "straddle": 5.48,
+      "em_percent": 16.882316697473815
     },
     "probabilities": {
       "down_1x": null,
@@ -192,19 +128,51 @@
     }
   },
   {
-    "ticker": "CRDO",
+    "ticker": "TTC",
     "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
+      "date": "2026-03-05",
+      "time": "BMO"
     },
     "market": {
-      "price": 113.27,
-      "atm_strike": 115.0,
+      "price": 98.37,
+      "atm_strike": 85.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 15.75,
+      "em_percent": 16.010978956999082
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "CIEN",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 343.9,
+      "atm_strike": 330.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 15.65,
-      "em_percent": 13.816544539595657
+      "straddle": 49.400000000000006,
+      "em_percent": 14.364640883977902
     },
     "probabilities": {
       "down_1x": null,
@@ -224,83 +192,147 @@
     }
   },
   {
-    "ticker": "STNE",
+    "ticker": "CBRL",
     "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 16.69,
+      "price": 31.15,
+      "atm_strike": 30.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 4.43,
+      "em_percent": 14.221508828250402
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "AEO",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 22.41,
+      "atm_strike": 22.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 2.96,
+      "em_percent": 13.208389112003568
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "VEEV",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 185.96,
+      "atm_strike": 185.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 22.0,
+      "em_percent": 11.830501183050119
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "ICLR",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 110.14,
+      "atm_strike": 105.0,
+      "expiration": "2026-03-20"
+    },
+    "options": {
+      "straddle": 13.0,
+      "em_percent": 11.80315961503541
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "RGTI",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 17.15,
       "atm_strike": 17.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 2.2,
-      "em_percent": 13.181545835829839
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "SE",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 104.41,
-      "atm_strike": 106.0,
       "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 13.66,
-      "em_percent": 13.083038023177856
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "SGRY",
-    "report": {
-      "date": "2026-03-02",
-      "time": "AMC"
-    },
-    "market": {
-      "price": 15.55,
-      "atm_strike": 15.0,
-      "expiration": "2026-03-20"
     },
     "options": {
       "straddle": 2.0,
-      "em_percent": 12.861736334405144
+      "em_percent": 11.661807580174928
     },
     "probabilities": {
       "down_1x": null,
@@ -320,115 +352,19 @@
     }
   },
   {
-    "ticker": "ONON",
+    "ticker": "OKTA",
     "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 45.6,
-      "atm_strike": 46.0,
-      "expiration": "2026-03-06"
-    },
-    "options": {
-      "straddle": 5.34,
-      "em_percent": 11.710526315789473
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "VSNT",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 32.7,
-      "atm_strike": 35.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 3.75,
-      "em_percent": 11.46788990825688
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "VIK",
-    "report": {
-      "date": "2026-03-03",
-      "time": "BMO"
-    },
-    "market": {
-      "price": 72.69,
-      "atm_strike": 75.0,
-      "expiration": "2026-03-20"
-    },
-    "options": {
-      "straddle": 7.73,
-      "em_percent": 10.634200027514101
-    },
-    "probabilities": {
-      "down_1x": null,
-      "down_1_5x": null,
-      "down_2x": null
-    },
-    "grading": {
-      "grade": null,
-      "score_total": null,
-      "data_ready": true
-    },
-    "meta": {
-      "status": "ok",
-      "tags": [
-        "TRADE"
-      ]
-    }
-  },
-  {
-    "ticker": "RIOT",
-    "report": {
-      "date": "2026-03-02",
+      "date": "2026-03-04",
       "time": "AMC"
     },
     "market": {
-      "price": 16.57,
-      "atm_strike": 16.5,
+      "price": 72.82,
+      "atm_strike": 73.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 1.73,
-      "em_percent": 10.44055522027761
+      "straddle": 7.63,
+      "em_percent": 10.477890689371053
     },
     "probabilities": {
       "down_1x": null,
@@ -448,19 +384,19 @@
     }
   },
   {
-    "ticker": "BBY",
+    "ticker": "BJ",
     "report": {
-      "date": "2026-03-03",
+      "date": "2026-03-05",
       "time": "BMO"
     },
     "market": {
-      "price": 61.4,
-      "atm_strike": 61.0,
-      "expiration": "2026-03-06"
+      "price": 99.45,
+      "atm_strike": 100.0,
+      "expiration": "2026-03-20"
     },
     "options": {
-      "straddle": 5.65,
-      "em_percent": 9.201954397394138
+      "straddle": 8.55,
+      "em_percent": 8.597285067873303
     },
     "probabilities": {
       "down_1x": null,
@@ -480,19 +416,115 @@
     }
   },
   {
-    "ticker": "TGT",
+    "ticker": "BILI",
     "report": {
-      "date": "2026-03-03",
+      "date": "2026-03-05",
       "time": "BMO"
     },
     "market": {
-      "price": 113.03,
-      "atm_strike": 113.0,
+      "price": 27.41,
+      "atm_strike": 28.0,
       "expiration": "2026-03-06"
     },
     "options": {
-      "straddle": 10.23,
-      "em_percent": 9.050694505883394
+      "straddle": 2.29,
+      "em_percent": 8.35461510397665
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "AVGO",
+    "report": {
+      "date": "2026-03-04",
+      "time": "AMC"
+    },
+    "market": {
+      "price": 318.72,
+      "atm_strike": 317.5,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 25.86,
+      "em_percent": 8.113704819277109
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "KR",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 67.79,
+      "atm_strike": 68.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 3.99,
+      "em_percent": 5.885823867827113
+    },
+    "probabilities": {
+      "down_1x": null,
+      "down_1_5x": null,
+      "down_2x": null
+    },
+    "grading": {
+      "grade": null,
+      "score_total": null,
+      "data_ready": true
+    },
+    "meta": {
+      "status": "ok",
+      "tags": [
+        "TRADE"
+      ]
+    }
+  },
+  {
+    "ticker": "JD",
+    "report": {
+      "date": "2026-03-05",
+      "time": "BMO"
+    },
+    "market": {
+      "price": 25.22,
+      "atm_strike": 25.0,
+      "expiration": "2026-03-06"
+    },
+    "options": {
+      "straddle": 1.34,
+      "em_percent": 5.313243457573355
     },
     "probabilities": {
       "down_1x": null,
