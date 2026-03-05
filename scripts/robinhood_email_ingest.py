@@ -137,6 +137,8 @@ def append_trade(event: dict) -> bool:
     with open(LEDGER_PATH, "r+") as f:
         fcntl.flock(f.fileno(), fcntl.LOCK_EX)
         
+        appended = False
+        
         try:
             # Read current data
             f.seek(0)
@@ -155,6 +157,7 @@ def append_trade(event: dict) -> bool:
             
             # Append new event
             data["events"].append(event)
+            appended = True
             
             # Write back
             f.seek(0)
@@ -165,6 +168,14 @@ def append_trade(event: dict) -> bool:
             
         finally:
             fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+    
+    if appended:
+        # Clear performance cache so warnings are fresh
+        try:
+            import requests
+            requests.delete("http://localhost:3000/api/trades/performance-v2", timeout=5)
+        except Exception as e:
+            print(f"⚠️ Could not clear performance cache: {e}")
     
     return True
 
