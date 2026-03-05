@@ -155,6 +155,10 @@ def main():
 
     log(f"Raw earnings candidates: {len(candidates)}")
 
+    # Track filter statistics
+    filtered_no_weekly = 0
+    filtered_options_unavailable = 0
+
     # -----------------------------
     # QUOTE FETCH
     # -----------------------------
@@ -256,6 +260,14 @@ def main():
 
         if snapshot.get("status") == "options_unavailable":
             log(f"{ticker} skipped — options unavailable")
+            filtered_options_unavailable += 1
+            continue
+
+        # Filter: only weekly earnings options (DTE within earnings cycle: 0-10 days)
+        dte = snapshot.get("dte", 0)
+        if dte < 0 or dte > 10:
+            log(f"{ticker} skipped — no weekly earnings options available (dte={dte})")
+            filtered_no_weekly += 1
             continue
 
         result = {
@@ -293,8 +305,21 @@ def main():
         reverse=True,
     )
 
+    # Build output with metadata
+    from datetime import datetime
+    output_data = {
+        "metadata": {
+            "pipeline_run_time": datetime.now().isoformat(),
+            "total_candidates": len(candidates),
+            "filtered_no_weekly_options": filtered_no_weekly,
+            "filtered_options_unavailable": filtered_options_unavailable,
+            "tradeable_candidates": len(results)
+        },
+        "candidates": results
+    }
+
     with open(OUTPUT_FILE, "w") as f:
-        json.dump(results, f, indent=2)
+        json.dump(output_data, f, indent=2)
 
     log(f"Wrote {len(results)} final research results")
     log("=== Completed ===")

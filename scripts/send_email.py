@@ -33,9 +33,14 @@ def log(msg):
 def load_analysis():
     if not INPUT_FILE.exists():
         log(f"Missing file: {INPUT_FILE}")
-        return []
+        return [], {}
     with open(INPUT_FILE) as f:
-        return json.load(f)
+        data = json.load(f)
+    
+    # Handle both old format (array) and new format (object with metadata)
+    if isinstance(data, dict) and "candidates" in data:
+        return data.get("candidates", []), data.get("metadata", {})
+    return data, {}
 
 
 def format_percent(value):
@@ -44,7 +49,10 @@ def format_percent(value):
     return f"{value * 100:.0f}%"
 
 
-def build_html(data):
+def build_html(data, metadata=None):
+
+    if metadata is None:
+        metadata = {}
 
     if not data:
         return None
@@ -179,11 +187,28 @@ def build_html(data):
         {flag_html}
         """
 
+    # Build metadata summary if available
+    metadata_html = ""
+    if metadata.get("total_candidates"):
+        metadata_html = f"""
+    <div style="background-color: #f8f9fa; padding: 12px; border-radius: 4px; margin-bottom: 16px;">
+        <h4 style="margin: 0 0 8px 0;">Earnings Scan Summary</h4>
+        <p style="margin: 4px 0;">
+            <strong>Total Candidates Pulled:</strong> {metadata.get('total_candidates', '-')} | 
+            <strong>Filtered (No Weekly Options):</strong> {metadata.get('filtered_no_weekly_options', '-')} | 
+            <strong>Filtered (Options Unavailable):</strong> {metadata.get('filtered_options_unavailable', '-')} | 
+            <strong>Tradeable Candidates:</strong> {metadata.get('tradeable_candidates', '-')}
+        </p>
+    </div>
+        """
+
     html = f"""
     <html>
     <body style="font-family: Arial; font-size:13px;">
 
     <h2>Earnings Risk Report</h2>
+
+    {metadata_html}
 
     <p>
     Total: {total} |
@@ -249,13 +274,13 @@ def main():
 
     log("=== Starting send_email.py ===")
 
-    data = load_analysis()
+    data, metadata = load_analysis()
 
     if not data:
         log("No data to send")
         return
 
-    html = build_html(data)
+    html = build_html(data, metadata)
 
     if not html:
         log("HTML build failed")

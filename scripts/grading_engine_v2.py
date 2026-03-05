@@ -204,7 +204,15 @@ def main():
         return
 
     with open(INPUT_FILE) as f:
-        analysis_data = json.load(f)
+        input_data = json.load(f)
+    
+    # Handle both old format (array) and new format (object with metadata)
+    if isinstance(input_data, dict) and "candidates" in input_data:
+        metadata = input_data.get("metadata", {})
+        analysis_data = input_data.get("candidates", [])
+    else:
+        metadata = {}
+        analysis_data = input_data
 
     if not analysis_data:
         log("No analysis data - exiting")
@@ -219,8 +227,14 @@ def main():
         reverse=True
     )
 
+    # Write output with metadata preserved
+    output_data = {
+        "metadata": metadata,
+        "candidates": results
+    }
+    
     with open(OUTPUT_FILE, "w") as f:
-        json.dump(results, f, indent=2)
+        json.dump(output_data, f, indent=2)
 
     log(f"Graded {graded_count} tickers")
     log(f"Wrote to {OUTPUT_FILE}")
@@ -235,8 +249,14 @@ def main():
 
         history_file = HISTORY_DIR / f"analysis_{report_date}.json"
 
+        # Archive with metadata
+        archive_data = {
+            "metadata": metadata,
+            "candidates": results
+        }
+        
         with open(history_file, "w") as f:
-            json.dump(results, f, indent=2)
+            json.dump(archive_data, f, indent=2)
 
         log(f"ARCHIVE: Saved report to {history_file}")
 

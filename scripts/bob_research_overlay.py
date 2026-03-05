@@ -107,7 +107,15 @@ def main():
         return
     
     with open(INPUT_FILE) as f:
-        analysis_data = json.load(f)
+        input_data = json.load(f)
+    
+    # Handle both old format (array) and new format (object with metadata)
+    if isinstance(input_data, dict) and "candidates" in input_data:
+        metadata = input_data.get("metadata", {})
+        analysis_data = input_data.get("candidates", [])
+    else:
+        metadata = {}
+        analysis_data = input_data
     
     if not analysis_data:
         log("No analysis data - exiting")
@@ -156,9 +164,14 @@ def main():
         
         processed += 1
     
-    # Write output
+    # Write output with metadata preserved
+    output_data = {
+        "metadata": metadata,
+        "candidates": analysis_data
+    }
+    
     with open(OUTPUT_FILE, "w") as f:
-        json.dump(analysis_data, f, indent=2)
+        json.dump(output_data, f, indent=2)
     
     log(f"Processed {processed} tickers, added research to {succeeded}")
     log(f"Wrote to {OUTPUT_FILE}")

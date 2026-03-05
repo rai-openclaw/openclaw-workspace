@@ -42,9 +42,14 @@ def load_json(path):
 def load_analysis():
     if not INPUT_FILE.exists():
         log(f"Input file not found: {INPUT_FILE}")
-        return []
+        return [], {}
     with open(INPUT_FILE) as f:
-        return json.load(f)
+        data = json.load(f)
+    
+    # Handle both old format (array) and new format (object with metadata)
+    if isinstance(data, dict) and "candidates" in data:
+        return data.get("candidates", []), data.get("metadata", {})
+    return data, {}
 
 def get_price_change(ticker, days=10):
     """Get price change over last N days"""
@@ -190,7 +195,7 @@ def main():
     log("=== Starting risk_filter_engine_v1.py ===")
     
     # Load analysis
-    analysis_data = load_analysis()
+    analysis_data, metadata = load_analysis()
     
     if not analysis_data:
         log("No analysis data - exiting")
@@ -201,9 +206,14 @@ def main():
     # Process
     results, flagged_count, market_regime, macro_nearby = process_tickers(analysis_data)
     
-    # Write output
+    # Write output with metadata preserved
+    output_data = {
+        "metadata": metadata,
+        "candidates": results
+    }
+    
     with open(OUTPUT_FILE, "w") as f:
-        json.dump(results, f, indent=2)
+        json.dump(output_data, f, indent=2)
     
     log(f"Flagged {flagged_count} tickers")
     log(f"Market regime (VIX>23): {market_regime}")
