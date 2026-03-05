@@ -2674,6 +2674,32 @@
       "id": "0129d0a5ee76c924"
     },
     {
+      "timestamp": "2026-02-20T09:44:00.000Z",
+      "ticker": "PYPL",
+      "option_type": "PUT",
+      "strike": 45,
+      "expiration": "2026-02-27",
+      "contracts": 9,
+      "price": 3,
+      "event_type": "SELL_TO_OPEN",
+      "account": "Robinhood",
+      "source": "email_ingest",
+      "id": "33c451a4641db0f5"
+    },
+    {
+      "timestamp": "2026-02-20T09:45:00.000Z",
+      "ticker": "PYPL",
+      "option_type": "PUT",
+      "strike": 45,
+      "expiration": "2026-02-27",
+      "contracts": 1,
+      "price": 3,
+      "event_type": "SELL_TO_OPEN",
+      "account": "Robinhood",
+      "source": "email_ingest",
+      "id": "a25f91c8c7c371a1"
+    },
+    {
       "timestamp": "2026-02-23T15:27:00.000Z",
       "ticker": "HIMS",
       "option_type": "PUT",
@@ -2763,6 +2789,19 @@
       "account": "Robinhood",
       "source": "email_ingest",
       "id": "02a33e003933b8b8"
+    },
+    {
+      "timestamp": "2026-02-24T15:40:00.000Z",
+      "ticker": "PYPL",
+      "option_type": "PUT",
+      "strike": 45,
+      "expiration": "2026-02-27",
+      "contracts": 10,
+      "price": 0.48,
+      "event_type": "BUY_TO_CLOSE",
+      "account": "Robinhood",
+      "source": "email_ingest",
+      "id": "9b49ff199b5d30d6"
     },
     {
       "timestamp": "2026-02-24T15:44:00.000Z",

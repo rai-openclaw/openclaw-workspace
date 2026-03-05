@@ -1,5 +1,5 @@
 {
-  "lastQuoteUpdate": "2026-03-04T23:06:40.611Z",
+  "lastQuoteUpdate": "2026-03-04T23:51:46.607Z",
   "quotes": {
     "AAPL": {
       "symbol": "AAPL",
@@ -14,7 +14,7 @@
     "ROST": {
       "symbol": "ROST",
       "markPrice": 0,
-      "lastUpdated": "2026-03-04T23:06:40.611Z"
+      "lastUpdated": "2026-03-04T23:51:46.607Z"
     },
     "CRWD": {
       "symbol": "CRWD",
@@ -24,7 +24,7 @@
     "AVGO": {
       "symbol": "AVGO",
       "markPrice": 0,
-      "lastUpdated": "2026-03-04T23:06:40.611Z"
+      "lastUpdated": "2026-03-04T23:51:46.607Z"
     },
     "ELF": {
       "symbol": "ELF",
@@ -35,6 +35,16 @@
       "symbol": "TXRH",
       "markPrice": 0,
       "lastUpdated": "2026-03-04T22:58:38.836Z"
+    },
+    "NOW": {
+      "symbol": "NOW",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-04T23:51:46.607Z"
+    },
+    "OKTA": {
+      "symbol": "OKTA",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-04T23:51:46.607Z"
     }
   }
 }

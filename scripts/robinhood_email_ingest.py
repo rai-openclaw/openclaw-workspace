@@ -7,7 +7,7 @@ import hashlib
 import json
 import fcntl
 import os
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from pathlib import Path
 from typing import Dict, Optional, Any
 
@@ -42,9 +42,11 @@ def parse_robinhood_email(body: str) -> Optional[Dict[str, Any]]:
     option_type = trade_match.group(5).upper()
     expiration_raw = trade_match.group(6)
     
-    # Extract price per contract
+    # Extract price per contract, convert to per-share price
+    # Robinhood reports price per contract, but ledger expects price per share
     price_match = re.search(r"average price of \$?([\d.]+)", body)
-    price = float(price_match.group(1)) if price_match else None
+    contract_price = float(price_match.group(1)) if price_match else None
+    price = contract_price / 100 if contract_price is not None else None
     
     if price is None:
         print("⚠️ Could not extract price from email")
@@ -97,7 +99,7 @@ def parse_robinhood_email(body: str) -> Optional[Dict[str, Any]]:
     
     # Create event
     event = {
-        "timestamp": timestamp.isoformat(),
+        "timestamp": timestamp.replace(tzinfo=timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z'),
         "ticker": ticker,
         "option_type": option_type,
         "strike": strike,
