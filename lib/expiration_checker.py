@@ -33,6 +33,9 @@ def get_open_positions() -> List[Dict]:
     """
     Get current open positions from the ledger.
     Tracks position state by computing net contracts.
+    
+    NOTE: This tracks the CURRENT state based on SELL_TO_OPEN/BUY_TO_CLOSE events.
+    It does NOT automatically expire positions - use detect_expired_positions() for that.
     """
     data = load_ledger()
     events = data.get("events", [])
@@ -85,23 +88,65 @@ def _make_position_key(event: Dict) -> str:
     return f"{event['ticker']}_{event['strike']}_{event['expiration']}_{event.get('account', 'Robinhood')}"
 
 
-def detect_expired_positions(as_of_date: date = None) -> List[Dict]:
+def detect_expired_positions(as_of_date: date = None, account_filter: str = None) -> List[Dict]:
     """
     Detect options that have expired without being closed.
+    Creates EXPIRE_WORTHLESS events for remaining open contracts.
     
     Args:
         as_of_date: Date to check against. Defaults to today.
+        account_filter: Only process this account. If None, process all.
         
     Returns: List of expired position dicts ready for EXPIRE_WORTHLESS events
     """
     if as_of_date is None:
         as_of_date = date.today()
     
-    open_positions = get_open_positions()
+    data = load_ledger()
+    events = data.get("events", [])
     
+    # Track positions with remaining contracts
+    positions = {}
+    
+    for event in events:
+        # Skip if doesn't match account filter
+        if account_filter and event.get('account') != account_filter:
+            continue
+        
+        # Skip EXPIRE_WORTHLESS - already handled
+        if event.get("event_type") == "EXPIRE_WORTHLESS":
+            continue
+            
+        key = _make_position_key(event)
+        contracts = event.get("contracts", 0)
+        
+        if key not in positions:
+            positions[key] = {
+                "ticker": event["ticker"],
+                "strike": event["strike"],
+                "expiration": event["expiration"],
+                "option_type": event.get("option_type", "PUT"),
+                "contracts": 0,
+                "account": event.get("account", "Robinhood"),
+            }
+        
+        # Track net position
+        if event["event_type"] in ["SELL_TO_OPEN", "SELL_TO_CLOSE"]:
+            delta = contracts if event["event_type"] == "SELL_TO_OPEN" else -contracts
+        elif event["event_type"] in ["BUY_TO_OPEN", "BUY_TO_CLOSE"]:
+            delta = contracts if event["event_type"] == "BUY_TO_OPEN" else -contracts
+        else:
+            delta = 0
+        
+        positions[key]["contracts"] += delta
+    
+    # Find expired positions with remaining contracts
     expired = []
     
-    for pos in open_positions:
+    for key, pos in positions.items():
+        if pos["contracts"] <= 0:
+            continue
+            
         exp_date = date.fromisoformat(pos["expiration"]) if isinstance(pos["expiration"], str) else pos["expiration"]
         
         if exp_date < as_of_date:
@@ -110,10 +155,8 @@ def detect_expired_positions(as_of_date: date = None) -> List[Dict]:
                 "strike": pos["strike"],
                 "expiration": pos["expiration"],
                 "option_type": pos["option_type"],
-                "contracts": pos["contracts"],
+                "contracts": pos["contracts"],  # Remaining contracts to expire
                 "account": pos["account"],
-                "opened_at": pos.get("opened_at"),
-                "entry_price": pos.get("entry_price"),
             })
     
     return expired
@@ -132,12 +175,13 @@ def create_expire_worthless_event(position: Dict, expire_date: date = None) -> D
     if expire_date is None:
         expire_date = date.fromisoformat(position["expiration"]) if isinstance(position["expiration"], str) else position["expiration"]
     
-    timestamp = datetime.combine(expire_date, datetime.min.time()).isoformat()
+    # Use market close time (16:00) for expiration timestamp
+    timestamp = datetime.combine(expire_date, datetime.strptime("16:00", "%H:%M").time()).isoformat()
     
     event = {
         "timestamp": timestamp,
         "ticker": position["ticker"],
-        "option_type": position["option_type"],
+        "option_type": position.get("option_type", "PUT"),
         "strike": position["strike"],
         "expiration": position["expiration"],
         "contracts": position["contracts"],

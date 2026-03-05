@@ -2447,6 +2447,19 @@
       "id": "04ddd21c500b477e"
     },
     {
+      "timestamp": "2026-02-10T09:38:00.000Z",
+      "ticker": "DDOG",
+      "option_type": "PUT",
+      "strike": 85,
+      "expiration": "2026-02-13",
+      "contracts": 9,
+      "price": 0.02,
+      "event_type": "BUY_TO_CLOSE",
+      "account": "Robinhood",
+      "source": "email_ingest",
+      "id": "a3792771b16a3d49"
+    },
+    {
       "timestamp": "2026-02-17T15:55:00.000Z",
       "ticker": "PANW",
       "option_type": "PUT",
