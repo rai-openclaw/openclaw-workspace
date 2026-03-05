@@ -1847,6 +1847,21 @@
       "source_hash": "10e12b93942ecbb8"
     },
     {
+      "id": "f86f92cd-0224-4cfe-9cd0-3382da441e69",
+      "timestamp": "2026-03-04T08:00:00.000Z",
+      "account": "Schwab (IND)",
+      "ticker": "NOW",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 1,
+      "price": 36.8,
+      "strike": 150,
+      "expiration": "2026-04-17",
+      "notes": "Imported from Schwab CSV",
+      "created_at": "2026-03-04T23:01:47.620Z",
+      "source_hash": "9cff6ab7cafce38e"
+    },
+    {
       "id": "9bd0f103-6af0-4d71-ab74-6cb31e210afc",
       "timestamp": "2026-03-04T08:00:00.000Z",
       "account": "Schwab (IND)",
@@ -1862,6 +1877,21 @@
       "source_hash": "1b31738dc6b38ed7"
     },
     {
+      "id": "5aed4242-ceb0-4b2c-838e-4cc59ae03034",
+      "timestamp": "2026-03-04T08:00:00.000Z",
+      "account": "Schwab (IND)",
+      "ticker": "NOW",
+      "option_type": "PUT",
+      "event_type": "ASSIGNMENT",
+      "contracts": 1,
+      "price": 0,
+      "strike": 170,
+      "expiration": "2026-04-17",
+      "notes": "Imported from Schwab CSV",
+      "created_at": "2026-03-04T23:01:47.620Z",
+      "source_hash": "b4858bbd87367f41"
+    },
+    {
       "id": "fbbe4b28-cbec-4cc3-9b32-bff352716ea8",
       "timestamp": "2026-03-03T08:00:00.000Z",
       "account": "Schwab (IND)",
@@ -1875,6 +1905,36 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "a0a7408e3149cef7"
+    },
+    {
+      "id": "9bc42afc-34e7-49dc-84d3-92b52099b43c",
+      "timestamp": "2026-03-03T08:00:00.000Z",
+      "account": "Schwab (IND)",
+      "ticker": "NOW",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 1,
+      "price": 35.5,
+      "strike": 150,
+      "expiration": "2026-04-17",
+      "notes": "Imported from Schwab CSV",
+      "created_at": "2026-03-04T23:01:47.620Z",
+      "source_hash": "0b299e6266fcb31d"
+    },
+    {
+      "id": "55ddce41-ca20-4521-a2dc-2762b40e214c",
+      "timestamp": "2026-03-03T08:00:00.000Z",
+      "account": "Schwab (IND)",
+      "ticker": "NOW",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 1,
+      "price": 55.4,
+      "strike": 170,
+      "expiration": "2026-04-17",
+      "notes": "Imported from Schwab CSV",
+      "created_at": "2026-03-04T23:01:47.620Z",
+      "source_hash": "0bd8ad3f52d7e51c"
     },
     {
       "id": "e959d88b-5ca8-42e0-be64-aecc8e6a1009",
@@ -3230,20 +3290,6 @@
       "account": "Robinhood",
       "source": "expiration_checker",
       "id": "dd74a799950997d0"
-    },
-    {
-      "id": "0d48d15e-a961-48d2-8d77-b9d72cc3e8e1",
-      "timestamp": "2026-02-18T15:40:00.000Z",
-      "account": "Robinhood",
-      "ticker": "EBAY",
-      "option_type": "PUT",
-      "event_type": "SELL_TO_OPEN",
-      "contracts": 5,
-      "price": 0.35,
-      "strike": 71,
-      "expiration": "2026-02-20",
-      "notes": "",
-      "created_at": "2026-03-05T04:12:17.387Z"
     }
   ]
 }
