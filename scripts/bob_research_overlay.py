@@ -117,8 +117,17 @@ def main():
         metadata = {}
         analysis_data = input_data
     
+    # Always write output file, even if empty - prevents stale data bug
     if not analysis_data:
-        log("No analysis data - exiting")
+        log("No candidates — writing empty research output")
+        output_data = {
+            "metadata": metadata,
+            "candidates": []
+        }
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump(output_data, f, indent=2)
+        log(f"Wrote empty output to {OUTPUT_FILE}")
+        log("=== Completed ===")
         return
     
     log(f"Loaded {len(analysis_data)} tickers")
