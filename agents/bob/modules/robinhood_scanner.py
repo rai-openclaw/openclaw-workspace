@@ -200,15 +200,29 @@ def parse_email_for_trade(msg: Message) -> Optional[Dict[str, Any]]:
         exp_month = int(expiration_match.group(1))
         exp_day = int(expiration_match.group(2))
         
-        # Parse premium/price
+        # Parse premium/price - check for "per contract" to normalize
+        # Robinhood emails show price in different formats:
+        # - "executed at an average price of $15.00" = per contract (need to divide by 100)
+        # - "$15.00 per contract" = per contract (need to divide by 100)
+        # Our ledger stores per-share price, so normalize: $15.00/contract -> $0.15/share
+        price = None
+        per_contract = "per contract" in body.lower()
+        
         price_match = re.search(r'executed at an average price of\s*\$\s*(\d+(?:\.\d+)?)', body)
         if not price_match:
             price_match = re.search(r'approximate\s*\$\s*(\d+(?:\.\d+)?)', body)
         if not price_match:
             price_match = re.search(r'\$(\d+(?:\.\d+)?)\s*per\s*contract', body)
-        if not price_match:
+        
+        if price_match:
+            price = float(price_match.group(1))
+            # Normalize: if "per contract" is mentioned, convert to per-share (divide by 100)
+            if per_contract:
+                price = price / 100.0
+                logger.debug(f"Normalized per-contract price: {price_match.group(1)} -> {price}")
+        
+        if price is None:
             return None
-        price = float(price_match.group(1))
         
         # Parse timestamp from email body
         # Format: "March 5, 2026 at 10:18 AM" or similar
@@ -241,6 +255,7 @@ def parse_email_for_trade(msg: Message) -> Optional[Dict[str, Any]]:
         # Create event object
         event = {
             "timestamp": formatted_timestamp,
+            "account": "Robinhood",
             "ticker": ticker,
             "option_type": option_type,
             "strike": strike,
