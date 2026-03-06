@@ -192,7 +192,7 @@
       "title": "Display Idea ID on each Kanban card",
       "category": "Tech",
       "effort": "Small",
-      "status": "captured",
+      "status": "built",
       "source": "user-added",
       "context": "Add the idea ID (e.g., idea-014) to each card in the Ideas Board so user can reference ideas by ID instead of typing full title.",
       "your_notes": "",
@@ -202,7 +202,7 @@
       "priority": "normal",
       "tags": [],
       "related_ideas": [],
-      "progress_percent": 0,
+      "progress_percent": 100,
       "last_updated": "2026-02-25T02:19:44.650Z",
       "order": 1,
       "blocked": false
@@ -256,6 +256,36 @@
       "last_updated": "2026-02-25T21:38:16.572656Z",
       "order": 0,
       "blocked": false
+    },
+    {
+      "id": "idea-019",
+      "title": "Add Premium Per Day metric (theta efficiency)",
+      "description": "Premium per Day = premium_collected / days_held. This tells which trades pay the most for the time capital is locked. Example: GAP \\ premium over 5 days = \\/day, CRWD \\ over 1 day = \\/day. This is often more actionable than ROC.",
+      "status": "captured",
+      "priority": "high",
+      "tags": [
+        "options",
+        "metrics",
+        "theta",
+        "performance"
+      ],
+      "created_at": "2026-03-06",
+      "progress_percent": 0
+    },
+    {
+      "id": "idea-020",
+      "title": "Add P/L Distribution Chart",
+      "description": "Trade outcome distribution visualization showing profit/loss ranges. Each bar shows count of trades in a bucket (e.g., -$1500 to -$1000, -$1000 to -$500, etc.). Quickly reveals hidden tail risk in CSP strategies. Example: 1 trade -$1500 to -$1000, 3 trades -$1000 to -$500, 9 trades \\/bin/zsh to \\, etc.",
+      "status": "captured",
+      "priority": "medium",
+      "tags": [
+        "visualization",
+        "performance",
+        "risk",
+        "charts"
+      ],
+      "created_at": "2026-03-06",
+      "progress_percent": 0
     }
   ],
   "last_updated": "2026-02-25T21:38:16.572661Z"
