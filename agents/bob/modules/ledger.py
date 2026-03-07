@@ -24,10 +24,15 @@ def generate_trade_id(event: Dict[str, Any]) -> str:
     """
     # Normalize fields
     ticker = str(event.get('ticker', '')).upper().strip()
-    strike = float(event.get('strike', 0))
+    strike_raw = float(event.get('strike', 0))
+    strike = int(strike_raw) if strike_raw == int(strike_raw) else strike_raw
     expiration = str(event.get('expiration', ''))
     contracts = int(event.get('contracts', 0))
-    price = round(float(event.get('price', 0)), 4)
+    price_raw = float(event.get('price', 0))
+    price = round(price_raw, 4)
+    # Remove decimal for whole numbers to match JavaScript parseFloat behavior
+    if price == int(price):
+        price = int(price)
     event_type = str(event.get('event_type', ''))
     option_type = str(event.get('option_type', ''))
     account = str(event.get('account', ''))

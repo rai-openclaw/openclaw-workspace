@@ -378,13 +378,13 @@ def check_and_create_expirations() -> int:
             
             # Only expire if:
             # - expiration_date < today (expired yesterday or earlier)
-            # - OR expiration_date == today AND current_time >= 1:00 PM PST (21:00 UTC)
-            from datetime import time as dt_time
-            current_time_utc = datetime.now(timezone.utc).time()
-            cutoff_time_utc = dt_time(21, 0)  # 9 PM UTC = 1 PM PST
+            # - OR expiration_date == today AND current_time >= 1:00 PM PST
+            from zoneinfo import ZoneInfo
+            current_time_pst = datetime.now(ZoneInfo("America/Los_Angeles")).hour
+            cutoff_hour_pst = 13  # 1 PM PST
             
-            if exp_date == today and current_time_utc < cutoff_time_utc:
-                continue  # Don't expire during morning scans
+            if exp_date == today and current_time_pst < cutoff_hour_pst:
+                continue  # Don't expire during morning scans (before 1 PM PST)
             
             # Create expiration event
             # Generate trade_id for idempotency check (include option_type)
