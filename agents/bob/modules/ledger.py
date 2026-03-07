@@ -13,9 +13,28 @@ LEDGER_PATH = Path("~/.openclaw/workspace/data/options/trades.json").expanduser(
 
 
 def generate_trade_id(event: Dict[str, Any]) -> str:
-    """Generate deterministic ID from trade parameters (excluding timestamp for duplicate detection)."""
-    # Exclude timestamp - same trade executed at different times should have same ID
-    event_id_input = f"{event.get('ticker', '')}{event.get('strike', '')}{event.get('expiration', '')}{event.get('contracts', '')}{event.get('price', '')}{event.get('event_type', '')}"
+    """
+    Generate deterministic ID from trade parameters (excluding timestamp for duplicate detection).
+    
+    Normalization rules:
+    - ticker: uppercase + stripped
+    - strike: float
+    - contracts: int
+    - price: rounded to 4 decimals
+    """
+    # Normalize fields
+    ticker = str(event.get('ticker', '')).upper().strip()
+    strike = float(event.get('strike', 0))
+    expiration = str(event.get('expiration', ''))
+    contracts = int(event.get('contracts', 0))
+    price = round(float(event.get('price', 0)), 4)
+    event_type = str(event.get('event_type', ''))
+    option_type = str(event.get('option_type', ''))
+    account = str(event.get('account', ''))
+    
+    # Build signature (excluding timestamp)
+    event_id_input = f"{account}|{ticker}|{option_type}|{strike}|{expiration}|{contracts}|{price}|{event_type}"
+    
     return hashlib.sha1(event_id_input.encode()).hexdigest()[:16]
 
 

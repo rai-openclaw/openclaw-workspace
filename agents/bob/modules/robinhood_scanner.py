@@ -272,6 +272,166 @@ def parse_email_for_trade(msg: Message) -> Optional[Dict[str, Any]]:
         return None
 
 
+def check_and_create_expirations() -> int:
+    """
+    Check for expired Robinhood options and create EXPIRE_WORTHLESS events.
+    
+    Rules:
+    - Only process Robinhood positions (not Schwab)
+    - Open position = SELL_TO_OPEN exists + no BUY_TO_CLOSE + no ASSIGNMENT + no EXPIRE_WORTHLESS
+    - Expiration condition: expiration_date < today
+    - Idempotent: never create duplicate expiration events
+    
+    Returns:
+        Number of expiration events created
+    """
+    import hashlib
+    from datetime import date, datetime, timezone
+    from pathlib import Path
+    
+    HOME_DIR = Path.home()
+    LEDGER_PATH = HOME_DIR / ".openclaw" / "workspace" / "data" / "options" / "trades.json"
+    
+    today = date.today()
+    # Market close on expiration day: 1:05 PM PST = 21:05 UTC
+    expiration_timestamp = datetime.now(timezone.utc).replace(
+        hour=21, minute=5, second=0, microsecond=0
+    )
+    
+    try:
+        # Load ledger
+        try:
+            with open(LEDGER_PATH) as f:
+                ledger = json.load(f)
+        except FileNotFoundError:
+            logger.error(f"Ledger not found: {LEDGER_PATH}. Cannot continue ingestion.")
+            return {"error": "Ledger file not found", "status": "failed"}
+        except json.JSONDecodeError as e:
+            logger.error(f"Ledger corrupted (invalid JSON): {LEDGER_PATH}. Error: {e}. Manual restore required.")
+            return {"error": f"Ledger JSON corrupted: {e}", "status": "failed"}
+        
+        events = ledger.get("events", [])
+        
+        # Build position map: key -> {opens, closes, expirations, account}
+        # Key: ticker|strike|expiration
+        position_map = {}
+        
+        for event in events:
+            account = event.get("account", "")
+            if account != "Robinhood":
+                continue
+            
+            ticker = event.get("ticker", "")
+            strike = event.get("strike", 0)
+            expiration = event.get("expiration", "")
+            event_type = event.get("event_type", "")
+            contracts = event.get("contracts", 0)
+            option_type = event.get("option_type", "PUT")  # Default to PUT for expirations
+            
+            key = f"{ticker}|{strike}|{expiration}"
+            
+            if key not in position_map:
+                position_map[key] = {
+                    "ticker": ticker,
+                    "strike": strike,
+                    "expiration": expiration,
+                    "account": account,
+                    "option_type": option_type,
+                    "opens": 0,
+                    "closes": 0,
+                    "assignments": 0,
+                    "expired": 0
+                }
+            
+            if event_type == "SELL_TO_OPEN":
+                position_map[key]["opens"] += contracts
+                position_map[key]["option_type"] = option_type  # Capture from opening event
+            elif event_type == "BUY_TO_CLOSE":
+                position_map[key]["closes"] += contracts
+            elif event_type == "ASSIGNMENT":
+                position_map[key]["assignments"] += contracts
+            elif event_type == "EXPIRE_WORTHLESS":
+                position_map[key]["expired"] += contracts
+        
+        # Find open positions that have expired
+        expirations_to_create = []
+        
+        for key, pos in position_map.items():
+            opens = pos["opens"]
+            closes = pos["closes"]
+            assignments = pos["assignments"]
+            expired = pos["expired"]
+            
+            # Check if position is open
+            net_position = opens - closes - assignments - expired
+            if net_position <= 0:
+                continue
+            
+            # Check if expired
+            try:
+                exp_date = datetime.strptime(pos["expiration"], "%Y-%m-%d").date()
+            except:
+                continue
+            
+            if exp_date > today:
+                continue
+            
+            # Only expire if:
+            # - expiration_date < today (expired yesterday or earlier)
+            # - OR expiration_date == today AND current_time >= 1:00 PM PST (21:00 UTC)
+            from datetime import time as dt_time
+            current_time_utc = datetime.now(timezone.utc).time()
+            cutoff_time_utc = dt_time(21, 0)  # 9 PM UTC = 1 PM PST
+            
+            if exp_date == today and current_time_utc < cutoff_time_utc:
+                continue  # Don't expire during morning scans
+            
+            # Create expiration event
+            # Generate trade_id for idempotency check (include option_type)
+            event_id_input = f"{pos['ticker']}{pos['strike']}{pos['expiration']}{pos.get('option_type', 'PUT')}EXPIRE_WORTHLESS{pos['account']}"
+            trade_id = hashlib.sha1(event_id_input.encode()).hexdigest()[:16]
+            
+            # Check if already expired (include option_type in key)
+            existing = any(
+                e.get("id") == trade_id 
+                for e in events 
+                if e.get("event_type") == "EXPIRE_WORTHLESS"
+                and f"{e.get('ticker')}|{e.get('strike')}|{e.get('expiration')}|{e.get('option_type', 'PUT')}" == f"{pos['ticker']}|{pos['strike']}|{pos['expiration']}|{pos.get('option_type', 'PUT')}"
+            )
+            
+            if existing:
+                continue
+            
+            expirations_to_create.append({
+                "id": trade_id,
+                "event_type": "EXPIRE_WORTHLESS",
+                "account": pos["account"],
+                "ticker": pos["ticker"],
+                "strike": pos["strike"],
+                "option_type": pos.get("option_type", "PUT"),
+                "expiration": pos["expiration"],
+                "contracts": net_position,
+                "price": 0,
+                "timestamp": expiration_timestamp.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+            })
+        
+        # Write expirations to ledger via append_trade() for thread-safety
+        created_count = 0
+        for exp_event in expirations_to_create:
+            # Use append_trade which handles duplicate detection and file locking
+            success, message = append_trade(exp_event)
+            if success:
+                created_count += 1
+                logger.info(f"Expiration created: {message}")
+        
+        logger.info(f"Expiration check: {created_count} events created")
+        return created_count
+        
+    except Exception as e:
+        logger.warning(f"Expiration check failed: {e}")
+        return 0
+
+
 def run(schedule: str) -> Dict[str, Any]:
     """
     Main ingestion runner.
@@ -318,6 +478,10 @@ def run(schedule: str) -> Dict[str, Any]:
             logger.info(message)
         
         duplicates = len(trades) - new_count
+        
+        # 6. Run expiration checker (always runs, even if no new emails)
+        expirations_created = check_and_create_expirations()
+        
         runtime_ms = int((time.time() - start_time) * 1000)
         
         # 6. Emit LEDGER_UPDATED (non-blocking)
@@ -326,11 +490,12 @@ def run(schedule: str) -> Dict[str, Any]:
         except Exception as e:
             logger.warning(f"Event emission failed: {e}")
         
-        logger.info(f"Ingestion complete: {new_count} new, {duplicates} duplicates, {runtime_ms}ms")
+        logger.info(f"Ingestion complete: {new_count} new, {duplicates} duplicates, {expirations_created} expirations, {runtime_ms}ms")
         
         return {
             "new_trades": new_count,
             "duplicates_skipped": duplicates,
+            "expirations_created": expirations_created,
             "runtime_ms": runtime_ms,
             "status": "success"
         }
