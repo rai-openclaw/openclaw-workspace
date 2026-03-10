@@ -13,9 +13,9 @@ import requests
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load .env file from workspace root
+# Load .env file from workspace root (override shell env)
 env_path = Path(__file__).resolve().parent.parent / ".env"
-load_dotenv(dotenv_path=env_path)
+load_dotenv(dotenv_path=env_path, override=True)
 
 # Configure logging to pipeline.log
 LOG_FILE = Path.home() / ".openclaw" / "workspace" / "logs" / "pipeline.log"

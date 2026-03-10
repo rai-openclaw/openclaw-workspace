@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-02-26T06:40:10.713642",
+  "last_updated": "2026-03-09",
   "entries": [
     {
       "ticker": "CVNA",
@@ -2268,6 +2268,22 @@
       "key_insight": "",
       "bottom_line": "",
       "last_researched": "2026-02-26",
+      "research_history": []
+    },
+    {
+      "ticker": "KSS",
+      "company": "KSS",
+      "grade": "N/A",
+      "total_score": 0,
+      "expected_move": null,
+      "earnings_date": "2025-11-26",
+      "earnings_time": "AMC",
+      "sector": "XRT",
+      "price_before": 15.73,
+      "price_after": 24.1,
+      "reaction_percent": 53.21,
+      "source": "price_detection",
+      "last_researched": "2026-03-09",
       "research_history": []
     }
   ]

@@ -15,7 +15,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "4faac1a0abdb49ea",
-      "trade_id": "1ec05f8af0c97bb9"
+      "trade_id": "1ec05f8af0c97bb9",
+      "source": "schwab_csv"
     },
     {
       "id": "f5ebd22e-7c88-4f4e-b60c-08d9b09b60ed",
@@ -31,7 +32,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "bc43aa71b1beaf3d",
-      "trade_id": "42c2ce396cbf2528"
+      "trade_id": "42c2ce396cbf2528",
+      "source": "schwab_csv"
     },
     {
       "id": "55f84543-ebd0-4ae4-9f28-1a350eaa1c89",
@@ -47,7 +49,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "d15d0ecdbd84e907",
-      "trade_id": "f30db0b798de8126"
+      "trade_id": "f30db0b798de8126",
+      "source": "schwab_csv"
     },
     {
       "id": "76612cee-aa95-45bb-8f15-cfebf8518e6b",
@@ -63,7 +66,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "81b415f755aefcf6",
-      "trade_id": "f0c2949f3148ebf1"
+      "trade_id": "f0c2949f3148ebf1",
+      "source": "schwab_csv"
     },
     {
       "id": "0f080b90-7b9d-4582-a897-13a246f4c53e",
@@ -79,7 +83,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "4f0267c2235fc650",
-      "trade_id": "dd08288165616e60"
+      "trade_id": "dd08288165616e60",
+      "source": "schwab_csv"
     },
     {
       "id": "083ea9b9-d27d-424a-b26d-7eb0bf8179d9",
@@ -95,7 +100,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "14e290082ca59f2c",
-      "trade_id": "d3462eecaa533a34"
+      "trade_id": "d3462eecaa533a34",
+      "source": "schwab_csv"
     },
     {
       "id": "4d30e94e-b11c-473c-be4f-018d8af91438",
@@ -111,7 +117,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "df2dad594d347d5b",
-      "trade_id": "3e40b8cb38c50178"
+      "trade_id": "3e40b8cb38c50178",
+      "source": "schwab_csv"
     },
     {
       "id": "ffc85b81-ab64-46f2-a48c-c4b0f7139e22",
@@ -127,7 +134,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "cc9f4cc057894f3d",
-      "trade_id": "43b0497f7470be4e"
+      "trade_id": "43b0497f7470be4e",
+      "source": "schwab_csv"
     },
     {
       "id": "cae09570-ce73-4e72-a365-2b17e0575b70",
@@ -143,7 +151,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "f2af789f95bd7e8b",
-      "trade_id": "d360b283255038a5"
+      "trade_id": "d360b283255038a5",
+      "source": "schwab_csv"
     },
     {
       "id": "8a938147-e15f-401f-bbb1-545474175478",
@@ -159,7 +168,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "0acebc0696ecd293",
-      "trade_id": "a76ab36ed740d637"
+      "trade_id": "a76ab36ed740d637",
+      "source": "schwab_csv"
     },
     {
       "id": "74309997-9dd0-4f2e-b9c4-853261475607",
@@ -175,7 +185,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "2677b2c801c137f7",
-      "trade_id": "d436c26b7f6a2712"
+      "trade_id": "d436c26b7f6a2712",
+      "source": "schwab_csv"
     },
     {
       "id": "d7947409-4dad-4500-8692-86e56d9f1e18",
@@ -191,7 +202,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "05fc3c1f96dd98ca",
-      "trade_id": "6fb948bb49e67446"
+      "trade_id": "6fb948bb49e67446",
+      "source": "schwab_csv"
     },
     {
       "id": "9618d58b-17b8-4d65-a8ec-a1ce77ade720",
@@ -207,7 +219,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "ee1ff4afb4aaedf1",
-      "trade_id": "2b26a5a3152d05ef"
+      "trade_id": "2b26a5a3152d05ef",
+      "source": "schwab_csv"
     },
     {
       "id": "0be18d82-da07-47bd-b89b-39c4dc75d9f1",
@@ -223,7 +236,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "d17511e70071ece1",
-      "trade_id": "f1b2c59e210dcfb9"
+      "trade_id": "f1b2c59e210dcfb9",
+      "source": "schwab_csv"
     },
     {
       "id": "2e7e12d6-f106-489e-95bb-f88f1ea7ff2e",
@@ -239,7 +253,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "182681f242d5f7cc",
-      "trade_id": "3b47635d040428ad"
+      "trade_id": "3b47635d040428ad",
+      "source": "schwab_csv"
     },
     {
       "id": "c63966e5-f46e-4284-931f-74be6a68801d",
@@ -255,7 +270,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.722Z",
       "source_hash": "c988ac426a8ee065",
-      "trade_id": "96377eb36144dfd2"
+      "trade_id": "96377eb36144dfd2",
+      "source": "schwab_csv"
     },
     {
       "id": "6599183c-d274-4bf9-aa81-9710ed2b7143",
@@ -271,7 +287,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "7bd0a19419f1690c",
-      "trade_id": "e67bdec7e5b5d684"
+      "trade_id": "e67bdec7e5b5d684",
+      "source": "schwab_csv"
     },
     {
       "id": "975bcb99-e9d0-4455-bd65-18f687a713d1",
@@ -287,7 +304,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "6e530e3224d22160",
-      "trade_id": "67e6f483bddc540c"
+      "trade_id": "67e6f483bddc540c",
+      "source": "schwab_csv"
     },
     {
       "id": "69656c3d-bd3c-47d0-becd-7c073ce5491c",
@@ -303,7 +321,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "507b1d1a7063ed05",
-      "trade_id": "e76c0a3900ff1792"
+      "trade_id": "e76c0a3900ff1792",
+      "source": "schwab_csv"
     },
     {
       "id": "2bf607e9-5225-486f-874b-a1ec3f197955",
@@ -319,7 +338,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2c7fdc3409e96bf1",
-      "trade_id": "ba3091827ddfdba4"
+      "trade_id": "ba3091827ddfdba4",
+      "source": "schwab_csv"
     },
     {
       "id": "00e92cc7-fac4-4247-a9e1-471d8e8c62ff",
@@ -335,7 +355,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "71baf3346a4baabf",
-      "trade_id": "fad2107b77ceef08"
+      "trade_id": "fad2107b77ceef08",
+      "source": "schwab_csv"
     },
     {
       "id": "a0bafb5c-54cd-4bf1-94b9-aed2c1017bde",
@@ -351,7 +372,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "acce281905e0c652",
-      "trade_id": "5903a9b773b8f69a"
+      "trade_id": "5903a9b773b8f69a",
+      "source": "schwab_csv"
     },
     {
       "id": "c4ddbb66-5299-4d03-a1e8-0d55941e296f",
@@ -367,7 +389,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "8d879ec781a60f25",
-      "trade_id": "7748f9148897bb01"
+      "trade_id": "7748f9148897bb01",
+      "source": "schwab_csv"
     },
     {
       "id": "335b0903-41e1-49c9-92e7-6b03d2f64503",
@@ -383,7 +406,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "537616934bad7411",
-      "trade_id": "72a8bf08e568d182"
+      "trade_id": "72a8bf08e568d182",
+      "source": "schwab_csv"
     },
     {
       "id": "e0a3d6d8-5f8c-4e6b-9516-a59f660d42ee",
@@ -399,7 +423,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2e0817a73f1e7d8d",
-      "trade_id": "a7bd57806d1b7e7d"
+      "trade_id": "a7bd57806d1b7e7d",
+      "source": "schwab_csv"
     },
     {
       "id": "2f689f06-fcd9-429e-baf4-0ee12ca71433",
@@ -415,7 +440,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2691d26146b47ec5",
-      "trade_id": "f2ae151ab9d2ada8"
+      "trade_id": "f2ae151ab9d2ada8",
+      "source": "schwab_csv"
     },
     {
       "id": "6c53f32c-709b-44a4-a20f-e070b3bbff37",
@@ -431,7 +457,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "92d07d64e7ba5074",
-      "trade_id": "8e9a5c4f230bdde4"
+      "trade_id": "8e9a5c4f230bdde4",
+      "source": "schwab_csv"
     },
     {
       "id": "7039c23c-7c17-49a5-9fd0-16cf881c559a",
@@ -447,7 +474,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "311e54f8c3a644f9",
-      "trade_id": "35fe0aecb6514492"
+      "trade_id": "35fe0aecb6514492",
+      "source": "schwab_csv"
     },
     {
       "id": "e741b77e-13dd-456b-9732-0ef1998c3f62",
@@ -463,7 +491,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "239c8d32af5fe9d4",
-      "trade_id": "ac76b915f0c75cdd"
+      "trade_id": "ac76b915f0c75cdd",
+      "source": "schwab_csv"
     },
     {
       "id": "25df9f6b-b068-4e0f-a9f1-f1acee7f9777",
@@ -479,7 +508,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ea7f9d70b9b706a3",
-      "trade_id": "ce7314d6ee6ee44a"
+      "trade_id": "ce7314d6ee6ee44a",
+      "source": "schwab_csv"
     },
     {
       "id": "bf44e400-fd26-4ff7-a7b3-2de5ccb0be71",
@@ -495,7 +525,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "621e6feaadcb45cb",
-      "trade_id": "af13022fb992f3ef"
+      "trade_id": "af13022fb992f3ef",
+      "source": "schwab_csv"
     },
     {
       "id": "2901ac52-23f1-4be7-af7b-9dfd51ec17c4",
@@ -511,7 +542,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "d3c286c39728a342",
-      "trade_id": "e1bc96de85147429"
+      "trade_id": "e1bc96de85147429",
+      "source": "schwab_csv"
     },
     {
       "id": "0c3f2f5c-0821-4332-88b2-956a436cfcec",
@@ -527,7 +559,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "e464bbbe8038de5e",
-      "trade_id": "b5cf132957b536d2"
+      "trade_id": "b5cf132957b536d2",
+      "source": "schwab_csv"
     },
     {
       "id": "5c7d65ba-39e1-4521-8e07-7e8c0eb50031",
@@ -543,7 +576,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "b76cb5406732f5c6",
-      "trade_id": "b634fe580afee7a6"
+      "trade_id": "b634fe580afee7a6",
+      "source": "schwab_csv"
     },
     {
       "id": "556a29d4-998d-44d8-b0b1-3ecc9f1d0d99",
@@ -559,7 +593,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "89397bb49d0973df",
-      "trade_id": "24db626ffc8c2cc7"
+      "trade_id": "24db626ffc8c2cc7",
+      "source": "schwab_csv"
     },
     {
       "id": "737b0052-f05e-48cb-a95b-1d5d70fd72b1",
@@ -575,7 +610,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f5c727bdb4325bc7",
-      "trade_id": "c9e6f654db8a741d"
+      "trade_id": "c9e6f654db8a741d",
+      "source": "schwab_csv"
     },
     {
       "id": "1ab479f2-6a66-49cb-acaf-2757108231f9",
@@ -591,7 +627,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f655decc395b6450",
-      "trade_id": "1ea49d36c22d871c"
+      "trade_id": "1ea49d36c22d871c",
+      "source": "schwab_csv"
     },
     {
       "id": "71555f46-565c-4d64-b5c4-cda7b1fbc429",
@@ -607,7 +644,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f05b1e1af3e6e05f",
-      "trade_id": "2427b7f78febd0de"
+      "trade_id": "2427b7f78febd0de",
+      "source": "schwab_csv"
     },
     {
       "id": "79d6353e-697c-4247-86f1-a259eb637cfa",
@@ -623,7 +661,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "553ddeb33bb09f44",
-      "trade_id": "6f67ed4cb5238e68"
+      "trade_id": "6f67ed4cb5238e68",
+      "source": "schwab_csv"
     },
     {
       "id": "a7b7e90d-b5a6-4d79-b752-5320dbfc6c9c",
@@ -639,7 +678,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "92fead1a01507105",
-      "trade_id": "95f5d2924ff00fd2"
+      "trade_id": "95f5d2924ff00fd2",
+      "source": "schwab_csv"
     },
     {
       "id": "678f514f-7d41-41bb-89b1-6c6346628cba",
@@ -655,7 +695,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "4e92b6d983812ed0",
-      "trade_id": "d322c5d3505a7039"
+      "trade_id": "d322c5d3505a7039",
+      "source": "schwab_csv"
     },
     {
       "id": "468cd296-1910-49df-a2c5-feba152c484e",
@@ -671,7 +712,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "49f417acbc0c8cb9",
-      "trade_id": "b34a432ff8378779"
+      "trade_id": "b34a432ff8378779",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-02-27T00:00:00",
@@ -683,7 +725,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "ccae2295b47a3b05",
       "trade_id": "2abf478d0837e50f"
     },
@@ -697,7 +739,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "a230604c8707256d",
       "trade_id": "b5375fc1f2022dea"
     },
@@ -711,7 +753,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "12d1083808b9f6d0",
       "trade_id": "dd6f39d585168816"
     },
@@ -725,7 +767,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "edfb10ac25eae24f",
       "trade_id": "5fc1e18d9bd1f764"
     },
@@ -739,7 +781,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "8d105e5846744fca",
       "trade_id": "0931f08869c90546"
     },
@@ -757,7 +799,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f913251703948cab",
-      "trade_id": "73bb6c2ffa05ad8e"
+      "trade_id": "73bb6c2ffa05ad8e",
+      "source": "schwab_csv"
     },
     {
       "id": "aaab25a2-6a32-4278-80a4-a8ce2b3c6e5d",
@@ -773,7 +816,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "b68509e71555887c",
-      "trade_id": "155c8cf7a9fc5240"
+      "trade_id": "155c8cf7a9fc5240",
+      "source": "schwab_csv"
     },
     {
       "id": "0af96cb8-7575-484c-aab4-1d88329ac15f",
@@ -789,7 +833,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "c33a7c423bb0fab8",
-      "trade_id": "0ffbe5033fe0c2d3"
+      "trade_id": "0ffbe5033fe0c2d3",
+      "source": "schwab_csv"
     },
     {
       "id": "78880b8e-0ab3-4ffc-89f0-18028d49006b",
@@ -805,7 +850,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "d61f0db24d589643",
-      "trade_id": "52a8afbd2ad642b6"
+      "trade_id": "52a8afbd2ad642b6",
+      "source": "schwab_csv"
     },
     {
       "id": "0df34469-e943-4b82-8112-8499ddd5b71e",
@@ -821,7 +867,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "31e1cc4c55166a50",
-      "trade_id": "4d1424c5d405ccea"
+      "trade_id": "4d1424c5d405ccea",
+      "source": "schwab_csv"
     },
     {
       "id": "2cb86ab0-a7f8-45d3-b75d-9d6fea281784",
@@ -837,7 +884,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "b1c4540e990f6419",
-      "trade_id": "8b0c0ee805ab844d"
+      "trade_id": "8b0c0ee805ab844d",
+      "source": "schwab_csv"
     },
     {
       "id": "00b8bc05-1be4-481b-9d65-2ecf0864f951",
@@ -853,7 +901,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f77e947fa72b11d6",
-      "trade_id": "dcab85ef3c12a688"
+      "trade_id": "dcab85ef3c12a688",
+      "source": "schwab_csv"
     },
     {
       "id": "7fcd3666-5213-4829-811b-b7b25692219e",
@@ -869,7 +918,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "e965e90ef551c4d4",
-      "trade_id": "47948a9a48d212b0"
+      "trade_id": "47948a9a48d212b0",
+      "source": "schwab_csv"
     },
     {
       "id": "3c99af75-8c91-4ac2-8835-ebea71a5a634",
@@ -885,7 +935,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "065804ee5fda17f7",
-      "trade_id": "a34a73f69ac75cca"
+      "trade_id": "a34a73f69ac75cca",
+      "source": "schwab_csv"
     },
     {
       "id": "23274922-a845-4206-ae28-29a50ff1ca05",
@@ -901,7 +952,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "d73436178e0730be",
-      "trade_id": "604cb4958b340225"
+      "trade_id": "604cb4958b340225",
+      "source": "schwab_csv"
     },
     {
       "id": "e49eaa0c-ae8f-416e-995f-fa60fbba8a00",
@@ -917,7 +969,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "e6c4c3702852a312",
-      "trade_id": "05384975507cc69d"
+      "trade_id": "05384975507cc69d",
+      "source": "schwab_csv"
     },
     {
       "id": "7dd2b515-ea22-4d8d-8d61-4535ffe8822a",
@@ -933,7 +986,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ce4cd95f0193d20d",
-      "trade_id": "7a7103c3c5460f8c"
+      "trade_id": "7a7103c3c5460f8c",
+      "source": "schwab_csv"
     },
     {
       "id": "090430a8-49b4-4118-94a3-448d636d96ab",
@@ -949,7 +1003,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "0fdd2d1fccdfb9ee",
-      "trade_id": "32818655cdf72d6f"
+      "trade_id": "32818655cdf72d6f",
+      "source": "schwab_csv"
     },
     {
       "id": "18aa4b15-f4f3-46b3-b143-c5e960ae0fd8",
@@ -965,7 +1020,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "69d8800851f47370",
-      "trade_id": "a76753f8b2d1c521"
+      "trade_id": "a76753f8b2d1c521",
+      "source": "schwab_csv"
     },
     {
       "id": "d2530531-226f-461b-921f-6f7099d6568b",
@@ -981,7 +1037,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "fcb81dc4cd705a78",
-      "trade_id": "2f1b8087f5dd4e84"
+      "trade_id": "2f1b8087f5dd4e84",
+      "source": "schwab_csv"
     },
     {
       "id": "06ebe295-97c8-4878-a1b1-cf67488e36a8",
@@ -997,7 +1054,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f3fa17a6976156f6",
-      "trade_id": "f78bbb00b3e9611e"
+      "trade_id": "f78bbb00b3e9611e",
+      "source": "schwab_csv"
     },
     {
       "id": "550444ec-5dc7-4493-9e88-a2f9b635c39a",
@@ -1013,7 +1071,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "194d9b385f99bc69",
-      "trade_id": "fcd49acbb2955253"
+      "trade_id": "fcd49acbb2955253",
+      "source": "schwab_csv"
     },
     {
       "id": "ecd81937-ab3a-4db1-a976-69fca5596ecc",
@@ -1029,7 +1088,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "9862f577ff19629b",
-      "trade_id": "724a03343d5f0d89"
+      "trade_id": "724a03343d5f0d89",
+      "source": "schwab_csv"
     },
     {
       "id": "8c68cc85-a7c9-4070-847d-d3898cca0a71",
@@ -1045,7 +1105,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "b0e3c8ecc87b1228",
-      "trade_id": "57fffa9668975487"
+      "trade_id": "57fffa9668975487",
+      "source": "schwab_csv"
     },
     {
       "id": "f240f059-ab00-471d-aa77-c391bbba5144",
@@ -1061,7 +1122,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "77d0b58d37f992bf",
-      "trade_id": "69900d1514854642"
+      "trade_id": "69900d1514854642",
+      "source": "schwab_csv"
     },
     {
       "id": "455ec6b3-78ac-45c7-ab8f-5dcdcfe858a8",
@@ -1077,7 +1139,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "975a8e437c74e792",
-      "trade_id": "eb899267c079f6e3"
+      "trade_id": "eb899267c079f6e3",
+      "source": "schwab_csv"
     },
     {
       "id": "78441ce4-fd15-49d5-9e51-c909672e3b7e",
@@ -1093,7 +1156,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "312e6375eda69a9a",
-      "trade_id": "d884aa1bac47ca17"
+      "trade_id": "d884aa1bac47ca17",
+      "source": "schwab_csv"
     },
     {
       "id": "9dc9d476-8af5-401e-8f9d-66dfa405825d",
@@ -1109,7 +1173,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "bc380082282545a7",
-      "trade_id": "07e052230eb3e7b9"
+      "trade_id": "07e052230eb3e7b9",
+      "source": "schwab_csv"
     },
     {
       "id": "707858cb-0646-4c3f-a128-66579d7f4f1a",
@@ -1125,7 +1190,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ccfa9596f40d9405",
-      "trade_id": "f8f3458d9a4558a0"
+      "trade_id": "f8f3458d9a4558a0",
+      "source": "schwab_csv"
     },
     {
       "id": "417840a3-97c5-456f-bc0c-c5db8c4e0ff1",
@@ -1141,7 +1207,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "cb8a8966300ee841",
-      "trade_id": "e87e7f54c08b765d"
+      "trade_id": "e87e7f54c08b765d",
+      "source": "schwab_csv"
     },
     {
       "id": "c5a1e2b2-9ec3-4e52-9dd3-405f303519d9",
@@ -1157,7 +1224,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "3882db6fc9390637",
-      "trade_id": "6f3ae8ba4570ac1e"
+      "trade_id": "6f3ae8ba4570ac1e",
+      "source": "schwab_csv"
     },
     {
       "id": "f82dc55c-d347-4a3f-b160-8ed948da8168",
@@ -1173,7 +1241,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "83d348d44335bcc1",
-      "trade_id": "89bb107d1281e4bf"
+      "trade_id": "89bb107d1281e4bf",
+      "source": "schwab_csv"
     },
     {
       "id": "c583de14-d7e1-4b55-984e-93f71c5c20fd",
@@ -1189,7 +1258,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "57dc694dd036e6c7",
-      "trade_id": "cf37d64033f203e5"
+      "trade_id": "cf37d64033f203e5",
+      "source": "schwab_csv"
     },
     {
       "id": "af1275a9-7f2a-4e82-ba57-4d688001d8e7",
@@ -1205,7 +1275,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "32841aa3fa3210af",
-      "trade_id": "3f8df89dbef5d57f"
+      "trade_id": "3f8df89dbef5d57f",
+      "source": "schwab_csv"
     },
     {
       "id": "14645aa6-080b-4de1-9d6d-594448c4ad28",
@@ -1221,7 +1292,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ee5adacaf938136e",
-      "trade_id": "10112a627c4250e8"
+      "trade_id": "10112a627c4250e8",
+      "source": "schwab_csv"
     },
     {
       "id": "708033fe-b059-4b35-a86d-328822b2ebfc",
@@ -1237,7 +1309,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "dec86bba8e9ea31c",
-      "trade_id": "3b605843ebcc551f"
+      "trade_id": "3b605843ebcc551f",
+      "source": "schwab_csv"
     },
     {
       "id": "9c760c3f-7e60-4910-9aae-ea4ad9a4f0b2",
@@ -1253,7 +1326,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "15d914cec28ab18b",
-      "trade_id": "c686df22216ed9bb"
+      "trade_id": "c686df22216ed9bb",
+      "source": "schwab_csv"
     },
     {
       "id": "b4f204b5-bfd6-490a-8533-722be124067d",
@@ -1269,7 +1343,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "dd9842b103e10425",
-      "trade_id": "0cc9b39f78810bbe"
+      "trade_id": "0cc9b39f78810bbe",
+      "source": "schwab_csv"
     },
     {
       "id": "4850f74a-25c4-42a1-a643-bd630f8ca573",
@@ -1285,7 +1360,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "535718fdf3e7b9a2",
-      "trade_id": "7e214fadf50013aa"
+      "trade_id": "7e214fadf50013aa",
+      "source": "schwab_csv"
     },
     {
       "id": "39a1b064-f63c-4c85-a36a-47b3f2b7ff1d",
@@ -1301,7 +1377,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "9abcb9b994fb339f",
-      "trade_id": "13e4d6c75eab6108"
+      "trade_id": "13e4d6c75eab6108",
+      "source": "schwab_csv"
     },
     {
       "id": "5e76e5c5-bfe5-4152-9ff5-a4e0470e23d5",
@@ -1317,7 +1394,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "fb2e533b9fd63023",
-      "trade_id": "0b5ec10fb91428fd"
+      "trade_id": "0b5ec10fb91428fd",
+      "source": "schwab_csv"
     },
     {
       "id": "1a7b3775-a80c-4fe2-b6c9-2715cfba2f2b",
@@ -1333,7 +1411,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "0bc1d70f14939b69",
-      "trade_id": "c0f8fbf65fc334f6"
+      "trade_id": "c0f8fbf65fc334f6",
+      "source": "schwab_csv"
     },
     {
       "id": "7fc9f814-cb25-4252-88da-06d1c647e7a8",
@@ -1349,7 +1428,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2f882050156df07a",
-      "trade_id": "fe4c46d7ce883f21"
+      "trade_id": "fe4c46d7ce883f21",
+      "source": "schwab_csv"
     },
     {
       "id": "52dc4b0d-4405-49eb-84f7-4a3c2388725a",
@@ -1365,7 +1445,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "5f990927736f6379",
-      "trade_id": "3f90e4f5a0c78528"
+      "trade_id": "3f90e4f5a0c78528",
+      "source": "schwab_csv"
     },
     {
       "id": "c23d8357-d248-4309-9a03-ac5829ab62df",
@@ -1381,7 +1462,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "85a4c14bc9d36648",
-      "trade_id": "05f9a9f9169dda5e"
+      "trade_id": "05f9a9f9169dda5e",
+      "source": "schwab_csv"
     },
     {
       "id": "a2a23a63-79bb-4b71-869e-7dd42042cb9e",
@@ -1397,7 +1479,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "689c38d810f679c8",
-      "trade_id": "7663b95890a7edd0"
+      "trade_id": "7663b95890a7edd0",
+      "source": "schwab_csv"
     },
     {
       "id": "a63b3de8-6462-48dd-b337-fd3d69af542c",
@@ -1413,7 +1496,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "1491c4f98bb11b7b",
-      "trade_id": "5f6574d75ebaf024"
+      "trade_id": "5f6574d75ebaf024",
+      "source": "schwab_csv"
     },
     {
       "id": "bdfd1483-c7a8-414f-9e62-d50d1cf3e381",
@@ -1429,7 +1513,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "73e80f2e7381ac83",
-      "trade_id": "7f7530917c5f480f"
+      "trade_id": "7f7530917c5f480f",
+      "source": "schwab_csv"
     },
     {
       "id": "72515568-895d-46cc-ab38-975acaa01092",
@@ -1445,7 +1530,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ea1e1e684b38c2d9",
-      "trade_id": "83e14b79da054659"
+      "trade_id": "83e14b79da054659",
+      "source": "schwab_csv"
     },
     {
       "id": "67989cad-c6bf-4be4-8f96-ceb91084d4ab",
@@ -1461,7 +1547,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "30e1d87b426aebd8",
-      "trade_id": "191be17bf51a9ec3"
+      "trade_id": "191be17bf51a9ec3",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-02-20T00:00:00",
@@ -1473,7 +1560,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "4e4ecfe6883d33b6",
       "trade_id": "58f3c47e10c6beec"
     },
@@ -1487,7 +1574,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "188ce23e0929a078",
       "trade_id": "27770605ea8ba7bb"
     },
@@ -1501,7 +1588,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "bdf70cab262ff4c6",
       "trade_id": "3d7eb0ae3a271287"
     },
@@ -1519,7 +1606,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "9cfdf88183e6c3ca",
-      "trade_id": "e86e614e2bb67d3a"
+      "trade_id": "e86e614e2bb67d3a",
+      "source": "schwab_csv"
     },
     {
       "id": "46865cef-69e2-4854-a012-00b76bf1120a",
@@ -1535,7 +1623,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "d27d63477370dccb",
-      "trade_id": "38900b595f33ee5d"
+      "trade_id": "38900b595f33ee5d",
+      "source": "schwab_csv"
     },
     {
       "id": "85cb609d-6845-4182-ac07-846effbec0be",
@@ -1551,7 +1640,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ceb8ab65e58180fa",
-      "trade_id": "cac50fc7d85af866"
+      "trade_id": "cac50fc7d85af866",
+      "source": "schwab_csv"
     },
     {
       "id": "11633eca-f811-4f79-a2ea-b043991ee578",
@@ -1567,7 +1657,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "65a93b89bcd3f739",
-      "trade_id": "b2ad47f69ca0ad61"
+      "trade_id": "b2ad47f69ca0ad61",
+      "source": "schwab_csv"
     },
     {
       "id": "39a371de-4d3b-4844-a9f3-f65dc1d333d5",
@@ -1583,7 +1674,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "1c9a6eb81a8ae963",
-      "trade_id": "397259665f27d393"
+      "trade_id": "397259665f27d393",
+      "source": "schwab_csv"
     },
     {
       "id": "d021edae-0780-445f-8cb7-c9cbe09dacb0",
@@ -1599,7 +1691,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f769c56149927e5b",
-      "trade_id": "b516165956ac5dda"
+      "trade_id": "b516165956ac5dda",
+      "source": "schwab_csv"
     },
     {
       "id": "3019806b-7ba4-4e41-83ca-fbb97b125ac0",
@@ -1615,7 +1708,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f744ba2511c201ad",
-      "trade_id": "24850104438e4d06"
+      "trade_id": "24850104438e4d06",
+      "source": "schwab_csv"
     },
     {
       "id": "65aa6859-0ee3-4df6-9145-209ac38a6cd4",
@@ -1631,7 +1725,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2c677b2bf74274ef",
-      "trade_id": "a495c0672f2566d3"
+      "trade_id": "a495c0672f2566d3",
+      "source": "schwab_csv"
     },
     {
       "id": "87da787f-15b3-47a5-b2d6-2e734632c57d",
@@ -1647,7 +1742,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "9787008421dbf65e",
-      "trade_id": "48be4466e1a1b348"
+      "trade_id": "48be4466e1a1b348",
+      "source": "schwab_csv"
     },
     {
       "id": "2b1fc7e3-144c-4999-8275-9e6584978207",
@@ -1663,7 +1759,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "1eebcc12dd66115b",
-      "trade_id": "e218c9a8f917dd49"
+      "trade_id": "e218c9a8f917dd49",
+      "source": "schwab_csv"
     },
     {
       "id": "89b356c1-018f-434e-82d1-ac3ac9f756c2",
@@ -1679,7 +1776,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "e80a7e3a97d1b354",
-      "trade_id": "ff3298dda704531e"
+      "trade_id": "ff3298dda704531e",
+      "source": "schwab_csv"
     },
     {
       "id": "c2a96437-ad3b-4f81-860b-80b827b88cda",
@@ -1695,7 +1793,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2d1c7687329bc72c",
-      "trade_id": "abfeecb6c54c3c72"
+      "trade_id": "abfeecb6c54c3c72",
+      "source": "schwab_csv"
     },
     {
       "id": "21156ac7-fdd8-4ed3-907a-8747adaa86b2",
@@ -1711,7 +1810,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "a58a54fcf1de35de",
-      "trade_id": "7e495c0c8ef1855f"
+      "trade_id": "7e495c0c8ef1855f",
+      "source": "schwab_csv"
     },
     {
       "id": "3f9a54e4-8ce5-4922-9c6d-ee321a48bb12",
@@ -1727,7 +1827,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "09d2488035794b7d",
-      "trade_id": "0772eb091ad75075"
+      "trade_id": "0772eb091ad75075",
+      "source": "schwab_csv"
     },
     {
       "id": "b8babd8a-d477-4cdd-9aed-2dd2316f7747",
@@ -1743,7 +1844,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "9e29c9747a70fc9d",
-      "trade_id": "cf768d4359094de8"
+      "trade_id": "cf768d4359094de8",
+      "source": "schwab_csv"
     },
     {
       "id": "45e2c138-bc67-460c-a032-f07ab5cc9312",
@@ -1759,7 +1861,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "f44f77af3517df92",
-      "trade_id": "889f9f7863dff1f0"
+      "trade_id": "889f9f7863dff1f0",
+      "source": "schwab_csv"
     },
     {
       "id": "ff8e0cfe-89b9-45b6-9f62-ede0753c5d92",
@@ -1775,7 +1878,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "0fc8353dda0c3983",
-      "trade_id": "c6a9902b6c11c2b0"
+      "trade_id": "c6a9902b6c11c2b0",
+      "source": "schwab_csv"
     },
     {
       "id": "ca829d03-6020-4690-a3b5-2a699d2dfae5",
@@ -1791,7 +1895,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "2a1102732da6b341",
-      "trade_id": "58b10981b8f39ca2"
+      "trade_id": "58b10981b8f39ca2",
+      "source": "schwab_csv"
     },
     {
       "id": "27c432b7-833e-4133-b2b6-b4da42fc54ed",
@@ -1807,7 +1912,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "0e49edd298100294",
-      "trade_id": "6ad0cce79b440e36"
+      "trade_id": "6ad0cce79b440e36",
+      "source": "schwab_csv"
     },
     {
       "id": "a7050776-e532-46a5-8cfc-7cad1adcaa22",
@@ -1823,7 +1929,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "cbae2cf12bdac5e3",
-      "trade_id": "f5b079115ef0b186"
+      "trade_id": "f5b079115ef0b186",
+      "source": "schwab_csv"
     },
     {
       "id": "4032ff41-156a-4813-aa69-c86d8c839c15",
@@ -1839,7 +1946,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "ca1b800b7d13f1f4",
-      "trade_id": "c4721fd84fba480b"
+      "trade_id": "c4721fd84fba480b",
+      "source": "schwab_csv"
     },
     {
       "id": "0b09a16c-9b3c-4690-85f2-4a3ac9032aed",
@@ -1855,7 +1963,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "d5cc19d65109df8f",
-      "trade_id": "14cbb4abf6c93135"
+      "trade_id": "14cbb4abf6c93135",
+      "source": "schwab_csv"
     },
     {
       "id": "1f684b43-5b06-42c0-897e-a7aafb8eae52",
@@ -1871,7 +1980,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "7b40db0f741c6063",
-      "trade_id": "c1abf5c73e626ef9"
+      "trade_id": "c1abf5c73e626ef9",
+      "source": "schwab_csv"
     },
     {
       "id": "52fbb20c-bb49-40b8-998e-9ba2af430a36",
@@ -1887,7 +1997,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "7fc113141e8c3733",
-      "trade_id": "8c6411d666250f86"
+      "trade_id": "8c6411d666250f86",
+      "source": "schwab_csv"
     },
     {
       "id": "18a67de5-3466-4383-9ecf-ee65cbff7d14",
@@ -1903,7 +2014,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "030128b4bce4fa37",
-      "trade_id": "b0fd098b3003a581"
+      "trade_id": "b0fd098b3003a581",
+      "source": "schwab_csv"
     },
     {
       "id": "615c1f8d-99f7-40a4-ba3e-c4fd74ee3de2",
@@ -1919,7 +2031,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "91f7dfb7efc38cc8",
-      "trade_id": "425d4ffd54f4578c"
+      "trade_id": "425d4ffd54f4578c",
+      "source": "schwab_csv"
     },
     {
       "id": "401f5411-911e-41ba-a44a-a33cfa857e3a",
@@ -1935,7 +2048,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T22:56:14.723Z",
       "source_hash": "125273b8c74b4c1f",
-      "trade_id": "621837415ec896df"
+      "trade_id": "621837415ec896df",
+      "source": "schwab_csv"
     },
     {
       "id": "c702afb0-1f10-4c39-bf5f-8a4ea99a74cd",
@@ -1951,7 +2065,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "10e12b93942ecbb8",
-      "trade_id": "cad6f0f152c6cb18"
+      "trade_id": "cad6f0f152c6cb18",
+      "source": "schwab_csv"
     },
     {
       "id": "9bd0f103-6af0-4d71-ab74-6cb31e210afc",
@@ -1967,7 +2082,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "1b31738dc6b38ed7",
-      "trade_id": "561c5761b4cb00cc"
+      "trade_id": "561c5761b4cb00cc",
+      "source": "schwab_csv"
     },
     {
       "id": "fbbe4b28-cbec-4cc3-9b32-bff352716ea8",
@@ -1983,7 +2099,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "a0a7408e3149cef7",
-      "trade_id": "b85c7f8dbe3f0319"
+      "trade_id": "b85c7f8dbe3f0319",
+      "source": "schwab_csv"
     },
     {
       "id": "e959d88b-5ca8-42e0-be64-aecc8e6a1009",
@@ -1999,7 +2116,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "a8c9714dc77e5ae0",
-      "trade_id": "e0ed7478ed44df5e"
+      "trade_id": "e0ed7478ed44df5e",
+      "source": "schwab_csv"
     },
     {
       "id": "8f683ba7-7146-476f-90b1-34c7b885f520",
@@ -2015,7 +2133,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "01cb1bb7b74a3b35",
-      "trade_id": "965859ef3c2c0a02"
+      "trade_id": "965859ef3c2c0a02",
+      "source": "schwab_csv"
     },
     {
       "id": "85a87713-d230-4a03-b3df-5038bea7fbc2",
@@ -2031,7 +2150,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "ca3a1c4ed031194d",
-      "trade_id": "0f6ecfa90e5789da"
+      "trade_id": "0f6ecfa90e5789da",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-02-27T00:00:00",
@@ -2043,7 +2163,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (IND)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "d126c0381e97f3f0",
       "trade_id": "ae082733ac3de95a"
     },
@@ -2057,7 +2177,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (IND)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "04ddd21c500b477e",
       "trade_id": "2dcd14437c114d37"
     },
@@ -2075,7 +2195,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "91714715a2cd5216",
-      "trade_id": "c56be96f730b5973"
+      "trade_id": "c56be96f730b5973",
+      "source": "schwab_csv"
     },
     {
       "id": "1a8eac30-26ac-4f28-a3d6-7e317146fea1",
@@ -2091,7 +2212,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "a1ea85046325af16",
-      "trade_id": "8a0264298b0e2bd6"
+      "trade_id": "8a0264298b0e2bd6",
+      "source": "schwab_csv"
     },
     {
       "id": "8d5d26b9-49d6-41d0-90fc-d0be5b1f1bd9",
@@ -2107,7 +2229,8 @@
       "notes": "Imported from Schwab CSV",
       "created_at": "2026-03-04T23:01:47.620Z",
       "source_hash": "ed6cd810b27b1859",
-      "trade_id": "983fafe36ad99836"
+      "trade_id": "983fafe36ad99836",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-02-27T00:00:00",
@@ -2119,7 +2242,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "affd78648bb87de8",
       "trade_id": "8ce614579f761ba5"
     },
@@ -2133,7 +2256,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "71b35d4cabb50404",
       "trade_id": "7d954384501dda94"
     },
@@ -2147,7 +2270,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "109ff43d4003cf2d",
       "trade_id": "bc50f3a0d9d54a41"
     },
@@ -2161,7 +2284,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "6e04b01a6ac29a32",
       "trade_id": "923e7f01231b8902"
     },
@@ -2175,7 +2298,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "57478108d0b7bad4",
       "trade_id": "b2eed8bf462d3ada"
     },
@@ -2189,7 +2312,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "eaed67bf33d46af4",
       "trade_id": "b89bf4410ed6452f"
     },
@@ -2203,7 +2326,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "4ad1094cd7d17400",
       "trade_id": "1364ba016c98f8e9"
     },
@@ -2217,7 +2340,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "615f4e04452a4e35",
       "trade_id": "88e2dc832cab65d7"
     },
@@ -2231,7 +2354,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "e49289412d8f76ae",
       "trade_id": "810058bf36227e0c"
     },
@@ -2245,7 +2368,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "00aa140ac74c036a",
       "trade_id": "a996544a8769503c"
     },
@@ -2259,7 +2382,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "4da171069b0a122f",
       "trade_id": "20566230ee221928"
     },
@@ -2273,7 +2396,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "e0fa77edefefc9a6",
       "trade_id": "d5881b3aa0f23280"
     },
@@ -2287,7 +2410,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "6a54a5eed6582b3a",
       "trade_id": "73a9202f9ce6e93b"
     },
@@ -2301,7 +2424,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "7d14fc9d5f0c321c",
       "trade_id": "242bd6afb9fc0328"
     },
@@ -2315,7 +2438,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "590ead4143c19655",
       "trade_id": "0392270c2a9698a1"
     },
@@ -2329,7 +2452,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "083747144385c503",
       "trade_id": "3c3d9448b2fe46c3"
     },
@@ -2343,7 +2466,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "a2df1681cd657c4e",
       "trade_id": "451607bea6ea7270"
     },
@@ -2357,7 +2480,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "4229b6a0afee92f2",
       "trade_id": "ebd3f15204f031ea"
     },
@@ -2371,7 +2494,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "eb6d94c6c8bd0f4f",
       "trade_id": "5d4c1963650da0c3"
     },
@@ -2385,7 +2508,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Schwab (SEP)",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "87e08fead9c2b16b",
       "trade_id": "759c665d8d469826"
     },
@@ -2399,7 +2522,7 @@
       "price": 0.56,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "58f584e3bc8360af",
       "trade_id": "56b74a641c251ec3"
     },
@@ -2413,7 +2536,7 @@
       "price": 0.44,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "0751dbb1a9adde5c",
       "trade_id": "a2b08b787c777ee3"
     },
@@ -2427,7 +2550,7 @@
       "price": 0.25,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "44570d0df0f8b12a",
       "trade_id": "767d6e1b47a5e857"
     },
@@ -2441,7 +2564,7 @@
       "price": 0.38,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "265358720a79e438",
       "trade_id": "bc25c42ac3163fac"
     },
@@ -2455,7 +2578,7 @@
       "price": 0.17,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "050c7febfc8f57fd",
       "trade_id": "2f07eb29b3a09705"
     },
@@ -2469,7 +2592,7 @@
       "price": 0.38,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "b20501f238dd83d0",
       "trade_id": "012a4edaab56b434"
     },
@@ -2483,7 +2606,7 @@
       "price": 0.4,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "a1bea67bf096cedd",
       "trade_id": "2aaae288b5264e15"
     },
@@ -2497,7 +2620,7 @@
       "price": 0.01,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "c8101f750efcdc3a",
       "trade_id": "870d7738c247b444"
     },
@@ -2511,7 +2634,7 @@
       "price": 0.55,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "523ecc32be71348e",
       "trade_id": "f257837039b8f484"
     },
@@ -2525,7 +2648,7 @@
       "price": 0.01,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "9f7ca7471a1c446b",
       "trade_id": "80abcb49c7d30234"
     },
@@ -2539,7 +2662,7 @@
       "price": 0.02,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "e9fdad572ae64c08",
       "trade_id": "5538066b2f4357c8"
     },
@@ -2553,7 +2676,7 @@
       "price": 0.4,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "357b645c3ddae792",
       "trade_id": "48c7a3cc4996df84"
     },
@@ -2567,7 +2690,7 @@
       "price": 0.65,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "0129d0a5ee76c924",
       "trade_id": "c4ca46c5efdb66c7"
     },
@@ -2581,7 +2704,7 @@
       "price": 0.09,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "4d69791862534ee6",
       "trade_id": "98c83f09dfe511de"
     },
@@ -2595,7 +2718,7 @@
       "price": 0.13,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "a84b09222fd7d127",
       "trade_id": "860435f10c6a6514"
     },
@@ -2609,7 +2732,7 @@
       "price": 2.8,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "3fba23a515ce6219",
       "trade_id": "7ad15af9a753ea70"
     },
@@ -2623,7 +2746,7 @@
       "price": 1.24,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "879dbb7f8750fe7f",
       "trade_id": "bf02df4fda81f3e8"
     },
@@ -2637,7 +2760,7 @@
       "price": 0.04,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "a554508a240511a5",
       "trade_id": "9d1fa0f025d70ed4"
     },
@@ -2651,7 +2774,7 @@
       "price": 0.01,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "3f856dc1e663cf15",
       "trade_id": "fbd8fdd288fd0f97"
     },
@@ -2665,7 +2788,7 @@
       "price": 0.7,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "02a33e003933b8b8",
       "trade_id": "224850b289b8f8df"
     },
@@ -2679,7 +2802,7 @@
       "price": 0.7,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "087e25c3d729df66",
       "trade_id": "a662d207acea6b7f"
     },
@@ -2693,7 +2816,7 @@
       "price": 0.15,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "5e20f7b71b1711d1",
       "trade_id": "5d3ae024b2b5b0b4"
     },
@@ -2707,7 +2830,7 @@
       "price": 0.63,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "683e6946b070696c",
       "trade_id": "d11ad33d1b2503f8"
     },
@@ -2721,7 +2844,7 @@
       "price": 0.57,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "1ec595c542b9bc1d",
       "trade_id": "8814243f74f05334"
     },
@@ -2735,7 +2858,7 @@
       "price": 0.71,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "1a401cd4eb9c81fc",
       "trade_id": "9a8ea93adbd0abc6"
     },
@@ -2749,7 +2872,7 @@
       "price": 0.69,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "3e9684065dea571d",
       "trade_id": "177129fbe29d91f2"
     },
@@ -2763,7 +2886,7 @@
       "price": 0.36,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "da00e193a9339027",
       "trade_id": "ab3405ac06fc8d39"
     },
@@ -2777,7 +2900,7 @@
       "price": 0.99,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "0f50899cc7f5c009",
       "trade_id": "1e965d91955471ee"
     },
@@ -2791,7 +2914,7 @@
       "price": 0.21,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "021f491b9677b6e0",
       "trade_id": "16c9c07158bb386b"
     },
@@ -2805,7 +2928,7 @@
       "price": 0.07,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "eb3a897d0017b4e3",
       "trade_id": "2fa5a2c2555ff38b"
     },
@@ -2819,7 +2942,7 @@
       "price": 0.9,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "4b40cdd10b719f8a",
       "trade_id": "d071c580e4feb848"
     },
@@ -2833,7 +2956,7 @@
       "price": 0.7,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "4deb4ee131cfac06",
       "trade_id": "2917481272192520"
     },
@@ -2847,7 +2970,7 @@
       "price": 0.35,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "84ecd416886cbf3f",
       "trade_id": "37accaf48c086beb"
     },
@@ -2861,7 +2984,7 @@
       "price": 0.47,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "5910d824d67c27bf",
       "trade_id": "6707009aec539c5c"
     },
@@ -2875,7 +2998,7 @@
       "price": 0.53,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "01908ad12ea94696",
       "trade_id": "676ffdcabd8fb194"
     },
@@ -2889,7 +3012,7 @@
       "price": 0.37,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "67a8d7510889bcf4",
       "trade_id": "c20aa983b425f6e9"
     },
@@ -2903,7 +3026,7 @@
       "price": 0.54,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "03007e665da53ad2",
       "trade_id": "a1712241b2d6c2ff"
     },
@@ -2917,7 +3040,7 @@
       "price": 0.54,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "18006d79be1724d4",
       "trade_id": "525d3362a979f783"
     },
@@ -2931,7 +3054,7 @@
       "price": 1.8,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "9057151e7eaabf8c",
       "trade_id": "be8583a3bbd9ac95"
     },
@@ -2945,7 +3068,7 @@
       "price": 1.18,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "c13c3ab19db816bb",
       "trade_id": "f4156240152d7875"
     },
@@ -2959,7 +3082,7 @@
       "price": 0.7,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "5389457f63be09b7",
       "trade_id": "4f631f922d263340"
     },
@@ -2973,7 +3096,7 @@
       "price": 0.7,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "cf306da5fe9728e3",
       "trade_id": "ec12a1523479c31f"
     },
@@ -2987,7 +3110,7 @@
       "price": 1.22,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "7a067381ac81aa7d",
       "trade_id": "d03d4aa5e420b931"
     },
@@ -3001,7 +3124,7 @@
       "price": 0.1,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "760c042256c0b974",
       "trade_id": "0aee41f44a401d51"
     },
@@ -3015,7 +3138,7 @@
       "price": 0.15,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "0e045b19ca7ff2cd",
       "trade_id": "0dfd8e9ae5b1b394"
     },
@@ -3029,7 +3152,7 @@
       "price": 0.05,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "b832287540981905",
       "trade_id": "8348bc592b8fef15"
     },
@@ -3043,7 +3166,7 @@
       "price": 0.15,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "02d68c88cff82347",
       "trade_id": "69fc020448128bc7"
     },
@@ -3057,7 +3180,7 @@
       "price": 0.19,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "6217afd242b8600e",
       "trade_id": "9a4d877d51cc5653"
     },
@@ -3071,7 +3194,7 @@
       "price": 0.31,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "35bc4761852bf3ca",
       "trade_id": "beef6a835dbfab6b"
     },
@@ -3085,7 +3208,7 @@
       "price": 0.47,
       "event_type": "SELL_TO_OPEN",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "c33480faea24bb5c",
       "trade_id": "0483fcb08cda7382"
     },
@@ -3099,7 +3222,7 @@
       "price": 0.05,
       "event_type": "BUY_TO_CLOSE",
       "account": "Robinhood",
-      "source": "email_ingest",
+      "source": "robinhood_email",
       "id": "11c006065e2f1953",
       "trade_id": "0ea02f7f62075970"
     },
@@ -3113,7 +3236,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "de93c71bc2e5ce0f",
       "trade_id": "788ed2f19f93cc7a"
     },
@@ -3127,7 +3250,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "dab466427fcfbf8a",
       "trade_id": "87d37f3703b7c441"
     },
@@ -3141,7 +3264,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "a4d42ac581c16bf7",
       "trade_id": "a0b0107e137513e8"
     },
@@ -3155,7 +3278,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "e97f7bc0330856c1",
       "trade_id": "35d48b2bae3926d6"
     },
@@ -3169,7 +3292,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "8e86f7645840a0f1",
       "trade_id": "773cc0c21fd0cea3"
     },
@@ -3183,7 +3306,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "012b7b1c35425d8c",
       "trade_id": "f5b95e58f35ac067"
     },
@@ -3197,7 +3320,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "315b7cbca4a8abad",
       "trade_id": "47720d3c88c7ba3d"
     },
@@ -3211,7 +3334,7 @@
       "price": 0,
       "event_type": "EXPIRE_WORTHLESS",
       "account": "Robinhood",
-      "source": "expiration_checker",
+      "source": "expiration_engine",
       "id": "dd74a799950997d0",
       "trade_id": "c6bf7d98e48a901b"
     },
@@ -3228,7 +3351,8 @@
       "expiration": "2026-02-20",
       "notes": "",
       "created_at": "2026-03-05T04:12:17.387Z",
-      "trade_id": "892cb747098d3948"
+      "trade_id": "892cb747098d3948",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T15:18:00.000Z",
@@ -3241,7 +3365,8 @@
       "price": 0.07,
       "event_type": "SELL_TO_OPEN",
       "id": "f85dfe988183ce58",
-      "trade_id": "01ec92c56cbf9c10"
+      "trade_id": "01ec92c56cbf9c10",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T15:20:00.000Z",
@@ -3254,7 +3379,8 @@
       "price": 0.01,
       "event_type": "BUY_TO_CLOSE",
       "id": "934bb645a3107a5a",
-      "trade_id": "ff6e37dbfe239750"
+      "trade_id": "ff6e37dbfe239750",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T15:37:00.000Z",
@@ -3267,7 +3393,8 @@
       "price": 0.14,
       "event_type": "SELL_TO_OPEN",
       "id": "059290de3e8e4144",
-      "trade_id": "7a9f66fbdce12776"
+      "trade_id": "7a9f66fbdce12776",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T16:58:00.000Z",
@@ -3280,7 +3407,8 @@
       "price": 0.1,
       "event_type": "SELL_TO_OPEN",
       "id": "f604b320833e7f25",
-      "trade_id": "81dfd627a8247c67"
+      "trade_id": "81dfd627a8247c67",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T18:02:00.000Z",
@@ -3293,7 +3421,8 @@
       "price": 0.21,
       "event_type": "SELL_TO_OPEN",
       "id": "fd9ad030e955b855",
-      "trade_id": "d17a09ce0f8918b7"
+      "trade_id": "d17a09ce0f8918b7",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T18:09:00.000Z",
@@ -3306,7 +3435,8 @@
       "price": 0.02,
       "event_type": "BUY_TO_CLOSE",
       "id": "451aed96a3066bec",
-      "trade_id": "91df2950328b4074"
+      "trade_id": "91df2950328b4074",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T20:13:00.000Z",
@@ -3319,7 +3449,8 @@
       "price": 0.15,
       "event_type": "BUY_TO_CLOSE",
       "id": "11b21a5092f191fa",
-      "trade_id": "e30a7adcfde943cd"
+      "trade_id": "e30a7adcfde943cd",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T20:15:00.000Z",
@@ -3332,7 +3463,8 @@
       "price": 0.15,
       "event_type": "SELL_TO_OPEN",
       "id": "57f342ff96a0679c",
-      "trade_id": "b9a1276609397781"
+      "trade_id": "b9a1276609397781",
+      "source": "robinhood_email"
     },
     {
       "timestamp": "2026-03-05T20:16:00.000Z",
@@ -3345,85 +3477,8 @@
       "price": 0.37,
       "event_type": "SELL_TO_OPEN",
       "id": "20814ba227c2f6dd",
-      "trade_id": "75cf4d7f00edc799"
-    },
-    {
-      "timestamp": "2026-03-03T14:44:00.000Z",
-      "account": "Robinhood",
-      "ticker": "TGT",
-      "option_type": "PUT",
-      "strike": 96,
-      "expiration": "2026-03-06",
-      "contracts": 8,
-      "price": 0.03,
-      "event_type": "BUY_TO_CLOSE",
-      "id": "43d312404d61df06",
-      "trade_id": "d9b2edbeb79cf77a"
-    },
-    {
-      "timestamp": "2026-03-03T16:48:00.000Z",
-      "account": "Robinhood",
-      "ticker": "ASTS",
-      "option_type": "PUT",
-      "strike": 65,
-      "expiration": "2026-03-06",
-      "contracts": 1,
-      "price": 0.1,
-      "event_type": "BUY_TO_CLOSE",
-      "id": "dda866cd511d51f6",
-      "trade_id": "b4f94bb7c678b3ec"
-    },
-    {
-      "timestamp": "2026-03-03T16:48:00.000Z",
-      "account": "Robinhood",
-      "ticker": "ASTS",
-      "option_type": "PUT",
-      "strike": 65,
-      "expiration": "2026-03-06",
-      "contracts": 3,
-      "price": 0.1,
-      "event_type": "BUY_TO_CLOSE",
-      "id": "0de96bc65e9506fc",
-      "trade_id": "b9508007ea449259"
-    },
-    {
-      "timestamp": "2026-03-03T17:51:00.000Z",
-      "account": "Robinhood",
-      "ticker": "SE",
-      "option_type": "PUT",
-      "strike": 80,
-      "expiration": "2026-03-06",
-      "contracts": 2,
-      "price": 0.85,
-      "event_type": "BUY_TO_CLOSE",
-      "id": "d479cd558e673ec0",
-      "trade_id": "216be73bcf5f8970"
-    },
-    {
-      "timestamp": "2026-03-03T20:18:00.000Z",
-      "account": "Robinhood",
-      "ticker": "SE",
-      "option_type": "PUT",
-      "strike": 80,
-      "expiration": "2026-03-06",
-      "contracts": 5,
-      "price": 0.52,
-      "event_type": "BUY_TO_CLOSE",
-      "id": "84557c5e4af9f938",
-      "trade_id": "68c42d81b92f7712"
-    },
-    {
-      "timestamp": "2026-03-03T20:20:00.000Z",
-      "account": "Robinhood",
-      "ticker": "SE",
-      "option_type": "PUT",
-      "strike": 80,
-      "expiration": "2026-03-06",
-      "contracts": 3,
-      "price": 0.44,
-      "event_type": "BUY_TO_CLOSE",
-      "id": "9934dd10521cab89",
-      "trade_id": "60c249dbeb638669"
+      "trade_id": "75cf4d7f00edc799",
+      "source": "robinhood_email"
     },
     {
       "id": "3a73cabe5ed23bcc",
@@ -3436,7 +3491,8 @@
       "contracts": 20,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "12176ef703913920"
+      "trade_id": "12176ef703913920",
+      "source": "expiration_engine"
     },
     {
       "id": "bf06f50d48d5ef32",
@@ -3449,7 +3505,8 @@
       "contracts": 10,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "5ae5bc5d9982eacb"
+      "trade_id": "5ae5bc5d9982eacb",
+      "source": "expiration_engine"
     },
     {
       "id": "24532734bc1c2a21",
@@ -3462,7 +3519,8 @@
       "contracts": 22,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "f52ee3bdaa725445"
+      "trade_id": "f52ee3bdaa725445",
+      "source": "expiration_engine"
     },
     {
       "id": "966c27cbcca589b6",
@@ -3475,7 +3533,8 @@
       "contracts": 30,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "f8d327e3543c90f0"
+      "trade_id": "f8d327e3543c90f0",
+      "source": "expiration_engine"
     },
     {
       "id": "d032e5528104f3f0",
@@ -3488,7 +3547,8 @@
       "contracts": 4,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "ac91cca0d693d16b"
+      "trade_id": "ac91cca0d693d16b",
+      "source": "expiration_engine"
     },
     {
       "id": "ada2fec414519103",
@@ -3501,7 +3561,8 @@
       "contracts": 10,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "00f9aa86fb82ee54"
+      "trade_id": "00f9aa86fb82ee54",
+      "source": "expiration_engine"
     },
     {
       "id": "1cf81d1c97505926",
@@ -3514,7 +3575,8 @@
       "contracts": 8,
       "price": 0,
       "timestamp": "2026-03-07T21:05:00.000Z",
-      "trade_id": "576238f0c0157ccf"
+      "trade_id": "576238f0c0157ccf",
+      "source": "expiration_engine"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3527,7 +3589,8 @@
       "strike": 63,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "be3a528eba52902a"
+      "id": "be3a528eba52902a",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3540,7 +3603,8 @@
       "strike": 63,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "8ac6ef80da158d30"
+      "id": "8ac6ef80da158d30",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3553,7 +3617,8 @@
       "strike": 175,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "1accb0e776c91163"
+      "id": "1accb0e776c91163",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3566,7 +3631,8 @@
       "strike": 255,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "e035c4c8d92bf7f6"
+      "id": "e035c4c8d92bf7f6",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3579,7 +3645,8 @@
       "strike": 81,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "e8b6f25ce633b7fc"
+      "id": "e8b6f25ce633b7fc",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3592,7 +3659,8 @@
       "strike": 81,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "f8826ef852f20369"
+      "id": "f8826ef852f20369",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3605,7 +3673,8 @@
       "strike": 280,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "1c044b30b840b9d7"
+      "id": "1c044b30b840b9d7",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3618,7 +3687,8 @@
       "strike": 275,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "62abd5961c7b471a"
+      "id": "62abd5961c7b471a",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3631,7 +3701,8 @@
       "strike": 66,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "117a0652decf231e"
+      "id": "117a0652decf231e",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3644,7 +3715,8 @@
       "strike": 66,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "f104c2c799b60d7a"
+      "id": "f104c2c799b60d7a",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3657,7 +3729,8 @@
       "strike": 67,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "a88ebd28afaf5986"
+      "id": "a88ebd28afaf5986",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3670,7 +3743,8 @@
       "strike": 67,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "006f0918e5535141"
+      "id": "006f0918e5535141",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3683,7 +3757,8 @@
       "strike": 67,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "e07539ba27a5c7eb"
+      "id": "e07539ba27a5c7eb",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3696,7 +3771,8 @@
       "strike": 66,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "926008d063f34b2b"
+      "id": "926008d063f34b2b",
+      "source": "schwab_csv"
     },
     {
       "timestamp": "2026-03-05T08:00:00.000Z",
@@ -3709,7 +3785,594 @@
       "strike": 272.5,
       "expiration": "2026-03-06",
       "notes": "Imported from Schwab CSV",
-      "id": "3163b3980e3f664c"
+      "id": "3163b3980e3f664c",
+      "source": "schwab_csv"
+    },
+    {
+      "timestamp": "2026-03-03T14:44:00.000Z",
+      "account": "Robinhood",
+      "ticker": "TGT",
+      "option_type": "PUT",
+      "strike": 96,
+      "expiration": "2026-03-06",
+      "contracts": 8,
+      "price": 0.03,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "d9b2edbeb79cf77a"
+    },
+    {
+      "timestamp": "2026-03-03T15:06:00.000Z",
+      "account": "Robinhood",
+      "ticker": "CRWD",
+      "option_type": "PUT",
+      "strike": 327.5,
+      "expiration": "2026-03-06",
+      "contracts": 1,
+      "price": 1.8,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "be8583a3bbd9ac95"
+    },
+    {
+      "timestamp": "2026-03-03T16:48:00.000Z",
+      "account": "Robinhood",
+      "ticker": "ASTS",
+      "option_type": "PUT",
+      "strike": 65,
+      "expiration": "2026-03-06",
+      "contracts": 1,
+      "price": 0.1,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "b4f94bb7c678b3ec"
+    },
+    {
+      "timestamp": "2026-03-03T16:48:00.000Z",
+      "account": "Robinhood",
+      "ticker": "ASTS",
+      "option_type": "PUT",
+      "strike": 65,
+      "expiration": "2026-03-06",
+      "contracts": 3,
+      "price": 0.1,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "b9508007ea449259"
+    },
+    {
+      "timestamp": "2026-03-03T17:51:00.000Z",
+      "account": "Robinhood",
+      "ticker": "SE",
+      "option_type": "PUT",
+      "strike": 80,
+      "expiration": "2026-03-06",
+      "contracts": 2,
+      "price": 0.85,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "216be73bcf5f8970"
+    },
+    {
+      "timestamp": "2026-03-03T18:38:00.000Z",
+      "account": "Robinhood",
+      "ticker": "CRWD",
+      "option_type": "PUT",
+      "strike": 335,
+      "expiration": "2026-03-06",
+      "contracts": 1,
+      "price": 1.18,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "f4156240152d7875"
+    },
+    {
+      "timestamp": "2026-03-03T18:43:00.000Z",
+      "account": "Robinhood",
+      "ticker": "CRWD",
+      "option_type": "PUT",
+      "strike": 327.5,
+      "expiration": "2026-03-06",
+      "contracts": 1,
+      "price": 0.7,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "4f631f922d263340"
+    },
+    {
+      "timestamp": "2026-03-03T20:18:00.000Z",
+      "account": "Robinhood",
+      "ticker": "SE",
+      "option_type": "PUT",
+      "strike": 80,
+      "expiration": "2026-03-06",
+      "contracts": 5,
+      "price": 0.52,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "68c42d81b92f7712"
+    },
+    {
+      "timestamp": "2026-03-03T20:32:00.000Z",
+      "account": "Robinhood",
+      "ticker": "ROST",
+      "option_type": "PUT",
+      "strike": 175,
+      "expiration": "2026-03-06",
+      "contracts": 3,
+      "price": 0.7,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "ec12a1523479c31f"
+    },
+    {
+      "timestamp": "2026-03-03T20:46:00.000Z",
+      "account": "Robinhood",
+      "ticker": "CRWD",
+      "option_type": "PUT",
+      "strike": 335,
+      "expiration": "2026-03-06",
+      "contracts": 2,
+      "price": 1.22,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "d03d4aa5e420b931"
+    },
+    {
+      "timestamp": "2026-03-03T20:55:00.000Z",
+      "account": "Robinhood",
+      "ticker": "GTLB",
+      "option_type": "PUT",
+      "strike": 19.5,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.1,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "0aee41f44a401d51"
+    },
+    {
+      "timestamp": "2026-03-03T20:58:00.000Z",
+      "account": "Robinhood",
+      "ticker": "GTLB",
+      "option_type": "PUT",
+      "strike": 20,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.15,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "0dfd8e9ae5b1b394"
+    },
+    {
+      "timestamp": "2026-03-04T14:44:00.000Z",
+      "account": "Robinhood",
+      "ticker": "ROST",
+      "option_type": "PUT",
+      "strike": 175,
+      "expiration": "2026-03-06",
+      "contracts": 3,
+      "price": 0.05,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "8348bc592b8fef15"
+    },
+    {
+      "timestamp": "2026-03-04T14:51:00.000Z",
+      "account": "Robinhood",
+      "ticker": "CRWD",
+      "option_type": "PUT",
+      "strike": 335,
+      "expiration": "2026-03-06",
+      "contracts": 3,
+      "price": 0.15,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "69fc020448128bc7"
+    },
+    {
+      "timestamp": "2026-03-04T15:27:00.000Z",
+      "account": "Robinhood",
+      "ticker": "OKTA",
+      "option_type": "PUT",
+      "strike": 59,
+      "expiration": "2026-03-06",
+      "contracts": 7,
+      "price": 0.19,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "9a4d877d51cc5653"
+    },
+    {
+      "timestamp": "2026-03-04T20:24:00.000Z",
+      "account": "Robinhood",
+      "ticker": "OKTA",
+      "option_type": "PUT",
+      "strike": 59,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.31,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "beef6a835dbfab6b"
+    },
+    {
+      "timestamp": "2026-03-04T20:59:00.000Z",
+      "account": "Robinhood",
+      "ticker": "OKTA",
+      "option_type": "PUT",
+      "strike": 59,
+      "expiration": "2026-03-06",
+      "contracts": 5,
+      "price": 0.47,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "0483fcb08cda7382"
+    },
+    {
+      "timestamp": "2026-03-05T15:18:00.000Z",
+      "account": "Robinhood",
+      "ticker": "GAP",
+      "option_type": "PUT",
+      "strike": 22.5,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.07,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "01ec92c56cbf9c10"
+    },
+    {
+      "timestamp": "2026-03-05T15:20:00.000Z",
+      "account": "Robinhood",
+      "ticker": "OKTA",
+      "option_type": "PUT",
+      "strike": 59,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.01,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "ff6e37dbfe239750"
+    },
+    {
+      "timestamp": "2026-03-05T15:37:00.000Z",
+      "account": "Robinhood",
+      "ticker": "GAP",
+      "option_type": "PUT",
+      "strike": 23,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.14,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "7a9f66fbdce12776"
+    },
+    {
+      "timestamp": "2026-03-05T16:58:00.000Z",
+      "account": "Robinhood",
+      "ticker": "GAP",
+      "option_type": "PUT",
+      "strike": 22.5,
+      "expiration": "2026-03-06",
+      "contracts": 5,
+      "price": 0.1,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "81dfd627a8247c67"
+    },
+    {
+      "timestamp": "2026-03-05T18:02:00.000Z",
+      "account": "Robinhood",
+      "ticker": "MRVL",
+      "option_type": "PUT",
+      "strike": 65,
+      "expiration": "2026-03-06",
+      "contracts": 2,
+      "price": 0.21,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "d17a09ce0f8918b7"
+    },
+    {
+      "timestamp": "2026-03-05T18:09:00.000Z",
+      "account": "Robinhood",
+      "ticker": "OKTA",
+      "option_type": "PUT",
+      "strike": 59,
+      "expiration": "2026-03-06",
+      "contracts": 12,
+      "price": 0.02,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "91df2950328b4074"
+    },
+    {
+      "timestamp": "2026-03-05T20:13:00.000Z",
+      "account": "Robinhood",
+      "ticker": "GAP",
+      "option_type": "PUT",
+      "strike": 23,
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0.15,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "e30a7adcfde943cd"
+    },
+    {
+      "timestamp": "2026-03-05T20:15:00.000Z",
+      "account": "Robinhood",
+      "ticker": "ASTS",
+      "option_type": "PUT",
+      "strike": 80,
+      "expiration": "2026-03-06",
+      "contracts": 5,
+      "price": 0.15,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "b9a1276609397781"
+    },
+    {
+      "timestamp": "2026-03-05T20:16:00.000Z",
+      "account": "Robinhood",
+      "ticker": "ASTS",
+      "option_type": "PUT",
+      "strike": 84,
+      "expiration": "2026-03-06",
+      "contracts": 4,
+      "price": 0.37,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "75cf4d7f00edc799"
+    },
+    {
+      "id": "5ae5bc5d9982eacb",
+      "event_type": "EXPIRE_WORTHLESS",
+      "account": "Robinhood",
+      "ticker": "GTLB",
+      "strike": 20,
+      "option_type": "PUT",
+      "expiration": "2026-03-06",
+      "contracts": 10,
+      "price": 0,
+      "timestamp": "2026-03-07T21:05:00.000Z",
+      "source": "expiration_engine"
+    },
+    {
+      "id": "ad1f270747f56dac",
+      "event_type": "EXPIRE_WORTHLESS",
+      "account": "Robinhood",
+      "ticker": "MRVL",
+      "strike": 65,
+      "option_type": "PUT",
+      "expiration": "2026-03-06",
+      "contracts": 2,
+      "price": 0,
+      "timestamp": "2026-03-07T21:05:00.000Z",
+      "source": "expiration_engine"
+    },
+    {
+      "id": "5ab44f32619e7fa0",
+      "event_type": "EXPIRE_WORTHLESS",
+      "account": "Robinhood",
+      "ticker": "ASTS",
+      "strike": 80,
+      "option_type": "PUT",
+      "expiration": "2026-03-06",
+      "contracts": 5,
+      "price": 0,
+      "timestamp": "2026-03-07T21:05:00.000Z",
+      "source": "expiration_engine"
+    },
+    {
+      "id": "fadedaf7fed262f1",
+      "event_type": "EXPIRE_WORTHLESS",
+      "account": "Robinhood",
+      "ticker": "ASTS",
+      "strike": 84,
+      "option_type": "PUT",
+      "expiration": "2026-03-06",
+      "contracts": 4,
+      "price": 0,
+      "timestamp": "2026-03-07T21:05:00.000Z",
+      "source": "expiration_engine"
+    },
+    {
+      "id": "2cd63074-edb8-4532-a6c1-806335f9f13e",
+      "timestamp": "2026-03-04T06:29:00.000Z",
+      "account": "Robinhood",
+      "ticker": "SE",
+      "option_type": "PUT",
+      "event_type": "BUY_TO_CLOSE",
+      "contracts": 3,
+      "price": 0.44,
+      "strike": 80,
+      "expiration": "2026-03-06",
+      "notes": "",
+      "created_at": "2026-03-09T19:04:52.110Z"
+    },
+    {
+      "timestamp": "2026-03-09T19:23:00.000Z",
+      "account": "Robinhood",
+      "ticker": "KSS",
+      "option_type": "PUT",
+      "strike": 10.5,
+      "expiration": "2026-03-13",
+      "contracts": 15,
+      "price": 0.07,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "9e3502762aa17311"
+    },
+    {
+      "timestamp": "2026-03-09T19:48:00.000Z",
+      "account": "Robinhood",
+      "ticker": "KSS",
+      "option_type": "PUT",
+      "strike": 11.0,
+      "expiration": "2026-03-13",
+      "contracts": 10,
+      "price": 0.1,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "47ab30b93500091a"
+    },
+    {
+      "timestamp": "2026-03-09T19:58:00.000Z",
+      "account": "Robinhood",
+      "ticker": "HPE",
+      "option_type": "PUT",
+      "strike": 18.5,
+      "expiration": "2026-03-13",
+      "contracts": 8,
+      "price": 0.13,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "43a3f948c2de5eee"
+    },
+    {
+      "timestamp": "2026-03-09T19:53:00.000Z",
+      "account": "Robinhood",
+      "ticker": "KSS",
+      "option_type": "PUT",
+      "strike": 11.5,
+      "expiration": "2026-03-13",
+      "contracts": 7,
+      "price": 0.16,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "829a305d33a89452"
+    },
+    {
+      "timestamp": "2026-03-10T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "ORCL",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 3,
+      "price": 0.44,
+      "strike": 122,
+      "expiration": "2026-03-13",
+      "notes": "Imported from Schwab CSV",
+      "id": "f9697ce540750fe9"
+    },
+    {
+      "timestamp": "2026-03-10T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "AVAV",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 1,
+      "price": 0.86,
+      "strike": 180,
+      "expiration": "2026-03-13",
+      "notes": "Imported from Schwab CSV",
+      "id": "be1d019b18152c22"
+    },
+    {
+      "timestamp": "2026-03-10T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "ORCL",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 1,
+      "price": 0.42,
+      "strike": 121,
+      "expiration": "2026-03-13",
+      "notes": "Imported from Schwab CSV",
+      "id": "cfb70e9b260f9c4c"
+    },
+    {
+      "timestamp": "2026-03-10T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "AVAV",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 3,
+      "price": 0.8,
+      "strike": 180,
+      "expiration": "2026-03-13",
+      "notes": "Imported from Schwab CSV",
+      "id": "14b00aec197a57f9"
+    },
+    {
+      "timestamp": "2026-03-10T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "ORCL",
+      "option_type": "PUT",
+      "event_type": "SELL_TO_OPEN",
+      "contracts": 3,
+      "price": 0.37,
+      "strike": 121,
+      "expiration": "2026-03-13",
+      "notes": "Imported from Schwab CSV",
+      "id": "ae8d941505356c94"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "ASTS",
+      "option_type": "PUT",
+      "event_type": "EXPIRE_WORTHLESS",
+      "contracts": 12,
+      "price": 0,
+      "strike": 81,
+      "expiration": "2026-03-06",
+      "notes": "Imported from Schwab CSV",
+      "id": "3793ee27c0339886"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "MRVL",
+      "option_type": "PUT",
+      "event_type": "EXPIRE_WORTHLESS",
+      "contracts": 5,
+      "price": 0,
+      "strike": 63,
+      "expiration": "2026-03-06",
+      "notes": "Imported from Schwab CSV",
+      "id": "352dc138d0c8fb0b"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "MRVL",
+      "option_type": "PUT",
+      "event_type": "EXPIRE_WORTHLESS",
+      "contracts": 14,
+      "price": 0,
+      "strike": 66,
+      "expiration": "2026-03-06",
+      "notes": "Imported from Schwab CSV",
+      "id": "e7fde5d10013342e"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "MRVL",
+      "option_type": "PUT",
+      "event_type": "EXPIRE_WORTHLESS",
+      "contracts": 10,
+      "price": 0,
+      "strike": 67,
+      "expiration": "2026-03-06",
+      "notes": "Imported from Schwab CSV",
+      "id": "1a1b82b2d75da93b"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00.000Z",
+      "account": "Schwab (SEP)",
+      "ticker": "CIEN",
+      "option_type": "PUT",
+      "event_type": "EXPIRE_WORTHLESS",
+      "contracts": 1,
+      "price": 0,
+      "strike": 255,
+      "expiration": "2026-03-06",
+      "notes": "Imported from Schwab CSV",
+      "id": "8db6bd754f92bd31"
     }
   ]
 }

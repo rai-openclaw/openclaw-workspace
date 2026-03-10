@@ -17,3 +17,6 @@ data/options/backups/
 
 # OS
 .DS_Store
+
+# External Repositories (managed separately)
+mission-control-next/

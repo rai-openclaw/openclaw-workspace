@@ -34,7 +34,19 @@ def load_analysis():
     if not ANALYSIS_FILE.exists():
         return []
     with open(ANALYSIS_FILE) as f:
-        return json.load(f)
+        data = json.load(f)
+    # Handle different JSON structures
+    if isinstance(data, list):
+        return data
+    elif isinstance(data, dict):
+        # Check for candidates array
+        if "candidates" in data:
+            return data.get("candidates", [])
+        elif "analysis" in data:
+            return data.get("analysis", [])
+        else:
+            return []
+    return []
 
 
 def load_holdings():
@@ -49,14 +61,22 @@ def build_html_summary(analysis, holdings):
     """Build HTML email summary"""
     
     # Analysis summary
+    def get_grade(x):
+        g = x.get("grading")
+        return g.get("grade") if isinstance(g, dict) else str(g) if g else ""
+    
+    def get_risk(x):
+        g = x.get("grading")
+        return g.get("risk_severity") if isinstance(g, dict) else ""
+    
     total = len(analysis)
-    grade_a = len([x for x in analysis if x.get("grading", {}).get("grade") == "A"])
-    grade_b_plus = len([x for x in analysis if x.get("grading", {}).get("grade") == "B+"])
-    grade_b = len([x for x in analysis if x.get("grading", {}).get("grade") == "B"])
-    elevated = len([x for x in analysis if x.get("grading", {}).get("risk_severity") == "ELEVATED"])
+    grade_a = len([x for x in analysis if get_grade(x) == "A"])
+    grade_b_plus = len([x for x in analysis if get_grade(x) == "B+"])
+    grade_b = len([x for x in analysis if get_grade(x) == "B"])
+    elevated = len([x for x in analysis if get_risk(x) == "ELEVATED"])
     
     # Top picks table
-    top_picks = [x for x in analysis if x.get("grading", {}).get("grade") in ["A", "B+"]]
+    top_picks = [x for x in analysis if get_grade(x) in ["A", "B+"]]
     top_picks = top_picks[:5]
     
     table_rows = ""
