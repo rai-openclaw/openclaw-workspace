@@ -15,7 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from scripts.options_provider_schwab import get_earnings_snapshot
-from scripts.token_manager import get_access_token
+from scripts.core.data_providers import get_schwab_token
 
 
 # ===============================
@@ -98,7 +98,7 @@ def get_basic_quote(symbol: str):
 
 def get_schwab_fundamentals(symbol: str):
     try:
-        access_token = get_access_token()
+        access_token = get_schwab_token()
         headers = {"Authorization": f"Bearer {access_token}"}
         url = "https://api.schwabapi.com/v1/instruments"
         params = {"symbol": symbol, "projection": "fundamental"}
@@ -181,18 +181,36 @@ def main():
     log("Quote fetch complete")
 
     # -----------------------------
-    # BASE FILTERS
+    # INCLUDE_LIST: Force-include tickers (bypass all filters)
+    # -----------------------------
+    
+    # Separate include_list tickers from regular candidates
+    include_tickers = set(include_list)
+    forced_candidates = [c for c in candidates if c.get("ticker") in include_tickers]
+    regular_candidates = [c for c in candidates if c.get("ticker") not in include_tickers]
+    
+    log(f"Include_list tickers found: {[c.get('ticker') for c in forced_candidates]}")
+    log(f"Regular candidates before filters: {len(regular_candidates)}")
+
+    # -----------------------------
+    # BASE FILTERS (regular candidates only)
     # -----------------------------
 
-    candidates = [c for c in candidates if c.get("ticker") not in exclude_list]
+    # Remove excluded tickers
+    regular_candidates = [c for c in regular_candidates if c.get("ticker") not in exclude_list]
 
-    candidates = [
-        c for c in candidates
+    # Price filter for regular candidates only
+    regular_candidates = [
+        c for c in regular_candidates
         if ticker_prices.get(c.get("ticker"))
         and ticker_prices.get(c.get("ticker")) > 15
     ]
 
-    log(f"After base filters: {len(candidates)}")
+    log(f"After base filters (regular): {len(regular_candidates)}")
+
+    # Combine: forced include_list + filtered regular candidates
+    candidates = forced_candidates + regular_candidates
+    log(f"Total candidates after include_list merge: {len(candidates)}")
 
     # -----------------------------
     # RANKING
@@ -213,12 +231,16 @@ def main():
         ranked.append((score, c))
 
     ranked.sort(key=lambda x: -x[0])
-    candidates = [c for score, c in ranked][:20]
-
-    log(f"Top ranked selection: {len(candidates)}")
+    
+    # Preserve all include_list tickers, limit regular candidates to top 20
+    forced = [c for score, c in ranked if c.get("ticker") in include_tickers]
+    regular = [c for score, c in ranked if c.get("ticker") not in include_tickers]
+    candidates = forced + regular[:20]
+    
+    log(f"Top ranked selection: {len(candidates)} (forced: {len(forced)}, regular: {len(regular[:20])})")
 
     # -----------------------------
-    # HEALTHCARE FILTER
+    # HEALTHCARE FILTER (skip for include_list)
     # -----------------------------
 
     filtered = []
@@ -227,7 +249,8 @@ def main():
         ticker = c.get("ticker")
         log(f"[FUNDAMENTALS {idx}/{len(candidates)}] {ticker}")
 
-        if ticker in include_list:
+        # Include_list tickers bypass healthcare filter
+        if ticker in include_tickers:
             filtered.append(c)
             continue
 
@@ -258,14 +281,18 @@ def main():
 
         snapshot = get_earnings_snapshot(ticker, report_date)
 
+        # Critical failure: options chain unavailable (include_list cannot bypass this)
         if snapshot.get("status") == "options_unavailable":
             log(f"{ticker} skipped — options unavailable")
             filtered_options_unavailable += 1
             continue
 
-        # Filter: only weekly earnings options (DTE within earnings cycle: 0-10 days)
+        # For include_list: skip DTE filter, use whatever options are available
         dte = snapshot.get("dte", 0)
-        if dte < 0 or dte > 10:
+        if ticker in include_tickers:
+            log(f"{ticker} (include_list) — bypassing DTE filter, dte={dte}")
+        elif dte < 0 or dte > 10:
+            # Filter: only weekly earnings options (DTE within earnings cycle: 0-10 days)
             log(f"{ticker} skipped — no weekly earnings options available (dte={dte})")
             filtered_no_weekly += 1
             continue

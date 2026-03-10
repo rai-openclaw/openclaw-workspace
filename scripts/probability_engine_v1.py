@@ -11,7 +11,7 @@ from pathlib import Path
 # Paths
 WORKSPACE = Path.home() / ".openclaw" / "workspace"
 DATA_DIR = WORKSPACE / "data"
-INPUT_FILE = DATA_DIR / "analysis" / "analysis_with_research.json"
+INPUT_FILE = DATA_DIR / "analysis" / "analysis_raw.json"
 OUTPUT_FILE = DATA_DIR / "analysis" / "analysis_with_probs.json"
 LOG_FILE = DATA_DIR / "logs" / "pipeline.log"
 

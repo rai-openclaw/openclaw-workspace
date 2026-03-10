@@ -84,10 +84,8 @@ def release_lock():
 STAGE_OUTPUTS = {
     "pull_earnings_today.py": "data/cache/todays_candidates.json",
     "research_engine.py": "data/analysis/analysis_raw.json",
-    "bob_research_overlay.py": "data/analysis/analysis_with_research.json",
     "probability_engine_v1.py": "data/analysis/analysis_with_probs.json",
-    "risk_filter_engine_v1.py": "data/analysis/analysis_with_risk.json",
-    "grading_engine_v2.py": "data/analysis/analysis_final.json",
+    "analysis_batch.py": "data/analysis/analysis_raw.json",  # Enriches same file
     "send_email.py": None,
 }
 
@@ -117,45 +115,39 @@ def validate_output(script_name):
 
 STEPS = [
     "pull_earnings_today.py",
-    "research_engine.py",
-    "bob_research_overlay.py",
-    "probability_engine_v1.py",
-    "risk_filter_engine_v1.py",
-    "grading_engine_v2.py",
+    "research_engine.py",  # Filters candidates by price/sector
+    "probability_engine_v1.py",  # Generates probability data for historical_volatility
+    "analysis_batch.py",    # Calls analyze_batch() directly (not subprocess)
     "send_email.py",
 ]
 
 
 def run_step(script_name):
     script_path = SCRIPTS_DIR / script_name
-
-    if not script_path.exists():
-        raise FileNotFoundError(f"Missing script: {script_path}")
-
-    log(f"Starting {script_name}")
-
+    print(f"\n--- Running {script_name} ---\n")
+    
     process = subprocess.Popen(
         [sys.executable, str(script_path)],
         cwd=str(WORKSPACE),
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
-        text=True
+        text=True,
+        env=os.environ
     )
-
-    # Stream output live
-    for line in process.stdout:
-        print(line.rstrip())
-
-    process.wait()
-
-    if process.returncode != 0:
-        log(f"FAILED {script_name} (code {process.returncode})")
-        raise RuntimeError(f"{script_name} failed")
-
-    log(f"Completed {script_name}")
     
-    # Validate output
-    validate_output(script_name)
+    try:
+        # Stream output live
+        for line in iter(process.stdout.readline, ''):
+            print(line.rstrip())
+        
+        # Wait for completion with timeout
+        process.wait(timeout=1800)  # 30 minute limit per step
+    except subprocess.TimeoutExpired:
+        process.kill()
+        raise RuntimeError(f"{script_name} exceeded 30 minute timeout")
+    
+    if process.returncode != 0:
+        raise RuntimeError(f"{script_name} failed with exit code {process.returncode}")
 
 
 # ===============================
@@ -172,6 +164,7 @@ def main():
         try:
             for step in STEPS:
                 run_step(step)
+                validate_output(step)
 
             log("SUCCESS - All stages completed")
             log("=== PIPELINE END ===")

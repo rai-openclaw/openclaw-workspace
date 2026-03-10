@@ -9,13 +9,13 @@ import sys
 import os
 import logging
 from pathlib import Path
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 # Add workspace to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import requests
-from scripts.token_manager import get_access_token
+from scripts.core.data_providers import get_schwab_token
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -39,7 +39,7 @@ def fetch_options_chain(symbol: str):
     
     try:
         # Get fresh access token
-        access_token = get_access_token()
+        access_token = get_schwab_token()
         
         headers = {
             "Authorization": f"Bearer {access_token}"
@@ -64,9 +64,24 @@ def fetch_options_chain(symbol: str):
         return None
 
 
+def get_friday_of_week(dt: date) -> date:
+    """
+    Get the Friday of the same week as the given date.
+    Week starts on Monday (weekday 0), ends on Sunday (weekday 6).
+    Friday is weekday 4.
+    """
+    # Calculate days until Friday
+    days_until_friday = (4 - dt.weekday()) % 7
+    # If today is Friday or later, get next week's Friday
+    if days_until_friday == 0 and dt.weekday() == 4:
+        days_until_friday = 7  # Next Friday
+    return dt + timedelta(days=days_until_friday)
+
+
 def select_earnings_expiration(chain_json: dict, earnings_date: str):
     """
-    Select the best expiration date for an earnings play.
+    Select the expiration that matches the Friday of the earnings week.
+    This ensures CSP trades expire the same week as earnings.
     
     Args:
         chain_json: Response from fetch_options_chain
@@ -86,33 +101,27 @@ def select_earnings_expiration(chain_json: dict, earnings_date: str):
         logger.warning("OPTIONS: No valid expiration found - invalid earnings date format")
         return None
     
-    # Extract expiration dates from callExpDateMap keys
-    # Keys look like: "2026-02-27:0", "2026-03-06:7"
-    valid_expirations = []
+    # Find the Friday of the earnings week
+    target_friday = get_friday_of_week(earnings_dt)
     
+    logger.info(f"OPTIONS: Earnings {earnings_date}, targeting Friday {target_friday}")
+    
+    # Look for expiration matching that Friday
     for key in chain_json["callExpDateMap"].keys():
         try:
-            # Split key into date and DTE
             exp_str, dte_str = key.split(":")
             exp_dt = datetime.strptime(exp_str, "%Y-%m-%d").date()
             dte = int(dte_str)
             
-            # Keep only expirations where: expiration >= earnings_date AND dte > 0
-            if exp_dt >= earnings_dt and dte > 0:
-                valid_expirations.append((exp_dt, exp_str))
+            # Match the Friday of earnings week, and must have valid DTE
+            if exp_dt == target_friday and dte > 0:
+                logger.info(f"OPTIONS: Selected expiration {exp_str} (earnings week Friday)")
+                return exp_str
         except (ValueError, IndexError):
             continue
     
-    if not valid_expirations:
-        logger.warning("OPTIONS: No valid expiration found")
-        return None
-    
-    # Sort by expiration date ascending and return the first
-    valid_expirations.sort(key=lambda x: x[0])
-    selected = valid_expirations[0][1]
-    
-    logger.info(f"OPTIONS: Selected expiration {selected}")
-    return selected
+    logger.warning(f"OPTIONS: No expiration found for Friday {target_friday} - skipping ticker")
+    return None
 
 
 def select_atm_strike(chain_json: dict, expiration: str):
