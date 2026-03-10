@@ -263,6 +263,7 @@ def parse_email_for_trade(msg: Message) -> Optional[Dict[str, Any]]:
             "contracts": contracts,
             "price": price,
             "event_type": event_type,
+            "source": "robinhood_email",
         }
         
         return event
@@ -286,17 +287,13 @@ def check_and_create_expirations() -> int:
         Number of expiration events created
     """
     import hashlib
-    from datetime import date, datetime, timezone
+    from datetime import date, datetime, timezone, timedelta
     from pathlib import Path
     
     HOME_DIR = Path.home()
     LEDGER_PATH = HOME_DIR / ".openclaw" / "workspace" / "data" / "options" / "trades.json"
     
     today = date.today()
-    # Market close on expiration day: 1:05 PM PST = 21:05 UTC
-    expiration_timestamp = datetime.now(timezone.utc).replace(
-        hour=21, minute=5, second=0, microsecond=0
-    )
     
     try:
         # Load ledger
@@ -412,7 +409,9 @@ def check_and_create_expirations() -> int:
                 "expiration": pos["expiration"],
                 "contracts": net_position,
                 "price": 0,
-                "timestamp": expiration_timestamp.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+                # Use actual expiration date, not current date. Market close: 1:05 PM PST = 21:05 UTC
+                "timestamp": f"{pos['expiration']}T21:05:00.000Z",
+                "source": "expiration_engine",
             })
         
         # Write expirations to ledger via append_trade() for thread-safety
