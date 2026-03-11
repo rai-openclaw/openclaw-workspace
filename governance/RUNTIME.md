@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-11T17:02:35Z
+# Version: 2026-03-11T21:49:56Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -130,16 +130,6 @@ npm run dev
 ```
 
 Normal UI edits, styling changes, or business logic changes must rely on Next.js hot reload and must not trigger a rebuild.
-
-### Ideas Pipeline Rule
-
-Ideas must be created only through the ideas API: `POST /api/ideas`
-
-Jarvis must never create files such as:
-- `workspace/ideas/*.md`
-- `ideas/NOTES.md`
-
-All idea storage must go through the ideas pipeline API.
 
 ## 3. Alex — Implementation Engineer
 

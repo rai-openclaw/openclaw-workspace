@@ -132,7 +132,7 @@
       "title": "Expand Earnings Encyclopedia to include all Bob-researched companies",
       "category": "Tech",
       "effort": "Medium",
-      "status": "visible",
+      "status": "exploring",
       "source": "user-added",
       "context": "Currently only shows 3 companies (CRM, HOOD, SOFI). Should include all companies Bob researches daily (~10/day).",
       "your_notes": "",
@@ -143,7 +143,7 @@
       "tags": [],
       "related_ideas": [],
       "progress_percent": 0,
-      "last_updated": "2026-03-10T18:54:17.453Z",
+      "last_updated": "2026-03-11T19:39:53.658Z",
       "order": 1,
       "blocked": false
     },
@@ -306,7 +306,77 @@
       "last_updated": "2026-03-10T18:54:22.880Z",
       "order": 21,
       "blocked": false
+    },
+    {
+      "id": "idea-002",
+      "title": "Calendar Tab in Mission Control",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "exploring",
+      "source": "user-added",
+      "context": "",
+      "your_notes": "",
+      "my_analysis": "",
+      "created_date": "2026-03-11T17:37:06.818Z",
+      "ai_generated": false,
+      "priority": "medium",
+      "tags": [
+        "mission-control",
+        "calendar",
+        "ui",
+        "observability"
+      ],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-11T19:39:34.106Z",
+      "order": 22,
+      "blocked": false
+    },
+    {
+      "id": "idea-007",
+      "title": "Set up VPN for Mac mini",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "built",
+      "source": "user-added",
+      "context": "",
+      "your_notes": "",
+      "my_analysis": "",
+      "created_date": "2026-03-11T17:37:21.480Z",
+      "ai_generated": false,
+      "priority": "medium",
+      "tags": [
+        "infrastructure",
+        "vpn",
+        "networking",
+        "remote-access"
+      ],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-11T19:22:29.208Z",
+      "order": 23,
+      "blocked": false
+    },
+    {
+      "id": "idea-008",
+      "title": "Discord Team of Agents",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "visible",
+      "source": "user-added",
+      "context": "",
+      "your_notes": "",
+      "my_analysis": "",
+      "created_date": "2026-03-11T19:39:09.624Z",
+      "ai_generated": false,
+      "priority": "normal",
+      "tags": [],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-11T19:39:53.125Z",
+      "order": 23,
+      "blocked": false
     }
   ],
-  "last_updated": "2026-03-10T18:54:22.880Z"
+  "last_updated": "2026-03-11T19:39:53.658Z"
 }
