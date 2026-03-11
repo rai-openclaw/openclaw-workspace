@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-11T04:03:59Z
+# Version: 2026-03-11T17:02:35Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -130,6 +130,16 @@ npm run dev
 ```
 
 Normal UI edits, styling changes, or business logic changes must rely on Next.js hot reload and must not trigger a rebuild.
+
+### Ideas Pipeline Rule
+
+Ideas must be created only through the ideas API: `POST /api/ideas`
+
+Jarvis must never create files such as:
+- `workspace/ideas/*.md`
+- `ideas/NOTES.md`
+
+All idea storage must go through the ideas pipeline API.
 
 ## 3. Alex — Implementation Engineer
 
@@ -546,6 +556,48 @@ Workspace remains authoritative. Boundary violations require L3.
 ## 6. Governance Layer
 
 Files within `/governance/` are protected. Modifying governance requires L3.
+
+## 7. Ideas Directory
+
+The directory `workspace/ideas/` is a protected surface. Agents may not create or modify files in this directory.
+
+Ideas must be written only through the API (`POST /api/ideas`). Filesystem writes to store ideas are forbidden.
+
+## 8. Mission Control Runtime
+
+Mission Control (Next.js dashboard) is a system service managed by launchd via:
+`com.openclaw.mission-control.plist`
+
+Agents must NOT start the server manually using:
+- `npm run dev`
+- `next dev`
+
+If Mission Control is down, the correct recovery procedure is:
+```
+launchctl kickstart -k gui/$UID/com.openclaw.mission-control
+```
+
+Mission Control is part of the system control plane and must run independently of the OpenClaw gateway and agent processes.
+
+## 9. Service Ownership Rule
+
+Infrastructure services must be managed by the system service manager (launchd). Examples of infrastructure services include:
+- OpenClaw Gateway
+- Mission Control (Next.js dashboard)
+- Automation runners
+- Background agents
+
+Agents must NOT start these services manually using commands such as:
+- `npm run dev`
+- `node server.py`
+- `python server.py`
+
+Before starting any service, agents must verify whether it is already managed by launchd. If a service is not responding, the correct procedure is to restart it using launchctl:
+```
+launchctl kickstart -k gui/$UID/<service-label>
+```
+
+Agents must never spawn duplicate service instances.
 
 End of Protected Surfaces.
 
