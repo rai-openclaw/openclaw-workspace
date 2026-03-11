@@ -1,14 +1,9 @@
 # SOUL.md — Governance Loader
 
-Governance rules live in `/workspace/governance`. On startup, agents must read and load the following files into context:
+On startup, agents must read and load:
 
-- governance/CONSTITUTION.md
-- governance/ROLES.md
-- governance/VALIDATION.md
-- governance/AIP.md
-- governance/AEF.md
-- governance/PROTECTED_SURFACES.md
-- governance/SCP.md
-- governance/RPP.md
+- governance/RUNTIME.md
 
-These define system rules and must be read before performing structural changes.
+This compiled file contains all governance rules (CONSTITUTION, ROLES, VALIDATION, AIP, AEF, PROTECTED_SURFACES, SCP, RPP).
+
+Regenerate with: scripts/build-governance-runtime.py
