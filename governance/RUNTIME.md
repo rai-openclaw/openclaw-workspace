@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-11T03:31:36Z
+# Version: 2026-03-11T03:47:02Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -111,6 +111,25 @@ This document defines authority boundaries for all OpenClaw agents. Agents do no
 - Perform uncontrolled structural edits
 - Expand scope without reclassification
 - Modify governance without L3 declaration
+
+### Next.js Build Safeguard
+
+When modifying a Next.js project, Jarvis must detect structural changes that can invalidate the build cache. Structural changes include:
+- creation or movement of routes in `app/`
+- creation or movement of API endpoints in `app/api/`
+- changes to `next.config.js`
+- changes to `package.json`
+- creation of new component directories
+
+If a structural change occurs, Jarvis must reset the Next.js build cache before continuing development.
+
+Commands:
+```
+rm -rf .next
+npm run dev
+```
+
+Normal UI edits, styling changes, or business logic changes must rely on Next.js hot reload and must not trigger a rebuild.
 
 ## 3. Alex — Implementation Engineer
 
