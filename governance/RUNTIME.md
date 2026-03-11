@@ -1,7 +1,18 @@
-# OpenClaw Governance Runtime
+# Governance Runtime
+# Version: 2026-03-11T03:31:36Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
+
+Compiled from:
+- CONSTITUTION.md
+- ROLES.md
+- VALIDATION.md
+- AIP.md
+- AEF.md
+- PROTECTED_SURFACES.md
+- SCP.md
+- RPP.md
 
 ## CONSTITUTION
 
