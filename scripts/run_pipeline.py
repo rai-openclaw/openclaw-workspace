@@ -23,6 +23,10 @@ from pathlib import Path
 from datetime import datetime
 import time
 
+# Add lib to path for run registry
+sys.path.insert(0, str(Path.home() / ".openclaw" / "workspace" / "lib"))
+from runRegistry import create_run, complete_run
+
 
 # ===============================
 # PATHS
@@ -155,7 +159,11 @@ def run_step(script_name):
 # ===============================
 
 def main():
+    # Create run entry for tracking
+    run_id = create_run("earnings-pipeline", "alex")
+    
     if not acquire_lock():
+        complete_run(run_id, "failed", "Pipeline already running - could not acquire lock")
         sys.exit(1)
     
     try:
@@ -168,10 +176,12 @@ def main():
 
             log("SUCCESS - All stages completed")
             log("=== PIPELINE END ===")
+            complete_run(run_id, "success", "All pipeline stages completed successfully")
 
         except Exception as e:
             log(f"PIPELINE FAILED: {str(e)}")
             log("=== PIPELINE END (FAILED) ===")
+            complete_run(run_id, "failed", f"Pipeline failed: {str(e)}")
             raise
 
     finally:

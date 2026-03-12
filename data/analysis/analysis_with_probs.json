@@ -1,67 +1,33 @@
 {
   "metadata": {
-    "pipeline_run_time": "2026-03-10T10:30:22.633322",
+    "pipeline_run_time": "2026-03-12T08:16:05.459471",
     "total_candidates": 20,
     "filtered_no_weekly_options": 0,
-    "filtered_options_unavailable": 17,
-    "tradeable_candidates": 3
+    "filtered_options_unavailable": 14,
+    "tradeable_candidates": 6
   },
   "candidates": [
     {
-      "ticker": "AVAV",
+      "ticker": "RBRK",
       "report": {
-        "date": "2026-03-10",
+        "date": "2026-03-12",
         "time": "AMC"
       },
       "market": {
-        "price": 227.12,
-        "atm_strike": 225.0,
+        "price": 54.37,
+        "atm_strike": 53.0,
         "expiration": "2026-03-13"
       },
       "options": {
-        "straddle": 26.1,
-        "em_percent": 11.491722437477986
-      },
-      "probabilities": {
-        "down_1x": 0.92,
-        "down_1_5x": 0.98,
-        "down_2x": 1.0,
-        "median_move": 0.0493,
-        "max_move": 0.2155
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "TRADE"
-        ]
-      }
-    },
-    {
-      "ticker": "ORCL",
-      "report": {
-        "date": "2026-03-10",
-        "time": "AMC"
-      },
-      "market": {
-        "price": 151.64,
-        "atm_strike": 152.5,
-        "expiration": "2026-03-13"
-      },
-      "options": {
-        "straddle": 14.83,
-        "em_percent": 9.77974149300976
+        "straddle": 8.65,
+        "em_percent": 15.909508920360494
       },
       "probabilities": {
         "down_1x": 0.95,
         "down_1_5x": 0.99,
-        "down_2x": 0.99,
-        "median_move": 0.0439,
-        "max_move": 0.3595
+        "down_2x": 1.0,
+        "median_move": 0.0483,
+        "max_move": 0.2779
       },
       "grading": {
         "grade": null,
@@ -76,26 +42,162 @@
       }
     },
     {
-      "ticker": "CPB",
+      "ticker": "ULTA",
       "report": {
-        "date": "2026-03-11",
-        "time": "BMO"
+        "date": "2026-03-12",
+        "time": "AMC"
       },
       "market": {
-        "price": 24.8,
-        "atm_strike": 25.0,
+        "price": 643.14,
+        "atm_strike": 650.0,
         "expiration": "2026-03-13"
       },
       "options": {
-        "straddle": 1.2000000000000002,
-        "em_percent": 4.838709677419355
+        "straddle": 46.0,
+        "em_percent": 7.1524084958173955
       },
       "probabilities": {
-        "down_1x": 0.8,
-        "down_1_5x": 1.0,
+        "down_1x": 0.76,
+        "down_1_5x": 0.86,
         "down_2x": 1.0,
-        "median_move": 0.0369,
-        "max_move": 0.0722
+        "median_move": 0.0435,
+        "max_move": 0.1368
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "report": {
+        "date": "2026-03-12",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 272.57,
+        "atm_strike": 272.5,
+        "expiration": "2026-03-13"
+      },
+      "options": {
+        "straddle": 19.18,
+        "em_percent": 7.036724511134755
+      },
+      "probabilities": {
+        "down_1x": 0.88,
+        "down_1_5x": 0.96,
+        "down_2x": 1.0,
+        "median_move": 0.0447,
+        "max_move": 0.1385
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "HOLDING"
+        ]
+      }
+    },
+    {
+      "ticker": "USAR",
+      "report": {
+        "date": "2026-03-12",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 19.55,
+        "atm_strike": 19.5,
+        "expiration": "2026-03-13"
+      },
+      "options": {
+        "straddle": 1.13,
+        "em_percent": 5.78005115089514
+      },
+      "probabilities": {
+        "down_1x": 0.28,
+        "down_1_5x": 0.55,
+        "down_2x": 0.71,
+        "median_move": 0.0836,
+        "max_move": 0.72
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      }
+    },
+    {
+      "ticker": "LEN",
+      "report": {
+        "date": "2026-03-12",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 94.67,
+        "atm_strike": 97.0,
+        "expiration": "2026-03-13"
+      },
+      "options": {
+        "straddle": 4.470000000000001,
+        "em_percent": 4.721664730115138
+      },
+      "probabilities": {
+        "down_1x": 0.74,
+        "down_1_5x": 0.96,
+        "down_2x": 1.0,
+        "median_move": 0.0406,
+        "max_move": 0.0885
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      }
+    },
+    {
+      "ticker": "WPM",
+      "report": {
+        "date": "2026-03-12",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 144.75,
+        "atm_strike": 145.0,
+        "expiration": "2026-03-13"
+      },
+      "options": {
+        "straddle": 5.699999999999999,
+        "em_percent": 3.937823834196891
+      },
+      "probabilities": {
+        "down_1x": 0.46,
+        "down_1_5x": 0.82,
+        "down_2x": 0.9,
+        "median_move": 0.0401,
+        "max_move": 0.1364
       },
       "grading": {
         "grade": null,

@@ -6,10 +6,15 @@ Sends HTML email summary to guanwu87@gmail.com
 
 import json
 import smtplib
+import sys
 from datetime import datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
+
+# Add lib to path for run registry
+sys.path.insert(0, str(Path.home() / ".openclaw" / "workspace" / "lib"))
+from runRegistry import create_run, complete_run
 
 # Paths
 WORKSPACE = Path.home() / ".openclaw" / "workspace"
@@ -203,27 +208,39 @@ def send_email(html):
 
 
 def main():
+    # Create run entry for tracking
+    run_id = create_run("daily-summary-email", "jarvis")
+    
     log("=== Starting Daily Summary Email ===")
     
-    # Load data
-    analysis = load_analysis()
-    holdings = load_holdings()
-    
-    log(f"Loaded {len(analysis)} analysis records")
-    log(f"Loaded holdings from {len(holdings.get('accounts', {}))} accounts")
-    
-    # Build HTML
-    html = build_html_summary(analysis, holdings)
-    
-    # Send
-    success = send_email(html)
-    
-    if success:
-        log("Daily summary sent!")
-    else:
-        log("Failed to send daily summary")
-    
-    return success
+    try:
+        # Load data
+        analysis = load_analysis()
+        holdings = load_holdings()
+        
+        log(f"Loaded {len(analysis)} analysis records")
+        log(f"Loaded holdings from {len(holdings.get('accounts', {}))} accounts")
+        
+        # Build HTML
+        html = build_html_summary(analysis, holdings)
+        
+        # Send
+        success = send_email(html)
+        
+        if success:
+            log("Daily summary sent!")
+            complete_run(run_id, "success", "Daily summary email sent successfully")
+        else:
+            log("Failed to send daily summary")
+            complete_run(run_id, "failed", "Failed to send daily summary email")
+        
+        return success
+        
+    except Exception as e:
+        error_msg = str(e)
+        log(f"Error: {error_msg}")
+        complete_run(run_id, "failed", f"Error: {error_msg}")
+        raise
 
 
 if __name__ == "__main__":

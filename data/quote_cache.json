@@ -1,5 +1,5 @@
 {
-  "lastQuoteUpdate": "2026-03-12T00:01:09.546Z",
+  "lastQuoteUpdate": "2026-03-12T05:39:46.503Z",
   "quotes": {
     "AAPL": {
       "symbol": "AAPL",
@@ -89,63 +89,42 @@
     "AVGO260306P00270000": {
       "symbol": "AVGO260306P00270000",
       "markPrice": 0,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "KSS260313P00011500": {
       "symbol": "KSS260313P00011500",
-      "markPrice": 0.01,
-      "bid": 0,
-      "ask": 0.02,
-      "last": 0.01,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "ORCL260313P00122000": {
       "symbol": "ORCL260313P00122000",
-      "markPrice": 0.02,
-      "bid": 0.01,
-      "ask": 0.02,
-      "last": 0.01,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "AVAV260313P00180000": {
       "symbol": "AVAV260313P00180000",
-      "markPrice": 0.15,
-      "bid": 0.1,
-      "ask": 0.2,
-      "last": 0.12,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "ORCL260313P00121000": {
       "symbol": "ORCL260313P00121000",
-      "markPrice": 0.02,
-      "bid": 0.01,
-      "ask": 0.02,
-      "last": 0.02,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "DG260313P00122000": {
       "symbol": "DG260313P00122000",
-      "markPrice": 0.31,
-      "bid": 0.27,
-      "ask": 0.34,
-      "last": 0.27,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "PATH260313P00008500": {
       "symbol": "PATH260313P00008500",
-      "markPrice": 0.03,
-      "bid": 0.02,
-      "ask": 0.04,
-      "last": 0.03,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     },
     "DG260313P00123000": {
       "symbol": "DG260313P00123000",
-      "markPrice": 0.37,
-      "bid": 0.34,
-      "ask": 0.4,
-      "last": 0.4,
-      "lastUpdated": "2026-03-12T00:01:09.546Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-03-12T05:39:46.503Z"
     }
   }
 }

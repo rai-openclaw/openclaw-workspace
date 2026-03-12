@@ -30,6 +30,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 from ledger import append_trade, load_ledger
 from events import emit_trade_detected, emit_ledger_updated, emit_ingestion_error
 
+# Add lib to path for run registry
+sys.path.insert(0, str(Path.home() / ".openclaw" / "workspace" / "lib"))
+from runRegistry import create_run, complete_run
+
 # Configure logging
 LOG_PATH = Path("~/.openclaw/workspace/logs/bob_robinhood.log").expanduser()
 
@@ -441,6 +445,16 @@ def run(schedule: str) -> Dict[str, Any]:
     Returns:
         Scan result dict
     """
+    # Map schedule to job name
+    job_name_map = {
+        "midday": "robinhood-midday-ingestion",
+        "end_of_day": "robinhood-eod-ingestion",
+        "safety": "robinhood-safety-scan"
+    }
+    job_name = job_name_map.get(schedule, "robinhood-ingestion")
+    
+    # Create run entry for tracking
+    run_id = create_run(job_name, "bob")
     start_time = time.time()
     
     try:
@@ -491,6 +505,10 @@ def run(schedule: str) -> Dict[str, Any]:
         
         logger.info(f"Ingestion complete: {new_count} new, {duplicates} duplicates, {expirations_created} expirations, {runtime_ms}ms")
         
+        # Complete run as success
+        summary = f"Ingestion complete: {new_count} new trades, {duplicates} duplicates, {expirations_created} expirations"
+        complete_run(run_id, "success", summary)
+        
         return {
             "new_trades": new_count,
             "duplicates_skipped": duplicates,
@@ -511,6 +529,9 @@ def run(schedule: str) -> Dict[str, Any]:
             pass
         
         logger.error(f"Ingestion failed: {error_msg}")
+        
+        # Complete run as failed
+        complete_run(run_id, "failed", f"Ingestion failed: {error_msg}")
         
         return {
             "new_trades": 0,
