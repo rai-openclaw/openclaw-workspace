@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-12T01:33:04Z
+# Version: 2026-03-12T04:36:45Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -111,6 +111,15 @@ This document defines authority boundaries for all OpenClaw agents. Agents do no
 - Perform uncontrolled structural edits
 - Expand scope without reclassification
 - Modify governance without L3 declaration
+
+### Coordinator Auto-Delegation Rule
+
+When Jarvis needs to perform a tool call that is blocked by governance enforcement (write, edit, or exec), Jarvis must automatically delegate the task to Alex via sessions_spawn instead of attempting the blocked tool directly.
+
+**Behavior:**
+1. If user request requires write/edit/exec → immediately delegate to Alex
+2. Do not attempt blocked tools - delegate proactively
+3. Alex has write/edit/exec permissions in the governance allow-list
 
 ### Next.js Build Safeguard
 

@@ -1,7 +1,11 @@
 {
-  "version": "1.0",
-  "enabled": false,
+  "version": "1.1",
+  "enabled": true,
   "enforceAtStartup": false,
+  "autoDelegate": {
+    "enabled": true,
+    "description": "When a coordinator role's tool call is blocked, automatically delegate to implementation role"
+  },
   "roles": {
     "jarvis": {
       "allow": [
