@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "evt_soccer_game",
+    "title": "Son's Soccer Game",
+    "type": "personal",
+    "start": "2026-03-11T19:00:00-07:00",
+    "end": null,
+    "source": "jarvis",
+    "metadata": {},
+    "createdAt": "2026-03-11T15:13:00-07:00"
+  }
+]

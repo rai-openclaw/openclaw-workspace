@@ -8,6 +8,9 @@ logs/
 memory/
 *.json
 
+# Allow specific data files
+ !data/calendar_events.json
+
 # Backups
 data/options/backups/
 
