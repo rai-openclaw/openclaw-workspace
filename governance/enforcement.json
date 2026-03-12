@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "enabled": false,
+  "enforceAtStartup": false,
+  "roles": {
+    "jarvis": {
+      "allow": [
+        "read",
+        "memory_search",
+        "memory_get",
+        "sessions_spawn",
+        "sessions_list",
+        "sessions_history",
+        "session_status",
+        "message",
+        "tts"
+      ]
+    },
+    "alex": {
+      "allow": [
+        "read",
+        "write",
+        "edit",
+        "exec",
+        "memory_search",
+        "memory_get"
+      ]
+    },
+    "scout": {
+      "allow": [
+        "read",
+        "exec",
+        "session_status",
+        "sessions_list"
+      ]
+    }
+  }
+}
