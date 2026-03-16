@@ -19,6 +19,7 @@ analysis_final.json is archived inside grading_engine_v2.py.
 import subprocess
 import sys
 import os
+import argparse
 from pathlib import Path
 from datetime import datetime
 import time
@@ -159,6 +160,11 @@ def run_step(script_name):
 # ===============================
 
 def main():
+    # Parse arguments
+    parser = argparse.ArgumentParser(description="Earnings Pipeline Orchestrator")
+    parser.add_argument("--no-email", action="store_true", help="Run pipeline without sending email")
+    args = parser.parse_args()
+    
     # Create run entry for tracking
     run_id = create_run("earnings-pipeline", "alex")
     
@@ -171,10 +177,16 @@ def main():
 
         try:
             for step in STEPS:
+                if args.no_email and step == "send_email.py":
+                    log("Skipping email stage (--no-email)")
+                    continue
                 run_step(step)
                 validate_output(step)
 
-            log("SUCCESS - All stages completed")
+            if args.no_email:
+                log("SUCCESS - All stages completed (email skipped)")
+            else:
+                log("SUCCESS - All stages completed")
             log("=== PIPELINE END ===")
             complete_run(run_id, "success", "All pipeline stages completed successfully")
 

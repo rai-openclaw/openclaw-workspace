@@ -283,6 +283,35 @@ def get_options_context(ticker: str) -> Optional[Dict]:
     else:
         call_put_skew = 0
     
+    # Find 25 delta skew
+    call_iv_25d = None
+    put_iv_25d = None
+    skew = None
+    
+    # Search for 25 delta call
+    for strike_str, options in exp_calls.items():
+        for opt in options:
+            delta = opt.get("delta")
+            if delta and 0.20 <= delta <= 0.30:
+                call_iv_25d = opt.get("volatility")
+                break
+        if call_iv_25d:
+            break
+    
+    # Search for 25 delta put
+    exp_puts = chain.get("putExpDateMap", {}).get(nearest_exp, {})
+    for strike_str, options in exp_puts.items():
+        for opt in options:
+            delta = opt.get("delta")
+            if delta and -0.30 <= delta <= -0.20:
+                put_iv_25d = opt.get("volatility")
+                break
+        if put_iv_25d:
+            break
+    
+    if call_iv_25d and put_iv_25d:
+        skew = put_iv_25d - call_iv_25d
+    
     # Extract DTE
     dte = 0
     if ":" in nearest_exp:
@@ -297,13 +326,52 @@ def get_options_context(ticker: str) -> Optional[Dict]:
     else:
         interpretation = "Unable to calculate implied move."
     
+    # Calculate CSP strike distances for multiple put delta levels
+    csp_candidates = []
+    
+    # Use expanded delta ranges based on Schwab data (puts are more ITM)
+    target_deltas = [
+        (0.05, 0.20),   # 5-20 delta
+        (0.20, 0.30),   # 20-30 delta
+        (0.30, 0.50),   # 30-50 delta
+    ]
+    
+    for delta_min, delta_max in target_deltas:
+        csp_strike = None
+        found_delta = None
+        for strike_str, options in exp_puts.items():
+            for opt in options:
+                delta = opt.get("delta")
+                if delta and -delta_max <= delta <= -delta_min:
+                    csp_strike = float(strike_str)
+                    found_delta = delta
+                    break
+            if csp_strike:
+                break
+        
+        if csp_strike and underlying_price and implied_move_pct:
+            distance_percent = ((underlying_price - csp_strike) / underlying_price) * 100
+            distance_vs_em = distance_percent / implied_move_pct if implied_move_pct > 0 else None
+            
+            csp_candidates.append({
+                "strike": csp_strike,
+                "delta": round(found_delta, 3) if found_delta else None,
+                "distance_percent": round(distance_percent, 1),
+                "distance_vs_em": round(distance_vs_em, 2) if distance_vs_em else None
+            })
+    
     return {
         "implied_move": round(implied_move_pct, 2) if implied_move_pct else None,
         "atm_iv": round(atm_iv, 1) if atm_iv else None,
         "call_put_skew": round(call_put_skew, 1),
+        "call_iv_25d": round(call_iv_25d, 1) if call_iv_25d else None,
+        "put_iv_25d": round(put_iv_25d, 1) if put_iv_25d else None,
+        "skew": round(skew, 1) if skew else None,
         "underlying_price": underlying_price,
         "dte": dte,
         "expiration": nearest_exp.split(":")[0] if ":" in nearest_exp else nearest_exp,
+        "atm_strike": atm_strike,
+        "csp_candidates": csp_candidates,
         "interpretation": interpretation
     }
 

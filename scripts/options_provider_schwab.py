@@ -296,6 +296,74 @@ def compute_atm_straddle(chain_json: dict, expiration: str, atm_strike: float):
     }
 
 
+def compute_25delta_skew(chain_json: dict, expiration: str) -> dict:
+    """
+    Compute 25 delta skew (put IV - call IV).
+    
+    Args:
+        chain_json: Response from fetch_options_chain
+        expiration: Expiration date string (YYYY-MM-DD)
+        
+    Returns:
+        Dict with call_iv_25d, put_iv_25d, skew or None if failed
+    """
+    if not chain_json:
+        return None
+    
+    # Find expiration key
+    call_key = None
+    put_key = None
+    
+    for key in chain_json.get("callExpDateMap", {}).keys():
+        if key.startswith(f"{expiration}:"):
+            call_key = key
+            break
+    
+    for key in chain_json.get("putExpDateMap", {}).keys():
+        if key.startswith(f"{expiration}:"):
+            put_key = key
+            break
+    
+    if not call_key or not put_key:
+        return None
+    
+    call_strikes = chain_json["callExpDateMap"].get(call_key, {})
+    put_strikes = chain_json["putExpDateMap"].get(put_key, {})
+    
+    # Find 25 delta call (delta between 0.20-0.30)
+    call_iv_25d = None
+    for strike_str, options in call_strikes.items():
+        for opt in options:
+            delta = opt.get("delta")
+            if delta and 0.20 <= delta <= 0.30:
+                call_iv_25d = opt.get("volatility")
+                break
+        if call_iv_25d:
+            break
+    
+    # Find 25 delta put (delta between -0.30 and -0.20)
+    put_iv_25d = None
+    for strike_str, options in put_strikes.items():
+        for opt in options:
+            delta = opt.get("delta")
+            if delta and -0.30 <= delta <= -0.20:
+                put_iv_25d = opt.get("volatility")
+                break
+        if put_iv_25d:
+            break
+    
+    if call_iv_25d is None or put_iv_25d is None:
+        return None
+    
+    skew = put_iv_25d - call_iv_25d
+    
+    return {
+        "call_iv_25d": call_iv_25d,
+        "put_iv_25d": put_iv_25d,
+        "skew": skew
+    }
+
+
 def get_earnings_snapshot(symbol: str, earnings_date: str) -> dict:
     """
     Get a complete earnings snapshot for a symbol.
@@ -344,7 +412,10 @@ def get_earnings_snapshot(symbol: str, earnings_date: str) -> dict:
                 dte = 0
             break
     
-    return {
+    # Compute 25 delta skew
+    skew_data = compute_25delta_skew(chain, expiration)
+    
+    result = {
         "price": chain.get("underlyingPrice"),
         "expiration": expiration,
         "atm_strike": atm_strike,
@@ -353,6 +424,14 @@ def get_earnings_snapshot(symbol: str, earnings_date: str) -> dict:
         "liquidity_ok": True,
         "dte": dte
     }
+    
+    # Add skew data if available
+    if skew_data:
+        result["call_iv_25d"] = skew_data["call_iv_25d"]
+        result["put_iv_25d"] = skew_data["put_iv_25d"]
+        result["skew"] = skew_data["skew"]
+    
+    return result
 
 
 if __name__ == "__main__":

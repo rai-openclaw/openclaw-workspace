@@ -1,9 +1,3 @@
-# SOUL.md — Governance Loader
+# SOUL.md — Governance Bootstrap
 
-On startup, agents must read and load:
-
-- governance/RUNTIME.md
-
-This compiled file contains all governance rules (CONSTITUTION, ROLES, VALIDATION, AIP, AEF, PROTECTED_SURFACES, SCP, RPP).
-
-Regenerate with: scripts/build-governance-runtime.py
+Before responding to any user request, the agent must read **governance/RUNTIME.md** and treat all rules in that file as system governance.

@@ -1,304 +1,343 @@
 {
   "candidates": [
     {
-      "ticker": "RBRK",
-      "analysis_date": "2026-03-12T08:16:17.553502",
+      "ticker": "USAU",
+      "analysis_date": "2026-03-16T15:10:15.548071",
       "price_timeline": [
         {
-          "date": "2026-01-29",
-          "price": 57.97,
-          "change%": -8.26
-        },
-        {
-          "date": "2026-01-30",
-          "price": 55.95,
-          "change%": -3.48
-        },
-        {
           "date": "2026-02-02",
-          "price": 54.45,
-          "change%": -2.68
+          "price": 16.99,
+          "change%": -2.02
         },
         {
           "date": "2026-02-03",
-          "price": 52.15,
-          "change%": -4.22
+          "price": 17.69,
+          "change%": 4.12
         },
         {
           "date": "2026-02-04",
-          "price": 51.87,
-          "change%": -0.54
+          "price": 17.38,
+          "change%": -1.75
         },
         {
           "date": "2026-02-05",
-          "price": 48.34,
-          "change%": -6.81
+          "price": 16.12,
+          "change%": -7.25
         },
         {
           "date": "2026-02-06",
-          "price": 51.07,
-          "change%": 5.65
+          "price": 17.0,
+          "change%": 5.46
         },
         {
           "date": "2026-02-09",
-          "price": 54.06,
-          "change%": 5.85
+          "price": 17.6,
+          "change%": 3.53
         },
         {
           "date": "2026-02-10",
-          "price": 55.83,
-          "change%": 3.27
+          "price": 17.31,
+          "change%": -1.65
         },
         {
           "date": "2026-02-11",
-          "price": 55.12,
-          "change%": -1.27
+          "price": 17.08,
+          "change%": -1.33
         },
         {
           "date": "2026-02-12",
-          "price": 53.19,
-          "change%": -3.5
+          "price": 15.61,
+          "change%": -8.61
         },
         {
           "date": "2026-02-13",
-          "price": 54.55,
-          "change%": 2.56
+          "price": 16.15,
+          "change%": 3.46
         },
         {
           "date": "2026-02-17",
-          "price": 53.5,
-          "change%": -1.92
+          "price": 16.08,
+          "change%": -0.43
         },
         {
           "date": "2026-02-18",
-          "price": 54.39,
-          "change%": 1.66
+          "price": 16.2,
+          "change%": 0.75
         },
         {
           "date": "2026-02-19",
-          "price": 54.16,
-          "change%": -0.42
+          "price": 17.32,
+          "change%": 6.91
         },
         {
           "date": "2026-02-20",
-          "price": 50.2,
-          "change%": -7.31
+          "price": 17.8,
+          "change%": 2.77
         },
         {
           "date": "2026-02-23",
-          "price": 47.26,
-          "change%": -5.86
+          "price": 18.51,
+          "change%": 3.99
         },
         {
           "date": "2026-02-24",
-          "price": 51.04,
-          "change%": 8.0
+          "price": 17.95,
+          "change%": -3.03
         },
         {
           "date": "2026-02-25",
-          "price": 52.16,
-          "change%": 2.19
+          "price": 18.51,
+          "change%": 3.12
         },
         {
           "date": "2026-02-26",
-          "price": 54.33,
-          "change%": 4.16
+          "price": 19.47,
+          "change%": 5.19
         },
         {
           "date": "2026-02-27",
-          "price": 51.96,
-          "change%": -4.36
+          "price": 21.7,
+          "change%": 11.45
         },
         {
           "date": "2026-03-02",
-          "price": 53.69,
-          "change%": 3.33
+          "price": 20.38,
+          "change%": -6.08
         },
         {
           "date": "2026-03-03",
-          "price": 53.87,
-          "change%": 0.34
+          "price": 18.84,
+          "change%": -7.56
         },
         {
           "date": "2026-03-04",
-          "price": 54.87,
-          "change%": 1.86
+          "price": 18.71,
+          "change%": -0.69
         },
         {
           "date": "2026-03-05",
-          "price": 55.88,
-          "change%": 1.84
+          "price": 18.07,
+          "change%": -3.42
         },
         {
           "date": "2026-03-06",
-          "price": 57.17,
-          "change%": 2.31
+          "price": 17.49,
+          "change%": -3.21
         },
         {
           "date": "2026-03-09",
-          "price": 57.17,
-          "change%": 0.0
+          "price": 17.57,
+          "change%": 0.46
         },
         {
           "date": "2026-03-10",
-          "price": 55.95,
-          "change%": -2.13
+          "price": 17.94,
+          "change%": 2.11
         },
         {
           "date": "2026-03-11",
-          "price": 57.52,
-          "change%": 2.81
+          "price": 18.03,
+          "change%": 0.5
         },
         {
           "date": "2026-03-12",
-          "price": 54.4,
-          "change%": -5.42
+          "price": 17.74,
+          "change%": -1.61
+        },
+        {
+          "date": "2026-03-13",
+          "price": 16.72,
+          "change%": -5.75
+        },
+        {
+          "date": "2026-03-16",
+          "price": 17.41,
+          "change%": 4.13
         }
       ],
       "key_movement": {
-        "type": "major selloff",
-        "magnitude": -27.73,
+        "type": "earnings spike",
+        "magnitude": 18.35,
         "reference_frames": {
-          "price_change_30d": -6.2,
-          "price_change_90d": -27.7,
+          "price_change_30d": 2.5,
+          "price_change_90d": 18.4,
           "price_change_ytd": 0.0,
-          "price_from_52w_high": -40.4,
-          "price_since_recent_extreme": 15.1
+          "price_from_52w_high": -23.0,
+          "price_since_recent_extreme": 19.7
         }
       },
       "earnings_event": {
-        "date": "2025-12-08",
-        "price_before": 70.43,
-        "price_after": 89.1,
-        "reaction_percent": 26.51,
+        "date": "2025-12-22",
+        "price_before": 16.86,
+        "price_after": 20.56,
+        "reaction_percent": 21.95,
         "method": "price_spike_detection"
       },
       "options_context": {
-        "implied_move": 16.36,
-        "atm_iv": 345.9,
-        "call_put_skew": 19.8,
-        "underlying_price": 54.4,
-        "dte": 1,
-        "expiration": "2026-03-13",
-        "interpretation": "Options market expects a +/-16.4% move for the next 1 days.",
-        "volatility_comparison": "Options market pricing 339% MORE volatility than historical (4.8%)"
+        "implied_move": 9.76,
+        "atm_iv": 116.0,
+        "call_put_skew": 12.5,
+        "call_iv_25d": null,
+        "put_iv_25d": null,
+        "skew": null,
+        "underlying_price": 17.41,
+        "dte": 4,
+        "expiration": "2026-03-20",
+        "atm_strike": 17.5,
+        "csp_candidates": [
+          {
+            "strike": 5.0,
+            "delta": -0.055,
+            "distance_percent": 71.3,
+            "distance_vs_em": 7.3
+          },
+          {
+            "strike": 17.5,
+            "delta": -0.469,
+            "distance_percent": -0.5,
+            "distance_vs_em": -0.05
+          }
+        ],
+        "interpretation": "Options market expects a +/-9.8% move for the next 4 days.",
+        "volatility_comparison": "Options market pricing 203% MORE volatility than historical (4.8%)"
       },
       "historical_volatility": {
-        "down_1x": 0.95,
-        "down_1_5x": 0.99,
+        "down_1x": 0.99,
+        "down_1_5x": 1.0,
         "down_2x": 1.0,
-        "median_move": 0.0483,
-        "max_move": 0.2779
+        "median_move": 0.048,
+        "max_move": 0.1678
       },
       "fundamentals": {},
       "news_timeline": [
         {
-          "date": "2026-03-11",
-          "headline": "Is It Time To Reassess Rubrik (RBRK) After Its NYSE Listing And Price Pullback",
+          "date": "2026-03-03",
+          "headline": "Heliostar Welcomes Tara Gilfillan to Board",
+          "publisher": "TMX Newsfile",
+          "relatedTickers": [
+            "HSTR.V",
+            "HSTR.NE",
+            "HSTXF",
+            "RGG1.F",
+            "USAU"
+          ]
+        },
+        {
+          "date": "2026-02-24",
+          "headline": "Presenting on Emerging Growth Conference 90 Day 1 on February 25; Register to live stream",
+          "publisher": "GlobeNewswire",
+          "relatedTickers": [
+            "ASPI",
+            "IBX.AX",
+            "STLNF",
+            "AEMD",
+            "HDRSF",
+            "RGBP",
+            "RGBPP",
+            "CLRMF",
+            "DDD.V",
+            "FRSPF",
+            "USAU",
+            "CLNN",
+            "CBBHF",
+            "MTVA",
+            "CHHYF",
+            "TIGR.NE",
+            "TIGR.V",
+            "EVR.CN"
+          ]
+        },
+        {
+          "date": "2026-02-19",
+          "headline": "U.S. Gold Corp. to Participate in the Emerging Growth Conference February 25, 2026",
+          "publisher": "CNW Group",
+          "relatedTickers": [
+            "USAU"
+          ]
+        },
+        {
+          "date": "2026-01-24",
+          "headline": "Is U.S. Gold (USAU) Share Price Outrunning Its Book Value Or DCF Estimate",
           "publisher": "Simply Wall St.",
           "relatedTickers": [
-            "RBRK"
+            "USAU"
           ]
         },
         {
-          "date": "2026-03-11",
-          "headline": "CI&T Inc. (CINT) Tops Q4 Earnings and Revenue Estimates",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "RBRK",
-            "CINT"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "Top Stock Picks for Week of March 9, 2026",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "RBRK",
-            "EAT",
-            "MSFT"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "Rubrik Set to Report Q4 Earnings: What's in Store for the Stock?",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "GETY",
-            "RBRK"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "VNET Group (VNET) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "RBRK"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "What Analyst Projections for Key Metrics Reveal About Rubrik, Inc. (RBRK) Q4 Earnings",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "RBRK"
-          ]
-        },
-        {
-          "date": "2026-03-07",
-          "headline": "Is Rubrik\u2019s (RBRK) Recurring Revenue Push Redefining Its Role In Cyber Data Protection?",
+          "date": "2026-01-24",
+          "headline": "A Look At U.S. Gold\u2019s (USAU) Valuation After A Sharp Short-Term Share Price Move",
           "publisher": "Simply Wall St.",
           "relatedTickers": [
-            "RBRK"
+            "USAU"
           ]
         },
         {
-          "date": "2026-03-06",
-          "headline": "Wall Street Analysts Predict an 82.7% Upside in Rubrik, Inc. (RBRK): Here's  What You Should Know",
-          "publisher": "Zacks",
+          "date": "2026-01-08",
+          "headline": "US Gold Corp (USAU): Funding Round, Analyst Upgrade, and Exploration Momentum",
+          "publisher": "Insider Monkey",
           "relatedTickers": [
-            "RBRK"
+            "USAU",
+            "LIBRA35767-USD"
+          ]
+        },
+        {
+          "date": "2025-12-23",
+          "headline": "Top Midday Gainers",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "USAU",
+            "EUDA",
+            "HYMC",
+            "SI=F"
+          ]
+        },
+        {
+          "date": "2025-12-23",
+          "headline": "U.S. Gold Closes $31.2 Million Private Placement of Common Shares, Warrants",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "USAU"
           ]
         }
       ],
       "material_events": [
         {
-          "date": "2026-03-09",
-          "headline": "What Analyst Projections for Key Metrics Reveal About Rubrik, Inc. (RBRK) Q4 Earnings",
-          "reason": "earnings"
+          "date": "2026-01-08",
+          "headline": "US Gold Corp (USAU): Funding Round, Analyst Upgrade, and Exploration Momentum",
+          "reason": "upgrade"
         }
       ],
       "analyst_activity": [],
       "technical_analysis": {
         "support_levels": [
-          47.26
+          16.08
         ],
         "resistance_levels": [
-          57.52
+          21.7
         ],
         "trend": "bearish",
-        "sma_20": 53.86,
-        "sma_50": 60.24,
-        "current_price": 54.4
+        "sma_20": 18.12,
+        "sma_50": 18.64,
+        "current_price": 17.41
       },
       "sector_etf": "SPY",
       "sector_context": {
-        "stock_return_30d": -6.16,
-        "sector_return_30d": -3.84,
-        "relative_performance": -2.32,
-        "interpretation": "in-line with sector",
+        "stock_return_30d": 2.47,
+        "sector_return_30d": -3.79,
+        "relative_performance": 6.27,
+        "interpretation": "company-specific",
         "sector_etf": "SPY"
       },
       "peer_context": {
-        "stock_return_30d": -6.16,
-        "sector_return_30d": -3.86,
-        "relative_performance": -2.3,
-        "classification": "sector driven move"
+        "stock_return_30d": 2.47,
+        "sector_return_30d": -3.79,
+        "relative_performance": 6.27,
+        "classification": "company specific strength"
       },
       "earnings_context": {
-        "expected_move": 4.83,
-        "actual_move": 26.51,
-        "surprise_factor": 5.49,
+        "expected_move": 4.8,
+        "actual_move": 21.95,
+        "surprise_factor": 4.57,
         "expected_move_source": "historical_proxy",
         "interpretation": "extreme surprise"
       },
@@ -308,23 +347,23 @@
         "interpretation": "no earnings signal detected"
       },
       "trade_desk_analysis": {
-        "movement_diagnosis": "EXTREME CORRECTION: -27.7% decline - possible breakdown or negative catalyst",
+        "movement_diagnosis": "STRONG MOMENTUM: +18.4% move - trending in direction of move",
         "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
-        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +26.5% move detected (no earnings data)",
-        "csp_viability": "ELEVATED VOL: 16% implied vs historical - CSP pricing rich | WARNING: 100% prob >50% loss",
-        "trade_desk_summary": "RBRK moved following recent news developments. Options imply a ~16% move versus a historical median earnings move of ~5%. The stock is down roughly 40% from its 52-week high. The price action appears consistent with broader sector weakness. Until momentum stabilizes, downside risk likely remains elevated."
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +21.9% move detected (no earnings data)",
+        "csp_viability": "LOW VOLATILITY: 10% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "US Gold Corp (USAU) heads into earnings this week following recent analyst upgrade activity. Stock up 18% over 90 days outperforming peers by 6%, options imply 10% vs 5% hist median. Elevated implied volatility (10%) suggests traders price an outsized move."
       },
       "market": {
-        "price": 54.37,
-        "atm_strike": 53.0,
-        "expiration": "2026-03-13"
+        "price": 17.41,
+        "atm_strike": 20.0,
+        "expiration": "2026-03-20"
       },
       "options": {
-        "straddle": 8.65,
-        "em_percent": 15.909508920360494
+        "straddle": 2.85,
+        "em_percent": 16.36990235496841
       },
       "report": {
-        "date": "2026-03-12",
+        "date": "2026-03-16",
         "time": "AMC"
       },
       "probabilities": {
@@ -343,341 +382,337 @@
           "TRADE"
         ]
       },
-      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-12/RBRK.json"
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-16/USAU.json"
     },
     {
-      "ticker": "ULTA",
-      "analysis_date": "2026-03-12T08:16:23.959386",
+      "ticker": "SMTC",
+      "analysis_date": "2026-03-16T15:10:21.628676",
       "price_timeline": [
         {
-          "date": "2026-01-29",
-          "price": 631.1,
-          "change%": -1.11
-        },
-        {
-          "date": "2026-01-30",
-          "price": 647.36,
-          "change%": 2.58
-        },
-        {
           "date": "2026-02-02",
-          "price": 665.57,
-          "change%": 2.81
+          "price": 87.76,
+          "change%": 10.04
         },
         {
           "date": "2026-02-03",
-          "price": 673.39,
-          "change%": 1.17
+          "price": 87.63,
+          "change%": -0.15
         },
         {
           "date": "2026-02-04",
-          "price": 678.64,
-          "change%": 0.78
+          "price": 81.88,
+          "change%": -6.56
         },
         {
           "date": "2026-02-05",
-          "price": 677.91,
-          "change%": -0.11
+          "price": 83.2,
+          "change%": 1.61
         },
         {
           "date": "2026-02-06",
-          "price": 690.37,
-          "change%": 1.84
+          "price": 86.5,
+          "change%": 3.97
         },
         {
           "date": "2026-02-09",
-          "price": 696.25,
-          "change%": 0.85
+          "price": 88.75,
+          "change%": 2.6
         },
         {
           "date": "2026-02-10",
-          "price": 679.28,
-          "change%": -2.44
+          "price": 88.59,
+          "change%": -0.18
         },
         {
           "date": "2026-02-11",
-          "price": 683.05,
-          "change%": 0.55
+          "price": 88.53,
+          "change%": -0.07
         },
         {
           "date": "2026-02-12",
-          "price": 667.18,
-          "change%": -2.32
+          "price": 86.53,
+          "change%": -2.26
         },
         {
           "date": "2026-02-13",
-          "price": 683.4,
-          "change%": 2.43
+          "price": 87.12,
+          "change%": 0.68
         },
         {
           "date": "2026-02-17",
-          "price": 706.82,
-          "change%": 3.43
+          "price": 87.66,
+          "change%": 0.62
         },
         {
           "date": "2026-02-18",
-          "price": 689.42,
-          "change%": -2.46
+          "price": 87.29,
+          "change%": -0.42
         },
         {
           "date": "2026-02-19",
-          "price": 692.79,
-          "change%": 0.49
+          "price": 84.96,
+          "change%": -2.67
         },
         {
           "date": "2026-02-20",
-          "price": 682.89,
-          "change%": -1.43
+          "price": 86.77,
+          "change%": 2.13
         },
         {
           "date": "2026-02-23",
-          "price": 669.87,
-          "change%": -1.91
+          "price": 86.82,
+          "change%": 0.06
         },
         {
           "date": "2026-02-24",
-          "price": 686.44,
-          "change%": 2.47
+          "price": 90.17,
+          "change%": 3.86
         },
         {
           "date": "2026-02-25",
-          "price": 684.27,
-          "change%": -0.32
+          "price": 92.16,
+          "change%": 2.21
         },
         {
           "date": "2026-02-26",
-          "price": 695.63,
-          "change%": 1.66
+          "price": 90.49,
+          "change%": -1.81
         },
         {
           "date": "2026-02-27",
-          "price": 684.79,
-          "change%": -1.56
+          "price": 90.22,
+          "change%": -0.3
         },
         {
           "date": "2026-03-02",
-          "price": 677.0,
-          "change%": -1.14
+          "price": 96.3,
+          "change%": 6.74
         },
         {
           "date": "2026-03-03",
-          "price": 668.95,
-          "change%": -1.19
+          "price": 90.17,
+          "change%": -6.37
         },
         {
           "date": "2026-03-04",
-          "price": 661.34,
-          "change%": -1.14
+          "price": 89.75,
+          "change%": -0.47
         },
         {
           "date": "2026-03-05",
-          "price": 653.64,
-          "change%": -1.16
+          "price": 87.08,
+          "change%": -2.97
         },
         {
           "date": "2026-03-06",
-          "price": 646.34,
-          "change%": -1.12
+          "price": 82.02,
+          "change%": -5.81
         },
         {
           "date": "2026-03-09",
-          "price": 642.22,
-          "change%": -0.64
+          "price": 85.14,
+          "change%": 3.8
         },
         {
           "date": "2026-03-10",
-          "price": 647.23,
-          "change%": 0.78
+          "price": 87.58,
+          "change%": 2.87
         },
         {
           "date": "2026-03-11",
-          "price": 652.65,
-          "change%": 0.84
+          "price": 85.82,
+          "change%": -2.01
         },
         {
           "date": "2026-03-12",
-          "price": 643.14,
-          "change%": -1.46
+          "price": 83.41,
+          "change%": -2.81
+        },
+        {
+          "date": "2026-03-13",
+          "price": 84.85,
+          "change%": 1.73
+        },
+        {
+          "date": "2026-03-16",
+          "price": 89.0,
+          "change%": 4.89
         }
       ],
       "key_movement": {
         "type": "earnings spike",
-        "magnitude": 23.71,
+        "magnitude": 38.16,
         "reference_frames": {
-          "price_change_30d": 1.9,
-          "price_change_90d": 23.7,
+          "price_change_30d": 1.4,
+          "price_change_90d": 38.2,
           "price_change_ytd": 0.0,
-          "price_from_52w_high": -9.0,
-          "price_since_recent_extreme": 29.6
+          "price_from_52w_high": -7.6,
+          "price_since_recent_extreme": 42.2
         }
       },
       "earnings_event": {
-        "date": "2025-12-05",
-        "price_before": 533.95,
-        "price_after": 601.5,
-        "reaction_percent": 12.65,
+        "date": "2025-11-25",
+        "price_before": 63.85,
+        "price_after": 71.78,
+        "reaction_percent": 12.42,
         "method": "price_spike_detection"
       },
       "options_context": {
-        "implied_move": 7.11,
-        "atm_iv": 154.3,
-        "call_put_skew": 13.8,
-        "underlying_price": 643.14,
-        "dte": 1,
-        "expiration": "2026-03-13",
-        "interpretation": "Options market expects a +/-7.1% move for the next 1 days.",
-        "volatility_comparison": "Options market pricing 163% MORE volatility than historical (4.3%)"
+        "implied_move": 12.98,
+        "atm_iv": 156.2,
+        "call_put_skew": -7.5,
+        "call_iv_25d": 146.6,
+        "put_iv_25d": 158.1,
+        "skew": 11.5,
+        "underlying_price": 89.0,
+        "dte": 4,
+        "expiration": "2026-03-20",
+        "atm_strike": 90.0,
+        "csp_candidates": [
+          {
+            "strike": 70.0,
+            "delta": -0.061,
+            "distance_percent": 21.3,
+            "distance_vs_em": 1.65
+          },
+          {
+            "strike": 80.0,
+            "delta": -0.223,
+            "distance_percent": 10.1,
+            "distance_vs_em": 0.78
+          },
+          {
+            "strike": 85.0,
+            "delta": -0.348,
+            "distance_percent": 4.5,
+            "distance_vs_em": 0.35
+          }
+        ],
+        "interpretation": "Options market expects a +/-13.0% move for the next 4 days.",
+        "volatility_comparison": "Options market pricing 270% MORE volatility than historical (4.8%)"
       },
       "historical_volatility": {
-        "down_1x": 0.76,
-        "down_1_5x": 0.86,
+        "down_1x": 0.95,
+        "down_1_5x": 1.0,
         "down_2x": 1.0,
-        "median_move": 0.0435,
-        "max_move": 0.1368
+        "median_move": 0.048,
+        "max_move": 0.1887
       },
       "fundamentals": {},
       "news_timeline": [
         {
-          "date": "2026-03-12",
-          "headline": "Retail earnings & consumer check-in: Dollar General, Dick's",
-          "publisher": "Yahoo Finance Video",
+          "date": "2026-03-16",
+          "headline": "Semtech Stock Falls Despite Chipmaker Posting Beat-And-Raise Report",
+          "publisher": "Investor's Business Daily",
           "relatedTickers": [
-            "DKS",
-            "FL",
-            "DG",
-            "ULTA"
+            "SMTC"
           ]
         },
         {
-          "date": "2026-03-12",
-          "headline": "Stocks Decline Pre-Bell, Oil Continues to Rise as Middle East War Intensifies",
+          "date": "2026-03-16",
+          "headline": "Semtech Fiscal Q4 Adjusted Earnings, Sales Rise",
           "publisher": "MT Newswires",
           "relatedTickers": [
-            "CL=F",
-            "LEN",
-            "DKS",
-            "ADBE",
-            "OLLI",
-            "^SPX",
-            "PATH",
-            "YMM",
-            "DG",
-            "LI",
-            "ULTA",
-            "^GSPC",
-            "^IXIC",
-            "^DJI"
+            "SMTC",
+            "FDS"
           ]
         },
         {
-          "date": "2026-03-12",
-          "headline": "Adobe, Dollar General Earnings and More Inflation Data: Still to Come This Week",
-          "publisher": "The Wall Street Journal",
+          "date": "2026-03-16",
+          "headline": "Semtech: Fiscal Q4 Earnings Snapshot",
+          "publisher": "Associated Press Finance",
           "relatedTickers": [
-            "ADBE",
-            "DG",
-            "NG=F",
-            "DKS",
-            "LEN",
-            "ULTA"
+            "SMTC"
           ]
         },
         {
-          "date": "2026-03-11",
-          "headline": "Review & Preview: All Fueled Up",
-          "publisher": "Barrons.com",
+          "date": "2026-03-16",
+          "headline": "Semtech (NASDAQ:SMTC) Reports Q4 In Line With Expectations",
+          "publisher": "StockStory",
           "relatedTickers": [
-            "CL=F",
-            "ULTA",
-            "ADBE",
-            "^DJI",
-            "^GSPC",
-            "^IXIC"
+            "SMTC"
           ]
         },
         {
-          "date": "2026-03-11",
-          "headline": "Adobe & Dollar General earnings, housing & labor data: What to Watch",
-          "publisher": "Yahoo Finance Video",
+          "date": "2026-03-16",
+          "headline": "Semtech Announces Fourth Quarter and Fiscal Year 2026 Results",
+          "publisher": "Business Wire",
           "relatedTickers": [
-            "DG",
-            "DKS",
-            "ULTA",
-            "LEN",
-            "ADBE"
+            "SMTC"
           ]
         },
         {
-          "date": "2026-03-11",
-          "headline": "Ulta Beauty Likely to Report 'Solid' Q4, Oppenheimer Says",
+          "date": "2026-03-16",
+          "headline": "Industry Leaders to Define Specification for Next-Generation 400G Optical Links",
+          "publisher": "Business Wire",
+          "relatedTickers": [
+            "AVGO",
+            "CSCO",
+            "NVDA",
+            "SMTC"
+          ]
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "Semtech Launches 224Gbps IC Family for Linear Optics Era",
+          "publisher": "Business Wire",
+          "relatedTickers": [
+            "SMTC"
+          ]
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "Morgan Stanley Raises Price Target on Semtech to $85 From $75, Keeps Equalweight Rating",
           "publisher": "MT Newswires",
           "relatedTickers": [
-            "ULTA",
-            "OR.PA"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Keracolor Debuts Brand Evolution, Celebrating a Decade of Innovation with New Digital Footprint and National Retail Expansion",
-          "publisher": "PR Newswire",
-          "relatedTickers": [
-            "TGT",
-            "ULTA"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Evercore ISI Adjusts Price Target on Ulta Beauty to $725 From $660, Maintains Outperform Rating",
-          "publisher": "MT Newswires",
-          "relatedTickers": [
-            "ULTA"
+            "SMTC"
           ]
         }
       ],
       "material_events": [
         {
-          "date": "2026-03-11",
-          "headline": "Ulta Beauty Likely to Report 'Solid' Q4, Oppenheimer Says",
+          "date": "2026-03-16",
+          "headline": "Semtech (NASDAQ:SMTC) Reports Q4 In Line With Expectations",
           "reason": "earnings"
         }
       ],
       "analyst_activity": [
         {
-          "date": "2026-03-11",
-          "headline": "Evercore ISI Adjusts Price Target on Ulta Beauty to $725 From $660, Maintains Outperform Rating",
+          "date": "2026-03-16",
+          "headline": "Morgan Stanley Raises Price Target on Semtech to $85 From $75, Keeps Equalweight Rating",
           "type": "price_target"
         }
       ],
       "technical_analysis": {
         "support_levels": [
-          642.22
+          82.02
         ],
         "resistance_levels": [
-          706.82
+          96.3
         ],
         "trend": "bullish",
-        "sma_20": 671.8,
-        "sma_50": 664.95,
-        "current_price": 643.14
+        "sma_20": 87.88,
+        "sma_50": 83.67,
+        "current_price": 89.0
       },
       "sector_etf": "SPY",
       "sector_context": {
-        "stock_return_30d": 1.91,
-        "sector_return_30d": -3.86,
-        "relative_performance": 5.77,
+        "stock_return_30d": 1.41,
+        "sector_return_30d": -3.79,
+        "relative_performance": 5.21,
         "interpretation": "company-specific",
         "sector_etf": "SPY"
       },
       "peer_context": {
-        "stock_return_30d": 1.91,
-        "sector_return_30d": -3.86,
-        "relative_performance": 5.76,
+        "stock_return_30d": 1.41,
+        "sector_return_30d": -3.79,
+        "relative_performance": 5.21,
         "classification": "company specific strength"
       },
       "earnings_context": {
-        "expected_move": 4.35,
-        "actual_move": 12.65,
-        "surprise_factor": 2.91,
+        "expected_move": 4.8,
+        "actual_move": 12.42,
+        "surprise_factor": 2.59,
         "expected_move_source": "historical_proxy",
         "interpretation": "large surprise"
       },
@@ -687,23 +722,29 @@
         "interpretation": "no earnings signal detected"
       },
       "trade_desk_analysis": {
-        "movement_diagnosis": "EXTREME RALLY: +23.7% move - likely post-earnings spike or catalyst",
+        "movement_diagnosis": "EXTREME RALLY: +38.2% move - likely post-earnings spike or catalyst",
         "sentiment_regime": "GROWTH BIAS: Bullish technicals but no clear catalyst",
-        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +12.7% move detected (no earnings data)",
-        "csp_viability": "LOW VOLATILITY: 7% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
-        "trade_desk_summary": "ULTA moved following recent news developments. Options imply a ~7% move versus a historical median earnings move of ~4%. The stock has rallied about 24% over the past three months. The move appears driven by company-specific strength rather than broader sector momentum. The broader trend remains constructive despite recent volatility."
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +12.4% move detected (no earnings data)",
+        "csp_viability": "ELEVATED VOL: 13% implied vs historical - CSP pricing rich | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "SMTC (SMTC) heads into earnings this week following recent catalyst-driven momentum. Stock up 38% over 90 days outperforming peers by 5%, options imply 13% vs 5% hist median. Elevated implied volatility (13%) suggests traders price an outsized move.",
+        "options_edge": {
+          "iv_edge": 2.704166666666667,
+          "skew": -7.5,
+          "skew_interpretation": "neutral",
+          "expected_iv_crush": 54.669999999999995
+        }
       },
       "market": {
-        "price": 643.14,
-        "atm_strike": 650.0,
-        "expiration": "2026-03-13"
+        "price": 89.0,
+        "atm_strike": 90.0,
+        "expiration": "2026-03-20"
       },
       "options": {
-        "straddle": 46.0,
-        "em_percent": 7.1524084958173955
+        "straddle": 11.55,
+        "em_percent": 12.977528089887642
       },
       "report": {
-        "date": "2026-03-12",
+        "date": "2026-03-16",
         "time": "AMC"
       },
       "probabilities": {
@@ -722,337 +763,1484 @@
           "TRADE"
         ]
       },
-      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-12/ULTA.json"
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-16/SMTC.json"
     },
     {
-      "ticker": "ADBE",
-      "analysis_date": "2026-03-12T08:16:30.280271",
+      "ticker": "GDS",
+      "analysis_date": "2026-03-16T15:10:27.471396",
       "price_timeline": [
         {
-          "date": "2026-01-29",
-          "price": 291.65,
-          "change%": -2.65
-        },
-        {
-          "date": "2026-01-30",
-          "price": 293.25,
-          "change%": 0.55
-        },
-        {
           "date": "2026-02-02",
-          "price": 293.38,
-          "change%": 0.04
+          "price": 45.08,
+          "change%": 0.87
         },
         {
           "date": "2026-02-03",
-          "price": 271.93,
-          "change%": -7.31
+          "price": 44.34,
+          "change%": -1.64
         },
         {
           "date": "2026-02-04",
-          "price": 279.71,
-          "change%": 2.86
+          "price": 41.25,
+          "change%": -6.97
         },
         {
           "date": "2026-02-05",
-          "price": 269.39,
-          "change%": -3.69
+          "price": 42.69,
+          "change%": 3.49
         },
         {
           "date": "2026-02-06",
-          "price": 268.38,
-          "change%": -0.37
+          "price": 46.48,
+          "change%": 8.88
         },
         {
           "date": "2026-02-09",
-          "price": 266.9,
-          "change%": -0.55
+          "price": 46.35,
+          "change%": -0.28
         },
         {
           "date": "2026-02-10",
-          "price": 264.67,
-          "change%": -0.84
-        },
-        {
-          "date": "2026-02-11",
-          "price": 257.16,
-          "change%": -2.84
-        },
-        {
-          "date": "2026-02-12",
-          "price": 262.5,
-          "change%": 2.08
-        },
-        {
-          "date": "2026-02-13",
-          "price": 263.97,
-          "change%": 0.56
-        },
-        {
-          "date": "2026-02-17",
-          "price": 260.45,
-          "change%": -1.33
-        },
-        {
-          "date": "2026-02-18",
-          "price": 263.17,
-          "change%": 1.04
-        },
-        {
-          "date": "2026-02-19",
-          "price": 259.21,
-          "change%": -1.5
-        },
-        {
-          "date": "2026-02-20",
-          "price": 258.61,
-          "change%": -0.23
-        },
-        {
-          "date": "2026-02-23",
-          "price": 246.68,
-          "change%": -4.61
-        },
-        {
-          "date": "2026-02-24",
-          "price": 255.17,
-          "change%": 3.44
-        },
-        {
-          "date": "2026-02-25",
-          "price": 257.81,
-          "change%": 1.03
-        },
-        {
-          "date": "2026-02-26",
-          "price": 259.04,
-          "change%": 0.48
-        },
-        {
-          "date": "2026-02-27",
-          "price": 262.41,
-          "change%": 1.3
-        },
-        {
-          "date": "2026-03-02",
-          "price": 260.88,
-          "change%": -0.58
-        },
-        {
-          "date": "2026-03-03",
-          "price": 270.99,
-          "change%": 3.88
-        },
-        {
-          "date": "2026-03-04",
-          "price": 273.12,
-          "change%": 0.79
-        },
-        {
-          "date": "2026-03-05",
-          "price": 281.74,
-          "change%": 3.16
-        },
-        {
-          "date": "2026-03-06",
-          "price": 283.62,
-          "change%": 0.67
-        },
-        {
-          "date": "2026-03-09",
-          "price": 282.44,
-          "change%": -0.42
-        },
-        {
-          "date": "2026-03-10",
-          "price": 275.13,
-          "change%": -2.59
-        },
-        {
-          "date": "2026-03-11",
-          "price": 273.71,
+          "price": 46.11,
           "change%": -0.52
         },
         {
+          "date": "2026-02-11",
+          "price": 46.48,
+          "change%": 0.8
+        },
+        {
+          "date": "2026-02-12",
+          "price": 46.84,
+          "change%": 0.77
+        },
+        {
+          "date": "2026-02-13",
+          "price": 46.12,
+          "change%": -1.54
+        },
+        {
+          "date": "2026-02-17",
+          "price": 45.23,
+          "change%": -1.93
+        },
+        {
+          "date": "2026-02-18",
+          "price": 45.18,
+          "change%": -0.11
+        },
+        {
+          "date": "2026-02-19",
+          "price": 45.56,
+          "change%": 0.84
+        },
+        {
+          "date": "2026-02-20",
+          "price": 45.08,
+          "change%": -1.05
+        },
+        {
+          "date": "2026-02-23",
+          "price": 43.13,
+          "change%": -4.33
+        },
+        {
+          "date": "2026-02-24",
+          "price": 46.03,
+          "change%": 6.72
+        },
+        {
+          "date": "2026-02-25",
+          "price": 44.99,
+          "change%": -2.26
+        },
+        {
+          "date": "2026-02-26",
+          "price": 41.79,
+          "change%": -7.11
+        },
+        {
+          "date": "2026-02-27",
+          "price": 41.31,
+          "change%": -1.15
+        },
+        {
+          "date": "2026-03-02",
+          "price": 39.9,
+          "change%": -3.41
+        },
+        {
+          "date": "2026-03-03",
+          "price": 37.99,
+          "change%": -4.79
+        },
+        {
+          "date": "2026-03-04",
+          "price": 38.24,
+          "change%": 0.66
+        },
+        {
+          "date": "2026-03-05",
+          "price": 38.11,
+          "change%": -0.34
+        },
+        {
+          "date": "2026-03-06",
+          "price": 40.87,
+          "change%": 7.24
+        },
+        {
+          "date": "2026-03-09",
+          "price": 41.35,
+          "change%": 1.17
+        },
+        {
+          "date": "2026-03-10",
+          "price": 43.89,
+          "change%": 6.14
+        },
+        {
+          "date": "2026-03-11",
+          "price": 43.71,
+          "change%": -0.41
+        },
+        {
           "date": "2026-03-12",
-          "price": 272.5,
-          "change%": -0.44
+          "price": 42.82,
+          "change%": -2.04
+        },
+        {
+          "date": "2026-03-13",
+          "price": 42.86,
+          "change%": 0.09
+        },
+        {
+          "date": "2026-03-16",
+          "price": 43.16,
+          "change%": 0.7
         }
       ],
       "key_movement": {
-        "type": "major selloff",
-        "magnitude": -19.93,
+        "type": "earnings spike",
+        "magnitude": 30.71,
         "reference_frames": {
-          "price_change_30d": -6.6,
-          "price_change_90d": -19.9,
+          "price_change_30d": -4.3,
+          "price_change_90d": 30.7,
           "price_change_ytd": 0.0,
-          "price_from_52w_high": -23.8,
-          "price_since_recent_extreme": 10.5
+          "price_from_52w_high": -9.2,
+          "price_since_recent_extreme": 48.7
         }
       },
-      "earnings_event": null,
+      "earnings_event": {
+        "date": "2026-02-06",
+        "price_before": 41.25,
+        "price_after": 46.48,
+        "reaction_percent": 12.68,
+        "method": "price_spike_detection"
+      },
       "options_context": {
-        "implied_move": 7.02,
-        "atm_iv": 152.5,
-        "call_put_skew": 6.1,
-        "underlying_price": 272.49,
-        "dte": 1,
-        "expiration": "2026-03-13",
-        "interpretation": "Options market expects a +/-7.0% move for the next 1 days.",
-        "volatility_comparison": "Options market pricing 157% MORE volatility than historical (4.5%)"
+        "implied_move": 10.73,
+        "atm_iv": 128.6,
+        "call_put_skew": 20.5,
+        "call_iv_25d": 107.4,
+        "put_iv_25d": 138.2,
+        "skew": 30.8,
+        "underlying_price": 43.16,
+        "dte": 4,
+        "expiration": "2026-03-20",
+        "atm_strike": 43.0,
+        "csp_candidates": [
+          {
+            "strike": 22.0,
+            "delta": -0.066,
+            "distance_percent": 49.0,
+            "distance_vs_em": 4.57
+          },
+          {
+            "strike": 39.0,
+            "delta": -0.208,
+            "distance_percent": 9.6,
+            "distance_vs_em": 0.9
+          },
+          {
+            "strike": 40.0,
+            "delta": -0.333,
+            "distance_percent": 7.3,
+            "distance_vs_em": 0.68
+          }
+        ],
+        "interpretation": "Options market expects a +/-10.7% move for the next 4 days.",
+        "volatility_comparison": "Options market pricing 217% MORE volatility than historical (4.9%)"
       },
       "historical_volatility": {
-        "down_1x": 0.88,
-        "down_1_5x": 0.96,
+        "down_1x": 0.94,
+        "down_1_5x": 1.0,
         "down_2x": 1.0,
-        "median_move": 0.0447,
-        "max_move": 0.1385
+        "median_move": 0.0494,
+        "max_move": 0.1493
       },
       "fundamentals": {},
       "news_timeline": [
         {
-          "date": "2026-03-12",
-          "headline": "Earnings live: Dollar General stock falls, Bumble stock soars on earnings beat",
-          "publisher": "Yahoo Finance",
+          "date": "2026-03-10",
+          "headline": "GDS Announces Results of Extraordinary General Meeting and of Additional Shareholders Meetings",
+          "publisher": "GlobeNewswire",
           "relatedTickers": [
-            "ORCL",
-            "^GSPC",
-            "BMBL",
-            "DG",
-            "HPE",
-            "NIO",
-            "ADBE"
+            "GDS"
           ]
         },
         {
-          "date": "2026-03-12",
-          "headline": "Stocks Decline Pre-Bell, Oil Continues to Rise as Middle East War Intensifies",
+          "date": "2026-03-08",
+          "headline": "Is It Too Late To Consider GDS Holdings (GDS) After Sharp Multi\u2011Year Price Swings?",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "GDS"
+          ]
+        },
+        {
+          "date": "2026-03-03",
+          "headline": "GDS to Report Fourth Quarter and Full Year 2025 Financial Results Before the Open of the U.S. Market on March 17, 2026",
+          "publisher": "GlobeNewswire",
+          "relatedTickers": [
+            "GDS"
+          ]
+        },
+        {
+          "date": "2026-02-24",
+          "headline": "GDS Announces Adjournments of Extraordinary General Meeting and Additional Shareholders Meetings to be Reconvened on March 10, 2026",
+          "publisher": "GlobeNewswire",
+          "relatedTickers": [
+            "GDS"
+          ]
+        },
+        {
+          "date": "2026-02-15",
+          "headline": "Analyst Upgrade Followed GDS Holdings (GDS) Convertible Notes Offering",
+          "publisher": "Insider Monkey",
+          "relatedTickers": [
+            "GDS"
+          ]
+        },
+        {
+          "date": "2026-02-13",
+          "headline": "DayOne Picks JPMorgan, Morgan Stanley for Potential $5 Billion US IPO",
+          "publisher": "GuruFocus.com",
+          "relatedTickers": [
+            "MS",
+            "JPM",
+            "GDS"
+          ]
+        },
+        {
+          "date": "2026-02-13",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Advance in Friday Trading",
           "publisher": "MT Newswires",
           "relatedTickers": [
-            "CL=F",
-            "LEN",
-            "DKS",
-            "ADBE",
-            "OLLI",
-            "^SPX",
-            "PATH",
-            "YMM",
-            "DG",
+            "SKM",
             "LI",
-            "ULTA",
-            "^GSPC",
-            "^IXIC",
-            "^DJI"
+            "VNET",
+            "ZLAB",
+            "HDB",
+            "IBN",
+            "INFY"
           ]
         },
         {
-          "date": "2026-03-12",
-          "headline": "Middle East, Oil Prospects Sap Wall Street Pre-Bell; Asia, Europe Off",
-          "publisher": "MT Newswires",
+          "date": "2026-02-13",
+          "headline": "GDS Holdings (NasdaqGM:GDS) Valuation Check After Strong Recent Share Price Momentum",
+          "publisher": "Simply Wall St.",
           "relatedTickers": [
-            "CL=F",
-            "^SPX",
-            "^GSPC",
-            "^IXIC",
-            "^DJI",
-            "DG",
-            "ADBE",
-            "NG=F",
-            "BTC-USD"
-          ]
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Have $1,000? These 3 Stocks Could Be Bargain Buys for 2026 and Beyond",
-          "publisher": "Motley Fool",
-          "relatedTickers": [
-            "ADBE",
-            "NFLX",
-            "NOW",
-            "NVDA",
-            "INTC"
-          ]
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Adobe, Dollar General Earnings and More Inflation Data: Still to Come This Week",
-          "publisher": "The Wall Street Journal",
-          "relatedTickers": [
-            "ADBE",
-            "DG",
-            "NG=F",
-            "DKS",
-            "LEN",
-            "ULTA"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Review & Preview: All Fueled Up",
-          "publisher": "Barrons.com",
-          "relatedTickers": [
-            "CL=F",
-            "ULTA",
-            "ADBE",
-            "^DJI",
-            "^GSPC",
-            "^IXIC"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Adobe & Dollar General earnings, housing & labor data: What to Watch",
-          "publisher": "Yahoo Finance Video",
-          "relatedTickers": [
-            "DG",
-            "DKS",
-            "ULTA",
-            "LEN",
-            "ADBE"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Here's How Much Adobe Stock Is Expected to Move After Earnings",
-          "publisher": "Investopedia",
-          "relatedTickers": [
-            "ADBE"
+            "GDS"
           ]
         }
       ],
       "material_events": [
         {
+          "date": "2026-03-03",
+          "headline": "GDS to Report Fourth Quarter and Full Year 2025 Financial Results Before the Open of the U.S. Market on March 17, 2026",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-02-15",
+          "headline": "Analyst Upgrade Followed GDS Holdings (GDS) Convertible Notes Offering",
+          "reason": "upgrade"
+        }
+      ],
+      "analyst_activity": [
+        {
+          "date": "2026-02-15",
+          "headline": "Analyst Upgrade Followed GDS Holdings (GDS) Convertible Notes Offering",
+          "type": "upgrade"
+        }
+      ],
+      "technical_analysis": {
+        "support_levels": [
+          37.99
+        ],
+        "resistance_levels": [
+          46.03
+        ],
+        "trend": "bearish",
+        "sma_20": 42.56,
+        "sma_50": 42.97,
+        "current_price": 43.16
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": -4.26,
+        "sector_return_30d": -3.79,
+        "relative_performance": -0.47,
+        "interpretation": "in-line with sector",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": -4.26,
+        "sector_return_30d": -3.79,
+        "relative_performance": -0.47,
+        "classification": "sector driven move"
+      },
+      "earnings_context": {
+        "expected_move": 4.94,
+        "actual_move": 12.68,
+        "surprise_factor": 2.57,
+        "expected_move_source": "historical_proxy",
+        "interpretation": "large surprise"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "EXTREME RALLY: +30.7% move - likely post-earnings spike or catalyst",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +12.7% move detected (no earnings data)",
+        "csp_viability": "ELEVATED VOL: 11% implied vs historical - CSP pricing rich | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "Analyst Upgrade Followed GDS Holdings (GDS) heads into earnings this week following recent catalyst-driven momentum. Stock up 31% over 90 days broadly in line with sector peers, options imply 11% vs 5% hist median. Elevated implied volatility (11%) suggests traders price an outsized move.",
+        "options_edge": {
+          "iv_edge": 2.1720647773279356,
+          "skew": 20.5,
+          "skew_interpretation": "puts expensive",
+          "expected_iv_crush": 45.01
+        }
+      },
+      "market": {
+        "price": 43.16,
+        "atm_strike": 43.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 4.63,
+        "em_percent": 10.727525486561632
+      },
+      "report": {
+        "date": "2026-03-17",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": null,
+        "down_1_5x": null,
+        "down_2x": null
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-16/GDS.json"
+    },
+    {
+      "ticker": "TME",
+      "analysis_date": "2026-03-16T15:10:33.415926",
+      "price_timeline": [
+        {
+          "date": "2026-02-02",
+          "price": 16.55,
+          "change%": -1.37
+        },
+        {
+          "date": "2026-02-03",
+          "price": 16.4,
+          "change%": -0.91
+        },
+        {
+          "date": "2026-02-04",
+          "price": 15.84,
+          "change%": -3.41
+        },
+        {
+          "date": "2026-02-05",
+          "price": 15.93,
+          "change%": 0.57
+        },
+        {
+          "date": "2026-02-06",
+          "price": 16.34,
+          "change%": 2.57
+        },
+        {
+          "date": "2026-02-09",
+          "price": 16.27,
+          "change%": -0.43
+        },
+        {
+          "date": "2026-02-10",
+          "price": 16.88,
+          "change%": 3.75
+        },
+        {
+          "date": "2026-02-11",
+          "price": 16.94,
+          "change%": 0.36
+        },
+        {
+          "date": "2026-02-12",
+          "price": 15.15,
+          "change%": -10.57
+        },
+        {
+          "date": "2026-02-13",
+          "price": 15.85,
+          "change%": 4.62
+        },
+        {
+          "date": "2026-02-17",
+          "price": 15.33,
+          "change%": -3.28
+        },
+        {
+          "date": "2026-02-18",
+          "price": 15.29,
+          "change%": -0.26
+        },
+        {
+          "date": "2026-02-19",
+          "price": 15.23,
+          "change%": -0.39
+        },
+        {
+          "date": "2026-02-20",
+          "price": 15.2,
+          "change%": -0.2
+        },
+        {
+          "date": "2026-02-23",
+          "price": 14.71,
+          "change%": -3.22
+        },
+        {
+          "date": "2026-02-24",
+          "price": 14.97,
+          "change%": 1.77
+        },
+        {
+          "date": "2026-02-25",
+          "price": 14.74,
+          "change%": -1.54
+        },
+        {
+          "date": "2026-02-26",
+          "price": 14.74,
+          "change%": 0.0
+        },
+        {
+          "date": "2026-02-27",
+          "price": 14.6,
+          "change%": -0.95
+        },
+        {
+          "date": "2026-03-02",
+          "price": 14.43,
+          "change%": -1.16
+        },
+        {
+          "date": "2026-03-03",
+          "price": 14.21,
+          "change%": -1.52
+        },
+        {
+          "date": "2026-03-04",
+          "price": 14.14,
+          "change%": -0.49
+        },
+        {
+          "date": "2026-03-05",
+          "price": 13.47,
+          "change%": -4.74
+        },
+        {
+          "date": "2026-03-06",
+          "price": 13.62,
+          "change%": 1.11
+        },
+        {
+          "date": "2026-03-09",
+          "price": 13.73,
+          "change%": 0.81
+        },
+        {
+          "date": "2026-03-10",
+          "price": 13.96,
+          "change%": 1.68
+        },
+        {
+          "date": "2026-03-11",
+          "price": 13.35,
+          "change%": -4.37
+        },
+        {
           "date": "2026-03-12",
-          "headline": "Have $1,000? These 3 Stocks Could Be Bargain Buys for 2026 and Beyond",
-          "reason": "acquisition"
+          "price": 13.68,
+          "change%": 2.47
+        },
+        {
+          "date": "2026-03-13",
+          "price": 14.19,
+          "change%": 3.73
+        },
+        {
+          "date": "2026-03-16",
+          "price": 15.09,
+          "change%": 6.34
+        }
+      ],
+      "key_movement": {
+        "type": "major selloff",
+        "magnitude": -32.96,
+        "reference_frames": {
+          "price_change_30d": -8.8,
+          "price_change_90d": -33.0,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -33.0,
+          "price_since_recent_extreme": 13.0
+        }
+      },
+      "earnings_event": {
+        "date": "2025-11-12",
+        "price_before": 21.55,
+        "price_after": 19.01,
+        "reaction_percent": 11.79,
+        "method": "price_spike_detection"
+      },
+      "options_context": {
+        "implied_move": 9.15,
+        "atm_iv": 109.1,
+        "call_put_skew": 30.0,
+        "call_iv_25d": null,
+        "put_iv_25d": 113.0,
+        "skew": null,
+        "underlying_price": 15.09,
+        "dte": 4,
+        "expiration": "2026-03-20",
+        "atm_strike": 15.0,
+        "csp_candidates": [
+          {
+            "strike": 8.0,
+            "delta": -0.077,
+            "distance_percent": 47.0,
+            "distance_vs_em": 5.14
+          },
+          {
+            "strike": 14.0,
+            "delta": -0.23,
+            "distance_percent": 7.2,
+            "distance_vs_em": 0.79
+          },
+          {
+            "strike": 15.0,
+            "delta": -0.442,
+            "distance_percent": 0.6,
+            "distance_vs_em": 0.07
+          }
+        ],
+        "interpretation": "Options market expects a +/-9.1% move for the next 4 days.",
+        "volatility_comparison": "Options market pricing 218% MORE volatility than historical (4.2%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.9,
+        "down_1_5x": 0.96,
+        "down_2x": 1.0,
+        "median_move": 0.042,
+        "max_move": 0.1566
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-03-16",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Rise in Monday Trading",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "VNET",
+            "WIT",
+            "TME",
+            "FUTU",
+            "RLX",
+            "QH",
+            "PHI",
+            "NIU",
+            "LI",
+            "HDB",
+            "IBN"
+          ]
+        },
+        {
+          "date": "2026-02-25",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Edge Lower in Wednesday Trading",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "TOUR",
+            "NCTY",
+            "SE",
+            "TLK",
+            "CAN",
+            "RDY",
+            "SIFY",
+            "DOYU",
+            "SIMO",
+            "TME",
+            "LX",
+            "BZUN",
+            "INFY",
+            "IBN"
+          ]
+        },
+        {
+          "date": "2026-02-23",
+          "headline": "Tencent Music\u2019s Revenue Model Shifts Beyond Virtual Gifting as China\u2019s Paid Music Market Expands",
+          "publisher": "Motley Fool",
+          "relatedTickers": [
+            "TME",
+            "GOOG",
+            "AMZN",
+            "NVDA"
+          ]
+        },
+        {
+          "date": "2026-02-13",
+          "headline": "Tencent Music Entertainment Group (NYSE:TME) Valuation Check After Recent Share Price Rebound",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "TME",
+            "TCMEF"
+          ]
+        },
+        {
+          "date": "2026-02-12",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Edge Higher in Thursday Trading",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "HIMX",
+            "TC",
+            "IBN",
+            "VNET",
+            "GRVY",
+            "SHG",
+            "TME"
+          ]
+        },
+        {
+          "date": "2026-02-12",
+          "headline": "Tencent Music Entertainment Group (TME) Slid on Rising Competition and Margin Dilution",
+          "publisher": "Insider Monkey",
+          "relatedTickers": [
+            "TME",
+            "TCMEF",
+            "MSTR"
+          ]
+        },
+        {
+          "date": "2026-02-10",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Rise Sharply in Tuesday Trading",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "CANG",
+            "SHG",
+            "TME",
+            "HKD",
+            "INFY",
+            "DXF",
+            "KEP",
+            "SIMO",
+            "WIT"
+          ]
+        },
+        {
+          "date": "2026-02-10",
+          "headline": "Tencent Music Entertainment Group to Report Fourth Quarter and Full Year 2025 Financial Results on March 17, 2026",
+          "publisher": "PR Newswire",
+          "relatedTickers": [
+            "TME",
+            "TCMEF"
+          ]
+        }
+      ],
+      "material_events": [],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          13.35
+        ],
+        "resistance_levels": [
+          15.33
+        ],
+        "trend": "bearish",
+        "sma_20": 14.43,
+        "sma_50": 15.85,
+        "current_price": 15.09
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": -8.82,
+        "sector_return_30d": -3.79,
+        "relative_performance": -5.03,
+        "interpretation": "sector-driven",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": -8.82,
+        "sector_return_30d": -3.79,
+        "relative_performance": -5.03,
+        "classification": "company specific weakness"
+      },
+      "earnings_context": {
+        "expected_move": 4.2,
+        "actual_move": 11.79,
+        "surprise_factor": 2.81,
+        "expected_move_source": "historical_proxy",
+        "interpretation": "large surprise"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "EXTREME CORRECTION: -33.0% decline - possible breakdown or negative catalyst",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +11.8% move detected (no earnings data)",
+        "csp_viability": "LOW VOLATILITY: 9% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "TME (TME) is in a technical breakdown regime. Stock down 33% over 90 days underperforming peers by 5%, options imply 9% vs 4% hist median. Downside momentum suggests further weakness unless key support stabilizes."
+      },
+      "market": {
+        "price": 15.09,
+        "atm_strike": 15.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 1.38,
+        "em_percent": 9.145129224652086
+      },
+      "report": {
+        "date": "2026-03-17",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": null,
+        "down_1_5x": null,
+        "down_2x": null
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-16/TME.json"
+    },
+    {
+      "ticker": "ASO",
+      "analysis_date": "2026-03-16T15:10:39.742020",
+      "price_timeline": [
+        {
+          "date": "2026-02-02",
+          "price": 56.14,
+          "change%": 2.05
+        },
+        {
+          "date": "2026-02-03",
+          "price": 59.06,
+          "change%": 5.2
+        },
+        {
+          "date": "2026-02-04",
+          "price": 59.53,
+          "change%": 0.8
+        },
+        {
+          "date": "2026-02-05",
+          "price": 57.12,
+          "change%": -4.05
+        },
+        {
+          "date": "2026-02-06",
+          "price": 59.13,
+          "change%": 3.52
+        },
+        {
+          "date": "2026-02-09",
+          "price": 58.37,
+          "change%": -1.29
+        },
+        {
+          "date": "2026-02-10",
+          "price": 57.44,
+          "change%": -1.6
+        },
+        {
+          "date": "2026-02-11",
+          "price": 59.46,
+          "change%": 3.53
+        },
+        {
+          "date": "2026-02-12",
+          "price": 57.73,
+          "change%": -2.91
+        },
+        {
+          "date": "2026-02-13",
+          "price": 58.56,
+          "change%": 1.44
+        },
+        {
+          "date": "2026-02-17",
+          "price": 59.77,
+          "change%": 2.07
+        },
+        {
+          "date": "2026-02-18",
+          "price": 59.04,
+          "change%": -1.22
+        },
+        {
+          "date": "2026-02-19",
+          "price": 59.07,
+          "change%": 0.05
+        },
+        {
+          "date": "2026-02-20",
+          "price": 58.78,
+          "change%": -0.49
+        },
+        {
+          "date": "2026-02-23",
+          "price": 58.89,
+          "change%": 0.19
+        },
+        {
+          "date": "2026-02-24",
+          "price": 61.18,
+          "change%": 3.89
+        },
+        {
+          "date": "2026-02-25",
+          "price": 61.19,
+          "change%": 0.02
+        },
+        {
+          "date": "2026-02-26",
+          "price": 61.14,
+          "change%": -0.08
+        },
+        {
+          "date": "2026-02-27",
+          "price": 60.13,
+          "change%": -1.65
+        },
+        {
+          "date": "2026-03-02",
+          "price": 60.22,
+          "change%": 0.15
+        },
+        {
+          "date": "2026-03-03",
+          "price": 59.78,
+          "change%": -0.73
+        },
+        {
+          "date": "2026-03-04",
+          "price": 60.84,
+          "change%": 1.77
+        },
+        {
+          "date": "2026-03-05",
+          "price": 60.39,
+          "change%": -0.74
+        },
+        {
+          "date": "2026-03-06",
+          "price": 60.25,
+          "change%": -0.23
+        },
+        {
+          "date": "2026-03-09",
+          "price": 59.26,
+          "change%": -1.64
+        },
+        {
+          "date": "2026-03-10",
+          "price": 59.96,
+          "change%": 1.18
+        },
+        {
+          "date": "2026-03-11",
+          "price": 57.81,
+          "change%": -3.59
+        },
+        {
+          "date": "2026-03-12",
+          "price": 55.5,
+          "change%": -4.0
+        },
+        {
+          "date": "2026-03-13",
+          "price": 56.34,
+          "change%": 1.51
+        },
+        {
+          "date": "2026-03-16",
+          "price": 56.51,
+          "change%": 0.3
+        }
+      ],
+      "key_movement": {
+        "type": "earnings spike",
+        "magnitude": 22.82,
+        "reference_frames": {
+          "price_change_30d": 0.7,
+          "price_change_90d": 22.8,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -7.6,
+          "price_since_recent_extreme": 35.4
+        }
+      },
+      "earnings_event": {
+        "date": "2025-12-10",
+        "price_before": 48.85,
+        "price_after": 55.0,
+        "reaction_percent": 12.59,
+        "method": "price_spike_detection"
+      },
+      "options_context": {
+        "implied_move": 8.64,
+        "atm_iv": 103.6,
+        "call_put_skew": -25.7,
+        "call_iv_25d": 99.8,
+        "put_iv_25d": 98.6,
+        "skew": -1.2,
+        "underlying_price": 56.51,
+        "dte": 4,
+        "expiration": "2026-03-20",
+        "atm_strike": 57.0,
+        "csp_candidates": [
+          {
+            "strike": 25.0,
+            "delta": -0.055,
+            "distance_percent": 55.8,
+            "distance_vs_em": 6.46
+          },
+          {
+            "strike": 52.0,
+            "delta": -0.205,
+            "distance_percent": 8.0,
+            "distance_vs_em": 0.92
+          },
+          {
+            "strike": 54.0,
+            "delta": -0.326,
+            "distance_percent": 4.4,
+            "distance_vs_em": 0.51
+          }
+        ],
+        "interpretation": "Options market expects a +/-8.6% move for the next 4 days.",
+        "volatility_comparison": "Options market pricing 215% MORE volatility than historical (4.0%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.94,
+        "down_1_5x": 0.96,
+        "down_2x": 0.96,
+        "median_move": 0.0401,
+        "max_move": 0.1828
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-03-16",
+          "headline": "GrabAGun Outperforms Firearms Market, Launches Logistics Platform \u2013 Quarterly Update Report",
+          "publisher": "Exec Edge",
+          "relatedTickers": [
+            "PEW",
+            "PEW-WS",
+            "RGR",
+            "ASO",
+            "SWBI"
+          ]
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "GrabAGun Outperforms Firearms Market, Launches Logistics Platform \u2013 Downloadable Quarterly Update Report",
+          "publisher": "Exec Edge",
+          "relatedTickers": [
+            "SWBI",
+            "RGR",
+            "ASO",
+            "PEW",
+            "PEW-WS"
+          ]
+        },
+        {
+          "date": "2026-03-15",
+          "headline": "Academy Sports (ASO) Reports Earnings Tomorrow: What To Expect",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "ASO"
+          ]
+        },
+        {
+          "date": "2026-03-14",
+          "headline": "Is Academy Sports and Outdoors, Inc. (ASO) A Good Stock To Buy?",
+          "publisher": "Insider Monkey",
+          "relatedTickers": [
+            "ASO"
+          ]
+        },
+        {
+          "date": "2026-03-12",
+          "headline": "American Outdoor Brands, Inc. (AOUT) Meets Q3 Earnings Estimates",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "AOUT",
+            "ASO"
+          ]
+        },
+        {
+          "date": "2026-03-12",
+          "headline": "1 Russell 2000 Stock with Impressive Fundamentals and 2 That Underwhelm",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "POWL",
+            "GIII",
+            "ASO"
+          ]
+        },
+        {
+          "date": "2026-03-12",
+          "headline": "Wall Street's Insights Into Key Metrics Ahead of Academy Sports and Outdoors (ASO) Q4 Earnings",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "ASO"
+          ]
+        },
+        {
+          "date": "2026-03-12",
+          "headline": "Academy Sports + Outdoors Launches Five-Week Work Boot Campaign Championing Access to Trusted Brands and Strong Value",
+          "publisher": "PR Newswire",
+          "relatedTickers": [
+            "ASO"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-03-15",
+          "headline": "Academy Sports (ASO) Reports Earnings Tomorrow: What To Expect",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-03-12",
+          "headline": "Wall Street's Insights Into Key Metrics Ahead of Academy Sports and Outdoors (ASO) Q4 Earnings",
+          "reason": "earnings"
         }
       ],
       "analyst_activity": [],
       "technical_analysis": {
         "support_levels": [
-          246.68
+          55.5
         ],
         "resistance_levels": [
-          283.62
+          61.19
         ],
-        "trend": "bearish",
-        "sma_20": 266.16,
-        "sma_50": 288.47,
-        "current_price": 272.5
+        "trend": "bullish",
+        "sma_20": 59.3,
+        "sma_50": 57.81,
+        "current_price": 56.51
       },
-      "sector_etf": "XLK",
+      "sector_etf": "SPY",
       "sector_context": {
-        "stock_return_30d": -6.57,
-        "sector_return_30d": -6.15,
-        "relative_performance": -0.42,
+        "stock_return_30d": 0.66,
+        "sector_return_30d": -3.79,
+        "relative_performance": 4.45,
         "interpretation": "in-line with sector",
-        "sector_etf": "XLK"
+        "sector_etf": "SPY"
       },
       "peer_context": {
-        "stock_return_30d": -6.57,
-        "sector_return_30d": -6.15,
-        "relative_performance": -0.42,
-        "classification": "sector driven move"
+        "stock_return_30d": 0.66,
+        "sector_return_30d": -3.79,
+        "relative_performance": 4.45,
+        "classification": "in-line with sector"
+      },
+      "earnings_context": {
+        "expected_move": 4.01,
+        "actual_move": 12.59,
+        "surprise_factor": 3.14,
+        "expected_move_source": "historical_proxy",
+        "interpretation": "extreme surprise"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "EXTREME RALLY: +22.8% move - likely post-earnings spike or catalyst",
+        "sentiment_regime": "GROWTH BIAS: Bullish technicals but no clear catalyst",
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +12.6% move detected (no earnings data)",
+        "csp_viability": "LOW VOLATILITY: 9% implied - narrow CSP possible | WARNING: 96% prob >50% loss",
+        "trade_desk_summary": "Academy Sports (ASO) heads into earnings this week following recent catalyst-driven momentum. Stock up 23% over 90 days outperforming peers by 4%, options imply 9% vs 4% hist median. Elevated implied volatility (9%) suggests traders price an outsized move.",
+        "options_edge": {
+          "iv_edge": 2.154613466334165,
+          "skew": -25.7,
+          "skew_interpretation": "calls expensive",
+          "expected_iv_crush": 36.26
+        }
+      },
+      "market": {
+        "price": 56.51,
+        "atm_strike": 57.5,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 4.3,
+        "em_percent": 7.609272695098213
+      },
+      "report": {
+        "date": "2026-03-17",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": null,
+        "down_1_5x": null,
+        "down_2x": null
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-16/ASO.json"
+    },
+    {
+      "ticker": "CAAP",
+      "analysis_date": "2026-03-16T15:10:45.447885",
+      "price_timeline": [
+        {
+          "date": "2026-02-02",
+          "price": 29.49,
+          "change%": -0.51
+        },
+        {
+          "date": "2026-02-03",
+          "price": 29.5,
+          "change%": 0.03
+        },
+        {
+          "date": "2026-02-04",
+          "price": 28.58,
+          "change%": -3.12
+        },
+        {
+          "date": "2026-02-05",
+          "price": 28.24,
+          "change%": -1.19
+        },
+        {
+          "date": "2026-02-06",
+          "price": 28.9,
+          "change%": 2.34
+        },
+        {
+          "date": "2026-02-09",
+          "price": 29.54,
+          "change%": 2.21
+        },
+        {
+          "date": "2026-02-10",
+          "price": 29.38,
+          "change%": -0.54
+        },
+        {
+          "date": "2026-02-11",
+          "price": 29.49,
+          "change%": 0.37
+        },
+        {
+          "date": "2026-02-12",
+          "price": 27.85,
+          "change%": -5.56
+        },
+        {
+          "date": "2026-02-13",
+          "price": 27.96,
+          "change%": 0.39
+        },
+        {
+          "date": "2026-02-17",
+          "price": 28.74,
+          "change%": 2.79
+        },
+        {
+          "date": "2026-02-18",
+          "price": 28.61,
+          "change%": -0.45
+        },
+        {
+          "date": "2026-02-19",
+          "price": 29.0,
+          "change%": 1.36
+        },
+        {
+          "date": "2026-02-20",
+          "price": 29.25,
+          "change%": 0.86
+        },
+        {
+          "date": "2026-02-23",
+          "price": 28.36,
+          "change%": -3.04
+        },
+        {
+          "date": "2026-02-24",
+          "price": 28.78,
+          "change%": 1.48
+        },
+        {
+          "date": "2026-02-25",
+          "price": 29.18,
+          "change%": 1.39
+        },
+        {
+          "date": "2026-02-26",
+          "price": 28.96,
+          "change%": -0.75
+        },
+        {
+          "date": "2026-02-27",
+          "price": 28.5,
+          "change%": -1.59
+        },
+        {
+          "date": "2026-03-02",
+          "price": 28.38,
+          "change%": -0.42
+        },
+        {
+          "date": "2026-03-03",
+          "price": 26.78,
+          "change%": -5.64
+        },
+        {
+          "date": "2026-03-04",
+          "price": 26.79,
+          "change%": 0.04
+        },
+        {
+          "date": "2026-03-05",
+          "price": 26.14,
+          "change%": -2.43
+        },
+        {
+          "date": "2026-03-06",
+          "price": 25.42,
+          "change%": -2.75
+        },
+        {
+          "date": "2026-03-09",
+          "price": 25.52,
+          "change%": 0.39
+        },
+        {
+          "date": "2026-03-10",
+          "price": 25.71,
+          "change%": 0.74
+        },
+        {
+          "date": "2026-03-11",
+          "price": 25.81,
+          "change%": 0.39
+        },
+        {
+          "date": "2026-03-12",
+          "price": 24.81,
+          "change%": -3.87
+        },
+        {
+          "date": "2026-03-13",
+          "price": 24.39,
+          "change%": -1.69
+        },
+        {
+          "date": "2026-03-16",
+          "price": 24.93,
+          "change%": 2.21
+        }
+      ],
+      "key_movement": {
+        "type": "strong momentum",
+        "magnitude": 14.36,
+        "reference_frames": {
+          "price_change_30d": -15.5,
+          "price_change_90d": 14.4,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -17.9,
+          "price_since_recent_extreme": 14.4
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 7.06,
+        "atm_iv": 84.1,
+        "call_put_skew": 0.0,
+        "call_iv_25d": null,
+        "put_iv_25d": null,
+        "skew": null,
+        "underlying_price": 24.93,
+        "dte": 4,
+        "expiration": "2026-03-20",
+        "atm_strike": 25.0,
+        "csp_candidates": [
+          {
+            "strike": 22.5,
+            "delta": -0.182,
+            "distance_percent": 9.7,
+            "distance_vs_em": 1.38
+          },
+          {
+            "strike": 25.0,
+            "delta": -0.487,
+            "distance_percent": -0.3,
+            "distance_vs_em": -0.04
+          }
+        ],
+        "interpretation": "Options market expects a +/-7.1% move for the next 4 days.",
+        "volatility_comparison": "Options market pricing 182% MORE volatility than historical (3.9%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.91,
+        "down_1_5x": 0.94,
+        "down_2x": 0.97,
+        "median_move": 0.0387,
+        "max_move": 0.1725
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-03-16",
+          "headline": "Corporacion America Airports Passenger Traffic Rose 6.7% in February",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "Corporaci\u00f3n Am\u00e9rica Airports S.A. Reports February 2026 Passenger Traffic",
+          "publisher": "Business Wire",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-03-11",
+          "headline": "Corporaci\u00f3n Am\u00e9rica Airports Announces Fourth Quarter 2025 Financial Results Call and Webcast",
+          "publisher": "Business Wire",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-03-05",
+          "headline": "Corporacion America Airports (CAAP) is an Incredible Growth Stock: 3 Reasons Why",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-02-24",
+          "headline": "Corporacion America Airports Reports 8.8% Increase in January Passenger Traffic",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-02-24",
+          "headline": "Corporaci\u00f3n Am\u00e9rica Airports S.A. Reports January 2026 Passenger Traffic",
+          "publisher": "Business Wire",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-02-08",
+          "headline": "Is It Time To Reassess Corporaci\u00f3n Am\u00e9rica Airports (NYSE:CAAP) After Its Strong Multi\u2011Year Rally?",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "Corporaci\u00f3n Am\u00e9rica Airports S.A. (CAAP): A\u00a0Bull\u00a0Case Theory",
+          "publisher": "Insider Monkey",
+          "relatedTickers": [
+            "CAAP"
+          ]
+        }
+      ],
+      "material_events": [],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          24.39
+        ],
+        "resistance_levels": [
+          29.25
+        ],
+        "trend": "bearish",
+        "sma_20": 27.2,
+        "sma_50": 27.62,
+        "current_price": 24.93
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": -15.46,
+        "sector_return_30d": -3.79,
+        "relative_performance": -11.67,
+        "interpretation": "sector-driven",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": -15.46,
+        "sector_return_30d": -3.79,
+        "relative_performance": -11.67,
+        "classification": "company specific weakness"
       },
       "earnings_context": {
         "expected_move": null,
@@ -1067,370 +2255,24 @@
         "interpretation": "no earnings signal detected"
       },
       "trade_desk_analysis": {
-        "movement_diagnosis": "SIGNIFICANT WEAKNESS: -19.9% decline - downtrend established",
+        "movement_diagnosis": "STRONG MOMENTUM: +14.4% move - trending in direction of move",
         "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
         "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
-        "csp_viability": "LOW VOLATILITY: 7% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
-        "trade_desk_summary": "ADBE moved following recent news developments. Options imply a ~7% move versus a historical median earnings move of ~4%. The stock is down roughly 24% from its 52-week high. The price action appears consistent with broader sector weakness. Until momentum stabilizes, downside risk likely remains elevated."
+        "csp_viability": "LOW VOLATILITY: 7% implied - narrow CSP possible | WARNING: 97% prob >50% loss",
+        "trade_desk_summary": "CAAP (CAAP) is in a technical breakdown regime. Stock up 14% over 90 days underperforming peers by 12%, options imply 7% vs 4% hist median. Downside momentum suggests further weakness unless key support stabilizes."
       },
       "market": {
-        "price": 272.57,
-        "atm_strike": 272.5,
-        "expiration": "2026-03-13"
+        "price": 24.93,
+        "atm_strike": 25.0,
+        "expiration": "2026-03-20"
       },
       "options": {
-        "straddle": 19.18,
-        "em_percent": 7.036724511134755
+        "straddle": 1.76,
+        "em_percent": 7.059767348576012
       },
       "report": {
-        "date": "2026-03-12",
-        "time": "AMC"
-      },
-      "probabilities": {
-        "down_1x": null,
-        "down_1_5x": null,
-        "down_2x": null
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "HOLDING"
-        ]
-      },
-      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-12/ADBE.json"
-    },
-    {
-      "ticker": "USAR",
-      "analysis_date": "2026-03-12T08:16:37.139254",
-      "price_timeline": [
-        {
-          "date": "2026-01-29",
-          "price": 22.07,
-          "change%": -12.35
-        },
-        {
-          "date": "2026-01-30",
-          "price": 22.42,
-          "change%": 1.59
-        },
-        {
-          "date": "2026-02-02",
-          "price": 22.11,
-          "change%": -1.38
-        },
-        {
-          "date": "2026-02-03",
-          "price": 25.97,
-          "change%": 17.46
-        },
-        {
-          "date": "2026-02-04",
-          "price": 23.53,
-          "change%": -9.4
-        },
-        {
-          "date": "2026-02-05",
-          "price": 20.6,
-          "change%": -12.45
-        },
-        {
-          "date": "2026-02-06",
-          "price": 21.84,
-          "change%": 6.02
-        },
-        {
-          "date": "2026-02-09",
-          "price": 23.44,
-          "change%": 7.33
-        },
-        {
-          "date": "2026-02-10",
-          "price": 21.88,
-          "change%": -6.66
-        },
-        {
-          "date": "2026-02-11",
-          "price": 21.77,
-          "change%": -0.5
-        },
-        {
-          "date": "2026-02-12",
-          "price": 19.08,
-          "change%": -12.36
-        },
-        {
-          "date": "2026-02-13",
-          "price": 19.4,
-          "change%": 1.65
-        },
-        {
-          "date": "2026-02-17",
-          "price": 19.02,
-          "change%": -1.93
-        },
-        {
-          "date": "2026-02-18",
-          "price": 18.2,
-          "change%": -4.31
-        },
-        {
-          "date": "2026-02-19",
-          "price": 18.39,
-          "change%": 1.04
-        },
-        {
-          "date": "2026-02-20",
-          "price": 17.23,
-          "change%": -6.31
-        },
-        {
-          "date": "2026-02-23",
-          "price": 18.79,
-          "change%": 9.05
-        },
-        {
-          "date": "2026-02-24",
-          "price": 20.39,
-          "change%": 8.52
-        },
-        {
-          "date": "2026-02-25",
-          "price": 20.08,
-          "change%": -1.52
-        },
-        {
-          "date": "2026-02-26",
-          "price": 20.13,
-          "change%": 0.25
-        },
-        {
-          "date": "2026-02-27",
-          "price": 18.9,
-          "change%": -6.11
-        },
-        {
-          "date": "2026-03-02",
-          "price": 20.87,
-          "change%": 10.42
-        },
-        {
-          "date": "2026-03-03",
-          "price": 19.42,
-          "change%": -6.95
-        },
-        {
-          "date": "2026-03-04",
-          "price": 18.91,
-          "change%": -2.63
-        },
-        {
-          "date": "2026-03-05",
-          "price": 19.1,
-          "change%": 1.0
-        },
-        {
-          "date": "2026-03-06",
-          "price": 17.45,
-          "change%": -8.64
-        },
-        {
-          "date": "2026-03-09",
-          "price": 18.71,
-          "change%": 7.22
-        },
-        {
-          "date": "2026-03-10",
-          "price": 20.45,
-          "change%": 9.3
-        },
-        {
-          "date": "2026-03-11",
-          "price": 21.09,
-          "change%": 3.13
-        },
-        {
-          "date": "2026-03-12",
-          "price": 19.58,
-          "change%": -7.16
-        }
-      ],
-      "key_movement": {
-        "type": "consolidation",
-        "magnitude": 0.67,
-        "reference_frames": {
-          "price_change_30d": -11.3,
-          "price_change_90d": 0.7,
-          "price_change_ytd": 0.0,
-          "price_from_52w_high": -26.7,
-          "price_since_recent_extreme": 64.5
-        }
-      },
-      "earnings_event": {
-        "date": "2026-01-05",
-        "price_before": 11.9,
-        "price_after": 15.8,
-        "reaction_percent": 32.77,
-        "method": "price_spike_detection"
-      },
-      "options_context": {
-        "implied_move": 5.92,
-        "atm_iv": 128.7,
-        "call_put_skew": 7.1,
-        "underlying_price": 19.58,
-        "dte": 1,
-        "expiration": "2026-03-13",
-        "interpretation": "Options market expects a +/-5.9% move for the next 1 days.",
-        "volatility_comparison": "Options market pricing 71% LESS volatility than historical (8.4%)"
-      },
-      "historical_volatility": {
-        "down_1x": 0.28,
-        "down_1_5x": 0.55,
-        "down_2x": 0.71,
-        "median_move": 0.0836,
-        "max_move": 0.72
-      },
-      "fundamentals": {},
-      "news_timeline": [
-        {
-          "date": "2026-03-12",
-          "headline": "USA Rare Earth Appoints Dr. Thomas Caulfield to Board of Directors",
-          "publisher": "GlobeNewswire",
-          "relatedTickers": [
-            "USAR",
-            "GFS",
-            "SNDK"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "The Best 3 Industrial Stocks to Buy in March",
-          "publisher": "Motley Fool",
-          "relatedTickers": [
-            "ACHR",
-            "NVDA",
-            "SSRM",
-            "INTC",
-            "USAR"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "USA Rare Earth (USAR) Climbs 9.3% as 3 New Execs Join",
-          "publisher": "Insider Monkey",
-          "relatedTickers": [
-            "USAR"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "USAR Gains 62.7% in the Past Year: Buy, Sell or Hold the Stock?",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "USAR",
-            "MP",
-            "^GSPC",
-            "NB"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "USA Rare Earth Round Top Deal Reshapes Valuation And Risk Reward Profile",
-          "publisher": "Simply Wall St.",
-          "relatedTickers": [
-            "USAR",
-            "TMRC"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "USAR stock swings after strategic Texas rare earth deal",
-          "publisher": "TheStreet",
-          "relatedTickers": [
-            "USAR",
-            "TMRC"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "USA Rare Earth Expands Leadership Team Following Funding Commitments",
-          "publisher": "MT Newswires",
-          "relatedTickers": [
-            "USAR"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "USA Rare Earth Expands Leadership Team Following Landmark Agreement with U.S. Government",
-          "publisher": "GlobeNewswire",
-          "relatedTickers": [
-            "USAR"
-          ]
-        }
-      ],
-      "material_events": [],
-      "analyst_activity": [],
-      "technical_analysis": {
-        "support_levels": [
-          17.23
-        ],
-        "resistance_levels": [
-          21.09
-        ],
-        "trend": "bearish",
-        "sma_20": 19.26,
-        "sma_50": 19.7,
-        "current_price": 19.58
-      },
-      "sector_etf": "SPY",
-      "sector_context": {
-        "stock_return_30d": -11.24,
-        "sector_return_30d": -3.86,
-        "relative_performance": -7.38,
-        "interpretation": "sector-driven",
-        "sector_etf": "SPY"
-      },
-      "peer_context": {
-        "stock_return_30d": -11.24,
-        "sector_return_30d": -3.85,
-        "relative_performance": -7.38,
-        "classification": "company specific weakness"
-      },
-      "earnings_context": {
-        "expected_move": 8.36,
-        "actual_move": 32.77,
-        "surprise_factor": 3.92,
-        "expected_move_source": "historical_proxy",
-        "interpretation": "extreme surprise"
-      },
-      "earnings_price_interpretation": {
-        "earnings_signal": null,
-        "price_move": null,
-        "interpretation": "no earnings signal detected"
-      },
-      "trade_desk_analysis": {
-        "movement_diagnosis": "RANGE BOUND: +0.7% - consolidation phase",
-        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
-        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +32.8% move detected (no earnings data)",
-        "csp_viability": "LOW VOLATILITY: 6% implied - narrow CSP possible",
-        "trade_desk_summary": "Options pricing (~6%) is roughly in line with historical median (~8%). The stock is down roughly 27% from its 52-week high. The move appears driven by company-specific weakness rather than sector pressure. Until momentum stabilizes, downside risk likely remains elevated."
-      },
-      "market": {
-        "price": 19.55,
-        "atm_strike": 19.5,
-        "expiration": "2026-03-13"
-      },
-      "options": {
-        "straddle": 1.13,
-        "em_percent": 5.78005115089514
-      },
-      "report": {
-        "date": "2026-03-12",
-        "time": "AMC"
+        "date": "2026-03-17",
+        "time": "BMO"
       },
       "probabilities": {
         "down_1x": null,
@@ -1448,772 +2290,7 @@
           "TRADE"
         ]
       },
-      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-12/USAR.json"
-    },
-    {
-      "ticker": "LEN",
-      "analysis_date": "2026-03-12T08:16:43.343562",
-      "price_timeline": [
-        {
-          "date": "2026-01-29",
-          "price": 111.23,
-          "change%": 0.4
-        },
-        {
-          "date": "2026-01-30",
-          "price": 109.35,
-          "change%": -1.69
-        },
-        {
-          "date": "2026-02-02",
-          "price": 108.8,
-          "change%": -0.5
-        },
-        {
-          "date": "2026-02-03",
-          "price": 112.53,
-          "change%": 3.43
-        },
-        {
-          "date": "2026-02-04",
-          "price": 115.27,
-          "change%": 2.43
-        },
-        {
-          "date": "2026-02-05",
-          "price": 115.37,
-          "change%": 0.09
-        },
-        {
-          "date": "2026-02-06",
-          "price": 114.02,
-          "change%": -1.17
-        },
-        {
-          "date": "2026-02-09",
-          "price": 114.08,
-          "change%": 0.05
-        },
-        {
-          "date": "2026-02-10",
-          "price": 119.4,
-          "change%": 4.66
-        },
-        {
-          "date": "2026-02-11",
-          "price": 120.99,
-          "change%": 1.33
-        },
-        {
-          "date": "2026-02-12",
-          "price": 120.83,
-          "change%": -0.13
-        },
-        {
-          "date": "2026-02-13",
-          "price": 122.28,
-          "change%": 1.2
-        },
-        {
-          "date": "2026-02-17",
-          "price": 121.44,
-          "change%": -0.69
-        },
-        {
-          "date": "2026-02-18",
-          "price": 121.26,
-          "change%": -0.15
-        },
-        {
-          "date": "2026-02-19",
-          "price": 116.12,
-          "change%": -4.24
-        },
-        {
-          "date": "2026-02-20",
-          "price": 116.46,
-          "change%": 0.29
-        },
-        {
-          "date": "2026-02-23",
-          "price": 116.2,
-          "change%": -0.22
-        },
-        {
-          "date": "2026-02-24",
-          "price": 116.4,
-          "change%": 0.17
-        },
-        {
-          "date": "2026-02-25",
-          "price": 110.73,
-          "change%": -4.87
-        },
-        {
-          "date": "2026-02-26",
-          "price": 112.0,
-          "change%": 1.15
-        },
-        {
-          "date": "2026-02-27",
-          "price": 114.36,
-          "change%": 2.11
-        },
-        {
-          "date": "2026-03-02",
-          "price": 110.61,
-          "change%": -3.28
-        },
-        {
-          "date": "2026-03-03",
-          "price": 108.41,
-          "change%": -1.99
-        },
-        {
-          "date": "2026-03-04",
-          "price": 106.53,
-          "change%": -1.73
-        },
-        {
-          "date": "2026-03-05",
-          "price": 104.3,
-          "change%": -2.09
-        },
-        {
-          "date": "2026-03-06",
-          "price": 101.17,
-          "change%": -3.0
-        },
-        {
-          "date": "2026-03-09",
-          "price": 99.94,
-          "change%": -1.22
-        },
-        {
-          "date": "2026-03-10",
-          "price": 98.72,
-          "change%": -1.22
-        },
-        {
-          "date": "2026-03-11",
-          "price": 96.57,
-          "change%": -2.18
-        },
-        {
-          "date": "2026-03-12",
-          "price": 94.6,
-          "change%": -2.05
-        }
-      ],
-      "key_movement": {
-        "type": "major selloff",
-        "magnitude": -23.57,
-        "reference_frames": {
-          "price_change_30d": -15.0,
-          "price_change_90d": -23.6,
-          "price_change_ytd": 0.0,
-          "price_from_52w_high": -28.9,
-          "price_since_recent_extreme": 0.0
-        }
-      },
-      "earnings_event": {
-        "date": "2026-01-09",
-        "price_before": 103.93,
-        "price_after": 119.25,
-        "reaction_percent": 14.74,
-        "method": "price_spike_detection"
-      },
-      "options_context": {
-        "implied_move": 4.56,
-        "atm_iv": 99.0,
-        "call_put_skew": -11.0,
-        "underlying_price": 94.6,
-        "dte": 1,
-        "expiration": "2026-03-13",
-        "interpretation": "Options market expects a +/-4.6% move for the next 1 days.",
-        "volatility_comparison": "Options market pricing IN LINE with historical (4.1%)"
-      },
-      "historical_volatility": {
-        "down_1x": 0.74,
-        "down_1_5x": 0.96,
-        "down_2x": 1.0,
-        "median_move": 0.0406,
-        "max_move": 0.0885
-      },
-      "fundamentals": {},
-      "news_timeline": [
-        {
-          "date": "2026-03-12",
-          "headline": "Stocks Decline Pre-Bell, Oil Continues to Rise as Middle East War Intensifies",
-          "publisher": "MT Newswires",
-          "relatedTickers": [
-            "CL=F",
-            "LEN",
-            "DKS",
-            "ADBE",
-            "OLLI",
-            "^SPX",
-            "PATH",
-            "YMM",
-            "DG",
-            "LI",
-            "ULTA",
-            "^GSPC",
-            "^IXIC",
-            "^DJI"
-          ]
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Adobe, Dollar General Earnings and More Inflation Data: Still to Come This Week",
-          "publisher": "The Wall Street Journal",
-          "relatedTickers": [
-            "ADBE",
-            "DG",
-            "NG=F",
-            "DKS",
-            "LEN",
-            "ULTA"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Adobe & Dollar General earnings, housing & labor data: What to Watch",
-          "publisher": "Yahoo Finance Video",
-          "relatedTickers": [
-            "DG",
-            "DKS",
-            "ULTA",
-            "LEN",
-            "ADBE"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Lennar Results Could Offer Early Read on Spring Sales, Trends for 2026, Truist Says",
-          "publisher": "MT Newswires",
-          "relatedTickers": [
-            "TFC",
-            "LEN.B",
-            "LEN"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Smith Douglas Homes Corp. (SDHC) Reports Q4 Loss, Beats Revenue Estimates",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "LEN",
-            "LEN-B",
-            "SDHC"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "Lennar Earnings: What To Look For From LEN",
-          "publisher": "StockStory",
-          "relatedTickers": [
-            "LEN",
-            "LEN-B"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "Adobe and 4 Other Popular Earnings Charts This Week",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "ADBE",
-            "DG",
-            "LEN",
-            "LEN-B",
-            "ORCL"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "Lennar to Report Q1 Earnings: Here's What to Expect This Season",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "LEN-B",
-            "FIX",
-            "PWR",
-            "EME",
-            "LEN"
-          ]
-        }
-      ],
-      "material_events": [
-        {
-          "date": "2026-03-10",
-          "headline": "Lennar Earnings: What To Look For From LEN",
-          "reason": "earnings"
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "Lennar to Report Q1 Earnings: Here's What to Expect This Season",
-          "reason": "earnings"
-        }
-      ],
-      "analyst_activity": [],
-      "technical_analysis": {
-        "support_levels": [
-          94.6
-        ],
-        "resistance_levels": [
-          122.28
-        ],
-        "trend": "bearish",
-        "sma_20": 110.45,
-        "sma_50": 112.06,
-        "current_price": 94.6
-      },
-      "sector_etf": "SPY",
-      "sector_context": {
-        "stock_return_30d": -14.96,
-        "sector_return_30d": -3.85,
-        "relative_performance": -11.11,
-        "interpretation": "sector-driven",
-        "sector_etf": "SPY"
-      },
-      "peer_context": {
-        "stock_return_30d": -14.96,
-        "sector_return_30d": -3.86,
-        "relative_performance": -11.1,
-        "classification": "company specific weakness"
-      },
-      "earnings_context": {
-        "expected_move": 4.06,
-        "actual_move": 14.74,
-        "surprise_factor": 3.63,
-        "expected_move_source": "historical_proxy",
-        "interpretation": "extreme surprise"
-      },
-      "earnings_price_interpretation": {
-        "earnings_signal": null,
-        "price_move": null,
-        "interpretation": "no earnings signal detected"
-      },
-      "trade_desk_analysis": {
-        "movement_diagnosis": "EXTREME CORRECTION: -23.6% decline - possible breakdown or negative catalyst",
-        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
-        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +14.7% move detected (no earnings data)",
-        "csp_viability": "LOW VOLATILITY: 5% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
-        "trade_desk_summary": "LEN moved following recent news developments. Options pricing (~5%) is roughly in line with historical median (~4%). The stock has declined about 24% over the past three months. The move appears driven by company-specific weakness rather than sector pressure. Until momentum stabilizes, downside risk likely remains elevated."
-      },
-      "market": {
-        "price": 94.67,
-        "atm_strike": 97.0,
-        "expiration": "2026-03-13"
-      },
-      "options": {
-        "straddle": 4.470000000000001,
-        "em_percent": 4.721664730115138
-      },
-      "report": {
-        "date": "2026-03-12",
-        "time": "AMC"
-      },
-      "probabilities": {
-        "down_1x": null,
-        "down_1_5x": null,
-        "down_2x": null
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "TRADE"
-        ]
-      },
-      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-12/LEN.json"
-    },
-    {
-      "ticker": "WPM",
-      "analysis_date": "2026-03-12T08:16:50.099257",
-      "price_timeline": [
-        {
-          "date": "2026-01-29",
-          "price": 152.7,
-          "change%": -2.3
-        },
-        {
-          "date": "2026-01-30",
-          "price": 131.87,
-          "change%": -13.64
-        },
-        {
-          "date": "2026-02-02",
-          "price": 132.21,
-          "change%": 0.26
-        },
-        {
-          "date": "2026-02-03",
-          "price": 136.78,
-          "change%": 3.46
-        },
-        {
-          "date": "2026-02-04",
-          "price": 140.23,
-          "change%": 2.52
-        },
-        {
-          "date": "2026-02-05",
-          "price": 130.9,
-          "change%": -6.65
-        },
-        {
-          "date": "2026-02-06",
-          "price": 135.98,
-          "change%": 3.88
-        },
-        {
-          "date": "2026-02-09",
-          "price": 142.78,
-          "change%": 5.0
-        },
-        {
-          "date": "2026-02-10",
-          "price": 144.6,
-          "change%": 1.27
-        },
-        {
-          "date": "2026-02-11",
-          "price": 149.11,
-          "change%": 3.12
-        },
-        {
-          "date": "2026-02-12",
-          "price": 139.17,
-          "change%": -6.67
-        },
-        {
-          "date": "2026-02-13",
-          "price": 145.9,
-          "change%": 4.84
-        },
-        {
-          "date": "2026-02-17",
-          "price": 142.33,
-          "change%": -2.45
-        },
-        {
-          "date": "2026-02-18",
-          "price": 144.82,
-          "change%": 1.75
-        },
-        {
-          "date": "2026-02-19",
-          "price": 145.34,
-          "change%": 0.36
-        },
-        {
-          "date": "2026-02-20",
-          "price": 150.38,
-          "change%": 3.47
-        },
-        {
-          "date": "2026-02-23",
-          "price": 155.86,
-          "change%": 3.64
-        },
-        {
-          "date": "2026-02-24",
-          "price": 157.38,
-          "change%": 0.98
-        },
-        {
-          "date": "2026-02-25",
-          "price": 157.43,
-          "change%": 0.03
-        },
-        {
-          "date": "2026-02-26",
-          "price": 161.02,
-          "change%": 2.28
-        },
-        {
-          "date": "2026-02-27",
-          "price": 163.65,
-          "change%": 1.63
-        },
-        {
-          "date": "2026-03-02",
-          "price": 165.72,
-          "change%": 1.26
-        },
-        {
-          "date": "2026-03-03",
-          "price": 151.34,
-          "change%": -8.68
-        },
-        {
-          "date": "2026-03-04",
-          "price": 153.95,
-          "change%": 1.72
-        },
-        {
-          "date": "2026-03-05",
-          "price": 147.83,
-          "change%": -3.98
-        },
-        {
-          "date": "2026-03-06",
-          "price": 146.85,
-          "change%": -0.66
-        },
-        {
-          "date": "2026-03-09",
-          "price": 147.95,
-          "change%": 0.75
-        },
-        {
-          "date": "2026-03-10",
-          "price": 150.83,
-          "change%": 1.95
-        },
-        {
-          "date": "2026-03-11",
-          "price": 148.67,
-          "change%": -1.43
-        },
-        {
-          "date": "2026-03-12",
-          "price": 144.75,
-          "change%": -2.64
-        }
-      ],
-      "key_movement": {
-        "type": "earnings spike",
-        "magnitude": 49.97,
-        "reference_frames": {
-          "price_change_30d": -5.2,
-          "price_change_90d": 50.0,
-          "price_change_ytd": 0.0,
-          "price_from_52w_high": -12.7,
-          "price_since_recent_extreme": 53.4
-        }
-      },
-      "earnings_event": {
-        "date": "2026-01-30",
-        "price_before": 156.3,
-        "price_after": 131.87,
-        "reaction_percent": 15.63,
-        "method": "price_spike_detection"
-      },
-      "options_context": {
-        "implied_move": 4.15,
-        "atm_iv": 90.5,
-        "call_put_skew": -6.5,
-        "underlying_price": 144.74,
-        "dte": 1,
-        "expiration": "2026-03-13",
-        "interpretation": "Options market expects a +/-4.1% move for the next 1 days.",
-        "volatility_comparison": "Options market pricing IN LINE with historical (4.0%)"
-      },
-      "historical_volatility": {
-        "down_1x": 0.46,
-        "down_1_5x": 0.82,
-        "down_2x": 0.9,
-        "median_move": 0.0401,
-        "max_move": 0.1364
-      },
-      "fundamentals": {},
-      "news_timeline": [
-        {
-          "date": "2026-03-12",
-          "headline": "Wheaton Precious Metals Corp (LSE:WPM) Q4 2025 Earnings Report Preview: What to Expect",
-          "publisher": "GuruFocus.com",
-          "relatedTickers": [
-            "WPM"
-          ]
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "RBC Boosts Price Target on Wheaton Precious Metals to $200 From $145, Keeps Outperform Rating",
-          "publisher": "MT Newswires",
-          "relatedTickers": [
-            "WPM"
-          ]
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Berenberg Raises its Price Target on Wheaton Precious Metals Corp. (WPM) to $180 and Maintains a Buy Rating",
-          "publisher": "Insider Monkey",
-          "relatedTickers": [
-            "WPM",
-            "0IVW.L",
-            "BHP"
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Wheaton Precious Metals Corp (LSE:WPM) Q4 2025: Everything You Need To Know Ahead Of Earnings",
-          "publisher": "GuruFocus.com",
-          "relatedTickers": [
-            "WPM"
-          ]
-        },
-        {
-          "date": "2026-03-10",
-          "headline": "WPM: What does Argus have to say about WPM?",
-          "publisher": "Argus Research",
-          "relatedTickers": [
-            "WPM"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "BHP Reshapes Copper And Silver Exposure As China Iron Ore Tensions Grow",
-          "publisher": "Simply Wall St.",
-          "relatedTickers": [
-            "BHP",
-            "SI=F",
-            "HG=F",
-            "FDY.TO",
-            "WPM"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "Should You Buy, Sell or Hold WPM Stock Before Q4 Earnings Release?",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "HBM",
-            "WPM"
-          ]
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "Unveiling Wheaton Precious Metals (WPM) Q4 Outlook: Wall Street Estimates for Key Metrics",
-          "publisher": "Zacks",
-          "relatedTickers": [
-            "WPM"
-          ]
-        }
-      ],
-      "material_events": [
-        {
-          "date": "2026-03-12",
-          "headline": "Wheaton Precious Metals Corp (LSE:WPM) Q4 2025 Earnings Report Preview: What to Expect",
-          "reason": "earnings"
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Berenberg Raises its Price Target on Wheaton Precious Metals Corp. (WPM) to $180 and Maintains a Buy Rating",
-          "reason": "upgrade"
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Wheaton Precious Metals Corp (LSE:WPM) Q4 2025: Everything You Need To Know Ahead Of Earnings",
-          "reason": "earnings"
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "Should You Buy, Sell or Hold WPM Stock Before Q4 Earnings Release?",
-          "reason": "earnings"
-        },
-        {
-          "date": "2026-03-09",
-          "headline": "Unveiling Wheaton Precious Metals (WPM) Q4 Outlook: Wall Street Estimates for Key Metrics",
-          "reason": "earnings"
-        }
-      ],
-      "analyst_activity": [
-        {
-          "date": "2026-03-12",
-          "headline": "RBC Boosts Price Target on Wheaton Precious Metals to $200 From $145, Keeps Outperform Rating",
-          "type": "price_target"
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Berenberg Raises its Price Target on Wheaton Precious Metals Corp. (WPM) to $180 and Maintains a Buy Rating",
-          "type": "upgrade"
-        },
-        {
-          "date": "2026-03-12",
-          "headline": "Berenberg Raises its Price Target on Wheaton Precious Metals Corp. (WPM) to $180 and Maintains a Buy Rating",
-          "type": "price_target"
-        }
-      ],
-      "technical_analysis": {
-        "support_levels": [
-          139.17
-        ],
-        "resistance_levels": [
-          165.72
-        ],
-        "trend": "bullish",
-        "sma_20": 151.06,
-        "sma_50": 141.53,
-        "current_price": 144.75
-      },
-      "sector_etf": "SPY",
-      "sector_context": {
-        "stock_return_30d": -5.21,
-        "sector_return_30d": -3.86,
-        "relative_performance": -1.34,
-        "interpretation": "in-line with sector",
-        "sector_etf": "SPY"
-      },
-      "peer_context": {
-        "stock_return_30d": -5.21,
-        "sector_return_30d": -3.86,
-        "relative_performance": -1.34,
-        "classification": "sector driven move"
-      },
-      "earnings_context": {
-        "expected_move": 4.01,
-        "actual_move": 15.63,
-        "surprise_factor": 3.9,
-        "expected_move_source": "historical_proxy",
-        "interpretation": "extreme surprise"
-      },
-      "earnings_price_interpretation": {
-        "earnings_signal": null,
-        "price_move": null,
-        "interpretation": "no earnings signal detected"
-      },
-      "trade_desk_analysis": {
-        "movement_diagnosis": "EXTREME RALLY: +50.0% move - likely post-earnings spike or catalyst",
-        "sentiment_regime": "BULLISH REGIME: Uptrend + positive catalysts - favorable for longs",
-        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +15.6% move detected (no earnings data)",
-        "csp_viability": "LOW VOLATILITY: 4% implied - narrow CSP possible | WARNING: 90% prob >50% loss",
-        "trade_desk_summary": "WPM moved following recent news developments. Options pricing (~4%) is roughly in line with historical median (~4%). The stock has rallied about 50% over the past three months. The price action appears consistent with broader sector weakness. The broader trend remains constructive despite recent volatility."
-      },
-      "market": {
-        "price": 144.75,
-        "atm_strike": 145.0,
-        "expiration": "2026-03-13"
-      },
-      "options": {
-        "straddle": 5.699999999999999,
-        "em_percent": 3.937823834196891
-      },
-      "report": {
-        "date": "2026-03-12",
-        "time": "AMC"
-      },
-      "probabilities": {
-        "down_1x": null,
-        "down_1_5x": null,
-        "down_2x": null
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "TRADE"
-        ]
-      },
-      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-12/WPM.json"
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-03-16/CAAP.json"
     }
   ]
 }

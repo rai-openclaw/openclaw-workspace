@@ -1,5 +1,5 @@
 {
-  "lastQuoteUpdate": "2026-03-12T05:39:46.503Z",
+  "lastQuoteUpdate": "2026-03-13T21:03:34.244Z",
   "quotes": {
     "AAPL": {
       "symbol": "AAPL",
@@ -89,27 +89,27 @@
     "AVGO260306P00270000": {
       "symbol": "AVGO260306P00270000",
       "markPrice": 0,
-      "lastUpdated": "2026-03-12T05:39:46.503Z"
+      "lastUpdated": "2026-03-13T01:14:41.217Z"
     },
     "KSS260313P00011500": {
       "symbol": "KSS260313P00011500",
       "markPrice": 0,
-      "lastUpdated": "2026-03-12T05:39:46.503Z"
+      "lastUpdated": "2026-03-13T01:14:41.217Z"
     },
     "ORCL260313P00122000": {
       "symbol": "ORCL260313P00122000",
       "markPrice": 0,
-      "lastUpdated": "2026-03-12T05:39:46.503Z"
+      "lastUpdated": "2026-03-13T01:14:41.217Z"
     },
     "AVAV260313P00180000": {
       "symbol": "AVAV260313P00180000",
       "markPrice": 0,
-      "lastUpdated": "2026-03-12T05:39:46.503Z"
+      "lastUpdated": "2026-03-13T01:14:41.217Z"
     },
     "ORCL260313P00121000": {
       "symbol": "ORCL260313P00121000",
       "markPrice": 0,
-      "lastUpdated": "2026-03-12T05:39:46.503Z"
+      "lastUpdated": "2026-03-13T01:14:41.217Z"
     },
     "DG260313P00122000": {
       "symbol": "DG260313P00122000",
@@ -125,6 +125,21 @@
       "symbol": "DG260313P00123000",
       "markPrice": 0,
       "lastUpdated": "2026-03-12T05:39:46.503Z"
+    },
+    "ADBE260313P00240000": {
+      "symbol": "ADBE260313P00240000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-13T01:14:41.217Z"
+    },
+    "ULTA": {
+      "symbol": "ULTA",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-13T21:03:34.244Z"
+    },
+    "ADBE": {
+      "symbol": "ADBE",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-13T21:03:34.244Z"
     }
   }
 }

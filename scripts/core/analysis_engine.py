@@ -809,13 +809,16 @@ def determine_dominant_driver(data: Dict) -> str:
     Uses only existing fields - no new API calls.
 
     Priority order (checked in sequence):
-    1. post_earnings_reversal
-    2. earnings_runup
-    3. technical_breakdown
-    4. sector_momentum
-    5. volatility_event
-    6. news_catalyst (only if ticker explicitly mentioned)
+    1. news_catalyst (material_events contains ticker in headline)
+    2. post_earnings_reversal (|reaction| > 15% AND magnitude < |reaction| × 0.6)
+    3. earnings_event (report date within 7 days AND no material_events)
+    4. technical_breakdown (trend == bearish AND magnitude > 10)
+    5. sector_momentum (trend == bullish AND magnitude > 5)
+    6. volatility_event (implied_move > 12, no catalyst)
+    7. neutral_consolidation (default)
     """
+    from datetime import date, datetime
+    
     key_movement = data.get("key_movement", {})
     earnings_event = data.get("earnings_event", {})
     options_context = data.get("options_context", {})
@@ -828,38 +831,106 @@ def determine_dominant_driver(data: Dict) -> str:
     trend = tech.get("trend", "neutral")
     implied = options_context.get("implied_move", 0) if options_context else 0
 
-    # 1. post_earnings_reversal
-    if earnings_event:
-        reaction = earnings_event.get("reaction_percent", 0)
-        # Large reaction that has reversed?
-        if abs(reaction) > 20 and magnitude < abs(reaction) * 0.5:
-            return "post_earnings_reversal"
-
-    # 2. earnings_runup
-    if implied > 15:
-        return "earnings_runup"
-
-    # 3. technical_breakdown
-    if trend == "bearish" and magnitude > 10:
-        return "technical_breakdown"
-
-    # 4. sector_momentum
-    if trend == "bullish" and magnitude > 5:
-        return "sector_momentum"
-
-    # 5. volatility_event
-    if implied > 12:
-        return "volatility_event"
-
-    # 6. news_catalyst - ONLY if ticker explicitly mentioned in headline
+    # 1. news_catalyst - ticker explicitly mentioned in headline
     if material:
         for event in material:
             headline = event.get("headline", "").upper()
-            # Must explicitly contain ticker symbol or company name pattern
             if ticker and ticker in headline:
                 return "news_catalyst"
 
+    # 2. post_earnings_reversal
+    if earnings_event:
+        reaction = earnings_event.get("reaction_percent", 0)
+        # Large reaction that has reversed (magnitude < |reaction| × 0.6)
+        if abs(reaction) > 15 and magnitude < abs(reaction) * 0.6:
+            return "post_earnings_reversal"
+
+    # 3. earnings_event - report date within 7 days AND no material_events
+    # Check if earnings are upcoming within 7 days
+    today = date.today()
+    report_info = data.get("report", {})
+    
+    if report_info:
+        report_date_str = report_info.get("date")
+        if report_date_str:
+            try:
+                report_date = datetime.strptime(report_date_str, "%Y-%m-%d").date()
+                days_until = (report_date - today).days
+                if 0 <= days_until <= 7 and not material:
+                    return "earnings_event"
+            except (ValueError, TypeError):
+                pass
+    
+    # Also check earnings_event for recent/past earnings detection
+    if earnings_event and not material:
+        report_date_str = earnings_event.get("report_date")
+        if report_date_str:
+            try:
+                report_date = datetime.strptime(report_date_str, "%Y-%m-%d").date()
+                days_until = (report_date - today).days
+                # If earnings within past week or upcoming week with no news catalyst
+                if -7 <= days_until <= 7:
+                    return "earnings_event"
+            except (ValueError, TypeError):
+                pass
+
+    # 4. technical_breakdown
+    if trend == "bearish" and magnitude > 10:
+        return "technical_breakdown"
+
+    # 5. sector_momentum
+    if trend == "bullish" and magnitude > 5:
+        return "sector_momentum"
+
+    # 6. volatility_event - implied_move > 12, no catalyst
+    if implied > 12:
+        return "volatility_event"
+
+    # 7. neutral_consolidation (default)
     return "neutral_consolidation"
+
+
+def compute_options_edge(data: Dict) -> Dict:
+    """
+    Compute options market edge metrics.
+    """
+    options_context = data.get("options_context", {})
+    historical_volatility = data.get("historical_volatility", {})
+    
+    # Read from correct field names
+    call_iv_25d = options_context.get("call_iv_25d")
+    put_iv_25d = options_context.get("put_iv_25d")
+    skew = options_context.get("call_put_skew")
+    atm_iv = options_context.get("atm_iv", 0)
+    
+    # Handle missing values safely - skip calculation if any required field is None
+    if call_iv_25d is None or put_iv_25d is None or skew is None:
+        return None
+    
+    implied_move = options_context.get("implied_move", 0)
+    historical_move = historical_volatility.get("median_move", 0) * 100
+    
+    iv_edge = None
+    if implied_move and historical_move and historical_move > 0:
+        iv_edge = implied_move / historical_move
+    
+    skew_interpretation = "neutral"
+    if skew is not None:
+        if skew > 10:
+            skew_interpretation = "puts expensive"
+        elif skew < -10:
+            skew_interpretation = "calls expensive"
+    
+    expected_iv_crush = None
+    if atm_iv:
+        expected_iv_crush = atm_iv * 0.35
+    
+    return {
+        "iv_edge": iv_edge,
+        "skew": skew,
+        "skew_interpretation": skew_interpretation,
+        "expected_iv_crush": expected_iv_crush
+    }
 
 
 def build_trade_desk_analysis(data: Dict) -> Dict:
@@ -992,12 +1063,31 @@ def build_trade_desk_analysis(data: Dict) -> Dict:
                 f"The {magnitude:+.1f}% price move reflects immediate market reaction. "
                 f"Wait for the news to settle before entering positions."
             )
+    elif regime == "earnings_event":
+        report_info = data.get("report", {})
+        report_date = report_info.get("date", "soon")
+        implied = options_context.get("implied_move", 0) if options_context else 0
+        trade_desk_summary = (
+            f"{ticker_symbol.upper()} reports earnings on {report_date}. "
+            f"Options imply a ~{implied:.0f}% move for the event. "
+            f"Consider directional plays with defined risk or wait for post-earnings IV crush."
+        )
     elif regime == "post_earnings_reversal":
         reaction = earnings_event.get("reaction_percent", 0) if earnings_event else 0
         trade_desk_summary = (
             f"{ticker_symbol.upper()} experienced a {reaction:+.1f}% earnings reaction that has since reversed. "
             f"Currently {magnitude:+.1f}% from the peak - the market has re-priced expectations. "
             f"Watch for mean reversion or continued weakness."
+        )
+    elif regime == "earnings_event":
+        report_info = data.get("report", {})
+        report_date = report_info.get("date", "soon")
+        implied = options_context.get("implied_move", 0) if options_context else 0
+        
+        trade_desk_summary = (
+            f"{ticker_symbol.upper()} reports earnings on {report_date}. "
+            f"Options imply a ~{implied:.0f}% move for the event. "
+            f"Consider directional plays with defined risk or wait for post-earnings IV crush."
         )
     elif regime == "earnings_runup":
         implied = options_context.get("implied_move", 0) if options_context else 0
@@ -1032,13 +1122,21 @@ def build_trade_desk_analysis(data: Dict) -> Dict:
             f"Wait for a clear setup before committing capital."
         )
 
-    return {
+    # Build trade desk analysis dict
+    trade_desk_analysis = {
         "movement_diagnosis": movement_diagnosis,
         "sentiment_regime": sentiment_regime,
         "earnings_reaction_quality": earnings_reaction_quality,
         "csp_viability": csp_viability,
-        "trade_desk_summary": generate_trade_desk_summary(data)
+        "trade_desk_summary": compose_trade_desk_analysis(data, regime)
     }
+    
+    # Add options edge metrics to trade_desk_analysis
+    options_edge = compute_options_edge(data)
+    if options_edge is not None:
+        trade_desk_analysis["options_edge"] = options_edge
+    
+    return trade_desk_analysis
 
 
 # =============================================================================
@@ -1325,6 +1423,145 @@ def detect_positioning_effects(context: Dict) -> Optional[str]:
         return "Despite the earnings catalyst, the price reaction was muted relative to expectations."
     
     return None
+
+
+def compose_trade_desk_analysis(context: Dict, regime: str = "neutral_consolidation") -> str:
+    """
+    Compose a concise analyst note (2-3 sentences) using structured analytical synthesis.
+    Structure: Sentence 1 → catalyst, Sentence 2 → price + vol, Sentence 3 → implication
+    """
+    from datetime import date, datetime
+    
+    ticker = context.get("ticker", "UNKNOWN").upper()
+    material_events = context.get("material_events", [])
+    earnings_event = context.get("earnings_event", {})
+    key_movement = context.get("key_movement", {})
+    options_context = context.get("options_context", {})
+    historical_volatility = context.get("historical_volatility", {})
+    sector_context = context.get("sector_context", {})
+    peer_context = context.get("peer_context", {})
+    
+    magnitude = key_movement.get("magnitude", 0)
+    reference_frames = key_movement.get("reference_frames", {})
+    implied_move = options_context.get("implied_move", 0) if options_context else 0
+    median_move = historical_volatility.get("median_move", 0)
+    
+    if median_move and median_move < 1:
+        median_move_pct = median_move * 100
+    else:
+        median_move_pct = median_move or 0
+    
+    price_change_90d = reference_frames.get("price_change_90d")
+    relative_performance = peer_context.get("relative_performance", sector_context.get("relative_performance", 0))
+    
+    def fmt_pct(val):
+        if val is None:
+            return "0"
+        return f"{abs(val):.0f}" if abs(val) >= 1 else f"{abs(val):.1f}"
+    
+    # === HELPER: Extract company name from headlines ===
+    def get_company_name():
+        # Try to extract from news headlines (e.g., "Semtech (SMTC) Q4 Earnings...")
+        for event in material_events:
+            headline = event.get("headline", "")
+            # Look for "Company (TICKER)" pattern
+            import re
+            match = re.search(r'^([^(]+)\s*\(' + ticker + r'\)', headline)
+            if match:
+                return match.group(1).strip()
+        # Fallback to ticker
+        return ticker
+    
+    company_name = get_company_name()
+    
+    # === SENTENCE 1: CATALYST ===
+    report_info = context.get("report", {})
+    report_date_str = report_info.get("date") if report_info else None
+    
+    if not report_date_str and earnings_event:
+        report_date_str = earnings_event.get("report_date")
+    
+    sentence_1 = ""
+    if report_date_str:
+        try:
+            report_date = datetime.strptime(report_date_str, "%Y-%m-%d").date()
+            days_until = (report_date - date.today()).days
+            if days_until == 0:
+                sentence_1 = f"{company_name} ({ticker}) heads into earnings today."
+            elif days_until == 1:
+                sentence_1 = f"{company_name} ({ticker}) reports earnings tomorrow."
+            elif days_until > 1 and days_until <= 7:
+                sentence_1 = f"{company_name} ({ticker}) reports earnings this week."
+            else:
+                sentence_1 = f"{company_name} ({ticker}) reports earnings {report_date_str}."
+        except:
+            sentence_1 = f"{company_name} ({ticker}) has an upcoming earnings event."
+    elif regime == "news_catalyst":
+        # Summarize the catalyst
+        if material_events:
+            reason = material_events[0].get("reason", "news")
+            if reason == "earnings":
+                sentence_1 = f"{company_name} ({ticker}) heads into earnings this week following recent catalyst-driven momentum."
+            elif reason == "upgrade":
+                sentence_1 = f"{company_name} ({ticker}) heads into earnings this week following recent analyst upgrade activity."
+            else:
+                sentence_1 = f"{company_name} ({ticker}) heads into earnings this week following recent news catalyst."
+        else:
+            sentence_1 = f"{company_name} ({ticker}) has a recent news catalyst ahead of earnings."
+    elif regime == "sector_momentum":
+        sentence_1 = f"{company_name} ({ticker}) is riding sector momentum."
+    else:
+        sentence_1 = f"{company_name} ({ticker}) is in a {regime.replace('_', ' ')} regime."
+    
+    # === SENTENCE 2: PRICE MOMENTUM + IMPLIED VS HISTORICAL ===
+    if price_change_90d:
+        direction = "up" if price_change_90d > 0 else "down"
+        sentence_2 = f"Stock {direction} {fmt_pct(price_change_90d)}% over 90 days"
+    else:
+        sentence_2 = f"Stock moved {fmt_pct(magnitude)}%"
+    
+    # Add peer context
+    if relative_performance:
+        if abs(relative_performance) <= 2:
+            peer_part = " broadly in line with sector peers"
+        elif relative_performance > 2:
+            peer_part = f" outperforming peers by {fmt_pct(relative_performance)}%"
+        else:
+            peer_part = f" underperforming peers by {fmt_pct(relative_performance)}%"
+    else:
+        peer_part = ""
+    
+    if implied_move and median_move_pct:
+        vol_dir = "above" if implied_move > median_move_pct else "below"
+        sentence_2 += f"{peer_part}, options imply {fmt_pct(implied_move)}% vs {fmt_pct(median_move_pct)}% hist median."
+    else:
+        sentence_2 += "." if not peer_part else f"{peer_part}."
+    
+    # === SENTENCE 3: POSITIONING IMPLICATION ===
+    if regime in ("news_catalyst", "earnings_event"):
+        if implied_move and median_move_pct and implied_move > median_move_pct * 1.3:
+            sentence_3 = f"Elevated implied volatility ({fmt_pct(implied_move)}%) suggests traders price an outsized move."
+        else:
+            sentence_3 = "Traders pricing elevated vol - consider defined-risk directional or wait for settlement."
+    elif regime == "sector_momentum":
+        sentence_3 = "Momentum remains constructive but monitor for sector rotation and positioning risk."
+    elif regime == "technical_breakdown":
+        sentence_3 = "Downside momentum suggests further weakness unless key support stabilizes."
+    elif regime == "volatility_event":
+        sentence_3 = "Options expensive - consider volatility arbitrage or wait for normalization."
+    elif regime == "post_earnings_reversal":
+        sentence_3 = "Watch for mean reversion or continued weakness."
+    else:
+        sentence_3 = "Wait for clear catalyst or technical setup before positioning."
+    
+    # Combine and truncate if needed
+    full = f"{sentence_1} {sentence_2} {sentence_3}"
+    if len(full) > 300:  # Rough word limit
+        # Truncate sentence 3
+        sentence_3 = sentence_3[:100]
+        full = f"{sentence_1} {sentence_2} {sentence_3}"
+    
+    return full
 
 
 def generate_trade_desk_summary(context: Dict) -> str:
