@@ -1136,6 +1136,23 @@ def build_trade_desk_analysis(data: Dict) -> Dict:
     if options_edge is not None:
         trade_desk_analysis["options_edge"] = options_edge
     
+    # Add strike_analysis: extract from csp_candidates in options_context
+    if options_context:
+        csp_candidates = options_context.get("csp_candidates", [])
+        if csp_candidates:
+            # Use the first (best) CSP candidate for strike analysis
+            best_csp = csp_candidates[0]
+            trade_desk_analysis["strike_analysis"] = {
+                "csp_strike": best_csp.get("strike"),
+                "distance_percent": best_csp.get("distance_percent"),
+                "distance_vs_em": best_csp.get("distance_vs_em")
+            }
+    
+    # Add event_risk: from probability_engine's event_risk field
+    event_risk = data.get("event_risk")
+    if event_risk:
+        trade_desk_analysis["event_risk"] = event_risk
+    
     return trade_desk_analysis
 
 
@@ -1787,6 +1804,10 @@ def analyze_batch(tickers: List[str], candidates: Optional[List[Dict]] = None) -
                 for key in original:
                     if key not in result and key != "ticker":
                         result[key] = original[key]
+                
+                # Ensure event_risk from probability_engine is in trade_desk_analysis
+                if "event_risk" in original and "trade_desk_analysis" in result:
+                    result["trade_desk_analysis"]["event_risk"] = original["event_risk"]
                 
                 # Save to disk AFTER adding preserved fields
                 file_path = save_analysis_to_disk(result, ticker)

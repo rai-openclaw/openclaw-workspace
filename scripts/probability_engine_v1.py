@@ -99,10 +99,15 @@ def find_earnings_moves(prices, ticker):
 def calculate_probabilities(down_moves, em_percent):
     """Calculate probability of staying within EM thresholds"""
     if not down_moves:
-        return None, None, None, None, None
+        return None, None, None, None, None, None, None
     
     # Compute stats
-    median_move = sorted(down_moves)[len(down_moves) // 2]
+    sorted_moves = sorted(down_moves)
+    n = len(sorted_moves)
+    
+    median_move = sorted_moves[n // 2]
+    p75_move = sorted_moves[int(n * 0.75)] if n >= 4 else sorted_moves[-1]
+    p90_move = sorted_moves[int(n * 0.90)] if n >= 10 else sorted_moves[-1]
     max_move = max(down_moves)
     
     # Convert EM from percentage (10.26) to decimal (0.1026) for comparison with moves
@@ -118,7 +123,7 @@ def calculate_probabilities(down_moves, em_percent):
     down_1_5x = sum(1 for m in down_moves if m <= em_1_5x) / total
     down_2x = sum(1 for m in down_moves if m <= em_2x) / total
     
-    return round(down_1x, 2), round(down_1_5x, 2), round(down_2x, 2), median_move, max_move
+    return round(down_1x, 2), round(down_1_5x, 2), round(down_2x, 2), median_move, p75_move, p90_move, max_move
 
 def process_tickers(analysis_data):
     """Process each ticker and calculate probabilities"""
@@ -162,7 +167,7 @@ def process_tickers(analysis_data):
         
         # Calculate probabilities
         print(f"DEBUG PROB INPUT: {ticker} - em={em}, down_moves_count={len(down_moves)}")
-        p1, p1_5, p2, median_move, max_move = calculate_probabilities(down_moves, em)
+        p1, p1_5, p2, median_move, p75_move, p90_move, max_move = calculate_probabilities(down_moves, em)
         
         if p1 is None:
             skipped += 1
@@ -175,10 +180,21 @@ def process_tickers(analysis_data):
             "down_1_5x": p1_5,
             "down_2x": p2,
             "median_move": round(median_move, 4),
+            "p75_move": round(p75_move, 4),
+            "p90_move": round(p90_move, 4),
             "max_move": round(max_move, 4)
         }
         
-        log(f"  {ticker}: EM={em:.2f}%, median={median_move:.2%}, max={max_move:.2%}, samples={len(down_moves)}, P(↓1x)={p1:.0%}, P(↓1.5x)={p1_5:.0%}, P(↓2x)={p2:.0%}")
+        # Also add event_risk to trade_desk_analysis (will be merged later)
+        item["event_risk"] = {
+            "median_move": round(median_move, 4),
+            "p75_move": round(p75_move, 4),
+            "p90_move": round(p90_move, 4),
+            "max_move": round(max_move, 4),
+            "sample_count": len(down_moves)
+        }
+        
+        log(f"  {ticker}: EM={em:.2f}%, median={median_move:.2%}, p75={p75_move:.2%}, p90={p90_move:.2%}, max={max_move:.2%}, samples={len(down_moves)}, P(↓1x)={p1:.0%}, P(↓1.5x)={p1_5:.0%}, P(↓2x)={p2:.0%}")
         
         calculated += 1
         results.append(item)
@@ -217,6 +233,13 @@ def main():
     
     with open(OUTPUT_FILE, "w") as f:
         json.dump(output_data, f, indent=2)
+    
+    # Also update analysis_raw.json for downstream stages
+    ANALYSIS_RAW = WORKSPACE / "data" / "analysis" / "analysis_raw.json"
+    if ANALYSIS_RAW.exists():
+        with open(ANALYSIS_RAW, "w") as f:
+            json.dump(output_data, f, indent=2)
+        log(f"Also updated {ANALYSIS_RAW}")
     
     log(f"Calculated probabilities for {calculated} tickers")
     log(f"Skipped {skipped} tickers (no EM yet)")
