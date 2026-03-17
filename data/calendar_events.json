@@ -8,5 +8,15 @@
     "source": "jarvis",
     "metadata": {},
     "createdAt": "2026-03-11T15:13:00-07:00"
+  },
+  {
+    "id": "evt_soccer_practice_0318",
+    "title": "Son's Soccer Practice",
+    "type": "personal",
+    "start": "2026-03-18T18:00:00-07:00",
+    "end": null,
+    "source": "jarvis",
+    "metadata": {},
+    "createdAt": "2026-03-17T12:54:00-07:00"
   }
 ]
