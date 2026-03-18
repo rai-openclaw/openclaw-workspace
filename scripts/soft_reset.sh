@@ -15,9 +15,9 @@ git add -A
 git diff --cached --quiet || git commit -m "[System] Soft reset checkpoint"
 git push origin dev 2>/dev/null || echo "Nothing to push (mission-control-next)"
 
-# 3. Restart gateway
-echo "🔄 Restarting gateway..."
-launchctl kickstart -k gui/$UID/ai.openclaw.gateway
+# 3. Run new session
+echo "🔄 Starting fresh session..."
+bash ~/.openclaw/workspace/scripts/new_session.sh
 
 echo "=== Soft Reset Complete ==="
 echo "Start a fresh conversation to continue."
