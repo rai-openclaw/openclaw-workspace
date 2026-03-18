@@ -49,8 +49,12 @@ Validation is mandatory for L2 and L3 changes.
 Validation is strongly recommended for L1 changes.
 
 If validation fails:
-- Implementation is rejected.
-- Revert required per AIP.
+- Alex fixes immediately without waiting for user input
+- Scout re-validates
+- This loop continues autonomously until full PASS
+- Maximum 3 loops — if still failing after 3 attempts,
+  stop and report what is blocking to user
+- User intervention only required if loop limit reached
 
 No merge without validation pass.
 
@@ -75,7 +79,7 @@ If an undeclared structural change is discovered:
 ## 4. User Intervention Threshold
 User intervention is required only if:
 - L3 change proposed
-- Validation fails repeatedly
+- Validation fails repeatedly (loop limit reached)
 - Governance modification proposed
 - Irreversible risk identified
 
