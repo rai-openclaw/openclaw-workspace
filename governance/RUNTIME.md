@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-18T17:46:11Z
+# Version: 2026-03-18T17:54:04Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -264,6 +264,15 @@ When checkpoint triggers:
    - No user input required
 
 **Note:** A checkpoint is a session boundary. For L0-L2, the session closes automatically. For L3, user approval is required before closing.
+
+### Soft Reset Procedure
+
+When Mission Control shows context warning alert OR context exceeds 180k tokens, Jarvis must immediately perform soft reset — do not wait for user to ask:
+
+1. Write memory entry for current session
+2. Commit and push both repos
+3. Execute: openclaw gateway restart
+4. Inform user: session is restarting, start fresh conversation
 
 ### Session Start Procedure
 At the beginning of every session:
