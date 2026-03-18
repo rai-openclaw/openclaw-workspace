@@ -1,19 +1,15 @@
 # Autonomous Execution Flow (AEF)
 
 ## 1. Purpose
-
 AEF defines how work is executed within OpenClaw. It ensures architectural discipline, validation, and predictable autonomy. All modifications must follow this execution order.
 
 ## 2. Execution Pipeline
 
 **Step 1 — Outcome Definition (User)**
-
 The user defines the desired outcome. No implementation details required.
 
 **Step 1.5 — Semantic Clarification (SCP Required for L2+)**
-
 For L2 and L3 changes, Jarvis must:
-
 1. Perform Ambiguity Scan - list potential ambiguities in:
    - Time window definitions
    - Aggregation rules
@@ -21,11 +17,8 @@ For L2 and L3 changes, Jarvis must:
    - Summary vs lifetime distinctions
    - Financial metric definitions
    - Edge cases
-
 2. Present Clarification Checklist to user
-
 3. Wait for user confirmation
-
 4. Declare: **"SEMANTIC SPEC LOCKED"**
 
 Only after this declaration may Step 2 begin.
@@ -33,7 +26,6 @@ Only after this declaration may Step 2 begin.
 **Enforcement:** If an Outcome Definition implies L2+ scope, Jarvis must automatically initiate Step 1.5 without waiting for user instruction. Waiting for user prompting is prohibited.
 
 **Step 2 — Architectural Declaration (Jarvis)**
-
 Before implementation, Jarvis must declare:
 - CHANGE LEVEL (L0–L3)
 - Scope
@@ -42,21 +34,19 @@ Before implementation, Jarvis must declare:
 - Validation plan
 
 For L2 and L3: Provide required design brief per AIP.
-
 No coding begins before declaration.
 
 **Step 3 — Implementation (Alex)**
-
 Alex implements strictly within declared scope.
-
 No scope expansion permitted. If scope expands:
 - Stop
 - Reclassify
 - Redeclare
 
 **Step 4 — Validation (Scout)**
-
 Scout validates according to VALIDATION.md.
+Validation is mandatory for L2 and L3 changes.
+Validation is strongly recommended for L1 changes.
 
 If validation fails:
 - Implementation is rejected.
@@ -65,30 +55,24 @@ If validation fails:
 No merge without validation pass.
 
 **Step 5 — Report (Jarvis)**
-
 Jarvis reports:
 - Actual change summary
 - Diff summary
 - Validation results
 - Confirmation of no undeclared scope drift
-
-### Completion Reporting Requirements
-
-Every AEF task must include in the final report:
 - Alex's session ID confirming implementation was delegated
 - Scout's session ID confirming independent validation
 - Scout's validation checklist with each item pass/fail
-- If any of these cannot be provided, Jarvis must explicitly state AEF was not followed and why
+
+If any of the above cannot be provided, Jarvis must explicitly state AEF was not followed and why.
 
 ## 3. Undeclared Change Handling
-
 If an undeclared structural change is discovered:
 - Revert immediately.
 - Reclassify properly.
 - Restart AEF from Step 2.
 
 ## 4. User Intervention Threshold
-
 User intervention is required only if:
 - L3 change proposed
 - Validation fails repeatedly
@@ -98,10 +82,22 @@ User intervention is required only if:
 All other changes should complete autonomously within AEF.
 
 ## 5. Autonomy Principle
-
 Autonomy does not mean unconstrained behavior. Autonomy means disciplined execution within declared scope and validated boundaries.
 
-## 6. Session Integrity Rule
+## 6. AEF Violation Protocol
+If AEF was not followed for any reason:
+
+1. Jarvis must immediately declare the violation:
+   > "AEF VIOLATION: [step skipped] was not followed because [reason]."
+2. Jarvis must state which steps were skipped
+3. Jarvis must propose remediation:
+   - If result is correct: run Scout validation retroactively
+   - If result is incorrect: revert and restart from Step 2
+4. Jarvis must record the violation in the session memory entry under "Mistakes to avoid"
+
+Violations are not acceptable even when the result appears correct. Process integrity is non-negotiable.
+
+## 7. Session Integrity Rule
 
 ### Purpose
 Ensure each execution flow operates with fresh governance state and maintains traceable boundaries between tasks.

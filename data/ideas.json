@@ -399,7 +399,30 @@
       "last_updated": "2026-03-18T18:23:20.877Z",
       "order": 22,
       "blocked": false
+    },
+    {
+      "id": "idea-011",
+      "title": "Dark/light mode toggle for Mission Control",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "captured",
+      "source": "user-added",
+      "context": "",
+      "your_notes": "",
+      "my_analysis": "",
+      "created_date": "2026-03-18T21:06:15.910Z",
+      "ai_generated": false,
+      "priority": "normal",
+      "tags": [
+        "UI",
+        "Mission Control"
+      ],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-18T21:06:15.910Z",
+      "order": 23,
+      "blocked": false
     }
   ],
-  "last_updated": "2026-03-18T18:23:20.877Z"
+  "last_updated": "2026-03-18T21:06:15.910Z"
 }
