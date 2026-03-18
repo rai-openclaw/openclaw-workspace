@@ -5049,6 +5049,32 @@
       "event_type": "BUY_TO_CLOSE",
       "source": "robinhood_email",
       "id": "f13b0ab97e14db78"
+    },
+    {
+      "timestamp": "2026-03-18T19:55:00.000Z",
+      "account": "Robinhood",
+      "ticker": "FIVE",
+      "option_type": "PUT",
+      "strike": 175.0,
+      "expiration": "2026-03-20",
+      "contracts": 4,
+      "price": 0.45,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "53c7b24ae9328fa1"
+    },
+    {
+      "timestamp": "2026-03-18T19:56:00.000Z",
+      "account": "Robinhood",
+      "ticker": "FIVE",
+      "option_type": "PUT",
+      "strike": 175.0,
+      "expiration": "2026-03-20",
+      "contracts": 1,
+      "price": 0.45,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "56002b3631e0a6e1"
     }
   ]
 }
