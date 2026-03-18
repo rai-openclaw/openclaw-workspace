@@ -69,3 +69,16 @@ launchctl kickstart -k gui/$UID/<service-label>
 ```
 
 Agents must never spawn duplicate service instances.
+
+## 9. OpenClaw Configuration
+`~/.openclaw/openclaw.json` is a protected system configuration file.
+
+Agents must NEVER:
+- Read this file
+- Write to this file
+- Modify this file in any way
+- Pass it to any command or script
+
+This file contains sensitive credentials and system configuration.
+It is not tracked in git. Corruption requires manual recovery.
+Only the user may modify this file directly.
