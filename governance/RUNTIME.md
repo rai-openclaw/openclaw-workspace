@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-18T17:30:40Z
+# Version: 2026-03-18T17:46:11Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -146,6 +146,7 @@ Normal UI edits, styling changes, or business logic changes must rely on Next.js
 When user asks to commit, push, or save work:
 
 1. Stage ALL modified files across the entire workspace — not just files from the current task
+1a. If workspace and mission-control-next both exist, both repos must be committed and pushed together as a single atomic operation — never one without the other.
 2. Commit with a descriptive message including change level (e.g., `[L1] Description`)
 3. Push to current branch on origin
 4. Confirm push was successful by showing:
@@ -271,7 +272,8 @@ At the beginning of every session:
 3. Confirm role permissions are loaded
 4. Initialize session budget counters to zero
 5. Search memory for recent session summaries:
-   - Search memory/*.md for entries from the last 7 days
+   - Start with today's date first (YYYY-MM-DD.md)
+   - Then work backwards through last 7 days
    - Summarize: tasks completed, pending work, decisions made, mistakes to avoid
    - Include memory summary in session init message — proceed with task if already provided, otherwise ask for next task
 
