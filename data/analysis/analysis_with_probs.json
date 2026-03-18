@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "pipeline_run_time": "2026-03-16T15:10:03.965303",
+    "pipeline_run_time": "2026-03-18T06:37:53.970907",
     "total_candidates": 20,
     "filtered_no_weekly_options": 0,
-    "filtered_options_unavailable": 14,
-    "tradeable_candidates": 6
+    "filtered_options_unavailable": 8,
+    "tradeable_candidates": 12
   },
   "candidates": [
     {
-      "ticker": "USAU",
+      "ticker": "ALMS",
       "report": {
-        "date": "2026-03-16",
+        "date": "2026-03-18",
         "time": "AMC"
       },
       "market": {
-        "price": 17.41,
-        "atm_strike": 20.0,
+        "price": 25.83,
+        "atm_strike": 26.0,
         "expiration": "2026-03-20"
       },
       "options": {
-        "straddle": 2.85,
-        "em_percent": 16.36990235496841
+        "straddle": 4.51,
+        "em_percent": 17.46031746031746
       },
       "probabilities": {
-        "down_1x": 0.99,
-        "down_1_5x": 1.0,
-        "down_2x": 1.0,
-        "median_move": 0.048,
-        "max_move": 0.1678
+        "down_1x": 0.9,
+        "down_1_5x": 0.97,
+        "down_2x": 0.98,
+        "median_move": 0.0574,
+        "p75_move": 0.0865,
+        "p90_move": 0.1682,
+        "max_move": 0.9531
       },
       "grading": {
         "grade": null,
@@ -39,29 +41,425 @@
         "tags": [
           "TRADE"
         ]
+      },
+      "event_risk": {
+        "median_move": 0.0574,
+        "p75_move": 0.0865,
+        "p90_move": 0.1682,
+        "max_move": 0.9531,
+        "sample_count": 121
       }
     },
     {
-      "ticker": "SMTC",
+      "ticker": "RCAT",
       "report": {
-        "date": "2026-03-16",
+        "date": "2026-03-18",
         "time": "AMC"
       },
       "market": {
-        "price": 89.0,
-        "atm_strike": 90.0,
+        "price": 17.07,
+        "atm_strike": 17.0,
         "expiration": "2026-03-20"
       },
       "options": {
-        "straddle": 11.55,
-        "em_percent": 12.977528089887642
+        "straddle": 2.42,
+        "em_percent": 14.176918570591681
+      },
+      "probabilities": {
+        "down_1x": 0.91,
+        "down_1_5x": 0.98,
+        "down_2x": 0.99,
+        "median_move": 0.0721,
+        "p75_move": 0.0996,
+        "p90_move": 0.1336,
+        "max_move": 0.2911
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0721,
+        "p75_move": 0.0996,
+        "p90_move": 0.1336,
+        "max_move": 0.2911,
+        "sample_count": 157
+      }
+    },
+    {
+      "ticker": "LUNR",
+      "report": {
+        "date": "2026-03-19",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 18.6,
+        "atm_strike": 18.5,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 2.29,
+        "em_percent": 12.311827956989246
+      },
+      "probabilities": {
+        "down_1x": 0.9,
+        "down_1_5x": 0.97,
+        "down_2x": 0.98,
+        "median_move": 0.0592,
+        "p75_move": 0.0889,
+        "p90_move": 0.1242,
+        "max_move": 0.377
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0592,
+        "p75_move": 0.0889,
+        "p90_move": 0.1242,
+        "max_move": 0.377,
+        "sample_count": 129
+      }
+    },
+    {
+      "ticker": "CSIQ",
+      "report": {
+        "date": "2026-03-19",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 18.54,
+        "atm_strike": 18.5,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 1.8599999999999999,
+        "em_percent": 10.032362459546926
+      },
+      "probabilities": {
+        "down_1x": 0.77,
+        "down_1_5x": 0.92,
+        "down_2x": 0.98,
+        "median_move": 0.0613,
+        "p75_move": 0.094,
+        "p90_move": 0.138,
+        "max_move": 0.2101
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0613,
+        "p75_move": 0.094,
+        "p90_move": 0.138,
+        "max_move": 0.2101,
+        "sample_count": 121
+      }
+    },
+    {
+      "ticker": "SIG",
+      "report": {
+        "date": "2026-03-19",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 84.79,
+        "atm_strike": 83.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 8.35,
+        "em_percent": 9.847859417384125
+      },
+      "probabilities": {
+        "down_1x": 0.95,
+        "down_1_5x": 0.97,
+        "down_2x": 1.0,
+        "median_move": 0.0439,
+        "p75_move": 0.0587,
+        "p90_move": 0.0811,
+        "max_move": 0.1729
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0439,
+        "p75_move": 0.0587,
+        "p90_move": 0.0811,
+        "max_move": 0.1729,
+        "sample_count": 66
+      }
+    },
+    {
+      "ticker": "MU",
+      "report": {
+        "date": "2026-03-18",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 463.7,
+        "atm_strike": 462.5,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 39.78,
+        "em_percent": 8.578822514556826
+      },
+      "probabilities": {
+        "down_1x": 0.87,
+        "down_1_5x": 0.97,
+        "down_2x": 0.99,
+        "median_move": 0.0481,
+        "p75_move": 0.0646,
+        "p90_move": 0.0955,
+        "max_move": 0.1881
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0481,
+        "p75_move": 0.0646,
+        "p90_move": 0.0955,
+        "max_move": 0.1881,
+        "sample_count": 95
+      }
+    },
+    {
+      "ticker": "PPTA",
+      "report": {
+        "date": "2026-03-18",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 28.98,
+        "atm_strike": 30.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 2.48,
+        "em_percent": 8.557625948930296
+      },
+      "probabilities": {
+        "down_1x": 0.85,
+        "down_1_5x": 0.92,
+        "down_2x": 0.98,
+        "median_move": 0.0523,
+        "p75_move": 0.0769,
+        "p90_move": 0.1137,
+        "max_move": 0.2266
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0523,
+        "p75_move": 0.0769,
+        "p90_move": 0.1137,
+        "max_move": 0.2266,
+        "sample_count": 107
+      }
+    },
+    {
+      "ticker": "FIVE",
+      "report": {
+        "date": "2026-03-18",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 214.84,
+        "atm_strike": 210.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 17.05,
+        "em_percent": 7.936138521690561
+      },
+      "probabilities": {
+        "down_1x": 0.84,
+        "down_1_5x": 0.94,
+        "down_2x": 0.96,
+        "median_move": 0.04,
+        "p75_move": 0.0559,
+        "p90_move": 0.0916,
+        "max_move": 0.2781
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.04,
+        "p75_move": 0.0559,
+        "p90_move": 0.0916,
+        "max_move": 0.2781,
+        "sample_count": 49
+      }
+    },
+    {
+      "ticker": "ACN",
+      "report": {
+        "date": "2026-03-19",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 199.59,
+        "atm_strike": 200.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 15.05,
+        "em_percent": 7.5404579387744874
+      },
+      "probabilities": {
+        "down_1x": 0.94,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0439,
+        "p75_move": 0.0472,
+        "p90_move": 0.0686,
+        "max_move": 0.0959
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0439,
+        "p75_move": 0.0472,
+        "p90_move": 0.0686,
+        "max_move": 0.0959,
+        "sample_count": 33
+      }
+    },
+    {
+      "ticker": "ICLR",
+      "report": {
+        "date": "2026-03-18",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 98.39,
+        "atm_strike": 100.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 6.6,
+        "em_percent": 6.707998780363858
+      },
+      "probabilities": {
+        "down_1x": 0.78,
+        "down_1_5x": 0.92,
+        "down_2x": 0.94,
+        "median_move": 0.0472,
+        "p75_move": 0.0654,
+        "p90_move": 0.0912,
+        "max_move": 0.3985
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0472,
+        "p75_move": 0.0654,
+        "p90_move": 0.0912,
+        "max_move": 0.3985,
+        "sample_count": 63
+      }
+    },
+    {
+      "ticker": "DRI",
+      "report": {
+        "date": "2026-03-19",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 202.21,
+        "atm_strike": 200.0,
+        "expiration": "2026-03-20"
+      },
+      "options": {
+        "straddle": 13.4,
+        "em_percent": 6.626774145690124
       },
       "probabilities": {
         "down_1x": 0.95,
         "down_1_5x": 1.0,
         "down_2x": 1.0,
-        "median_move": 0.048,
-        "max_move": 0.1887
+        "median_move": 0.0394,
+        "p75_move": 0.0472,
+        "p90_move": 0.0577,
+        "max_move": 0.0769
       },
       "grading": {
         "grade": null,
@@ -73,29 +471,38 @@
         "tags": [
           "TRADE"
         ]
+      },
+      "event_risk": {
+        "median_move": 0.0394,
+        "p75_move": 0.0472,
+        "p90_move": 0.0577,
+        "max_move": 0.0769,
+        "sample_count": 20
       }
     },
     {
-      "ticker": "GDS",
+      "ticker": "BABA",
       "report": {
-        "date": "2026-03-17",
+        "date": "2026-03-19",
         "time": "BMO"
       },
       "market": {
-        "price": 43.16,
-        "atm_strike": 43.0,
+        "price": 138.56,
+        "atm_strike": 139.0,
         "expiration": "2026-03-20"
       },
       "options": {
-        "straddle": 4.63,
-        "em_percent": 10.727525486561632
+        "straddle": 7.93,
+        "em_percent": 5.7231524249422625
       },
       "probabilities": {
-        "down_1x": 0.94,
-        "down_1_5x": 1.0,
-        "down_2x": 1.0,
-        "median_move": 0.0494,
-        "max_move": 0.1493
+        "down_1x": 0.78,
+        "down_1_5x": 0.93,
+        "down_2x": 0.98,
+        "median_move": 0.0411,
+        "p75_move": 0.0526,
+        "p90_move": 0.0819,
+        "max_move": 0.129
       },
       "grading": {
         "grade": null,
@@ -107,108 +514,13 @@
         "tags": [
           "TRADE"
         ]
-      }
-    },
-    {
-      "ticker": "TME",
-      "report": {
-        "date": "2026-03-17",
-        "time": "BMO"
       },
-      "market": {
-        "price": 15.09,
-        "atm_strike": 15.0,
-        "expiration": "2026-03-20"
-      },
-      "options": {
-        "straddle": 1.38,
-        "em_percent": 9.145129224652086
-      },
-      "probabilities": {
-        "down_1x": 0.9,
-        "down_1_5x": 0.96,
-        "down_2x": 1.0,
-        "median_move": 0.042,
-        "max_move": 0.1566
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "TRADE"
-        ]
-      }
-    },
-    {
-      "ticker": "ASO",
-      "report": {
-        "date": "2026-03-17",
-        "time": "BMO"
-      },
-      "market": {
-        "price": 56.51,
-        "atm_strike": 57.5,
-        "expiration": "2026-03-20"
-      },
-      "options": {
-        "straddle": 4.3,
-        "em_percent": 7.609272695098213
-      },
-      "probabilities": {
-        "down_1x": 0.94,
-        "down_1_5x": 0.96,
-        "down_2x": 0.96,
-        "median_move": 0.0401,
-        "max_move": 0.1828
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "TRADE"
-        ]
-      }
-    },
-    {
-      "ticker": "CAAP",
-      "report": {
-        "date": "2026-03-17",
-        "time": "BMO"
-      },
-      "market": {
-        "price": 24.93,
-        "atm_strike": 25.0,
-        "expiration": "2026-03-20"
-      },
-      "options": {
-        "straddle": 1.76,
-        "em_percent": 7.059767348576012
-      },
-      "probabilities": {
-        "down_1x": 0.91,
-        "down_1_5x": 0.94,
-        "down_2x": 0.97,
-        "median_move": 0.0387,
-        "max_move": 0.1725
-      },
-      "grading": {
-        "grade": null,
-        "score_total": null,
-        "data_ready": true
-      },
-      "meta": {
-        "status": "ok",
-        "tags": [
-          "TRADE"
-        ]
+      "event_risk": {
+        "median_move": 0.0411,
+        "p75_move": 0.0526,
+        "p90_move": 0.0819,
+        "max_move": 0.129,
+        "sample_count": 58
       }
     }
   ]

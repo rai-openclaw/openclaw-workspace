@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-17T20:03:34Z
+# Version: 2026-03-18T17:30:40Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -10,6 +10,7 @@ Compiled from:
 - VALIDATION.md
 - AIP.md
 - AEF.md
+- CALENDAR.md
 - PROTECTED_SURFACES.md
 - SCP.md
 - RPP.md
@@ -140,6 +141,19 @@ npm run dev
 
 Normal UI edits, styling changes, or business logic changes must rely on Next.js hot reload and must not trigger a rebuild.
 
+### Commit and Push Protocol
+
+When user asks to commit, push, or save work:
+
+1. Stage ALL modified files across the entire workspace — not just files from the current task
+2. Commit with a descriptive message including change level (e.g., `[L1] Description`)
+3. Push to current branch on origin
+4. Confirm push was successful by showing:
+   - Commit hash
+   - Branch name  
+   - Files included in the commit
+5. Never consider a commit complete until push is confirmed
+
 ## 3. Alex — Implementation Engineer
 
 **Responsibilities:**
@@ -201,6 +215,71 @@ Only the user may approve:
 - Canonical schema redesign
 
 No agent may self-approve structural escalation.
+
+## 8. Session Budget Policy
+
+### Purpose
+Prevent governance drift in long sessions by imposing task-based limits with change-level weighting.
+
+### Session Budget Limits
+A single session (from Jarvis spawn to session end) may not exceed:
+- **Maximum task weight**: 10 cumulative units
+- **Maximum task count**: 8 tasks
+
+### Change Level Weights
+| Level | Weight | Description |
+|-------|--------|-------------|
+| L0 | 1 | Cosmetic, text-only changes |
+| L1 | 3 | Local, single-module changes |
+| L2 | 5 | Structural, cross-module changes |
+| L3 | 10 | Foundational, governance or canonical schema changes |
+
+### Checkpoint Trigger
+A checkpoint MUST be triggered when:
+1. A task with L2 or higher is completed
+2. Cumulative session weight reaches 10 units
+3. User reports session feels slow or unresponsive
+4. Before any session ends for any reason — Jarvis must always write a memory entry as the final action of every session, even if no other checkpoint was triggered
+
+### Checkpoint Procedure
+When checkpoint triggers:
+1. Jarvis STOPs all task execution
+2. Write today's memory entry to memory/YYYY-MM-DD.md:
+   - Tasks completed in this session
+   - Files modified (list paths)
+   - Change levels applied (L0/L1/L2/L3)
+   - Decisions made and rationale
+   - Mistakes to avoid (what went wrong)
+   - User preferences observed
+   - Pending tasks or follow-ups
+   - Current state of work
+3. If the completed task was L3:
+   - Prompt user: "L3 task completed. Awaiting approval to continue. Reply 'continue' or 'end'."
+   - Wait for explicit user approval before ending session
+4. If the completed task was L0-L2:
+   - End the session gracefully
+   - Leave a visible summary message:
+     "Session checkpoint reached. Summary: [X] tasks completed, [Y] weight units used, [list files modified]. Session ended cleanly. Ready for next session."
+   - No user input required
+
+**Note:** A checkpoint is a session boundary. For L0-L2, the session closes automatically. For L3, user approval is required before closing.
+
+### Session Start Procedure
+At the beginning of every session:
+1. Load enforcement config fresh from disk (bypass any cached config)
+2. Verify AIP and AEF documents are accessible
+3. Confirm role permissions are loaded
+4. Initialize session budget counters to zero
+5. Search memory for recent session summaries:
+   - Search memory/*.md for entries from the last 7 days
+   - Summarize: tasks completed, pending work, decisions made, mistakes to avoid
+   - Include memory summary in session init message — proceed with task if already provided, otherwise ask for next task
+
+### Enforcement
+If session budget is exceeded without checkpoint:
+- Jarvis must NOT proceed to next task
+- Must alert user and request checkpoint or session end
+- Governance drift risk: proceeding without checkpoint is a scope violation
 
 
 ## VALIDATION
@@ -497,6 +576,219 @@ All other changes should complete autonomously within AEF.
 ## 5. Autonomy Principle
 
 Autonomy does not mean unconstrained behavior. Autonomy means disciplined execution within declared scope and validated boundaries.
+
+## 6. Session Integrity Rule
+
+### Purpose
+Ensure each execution flow operates with fresh governance state and maintains traceable boundaries between tasks.
+
+### Pipeline Reliability Requirement
+The AEF pipeline is only valid when:
+1. Each session begins with freshly loaded governance
+2. Task execution respects session budget limits
+3. Checkpoints are enforced at defined triggers
+4. State is preserved between sessions via memory entries
+
+If any of these conditions fail, the pipeline is in an unreliable state and must not proceed.
+
+### Forced Checkpoint Before Continuing
+When checkpoint triggers mid-flow:
+1. Execution halts immediately
+2. State is captured per checkpoint procedure in ROLES.md
+3. User must start a new session to continue (checkpoint is a boundary, not a pause)
+
+### Session Boundary Integrity
+- A session ends when: user says 'end', budget exhausted, or user reports session feels broken
+- A new session begins with fresh governance load
+- No state carries over between sessions except via memory entries
+- Checkpoints create hard boundaries — each continuation is a new session
+
+
+## CALENDAR
+
+# Calendar Governance
+
+## 1. Purpose
+
+Defines authoritative rules for calendar event management. All calendar operations must comply.
+
+## 2. Source of Truth
+
+Calendar events exist in exactly one source:
+
+| Source | Type | Storage |
+|--------|------|---------|
+| `scheduler` | Personal + Automation | `~/.openclaw/cron/jobs.json` |
+| `internal` | Personal (legacy only) | `data/calendar_events.json` |
+| `google` | External | Google Calendar API |
+| `outlook` | External | Outlook Calendar API |
+
+No event may exist in multiple sources simultaneously.
+
+## 3. Event Creation Rules
+
+### 3.1 Scheduler Events (Automation)
+
+- MUST be created via `cron.add` CLI
+- MAY include `payload.eventType` field (optional — scheduler may not support it)
+- MAY use `cron.add --at` for one-time events
+- CLI validation of past dates is ENFORCED
+
+### 3.2 Personal Events
+
+- ALL new personal events MUST be created via scheduler (`cron.add`)
+- Personal events are identified by:
+  - `schedule.kind === 'at'`
+  - `payload.kind === 'agentTurn'`
+  - `payload.message` exists
+- `eventType` field is OPTIONAL and may not be supported by scheduler
+- MUST NOT be written to `calendar_events.json`
+
+### 3.3 External Events (Future)
+
+- MUST be fetched via provider API
+- MUST NOT be written to local files
+- MUST use unified `Event` type schema
+
+## 4. Prohibited Actions
+
+- Manual editing of `jobs.json` for past-date events
+- Creating duplicate events across sources
+- Writing external calendar data to local storage
+- Writing new events to `calendar_events.json`
+- Bypassing `cron.add` for scheduler events
+
+## 5. Event Classification
+
+| Type | Description | Source |
+|------|-------------|--------|
+| `personal` | User personal events | scheduler |
+| `automation` | System/agent jobs | scheduler |
+| `system` | Infrastructure events | scheduler |
+
+## 6. Legacy Events
+
+- `data/calendar_events.json` is LEGACY storage
+- MUST be treated as read-only
+- MUST only contain past events
+- MUST NOT receive new writes
+- SHOULD be deprecated once scheduler supports historical events
+
+## 7. System Boundaries
+
+- Calendar UI reads from aggregator layer only
+- Aggregator (`lib/events/index.ts`) is SINGLE entry point
+- Aggregator is the ONLY layer allowed to merge multiple sources
+- API routes MUST NOT independently read from:
+  - `jobs.json`
+  - `calendar_events.json`
+- API routes MUST use `getAllEvents()`
+
+## 8. Schema Enforcement
+
+All events MUST conform to `Event` interface:
+
+```
+- id: source-prefixed (e.g., "scheduler:uuid")
+- type: "personal" | "automation" | "system"
+- source: "scheduler" | "internal" | "google" | "outlook"
+- schedule (scheduler only): { kind, cron?, intervalMs?, at?, tz? }
+```
+
+**Personal events are identified by:**
+- `schedule.kind === 'at'`
+- `payload.kind === 'agentTurn'`
+- `payload.message` exists
+
+`eventType` in payload is OPTIONAL. The scheduler may not support this field.
+
+- The agent MUST NOT assume `payload` structure; it must preserve existing fields returned by the scheduler system
+- `payload` MUST preserve existing scheduler structure and MAY include `eventType` as an additional field
+
+Example:
+```json
+{
+  "name": "Dinner plan",
+  "schedule": { "kind": "at", "at": "2026-03-18T19:00:00Z" },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Dinner plan at 7pm"
+  }
+}
+```
+
+## 9. Change Classification
+
+Modifications to calendar system are classified:
+
+- **L1**: UI changes, logging, cosmetic
+- **L2**: Aggregator logic, schema changes, API modifications
+- **L3**: Source-of-truth restructuring, external provider integration
+
+## 10. Intent Mapping
+
+This section defines how user requests are mapped to system actions.
+
+### 10.1 Request Interpretation
+
+Any user request that implies creating a calendar event or reminder MUST be interpreted as a scheduler operation.
+
+Examples:
+- "add event"
+- "calendar event"
+- "reminder"
+- "schedule"
+- "remind me"
+- "put on calendar"
+- "set up"
+- "create event"
+
+ALL of the above MUST route to: `cron.add`
+
+### 10.2 Agent Constraints
+
+The agent MUST NOT:
+- Search for a calendar API endpoint
+- Write to `calendar_events.json`
+- Claim no system exists
+
+The agent MUST:
+- Construct appropriate schedule:
+  - One-time → `{ kind: "at" }`
+  - Recurring → `{ kind: "cron" }`
+- Use `payload.kind === "agentTurn"` and include `payload.message` for personal events
+- NOT include `eventType` field (unsupported by scheduler)
+
+### 10.3 Read-Only Boundary
+
+Calendar UI/API is READ-ONLY. Creation is ALWAYS via scheduler tools.
+
+### 10.4 Execution Requirement
+
+The agent MUST execute the `cron.add` command immediately upon intent recognition. No intermediate steps, searches, or API explorations are permitted.
+
+## 11. Tool Binding
+
+### 11.1 Calendar Creation Tool
+All calendar event creation MUST use the helper: `createCalendarEvent`
+The agent MUST NOT call `cron.add` directly for calendar events.
+
+### 11.2 Required Flow
+User request → createCalendarEvent → cron.add
+
+The helper is responsible for:
+- Time parsing
+- UTC conversion
+- Payload construction
+- Enforcing correct structure
+
+### 11.3 Prohibited
+The agent MUST NOT:
+- Call `cron.add` directly for user calendar events
+- Construct scheduler payloads manually
+
+### 11.4 Rationale
+`createCalendarEvent` is the canonical abstraction layer for calendar creation. This ensures consistency and prevents schema drift.
 
 
 ## PROTECTED_SURFACES

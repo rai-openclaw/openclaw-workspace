@@ -107,12 +107,32 @@ def build_html(data, metadata=None):
     if not data:
         return None
 
-    # Sort by price move magnitude (absolute) - most volatile first
-    data.sort(
-        key=lambda x: abs(x.get("key_movement", {}).get("magnitude", 0)),
-        reverse=True
-    )
+    # First pass: load full reports to get trade_grade data
+    for t in data:
+        report_path = t.get("report_path")
+        if report_path:
+            try:
+                with open(report_path) as f:
+                    full_report = json.load(f)
+                # Merge full report into t for consistent access
+                t["_full_report"] = full_report
+                # Also ensure trade_desk_analysis is accessible
+                if "trade_desk_analysis" not in t:
+                    t["trade_desk_analysis"] = full_report.get("trade_desk_analysis", {})
+            except Exception:
+                pass
 
+    # Sort by trade_grade score descending (highest first)
+    def get_score(x):
+        td = x.get("trade_desk_analysis", {})
+        tg = td.get("trade_grade", {})
+        return tg.get("score", 0)
+    
+    data.sort(key=get_score, reverse=True)
+
+    # Get top 5 opportunities
+    top_5 = data[:5]
+    
     total = len(data)
     
     # Count significant moves
@@ -178,9 +198,14 @@ def build_html(data, metadata=None):
             "NEUTRAL": "#666"
         }.get(trend, "#666")
 
+        # Get trade grade
+        tg = trade_desk.get("trade_grade", {})
+        grade = tg.get("rating", "-")
+        score = tg.get("score", 0)
+
         table_rows += f"""
         <tr>
-            <td><strong>{ticker}</strong></td>
+            <td><strong>{ticker}</strong> — {grade}</td>
             <td>{price_display}</td>
             <td>{em_display}</td>
             <td style="color:{trend_color}; font-weight:bold;">{trend}</td>
@@ -307,10 +332,32 @@ def build_html(data, metadata=None):
         
         catalysts_display = "<br>".join(catalysts) if catalysts else "-"
         
+        # Get trade grade info
+        trade_desk = t.get("trade_desk_analysis", {})
+        tg = trade_desk.get("trade_grade", {})
+        grade = tg.get("rating", "-")
+        score = tg.get("score", 0)
+        
+        # Get grade-specific metrics
+        bd = tg.get("breakdown", {})
+        iv_edge = bd.get("iv_edge", 0)
+        skew = bd.get("skew", 0)
+        strike_analysis = trade_desk.get("strike_analysis", {})
+        distance_vs_em = strike_analysis.get("distance_vs_em", 0)
+        event_risk = trade_desk.get("event_risk", {})
+        p90_move = event_risk.get("p90_move", 0)
+        implied_move = options_ctx.get("implied_move", 0)
+        tail_risk_score = bd.get("tail_risk_score", 0)
+        
+        # Format values
+        iv_edge_display = f"{iv_edge:.2f}" if iv_edge else "-"
+        skew_display = f"{skew:.1f}" if skew else "-"
+        distance_display = f"{distance_vs_em:.2f}" if distance_vs_em else "-"
+        
         header = (
-            f"{ticker} — {price_display} | "
-            f"EM {em_display} | "
-            f"Report: {report_date}"
+            f"{ticker} — Grade {grade} ({score}) | "
+            f"{price_display} | "
+            f"EM {em_display}"
         )
 
         detail_sections += f"""
@@ -328,6 +375,27 @@ def build_html(data, metadata=None):
                 <strong>Trend:</strong> {trend}<br>
                 <strong>Sector ETF:</strong> {sector_display}<br>
                 <strong>Sector Relative:</strong> {sector_return_display}
+            </td>
+        </tr>
+        </table>
+
+        <!-- Trade Grade Metrics -->
+        <table style="width:100%; border-collapse: collapse; margin-bottom: 12px; background-color: #f8f9fa;">
+        <tr>
+            <td style="padding: 6px; text-align: center; border: 1px solid #dee2e6;">
+                <strong>IV Edge</strong><br>{iv_edge_display}
+            </td>
+            <td style="padding: 6px; text-align: center; border: 1px solid #dee2e6;">
+                <strong>Put Skew</strong><br>{skew_display}
+            </td>
+            <td style="padding: 6px; text-align: center; border: 1px solid #dee2e6;">
+                <strong>Strike Dist vs EM</strong><br>{distance_display}
+            </td>
+            <td style="padding: 6px; text-align: center; border: 1px solid #dee2e6;">
+                <strong>Tail Risk</strong><br>{tail_risk_score}/10
+            </td>
+            <td style="padding: 6px; text-align: center; border: 1px solid #dee2e6;">
+                <strong>Score</strong><br>{score}
             </td>
         </tr>
         </table>
@@ -356,6 +424,63 @@ def build_html(data, metadata=None):
     </div>
         """
 
+    # Build Top Opportunities section
+    top_opp_rows = ""
+    for t in top_5:
+        ticker = t.get("ticker", "")
+        td = t.get("trade_desk_analysis", {})
+        tg = td.get("trade_grade", {})
+        grade = tg.get("rating", "-")
+        score = tg.get("score", 0)
+        bd = tg.get("breakdown", {})
+        iv_edge = bd.get("iv_edge", 0)
+        skew = bd.get("skew", 0)
+        strike_analysis = td.get("strike_analysis", {})
+        distance_vs_em = strike_analysis.get("distance_vs_em", 0)
+        
+        market = t.get("market", {})
+        price = market.get("price", 0)
+        price_display = f"${price:.2f}" if price else "-"
+        
+        options = t.get("options", {})
+        em = options.get("em_percent", 0)
+        em_display = f"{em:.1f}%" if em else "-"
+        
+        # Format values safely
+        iv_edge_str = f"{iv_edge:.2f}" if iv_edge else "-"
+        skew_str = f"{skew:.1f}" if skew else "-"
+        distance_str = f"{distance_vs_em:.2f}" if distance_vs_em else "-"
+        
+        top_opp_rows += f"""
+        <tr>
+            <td><strong>{ticker}</strong> — Grade {grade}</td>
+            <td>{price_display}</td>
+            <td>{em_display}</td>
+            <td>{iv_edge_str}</td>
+            <td>{skew_str}</td>
+            <td>{distance_str}</td>
+            <td><strong>{score}</strong></td>
+        </tr>
+        """
+
+    top_opp_html = f"""
+    <div style="background-color: #e8f5e9; padding: 12px; border-radius: 4px; margin-bottom: 16px; border-left: 4px solid #2e7d32;">
+        <h3 style="margin: 0 0 8px 0; color: #2e7d32;">🏆 Top CSP Opportunities Today</h3>
+        <table style="border-collapse: collapse; width:100%;" border="1" cellpadding="6">
+        <tr style="background-color:#c8e6c9;">
+            <th>Ticker</th>
+            <th>Price</th>
+            <th>EM%</th>
+            <th>IV Edge</th>
+            <th>Skew</th>
+            <th>Dist vs EM</th>
+            <th>Score</th>
+        </tr>
+        {top_opp_rows}
+        </table>
+    </div>
+    """
+
     html = f"""
     <html>
     <body style="font-family: Arial; font-size:13px;">
@@ -363,6 +488,8 @@ def build_html(data, metadata=None):
     <h2>Earnings Analysis Report</h2>
 
     {metadata_html}
+
+    {top_opp_html}
 
     <p>
     <strong>Total Analyzed:</strong> {total} |

@@ -884,7 +884,7 @@
       "earnings_date": "2026-02-24",
       "earnings_time": "BMO",
       "sector": "Consumer Cyclical",
-      "key_insight": "Expected move IN LINE with historical average (6.93% vs ~6.8%). EVR of 1.4 indicates LOWEST volatility among today\u2019s names. 98% of misses stay within 1.5x EM - exceptional EM respect.",
+      "key_insight": "Expected move IN LINE with historical average (6.93% vs ~6.8%). EVR of 1.4 indicates LOWEST volatility among today’s names. 98% of misses stay within 1.5x EM - exceptional EM respect.",
       "bottom_line": "BEST SETUP TODAY. Exceptional EM respect (98% within 1.5x), lowest EVR (1.4), blue-chip quality. Highest-probability premium collection.",
       "last_researched": "2026-02-23",
       "research_history": [
@@ -1833,15 +1833,7 @@
     {
       "ticker": "CODI",
       "company": "CODI",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 18,
-        "binary_risk": -3,
-        "total_grade": 60
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1855,15 +1847,7 @@
     {
       "ticker": "CRWV",
       "company": "CRWV",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1877,15 +1861,7 @@
     {
       "ticker": "DELL",
       "company": "DELL",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1899,15 +1875,7 @@
     {
       "ticker": "DUOL",
       "company": "DUOL",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1921,15 +1889,7 @@
     {
       "ticker": "INOD",
       "company": "INOD",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1943,15 +1903,7 @@
     {
       "ticker": "MARA",
       "company": "MARA",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1965,15 +1917,7 @@
     {
       "ticker": "RKLB",
       "company": "RKLB",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -1987,15 +1931,7 @@
     {
       "ticker": "SOUN",
       "company": "SOUN",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -2009,15 +1945,7 @@
     {
       "ticker": "ZS",
       "company": "ZS",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-26",
@@ -2031,15 +1959,7 @@
     {
       "ticker": "ABR",
       "company": "ABR",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 14,
-        "binary_risk": -3,
-        "total_grade": 56
-      },
+      "grade": "D",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2053,15 +1973,7 @@
     {
       "ticker": "AMRX",
       "company": "AMRX",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2075,15 +1987,7 @@
     {
       "ticker": "DIBS",
       "company": "DIBS",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2097,15 +2001,7 @@
     {
       "ticker": "EXK",
       "company": "EXK",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2119,15 +2015,7 @@
     {
       "ticker": "GSAT",
       "company": "GSAT",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2141,15 +2029,7 @@
     {
       "ticker": "NWN",
       "company": "NWN",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 12,
-        "binary_risk": -3,
-        "total_grade": 54
-      },
+      "grade": "D",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2163,15 +2043,7 @@
     {
       "ticker": "SHO",
       "company": "SHO",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 16,
-        "binary_risk": -3,
-        "total_grade": 58
-      },
+      "grade": "D",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2185,15 +2057,7 @@
     {
       "ticker": "TCPC",
       "company": "TCPC",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2207,15 +2071,7 @@
     {
       "ticker": "UUUU",
       "company": "UUUU",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2229,15 +2085,7 @@
     {
       "ticker": "VIA",
       "company": "VIA",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 20,
-        "binary_risk": -3,
-        "total_grade": 62
-      },
+      "grade": "C",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",
@@ -2251,15 +2099,7 @@
     {
       "ticker": "CAKE",
       "company": "CAKE",
-      "grade": {
-        "earnings_predictability": 15,
-        "downside_em_respect": 12,
-        "fundamentals_at_lows": 8,
-        "assignment_desirability": 10,
-        "premium_yield": 16,
-        "binary_risk": -3,
-        "total_grade": 58
-      },
+      "grade": "D",
       "total_score": 0,
       "expected_move": 0,
       "earnings_date": "2026-02-27",

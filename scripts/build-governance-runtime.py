@@ -16,6 +16,7 @@ GOVERNANCE_FILES = [
     "VALIDATION.md",
     "AIP.md",
     "AEF.md",
+    "CALENDAR.md",
     "PROTECTED_SURFACES.md",
     "SCP.md",
     "RPP.md",

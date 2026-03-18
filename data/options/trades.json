@@ -4984,6 +4984,71 @@
       "event_type": "SELL_TO_OPEN",
       "source": "robinhood_email",
       "id": "d54b341528b7c672"
+    },
+    {
+      "timestamp": "2026-03-17T14:07:00.000Z",
+      "account": "Robinhood",
+      "ticker": "DOCU",
+      "option_type": "PUT",
+      "strike": 40.0,
+      "expiration": "2026-03-20",
+      "contracts": 2,
+      "price": 0.26,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "b96bf231e6c44771"
+    },
+    {
+      "timestamp": "2026-03-17T14:12:00.000Z",
+      "account": "Robinhood",
+      "ticker": "DOCU",
+      "option_type": "PUT",
+      "strike": 39.5,
+      "expiration": "2026-03-20",
+      "contracts": 5,
+      "price": 0.22,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "35840f3bf99b13c9"
+    },
+    {
+      "timestamp": "2026-03-17T15:34:00.000Z",
+      "account": "Robinhood",
+      "ticker": "NN",
+      "option_type": "PUT",
+      "strike": 15.0,
+      "expiration": "2026-03-20",
+      "contracts": 10,
+      "price": 0.2,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "11806178a085b90f"
+    },
+    {
+      "timestamp": "2026-03-18T15:30:00.000Z",
+      "account": "Robinhood",
+      "ticker": "DOCU",
+      "option_type": "PUT",
+      "strike": 39.5,
+      "expiration": "2026-03-20",
+      "contracts": 5,
+      "price": 0.02,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "59ad878b26071b5e"
+    },
+    {
+      "timestamp": "2026-03-18T15:33:00.000Z",
+      "account": "Robinhood",
+      "ticker": "DOCU",
+      "option_type": "PUT",
+      "strike": 40.0,
+      "expiration": "2026-03-20",
+      "contracts": 2,
+      "price": 0.03,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "f13b0ab97e14db78"
     }
   ]
 }

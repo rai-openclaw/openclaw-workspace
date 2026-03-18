@@ -92,3 +92,29 @@ All other changes should complete autonomously within AEF.
 ## 5. Autonomy Principle
 
 Autonomy does not mean unconstrained behavior. Autonomy means disciplined execution within declared scope and validated boundaries.
+
+## 6. Session Integrity Rule
+
+### Purpose
+Ensure each execution flow operates with fresh governance state and maintains traceable boundaries between tasks.
+
+### Pipeline Reliability Requirement
+The AEF pipeline is only valid when:
+1. Each session begins with freshly loaded governance
+2. Task execution respects session budget limits
+3. Checkpoints are enforced at defined triggers
+4. State is preserved between sessions via memory entries
+
+If any of these conditions fail, the pipeline is in an unreliable state and must not proceed.
+
+### Forced Checkpoint Before Continuing
+When checkpoint triggers mid-flow:
+1. Execution halts immediately
+2. State is captured per checkpoint procedure in ROLES.md
+3. User must start a new session to continue (checkpoint is a boundary, not a pause)
+
+### Session Boundary Integrity
+- A session ends when: user says 'end', budget exhausted, or user reports session feels broken
+- A new session begins with fresh governance load
+- No state carries over between sessions except via memory entries
+- Checkpoints create hard boundaries — each continuation is a new session

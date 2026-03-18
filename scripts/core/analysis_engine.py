@@ -800,6 +800,141 @@ def compute_earnings_expectation_gap(data: Dict) -> Dict:
 
 
 # =============================================================================
+# TRADE GRADING
+# =============================================================================
+
+def grade_trade(candidate: Dict) -> Dict:
+    """
+    Grade a trade based on options edge metrics.
+    
+    Inputs from trade_desk_analysis:
+    - iv_edge: implied volatility edge (from options_edge)
+    - skew: call/put skew (from options_edge)
+    - distance_vs_em: strike distance vs implied move (from strike_analysis)
+    - p90_move: 90th percentile move (from event_risk)
+    - implied_move: implied move (from options_context)
+    
+    Returns:
+        Dict with score, rating, and breakdown
+    """
+    # Extract inputs
+    options_edge = candidate.get("options_edge", {})
+    strike_analysis = candidate.get("strike_analysis", {})
+    event_risk = candidate.get("event_risk", {})
+    options_context = candidate.get("options_context", {})
+    
+    iv_edge = options_edge.get("iv_edge") if options_edge else None
+    skew = options_edge.get("skew") if options_edge else None
+    distance_vs_em = strike_analysis.get("distance_vs_em") if strike_analysis else None
+    p90_move = event_risk.get("p90_move") if event_risk else None
+    p75_move = event_risk.get("p75_move") if event_risk else None
+    implied_move = options_context.get("implied_move") if options_context else None
+    
+    # Handle None values gracefully
+    if iv_edge is None:
+        iv_edge = 0
+    if skew is None:
+        skew = 0
+    if distance_vs_em is None:
+        distance_vs_em = 0
+    if p90_move is None:
+        p90_move = 0
+    if p75_move is None:
+        p75_move = 0
+    if implied_move is None:
+        implied_move = 0
+    
+    # Track earned and max points for normalization
+    earned_points = 0
+    max_points = 0
+    
+    # 1. IV edge scoring (0-40 points)
+    if iv_edge is not None and iv_edge > 0:
+        max_points += 40
+        if iv_edge >= 2.5:
+            earned_points += 40
+        elif iv_edge >= 2.0:
+            earned_points += 35
+        elif iv_edge >= 1.5:
+            earned_points += 25
+        elif iv_edge >= 1.2:
+            earned_points += 15
+        else:
+            earned_points += 5
+    
+    # 2. Strike safety scoring (0-30 points) - always included
+    max_points += 30
+    if distance_vs_em >= 1.5:
+        earned_points += 30
+    elif distance_vs_em >= 1.2:
+        earned_points += 20
+    elif distance_vs_em >= 1.0:
+        earned_points += 10
+    
+    # 3. Skew scoring (0-20 points)
+    if skew is not None:
+        max_points += 20
+        if skew > 15:
+            earned_points += 20
+        elif skew > 5:
+            earned_points += 15
+        elif skew >= 0:
+            earned_points += 10
+        else:
+            earned_points += 5
+    
+    # 4. Tail risk scoring (0-10 points) - always included
+    max_points += 10
+    # Convert implied_move from percentage to decimal for comparison
+    implied_move_decimal = implied_move / 100.0 if implied_move > 0 else 0
+    
+    # Check if implied move is within historical move distribution
+    if implied_move_decimal >= p90_move:
+        earned_points += 10
+    elif implied_move_decimal >= p75_move:
+        earned_points += 5
+    
+    # Calculate normalized score (0-100 scale)
+    if max_points > 0:
+        score = round((earned_points / max_points) * 100)
+    else:
+        score = 0
+    
+    # Determine rating
+    if score >= 80:
+        rating = "A"
+    elif score >= 65:
+        rating = "B"
+    elif score >= 50:
+        rating = "C"
+    else:
+        rating = "D"
+    
+    # Cap rating at B if options_edge is missing
+    if options_edge is None and rating == "A":
+        rating = "B"
+    
+    return {
+        "score": score,
+        "rating": rating,
+        "earned_points": earned_points,
+        "max_points": max_points,
+        "breakdown": {
+            "iv_edge_score": earned_points if iv_edge > 0 and iv_edge is not None else 0,
+            "strike_safety_score": 30 if distance_vs_em >= 1.5 else (20 if distance_vs_em >= 1.2 else (10 if distance_vs_em >= 1.0 else 0)),
+            "skew_score": 20 if skew and skew > 15 else (15 if skew and skew > 5 else (10 if skew and skew >= 0 else (5 if skew and skew < 0 else 0))),
+            "tail_risk_score": 10 if implied_move_decimal >= p90_move else (5 if implied_move_decimal >= p75_move else 0),
+            "iv_edge": iv_edge,
+            "skew": skew,
+            "distance_vs_em": distance_vs_em,
+            "p75_move": p75_move,
+            "p90_move": p90_move,
+            "implied_move": implied_move
+        }
+    }
+
+
+# =============================================================================
 # TRADE DESK INTERPRETATION LAYER
 # =============================================================================
 
@@ -944,6 +1079,7 @@ def build_trade_desk_analysis(data: Dict) -> Dict:
     tech = data.get("technical_analysis", {})
     historical = data.get("historical_volatility", {})
     material = data.get("material_events", [])
+    event_risk = data.get("event_risk", {})
     
     # Extract additional context for summary synthesis
     reaction_diagnostics = data.get("reaction_diagnostics", {})
@@ -1149,9 +1285,17 @@ def build_trade_desk_analysis(data: Dict) -> Dict:
             }
     
     # Add event_risk: from probability_engine's event_risk field
-    event_risk = data.get("event_risk")
     if event_risk:
         trade_desk_analysis["event_risk"] = event_risk
+    
+    # Add trade_grade: call grade_trade() with required inputs
+    trade_grade_candidate = {
+        "options_edge": trade_desk_analysis.get("options_edge"),
+        "strike_analysis": trade_desk_analysis.get("strike_analysis"),
+        "event_risk": trade_desk_analysis.get("event_risk"),
+        "options_context": options_context
+    }
+    trade_desk_analysis["trade_grade"] = grade_trade(trade_grade_candidate)
     
     return trade_desk_analysis
 
@@ -1607,7 +1751,7 @@ def generate_trade_desk_summary(context: Dict) -> str:
 # MAIN ANALYSIS FUNCTIONS
 # =============================================================================
 
-def analyze_single(ticker: str, save_to_disk: bool = True) -> Dict:
+def analyze_single(ticker: str, save_to_disk: bool = True, original_data: Dict = None) -> Dict:
     """
     Perform full analysis on a single ticker.
     Returns comprehensive analysis dict.
@@ -1616,8 +1760,13 @@ def analyze_single(ticker: str, save_to_disk: bool = True) -> Dict:
         ticker: Stock ticker symbol
         save_to_disk: If True, save analysis to disk and return compact response.
                       If False, return full analysis dict (used by analyze_batch).
+        original_data: Optional original candidate data with event_risk
     """
     ticker = ticker.upper()
+    
+    # Initialize original_data if not provided
+    if original_data is None:
+        original_data = {}
 
     # 1. Get price history
     price_timeline = get_price_history(ticker, days=90)
@@ -1724,6 +1873,7 @@ def analyze_single(ticker: str, save_to_disk: bool = True) -> Dict:
         "reaction_diagnostics": reaction_diagnostics,
         "sector_context": sector_context,
         "peer_context": peer_context,
+        "event_risk": original_data.get("event_risk", {}),  # Pass through from original candidate
         "dominant_driver": determine_dominant_driver({
             "ticker": ticker,
             "key_movement": key_movement,
@@ -1786,7 +1936,9 @@ def analyze_batch(tickers: List[str], candidates: Optional[List[Dict]] = None) -
 
     for ticker in tickers:
         try:
-            result = analyze_single(ticker, save_to_disk=False)
+            # Get original candidate data if available
+            original = candidate_lookup.get(ticker.upper(), {})
+            result = analyze_single(ticker, save_to_disk=False, original_data=original)
             
             # Preserve original candidate fields for pipeline compatibility
             if ticker.upper() in candidate_lookup:

@@ -1,5 +1,5 @@
 {
-  "lastQuoteUpdate": "2026-03-13T21:03:34.244Z",
+  "lastQuoteUpdate": "2026-03-18T16:33:08.134Z",
   "quotes": {
     "AAPL": {
       "symbol": "AAPL",
@@ -129,7 +129,7 @@
     "ADBE260313P00240000": {
       "symbol": "ADBE260313P00240000",
       "markPrice": 0,
-      "lastUpdated": "2026-03-13T01:14:41.217Z"
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
     },
     "ULTA": {
       "symbol": "ULTA",
@@ -140,6 +140,46 @@
       "symbol": "ADBE",
       "markPrice": 0,
       "lastUpdated": "2026-03-13T21:03:34.244Z"
+    },
+    "ULTA260320P00570000": {
+      "symbol": "ULTA260320P00570000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "ULTA260320P00565000": {
+      "symbol": "ULTA260320P00565000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "ADBE260313P00237500": {
+      "symbol": "ADBE260313P00237500",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "GDS260320P00034000": {
+      "symbol": "GDS260320P00034000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "GDS260320P00035000": {
+      "symbol": "GDS260320P00035000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "DOCU260320P00040000": {
+      "symbol": "DOCU260320P00040000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "DOCU260320P00039500": {
+      "symbol": "DOCU260320P00039500",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
+    },
+    "NN260320P00015000": {
+      "symbol": "NN260320P00015000",
+      "markPrice": 0,
+      "lastUpdated": "2026-03-18T16:33:08.134Z"
     }
   }
 }
