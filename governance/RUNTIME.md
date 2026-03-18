@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-18T18:40:40Z
+# Version: 2026-03-18T18:45:54Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -574,6 +574,14 @@ Jarvis reports:
 - Diff summary
 - Validation results
 - Confirmation of no undeclared scope drift
+
+### Completion Reporting Requirements
+
+Every AEF task must include in the final report:
+- Alex's session ID confirming implementation was delegated
+- Scout's session ID confirming independent validation
+- Scout's validation checklist with each item pass/fail
+- If any of these cannot be provided, Jarvis must explicitly state AEF was not followed and why
 
 ## 3. Undeclared Change Handling
 

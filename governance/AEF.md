@@ -72,6 +72,14 @@ Jarvis reports:
 - Validation results
 - Confirmation of no undeclared scope drift
 
+### Completion Reporting Requirements
+
+Every AEF task must include in the final report:
+- Alex's session ID confirming implementation was delegated
+- Scout's session ID confirming independent validation
+- Scout's validation checklist with each item pass/fail
+- If any of these cannot be provided, Jarvis must explicitly state AEF was not followed and why
+
 ## 3. Undeclared Change Handling
 
 If an undeclared structural change is discovered:
