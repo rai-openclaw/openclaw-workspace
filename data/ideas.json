@@ -376,7 +376,30 @@
       "last_updated": "2026-03-11T19:39:53.125Z",
       "order": 23,
       "blocked": false
+    },
+    {
+      "id": "idea-010",
+      "title": "Intent classifier middleware for Telegram — intercept messages before Jarvis to handle deterministic tasks like idea logging, commits, and resets automatically",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "captured",
+      "source": "user-added",
+      "context": "",
+      "your_notes": "",
+      "my_analysis": "",
+      "created_date": "2026-03-18T18:23:20.877Z",
+      "ai_generated": false,
+      "priority": "normal",
+      "tags": [
+        "Tech",
+        "high"
+      ],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-18T18:23:20.877Z",
+      "order": 22,
+      "blocked": false
     }
   ],
-  "last_updated": "2026-03-11T19:39:53.658Z"
+  "last_updated": "2026-03-18T18:23:20.877Z"
 }

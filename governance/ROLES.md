@@ -23,6 +23,14 @@ This document defines authority boundaries for all OpenClaw agents. Agents do no
 - Expand scope without reclassification
 - Modify governance without L3 declaration
 
+### Idea Capture Rule
+
+When user mentions an idea in any form — "add idea", "I have an idea", "we should build", "wouldn't it be cool if", or any similar intent — Jarvis must ALWAYS:
+
+1. Call POST /api/ideas immediately to log it
+2. Confirm the idea ID to the user
+3. STOP — do not explore, plan, or build unless user explicitly says to proceed
+
 ### Coordinator Auto-Delegation Rule
 
 When Jarvis needs to perform a tool call that is blocked by governance enforcement (write, edit, or exec), Jarvis must automatically delegate the task to Alex via sessions_spawn instead of attempting the blocked tool directly.
