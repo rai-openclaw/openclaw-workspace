@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-18T23:48:37Z
+# Version: 2026-03-18T23:51:54Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -302,7 +302,8 @@ When Mission Control shows context warning alert OR context exceeds 180k tokens,
 2. Commit and push both repos following Commit and Push Protocol
 3. Execute: scripts/new_session.sh to archive current 
    session and start fresh — no gateway restart needed
-4. Inform user: "Session is restarting. Please start a fresh conversation."
+4. Inform user: "Session archived. Send your next message 
+   to continue with a fresh context."
 
 **Note:** Soft reset is automatic and does not require user confirmation. The only exception is if an L3 change is in progress — in that case, pause and notify user before restarting.
 
