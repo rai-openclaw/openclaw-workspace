@@ -422,7 +422,31 @@
       "last_updated": "2026-03-18T21:06:15.910Z",
       "order": 23,
       "blocked": false
+    },
+    {
+      "id": "idea-014",
+      "title": "Memory tab in Mission Control — a searchable interface to browse Jarvis memory files, see what was discussed in past sessions, and search by date or keyword",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "captured",
+      "source": "user-added",
+      "context": "",
+      "your_notes": "",
+      "my_analysis": "",
+      "created_date": "2026-03-18T21:53:22.691Z",
+      "ai_generated": false,
+      "priority": "normal",
+      "tags": [
+        "Mission Control",
+        "UI",
+        "Memory"
+      ],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-18T21:53:22.691Z",
+      "order": 24,
+      "blocked": false
     }
   ],
-  "last_updated": "2026-03-18T21:06:15.910Z"
+  "last_updated": "2026-03-18T21:53:22.691Z"
 }
