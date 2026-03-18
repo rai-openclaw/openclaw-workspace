@@ -1,74 +1,117 @@
 'use client'
+
 import { useState, useEffect } from 'react'
 
-interface AgentData {
-  status: string
-  sessionTokens: number
-  sessionStartTime: string
-  gitStatus: string[]
-}
-
 interface Commit {
+  agent: string
   message: string
   timestamp: string
 }
 
-interface ActivityData {
-  agents: Record<string, AgentData>
-  recentCommits: Commit[]
+function formatTimestamp(iso: string): string {
+  const date = new Date(iso)
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+  const ampm = hours >= 12 ? 'PM' : 'AM'
+  const hour12 = hours % 12 || 12
+  const month = date.getMonth() + 1
+  const day = date.getDate()
+  return `${month}/${day} ${hour12}:${minutes.toString().padStart(2, '0')} ${ampm}`
 }
 
 export default function AgentActivityFeed() {
-  const [data, setData] = useState<ActivityData | null>(null)
-  
+  const [commits, setCommits] = useState<Commit[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
   useEffect(() => {
     async function fetchData() {
       try {
         const res = await fetch('/api/agent-activity')
+        if (!res.ok) throw new Error('Failed to fetch')
         const json = await res.json()
-        setData(json)
-      } catch (e) {
-        console.error('Failed to fetch activity:', e)
+        setCommits(json.commits || [])
+        setError(null)
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Unknown error')
+      } finally {
+        setLoading(false)
       }
     }
     fetchData()
     const interval = setInterval(fetchData, 10000)
     return () => clearInterval(interval)
   }, [])
-  
-  if (!data) return <div style={{ padding: '1rem' }}>Loading...</div>
-  
-  // Safe data access with optional chaining and defaults
-  const agents = data?.agents ?? {}
-  const commits = data?.recentCommits ?? []
-  
+
+  if (loading) {
+    return (
+      <div style={{ padding: '1rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+        Loading agent activity...
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div style={{ padding: '1rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+        Error: {error}
+      </div>
+    )
+  }
+
+  if (commits.length === 0) {
+    return (
+      <div style={{ padding: '1rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+        No commits available
+      </div>
+    )
+  }
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-      {Object.entries(agents).map(([agent, info]: [string, AgentData]) => (
-        <div key={agent} style={{ padding: '0.75rem', background: 'var(--bg-secondary)', borderRadius: '4px' }}>
-          <div style={{ fontWeight: 600, textTransform: 'uppercase', marginBottom: '0.5rem' }}>
-            {agent} — {info?.status ?? 'UNKNOWN'}
+    <div style={{
+      background: 'var(--card-bg, #1a1a1a)',
+      borderRadius: '8px',
+      padding: '1rem',
+      maxHeight: '300px',
+      overflowY: 'auto'
+    }}>
+      <div style={{
+        fontSize: '0.875rem',
+        fontWeight: 600,
+        marginBottom: '1rem',
+        color: 'var(--text-primary, #e5e5e5)'
+      }}>
+        Agent Activity
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+        {commits.map((commit, idx) => (
+          <div
+            key={idx}
+            style={{
+              display: 'flex',
+              gap: '0.5rem',
+              alignItems: 'flex-start',
+              padding: '0.25rem 0.5rem',
+              borderRadius: '4px',
+              fontSize: '0.8125rem',
+              lineHeight: 1.4,
+              color: 'var(--text-secondary, #a3a3a3)'
+            }}
+          >
+            <span style={{ color: 'var(--text-primary, #e5e5e5)', flexShrink: 0 }}>●</span>
+            <span style={{ color: 'var(--text-primary, #e5e5e5)', fontWeight: 500, flexShrink: 0 }}>
+              {commit.agent}
+            </span>
+            <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {commit.message}
+            </span>
+            <span style={{ color: 'var(--text-tertiary, #737373)', flexShrink: 0, fontSize: '0.75rem' }}>
+              {formatTimestamp(commit.timestamp)}
+            </span>
           </div>
-          {info?.status === 'ACTIVE' && (info?.gitStatus?.length ?? 0) > 0 && (
-            <div style={{ color: 'var(--accent)', fontSize: '0.8rem' }}>
-              BUILDING NOW: {(info?.gitStatus ?? []).join(', ')}
-            </div>
-          )}
-          {info?.sessionStartTime && (
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-              Started: {info.sessionStartTime}
-            </div>
-          )}
-        </div>
-      ))}
-      {(commits?.length ?? 0) > 0 && (
-        <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-          <div style={{ fontWeight: 600, marginBottom: '0.25rem' }}>Recent Commits:</div>
-          {commits.slice(0, 3).map((c: Commit, i: number) => (
-            <div key={i} style={{ marginBottom: '0.25rem' }}>{c?.timestamp ?? ''} — {c?.message ?? ''}</div>
-          ))}
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   )
 }
