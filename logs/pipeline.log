@@ -13837,3 +13837,38 @@
 2026-03-18 06:39:21,416 - INFO - TOKEN: Using cached token
 2026-03-18 06:39:23,749 - INFO - TOKEN: Using cached token
 2026-03-18 06:39:24,184 - INFO - TOKEN: Using cached token
+2026-03-19 06:35:52,509 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-19 06:35:52,511 - INFO - TOKEN: Refreshing token
+2026-03-19 06:35:53,249 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-03-19 06:35:53,249 - INFO - TOKEN: Saved refresh token to JSON
+2026-03-19 06:35:53,250 - INFO - TOKEN: Success - token cached
+2026-03-19 06:35:55,766 - INFO - TOKEN: Using cached token
+2026-03-19 06:35:56,164 - INFO - TOKEN: Using cached token
+2026-03-19 06:36:00,100 - INFO - TOKEN: Using cached token
+2026-03-19 06:36:01,651 - INFO - TOKEN: Using cached token
+2026-03-19 06:36:01,966 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:18,119 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-19 06:38:18,119 - INFO - TOKEN: Refreshing token
+2026-03-19 06:38:18,864 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-03-19 06:38:18,864 - INFO - TOKEN: Saved refresh token to JSON
+2026-03-19 06:38:18,864 - INFO - TOKEN: Success - token cached
+2026-03-19 06:38:21,260 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:21,567 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:25,542 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:27,326 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:27,640 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:37,367 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:39,759 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:40,048 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:43,956 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:45,790 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:46,166 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:50,397 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:52,206 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:52,511 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:56,627 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:58,634 - INFO - TOKEN: Using cached token
+2026-03-19 06:38:58,968 - INFO - TOKEN: Using cached token
+2026-03-19 06:39:03,023 - INFO - TOKEN: Using cached token
+2026-03-19 06:39:04,739 - INFO - TOKEN: Using cached token
+2026-03-19 06:39:04,997 - INFO - TOKEN: Using cached token

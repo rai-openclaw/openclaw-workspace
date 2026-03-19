@@ -5075,6 +5075,45 @@
       "event_type": "SELL_TO_OPEN",
       "source": "robinhood_email",
       "id": "56002b3631e0a6e1"
+    },
+    {
+      "timestamp": "2026-03-19T13:37:00.000Z",
+      "account": "Robinhood",
+      "ticker": "FIVE",
+      "option_type": "PUT",
+      "strike": 175.0,
+      "expiration": "2026-03-20",
+      "contracts": 5,
+      "price": 0.05,
+      "event_type": "BUY_TO_CLOSE",
+      "source": "robinhood_email",
+      "id": "dfefd8ae549b220c"
+    },
+    {
+      "timestamp": "2026-03-19T19:56:00.000Z",
+      "account": "Robinhood",
+      "ticker": "MU",
+      "option_type": "PUT",
+      "strike": 417.5,
+      "expiration": "2026-03-20",
+      "contracts": 1,
+      "price": 0.75,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "fb0d38feaf928ad4"
+    },
+    {
+      "timestamp": "2026-03-19T19:58:00.000Z",
+      "account": "Robinhood",
+      "ticker": "FDX",
+      "option_type": "PUT",
+      "strike": 320.0,
+      "expiration": "2026-03-20",
+      "contracts": 1,
+      "price": 0.85,
+      "event_type": "SELL_TO_OPEN",
+      "source": "robinhood_email",
+      "id": "bd909df2349e14a5"
     }
   ]
 }
