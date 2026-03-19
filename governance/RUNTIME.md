@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-19T05:47:03Z
+# Version: 2026-03-19T19:30:28Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -122,6 +122,14 @@ Jarvis does not implement. All write, edit, and exec operations must be delegate
 - Jarvis must declare scope and present design brief first
 - User confirmation required before spawning Alex
 - Delegation only after scope is locked
+
+### sessions_spawn Protocol (REQUIRED)
+When using sessions_spawn, the `agentId` parameter MUST be included explicitly:
+
+- `agentId: "alex"` — for implementation tasks
+- `agentId: "scout"` — for validation tasks
+
+The `label` parameter alone is NOT sufficient for routing. Without `agentId`, the spawn defaults to Jarvis subagent, not the intended agent.
 
 ### Next.js Build Safeguard
 When modifying a Next.js project, Jarvis must detect structural changes that can invalidate the build cache. Structural changes include:
