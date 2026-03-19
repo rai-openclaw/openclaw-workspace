@@ -5,7 +5,7 @@ homepage: https://docs.openclaw.ai/hooks
 metadata:
   openclaw:
     emoji: "📚"
-    events: ["agent:bootstrap", "command:new"]
+    events: ["agent:bootstrap"]
     requires:
       bins: ["node"]
 ---
