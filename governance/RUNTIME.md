@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-20T20:16:34Z
+# Version: 2026-03-20T20:18:02Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
@@ -323,20 +323,17 @@ When Mission Control shows context warning alert OR context exceeds 180k tokens,
 
 ## 11. Learning Capture Rule
 
-Learnings must be captured immediately when discovered, not just at session end. This prevents loss of knowledge if the session crashes or ends unexpectedly.
+Write to .learnings/ IMMEDIATELY when any of these occur — do not wait until session end:
+1. A tool or command returns an error or unexpected result
+2. You discover a bug and apply a fix
+3. The user corrects you ("No, that's wrong", "Actually...", "You forgot...")
+4. A governance gap or protocol ambiguity is identified
+5. A better approach is discovered for something you've done before
+6. An API or external service behaves unexpectedly
 
-**When to capture:**
-- A bug is discovered
-- A fix is applied
-- A protocol gap is found
-- A mistake is made and corrected
+**Format:** LRN-YYYYMMDD-XXX with area, priority, status, description, correction, and prevention.
 
-**How to capture:**
-1. Write to .learnings/LEARNINGS.md immediately when the learning occurs
-2. Format: LRN-YYYYMMDD-XXX with area, priority, status, description, correction, and prevention
-3. At session end, the memory entry should summarize learnings briefly — not re-document them in detail
-
-**Why this matters:** Today's crash (gateway restarted twice unexpectedly) proved that waiting until session end risks losing everything. Mid-session capture ensures learnings survive abrupt termination.
+Session end memory writing remains required but should SUMMARIZE — not re-document things already captured in .learnings/
 
 ## 12. Memory Format Standard
 

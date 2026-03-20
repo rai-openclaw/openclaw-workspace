@@ -25,8 +25,8 @@ Format: LRN-YYYYMMDD-XXX
 **Priority:** high  
 **Status:** promoted (added to ROLES.md)
 
-**Description:** Session-end only learning capture is risky — if the session crashes or ends unexpectedly, all learnings are lost. Today the gateway crashed twice (18:44 and 18:50) with no graceful shutdown, resulting in no memory entry for March 20.
+**Description:** Session-end only learning capture is risky — crashes lose everything. Today the gateway crashed twice (18:44 and 18:50) with no graceful shutdown, resulting in no memory entry for March 20.
 
-**Correction:** Learnings must be captured immediately when discovered (bug found, fix applied, protocol gap identified), not just at session end. Write to .learnings/LEARNINGS.md mid-session. Memory entry at session end should summarize, not re-document.
+**Correction:** Learnings must be captured IMMEDIATELY when specific triggers occur: tool errors, bug discovery, user corrections, governance gaps, better approaches discovered, or unexpected API behavior. Write to .learnings/LEARNINGS.md immediately. Session end memory should summarize, not re-document.
 
-**Prevention:** ROLES.md updated with Learning Capture Rule (Section 11).
+**Prevention:** ROLES.md updated with Learning Capture Rule (Section 11) listing 6 specific triggers.
