@@ -5,6 +5,20 @@ Format: LRN-YYYYMMDD-XXX
 
 ---
 
+## LRN-20260320-003
+
+**Area:** governance  
+**Priority:** high  
+**Status:** pending
+
+**Description:** Silent retry behavior — spawning Alex v2 and v3 without reporting back or getting user authorization after v1 failed is a governance violation. The agent is not authorized to retry failed subagent spawns autonomously.
+
+**Correction:** When a subagent spawn fails, report the failure immediately to the user and WAIT for instruction before retrying. Do not silently spawn follow-up attempts.
+
+**Prevention:** Add explicit rule to ROLES.md: "Never retry a failed subagent spawn without user authorization. Report failure and wait."
+
+---
+
 ## LRN-20260319-001
 
 **Area:** infra  
