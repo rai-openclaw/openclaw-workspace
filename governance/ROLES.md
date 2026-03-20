@@ -240,7 +240,24 @@ When Mission Control shows context warning alert OR context exceeds 180k tokens,
 
 **Note:** Soft reset is automatic and does not require user confirmation. The only exception is if an L3 change is in progress — in that case, pause and notify user before restarting.
 
-## 11. Memory Format Standard
+## 11. Learning Capture Rule
+
+Learnings must be captured immediately when discovered, not just at session end. This prevents loss of knowledge if the session crashes or ends unexpectedly.
+
+**When to capture:**
+- A bug is discovered
+- A fix is applied
+- A protocol gap is found
+- A mistake is made and corrected
+
+**How to capture:**
+1. Write to .learnings/LEARNINGS.md immediately when the learning occurs
+2. Format: LRN-YYYYMMDD-XXX with area, priority, status, description, correction, and prevention
+3. At session end, the memory entry should summarize learnings briefly — not re-document them in detail
+
+**Why this matters:** Today's crash (gateway restarted twice unexpectedly) proved that waiting until session end risks losing everything. Mid-session capture ensures learnings survive abrupt termination.
+
+## 12. Memory Format Standard
 
 All memory entries written to memory/YYYY-MM-DD.md must follow this structure:
 ```markdown
