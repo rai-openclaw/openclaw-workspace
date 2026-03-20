@@ -56,6 +56,13 @@ When using sessions_spawn, the `agentId` parameter MUST be included explicitly:
 
 The `label` parameter alone is NOT sufficient for routing. Without `agentId`, the spawn defaults to Jarvis subagent, not the intended agent.
 
+## Sequential Subagent Rule
+Never spawn Alex and Scout simultaneously. Always:
+1. Spawn Alex with `agentId: "alex"` — wait for full completion
+2. Only after Alex reports done, spawn Scout with `agentId: "scout"`
+
+Reason: Concurrent subagent sessions trigger MiniMax API rate limits (35+ sessions = rate limited). Sequential spawning prevents this.
+
 ### Next.js Build Safeguard
 When modifying a Next.js project, Jarvis must detect structural changes that can invalidate the build cache. Structural changes include:
 - Creation or movement of routes in `app/`
