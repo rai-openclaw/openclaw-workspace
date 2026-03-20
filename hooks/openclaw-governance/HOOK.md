@@ -1,20 +1,23 @@
 ---
 name: openclaw-governance
-description: "Auto-log tool errors to .learnings/ERRORS.md and trigger learning review on session end"
-homepage: https://docs.openclaw.ai/hooks
+description: "Injects governance and learning reminder during agent bootstrap"
 metadata:
   openclaw:
     emoji: "📚"
     events: ["agent:bootstrap"]
-    requires:
-      bins: ["node"]
 ---
 # OpenClaw Governance Hook
 
 ## What It Does
-- `tool_result_persist`: Detects tool failures and auto-writes to `.learnings/ERRORS.md`
-- `command:new`: Injects a learning review reminder before session ends
+- Fires on agent:bootstrap before workspace files are injected
+- Injects GOVERNANCE_REMINDER.md as a virtual bootstrap file into every session
+- Reminds Jarvis to load governance, log learnings, and commit before session closes
+- Skips subagent sessions automatically
 
 ## Requirements
-- Node.js must be installed
-- `~/.openclaw/workspace/.learnings/` must exist
+- No configuration needed
+
+## Enable
+```
+openclaw hooks enable openclaw-governance
+```
