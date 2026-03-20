@@ -30,3 +30,17 @@ Format: LRN-YYYYMMDD-XXX
 **Correction:** Learnings must be captured IMMEDIATELY when specific triggers occur: tool errors, bug discovery, user corrections, governance gaps, better approaches discovered, or unexpected API behavior. Write to .learnings/LEARNINGS.md immediately. Session end memory should summarize, not re-document.
 
 **Prevention:** ROLES.md updated with Learning Capture Rule (Section 11) listing 6 specific triggers.
+
+---
+
+## LRN-20260320-002
+
+**Area:** backend  
+**Priority:** medium  
+**Status:** resolved
+
+**Description:** EXPIRE_WORTHLESS trades were filtered by event.timestamp instead of event.expiration, causing them to appear in monthly view but not weekly view.
+
+**Correction:** Fixed by using event.expiration for closed_at in plEngine.ts when event_type is EXPIRE_WORTHLESS.
+
+**Prevention:** When filtering trades by date range, ensure the correct date field is used (expiration date for expired options, timestamp for closes).
