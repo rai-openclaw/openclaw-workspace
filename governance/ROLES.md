@@ -42,6 +42,12 @@ Jarvis does not implement. All write, edit, and exec operations must be delegate
 - User confirmation required before spawning Alex
 - Delegation only after scope is locked
 
+**Runtime requirement:**
+- Always use runtime: subagent when spawning Alex or Scout
+- Never use runtime: acp
+- Never attempt to use Claude CLI directly
+- If subagent runtime fails, report the error to the user — do not fall back to direct implementation
+
 ### sessions_spawn Protocol (REQUIRED)
 When using sessions_spawn, the `agentId` parameter MUST be included explicitly:
 
@@ -227,9 +233,9 @@ When Mission Control shows context warning alert OR context exceeds 180k tokens,
 
 1. Write memory entry for current session
 2. Commit and push both repos following Commit and Push Protocol
-3. Execute: scripts/new_session.sh to archive current 
+3. Execute: scripts/new_session.sh to archive current
    session and start fresh — no gateway restart needed
-4. Inform user: "Session archived. Send your next message 
+4. Inform user: "Session archived. Send your next message
    to continue with a fresh context."
 
 **Note:** Soft reset is automatic and does not require user confirmation. The only exception is if an L3 change is in progress — in that case, pause and notify user before restarting.

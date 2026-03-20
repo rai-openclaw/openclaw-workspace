@@ -446,7 +446,32 @@
       "last_updated": "2026-03-18T21:53:22.691Z",
       "order": 24,
       "blocked": false
+    },
+    {
+      "id": "idea-21",
+      "title": "Migrate trades.json to SQLite",
+      "category": "Tech",
+      "effort": "Medium",
+      "status": "captured",
+      "source": "conversation",
+      "context": "Current trades.json JSON file will degrade in performance at scale (~2-3 years of data). At 392 entries, API responds in ~33ms. SQLite would maintain consistent performance regardless of history size. Also fixes cross-week trade bug (filtering before pairing).",
+      "your_notes": "Status: captured, low urgency, revisit in ~1 year.",
+      "my_analysis": "SQLite benefits: (1) O(1) lookups vs O(n) JSON parse, (2) Query flexibility for complex filters, (3) ACID compliance for concurrent writes, (4) Built-in indexing. Migration path: (1) Export JSON to SQLite schema, (2) Update API routes to use SQLite, (3) Add migrations for schema changes.",
+      "created_date": "2026-03-20T15:57:33.476Z",
+      "ai_generated": false,
+      "priority": "low",
+      "tags": [
+        "trading",
+        "database",
+        "performance",
+        "sqlite"
+      ],
+      "related_ideas": [],
+      "progress_percent": 0,
+      "last_updated": "2026-03-20T15:57:33.476Z",
+      "order": 25,
+      "blocked": false
     }
   ],
-  "last_updated": "2026-03-18T21:53:22.691Z"
+  "last_updated": "2026-03-20T15:57:33.476Z"
 }
