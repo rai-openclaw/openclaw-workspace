@@ -24,3 +24,7 @@ data/options/backups/
 # External Repositories (managed separately)
 mission-control-next/
 .learnings/
+
+# Agent credentials (never commit)
+agents/*/auth-profiles.json
+agents/*/models.json
