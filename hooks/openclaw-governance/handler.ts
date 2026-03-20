@@ -1,3 +1,4 @@
+import { postToDiscord } from '../lib/discord.js';
 import type { HookHandler } from 'openclaw/hooks';
 
 const REMINDER = `## Governance & Learning Reminder
@@ -32,6 +33,30 @@ const handler: HookHandler = async (event) => {
       content: REMINDER,
       virtual: true,
     });
+  }
+
+  // Discord notifications for Alex/Scout sessions (fire and forget)
+  const agent = event.context?.agent || '';
+  const taskName = event.context?.task || event.context?.label || 'Unknown Task';
+  
+  // Extract AEF level from task name
+  const levelMatch = taskName.match(/\[L(\d+)\]/i);
+  const level = levelMatch ? `L${levelMatch[1]}` : '';
+  
+  // Format timestamp as HH:MM PT
+  const now = new Date();
+  const timeStr = now.toLocaleTimeString('en-US', { 
+    hour: '2-digit', 
+    minute: '2-digit',
+    timeZone: 'America/Los_Angeles'
+  }) + ' PT';
+
+  if (agent === 'alex') {
+    const msg = `🔨 Alex — Starting: ${taskName} | ${level} | ${timeStr}`;
+    postToDiscord('openclaw-dev', msg).catch(() => {}); // fire and forget
+  } else if (agent === 'scout') {
+    const msg = `🔍 Scout — Validating: ${taskName} | ${timeStr}`;
+    postToDiscord('openclaw-dev', msg).catch(() => {}); // fire and forget
   }
 };
 
