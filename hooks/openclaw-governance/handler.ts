@@ -25,7 +25,15 @@ const handler: HookHandler = async (event) => {
   if (!event.context || typeof event.context !== 'object') return;
 
   const sessionKey = event.sessionKey || '';
-  if (sessionKey.includes(':subagent:')) return;
+  
+  // DEBUG: Log the event structure
+  console.log('[discord] Bootstrap event:', JSON.stringify({ 
+    sessionKey, 
+    type: event.type, 
+    action: event.action,
+    agentId: event.agentId,
+    contextAgent: event.context?.agent
+  }));
 
   if (Array.isArray(event.context.bootstrapFiles)) {
     event.context.bootstrapFiles.push({
@@ -35,8 +43,20 @@ const handler: HookHandler = async (event) => {
     });
   }
 
-  // Discord notifications for Alex/Scout sessions (fire and forget)
-  const agent = event.context?.agent || '';
+  // Discord notifications for Alex/Scout subagent sessions (fire and forget)
+  // Extract agent from sessionKey (e.g., "agent:alex:subagent:...")
+  let agent = '';
+  if (sessionKey.includes(':alex:')) {
+    agent = 'alex';
+  } else if (sessionKey.includes(':scout:')) {
+    agent = 'scout';
+  }
+  
+  // Also check context.agent as fallback
+  if (!agent) {
+    agent = event.context?.agent || '';
+  }
+  
   const taskName = event.context?.task || event.context?.label || 'Unknown Task';
   
   // Extract AEF level from task name
@@ -51,12 +71,16 @@ const handler: HookHandler = async (event) => {
     timeZone: 'America/Los_Angeles'
   }) + ' PT';
 
+  console.log('[discord] Detected agent:', agent, 'task:', taskName);
+
   if (agent === 'alex') {
     const msg = `🔨 Alex — Starting: ${taskName} | ${level} | ${timeStr}`;
-    postToDiscord('openclaw-dev', msg).catch(() => {}); // fire and forget
+    console.log('[discord] Posting:', msg);
+    postToDiscord('openclaw-dev', msg).catch((e) => console.error('[discord] Error:', e));
   } else if (agent === 'scout') {
     const msg = `🔍 Scout — Validating: ${taskName} | ${timeStr}`;
-    postToDiscord('openclaw-dev', msg).catch(() => {}); // fire and forget
+    console.log('[discord] Posting:', msg);
+    postToDiscord('openclaw-dev', msg).catch((e) => console.error('[discord] Error:', e));
   }
 };
 
