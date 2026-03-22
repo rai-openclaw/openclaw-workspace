@@ -5,7 +5,20 @@ Format: ERR-YYYYMMDD-XXX
 
 ---
 
-## ERR-20260320-001
+## ERR-20260320-002
+
+**Priority:** high  
+**Status:** known limitation
+
+**Description:** Repeated launchctl ETIMEDOUT causing double restart on every config change. Gateway attempts full process restart via spawnSync launchctl, but launchctl times out (ThrottleInterval=1 may cause this). Falls back to in-process restart which works fine every time.
+
+**Impact:** Every config change triggers two restarts: first fails with ETIMEDOUT, then succeeds with in-process fallback. This has happened 15+ times since March 3.
+
+**Root cause:** launchd plist has ThrottleInterval=1, which may prevent rapid restarts. Gateway spawnSync call to launchctl fails with timeout.
+
+**Workaround:** The in-process fallback works reliably. Could configure gateway to skip launchctl entirely and use in-process restart only. Config location: openclaw.json has no restart method option — requires code/config change in gateway.
+
+---
 
 **Priority:** high  
 **Status:** known limitation

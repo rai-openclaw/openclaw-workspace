@@ -1,5 +1,5 @@
 {
-  "lastQuoteUpdate": "2026-03-19T18:49:36.636Z",
+  "lastQuoteUpdate": "2026-03-20T21:07:34.436Z",
   "quotes": {
     "AAPL": {
       "symbol": "AAPL",
@@ -185,6 +185,30 @@
       "symbol": "FIVE260320P00175000",
       "markPrice": 0,
       "lastUpdated": "2026-03-19T06:17:13.965Z"
+    },
+    "FDX260320P00317500": {
+      "symbol": "FDX260320P00317500",
+      "markPrice": 0.01,
+      "bid": 0,
+      "ask": 0.01,
+      "last": 0.02,
+      "lastUpdated": "2026-03-20T21:07:34.436Z"
+    },
+    "FDX260320P00302500": {
+      "symbol": "FDX260320P00302500",
+      "markPrice": 0.01,
+      "bid": 0,
+      "ask": 0.01,
+      "last": 0.01,
+      "lastUpdated": "2026-03-20T21:07:34.436Z"
+    },
+    "MU260320P00410000": {
+      "symbol": "MU260320P00410000",
+      "markPrice": 0.05,
+      "bid": 0.04,
+      "ask": 0.05,
+      "last": 0.04,
+      "lastUpdated": "2026-03-20T21:07:34.436Z"
     }
   }
 }

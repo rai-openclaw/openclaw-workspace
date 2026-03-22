@@ -1,4 +1,4 @@
-import { postToDiscord } from '../lib/discord.js';
+// import { postToDiscord } from '../lib/discord.js';
 import type { HookHandler } from 'openclaw/hooks';
 
 const REMINDER = `## Governance & Learning Reminder
@@ -27,7 +27,7 @@ const handler: HookHandler = async (event) => {
   const sessionKey = event.sessionKey || '';
   
   // DEBUG: Log the event structure
-  console.log('[discord] Bootstrap event:', JSON.stringify({ 
+  console.log('[governance] Bootstrap event:', JSON.stringify({ 
     sessionKey, 
     type: event.type, 
     action: event.action,
@@ -43,45 +43,29 @@ const handler: HookHandler = async (event) => {
     });
   }
 
+  // Discord notifications disabled for testing - import commented out
+  /*
   // Discord notifications for Alex/Scout subagent sessions (fire and forget)
-  // Extract agent from sessionKey (e.g., "agent:alex:subagent:...")
   let agent = '';
-  if (sessionKey.includes(':alex:')) {
-    agent = 'alex';
-  } else if (sessionKey.includes(':scout:')) {
-    agent = 'scout';
-  }
-  
-  // Also check context.agent as fallback
-  if (!agent) {
-    agent = event.context?.agent || '';
-  }
-  
+  if (sessionKey.includes(':alex:')) agent = 'alex';
+  else if (sessionKey.includes(':scout:')) agent = 'scout';
+  if (!Agent) agent = event.context?.agent || '';
+
   const taskName = event.context?.task || event.context?.label || 'Unknown Task';
-  
-  // Extract AEF level from task name
   const levelMatch = taskName.match(/\[L(\d+)\]/i);
   const level = levelMatch ? `L${levelMatch[1]}` : '';
-  
-  // Format timestamp as HH:MM PT
-  const now = new Date();
-  const timeStr = now.toLocaleTimeString('en-US', { 
-    hour: '2-digit', 
-    minute: '2-digit',
-    timeZone: 'America/Los_Angeles'
+  const timeStr = new Date().toLocaleTimeString('en-US', { 
+    hour: '2-digit', minute: '2-digit', timeZone: 'America/Los_Angeles' 
   }) + ' PT';
 
-  console.log('[discord] Detected agent:', agent, 'task:', taskName);
-
   if (agent === 'alex') {
-    const msg = `🔨 Alex — Starting: ${taskName} | ${level} | ${timeStr}`;
-    console.log('[discord] Posting:', msg);
+    const msg = \`🔨 Alex — Starting: \${taskName} | \${level} | \${timeStr}\`;
     postToDiscord('openclaw-dev', msg).catch((e) => console.error('[discord] Error:', e));
   } else if (agent === 'scout') {
-    const msg = `🔍 Scout — Validating: ${taskName} | ${timeStr}`;
-    console.log('[discord] Posting:', msg);
+    const msg = \`🔍 Scout — Validating: \${taskName} | \${timeStr}\`;
     postToDiscord('openclaw-dev', msg).catch((e) => console.error('[discord] Error:', e));
   }
+  */
 };
 
 export default handler;

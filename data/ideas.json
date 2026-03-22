@@ -312,7 +312,7 @@
       "title": "Calendar Tab in Mission Control",
       "category": "Tech",
       "effort": "Medium",
-      "status": "exploring",
+      "status": "built",
       "source": "user-added",
       "context": "",
       "your_notes": "",
@@ -328,7 +328,7 @@
       ],
       "related_ideas": [],
       "progress_percent": 0,
-      "last_updated": "2026-03-11T19:39:34.106Z",
+      "last_updated": "2026-03-20T21:36:50.862Z",
       "order": 22,
       "blocked": false
     },
@@ -473,5 +473,5 @@
       "blocked": false
     }
   ],
-  "last_updated": "2026-03-20T15:57:33.476Z"
+  "last_updated": "2026-03-20T21:36:50.862Z"
 }
