@@ -1,5 +1,5 @@
 # Governance Runtime
-# Version: 2026-03-22T22:16:37Z
+# Version: 2026-03-23T00:15:06Z
 
 This file is auto-generated. Do not edit manually.
 Source files in: /governance/
