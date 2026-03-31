@@ -80,8 +80,14 @@ def get_friday_of_week(dt: date) -> date:
 
 def select_earnings_expiration(chain_json: dict, earnings_date: str):
     """
-    Select the expiration that matches the Friday of the earnings week.
+    Select the expiration that falls within the earnings week.
     This ensures CSP trades expire the same week as earnings.
+    
+    Logic:
+    1. Calculate target_friday as upper bound (Friday of earnings week)
+    2. Define window: earnings_date through target_friday (inclusive)
+    3. Find expiration with LOWEST DTE in that window
+    4. Handles market holidays (Good Friday, early closes) automatically
     
     Args:
         chain_json: Response from fetch_options_chain
@@ -101,27 +107,36 @@ def select_earnings_expiration(chain_json: dict, earnings_date: str):
         logger.warning("OPTIONS: No valid expiration found - invalid earnings date format")
         return None
     
-    # Find the Friday of the earnings week
+    # Find the Friday of the earnings week (upper bound of window)
     target_friday = get_friday_of_week(earnings_dt)
     
-    logger.info(f"OPTIONS: Earnings {earnings_date}, targeting Friday {target_friday}")
+    logger.info(f"OPTIONS: Earnings {earnings_date}, window: {earnings_dt} to {target_friday}")
     
-    # Look for expiration matching that Friday
+    # Find all expirations in the earnings week window (earnings_date through target_friday)
+    valid_expirations = []
+    
     for key in chain_json["callExpDateMap"].keys():
         try:
             exp_str, dte_str = key.split(":")
             exp_dt = datetime.strptime(exp_str, "%Y-%m-%d").date()
             dte = int(dte_str)
             
-            # Match the Friday of earnings week, and must have valid DTE
-            if exp_dt == target_friday and dte > 0:
-                logger.info(f"OPTIONS: Selected expiration {exp_str} (earnings week Friday)")
-                return exp_str
+            # Check if expiration falls within earnings week window
+            if earnings_dt <= exp_dt <= target_friday and dte > 0:
+                valid_expirations.append((dte, exp_str, exp_dt))
         except (ValueError, IndexError):
             continue
     
-    logger.warning(f"OPTIONS: No expiration found for Friday {target_friday} - skipping ticker")
-    return None
+    if not valid_expirations:
+        logger.warning(f"OPTIONS: No expiration found in window {earnings_dt} to {target_friday} - skipping ticker")
+        return None
+    
+    # Sort by DTE (lowest first) and pick the nearest
+    valid_expirations.sort(key=lambda x: x[0])
+    best_dte, best_exp_str, best_exp_dt = valid_expirations[0]
+    
+    logger.info(f"OPTIONS: Selected expiration {best_exp_str} (DTE={best_dte}, day={best_exp_dt.strftime('%A')})")
+    return best_exp_str
 
 
 def select_atm_strike(chain_json: dict, expiration: str):
