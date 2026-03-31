@@ -147,10 +147,21 @@ def get_access_token() -> str:
             logger.error("TOKEN: Failed - No access_token in response")
             raise Exception("No access_token returned from Schwab API")
         
-        # Always persist tokens after a successful refresh
-        new_refresh_token = token_data.get("refresh_token") or refresh_token
+        # DEBUG: Log Schwab response details
+        Schwab_refresh = token_data.get("refresh_token")
+        logger.info(f"TOKEN DEBUG: Schwab response keys = {list(token_data.keys())}")
+        logger.info(f"TOKEN DEBUG: refresh_token in response = {Schwab_refresh is not None}")
+        logger.info(f"TOKEN DEBUG: refresh_token value = {Schwab_refresh[:30] + '...' if Schwab_refresh else 'None'}...")
+        
+        # Rotation logic with visibility
+        new_refresh_token = token_data.get("refresh_token") if token_data.get("refresh_token") else refresh_token
+        if new_refresh_token == refresh_token:
+            logger.info(f"TOKEN: Schwab returned same refresh_token (no rotation needed)")
+        else:
+            logger.info(f"TOKEN: Schwab returned NEW refresh_token (rotated)")
+        
         save_tokens(client_id, client_secret, new_refresh_token)
-        logger.info("TOKEN: Saved refresh token to JSON")
+        logger.info(f"TOKEN: Saved refresh_token to JSON (len={len(new_refresh_token)})")
         
         # Cache the token with expiry time
         expires_in = token_data.get("expires_in", 1800)  # Default 30 minutes
