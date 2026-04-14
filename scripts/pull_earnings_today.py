@@ -149,6 +149,8 @@ def filter_candidates(earnings_data):
         log(f"Weekend — selecting Monday BMO")
     
     # Count for logging
+    if earnings_data is None:
+        earnings_data = []
     raw_count = len(earnings_data)
     time_filtered_count = 0
     

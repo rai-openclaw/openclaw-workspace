@@ -13872,3 +13872,124 @@
 2026-03-19 06:39:03,023 - INFO - TOKEN: Using cached token
 2026-03-19 06:39:04,739 - INFO - TOKEN: Using cached token
 2026-03-19 06:39:04,997 - INFO - TOKEN: Using cached token
+2026-03-23 06:35:00,558 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-23 06:35:00,559 - INFO - TOKEN: Refreshing token
+2026-03-23 06:35:01,477 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-03-23 06:35:01,477 - INFO - TOKEN: Saved refresh token to JSON
+2026-03-23 06:35:01,478 - INFO - TOKEN: Success - token cached
+2026-03-23 06:35:04,236 - INFO - TOKEN: Using cached token
+2026-03-23 06:35:04,494 - INFO - TOKEN: Using cached token
+2026-03-31 07:58:16,380 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-31 07:58:16,380 - INFO - TOKEN: Refreshing token
+2026-03-31 07:58:16,938 - ERROR - TOKEN: Failed - Status 400: {"error":"unsupported_token_type","error_description":"400 Bad Request: \"{\"error_description\":\"Exception while authenticating refresh token [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=, Exception=Failed refresh token authentication [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=]]\",\"error\":\"refresh_token_authentication_error\"}\""}
+2026-03-31 08:13:33,608 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-31 08:13:33,609 - INFO - TOKEN: Refreshing token
+2026-03-31 08:13:34,382 - ERROR - TOKEN: Failed - Status 400: {"error":"unsupported_token_type","error_description":"400 Bad Request: \"{\"error_description\":\"Exception while authenticating refresh token [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=, Exception=Failed refresh token authentication [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=]]\",\"error\":\"refresh_token_authentication_error\"}\""}
+2026-03-31 08:13:40,615 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-31 08:13:40,615 - INFO - TOKEN: Refreshing token
+2026-03-31 08:13:41,238 - INFO - TOKEN DEBUG: Response status = 400
+2026-03-31 08:13:41,239 - INFO - TOKEN DEBUG: Response body = {"error":"unsupported_token_type","error_description":"400 Bad Request: \"{\"error_description\":\"Exception while authenticating refresh token [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=, Exception=Failed refresh token authentication [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=]]\",\"error\":\"refresh_token_authentication_error\"}\""}
+2026-03-31 08:13:41,239 - ERROR - TOKEN: Failed - Status 400: {"error":"unsupported_token_type","error_description":"400 Bad Request: \"{\"error_description\":\"Exception while authenticating refresh token [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=, Exception=Failed refresh token authentication [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=]]\",\"error\":\"refresh_token_authentication_error\"}\""}
+2026-03-31 08:23:50,975 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-31 08:23:50,976 - INFO - TOKEN: Refreshing token
+2026-03-31 08:23:51,542 - ERROR - TOKEN: Failed - Status 400: {"error":"unsupported_token_type","error_description":"400 Bad Request: \"{\"error_description\":\"Exception while authenticating refresh token [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=, Exception=Failed refresh token authentication [tokenDigest=VHhZcgxy33gyqKbiZl1js5YHGlYIQrqi86Qep9y2GFI=]]\",\"error\":\"refresh_token_authentication_error\"}\""}
+2026-03-31 09:26:09,585 - INFO - TOKEN: Loaded tokens from JSON file
+2026-03-31 09:26:09,585 - INFO - TOKEN: Refreshing token
+2026-03-31 09:26:10,260 - INFO - TOKEN DEBUG: Schwab response keys = ['expires_in', 'token_type', 'scope', 'refresh_token', 'access_token', 'id_token']
+2026-03-31 09:26:10,260 - INFO - TOKEN DEBUG: refresh_token in response = True
+2026-03-31 09:26:10,260 - INFO - TOKEN DEBUG: refresh_token value = JJyCS0ct0EgxYKChLpQGpCwrHICwuy......
+2026-03-31 09:26:10,260 - INFO - TOKEN: Schwab returned same refresh_token (no rotation needed)
+2026-03-31 09:26:10,260 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-03-31 09:26:10,260 - INFO - TOKEN: Saved refresh_token to JSON (len=140)
+2026-03-31 09:26:10,260 - INFO - TOKEN: Success - token cached
+2026-03-31 09:26:11,906 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:12,185 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:16,737 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:20,073 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:21,774 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:25,357 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:26,978 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:30,866 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:32,798 - INFO - TOKEN: Using cached token
+2026-03-31 09:26:33,115 - INFO - TOKEN: Using cached token
+2026-04-07 06:34:22,213 - INFO - TOKEN: Loaded tokens from JSON file
+2026-04-07 06:34:22,213 - INFO - TOKEN: Refreshing token
+2026-04-07 06:34:22,783 - INFO - TOKEN DEBUG: Schwab response keys = ['expires_in', 'token_type', 'scope', 'refresh_token', 'access_token', 'id_token']
+2026-04-07 06:34:22,783 - INFO - TOKEN DEBUG: refresh_token in response = True
+2026-04-07 06:34:22,783 - INFO - TOKEN DEBUG: refresh_token value = JJyCS0ct0EgxYKChLpQGpCwrHICwuy......
+2026-04-07 06:34:22,783 - INFO - TOKEN: Schwab returned same refresh_token (no rotation needed)
+2026-04-07 06:34:22,783 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-04-07 06:34:22,783 - INFO - TOKEN: Saved refresh_token to JSON (len=140)
+2026-04-07 06:34:22,783 - INFO - TOKEN: Success - token cached
+2026-04-07 06:34:24,091 - INFO - TOKEN: Using cached token
+2026-04-07 06:34:24,409 - INFO - TOKEN: Using cached token
+2026-04-07 06:34:28,085 - INFO - TOKEN: Using cached token
+2026-04-07 06:34:29,557 - INFO - TOKEN: Using cached token
+2026-04-07 06:34:30,258 - INFO - TOKEN: Using cached token
+2026-04-08 08:22:02,586 - INFO - TOKEN: Loaded tokens from JSON file
+2026-04-08 08:22:02,586 - INFO - TOKEN: Refreshing token
+2026-04-08 08:22:03,363 - INFO - TOKEN DEBUG: Schwab response keys = ['expires_in', 'token_type', 'scope', 'refresh_token', 'access_token', 'id_token']
+2026-04-08 08:22:03,363 - INFO - TOKEN DEBUG: refresh_token in response = True
+2026-04-08 08:22:03,364 - INFO - TOKEN DEBUG: refresh_token value = k7YT614uYE8sQ_-JbL4_mtN8uBq-HH......
+2026-04-08 08:22:03,364 - INFO - TOKEN: Schwab returned same refresh_token (no rotation needed)
+2026-04-08 08:22:03,364 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-04-08 08:22:03,364 - INFO - TOKEN: Saved refresh_token to JSON (len=140)
+2026-04-08 08:22:03,364 - INFO - TOKEN: Success - token cached
+2026-04-08 08:22:06,029 - INFO - TOKEN: Using cached token
+2026-04-08 08:22:06,374 - INFO - TOKEN: Using cached token
+2026-04-08 08:22:09,977 - INFO - TOKEN: Using cached token
+2026-04-08 08:22:11,803 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:41,426 - INFO - TOKEN: Loaded tokens from JSON file
+2026-04-13 06:34:41,427 - INFO - TOKEN: Refreshing token
+2026-04-13 06:34:42,084 - INFO - TOKEN DEBUG: Schwab response keys = ['expires_in', 'token_type', 'scope', 'refresh_token', 'access_token', 'id_token']
+2026-04-13 06:34:42,084 - INFO - TOKEN DEBUG: refresh_token in response = True
+2026-04-13 06:34:42,084 - INFO - TOKEN DEBUG: refresh_token value = k7YT614uYE8sQ_-JbL4_mtN8uBq-HH......
+2026-04-13 06:34:42,084 - INFO - TOKEN: Schwab returned same refresh_token (no rotation needed)
+2026-04-13 06:34:42,085 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-04-13 06:34:42,085 - INFO - TOKEN: Saved refresh_token to JSON (len=140)
+2026-04-13 06:34:42,085 - INFO - TOKEN: Success - token cached
+2026-04-13 06:34:43,434 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:43,756 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:47,471 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:48,850 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:49,127 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:53,508 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:55,348 - INFO - TOKEN: Using cached token
+2026-04-13 06:34:59,145 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:01,352 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:05,126 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:06,874 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:10,695 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:12,644 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:16,612 - INFO - TOKEN: Using cached token
+2026-04-13 06:35:18,309 - INFO - TOKEN: Using cached token
+2026-04-14 06:34:45,102 - INFO - TOKEN: Loaded tokens from JSON file
+2026-04-14 06:34:45,102 - INFO - TOKEN: Refreshing token
+2026-04-14 06:34:45,744 - INFO - TOKEN DEBUG: Schwab response keys = ['expires_in', 'token_type', 'scope', 'refresh_token', 'access_token', 'id_token']
+2026-04-14 06:34:45,744 - INFO - TOKEN DEBUG: refresh_token in response = True
+2026-04-14 06:34:45,744 - INFO - TOKEN DEBUG: refresh_token value = k7YT614uYE8sQ_-JbL4_mtN8uBq-HH......
+2026-04-14 06:34:45,744 - INFO - TOKEN: Schwab returned same refresh_token (no rotation needed)
+2026-04-14 06:34:45,744 - INFO - TOKEN: Saved tokens to /Users/raitsai/.openclaw/workspace/data/auth/schwab_tokens.json
+2026-04-14 06:34:45,744 - INFO - TOKEN: Saved refresh_token to JSON (len=140)
+2026-04-14 06:34:45,744 - INFO - TOKEN: Success - token cached
+2026-04-14 06:34:47,062 - INFO - TOKEN: Using cached token
+2026-04-14 06:34:47,279 - INFO - TOKEN: Using cached token
+2026-04-14 06:34:51,320 - INFO - TOKEN: Using cached token
+2026-04-14 06:34:52,585 - INFO - TOKEN: Using cached token
+2026-04-14 06:34:52,976 - INFO - TOKEN: Using cached token
+2026-04-14 06:34:57,401 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:00,219 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:00,531 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:04,348 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:07,123 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:07,408 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:11,338 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:13,367 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:13,588 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:17,406 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:19,236 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:23,215 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:25,282 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:25,584 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:29,557 - INFO - TOKEN: Using cached token
+2026-04-14 06:35:31,280 - INFO - TOKEN: Using cached token

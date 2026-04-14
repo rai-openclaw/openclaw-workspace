@@ -1,314 +1,86 @@
 [
   {
-    "ticker": "AXIA",
+    "ticker": "EQBK",
     "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "report_date": "2026-04-14",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "MNSO",
+    "ticker": "MAMA",
     "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "report_date": "2026-04-14",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "XXI",
+    "ticker": "GLOO",
     "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "report_date": "2026-04-14",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "PBT",
+    "ticker": "VMAR",
     "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "report_date": "2026-04-14",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "BTBT",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "ASML",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "NFGC",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "BAC",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "GRVY",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "MS",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "NTHI",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "PGR",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "NEN",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "PNC",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "NUTR",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "MTB",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "AIRS",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "FHN",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "DOYU",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "TRX",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "USBC",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "VNCE",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   },
   {
-    "ticker": "COE",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "ONCY",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "NOMA",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SAFX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SEV",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SCLX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "FORA",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "ZOOZ",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "FSEA",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "MAIA",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "FGNX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "CREX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "ARAI",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "HOLO",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "UG",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "IGC",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "PRZO",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "VBIX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SGRP",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SLAI",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SNGX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "MBRX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "AIMD",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "ITRM",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "NXL",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "CELZ",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SOWG",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "RVYL",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "FCUV",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "DCOY",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SBLX",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SONM",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "ALBT",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "APVO",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "GNLN",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "TRNR",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "TIVC",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "SVRE",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
-    "source": "nasdaq_filtered"
-  },
-  {
-    "ticker": "IQST",
-    "report_time": "AMC",
-    "report_date": "2026-03-20",
+    "ticker": "NYC",
+    "report_time": "BMO",
+    "report_date": "2026-04-15",
     "source": "nasdaq_filtered"
   }
 ]

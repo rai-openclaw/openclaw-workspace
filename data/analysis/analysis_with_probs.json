@@ -1,10 +1,355 @@
 {
   "metadata": {
-    "pipeline_run_time": "2026-03-20T06:34:48.484509",
-    "total_candidates": 5,
+    "pipeline_run_time": "2026-04-14T06:34:36.731578",
+    "total_candidates": 9,
     "filtered_no_weekly_options": 0,
-    "filtered_options_unavailable": 5,
-    "tradeable_candidates": 0
+    "filtered_options_unavailable": 1,
+    "tradeable_candidates": 8
   },
-  "candidates": []
+  "candidates": [
+    {
+      "ticker": "MAMA",
+      "report": {
+        "date": "2026-04-14",
+        "time": "AMC"
+      },
+      "market": {
+        "price": 15.88,
+        "atm_strike": 15.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 2.1,
+        "em_percent": 13.224181360201511
+      },
+      "probabilities": {
+        "down_1x": 0.96,
+        "down_1_5x": 0.98,
+        "down_2x": 0.98,
+        "median_move": 0.0412,
+        "p75_move": 0.052,
+        "p90_move": 0.0802,
+        "max_move": 0.2809
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0412,
+        "p75_move": 0.052,
+        "p90_move": 0.0802,
+        "max_move": 0.2809,
+        "sample_count": 51
+      }
+    },
+    {
+      "ticker": "FHN",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 24.26,
+        "atm_strike": 23.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 1.63,
+        "em_percent": 6.718878812860675
+      },
+      "probabilities": {
+        "down_1x": 0.95,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0379,
+        "p75_move": 0.045,
+        "p90_move": 0.0499,
+        "max_move": 0.0943
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0379,
+        "p75_move": 0.045,
+        "p90_move": 0.0499,
+        "max_move": 0.0943,
+        "sample_count": 19
+      }
+    },
+    {
+      "ticker": "ASML",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 1514.36,
+        "atm_strike": 1500.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 100.65,
+        "em_percent": 6.646372064766635
+      },
+      "probabilities": {
+        "down_1x": 0.89,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0411,
+        "p75_move": 0.0553,
+        "p90_move": 0.0666,
+        "max_move": 0.0878
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0411,
+        "p75_move": 0.0553,
+        "p90_move": 0.0666,
+        "max_move": 0.0878,
+        "sample_count": 44
+      }
+    },
+    {
+      "ticker": "PNC",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 219.78,
+        "atm_strike": 220.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 9.7,
+        "em_percent": 4.4135044135044135
+      },
+      "probabilities": {
+        "down_1x": 0.73,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0379,
+        "p75_move": 0.047,
+        "p90_move": 0.0514,
+        "max_move": 0.0524
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0379,
+        "p75_move": 0.047,
+        "p90_move": 0.0514,
+        "max_move": 0.0524,
+        "sample_count": 11
+      }
+    },
+    {
+      "ticker": "MTB",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 219.78,
+        "atm_strike": 220.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 9.6,
+        "em_percent": 4.368004368004367
+      },
+      "probabilities": {
+        "down_1x": 0.93,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0351,
+        "p75_move": 0.038,
+        "p90_move": 0.0426,
+        "max_move": 0.0447
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0351,
+        "p75_move": 0.038,
+        "p90_move": 0.0426,
+        "max_move": 0.0447,
+        "sample_count": 14
+      }
+    },
+    {
+      "ticker": "MS",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 182.46,
+        "atm_strike": 180.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 7.66,
+        "em_percent": 4.198180423106434
+      },
+      "probabilities": {
+        "down_1x": 0.42,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0451,
+        "p75_move": 0.0491,
+        "p90_move": 0.0578,
+        "max_move": 0.0619
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0451,
+        "p75_move": 0.0491,
+        "p90_move": 0.0578,
+        "max_move": 0.0619,
+        "sample_count": 12
+      }
+    },
+    {
+      "ticker": "PGR",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 198.62,
+        "atm_strike": 197.5,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 8.030000000000001,
+        "em_percent": 4.042895982277717
+      },
+      "probabilities": {
+        "down_1x": 0.7,
+        "down_1_5x": 0.9,
+        "down_2x": 1.0,
+        "median_move": 0.0365,
+        "p75_move": 0.0528,
+        "p90_move": 0.0685,
+        "max_move": 0.0685
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0365,
+        "p75_move": 0.0528,
+        "p90_move": 0.0685,
+        "max_move": 0.0685,
+        "sample_count": 10
+      }
+    },
+    {
+      "ticker": "BAC",
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "market": {
+        "price": 53.03,
+        "atm_strike": 53.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 1.97,
+        "em_percent": 3.714878370733547
+      },
+      "probabilities": {
+        "down_1x": 0.54,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.036,
+        "p75_move": 0.0378,
+        "p90_move": 0.0437,
+        "max_move": 0.0472
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.036,
+        "p75_move": 0.0378,
+        "p90_move": 0.0437,
+        "max_move": 0.0472,
+        "sample_count": 13
+      }
+    }
+  ]
 }

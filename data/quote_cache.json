@@ -1,5 +1,5 @@
 {
-  "lastQuoteUpdate": "2026-03-20T21:07:34.436Z",
+  "lastQuoteUpdate": "2026-04-14T21:35:23.738Z",
   "quotes": {
     "AAPL": {
       "symbol": "AAPL",
@@ -188,27 +188,33 @@
     },
     "FDX260320P00317500": {
       "symbol": "FDX260320P00317500",
-      "markPrice": 0.01,
-      "bid": 0,
-      "ask": 0.01,
-      "last": 0.02,
-      "lastUpdated": "2026-03-20T21:07:34.436Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-04-14T21:35:23.738Z"
     },
     "FDX260320P00302500": {
       "symbol": "FDX260320P00302500",
-      "markPrice": 0.01,
-      "bid": 0,
-      "ask": 0.01,
-      "last": 0.01,
-      "lastUpdated": "2026-03-20T21:07:34.436Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-04-14T21:35:23.738Z"
     },
     "MU260320P00410000": {
       "symbol": "MU260320P00410000",
-      "markPrice": 0.05,
-      "bid": 0.04,
-      "ask": 0.05,
-      "last": 0.04,
-      "lastUpdated": "2026-03-20T21:07:34.436Z"
+      "markPrice": 0,
+      "lastUpdated": "2026-04-14T21:35:23.738Z"
+    },
+    "NKE260402P00045500": {
+      "symbol": "NKE260402P00045500",
+      "markPrice": 0,
+      "lastUpdated": "2026-04-14T21:15:05.643Z"
+    },
+    "NKE260402P00046500": {
+      "symbol": "NKE260402P00046500",
+      "markPrice": 0,
+      "lastUpdated": "2026-04-14T21:15:05.643Z"
+    },
+    "NKE260410P00046000": {
+      "symbol": "NKE260410P00046000",
+      "markPrice": 0,
+      "lastUpdated": "2026-04-14T21:35:23.738Z"
     }
   }
 }

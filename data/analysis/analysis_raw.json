@@ -1,10 +1,3531 @@
 {
-  "metadata": {
-    "pipeline_run_time": "2026-03-20T06:34:48.484509",
-    "total_candidates": 5,
-    "filtered_no_weekly_options": 0,
-    "filtered_options_unavailable": 5,
-    "tradeable_candidates": 0
-  },
-  "candidates": []
+  "candidates": [
+    {
+      "ticker": "MAMA",
+      "analysis_date": "2026-04-14T06:34:50.532681",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 16.52,
+          "change%": -3.56
+        },
+        {
+          "date": "2026-03-04",
+          "price": 16.31,
+          "change%": -1.27
+        },
+        {
+          "date": "2026-03-05",
+          "price": 15.76,
+          "change%": -3.37
+        },
+        {
+          "date": "2026-03-06",
+          "price": 16.62,
+          "change%": 5.46
+        },
+        {
+          "date": "2026-03-09",
+          "price": 16.57,
+          "change%": -0.3
+        },
+        {
+          "date": "2026-03-10",
+          "price": 16.15,
+          "change%": -2.53
+        },
+        {
+          "date": "2026-03-11",
+          "price": 16.02,
+          "change%": -0.8
+        },
+        {
+          "date": "2026-03-12",
+          "price": 15.83,
+          "change%": -1.19
+        },
+        {
+          "date": "2026-03-13",
+          "price": 15.97,
+          "change%": 0.88
+        },
+        {
+          "date": "2026-03-16",
+          "price": 16.8,
+          "change%": 5.2
+        },
+        {
+          "date": "2026-03-17",
+          "price": 16.47,
+          "change%": -1.96
+        },
+        {
+          "date": "2026-03-18",
+          "price": 15.15,
+          "change%": -8.01
+        },
+        {
+          "date": "2026-03-19",
+          "price": 14.98,
+          "change%": -1.12
+        },
+        {
+          "date": "2026-03-20",
+          "price": 14.23,
+          "change%": -5.01
+        },
+        {
+          "date": "2026-03-23",
+          "price": 14.74,
+          "change%": 3.58
+        },
+        {
+          "date": "2026-03-24",
+          "price": 15.03,
+          "change%": 1.97
+        },
+        {
+          "date": "2026-03-25",
+          "price": 15.27,
+          "change%": 1.63
+        },
+        {
+          "date": "2026-03-26",
+          "price": 14.87,
+          "change%": -2.65
+        },
+        {
+          "date": "2026-03-27",
+          "price": 15.13,
+          "change%": 1.75
+        },
+        {
+          "date": "2026-03-30",
+          "price": 15.15,
+          "change%": 0.13
+        },
+        {
+          "date": "2026-03-31",
+          "price": 15.34,
+          "change%": 1.25
+        },
+        {
+          "date": "2026-04-01",
+          "price": 15.3,
+          "change%": -0.26
+        },
+        {
+          "date": "2026-04-02",
+          "price": 14.92,
+          "change%": -2.48
+        },
+        {
+          "date": "2026-04-06",
+          "price": 15.42,
+          "change%": 3.35
+        },
+        {
+          "date": "2026-04-07",
+          "price": 15.59,
+          "change%": 1.1
+        },
+        {
+          "date": "2026-04-08",
+          "price": 15.62,
+          "change%": 0.19
+        },
+        {
+          "date": "2026-04-09",
+          "price": 15.77,
+          "change%": 0.96
+        },
+        {
+          "date": "2026-04-10",
+          "price": 15.59,
+          "change%": -1.14
+        },
+        {
+          "date": "2026-04-13",
+          "price": 15.87,
+          "change%": 1.8
+        },
+        {
+          "date": "2026-04-14",
+          "price": 16.03,
+          "change%": 1.01
+        }
+      ],
+      "key_movement": {
+        "type": "earnings spike",
+        "magnitude": 37.36,
+        "reference_frames": {
+          "price_change_30d": -3.0,
+          "price_change_90d": 37.4,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -7.8,
+          "price_since_recent_extreme": 43.4
+        }
+      },
+      "earnings_event": {
+        "date": "2025-12-09",
+        "price_before": 11.18,
+        "price_after": 14.32,
+        "reaction_percent": 28.09,
+        "method": "price_spike_detection"
+      },
+      "options_context": {
+        "implied_move": 13.1,
+        "atm_iv": 161.4,
+        "call_put_skew": 220.0,
+        "call_iv_25d": null,
+        "put_iv_25d": null,
+        "skew": null,
+        "underlying_price": 16.03,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 15.0,
+        "csp_candidates": [
+          {
+            "strike": 7.5,
+            "delta": -0.065,
+            "distance_percent": 53.2,
+            "distance_vs_em": 4.06
+          },
+          {
+            "strike": 15.0,
+            "delta": -0.301,
+            "distance_percent": 6.4,
+            "distance_vs_em": 0.49
+          }
+        ],
+        "interpretation": "Options market expects a +/-13.1% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing 318% MORE volatility than historical (4.1%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.96,
+        "down_1_5x": 0.98,
+        "down_2x": 0.98,
+        "median_move": 0.0412,
+        "p75_move": 0.052,
+        "p90_move": 0.0802,
+        "max_move": 0.2809
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-13",
+          "headline": "2 Top Growth Stocks to Buy before It's Too Late",
+          "publisher": "Motley Fool",
+          "relatedTickers": [
+            "MAMA",
+            "NVDA",
+            "INTC"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Mama's Creations Q4 Earnings on Deck: What Should Investors Expect?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MAMA",
+            "TSN",
+            "HSY",
+            "CELH"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Mama's Creations Inc (MAMA) Q4 2026: Everything You Need To Know Ahead Of Earnings",
+          "publisher": "GuruFocus.com",
+          "relatedTickers": [
+            "MAMA"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Mama's Creations (MAMA) and FIGS (FIGS) Are Aggressive Growth Stocks",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MAMA",
+            "FIGS"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "PG Expands Professional Cleaning Portfolio With Mr. Clean PRO Launch",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PG",
+            "USFD",
+            "TSN",
+            "MAMA"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Simply Good Foods Q2 Earnings Beat Estimates, Sales Decline 9.4% Y/Y",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "SMPL",
+            "TSN",
+            "MAMA",
+            "USFD"
+          ]
+        },
+        {
+          "date": "2026-04-09",
+          "headline": "Tariffs and Costs: How Exposed Is Colgate's 2026 Margin Outlook?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "CL",
+            "MAMA",
+            "USFD",
+            "TSN"
+          ]
+        },
+        {
+          "date": "2026-04-09",
+          "headline": "Can Post Holdings' Refrigerated Retail Balance Pricing and Volume?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "POST",
+            "BGS",
+            "MAMA",
+            "USFD"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "Mama's Creations Q4 Earnings on Deck: What Should Investors Expect?",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Mama's Creations Inc (MAMA) Q4 2026: Everything You Need To Know Ahead Of Earnings",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-09",
+          "headline": "Tariffs and Costs: How Exposed Is Colgate's 2026 Margin Outlook?",
+          "reason": "guidance"
+        }
+      ],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          14.23
+        ],
+        "resistance_levels": [
+          16.47
+        ],
+        "trend": "bearish",
+        "sma_20": 15.32,
+        "sma_50": 15.74,
+        "current_price": 16.03
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": -2.97,
+        "sector_return_30d": 1.2,
+        "relative_performance": -4.17,
+        "interpretation": "in-line with sector",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": -2.97,
+        "sector_return_30d": 1.2,
+        "relative_performance": -4.17,
+        "classification": "in-line with sector"
+      },
+      "earnings_context": {
+        "expected_move": 4.12,
+        "actual_move": 28.09,
+        "surprise_factor": 6.82,
+        "expected_move_source": "historical_proxy",
+        "interpretation": "extreme surprise"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "EXTREME RALLY: +37.4% move - likely post-earnings spike or catalyst",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +28.1% move detected (no earnings data)",
+        "csp_viability": "ELEVATED VOL: 13% implied vs historical - CSP pricing rich | WARNING: 98% prob >50% loss",
+        "trade_desk_summary": "Mama's Creations Inc (MAMA) heads into earnings this week following recent catalyst-driven momentum. Stock up 37% over 90 days underperforming peers by 4%, options imply 13% vs 4% hist median. Elevated implied volatility (13%) suggests traders price an outsized move.",
+        "strike_analysis": {
+          "csp_strike": 7.5,
+          "distance_percent": 53.2,
+          "distance_vs_em": 4.06
+        },
+        "event_risk": {
+          "median_move": 0.0412,
+          "p75_move": 0.052,
+          "p90_move": 0.0802,
+          "max_move": 0.2809,
+          "sample_count": 51
+        },
+        "trade_grade": {
+          "score": 83,
+          "rating": "B",
+          "earned_points": 50,
+          "max_points": 60,
+          "breakdown": {
+            "iv_edge_score": 0,
+            "strike_safety_score": 30,
+            "skew_score": 0,
+            "tail_risk_score": 10,
+            "iv_edge": 0,
+            "skew": 0,
+            "distance_vs_em": 4.06,
+            "p75_move": 0.052,
+            "p90_move": 0.0802,
+            "implied_move": 13.1
+          }
+        }
+      },
+      "market": {
+        "price": 15.88,
+        "atm_strike": 15.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 2.1,
+        "em_percent": 13.224181360201511
+      },
+      "report": {
+        "date": "2026-04-14",
+        "time": "AMC"
+      },
+      "probabilities": {
+        "down_1x": 0.96,
+        "down_1_5x": 0.98,
+        "down_2x": 0.98,
+        "median_move": 0.0412,
+        "p75_move": 0.052,
+        "p90_move": 0.0802,
+        "max_move": 0.2809
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0412,
+        "p75_move": 0.052,
+        "p90_move": 0.0802,
+        "max_move": 0.2809,
+        "sample_count": 51
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/MAMA.json"
+    },
+    {
+      "ticker": "FHN",
+      "analysis_date": "2026-04-14T06:34:56.630131",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 23.4,
+          "change%": -3.15
+        },
+        {
+          "date": "2026-03-04",
+          "price": 23.47,
+          "change%": 0.3
+        },
+        {
+          "date": "2026-03-05",
+          "price": 23.42,
+          "change%": -0.21
+        },
+        {
+          "date": "2026-03-06",
+          "price": 22.81,
+          "change%": -2.6
+        },
+        {
+          "date": "2026-03-09",
+          "price": 22.83,
+          "change%": 0.09
+        },
+        {
+          "date": "2026-03-10",
+          "price": 23.0,
+          "change%": 0.74
+        },
+        {
+          "date": "2026-03-11",
+          "price": 22.6,
+          "change%": -1.74
+        },
+        {
+          "date": "2026-03-12",
+          "price": 22.17,
+          "change%": -1.9
+        },
+        {
+          "date": "2026-03-13",
+          "price": 21.74,
+          "change%": -1.94
+        },
+        {
+          "date": "2026-03-16",
+          "price": 21.87,
+          "change%": 0.6
+        },
+        {
+          "date": "2026-03-17",
+          "price": 21.84,
+          "change%": -0.14
+        },
+        {
+          "date": "2026-03-18",
+          "price": 21.77,
+          "change%": -0.32
+        },
+        {
+          "date": "2026-03-19",
+          "price": 21.73,
+          "change%": -0.18
+        },
+        {
+          "date": "2026-03-20",
+          "price": 21.85,
+          "change%": 0.55
+        },
+        {
+          "date": "2026-03-23",
+          "price": 22.41,
+          "change%": 2.56
+        },
+        {
+          "date": "2026-03-24",
+          "price": 22.69,
+          "change%": 1.25
+        },
+        {
+          "date": "2026-03-25",
+          "price": 22.73,
+          "change%": 0.18
+        },
+        {
+          "date": "2026-03-26",
+          "price": 22.55,
+          "change%": -0.79
+        },
+        {
+          "date": "2026-03-27",
+          "price": 22.13,
+          "change%": -1.86
+        },
+        {
+          "date": "2026-03-30",
+          "price": 22.05,
+          "change%": -0.36
+        },
+        {
+          "date": "2026-03-31",
+          "price": 22.76,
+          "change%": 3.22
+        },
+        {
+          "date": "2026-04-01",
+          "price": 22.98,
+          "change%": 0.97
+        },
+        {
+          "date": "2026-04-02",
+          "price": 23.18,
+          "change%": 0.87
+        },
+        {
+          "date": "2026-04-06",
+          "price": 23.28,
+          "change%": 0.43
+        },
+        {
+          "date": "2026-04-07",
+          "price": 23.18,
+          "change%": -0.43
+        },
+        {
+          "date": "2026-04-08",
+          "price": 24.1,
+          "change%": 3.97
+        },
+        {
+          "date": "2026-04-09",
+          "price": 24.43,
+          "change%": 1.37
+        },
+        {
+          "date": "2026-04-10",
+          "price": 24.05,
+          "change%": -1.56
+        },
+        {
+          "date": "2026-04-13",
+          "price": 24.31,
+          "change%": 1.08
+        },
+        {
+          "date": "2026-04-14",
+          "price": 24.24,
+          "change%": -0.29
+        }
+      ],
+      "key_movement": {
+        "type": "moderate move",
+        "magnitude": 6.69,
+        "reference_frames": {
+          "price_change_30d": 3.6,
+          "price_change_90d": 6.7,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -7.6,
+          "price_since_recent_extreme": 11.6
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 4.74,
+        "atm_iv": 57.9,
+        "call_put_skew": 87.5,
+        "call_iv_25d": null,
+        "put_iv_25d": null,
+        "skew": null,
+        "underlying_price": 24.24,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 24.0,
+        "csp_candidates": [
+          {
+            "strike": 17.0,
+            "delta": -0.06,
+            "distance_percent": 29.9,
+            "distance_vs_em": 6.3
+          },
+          {
+            "strike": 24.0,
+            "delta": -0.375,
+            "distance_percent": 1.0,
+            "distance_vs_em": 0.21
+          }
+        ],
+        "interpretation": "Options market expects a +/-4.7% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing 125% MORE volatility than historical (3.8%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.95,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0379,
+        "p75_move": 0.045,
+        "p90_move": 0.0499,
+        "max_move": 0.0943
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-14",
+          "headline": "First Horizon (FHN) Q1 Earnings: What To Expect",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "FHN",
+            "FHN-PF"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "2 Stocks Under $50 with Promising Prospects and 1 Facing Headwinds",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "FHN",
+            "UPST",
+            "FHN-PF",
+            "KDP"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "First Horizon Bank Welcomes Rite Moisio as Director of Private Client Banking for the New Orleans Market",
+          "publisher": "PR Newswire",
+          "relatedTickers": [
+            "FHN",
+            "HWC",
+            "FHN-PF"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "M&T Bank's Q1 Earnings on the Deck: Here's What You Should Know",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MTB",
+            "FHN",
+            "FHN-PF",
+            "BAC",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Higher NII & Loan Growth to Aid PNC Financial's Q1 Earnings",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PNC",
+            "BAC",
+            "FHN",
+            "FHN-PF"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "First Horizon Series C Redemption Reshapes Income And Capital Priorities",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "FHN",
+            "FHN-PF"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "First Horizon Bank Welcomes Colin O'Flynn and Paul Delord to New Orleans Team",
+          "publisher": "PR Newswire",
+          "relatedTickers": [
+            "FHN",
+            "FHN-PF"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Assessing First Horizon (FHN) Valuation After Recent Share Price Momentum",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "FHN",
+            "FHN-PF"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-14",
+          "headline": "First Horizon (FHN) Q1 Earnings: What To Expect",
+          "reason": "earnings"
+        }
+      ],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          21.73
+        ],
+        "resistance_levels": [
+          24.43
+        ],
+        "trend": "bearish",
+        "sma_20": 22.91,
+        "sma_50": 23.71,
+        "current_price": 24.24
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": 3.59,
+        "sector_return_30d": 1.19,
+        "relative_performance": 2.4,
+        "interpretation": "in-line with sector",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": 3.5,
+        "sector_return_30d": 1.19,
+        "relative_performance": 2.32,
+        "classification": "sector driven move"
+      },
+      "earnings_context": {
+        "expected_move": null,
+        "actual_move": null,
+        "surprise_factor": null,
+        "expected_move_source": null,
+        "interpretation": "no earnings data"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "MODERATE MOVE: +6.7% - directional bias present",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
+        "csp_viability": "LOW VOLATILITY: 5% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "First Horizon (FHN) heads into earnings this week following recent catalyst-driven momentum. Stock up 7% over 90 days outperforming peers by 2%, options imply 5% vs 4% hist median. Traders pricing elevated vol - consider defined-risk directional or wait for settlement.",
+        "strike_analysis": {
+          "csp_strike": 17.0,
+          "distance_percent": 29.9,
+          "distance_vs_em": 6.3
+        },
+        "event_risk": {
+          "median_move": 0.0379,
+          "p75_move": 0.045,
+          "p90_move": 0.0499,
+          "max_move": 0.0943,
+          "sample_count": 19
+        },
+        "trade_grade": {
+          "score": 75,
+          "rating": "B",
+          "earned_points": 45,
+          "max_points": 60,
+          "breakdown": {
+            "iv_edge_score": 0,
+            "strike_safety_score": 30,
+            "skew_score": 0,
+            "tail_risk_score": 5,
+            "iv_edge": 0,
+            "skew": 0,
+            "distance_vs_em": 6.3,
+            "p75_move": 0.045,
+            "p90_move": 0.0499,
+            "implied_move": 4.74
+          }
+        }
+      },
+      "market": {
+        "price": 24.26,
+        "atm_strike": 23.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 1.63,
+        "em_percent": 6.718878812860675
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.95,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0379,
+        "p75_move": 0.045,
+        "p90_move": 0.0499,
+        "max_move": 0.0943
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0379,
+        "p75_move": 0.045,
+        "p90_move": 0.0499,
+        "max_move": 0.0943,
+        "sample_count": 19
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/FHN.json"
+    },
+    {
+      "ticker": "ASML",
+      "analysis_date": "2026-04-14T06:35:03.543579",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 1360.94,
+          "change%": -4.4
+        },
+        {
+          "date": "2026-03-04",
+          "price": 1399.37,
+          "change%": 2.82
+        },
+        {
+          "date": "2026-03-05",
+          "price": 1368.36,
+          "change%": -2.22
+        },
+        {
+          "date": "2026-03-06",
+          "price": 1292.8,
+          "change%": -5.52
+        },
+        {
+          "date": "2026-03-09",
+          "price": 1357.42,
+          "change%": 5.0
+        },
+        {
+          "date": "2026-03-10",
+          "price": 1383.4,
+          "change%": 1.91
+        },
+        {
+          "date": "2026-03-11",
+          "price": 1386.68,
+          "change%": 0.24
+        },
+        {
+          "date": "2026-03-12",
+          "price": 1351.58,
+          "change%": -2.53
+        },
+        {
+          "date": "2026-03-13",
+          "price": 1345.69,
+          "change%": -0.44
+        },
+        {
+          "date": "2026-03-16",
+          "price": 1375.56,
+          "change%": 2.22
+        },
+        {
+          "date": "2026-03-17",
+          "price": 1389.16,
+          "change%": 0.99
+        },
+        {
+          "date": "2026-03-18",
+          "price": 1355.17,
+          "change%": -2.45
+        },
+        {
+          "date": "2026-03-19",
+          "price": 1366.39,
+          "change%": 0.83
+        },
+        {
+          "date": "2026-03-20",
+          "price": 1317.25,
+          "change%": -3.6
+        },
+        {
+          "date": "2026-03-23",
+          "price": 1369.62,
+          "change%": 3.98
+        },
+        {
+          "date": "2026-03-24",
+          "price": 1399.42,
+          "change%": 2.18
+        },
+        {
+          "date": "2026-03-25",
+          "price": 1393.89,
+          "change%": -0.4
+        },
+        {
+          "date": "2026-03-26",
+          "price": 1329.5,
+          "change%": -4.62
+        },
+        {
+          "date": "2026-03-27",
+          "price": 1302.47,
+          "change%": -2.03
+        },
+        {
+          "date": "2026-03-30",
+          "price": 1253.96,
+          "change%": -3.72
+        },
+        {
+          "date": "2026-03-31",
+          "price": 1320.83,
+          "change%": 5.33
+        },
+        {
+          "date": "2026-04-01",
+          "price": 1359.76,
+          "change%": 2.95
+        },
+        {
+          "date": "2026-04-02",
+          "price": 1317.23,
+          "change%": -3.13
+        },
+        {
+          "date": "2026-04-06",
+          "price": 1304.01,
+          "change%": -1.0
+        },
+        {
+          "date": "2026-04-07",
+          "price": 1306.45,
+          "change%": 0.19
+        },
+        {
+          "date": "2026-04-08",
+          "price": 1421.05,
+          "change%": 8.77
+        },
+        {
+          "date": "2026-04-09",
+          "price": 1448.64,
+          "change%": 1.94
+        },
+        {
+          "date": "2026-04-10",
+          "price": 1478.28,
+          "change%": 2.05
+        },
+        {
+          "date": "2026-04-13",
+          "price": 1500.2,
+          "change%": 1.48
+        },
+        {
+          "date": "2026-04-14",
+          "price": 1513.66,
+          "change%": 0.9
+        }
+      ],
+      "key_movement": {
+        "type": "earnings spike",
+        "magnitude": 32.67,
+        "reference_frames": {
+          "price_change_30d": 11.2,
+          "price_change_90d": 32.7,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -0.8,
+          "price_since_recent_extreme": 49.1
+        }
+      },
+      "earnings_event": {
+        "date": "2026-01-05",
+        "price_before": 1069.86,
+        "price_after": 1228.19,
+        "reaction_percent": 14.8,
+        "method": "price_spike_detection"
+      },
+      "options_context": {
+        "implied_move": 6.65,
+        "atm_iv": 88.4,
+        "call_put_skew": -1.2,
+        "call_iv_25d": 87.5,
+        "put_iv_25d": 86.2,
+        "skew": -1.3,
+        "underlying_price": 1513.95,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 1515.0,
+        "csp_candidates": [
+          {
+            "strike": 1325.0,
+            "delta": -0.052,
+            "distance_percent": 12.5,
+            "distance_vs_em": 1.88
+          },
+          {
+            "strike": 1420.0,
+            "delta": -0.205,
+            "distance_percent": 6.2,
+            "distance_vs_em": 0.93
+          },
+          {
+            "strike": 1455.0,
+            "delta": -0.301,
+            "distance_percent": 3.9,
+            "distance_vs_em": 0.59
+          }
+        ],
+        "interpretation": "Options market expects a +/-6.7% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing 162% MORE volatility than historical (4.1%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.89,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0411,
+        "p75_move": 0.0553,
+        "p90_move": 0.0666,
+        "max_move": 0.0878
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-14",
+          "headline": "ASML investors bet on 'picks and shovels' of AI revolution",
+          "publisher": "Reuters",
+          "relatedTickers": [
+            "ASML",
+            "NVDA",
+            "AAPL",
+            "TSM"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "In a Volatile Market, This Dividend Growth Stock Is Worth Every Penny of $1,000",
+          "publisher": "Motley Fool",
+          "relatedTickers": [
+            "KO",
+            "TSM",
+            "INTC",
+            "NVDA",
+            "ASML"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Here's How Much Chip Equipment Maker ASML's Stock Is Expected to Move After Earnings",
+          "publisher": "Investopedia",
+          "relatedTickers": [
+            "ASML"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Taiwan Semiconductor, ASML Face Earnings Test; Telecom Stock Also On Deck",
+          "publisher": "Investor's Business Daily",
+          "relatedTickers": [
+            "TSM",
+            "TIMB",
+            "NVDA",
+            "ASML"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "ASML Holding Before Q1 Earnings: How Should Investors Play the Stock?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "ASML",
+            "LRCX",
+            "KLAC",
+            "AMAT"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "5 Stocks That Can Break Your Heart This Week: None of Them Are Banks",
+          "publisher": "Motley Fool",
+          "relatedTickers": [
+            "NFLX",
+            "NVDA",
+            "INTC",
+            "ASML",
+            "TSM",
+            "PEP",
+            "KMX"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Chinese Semiconductors & The Tech Rivalry Between the U.S. and China",
+          "publisher": "FX Empire",
+          "relatedTickers": [
+            "ASML",
+            "0981.HK",
+            "688347.SS"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Why Monday Begins A Critical Week For The Stock Market Rally",
+          "publisher": "Investor's Business Daily",
+          "relatedTickers": [
+            "^IXIC",
+            "GS",
+            "JPM",
+            "NFLX",
+            "ASML",
+            "TSM"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "Here's How Much Chip Equipment Maker ASML's Stock Is Expected to Move After Earnings",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Taiwan Semiconductor, ASML Face Earnings Test; Telecom Stock Also On Deck",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "ASML Holding Before Q1 Earnings: How Should Investors Play the Stock?",
+          "reason": "earnings"
+        }
+      ],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          1253.96
+        ],
+        "resistance_levels": [
+          1513.66
+        ],
+        "trend": "bearish",
+        "sma_20": 1372.35,
+        "sma_50": 1395.32,
+        "current_price": 1513.66
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": 11.22,
+        "sector_return_30d": 1.19,
+        "relative_performance": 10.03,
+        "interpretation": "company-specific",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": 11.15,
+        "sector_return_30d": 1.19,
+        "relative_performance": 9.96,
+        "classification": "company specific strength"
+      },
+      "earnings_context": {
+        "expected_move": 4.11,
+        "actual_move": 14.8,
+        "surprise_factor": 3.6,
+        "expected_move_source": "historical_proxy",
+        "interpretation": "extreme surprise"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "EXTREME RALLY: +32.7% move - likely post-earnings spike or catalyst",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "PRICE-DETECTED EVENT: +14.8% move detected (no earnings data)",
+        "csp_viability": "LOW VOLATILITY: 7% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "ASML (ASML) heads into earnings this week following recent catalyst-driven momentum. Stock up 33% over 90 days outperforming peers by 10%, options imply 7% vs 4% hist median. Elevated implied volatility (7%) suggests traders price an outsized move.",
+        "options_edge": {
+          "iv_edge": 1.618004866180049,
+          "skew": -1.2,
+          "skew_interpretation": "neutral",
+          "expected_iv_crush": 30.94
+        },
+        "strike_analysis": {
+          "csp_strike": 1325.0,
+          "distance_percent": 12.5,
+          "distance_vs_em": 1.88
+        },
+        "event_risk": {
+          "median_move": 0.0411,
+          "p75_move": 0.0553,
+          "p90_move": 0.0666,
+          "max_move": 0.0878,
+          "sample_count": 44
+        },
+        "trade_grade": {
+          "score": 65,
+          "rating": "B",
+          "earned_points": 65,
+          "max_points": 100,
+          "breakdown": {
+            "iv_edge_score": 65,
+            "strike_safety_score": 30,
+            "skew_score": 5,
+            "tail_risk_score": 5,
+            "iv_edge": 1.618004866180049,
+            "skew": -1.2,
+            "distance_vs_em": 1.88,
+            "p75_move": 0.0553,
+            "p90_move": 0.0666,
+            "implied_move": 6.65
+          }
+        }
+      },
+      "market": {
+        "price": 1514.36,
+        "atm_strike": 1500.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 100.65,
+        "em_percent": 6.646372064766635
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.89,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0411,
+        "p75_move": 0.0553,
+        "p90_move": 0.0666,
+        "max_move": 0.0878
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0411,
+        "p75_move": 0.0553,
+        "p90_move": 0.0666,
+        "max_move": 0.0878,
+        "sample_count": 44
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/ASML.json"
+    },
+    {
+      "ticker": "PNC",
+      "analysis_date": "2026-04-14T06:35:10.574140",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 213.05,
+          "change%": -0.55
+        },
+        {
+          "date": "2026-03-04",
+          "price": 213.86,
+          "change%": 0.38
+        },
+        {
+          "date": "2026-03-05",
+          "price": 212.37,
+          "change%": -0.7
+        },
+        {
+          "date": "2026-03-06",
+          "price": 206.12,
+          "change%": -2.94
+        },
+        {
+          "date": "2026-03-09",
+          "price": 205.34,
+          "change%": -0.38
+        },
+        {
+          "date": "2026-03-10",
+          "price": 206.39,
+          "change%": 0.51
+        },
+        {
+          "date": "2026-03-11",
+          "price": 205.64,
+          "change%": -0.36
+        },
+        {
+          "date": "2026-03-12",
+          "price": 202.69,
+          "change%": -1.43
+        },
+        {
+          "date": "2026-03-13",
+          "price": 201.13,
+          "change%": -0.77
+        },
+        {
+          "date": "2026-03-16",
+          "price": 200.75,
+          "change%": -0.19
+        },
+        {
+          "date": "2026-03-17",
+          "price": 203.92,
+          "change%": 1.58
+        },
+        {
+          "date": "2026-03-18",
+          "price": 201.17,
+          "change%": -1.35
+        },
+        {
+          "date": "2026-03-19",
+          "price": 202.05,
+          "change%": 0.44
+        },
+        {
+          "date": "2026-03-20",
+          "price": 201.71,
+          "change%": -0.17
+        },
+        {
+          "date": "2026-03-23",
+          "price": 203.93,
+          "change%": 1.1
+        },
+        {
+          "date": "2026-03-24",
+          "price": 206.35,
+          "change%": 1.19
+        },
+        {
+          "date": "2026-03-25",
+          "price": 205.95,
+          "change%": -0.19
+        },
+        {
+          "date": "2026-03-26",
+          "price": 205.46,
+          "change%": -0.24
+        },
+        {
+          "date": "2026-03-27",
+          "price": 202.39,
+          "change%": -1.49
+        },
+        {
+          "date": "2026-03-30",
+          "price": 201.66,
+          "change%": -0.36
+        },
+        {
+          "date": "2026-03-31",
+          "price": 208.09,
+          "change%": 3.19
+        },
+        {
+          "date": "2026-04-01",
+          "price": 209.24,
+          "change%": 0.55
+        },
+        {
+          "date": "2026-04-02",
+          "price": 211.7,
+          "change%": 1.18
+        },
+        {
+          "date": "2026-04-06",
+          "price": 213.14,
+          "change%": 0.68
+        },
+        {
+          "date": "2026-04-07",
+          "price": 213.92,
+          "change%": 0.37
+        },
+        {
+          "date": "2026-04-08",
+          "price": 220.76,
+          "change%": 3.2
+        },
+        {
+          "date": "2026-04-09",
+          "price": 223.23,
+          "change%": 1.12
+        },
+        {
+          "date": "2026-04-10",
+          "price": 221.13,
+          "change%": -0.94
+        },
+        {
+          "date": "2026-04-13",
+          "price": 223.0,
+          "change%": 0.85
+        },
+        {
+          "date": "2026-04-14",
+          "price": 219.31,
+          "change%": -1.65
+        }
+      ],
+      "key_movement": {
+        "type": "strong momentum",
+        "magnitude": 10.76,
+        "reference_frames": {
+          "price_change_30d": 2.9,
+          "price_change_90d": 10.8,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -9.6,
+          "price_since_recent_extreme": 11.0
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 4.38,
+        "atm_iv": 57.1,
+        "call_put_skew": 2.1,
+        "call_iv_25d": 49.2,
+        "put_iv_25d": 67.2,
+        "skew": 18.0,
+        "underlying_price": 219.31,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 220.0,
+        "csp_candidates": [
+          {
+            "strike": 177.5,
+            "delta": -0.06,
+            "distance_percent": 19.1,
+            "distance_vs_em": 4.36
+          },
+          {
+            "strike": 210.0,
+            "delta": -0.223,
+            "distance_percent": 4.2,
+            "distance_vs_em": 0.97
+          },
+          {
+            "strike": 215.0,
+            "delta": -0.315,
+            "distance_percent": 2.0,
+            "distance_vs_em": 0.45
+          }
+        ],
+        "interpretation": "Options market expects a +/-4.4% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing IN LINE with historical (3.8%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.73,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0379,
+        "p75_move": 0.047,
+        "p90_move": 0.0514,
+        "max_move": 0.0524
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-13",
+          "headline": "PNC Financial Services Group Earnings: What To Look For From PNC",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "PNC"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Higher NII & Loan Growth to Aid PNC Financial's Q1 Earnings",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PNC",
+            "BAC",
+            "FHN",
+            "FHN-PF"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Hudson Technologies Announces Election of Alan Sheriff and Jeffrey Feeler as Independent Directors",
+          "publisher": "GlobeNewswire",
+          "relatedTickers": [
+            "HDSN",
+            "PNC"
+          ]
+        },
+        {
+          "date": "2026-04-12",
+          "headline": "Goldman Sachs, Bank of America, JP Morgan, Netflix, J&J, Producer Prices, and More to Watch This Week",
+          "publisher": "Barrons.com",
+          "relatedTickers": [
+            "JNJ",
+            "PNC",
+            "GS",
+            "MS",
+            "MS-PQ",
+            "BAC",
+            "NFLX",
+            "USB",
+            "ABT",
+            "PEP"
+          ]
+        },
+        {
+          "date": "2026-04-11",
+          "headline": "MarketBeat Week in Review \u2013 04/06 - 04/10",
+          "publisher": "MarketBeat",
+          "relatedTickers": [
+            "GOOG",
+            "AAPL",
+            "GSAT",
+            "RKLB",
+            "EWBC",
+            "META",
+            "NVDA",
+            "QBTS",
+            "NFLX",
+            "MRVL",
+            "PNC",
+            "DAL",
+            "AMZN",
+            "TSLA",
+            "MU",
+            "INTC"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "How The PNC Financial Services Group (PNC) Investment Story Is Shifting With New Analyst Targets",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "PNC",
+            "JEF"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Wall Street's Insights Into Key Metrics Ahead of The PNC Financial Services Group (PNC) Q1 Earnings",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PNC"
+          ]
+        },
+        {
+          "date": "2026-04-09",
+          "headline": "PNC Lead Arranger for $600 Million Credit Facility for Phoenix Service Partners",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "PNC",
+            "NG=F"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "PNC Financial Services Group Earnings: What To Look For From PNC",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Higher NII & Loan Growth to Aid PNC Financial's Q1 Earnings",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Wall Street's Insights Into Key Metrics Ahead of The PNC Financial Services Group (PNC) Q1 Earnings",
+          "reason": "earnings"
+        }
+      ],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          201.17
+        ],
+        "resistance_levels": [
+          223.23
+        ],
+        "trend": "bearish",
+        "sma_20": 209.91,
+        "sma_50": 217.16,
+        "current_price": 219.31
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": 2.77,
+        "sector_return_30d": 1.23,
+        "relative_performance": 1.54,
+        "interpretation": "in-line with sector",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": 2.77,
+        "sector_return_30d": 1.19,
+        "relative_performance": 1.58,
+        "classification": "sector driven move"
+      },
+      "earnings_context": {
+        "expected_move": null,
+        "actual_move": null,
+        "surprise_factor": null,
+        "expected_move_source": null,
+        "interpretation": "no earnings data"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "STRONG MOMENTUM: +10.8% move - trending in direction of move",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
+        "csp_viability": "LOW VOLATILITY: 4% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "Wall Street's Insights Into Key Metrics Ahead of The PNC Financial Services Group (PNC) heads into earnings this week following recent catalyst-driven momentum. Stock up 11% over 90 days broadly in line with sector peers, options imply 4% vs 4% hist median. Traders pricing elevated vol - consider defined-risk directional or wait for settlement.",
+        "options_edge": {
+          "iv_edge": 1.1556728232189972,
+          "skew": 2.1,
+          "skew_interpretation": "neutral",
+          "expected_iv_crush": 19.985
+        },
+        "strike_analysis": {
+          "csp_strike": 177.5,
+          "distance_percent": 19.1,
+          "distance_vs_em": 4.36
+        },
+        "event_risk": {
+          "median_move": 0.0379,
+          "p75_move": 0.047,
+          "p90_move": 0.0514,
+          "max_move": 0.0524,
+          "sample_count": 11
+        },
+        "trade_grade": {
+          "score": 45,
+          "rating": "D",
+          "earned_points": 45,
+          "max_points": 100,
+          "breakdown": {
+            "iv_edge_score": 45,
+            "strike_safety_score": 30,
+            "skew_score": 10,
+            "tail_risk_score": 0,
+            "iv_edge": 1.1556728232189972,
+            "skew": 2.1,
+            "distance_vs_em": 4.36,
+            "p75_move": 0.047,
+            "p90_move": 0.0514,
+            "implied_move": 4.38
+          }
+        }
+      },
+      "market": {
+        "price": 219.78,
+        "atm_strike": 220.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 9.7,
+        "em_percent": 4.4135044135044135
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.73,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0379,
+        "p75_move": 0.047,
+        "p90_move": 0.0514,
+        "max_move": 0.0524
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0379,
+        "p75_move": 0.047,
+        "p90_move": 0.0514,
+        "max_move": 0.0524,
+        "sample_count": 11
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/PNC.json"
+    },
+    {
+      "ticker": "MTB",
+      "analysis_date": "2026-04-14T06:35:16.644768",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 218.98,
+          "change%": -0.24
+        },
+        {
+          "date": "2026-03-04",
+          "price": 219.24,
+          "change%": 0.12
+        },
+        {
+          "date": "2026-03-05",
+          "price": 215.99,
+          "change%": -1.48
+        },
+        {
+          "date": "2026-03-06",
+          "price": 210.46,
+          "change%": -2.56
+        },
+        {
+          "date": "2026-03-09",
+          "price": 208.66,
+          "change%": -0.86
+        },
+        {
+          "date": "2026-03-10",
+          "price": 204.12,
+          "change%": -2.18
+        },
+        {
+          "date": "2026-03-11",
+          "price": 203.21,
+          "change%": -0.45
+        },
+        {
+          "date": "2026-03-12",
+          "price": 198.2,
+          "change%": -2.47
+        },
+        {
+          "date": "2026-03-13",
+          "price": 196.26,
+          "change%": -0.98
+        },
+        {
+          "date": "2026-03-16",
+          "price": 198.33,
+          "change%": 1.05
+        },
+        {
+          "date": "2026-03-17",
+          "price": 200.12,
+          "change%": 0.9
+        },
+        {
+          "date": "2026-03-18",
+          "price": 197.07,
+          "change%": -1.52
+        },
+        {
+          "date": "2026-03-19",
+          "price": 196.24,
+          "change%": -0.42
+        },
+        {
+          "date": "2026-03-20",
+          "price": 198.15,
+          "change%": 0.97
+        },
+        {
+          "date": "2026-03-23",
+          "price": 200.66,
+          "change%": 1.27
+        },
+        {
+          "date": "2026-03-24",
+          "price": 203.78,
+          "change%": 1.55
+        },
+        {
+          "date": "2026-03-25",
+          "price": 204.75,
+          "change%": 0.48
+        },
+        {
+          "date": "2026-03-26",
+          "price": 205.73,
+          "change%": 0.48
+        },
+        {
+          "date": "2026-03-27",
+          "price": 200.93,
+          "change%": -2.33
+        },
+        {
+          "date": "2026-03-30",
+          "price": 201.13,
+          "change%": 0.1
+        },
+        {
+          "date": "2026-03-31",
+          "price": 206.72,
+          "change%": 2.78
+        },
+        {
+          "date": "2026-04-01",
+          "price": 208.98,
+          "change%": 1.09
+        },
+        {
+          "date": "2026-04-02",
+          "price": 210.16,
+          "change%": 0.56
+        },
+        {
+          "date": "2026-04-06",
+          "price": 212.02,
+          "change%": 0.89
+        },
+        {
+          "date": "2026-04-07",
+          "price": 212.11,
+          "change%": 0.04
+        },
+        {
+          "date": "2026-04-08",
+          "price": 219.04,
+          "change%": 3.27
+        },
+        {
+          "date": "2026-04-09",
+          "price": 222.99,
+          "change%": 1.8
+        },
+        {
+          "date": "2026-04-10",
+          "price": 219.92,
+          "change%": -1.38
+        },
+        {
+          "date": "2026-04-13",
+          "price": 221.29,
+          "change%": 0.62
+        },
+        {
+          "date": "2026-04-14",
+          "price": 219.78,
+          "change%": -0.68
+        }
+      ],
+      "key_movement": {
+        "type": "strong momentum",
+        "magnitude": 12.34,
+        "reference_frames": {
+          "price_change_30d": 0.4,
+          "price_change_90d": 12.3,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -7.7,
+          "price_since_recent_extreme": 12.6
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 4.39,
+        "atm_iv": 57.5,
+        "call_put_skew": 5.3,
+        "call_iv_25d": 61.9,
+        "put_iv_25d": 62.8,
+        "skew": 0.9,
+        "underlying_price": 219.78,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 220.0,
+        "csp_candidates": [
+          {
+            "strike": 185.0,
+            "delta": -0.066,
+            "distance_percent": 15.8,
+            "distance_vs_em": 3.6
+          },
+          {
+            "strike": 210.0,
+            "delta": -0.205,
+            "distance_percent": 4.4,
+            "distance_vs_em": 1.01
+          },
+          {
+            "strike": 220.0,
+            "delta": -0.485,
+            "distance_percent": -0.1,
+            "distance_vs_em": -0.02
+          }
+        ],
+        "interpretation": "Options market expects a +/-4.4% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing 125% MORE volatility than historical (3.5%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.93,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0351,
+        "p75_move": 0.038,
+        "p90_move": 0.0426,
+        "max_move": 0.0447
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-13",
+          "headline": "M&T Bank Earnings: What To Look For From MTB",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "MTB",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "M&T Bank's Q1 Earnings on the Deck: Here's What You Should Know",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MTB",
+            "FHN",
+            "FHN-PF",
+            "BAC",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-12",
+          "headline": "M&T Bank Taps Denise Viola Monahan To Shape Philadelphia Growth Story",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "MTB",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Unveiling M&T Bank (MTB) Q1 Outlook: Wall Street Estimates for Key Metrics",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MTB",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-08",
+          "headline": "M&T Bank Gains Nearly 13% in 6 Months: How to Play the Stock Now?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MTB",
+            "NTRS",
+            "FITB",
+            "NTRSO",
+            "FITBM",
+            "FITBP",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-08",
+          "headline": "M&T Bank Corporation (MTB) Reports Next Week: Wall Street Expects Earnings Growth",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "MTB",
+            "MTB-PJ",
+            "MTB-PK"
+          ]
+        },
+        {
+          "date": "2026-04-08",
+          "headline": "Jefferies Adjusts Price Target on M&T Bank to $255 From $250, Maintains Buy Rating",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "MTB"
+          ]
+        },
+        {
+          "date": "2026-04-07",
+          "headline": "UBS Adjusts M&T Bank Price Target to $225 From $230, Maintains Neutral Rating",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "MTB"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "M&T Bank Earnings: What To Look For From MTB",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Unveiling M&T Bank (MTB) Q1 Outlook: Wall Street Estimates for Key Metrics",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-08",
+          "headline": "M&T Bank Corporation (MTB) Reports Next Week: Wall Street Expects Earnings Growth",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-08",
+          "headline": "Jefferies Adjusts Price Target on M&T Bank to $255 From $250, Maintains Buy Rating",
+          "reason": "upgrade"
+        }
+      ],
+      "analyst_activity": [
+        {
+          "date": "2026-04-08",
+          "headline": "Jefferies Adjusts Price Target on M&T Bank to $255 From $250, Maintains Buy Rating",
+          "type": "upgrade"
+        },
+        {
+          "date": "2026-04-08",
+          "headline": "Jefferies Adjusts Price Target on M&T Bank to $255 From $250, Maintains Buy Rating",
+          "type": "price_target"
+        },
+        {
+          "date": "2026-04-07",
+          "headline": "UBS Adjusts M&T Bank Price Target to $225 From $230, Maintains Neutral Rating",
+          "type": "price_target"
+        }
+      ],
+      "technical_analysis": {
+        "support_levels": [
+          196.24
+        ],
+        "resistance_levels": [
+          222.99
+        ],
+        "trend": "bearish",
+        "sma_20": 208.08,
+        "sma_50": 216.14,
+        "current_price": 219.78
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": 0.37,
+        "sector_return_30d": 1.23,
+        "relative_performance": -0.86,
+        "interpretation": "in-line with sector",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": 0.37,
+        "sector_return_30d": 1.22,
+        "relative_performance": -0.86,
+        "classification": "sector driven move"
+      },
+      "earnings_context": {
+        "expected_move": null,
+        "actual_move": null,
+        "surprise_factor": null,
+        "expected_move_source": null,
+        "interpretation": "no earnings data"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "STRONG MOMENTUM: +12.3% move - trending in direction of move",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
+        "csp_viability": "LOW VOLATILITY: 4% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "Unveiling M&T Bank (MTB) heads into earnings this week following recent catalyst-driven momentum. Stock up 12% over 90 days broadly in line with sector peers, options imply 4% vs 4% hist median. Traders pricing elevated vol - consider defined-risk directional or wait for settlement.",
+        "options_edge": {
+          "iv_edge": 1.2507122507122508,
+          "skew": 5.3,
+          "skew_interpretation": "neutral",
+          "expected_iv_crush": 20.125
+        },
+        "strike_analysis": {
+          "csp_strike": 185.0,
+          "distance_percent": 15.8,
+          "distance_vs_em": 3.6
+        },
+        "event_risk": {
+          "median_move": 0.0351,
+          "p75_move": 0.038,
+          "p90_move": 0.0426,
+          "max_move": 0.0447,
+          "sample_count": 14
+        },
+        "trade_grade": {
+          "score": 70,
+          "rating": "B",
+          "earned_points": 70,
+          "max_points": 100,
+          "breakdown": {
+            "iv_edge_score": 70,
+            "strike_safety_score": 30,
+            "skew_score": 15,
+            "tail_risk_score": 10,
+            "iv_edge": 1.2507122507122508,
+            "skew": 5.3,
+            "distance_vs_em": 3.6,
+            "p75_move": 0.038,
+            "p90_move": 0.0426,
+            "implied_move": 4.39
+          }
+        }
+      },
+      "market": {
+        "price": 219.78,
+        "atm_strike": 220.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 9.6,
+        "em_percent": 4.368004368004367
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.93,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0351,
+        "p75_move": 0.038,
+        "p90_move": 0.0426,
+        "max_move": 0.0447
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0351,
+        "p75_move": 0.038,
+        "p90_move": 0.0426,
+        "max_move": 0.0447,
+        "sample_count": 14
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/MTB.json"
+    },
+    {
+      "ticker": "MS",
+      "analysis_date": "2026-04-14T06:35:22.263441",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 165.95,
+          "change%": -0.63
+        },
+        {
+          "date": "2026-03-04",
+          "price": 167.58,
+          "change%": 0.98
+        },
+        {
+          "date": "2026-03-05",
+          "price": 162.55,
+          "change%": -3.0
+        },
+        {
+          "date": "2026-03-06",
+          "price": 160.27,
+          "change%": -1.4
+        },
+        {
+          "date": "2026-03-09",
+          "price": 160.45,
+          "change%": 0.11
+        },
+        {
+          "date": "2026-03-10",
+          "price": 160.75,
+          "change%": 0.19
+        },
+        {
+          "date": "2026-03-11",
+          "price": 160.89,
+          "change%": 0.09
+        },
+        {
+          "date": "2026-03-12",
+          "price": 154.37,
+          "change%": -4.05
+        },
+        {
+          "date": "2026-03-13",
+          "price": 154.87,
+          "change%": 0.32
+        },
+        {
+          "date": "2026-03-16",
+          "price": 155.7,
+          "change%": 0.54
+        },
+        {
+          "date": "2026-03-17",
+          "price": 157.83,
+          "change%": 1.37
+        },
+        {
+          "date": "2026-03-18",
+          "price": 158.93,
+          "change%": 0.7
+        },
+        {
+          "date": "2026-03-19",
+          "price": 158.55,
+          "change%": -0.24
+        },
+        {
+          "date": "2026-03-20",
+          "price": 161.47,
+          "change%": 1.84
+        },
+        {
+          "date": "2026-03-23",
+          "price": 164.32,
+          "change%": 1.77
+        },
+        {
+          "date": "2026-03-24",
+          "price": 165.87,
+          "change%": 0.94
+        },
+        {
+          "date": "2026-03-25",
+          "price": 165.65,
+          "change%": -0.13
+        },
+        {
+          "date": "2026-03-26",
+          "price": 163.23,
+          "change%": -1.46
+        },
+        {
+          "date": "2026-03-27",
+          "price": 158.39,
+          "change%": -2.97
+        },
+        {
+          "date": "2026-03-30",
+          "price": 158.37,
+          "change%": -0.01
+        },
+        {
+          "date": "2026-03-31",
+          "price": 164.57,
+          "change%": 3.91
+        },
+        {
+          "date": "2026-04-01",
+          "price": 166.17,
+          "change%": 0.97
+        },
+        {
+          "date": "2026-04-02",
+          "price": 165.81,
+          "change%": -0.22
+        },
+        {
+          "date": "2026-04-06",
+          "price": 166.55,
+          "change%": 0.45
+        },
+        {
+          "date": "2026-04-07",
+          "price": 168.43,
+          "change%": 1.13
+        },
+        {
+          "date": "2026-04-08",
+          "price": 176.02,
+          "change%": 4.51
+        },
+        {
+          "date": "2026-04-09",
+          "price": 178.16,
+          "change%": 1.22
+        },
+        {
+          "date": "2026-04-10",
+          "price": 177.64,
+          "change%": -0.29
+        },
+        {
+          "date": "2026-04-13",
+          "price": 181.14,
+          "change%": 1.97
+        },
+        {
+          "date": "2026-04-14",
+          "price": 182.29,
+          "change%": 0.63
+        }
+      ],
+      "key_movement": {
+        "type": "moderate move",
+        "magnitude": 4.93,
+        "reference_frames": {
+          "price_change_30d": 9.8,
+          "price_change_90d": 4.9,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -4.7,
+          "price_since_recent_extreme": 18.1
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 4.29,
+        "atm_iv": 56.8,
+        "call_put_skew": -13.2,
+        "call_iv_25d": 51.1,
+        "put_iv_25d": 57.0,
+        "skew": 5.9,
+        "underlying_price": 182.24,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 182.5,
+        "csp_candidates": [
+          {
+            "strike": 138.0,
+            "delta": -0.058,
+            "distance_percent": 24.3,
+            "distance_vs_em": 5.66
+          },
+          {
+            "strike": 175.0,
+            "delta": -0.228,
+            "distance_percent": 4.0,
+            "distance_vs_em": 0.93
+          },
+          {
+            "strike": 180.0,
+            "delta": -0.405,
+            "distance_percent": 1.2,
+            "distance_vs_em": 0.29
+          }
+        ],
+        "interpretation": "Options market expects a +/-4.3% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing IN LINE with historical (4.5%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.42,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0451,
+        "p75_move": 0.0491,
+        "p90_move": 0.0578,
+        "max_move": 0.0619
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-14",
+          "headline": "JPMorgan Tops Estimates. CEO Jamie Dimon Sees Economic Tailwinds, Risks.",
+          "publisher": "Investor's Business Daily",
+          "relatedTickers": [
+            "JPM",
+            "C",
+            "C-PR",
+            "MS",
+            "MS-PQ",
+            "BAC",
+            "WFC"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Stocks Rise Pre-Bell Amid Hopes of Renewed US-Iran Peace Talks; Big Bank Earnings, PPI Data on Deck",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "^IXIC",
+            "JNJ",
+            "BAC",
+            "BLK",
+            "JPM",
+            "^SPX",
+            "C",
+            "GS",
+            "AVNS",
+            "WFC",
+            "MS",
+            "ORCL",
+            "ACI",
+            "^GSPC",
+            "^DJI"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Update: Market Chatter: JPMorgan Chase, Morgan Stanley Working on Leo Pharma's Potential IPO in Denmark",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "JPM",
+            "MS",
+            "DANSKE.CO"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Goldman Q1 Earnings Beat on Record Equities Revenues, Shares Fall (Revised)",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "GS",
+            "JPM",
+            "MS",
+            "MS-PQ"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Big Bank Earnings Roll In After Goldman Sets the Tone",
+          "publisher": "Barrons.com",
+          "relatedTickers": [
+            "GS",
+            "MS",
+            "MS-PQ",
+            "WFC",
+            "C",
+            "C-PR",
+            "JPM"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Morgan Stanley (MS) Q1 Earnings Report Preview: What To Look For",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "MS",
+            "MS-PQ"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Why The Narrative Around East West Bancorp (EWBC) Is Shifting With New Valuation And Target Updates",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "EWBC",
+            "MS"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Nasdaq Extends Rally to 9th Day as Tech Stocks Jump",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "ORCL",
+            "BAC",
+            "JNJ",
+            "JPM",
+            "WFC",
+            "GS",
+            "NFLX",
+            "C",
+            "^SPX",
+            "PEP",
+            "MS",
+            "^IXIC",
+            "^DJI",
+            "^GSPC",
+            "NOW",
+            "DELL",
+            "CRM",
+            "MSFT"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "Morgan Stanley (MS) Q1 Earnings Report Preview: What To Look For",
+          "reason": "earnings"
+        }
+      ],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          157.83
+        ],
+        "resistance_levels": [
+          182.29
+        ],
+        "trend": "bearish",
+        "sma_20": 166.97,
+        "sma_50": 168.82,
+        "current_price": 182.29
+      },
+      "sector_etf": "XLF",
+      "sector_context": {
+        "stock_return_30d": 9.9,
+        "sector_return_30d": 0.7,
+        "relative_performance": 9.2,
+        "interpretation": "company-specific",
+        "sector_etf": "XLF"
+      },
+      "peer_context": {
+        "stock_return_30d": 9.9,
+        "sector_return_30d": 0.72,
+        "relative_performance": 9.18,
+        "classification": "company specific strength"
+      },
+      "earnings_context": {
+        "expected_move": null,
+        "actual_move": null,
+        "surprise_factor": null,
+        "expected_move_source": null,
+        "interpretation": "no earnings data"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "RANGE BOUND: +4.9% - consolidation phase",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
+        "csp_viability": "LOW VOLATILITY: 4% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "Morgan Stanley (MS) heads into earnings this week following recent catalyst-driven momentum. Stock up 5% over 90 days outperforming peers by 9%, options imply 4% vs 5% hist median. Traders pricing elevated vol - consider defined-risk directional or wait for settlement.",
+        "options_edge": {
+          "iv_edge": 0.951219512195122,
+          "skew": -13.2,
+          "skew_interpretation": "calls expensive",
+          "expected_iv_crush": 19.88
+        },
+        "strike_analysis": {
+          "csp_strike": 138.0,
+          "distance_percent": 24.3,
+          "distance_vs_em": 5.66
+        },
+        "event_risk": {
+          "median_move": 0.0451,
+          "p75_move": 0.0491,
+          "p90_move": 0.0578,
+          "max_move": 0.0619,
+          "sample_count": 12
+        },
+        "trade_grade": {
+          "score": 40,
+          "rating": "D",
+          "earned_points": 40,
+          "max_points": 100,
+          "breakdown": {
+            "iv_edge_score": 40,
+            "strike_safety_score": 30,
+            "skew_score": 5,
+            "tail_risk_score": 0,
+            "iv_edge": 0.951219512195122,
+            "skew": -13.2,
+            "distance_vs_em": 5.66,
+            "p75_move": 0.0491,
+            "p90_move": 0.0578,
+            "implied_move": 4.29
+          }
+        }
+      },
+      "market": {
+        "price": 182.46,
+        "atm_strike": 180.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 7.66,
+        "em_percent": 4.198180423106434
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.42,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.0451,
+        "p75_move": 0.0491,
+        "p90_move": 0.0578,
+        "max_move": 0.0619
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0451,
+        "p75_move": 0.0491,
+        "p90_move": 0.0578,
+        "max_move": 0.0619,
+        "sample_count": 12
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/MS.json"
+    },
+    {
+      "ticker": "PGR",
+      "analysis_date": "2026-04-14T06:35:28.810488",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 213.35,
+          "change%": -0.03
+        },
+        {
+          "date": "2026-03-04",
+          "price": 211.4,
+          "change%": -0.91
+        },
+        {
+          "date": "2026-03-05",
+          "price": 210.58,
+          "change%": -0.39
+        },
+        {
+          "date": "2026-03-06",
+          "price": 210.6,
+          "change%": 0.01
+        },
+        {
+          "date": "2026-03-09",
+          "price": 206.8,
+          "change%": -1.8
+        },
+        {
+          "date": "2026-03-10",
+          "price": 206.96,
+          "change%": 0.08
+        },
+        {
+          "date": "2026-03-11",
+          "price": 201.22,
+          "change%": -2.77
+        },
+        {
+          "date": "2026-03-12",
+          "price": 205.18,
+          "change%": 1.97
+        },
+        {
+          "date": "2026-03-13",
+          "price": 205.17,
+          "change%": -0.0
+        },
+        {
+          "date": "2026-03-16",
+          "price": 204.71,
+          "change%": -0.22
+        },
+        {
+          "date": "2026-03-17",
+          "price": 203.79,
+          "change%": -0.45
+        },
+        {
+          "date": "2026-03-18",
+          "price": 201.17,
+          "change%": -1.29
+        },
+        {
+          "date": "2026-03-19",
+          "price": 202.68,
+          "change%": 0.75
+        },
+        {
+          "date": "2026-03-20",
+          "price": 206.0,
+          "change%": 1.64
+        },
+        {
+          "date": "2026-03-23",
+          "price": 205.1,
+          "change%": -0.44
+        },
+        {
+          "date": "2026-03-24",
+          "price": 206.21,
+          "change%": 0.54
+        },
+        {
+          "date": "2026-03-25",
+          "price": 202.84,
+          "change%": -1.63
+        },
+        {
+          "date": "2026-03-26",
+          "price": 202.9,
+          "change%": 0.03
+        },
+        {
+          "date": "2026-03-27",
+          "price": 198.84,
+          "change%": -2.0
+        },
+        {
+          "date": "2026-03-30",
+          "price": 201.39,
+          "change%": 1.28
+        },
+        {
+          "date": "2026-03-31",
+          "price": 198.24,
+          "change%": -1.56
+        },
+        {
+          "date": "2026-04-01",
+          "price": 193.36,
+          "change%": -2.46
+        },
+        {
+          "date": "2026-04-02",
+          "price": 195.25,
+          "change%": 0.98
+        },
+        {
+          "date": "2026-04-06",
+          "price": 196.38,
+          "change%": 0.58
+        },
+        {
+          "date": "2026-04-07",
+          "price": 196.85,
+          "change%": 0.24
+        },
+        {
+          "date": "2026-04-08",
+          "price": 198.09,
+          "change%": 0.63
+        },
+        {
+          "date": "2026-04-09",
+          "price": 199.88,
+          "change%": 0.9
+        },
+        {
+          "date": "2026-04-10",
+          "price": 194.13,
+          "change%": -2.88
+        },
+        {
+          "date": "2026-04-13",
+          "price": 199.57,
+          "change%": 2.8
+        },
+        {
+          "date": "2026-04-14",
+          "price": 198.71,
+          "change%": -0.43
+        }
+      ],
+      "key_movement": {
+        "type": "significant decline",
+        "magnitude": -12.53,
+        "reference_frames": {
+          "price_change_30d": -6.9,
+          "price_change_90d": -12.5,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -15.9,
+          "price_since_recent_extreme": 2.8
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 4.04,
+        "atm_iv": 53.1,
+        "call_put_skew": 24.3,
+        "call_iv_25d": 43.7,
+        "put_iv_25d": 60.7,
+        "skew": 17.0,
+        "underlying_price": 198.71,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 197.5,
+        "csp_candidates": [
+          {
+            "strike": 175.0,
+            "delta": -0.054,
+            "distance_percent": 11.9,
+            "distance_vs_em": 2.95
+          },
+          {
+            "strike": 190.0,
+            "delta": -0.219,
+            "distance_percent": 4.4,
+            "distance_vs_em": 1.08
+          },
+          {
+            "strike": 195.0,
+            "delta": -0.342,
+            "distance_percent": 1.9,
+            "distance_vs_em": 0.46
+          }
+        ],
+        "interpretation": "Options market expects a +/-4.0% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing IN LINE with historical (3.6%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.7,
+        "down_1_5x": 0.9,
+        "down_2x": 1.0,
+        "median_move": 0.0365,
+        "p75_move": 0.0528,
+        "p90_move": 0.0685,
+        "max_move": 0.0685
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-14",
+          "headline": "AI Is Rewriting Corporate Lingo. ChatGPT Is Leaving Its Mark.",
+          "publisher": "Barrons.com",
+          "relatedTickers": [
+            "PGR",
+            "RCL",
+            "AOS"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Earnings To Watch: Progressive (PGR) Reports Q1 Results Tomorrow",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "PGR"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Is a Beat in Store for Progressive This Earnings Season?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PGR",
+            "CB",
+            "RNR",
+            "RNR-PG",
+            "ACGL",
+            "ACGLN",
+            "ACGLO"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Persian Gulf, Oil Outlooks Damp Wall Street Pre-Bell, Asia, Europe Off",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "CL=F",
+            "^SPX",
+            "^GSPC",
+            "JNJ",
+            "^IXIC",
+            "^DJI",
+            "JPM",
+            "TFC",
+            "PEP",
+            "ABT",
+            "PGR"
+          ]
+        },
+        {
+          "date": "2026-04-11",
+          "headline": "Reassessing Progressive (PGR) Valuation After Recent Share Price Weakness And Mixed Market Signals",
+          "publisher": "Simply Wall St.",
+          "relatedTickers": [
+            "PGR"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Progressive (PGR) Registers a Bigger Fall Than the Market: Important Facts to Note",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PGR",
+            "^GSPC"
+          ]
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Progressive (PGR) Q1 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "PGR"
+          ]
+        },
+        {
+          "date": "2026-04-09",
+          "headline": "Travelers (TRV) Earnings Expected to Grow: Should You Buy?",
+          "publisher": "Zacks",
+          "relatedTickers": [
+            "TRV",
+            "PGR"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "Earnings To Watch: Progressive (PGR) Reports Q1 Results Tomorrow",
+          "reason": "earnings"
+        },
+        {
+          "date": "2026-04-10",
+          "headline": "Progressive (PGR) Q1 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+          "reason": "earnings"
+        }
+      ],
+      "analyst_activity": [
+        {
+          "date": "2026-04-14",
+          "headline": "AI Is Rewriting Corporate Lingo. ChatGPT Is Leaving Its Mark.",
+          "type": "price_target"
+        }
+      ],
+      "technical_analysis": {
+        "support_levels": [
+          193.36
+        ],
+        "resistance_levels": [
+          206.21
+        ],
+        "trend": "bearish",
+        "sma_20": 200.07,
+        "sma_50": 203.79,
+        "current_price": 198.71
+      },
+      "sector_etf": "SPY",
+      "sector_context": {
+        "stock_return_30d": -6.86,
+        "sector_return_30d": 1.23,
+        "relative_performance": -8.09,
+        "interpretation": "sector-driven",
+        "sector_etf": "SPY"
+      },
+      "peer_context": {
+        "stock_return_30d": -6.86,
+        "sector_return_30d": 1.23,
+        "relative_performance": -8.09,
+        "classification": "company specific weakness"
+      },
+      "earnings_context": {
+        "expected_move": null,
+        "actual_move": null,
+        "surprise_factor": null,
+        "expected_move_source": null,
+        "interpretation": "no earnings data"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "SIGNIFICANT WEAKNESS: -12.5% decline - downtrend established",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
+        "csp_viability": "LOW VOLATILITY: 4% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "Earnings To Watch: Progressive (PGR) heads into earnings this week following recent catalyst-driven momentum. Stock down 12% over 90 days underperforming peers by 8%, options imply 4% vs 4% hist median. Traders pricing elevated vol - consider defined-risk directional or wait for settlement.",
+        "options_edge": {
+          "iv_edge": 1.1068493150684933,
+          "skew": 24.3,
+          "skew_interpretation": "puts expensive",
+          "expected_iv_crush": 18.585
+        },
+        "strike_analysis": {
+          "csp_strike": 175.0,
+          "distance_percent": 11.9,
+          "distance_vs_em": 2.95
+        },
+        "event_risk": {
+          "median_move": 0.0365,
+          "p75_move": 0.0528,
+          "p90_move": 0.0685,
+          "max_move": 0.0685,
+          "sample_count": 10
+        },
+        "trade_grade": {
+          "score": 55,
+          "rating": "C",
+          "earned_points": 55,
+          "max_points": 100,
+          "breakdown": {
+            "iv_edge_score": 55,
+            "strike_safety_score": 30,
+            "skew_score": 20,
+            "tail_risk_score": 0,
+            "iv_edge": 1.1068493150684933,
+            "skew": 24.3,
+            "distance_vs_em": 2.95,
+            "p75_move": 0.0528,
+            "p90_move": 0.0685,
+            "implied_move": 4.04
+          }
+        }
+      },
+      "market": {
+        "price": 198.62,
+        "atm_strike": 197.5,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 8.030000000000001,
+        "em_percent": 4.042895982277717
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.7,
+        "down_1_5x": 0.9,
+        "down_2x": 1.0,
+        "median_move": 0.0365,
+        "p75_move": 0.0528,
+        "p90_move": 0.0685,
+        "max_move": 0.0685
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.0365,
+        "p75_move": 0.0528,
+        "p90_move": 0.0685,
+        "max_move": 0.0685,
+        "sample_count": 10
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/PGR.json"
+    },
+    {
+      "ticker": "BAC",
+      "analysis_date": "2026-04-14T06:35:34.512170",
+      "price_timeline": [
+        {
+          "date": "2026-03-03",
+          "price": 49.97,
+          "change%": 0.32
+        },
+        {
+          "date": "2026-03-04",
+          "price": 50.3,
+          "change%": 0.66
+        },
+        {
+          "date": "2026-03-05",
+          "price": 49.81,
+          "change%": -0.97
+        },
+        {
+          "date": "2026-03-06",
+          "price": 48.64,
+          "change%": -2.35
+        },
+        {
+          "date": "2026-03-09",
+          "price": 47.9,
+          "change%": -1.52
+        },
+        {
+          "date": "2026-03-10",
+          "price": 48.56,
+          "change%": 1.38
+        },
+        {
+          "date": "2026-03-11",
+          "price": 48.52,
+          "change%": -0.08
+        },
+        {
+          "date": "2026-03-12",
+          "price": 47.13,
+          "change%": -2.86
+        },
+        {
+          "date": "2026-03-13",
+          "price": 46.72,
+          "change%": -0.87
+        },
+        {
+          "date": "2026-03-16",
+          "price": 47.06,
+          "change%": 0.73
+        },
+        {
+          "date": "2026-03-17",
+          "price": 47.28,
+          "change%": 0.47
+        },
+        {
+          "date": "2026-03-18",
+          "price": 46.83,
+          "change%": -0.95
+        },
+        {
+          "date": "2026-03-19",
+          "price": 47.01,
+          "change%": 0.38
+        },
+        {
+          "date": "2026-03-20",
+          "price": 47.16,
+          "change%": 0.32
+        },
+        {
+          "date": "2026-03-23",
+          "price": 47.52,
+          "change%": 0.76
+        },
+        {
+          "date": "2026-03-24",
+          "price": 48.14,
+          "change%": 1.3
+        },
+        {
+          "date": "2026-03-25",
+          "price": 48.75,
+          "change%": 1.27
+        },
+        {
+          "date": "2026-03-26",
+          "price": 48.24,
+          "change%": -1.05
+        },
+        {
+          "date": "2026-03-27",
+          "price": 46.97,
+          "change%": -2.63
+        },
+        {
+          "date": "2026-03-30",
+          "price": 47.23,
+          "change%": 0.55
+        },
+        {
+          "date": "2026-03-31",
+          "price": 48.75,
+          "change%": 3.22
+        },
+        {
+          "date": "2026-04-01",
+          "price": 49.27,
+          "change%": 1.07
+        },
+        {
+          "date": "2026-04-02",
+          "price": 49.38,
+          "change%": 0.22
+        },
+        {
+          "date": "2026-04-06",
+          "price": 50.06,
+          "change%": 1.38
+        },
+        {
+          "date": "2026-04-07",
+          "price": 50.28,
+          "change%": 0.44
+        },
+        {
+          "date": "2026-04-08",
+          "price": 51.88,
+          "change%": 3.18
+        },
+        {
+          "date": "2026-04-09",
+          "price": 52.71,
+          "change%": 1.6
+        },
+        {
+          "date": "2026-04-10",
+          "price": 52.54,
+          "change%": -0.32
+        },
+        {
+          "date": "2026-04-13",
+          "price": 53.35,
+          "change%": 1.54
+        },
+        {
+          "date": "2026-04-14",
+          "price": 52.8,
+          "change%": -1.03
+        }
+      ],
+      "key_movement": {
+        "type": "consolidation",
+        "magnitude": -2.38,
+        "reference_frames": {
+          "price_change_30d": 5.7,
+          "price_change_90d": -2.4,
+          "price_change_ytd": 0.0,
+          "price_from_52w_high": -7.8,
+          "price_since_recent_extreme": 13.0
+        }
+      },
+      "earnings_event": null,
+      "options_context": {
+        "implied_move": 3.67,
+        "atm_iv": 49.5,
+        "call_put_skew": -13.5,
+        "call_iv_25d": null,
+        "put_iv_25d": 53.3,
+        "skew": null,
+        "underlying_price": 52.81,
+        "dte": 3,
+        "expiration": "2026-04-17",
+        "atm_strike": 53.0,
+        "csp_candidates": [
+          {
+            "strike": 43.5,
+            "delta": -0.074,
+            "distance_percent": 17.6,
+            "distance_vs_em": 4.8
+          },
+          {
+            "strike": 51.0,
+            "delta": -0.229,
+            "distance_percent": 3.4,
+            "distance_vs_em": 0.93
+          },
+          {
+            "strike": 52.0,
+            "delta": -0.354,
+            "distance_percent": 1.5,
+            "distance_vs_em": 0.42
+          }
+        ],
+        "interpretation": "Options market expects a +/-3.7% move for the next 3 days.",
+        "volatility_comparison": "Options market pricing IN LINE with historical (3.6%)"
+      },
+      "historical_volatility": {
+        "down_1x": 0.54,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.036,
+        "p75_move": 0.0378,
+        "p90_move": 0.0437,
+        "max_move": 0.0472
+      },
+      "fundamentals": {},
+      "news_timeline": [
+        {
+          "date": "2026-04-14",
+          "headline": "Masters Weekend: 25,000 Kids Sign Up for Bank of America's \"Golf with Us,\" Back-to-Back Champion Rory McIlroy Inspires Next Generation of Golfers",
+          "publisher": "PR Newswire",
+          "relatedTickers": [
+            "BAC"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "JPMorgan Tops Estimates. CEO Jamie Dimon Sees Economic Tailwinds, Risks.",
+          "publisher": "Investor's Business Daily",
+          "relatedTickers": [
+            "JPM",
+            "C",
+            "C-PR",
+            "MS",
+            "MS-PQ",
+            "BAC",
+            "WFC"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Stocks Rise Pre-Bell Amid Hopes of Renewed US-Iran Peace Talks; Big Bank Earnings, PPI Data on Deck",
+          "publisher": "MT Newswires",
+          "relatedTickers": [
+            "^IXIC",
+            "JNJ",
+            "BAC",
+            "BLK",
+            "JPM",
+            "^SPX",
+            "C",
+            "GS",
+            "AVNS",
+            "WFC",
+            "MS",
+            "ORCL",
+            "ACI",
+            "^GSPC",
+            "^DJI"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Warning Sign for Stocks Seen in Surging Inflation Expectations",
+          "publisher": "Bloomberg",
+          "relatedTickers": [
+            "^GSPC",
+            "CL=F",
+            "BAC"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Wells Fargo Reports $36.2 Billion of Private-Credit Exposure",
+          "publisher": "Bloomberg",
+          "relatedTickers": [
+            "WFC",
+            "C",
+            "C-PR",
+            "BAC"
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "headline": "Investors Brace for Economic Growth Shock, BofA Survey Shows",
+          "publisher": "Bloomberg",
+          "relatedTickers": [
+            "BAC",
+            "NG=F"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Bank of America (BAC) To Report Earnings Tomorrow: Here Is What To Expect",
+          "publisher": "StockStory",
+          "relatedTickers": [
+            "BAC"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "headline": "Citibank customers get new controversial feature",
+          "publisher": "TheStreet",
+          "relatedTickers": [
+            "C",
+            "JPM",
+            "BAC"
+          ]
+        }
+      ],
+      "material_events": [
+        {
+          "date": "2026-04-13",
+          "headline": "Bank of America (BAC) To Report Earnings Tomorrow: Here Is What To Expect",
+          "reason": "earnings"
+        }
+      ],
+      "analyst_activity": [],
+      "technical_analysis": {
+        "support_levels": [
+          46.83
+        ],
+        "resistance_levels": [
+          53.35
+        ],
+        "trend": "bearish",
+        "sma_20": 49.31,
+        "sma_50": 50.68,
+        "current_price": 52.8
+      },
+      "sector_etf": "XLF",
+      "sector_context": {
+        "stock_return_30d": 5.68,
+        "sector_return_30d": 0.72,
+        "relative_performance": 4.96,
+        "interpretation": "in-line with sector",
+        "sector_etf": "XLF"
+      },
+      "peer_context": {
+        "stock_return_30d": 5.66,
+        "sector_return_30d": 0.7,
+        "relative_performance": 4.96,
+        "classification": "in-line with sector"
+      },
+      "earnings_context": {
+        "expected_move": null,
+        "actual_move": null,
+        "surprise_factor": null,
+        "expected_move_source": null,
+        "interpretation": "no earnings data"
+      },
+      "earnings_price_interpretation": {
+        "earnings_signal": null,
+        "price_move": null,
+        "interpretation": "no earnings signal detected"
+      },
+      "trade_desk_analysis": {
+        "movement_diagnosis": "RANGE BOUND: -2.4% - consolidation phase",
+        "sentiment_regime": "DEFENSIVE BIAS: Bearish technicals but no immediate catalyst",
+        "earnings_reaction_quality": "NO RECENT EARNINGS DATA",
+        "csp_viability": "LOW VOLATILITY: 4% implied - narrow CSP possible | WARNING: 100% prob >50% loss",
+        "trade_desk_summary": "Bank of America (BAC) heads into earnings this week following recent catalyst-driven momentum. Stock down 2% over 90 days outperforming peers by 5%, options imply 4% vs 4% hist median. Traders pricing elevated vol - consider defined-risk directional or wait for settlement.",
+        "strike_analysis": {
+          "csp_strike": 43.5,
+          "distance_percent": 17.6,
+          "distance_vs_em": 4.8
+        },
+        "event_risk": {
+          "median_move": 0.036,
+          "p75_move": 0.0378,
+          "p90_move": 0.0437,
+          "max_move": 0.0472,
+          "sample_count": 13
+        },
+        "trade_grade": {
+          "score": 67,
+          "rating": "B",
+          "earned_points": 40,
+          "max_points": 60,
+          "breakdown": {
+            "iv_edge_score": 0,
+            "strike_safety_score": 30,
+            "skew_score": 0,
+            "tail_risk_score": 0,
+            "iv_edge": 0,
+            "skew": 0,
+            "distance_vs_em": 4.8,
+            "p75_move": 0.0378,
+            "p90_move": 0.0437,
+            "implied_move": 3.67
+          }
+        }
+      },
+      "market": {
+        "price": 53.03,
+        "atm_strike": 53.0,
+        "expiration": "2026-04-17"
+      },
+      "options": {
+        "straddle": 1.97,
+        "em_percent": 3.714878370733547
+      },
+      "report": {
+        "date": "2026-04-15",
+        "time": "BMO"
+      },
+      "probabilities": {
+        "down_1x": 0.54,
+        "down_1_5x": 1.0,
+        "down_2x": 1.0,
+        "median_move": 0.036,
+        "p75_move": 0.0378,
+        "p90_move": 0.0437,
+        "max_move": 0.0472
+      },
+      "grading": {
+        "grade": null,
+        "score_total": null,
+        "data_ready": true
+      },
+      "meta": {
+        "status": "ok",
+        "tags": [
+          "TRADE"
+        ]
+      },
+      "event_risk": {
+        "median_move": 0.036,
+        "p75_move": 0.0378,
+        "p90_move": 0.0437,
+        "max_move": 0.0472,
+        "sample_count": 13
+      },
+      "report_path": "/Users/raitsai/.openclaw/workspace/data/analysis/2026-04-14/BAC.json"
+    }
+  ]
 }
